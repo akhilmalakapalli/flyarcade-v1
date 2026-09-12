@@ -1,0 +1,85 @@
+{
+  "frozen_at": "2026-09-12T21:40:00+00:00",
+  "task": "snake",
+  "architecture": "v1.1 actor-critic e-prop, stage A (recurrent MaleCNS core entirely frozen)",
+  "graph_sha256": "3f4cbeedb17ca6a7d06162151429e0713ed72ce579d5f19a8845a446f6315697",
+  "standardizer": "artifacts/snake_standardizer.json",
+  "standardizer_rewired": "artifacts/snake_standardizer_rewired_{seed}.json",
+  "preserved_from_v11": [
+    "MaleCNS v1.0 2,040-neuron subgraph and body IDs",
+    "LIF membrane dynamics and transmitter sign rule",
+    "actor-critic e-prop learning rule",
+    "per-neuron common-mode removal",
+    "sqrt(width) feature scaling",
+    "critic_lr, discount, trace_decay",
+    "resource guards",
+    "deterministic seeding and greedy evaluation methodology"
+  ],
+  "snake_specific_changes": {
+    "actor_lr": {
+      "v11": 0.4,
+      "snake": 8.0,
+      "reason": "Snake's mean absolute TD error is about 0.17 against 0.3-0.5 on catch and dodge, so the same rate produces far smaller updates. Measured development food at actor_lr 0.4 / 1.5 / 4.0 / 8.0 was 0.35 / 0.65 / 1.35 / 1.95; at the v1.1 rate Snake did not learn."
+    },
+    "entropy_coefficient": {
+      "v11": 0.03,
+      "snake": 0.003,
+      "reason": "With TD errors near 0.06-0.17 the entropy gradient dominated the reward gradient and the policy never differentiated: action entropy stayed at 1.22 of a 1.386 maximum."
+    },
+    "exploration_floor": {
+      "v11": 0.1,
+      "snake": 0.02,
+      "reason": "A forced random action in Snake is frequently fatal, so a 10 percent floor caps achievable survival. Catch and dodge have no terminal failure state."
+    },
+    "training_episodes": {
+      "v11": 600,
+      "snake": 4000,
+      "reason": "Snake episodes start at about five steps, so a 600-episode budget supplies roughly a twentieth of the updates catch and dodge receive."
+    }
+  },
+  "tasks": ["snake"],
+  "seeds": [0, 1, 2],
+  "conditions": ["eprop", "frozen", "rewired"],
+  "reference_policies": ["random", "heuristic"],
+  "training_episodes": 4000,
+  "evaluation_episodes": 40,
+  "hyperparameters": {
+    "actor_lr": 8.0,
+    "critic_lr": 0.2,
+    "discount": 0.9,
+    "trace_decay": 0.7,
+    "entropy_coefficient": 0.003,
+    "exploration_floor": 0.02
+  },
+  "reward": "eat food +1.0, death -1.0, step penalty -0.01; no distance shaping was needed",
+  "environment": "8x8 grid, start length 3, max 200 steps, 64-step starvation cap, four absolute actions, immediate 180-degree reversal refused",
+  "sensory_encoding": "21 normalised channels: relative food direction (4), normalised food distance (1), heading one-hot (4), immediate danger (4), 3x3 local occupancy (8); Bernoulli injection into visual-projection neurons",
+  "frozen_components": [
+    "learning rule",
+    "preprocessing and standardisation procedure",
+    "sensory encoding",
+    "reward function",
+    "action decoder (greedy softmax mode at evaluation)",
+    "training duration (4,000 episodes, no early stopping)",
+    "hyperparameters",
+    "stopping criteria"
+  ],
+  "development_seed_rule": "training 7,000,000 + 10,000*dev_seed + episode; evaluation 7,500,000 block; feature fitting 7,200,000 block",
+  "training_seed_rule": "8,000,000 + 10,000*seed + episode_index",
+  "evaluation_seed_rule": "9,000,000 + 100*seed + i, i=0..39",
+  "seed_disjointness": "Snake development and confirmatory blocks are disjoint from each other and from every v1 and v1.1 block; tests/test_snake.py asserts this",
+  "perturbations": [
+    "sensory noise sd 0.1",
+    "10 percent edge ablation",
+    "5, 10 and 25 percent neuron ablation"
+  ],
+  "success_criterion": {
+    "defined_before": "confirmatory runs",
+    "criteria": [
+      "food eaten improves from before to after training on every seed",
+      "held-out food eaten exceeds the random policy by more than 0.5 on every seed",
+      "the policy stays state-dependent: state_dependence above 0.05 and final action entropy above 0.1"
+    ]
+  },
+  "resource_guard": "120 s per independently guarded process; trials checkpoint at episode boundaries and resume in a fresh process rather than raising any limit"
+}

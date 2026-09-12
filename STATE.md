@@ -1,103 +1,77 @@
 # flyarcade-v1 State
 
 ## Overall status
-IN_PROGRESS on branch `flyarcade-v1.1-learning`. v1 is COMPLETE and frozen at
-commit ec27ad0 and must not be altered. v1.1 has a confirmatory positive result.
+COMPLETE on branch `flyarcade-v1.1-learning`. Three studies finished: v1 (negative
+baseline, frozen at commit ec27ad0), v1.1 catch/dodge (positive), Snake (positive).
+The final manuscript is written. v1 must not be altered.
 
 ## Current milestone
-v1.1 complete through confirmatory evaluation, topology comparison, lesions,
-figures, tables and manuscript. Remaining: commit the branch.
-
-## v1.1 headline (confirmatory seeds, never used for tuning)
-- catch 0.206 -> 0.661 vs random 0.197 (+0.464 over random, 3/3 seeds).
-- dodge 0.794 -> 0.926 vs random 0.803 (+0.124 over random, 3/3 seeds).
-- All three preregistered success criteria met; frozen arm reproduced exactly.
-- Policy stays state-dependent (0.44 catch / 0.40 dodge), no collapse.
-- Stage A only: the recurrent MaleCNS core stayed entirely frozen.
-- Topology went AGAINST the biological graph: rewired beat biological on catch
-  (0.817 vs 0.661; difference -0.156 [-0.325, -0.021], 3/3 seeds), tied on dodge.
-  Rewired descending code is higher-dimensional (participation ratio 54.5 vs 29.5)
-  and less correlated (0.112 vs 0.152). Reported in the direction it came out.
-- Lesions are now informative: catch drops to 0.329 under 10% neuron ablation.
+None open. Snake was the final major experiment. Remaining work is optional
+follow-up listed in HANDOFF.md.
 
 ## Completed
-- M0-M3 retained and reverified; no bootstrap or acquisition restart.
-- Authentic MaleCNS v1.0 subgraph: 2,040 neurons, 126,676 directed edges,
-  1,054,402 synapses, no isolates; 218 visual-projection, 1,293 descending,
-  529 central-complex intrinsic. All 1,293 descending neurons are reachable from
-  visual-projection neurons within 1-2 directed hops (735 at one, 558 at two).
-- Boundary loss documented everywhere it matters: 15.05% incoming and 7.12%
-  outgoing synaptic weight retained.
-- All 36 preregistered trials COMPLETE: 2 tasks x 4 conditions x 3 seeds, plus
-  100-episode and both transfer directions.
-- Controls finished: frozen, degree-rewired, readout-only.
-- Robustness finished: sensory noise sd0.1, 10% edge ablation, 10% neuron ablation.
-- Transfer finished: both directions against equal-budget and equal-exposure arms.
-- Reproducibility verified: all 36 trials replayed from saved checkpoints,
-  144 evaluation sets, bit-identical, zero mismatches (artifacts/replay_check.json).
-- Scientific audit PASS: 36 result files hash-verified, seed disjointness and
-  frozen/readout-only invariants confirmed.
-- Post-hoc mechanism diagnostics added for both tasks (matched state distribution).
-- Figures: learning_curves, heldout_results, robustness, transfer, policy_collapse,
-  connectome (PNG + SVG). CSV tables: 8 files in artifacts/tables/.
-- paper/manuscript.md rewritten around the measured outcome.
-- README.md untouched; no resource limit raised.
+- v1 (ec27ad0): 36-trial preregistered grid, negative result, full-grid bit-identical
+  replay, scientific audit PASS. Untouched.
+- v1.1 catch/dodge: reward-guided actor-critic over the unchanged MaleCNS circuit.
+  catch 0.206 -> 0.661 vs 0.197 random; dodge 0.794 -> 0.926 vs 0.803. 3/3 seeds.
+- Snake: 8x8 grid, food, wall/self collision, growing body, 4 actions, reversal
+  refused, 21 hand-specified channels, bounded reward (+1 food, -1 death, -0.01 step).
+  Development on new 7,000,000-block seeds; frozen plan; confirmatory on 8,000,000 /
+  9,000,000 blocks.
+  food 0.100 -> 1.483 vs 0.150 random (+1.333 [1.050, 1.625], 3/3 seeds);
+  steps 5.0 -> 29.85; state-dependence 0.712; entropy 0.425 of a 1.386 maximum.
+  Heuristic reference 17.258, so competence is 0.078 of the way from random to
+  heuristic and the learning curve was still rising at the frozen budget.
+- Snake perturbations: food 1.483 intact, 1.242 sensory noise, 0.417 10% edge,
+  0.442 / 0.308 / 0.100 at 5 / 10 / 25 percent neuron ablation. Graded dose-response.
+- Topology across all three tasks: biological never exceeds degree-rewired.
+  Normalised biological/rewired: catch 0.578/0.772, dodge 0.627/0.683, snake
+  0.078/0.104. Only catch resolves from zero. No single conclusion is forced.
+- Caught and reported a preprocessing artefact: standardising the rewired Snake arm
+  with biological statistics made it look as though rewiring abolished learning.
+- Cross-task analysis, Snake figures/tables, demonstration figure and GIF.
+- paper/manuscript.md rewritten as the final paper.
 
 ## In progress
 - Nothing. No background process, download or training job remains.
 
 ## Next
 1. Optional: owner selects a LICENSE; it still reserves rights.
-2. Optional: commit the working tree (nothing is committed yet beyond 05b0ee7).
-3. Optional future work, out of v1 scope: an exploration-preserving variant
-   (entropy regularisation or a non-collapsing readout) to test whether the
-   available descending signal becomes usable. This would be a NEW preregistration,
-   not a retune of the frozen v1 protocol.
+2. Optional follow-ups are listed in HANDOFF.md and all require new preregistrations.
 
 ## Tests
-- sh scripts/verify.sh: PASS; health, Ruff lint/format, 60 tests (0.75 s), benchmark.
-- .venv/bin/python -m pip check: PASS.
-- scripts/replay_all.py: 36/36 trials MATCH.
-- scripts/scientific_audit.py: PASS.
+- sh scripts/verify.sh: PASS (health, Ruff lint/format, 80 tests, benchmark).
+- scripts/replay_all.py: v1 36/36 MATCH. scripts/scientific_audit.py: PASS.
+- v1.1 and Snake determinism verified by delete-and-re-run.
 - README SHA256 unchanged: a46572881f00b6963a0bbddcf2cc439d7acfd1ca46158711ad1a6fe8caaa7769.
 
 ## Latest benchmark
-- Primary result is NEGATIVE and preserved as such.
-- Mean paired held-out change: catch -0.0139 [-0.100, 0.108]; dodge -0.0167
-  [-0.058, 0.025]. Every condition's interval spans zero.
-- Trained held-out success: catch 0.175 vs random 0.194; dodge 0.794 vs random
-  0.806. Heuristic scores 1.000 on both, so the tasks are solvable.
-- Frozen controls reproduced their pre-training scores exactly (change 0.0000).
-- Contrasts all near zero: learning-minus-frozen -0.014/-0.017,
-  learning-minus-rewired +0.017/-0.025, learning-minus-readout_only +0.011/-0.039.
-- Mechanism: policy entropy collapses 1.098 -> 0.361 (catch) / 0.128 (dodge) nats
-  while linear probe accuracy on descending rates holds at 0.654 -> 0.658/0.713
-  against a 0.421 majority rate. Constant-action policies score catch 0.13-0.23 and
-  dodge 0.77-0.87, bracketing the trained results.
-- Perturbations change nothing (<=0.006), which is degeneracy, not robustness.
+- Final firing rate is near 0.21 spikes per neuron per tick on all three tasks
+  (catch 0.2167, dodge 0.2173, snake 0.2085).
+- Lesion sensitivity tracks task difficulty: fraction of learned gain retained under
+  10% neuron ablation is 1.10 dodge, 0.28 catch, 0.12 snake.
 
 ## Resource status
-- RAM: 16 GiB physical; max trial RSS snapshot 183 MiB; unchanged 2 GiB guard.
-- disk: ~341 GiB free; unchanged 1 GiB reserve.
-- runtime: max single trial 28.7 s against the unchanged 120 s guard;
-  632 s total across 36 sequential trials. No guard raised at any point.
+- RAM: 16 GiB physical; unchanged 2 GiB RSS guard; peak trial snapshot well under it.
+- disk: ~340 GiB free; unchanged 1 GiB reserve.
+- runtime: unchanged 120 s per independently guarded process. Snake trials checkpoint
+  and resume in fresh processes rather than raising the guard. No limit was raised in
+  any study.
 - graph/download: unchanged 4,096 neurons / 250,000 edges / 128 MiB / 32 MiB NPZ.
 
 ## Known issues
-- The primary scientific result is negative. It is intentionally preserved.
-- Boundary truncation (85% incoming / 93% outgoing weight missing) is the largest
-  threat to any dynamical conclusion.
-- Three seeds support descriptive intervals only; no confirmatory claim is made.
-- Only acetylcholine and GABA have fast effects; glutamate, dopamine, octopamine,
-  serotonin and unclear neurons are structurally present but functionally silent.
-- The rewired control does not preserve incoming strength and its mixing is
-  unvalidated, bounding the "topology did not matter" reading.
+- The recurrent MaleCNS core never learned: every positive result uses stage A with
+  connectome-derived weights frozen. Learning lives in an artificial readout.
+- Snake competence is modest (0.078 normalised) and budget-bound.
+- Boundary truncation: 85% incoming / 93% outgoing synaptic weight is missing.
+- Three seeds support descriptive intervals only; no confirmatory significance.
+- Only acetylcholine and GABA have fast effects.
+- The rewired control does not preserve incoming strength; mixing is unvalidated.
 - Cooperative resource checks do not provide OS-level isolation.
 - LICENSE reserves rights pending owner choice.
-- Nothing is committed; the working tree is untracked and reviewable.
 
 ## Last agent
 Claude Code
 
 ## Timestamp
-2026-09-12T19:46:02.700368+00:00
+2026-09-12T23:35:48.827119+00:00

@@ -1,0 +1,4 @@
+task,metric,actions,training_episodes,random,before,after,rewired,frozen,heuristic,normalised_after,normalised_rewired,state_dependence,final_firing_rate
+catch,landing success,3,600,0.197,0.206,0.661,0.817,0.206,1.000,0.578,0.772,0.442,0.2167
+dodge,landing success,3,600,0.803,0.794,0.926,0.938,0.794,1.000,0.627,0.683,0.402,0.2173
+snake,food eaten,4,4000,0.150,0.100,1.483,1.933,0.100,17.258,0.078,0.104,0.712,0.2085

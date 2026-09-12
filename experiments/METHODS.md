@@ -129,3 +129,77 @@ per-trial guard applies as it did during training; the sequential total is not
 treated as one guarded operation and no limit is raised. Pre-training evaluations
 predate the surviving checkpoint and are explicitly not replayable from it. This
 verifies implementation consistency, not physiological validity.
+
+---
+
+# Snake (Study 3) methods
+
+The machine-readable preregistration is `experiments/snake_run_plan.json`. Snake
+reuses the v1.1 architecture; only the differences are recorded here.
+
+## Environment
+
+8x8 grid, snake starting at length 3 pointing right, food placed uniformly on a free
+cell with a seeded generator. Four absolute actions (up/down/left/right); an
+immediate 180-degree reversal is refused rather than fatal. Episodes end on wall
+collision, self collision, 200 steps, or 64 steps without food. Reward is bounded and
+interpretable: +1.0 for food, -1.0 for death, -0.01 per step. No distance-to-food
+shaping is used; none was needed, and none is included precisely so that the agent
+cannot score without playing Snake.
+
+## Sensory encoding
+
+21 normalised channels, Bernoulli-injected into visual-projection neurons by the same
+scheme the lane tasks use: relative food direction (4), normalised food distance (1),
+heading one-hot (4), immediate danger in each direction (4), 3x3 local occupancy
+around the head (8). No pixel or convolutional input. Channels are engineered
+interfaces and carry no biological claim.
+
+## Preserved from v1.1
+
+MaleCNS v1.0 2,040-neuron subgraph and body IDs; LIF membrane dynamics and the
+transmitter sign rule; the actor-critic reward-guided learning rule; per-neuron
+common-mode removal; sqrt(width) feature scaling; `critic_lr`, `discount` and
+`trace_decay`; stage A plasticity scope with the recurrent core entirely frozen;
+resource guards; deterministic seeding; greedy evaluation with learning disabled.
+
+## Snake-specific changes
+
+Four parameters differ, each forced by a measured development failure rather than
+chosen to improve a result: `actor_lr` 0.4 -> 8.0, `entropy_coefficient` 0.03 ->
+0.003, `exploration_floor` 0.1 -> 0.02, `training_episodes` 600 -> 4000. The reasons,
+with the development measurements behind them, are recorded in
+`experiments/snake_run_plan.json` under `snake_specific_changes`. At the unchanged
+v1.1 parameters Snake did not learn at all.
+
+## Resource handling
+
+Snake episodes lengthen as the policy improves, so a 4,000-episode budget does not
+fit one 120-second guarded process. Trials checkpoint at episode boundaries and
+resume in a **fresh independently guarded process**, following the v1 pattern. A
+guard is never reset to continue an oversized operation and no limit is raised.
+
+## Seeds
+
+Development training 7,000,000 + 10,000*dev_seed + episode; development evaluation
+7,500,000 block; feature fitting 7,200,000 block; confirmatory training 8,000,000 +
+10,000*seed + episode; confirmatory evaluation 9,000,000 + 100*seed + i for i=0..39.
+`tests/test_snake.py` asserts these are disjoint from each other and from every v1
+and v1.1 block.
+
+## Standardisation and the topology control
+
+Each topology is standardised by the same frozen procedure applied to **its own**
+activity: `artifacts/snake_standardizer.json` for the biological graph and
+`artifacts/snake_standardizer_rewired_{seed}.json` for each rewired control. An
+earlier run that standardised the rewired arm with biological statistics made it look
+as though rewiring abolished Snake learning entirely; that effect disappeared under
+correct per-graph calibration. Any future topology comparison must calibrate each
+graph by the same procedure applied to its own rates.
+
+## Perturbations
+
+Applied only after state-dependent learning existed, with frozen learned weights and
+masks sampled once per trial: sensory noise sd 0.1, 10% edge ablation, and 5%, 10%
+and 25% neuron ablation. Insensitivity is not reported as robustness unless the
+intact policy demonstrably uses the affected information.

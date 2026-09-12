@@ -1,5 +1,33 @@
 # Changelog
 
+## 0.4.0 — Snake, cross-task analysis and the final manuscript
+- Add Snake (src/flyarcade/v11/snake.py): 8x8 grid, food, wall and self collision,
+  growing body, four actions, immediate 180-degree reversal refused, 200-step cap and
+  64-step starvation cap. Bounded reward: +1 food, -1 death, -0.01 per step, no
+  distance shaping.
+- Add 21 hand-specified sensory channels (food direction and distance, heading,
+  immediate danger, 3x3 local occupancy). No pixel or CNN input.
+- Generalise V11Controller with a pluggable encoder and action count; verified
+  bit-for-bit against the frozen v1.1 catch result.
+- Add resumable, independently guarded Snake trials that checkpoint at episode
+  boundaries and resume in a fresh process rather than raising the 120 s guard.
+- Snake development on new 7,000,000-block seeds across three seeds, with rejection
+  criteria applied before any performance comparison; freeze
+  experiments/snake_run_plan.json with a success criterion stated in advance.
+- Snake confirmatory result on untouched seeds: food 0.100 -> 1.483 against a 0.150
+  random baseline (+1.333 [1.050, 1.625], 3/3 seeds), survival 5.0 -> 29.85 steps,
+  state-dependence 0.712. Heuristic reference 17.258.
+- Snake perturbations on frozen weights: graded dose-response to neuron ablation
+  (0.442 / 0.308 / 0.100 food at 5 / 10 / 25 percent).
+- Fix and report a preprocessing artefact: standardising the rewired Snake arm with
+  biological statistics made it appear to abolish learning entirely; per-graph
+  calibration restored it to 1.933 food.
+- Add cross-task analysis over catch, dodge and Snake; add Snake tables, figures, a
+  gameplay/sensory/neural/policy demonstration figure and an animated GIF.
+- Add tests/test_snake.py (80 tests total), including danger-channel validity and
+  Snake/v1/v1.1 seed disjointness.
+- Rewrite paper/manuscript.md as the final paper.
+
 ## 0.3.0 — v1.1 credit-assignment rebuild, branch flyarcade-v1.1-learning
 - Add `src/flyarcade/v11/`: actor-critic e-prop three-factor learning over the
   unchanged MaleCNS topology. Local eligibility traces, a learned critic, TD error,

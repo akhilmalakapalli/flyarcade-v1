@@ -1,0 +1,4 @@
+condition,before_food,after_food,after_food_lo,after_food_hi,seed0,seed1,seed2,after_steps,after_return,random_food,heuristic_food,state_dependence,auc_food,episodes_to_one_food
+eprop,0.100,1.483,1.150,1.750,1.150,1.750,1.550,29.85,0.202,0.150,17.258,0.712,0.847,663;633;636
+frozen,0.100,0.100,0.100,0.100,0.100,0.100,0.100,5.00,-0.950,0.150,17.258,0.000,0.000,None;None;None
+rewired,0.100,1.933,1.200,2.725,1.875,1.200,2.725,33.37,0.600,0.150,17.258,0.691,1.139,564;1151;502

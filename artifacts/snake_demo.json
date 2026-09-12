@@ -1,0 +1,17 @@
+{
+  "trial": "runs/snake-eprop-1",
+  "selection": "median",
+  "episode_index": 15,
+  "episode_food_rank_of_40": 21,
+  "environment_seed": 9000115,
+  "food": 2,
+  "steps": 45,
+  "death": "wall",
+  "frames": 45,
+  "gif": true,
+  "resources": {
+    "rss_mb": 253.0625,
+    "free_disk_mb": 348466.90625,
+    "elapsed_seconds": 7.910116458020639
+  }
+}

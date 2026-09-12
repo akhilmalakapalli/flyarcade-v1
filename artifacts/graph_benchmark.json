@@ -17,13 +17,13 @@
   "attempted_swaps": 32768,
   "archive_bytes": 49727,
   "timings": {
-    "generate_seconds": 0.011509250005474314,
-    "rewire_seconds": 0.06821724999463186,
-    "save_load_seconds": 0.007868166983826086
+    "generate_seconds": 0.011853375006467104,
+    "rewire_seconds": 0.06835924999904819,
+    "save_load_seconds": 0.008450666005956009
   },
   "resources": {
-    "rss_mb": 52.859375,
-    "free_disk_mb": 348368.66015625,
-    "elapsed_seconds": 0.10864916699938476
+    "rss_mb": 53.34375,
+    "free_disk_mb": 348427.86328125,
+    "elapsed_seconds": 0.10644504200899974
   }
 }

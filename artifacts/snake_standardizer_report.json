@@ -1,0 +1,29 @@
+{
+  "rewired": {
+    "artifacts/snake_standardizer_rewired_0.json": {
+      "samples": 14436,
+      "mean_abs": 0.07647116525949027
+    },
+    "artifacts/snake_standardizer_rewired_1.json": {
+      "samples": 14436,
+      "mean_abs": 0.08426822755777051
+    },
+    "artifacts/snake_standardizer_rewired_2.json": {
+      "samples": 14436,
+      "mean_abs": 0.09085601605679024
+    }
+  },
+  "width": 1293,
+  "samples": 14436,
+  "channels": 21,
+  "seeds": "7,200,000 block, frozen core, fixed random and heuristic behaviour policies",
+  "mean_abs": 0.0929831341342442,
+  "scale_mean": 0.10445391183826949,
+  "scale_floor_hits": 81,
+  "gain": 0.02780998390775747,
+  "resources": {
+    "rss_mb": 248.375,
+    "free_disk_mb": 348368.94921875,
+    "elapsed_seconds": 95.04560808298993
+  }
+}

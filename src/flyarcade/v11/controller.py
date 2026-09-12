@@ -37,6 +37,10 @@ class V11Controller:
         core_weight_bound=2.0,
         background=0.18,
         stimulus=1.5,
+        encoder=None,
+        channels=8,
+        observation_width=3,
+        actions=3,
         **actor_kwargs,
     ):
         if stage not in STAGES:
@@ -46,6 +50,12 @@ class V11Controller:
         self.rng = np.random.default_rng(seed)
         self.background = float(background)
         self.stimulus = float(stimulus)
+        # Default encoder/width/action count reproduce the frozen catch-dodge setup
+        # exactly; Snake supplies its own encoder and a four-action decoder.
+        self.encoder = features if encoder is None else encoder
+        self.channels = int(channels)
+        self.observation_width = int(observation_width)
+        self.actions = int(actions)
         neurons = {n["bodyId"]: n for n in graph.provenance.get("neurons", [])}
         if not neurons:
             neurons = {n["bodyId"]: n for n in graph.provenance["parent"]["neurons"]}
@@ -88,10 +98,10 @@ class V11Controller:
         self.core_lr = float(core_lr)
         self.core_update_clip = float(core_update_clip)
         # Same fixed electrode assignment as v1; not a biological mapping.
-        self.input_channels = np.arange(len(self.inputs)) % 8
+        self.input_channels = np.arange(len(self.inputs)) % self.channels
         self.standardizer = standardizer
         width = len(self.outputs)
-        self.motor = ActorCritic(width, self.rng, **actor_kwargs)
+        self.motor = ActorCritic(width, self.rng, actions=self.actions, **actor_kwargs)
         if stage == "recurrent":
             self.feedback = np.random.default_rng(900 + seed).normal(0, 1, len(self.intrinsic))
         self.reset()
@@ -113,8 +123,8 @@ class V11Controller:
     def rates(self, observation, *, noise=0, edge_mask=None, neuron_mask=None, plastic=False):
         obs = np.asarray(observation, dtype=float)
         if noise:
-            obs = np.clip(obs + self.rng.normal(0, noise, 3), 0, 1)
-        f = features(obs)
+            obs = np.clip(obs + self.rng.normal(0, noise, len(obs)), 0, 1)
+        f = self.encoder(obs)
         counts = np.zeros(len(self.outputs))
         for _ in range(TICKS):
             drive = np.full(self.graph.n, self.background)

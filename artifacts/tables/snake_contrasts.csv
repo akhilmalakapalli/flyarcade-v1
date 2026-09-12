@@ -1,0 +1,4 @@
+contrast,mean,lo,hi,seed0,seed1,seed2
+eprop-minus-frozen-food,1.383,1.050,1.650,1.050,1.650,1.450
+eprop-minus-rewired-food,-0.450,-1.175,0.550,-0.725,0.550,-1.175
+eprop-minus-random-food,1.333,1.050,1.625,1.050,1.625,1.325

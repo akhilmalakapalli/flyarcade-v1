@@ -1,0 +1,127 @@
+{
+  "scope": "Cross-task comparison of confirmatory results only. Metrics differ by task, so comparisons use each task's own random and heuristic anchors.",
+  "tasks": {
+    "catch": {
+      "metric": "landing success",
+      "v1_after": 0.17500000000000002,
+      "v1_random": 0.19444444444444442,
+      "before": 0.20555555555555552,
+      "after": 0.6611111111111111,
+      "after_seeds": [
+        0.6333333333333332,
+        0.5916666666666667,
+        0.7583333333333333
+      ],
+      "random": 0.1972222222222222,
+      "heuristic": 1.0,
+      "rewired": 0.8166666666666668,
+      "frozen": 0.20555555555555552,
+      "state_dependence": 0.44166666666666665,
+      "training_episodes": 600,
+      "actions": 3,
+      "terminal_failure": false,
+      "normalised_after": 0.5778546712802768,
+      "normalised_rewired": 0.7716262975778548,
+      "topology_gap": -0.15555555555555567,
+      "normalised_topology_gap": -0.19377162629757805
+    },
+    "dodge": {
+      "metric": "landing success",
+      "v1_after": 0.7944444444444446,
+      "v1_random": 0.8055555555555555,
+      "before": 0.7944444444444444,
+      "after": 0.9263888888888889,
+      "after_seeds": [
+        0.9,
+        0.9166666666666667,
+        0.9625
+      ],
+      "random": 0.8027777777777777,
+      "heuristic": 1.0,
+      "rewired": 0.9375,
+      "frozen": 0.7944444444444444,
+      "state_dependence": 0.40173611111111107,
+      "training_episodes": 600,
+      "actions": 3,
+      "terminal_failure": false,
+      "normalised_after": 0.6267605633802821,
+      "normalised_rewired": 0.6830985915492959,
+      "topology_gap": -0.011111111111111072,
+      "normalised_topology_gap": -0.05633802816901379
+    },
+    "snake": {
+      "metric": "food eaten",
+      "v1_after": null,
+      "v1_random": null,
+      "before": 0.10000000000000002,
+      "after": 1.4833333333333334,
+      "after_seeds": [
+        1.15,
+        1.75,
+        1.55
+      ],
+      "random": 0.15,
+      "heuristic": 17.258333333333333,
+      "rewired": 1.9333333333333336,
+      "frozen": 0.10000000000000002,
+      "state_dependence": 0.7123210344912345,
+      "training_episodes": 4000,
+      "actions": 4,
+      "terminal_failure": true,
+      "normalised_after": 0.07793472966390648,
+      "normalised_rewired": 0.10423770092547492,
+      "topology_gap": -0.4500000000000002,
+      "normalised_topology_gap": -0.026302971261568442
+    }
+  },
+  "lesion_retained_fraction_of_learned_gain": {
+    "catch": {
+      "sensory_noise_0.1": 0.5508982035928144,
+      "edge_ablation_0.1": 0.904191616766467,
+      "neuron_ablation_0.1": 0.284431137724551
+    },
+    "dodge": {
+      "sensory_noise_0.1": 0.8988764044943816,
+      "edge_ablation_0.1": 0.9775280898876405,
+      "neuron_ablation_0.1": 1.1011235955056167
+    },
+    "snake": {
+      "sensory_noise_0.1": 0.8187499999999999,
+      "edge_ablation_0.1": 0.2,
+      "neuron_ablation_0.05": 0.21875000000000003,
+      "neuron_ablation_0.10": 0.11874999999999997,
+      "neuron_ablation_0.25": -0.0375
+    }
+  },
+  "final_firing_rate_by_task": {
+    "catch": {
+      "seeds": [
+        0.21648794934640522,
+        0.2168453839869281,
+        0.21665134803921568
+      ],
+      "mean": 0.21666156045751636
+    },
+    "dodge": {
+      "seeds": [
+        0.21795343137254902,
+        0.21708026960784313,
+        0.2170138888888889
+      ],
+      "mean": 0.21734919662309368
+    },
+    "snake": {
+      "seeds": [
+        0.20885381923456478,
+        0.20916815118408252,
+        0.20747584849176337
+      ],
+      "mean": 0.2084992729701369
+    }
+  },
+  "questions": {
+    "same_substrate_supports_all_three": true,
+    "topology_consistent_across_tasks": "biological never exceeds rewired on any task; the gap is negative on catch (-0.194) and snake (-0.026) and near zero on dodge (-0.056)",
+    "harder_task_more_lesion_sensitive": "snake retains 0.12 of its learned gain under 10% neuron ablation versus 0.28 for catch and 1.10 for dodge"
+  }
+}

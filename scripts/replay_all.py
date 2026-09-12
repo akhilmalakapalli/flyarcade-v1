@@ -1,18 +1,20 @@
 """Replay every completed trial in a separate guarded process and record verdicts."""
 
 import json
+import re
 import subprocess
 import sys
 from pathlib import Path
 
 
 def main():
-    # v1 trials only. v1.1 lives under runs/v11-* with a different checkpoint
-    # format and its own determinism check; this script verifies the frozen v1 grid.
+    # v1 trials only, matched positively by the v1 naming convention
+    # "<task>-<condition>-<seed>-<episodes>[-from-<source>]". Later studies (runs/v11-*
+    # and runs/snake-*) use different checkpoint formats and have their own
+    # determinism checks; this script verifies the frozen v1 grid.
+    pattern = re.compile(r"^(catch|dodge)-\w+-\d+-\d+(-from-(catch|dodge))?$")
     names = sorted(
-        p.parent.name
-        for p in Path("runs").glob("*/result.json")
-        if not p.parent.name.startswith("v11-")
+        p.parent.name for p in Path("runs").glob("*/result.json") if pattern.match(p.parent.name)
     )
     if not names:
         raise SystemExit("no completed trials found")

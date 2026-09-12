@@ -6,9 +6,9 @@
     "runs/dodge-learning-0-200"
   ],
   "resources": {
-    "rss_mb": 117.875,
-    "free_disk_mb": 348432.30078125,
-    "elapsed_seconds": 1.4395583749865182
+    "rss_mb": 115.21875,
+    "free_disk_mb": 348426.94140625,
+    "elapsed_seconds": 1.3971487499948125
   },
   "limitations": "Verifies implementation consistency, not physiological validity."
 }

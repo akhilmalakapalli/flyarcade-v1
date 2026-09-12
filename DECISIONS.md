@@ -162,3 +162,61 @@ ablation -0.044) and leave near-ceiling dodge unchanged. The same numbers mean
 opposite things depending on whether the policy uses its observations, which is
 itself recorded as a methodological finding rather than folded into a robustness
 claim.
+
+## D023 — Snake reuses the v1.1 architecture; four parameters are task-specific
+Snake preserves the MaleCNS subgraph, LIF dynamics, the reward-guided actor-critic
+rule, common-mode removal, sqrt(N) scaling, stage A scope, guards, deterministic
+seeding and greedy evaluation. Four parameters differ, each forced by a measured
+failure rather than chosen to improve a result. At the unchanged v1.1 settings Snake
+did not learn (development food 0.15 -> 0.10 after 300 episodes). Snake's mean
+absolute TD error is about 0.17 against 0.3-0.5 on the lane tasks, so identical
+learning rates produce far smaller updates; measured development food at actor_lr
+0.4 / 1.5 / 4.0 / 8.0 was 0.35 / 0.65 / 1.35 / 1.95. With TD errors that small the
+entropy term at 0.03 dominated the reward term and the policy never differentiated
+(entropy stuck at 1.22 of a 1.386 maximum), so it was lowered to 0.003. A 10 percent
+exploration floor is survivable in catch and dodge, which have no terminal failure
+state, but frequently fatal in Snake, so it was lowered to 0.02. Snake episodes begin
+at about five steps, so 600 episodes supply roughly a twentieth of the updates the
+lane tasks receive, and the budget was raised to 4,000. critic_lr, discount and
+trace_decay are unchanged. All four are recorded in experiments/snake_run_plan.json
+with their justifications.
+
+## D024 — Snake trials resume across processes instead of raising the guard
+Snake episodes lengthen as the policy improves, so a 4,000-episode budget cannot fit
+one 120-second guarded process. Rather than raise the limit, trials checkpoint at
+episode boundaries and exit asking to be resumed; the suite re-invokes them in a
+fresh independently guarded process, exactly as v1 handled resumable trials. A guard
+is never reset mid-operation to continue an oversized computation. A partial episode
+never overwrites a checkpoint.
+
+## D025 — an apparent Snake topology effect was a preprocessing artefact
+The first Snake confirmatory run standardised the rewired arm with the biological
+circuit's statistics. Under that mismatch the rewired arm appeared to fail outright
+(0.100 / 0.075 / 0.100 food, 5.0-7.0 steps), which would have supported the
+conclusion a connectome paper is most tempted to draw. Refitting the standardisation
+per graph by the identical frozen procedure raised the same arm to 1.875 / 1.200 /
+2.725 food. The entire apparent effect was readout calibration, not topology. The
+rewired arm was re-run and the artefact is reported in the manuscript rather than
+quietly corrected. Any future topology comparison must calibrate each graph by the
+same procedure applied to its own activity.
+
+When the plan file was extended with the per-graph standardiser path, the eprop and
+frozen arms were re-run so that every Snake trial shares one plan hash. Their results
+were verified field-by-field to be identical to the pre-rerun results; this was a
+provenance fix, not a re-roll.
+
+## D026 — no single topology conclusion is forced across tasks
+Biological topology never exceeded the degree-rewired control on any task, but only
+catch resolves the difference from zero (-0.156 [-0.325, -0.021]); dodge (-0.011) and
+Snake (-0.450 [-1.175, 0.550]) do not. The manuscript reports the consistent
+direction and explicitly declines to claim a uniform effect. The mechanism analysis
+(rewired participation ratio 54.5 vs 29.5, correlation 0.112 vs 0.152, probe 0.901 vs
+0.774) is offered as an explanation of the direction, not as proof of a general
+principle, and is bounded by the fact that the readout is an artificial linear
+decoder on a circuit missing 85 percent of its incoming weight.
+
+## D027 — the demonstration recording is the median episode, not the best
+scripts/snake_visualize.py defaults to replaying the median-performing evaluation
+episode and records its rank among the 40 in artifacts/snake_demo.json. Selecting the
+best episode for a demonstration figure would misrepresent typical behaviour even
+though the figure is not itself a result.
