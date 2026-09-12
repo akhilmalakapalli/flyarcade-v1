@@ -1,0 +1,26 @@
+{
+  "scope": "Post-hoc comparison of the descending representation on the biological and degree-preserving rewired graphs, frozen cores, matched uniform-random behaviour, seeds in the 4,300,000 development block.",
+  "graphs": {
+    "biological": {
+      "probe_accuracy": 0.7736111111111111,
+      "majority_class_rate": 0.4305555555555556,
+      "participation_ratio": 29.520083695996703,
+      "mean_pairwise_correlation": 0.15156481760968407,
+      "mean_rate_sd": 0.026056263847869403,
+      "samples": 1440
+    },
+    "rewired": {
+      "probe_accuracy": 0.9013888888888889,
+      "majority_class_rate": 0.4305555555555556,
+      "participation_ratio": 54.46756052464902,
+      "mean_pairwise_correlation": 0.11183700725511614,
+      "mean_rate_sd": 0.027305335740341583,
+      "samples": 1440
+    }
+  },
+  "resources": {
+    "rss_mb": 286.359375,
+    "free_disk_mb": 348427.6640625,
+    "elapsed_seconds": 8.72715866600629
+  }
+}

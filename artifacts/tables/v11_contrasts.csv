@@ -1,0 +1,7 @@
+contrast,mean,lo,hi,seed0,seed1,seed2
+catch/eprop-minus-frozen,0.4556,0.3875,0.5667,0.4125,0.3875,0.5667
+catch/eprop-minus-rewired,-0.1556,-0.3250,-0.0208,-0.3250,-0.1208,-0.0208
+catch/eprop-minus-random,0.4639,0.4083,0.5625,0.4208,0.4083,0.5625
+dodge/eprop-minus-frozen,0.1319,0.1208,0.1542,0.1208,0.1208,0.1542
+dodge/eprop-minus-rewired,-0.0111,-0.0792,0.0708,-0.0792,-0.0250,0.0708
+dodge/eprop-minus-random,0.1236,0.1000,0.1583,0.1125,0.1000,0.1583

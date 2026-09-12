@@ -1,5 +1,28 @@
 # Changelog
 
+## 0.3.0 — v1.1 credit-assignment rebuild, branch flyarcade-v1.1-learning
+- Add `src/flyarcade/v11/`: actor-critic e-prop three-factor learning over the
+  unchanged MaleCNS topology. Local eligibility traces, a learned critic, TD error,
+  neuron-specific learning signals, separate actor/critic rates, entropy
+  regularisation, an exploration floor, bounded weights and clipped updates.
+- Verify the frozen v1.1 core reproduces v1's LIF spike trains bit-for-bit.
+- Diagnose and fix two conditioning failures: descending common mode and readout
+  scaling over 1,293 features. Both are frozen preprocessing, not tuned parameters.
+- Add a bounded coordinate-wise development search on new seed blocks, with
+  rejection criteria applied before any performance comparison, and a combined
+  validation on five development seeds including two the sweeps never used.
+- Freeze `experiments/v11_run_plan.json` with a success criterion stated in advance.
+- Confirmatory positive result on untouched seeds: catch 0.206 -> 0.661 vs 0.197
+  random; dodge 0.794 -> 0.926 vs 0.803. 3/3 seeds on both; policy stays
+  state-dependent. Stage A alone sufficed; the recurrent core stayed frozen.
+- Topology comparison came out against the biological graph: rewired beat biological
+  on catch (0.817 vs 0.661) and tied on dodge. Post-hoc analysis attributes it to a
+  higher-dimensional, less correlated descending code in the rewired circuit.
+- Repeat lesions now that a state-dependent policy exists; catch degrades to 0.329
+  under 10% neuron ablation, in contrast to v1 where nothing changed.
+- Add tests/test_v11.py including a v1/v1.1 seed-disjointness assertion.
+- v1 (commit ec27ad0) is preserved unchanged as the negative baseline.
+
 ## 0.2.0 — v1 complete with a negative primary result, 2026-09-12
 - Finish the frozen 36-trial grid: 2 tasks x 4 conditions x 3 seeds, plus
   100-episode and both transfer directions. All controls, sensory-noise robustness

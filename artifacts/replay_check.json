@@ -2,8 +2,8 @@
   "trials_replayed": 36,
   "all_match": true,
   "scope": "Bit-identical replay of held-out, sensory-noise and ablation evaluations from each saved final checkpoint. Pre-training evaluations predate the surviving checkpoint and are not replayed.",
-  "max_replay_seconds": 5.789724542002659,
-  "max_rss_snapshot_mb": 146.8125,
+  "max_replay_seconds": 5.9522980409965385,
+  "max_rss_snapshot_mb": 156.921875,
   "verdicts": [
     {
       "trial": "catch-frozen-0-200",
@@ -17,9 +17,9 @@
       "mismatches": [],
       "status": "MATCH",
       "resources": {
-        "rss_mb": 118.609375,
-        "free_disk_mb": 349493.7109375,
-        "elapsed_seconds": 2.8226025409821887
+        "rss_mb": 114.0,
+        "free_disk_mb": 348430.9140625,
+        "elapsed_seconds": 2.8366959169798065
       }
     },
     {
@@ -34,9 +34,9 @@
       "mismatches": [],
       "status": "MATCH",
       "resources": {
-        "rss_mb": 126.671875,
-        "free_disk_mb": 349493.67578125,
-        "elapsed_seconds": 2.85828774998663
+        "rss_mb": 125.84375,
+        "free_disk_mb": 348430.98828125,
+        "elapsed_seconds": 2.875409041007515
       }
     },
     {
@@ -51,9 +51,9 @@
       "mismatches": [],
       "status": "MATCH",
       "resources": {
-        "rss_mb": 115.875,
-        "free_disk_mb": 349493.671875,
-        "elapsed_seconds": 2.8447520839981735
+        "rss_mb": 134.859375,
+        "free_disk_mb": 348431.0703125,
+        "elapsed_seconds": 2.8767231249948964
       }
     },
     {
@@ -68,9 +68,9 @@
       "mismatches": [],
       "status": "MATCH",
       "resources": {
-        "rss_mb": 112.90625,
-        "free_disk_mb": 349493.6484375,
-        "elapsed_seconds": 2.8786358750076033
+        "rss_mb": 118.78125,
+        "free_disk_mb": 348430.57421875,
+        "elapsed_seconds": 2.8992145830125082
       }
     },
     {
@@ -85,9 +85,9 @@
       "mismatches": [],
       "status": "MATCH",
       "resources": {
-        "rss_mb": 111.15625,
-        "free_disk_mb": 349493.63671875,
-        "elapsed_seconds": 2.817403416003799
+        "rss_mb": 119.46875,
+        "free_disk_mb": 348430.875,
+        "elapsed_seconds": 2.886122624971904
       }
     },
     {
@@ -102,9 +102,9 @@
       "mismatches": [],
       "status": "MATCH",
       "resources": {
-        "rss_mb": 112.09375,
-        "free_disk_mb": 349493.578125,
-        "elapsed_seconds": 2.829771874996368
+        "rss_mb": 114.640625,
+        "free_disk_mb": 348429.76171875,
+        "elapsed_seconds": 2.8613672500068787
       }
     },
     {
@@ -119,9 +119,9 @@
       "mismatches": [],
       "status": "MATCH",
       "resources": {
-        "rss_mb": 113.84375,
-        "free_disk_mb": 349493.5,
-        "elapsed_seconds": 2.7614239169924986
+        "rss_mb": 74.171875,
+        "free_disk_mb": 348429.55859375,
+        "elapsed_seconds": 2.9846174160193186
       }
     },
     {
@@ -136,9 +136,9 @@
       "mismatches": [],
       "status": "MATCH",
       "resources": {
-        "rss_mb": 114.859375,
-        "free_disk_mb": 349493.515625,
-        "elapsed_seconds": 2.835518875013804
+        "rss_mb": 114.09375,
+        "free_disk_mb": 348429.7109375,
+        "elapsed_seconds": 2.884637167007895
       }
     },
     {
@@ -153,9 +153,9 @@
       "mismatches": [],
       "status": "MATCH",
       "resources": {
-        "rss_mb": 115.03125,
-        "free_disk_mb": 349493.50390625,
-        "elapsed_seconds": 2.837294709024718
+        "rss_mb": 112.359375,
+        "free_disk_mb": 348429.59765625,
+        "elapsed_seconds": 2.8694297909969464
       }
     },
     {
@@ -170,9 +170,9 @@
       "mismatches": [],
       "status": "MATCH",
       "resources": {
-        "rss_mb": 115.015625,
-        "free_disk_mb": 349493.50390625,
-        "elapsed_seconds": 2.8514837499824353
+        "rss_mb": 113.453125,
+        "free_disk_mb": 348429.53125,
+        "elapsed_seconds": 2.7958778330066707
       }
     },
     {
@@ -187,9 +187,9 @@
       "mismatches": [],
       "status": "MATCH",
       "resources": {
-        "rss_mb": 113.453125,
-        "free_disk_mb": 349493.484375,
-        "elapsed_seconds": 2.8370030829973985
+        "rss_mb": 126.984375,
+        "free_disk_mb": 348430.390625,
+        "elapsed_seconds": 3.0069542920100503
       }
     },
     {
@@ -204,9 +204,9 @@
       "mismatches": [],
       "status": "MATCH",
       "resources": {
-        "rss_mb": 114.671875,
-        "free_disk_mb": 349493.4453125,
-        "elapsed_seconds": 2.826608292001765
+        "rss_mb": 111.8125,
+        "free_disk_mb": 348430.390625,
+        "elapsed_seconds": 2.883471749984892
       }
     },
     {
@@ -221,9 +221,9 @@
       "mismatches": [],
       "status": "MATCH",
       "resources": {
-        "rss_mb": 114.765625,
-        "free_disk_mb": 349493.4453125,
-        "elapsed_seconds": 2.8213680000044405
+        "rss_mb": 121.578125,
+        "free_disk_mb": 348430.40625,
+        "elapsed_seconds": 2.8504537499975413
       }
     },
     {
@@ -238,9 +238,9 @@
       "mismatches": [],
       "status": "MATCH",
       "resources": {
-        "rss_mb": 116.4375,
-        "free_disk_mb": 349493.7421875,
-        "elapsed_seconds": 2.8341120000113733
+        "rss_mb": 121.3125,
+        "free_disk_mb": 348427.53125,
+        "elapsed_seconds": 2.91329525000765
       }
     },
     {
@@ -255,9 +255,9 @@
       "mismatches": [],
       "status": "MATCH",
       "resources": {
-        "rss_mb": 113.4375,
-        "free_disk_mb": 349493.66796875,
-        "elapsed_seconds": 2.830122333019972
+        "rss_mb": 113.9375,
+        "free_disk_mb": 348427.44140625,
+        "elapsed_seconds": 2.8632887090207078
       }
     },
     {
@@ -272,9 +272,9 @@
       "mismatches": [],
       "status": "MATCH",
       "resources": {
-        "rss_mb": 142.125,
-        "free_disk_mb": 349493.59765625,
-        "elapsed_seconds": 5.6528860419930425
+        "rss_mb": 151.0625,
+        "free_disk_mb": 348427.51171875,
+        "elapsed_seconds": 5.935499375016661
       }
     },
     {
@@ -289,9 +289,9 @@
       "mismatches": [],
       "status": "MATCH",
       "resources": {
-        "rss_mb": 144.65625,
-        "free_disk_mb": 349491.56640625,
-        "elapsed_seconds": 5.676779541012365
+        "rss_mb": 140.9375,
+        "free_disk_mb": 348426.54296875,
+        "elapsed_seconds": 5.9522980409965385
       }
     },
     {
@@ -306,9 +306,9 @@
       "mismatches": [],
       "status": "MATCH",
       "resources": {
-        "rss_mb": 141.265625,
-        "free_disk_mb": 349491.46875,
-        "elapsed_seconds": 5.727270041999873
+        "rss_mb": 151.796875,
+        "free_disk_mb": 348426.44921875,
+        "elapsed_seconds": 5.948863625002559
       }
     },
     {
@@ -323,9 +323,9 @@
       "mismatches": [],
       "status": "MATCH",
       "resources": {
-        "rss_mb": 114.21875,
-        "free_disk_mb": 349491.5,
-        "elapsed_seconds": 2.77564683300443
+        "rss_mb": 118.5625,
+        "free_disk_mb": 348426.41796875,
+        "elapsed_seconds": 2.8591842919995543
       }
     },
     {
@@ -340,9 +340,9 @@
       "mismatches": [],
       "status": "MATCH",
       "resources": {
-        "rss_mb": 112.09375,
-        "free_disk_mb": 349491.52734375,
-        "elapsed_seconds": 2.848207083006855
+        "rss_mb": 131.234375,
+        "free_disk_mb": 348425.3984375,
+        "elapsed_seconds": 2.929288749990519
       }
     },
     {
@@ -357,9 +357,9 @@
       "mismatches": [],
       "status": "MATCH",
       "resources": {
-        "rss_mb": 114.828125,
-        "free_disk_mb": 349491.5078125,
-        "elapsed_seconds": 2.794850292004412
+        "rss_mb": 114.609375,
+        "free_disk_mb": 348425.3828125,
+        "elapsed_seconds": 2.80695649998961
       }
     },
     {
@@ -374,9 +374,9 @@
       "mismatches": [],
       "status": "MATCH",
       "resources": {
-        "rss_mb": 115.015625,
-        "free_disk_mb": 349491.359375,
-        "elapsed_seconds": 2.8801819999935105
+        "rss_mb": 129.015625,
+        "free_disk_mb": 348425.3671875,
+        "elapsed_seconds": 2.894333958014613
       }
     },
     {
@@ -391,9 +391,9 @@
       "mismatches": [],
       "status": "MATCH",
       "resources": {
-        "rss_mb": 114.765625,
-        "free_disk_mb": 349491.3515625,
-        "elapsed_seconds": 2.8049097080074716
+        "rss_mb": 119.21875,
+        "free_disk_mb": 348425.0859375,
+        "elapsed_seconds": 2.9211466669803485
       }
     },
     {
@@ -408,9 +408,9 @@
       "mismatches": [],
       "status": "MATCH",
       "resources": {
-        "rss_mb": 112.734375,
-        "free_disk_mb": 349491.328125,
-        "elapsed_seconds": 2.8347207499900833
+        "rss_mb": 113.796875,
+        "free_disk_mb": 348425.06640625,
+        "elapsed_seconds": 2.8968550419958774
       }
     },
     {
@@ -425,9 +425,9 @@
       "mismatches": [],
       "status": "MATCH",
       "resources": {
-        "rss_mb": 115.390625,
-        "free_disk_mb": 349491.3203125,
-        "elapsed_seconds": 2.8245691249903757
+        "rss_mb": 113.765625,
+        "free_disk_mb": 348425.078125,
+        "elapsed_seconds": 2.867122209019726
       }
     },
     {
@@ -442,9 +442,9 @@
       "mismatches": [],
       "status": "MATCH",
       "resources": {
-        "rss_mb": 118.953125,
-        "free_disk_mb": 349491.26171875,
-        "elapsed_seconds": 2.8517275000049267
+        "rss_mb": 129.390625,
+        "free_disk_mb": 348424.98828125,
+        "elapsed_seconds": 2.8800559169903863
       }
     },
     {
@@ -459,9 +459,9 @@
       "mismatches": [],
       "status": "MATCH",
       "resources": {
-        "rss_mb": 117.03125,
-        "free_disk_mb": 349491.265625,
-        "elapsed_seconds": 2.8211581670038868
+        "rss_mb": 112.96875,
+        "free_disk_mb": 348425.015625,
+        "elapsed_seconds": 2.8153192089812364
       }
     },
     {
@@ -476,9 +476,9 @@
       "mismatches": [],
       "status": "MATCH",
       "resources": {
-        "rss_mb": 112.984375,
-        "free_disk_mb": 349491.16015625,
-        "elapsed_seconds": 2.888295000011567
+        "rss_mb": 112.9375,
+        "free_disk_mb": 348424.0859375,
+        "elapsed_seconds": 2.873102666984778
       }
     },
     {
@@ -493,9 +493,9 @@
       "mismatches": [],
       "status": "MATCH",
       "resources": {
-        "rss_mb": 112.15625,
-        "free_disk_mb": 349491.1953125,
-        "elapsed_seconds": 2.829142792004859
+        "rss_mb": 113.09375,
+        "free_disk_mb": 348424.078125,
+        "elapsed_seconds": 2.872524375008652
       }
     },
     {
@@ -510,9 +510,9 @@
       "mismatches": [],
       "status": "MATCH",
       "resources": {
-        "rss_mb": 111.609375,
-        "free_disk_mb": 349491.16796875,
-        "elapsed_seconds": 2.841509624995524
+        "rss_mb": 113.71875,
+        "free_disk_mb": 348424.078125,
+        "elapsed_seconds": 2.8670767079747748
       }
     },
     {
@@ -527,9 +527,9 @@
       "mismatches": [],
       "status": "MATCH",
       "resources": {
-        "rss_mb": 112.625,
-        "free_disk_mb": 349491.16796875,
-        "elapsed_seconds": 2.7685839159821626
+        "rss_mb": 121.65625,
+        "free_disk_mb": 348422.98828125,
+        "elapsed_seconds": 2.8718384160019923
       }
     },
     {
@@ -544,9 +544,9 @@
       "mismatches": [],
       "status": "MATCH",
       "resources": {
-        "rss_mb": 113.0625,
-        "free_disk_mb": 349491.15234375,
-        "elapsed_seconds": 2.771675875002984
+        "rss_mb": 115.015625,
+        "free_disk_mb": 348423.015625,
+        "elapsed_seconds": 2.9135611669917125
       }
     },
     {
@@ -561,9 +561,9 @@
       "mismatches": [],
       "status": "MATCH",
       "resources": {
-        "rss_mb": 113.546875,
-        "free_disk_mb": 349490.046875,
-        "elapsed_seconds": 2.805337083991617
+        "rss_mb": 113.3125,
+        "free_disk_mb": 348423.0859375,
+        "elapsed_seconds": 2.8596837499935646
       }
     },
     {
@@ -578,9 +578,9 @@
       "mismatches": [],
       "status": "MATCH",
       "resources": {
-        "rss_mb": 142.71875,
-        "free_disk_mb": 349490.09375,
-        "elapsed_seconds": 5.742978583992226
+        "rss_mb": 156.921875,
+        "free_disk_mb": 348422.87890625,
+        "elapsed_seconds": 5.90592024999205
       }
     },
     {
@@ -595,9 +595,9 @@
       "mismatches": [],
       "status": "MATCH",
       "resources": {
-        "rss_mb": 146.8125,
-        "free_disk_mb": 349490.0546875,
-        "elapsed_seconds": 5.705509124993114
+        "rss_mb": 150.234375,
+        "free_disk_mb": 348422.85546875,
+        "elapsed_seconds": 5.90633358299965
       }
     },
     {
@@ -612,9 +612,9 @@
       "mismatches": [],
       "status": "MATCH",
       "resources": {
-        "rss_mb": 142.84375,
-        "free_disk_mb": 349490.05078125,
-        "elapsed_seconds": 5.789724542002659
+        "rss_mb": 142.671875,
+        "free_disk_mb": 348422.91796875,
+        "elapsed_seconds": 5.9028114170068875
       }
     }
   ]

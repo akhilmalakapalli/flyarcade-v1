@@ -1,99 +1,96 @@
-# Handoff — v1 complete, primary result negative
+# Handoff — branch `flyarcade-v1.1-learning`
 
-**All milestones are finished.** MaleCNS v1.0 acquisition, the spiking controller,
-both games, the frozen 36-trial grid, all controls, ablations, robustness, transfer,
-full-grid replay verification, figures, CSV tables and the manuscript are done.
-There is no open milestone, no blocker, and no background process, download or
-training job running. **Do not edit README.md.** Do not raise any resource limit.
+**v1 is frozen at commit `ec27ad0` and must not be altered, rewritten or
+reinterpreted.** It remains the negative baseline. v1.1 changes the learning rule
+only and has a confirmatory positive result. Do not edit README.md. Do not raise any
+resource limit. No background process, download or training job is running.
 
 ## Read first
-`FLYARCADE_MASTER.md`, `STATE.md`, `DECISIONS.md` (now through D017),
-`experiments/METHODS.md`, `experiments/PROTOCOL.md`, `experiments/DATA.md`,
-`games/TASKS.md`, then `paper/manuscript.md`. Do not restart completed work and do
-not re-run acquisition; the graph and its response manifest are already validated.
+`FLYARCADE_MASTER.md`, `STATE.md`, `DECISIONS.md` (now through D022),
+`experiments/METHODS.md`, `experiments/v11_run_plan.json`, then `paper/manuscript.md`
+(Part I is v1, Part II is v1.1).
 
-## The result, stated plainly
-Reward-modulated plasticity produced **no held-out improvement** on either task, in
-any of the four conditions, on any of the three seeds. Mean paired held-out change:
-catch -0.0139 [-0.100, 0.108], dodge -0.0167 [-0.058, 0.025]. No trained condition
-beat the uniform-random policy (catch 0.175 vs 0.194; dodge 0.794 vs 0.806). The
-deterministic heuristic scores 1.000, so the tasks are solvable.
+## What v1.1 did
+Replaced v1's global reward-modulated STDP with an actor-critic e-prop three-factor
+rule over the **same** MaleCNS topology, circuit, LIF dynamics, sign rule, sensory
+encoding, tasks and reward. `tests/test_v11.py` asserts a frozen v1.1 core
+reproduces v1's spike trains bit-for-bit, so behavioural differences are
+attributable to credit assignment, not dynamics.
 
-**This negative result is preserved deliberately. Do not retune anything to make it
-positive.** Held-out results were frozen against retuning by the preregistration in
-`experiments/run_plan.json`, and nothing was changed in response to them.
+Two conditioning repairs were necessary and are frozen preprocessing, not tuned
+parameters: removing the descending population's state-independent common mode, and
+dividing standardised features by sqrt(1293) so learning rates are not effectively
+a thousand times too large.
 
-The mechanism is identified, not hand-waved: the policy collapses to a
-near-constant action (entropy 1.098 -> 0.361 catch / 0.128 dodge nats; most likely
-action reaching p=0.90 and 0.98) while the descending population continues to carry
-linearly decodable task information (probe 0.654 -> 0.658/0.713 against a 0.421
-majority rate). Constant-action reference policies score catch 0.13-0.23 and dodge
-0.77-0.87, which brackets the trained controllers entirely. The failure is credit
-assignment and lost exploration, not the connectome-derived front end.
+## Confirmatory result (seeds never used for tuning)
+| Task | Before | After | Random | Over random | Seeds |
+|---|---|---|---|---|---|
+| catch | 0.206 | **0.661** | 0.197 | **+0.464** [0.408, 0.563] | 3/3 |
+| dodge | 0.794 | **0.926** | 0.803 | **+0.124** [0.100, 0.158] | 3/3 |
 
-Perturbation insensitivity (all changes <=0.006) is reported as **degeneracy, not
-robustness** — a policy that ignores observations cannot be degraded by ablating
-them. The +0.025 transfer differences are reported as noise, since no arm learned a
-source task to transfer from.
+All three preregistered success criteria met. Policy stays state-dependent (0.44 /
+0.40); the frozen arm reproduced its initial score exactly. **Stage A only** — the
+recurrent MaleCNS core stayed entirely frozen, so per the protocol the search
+stopped at the simplest model that genuinely learns. Stages B and C are implemented
+and unit-tested but unused and support no claim.
 
-## What exists now
-- `artifacts/results_summary.json`, `trial_metrics.json` — seed-level aggregates.
-- `artifacts/tables/*.csv` — 8 manuscript tables (primary, contrasts, robustness,
-  transfer, trial index, diagnostics, constant-action reference, connectome).
-- `artifacts/*.png` and `*.svg` — learning_curves, heldout_results, robustness,
-  transfer, policy_collapse, connectome.
-- `artifacts/replay_check.json` — 36/36 trials, 144 evaluation sets, bit-identical.
-- `artifacts/scientific_audit.json` — PASS, 36 result files hash-verified.
-- `artifacts/diagnostics_catch.json`, `diagnostics_dodge.json` — mechanism analysis.
-- `paper/manuscript.md` — full study written around the measured outcome.
-- New code: `scripts/replay_trial.py`, `scripts/replay_all.py`,
-  `scripts/diagnostics.py`, `scripts/export_tables.py`, `tests/test_analysis.py`.
+## The topology result went against the biological graph
+With identical rule, budget, neuron count, readout and per-graph standardisation:
 
-## Verification and reproduction
+- catch: e-prop − rewired = **-0.156** [-0.325, -0.021], rewired better on 3/3 seeds.
+- dodge: e-prop − rewired = -0.011 [-0.079, 0.071], indistinguishable.
+
+Post-hoc explanation (`artifacts/v11_topology_diagnostic.json`): the rewired
+descending code has participation ratio 54.5 vs 29.5, mean absolute pairwise
+correlation 0.112 vs 0.152, and linear probe accuracy 0.901 vs 0.774. Decorrelation
+gives a linear readout more independent directions.
+
+**Report this in the direction it came out.** It is not a claim that the biology is
+worse: the readout is an artificial linear decoder on a circuit missing 85% of its
+incoming synaptic weight, and correlated structure may serve functions this task
+cannot measure. Do not re-run or reframe it to soften the direction.
+
+## Lesions
+Repeated only once state-dependent learning existed. catch: 0.661 unperturbed →
+0.453 sensory noise → 0.617 edge ablation → **0.329** neuron ablation. dodge is
+near-ceiling and unaffected. **Do not call perturbation insensitivity robustness**;
+v1 showed the same lesions on a collapsed policy meaning the opposite thing.
+
+## Verification
 
 ```sh
-sh scripts/verify.sh                               # health, lint, format, 60 tests, benchmark
-.venv/bin/python -m pip check
-.venv/bin/python scripts/summarize_results.py      # seed aggregation + 2 figures
-.venv/bin/python scripts/export_tables.py          # 8 CSVs + 3 figures
-.venv/bin/python scripts/replay_all.py             # ~2 min, 36 subprocess replays
-.venv/bin/python scripts/scientific_audit.py
-.venv/bin/python scripts/diagnostics.py --task catch
-.venv/bin/python scripts/diagnostics.py --task dodge
-shasum -a 256 README.md                            # must stay a4657288...caaa7769
-git status --short
+sh scripts/verify.sh                                   # 68 tests, lint, format, health
+.venv/bin/python scripts/replay_all.py                 # v1 only: must report 36/36 MATCH
+.venv/bin/python scripts/scientific_audit.py           # v1: must report PASS
+.venv/bin/python scripts/v11_fit_features.py           # refits the frozen standardiser
+.venv/bin/python scripts/v11_run_suite.py              # skips existing results
+.venv/bin/python scripts/v11_summarize.py              # tables + 3 figures
+.venv/bin/python scripts/v11_topology_diagnostic.py
+shasum -a 256 README.md                                # must stay a4657288...caaa7769
 ```
 
-Every script is deterministic and rereads only committed artifacts and `runs/`.
-Re-running them overwrites artifacts with identical content. `scripts/run_suite.py`
-skips any trial whose `result.json` exists, so it is safe but unnecessary to run.
+v1.1 determinism was demonstrated by deleting `runs/v11-*` and re-running the whole
+suite: every confirmatory number reproduced exactly. `replay_all.py` is scoped to v1
+trials because v1.1 checkpoints use a different format.
 
 ## Resource posture
-All 36 trials ran under the unchanged guards: 4,096 neurons, 250,000 edges, 2 GiB
-RSS, >=1 GiB free disk, 120 s per trial, 128 MiB cumulative API payload, 32 MiB
-expanded NPZ. Peak observed: 28.7 s and 183 MiB for a single trial; 632 s total
-sequential. Replays run one subprocess per trial precisely so the per-trial guard
-still applies. **No limit was raised at any point, including to finish runs.**
-Guards are cooperative, not OS-level isolation.
+Unchanged guards throughout: 4,096 neurons, 250,000 edges, 2 GiB RSS, 120 s per
+independently guarded trial. v1.1 confirmatory trials peak at ~34 s; development
+trials at ~22 s. **No limit was raised at any point.** Background runs are
+descheduled by the host, so wall-clock far exceeds guarded CPU time; trust the
+guard-measured `elapsed_seconds` in each artifact, not wall-clock.
 
-## If you continue this work
-Legitimate next steps, all of which require a **new preregistration** rather than
-edits to the frozen v1 protocol:
-
-1. Exploration-preserving variants — entropy regularisation, a temperature floor,
-   or a readout that cannot saturate — to test whether the demonstrably available
-   descending signal becomes usable. This is the single most promising direction,
-   because v1 shows the signal is there and the rule discards it.
-2. Sparse terminal-only reward, to test whether dense shaping drives the collapse.
-3. A larger seed count, since three seeds support descriptive intervals only.
-4. A boundary-drive model better than a uniform 0.18 background current, given that
-   85% of incoming synaptic weight is missing.
-
-Do not present any of these as v1 results, and do not fold them into the existing
-manuscript's preregistered claims.
+## If you continue
+1. Stage B/C are implemented but untested in a confirmatory setting. Enabling
+   recurrent plasticity would need a **new** preregistration, not edits to
+   `experiments/v11_run_plan.json`.
+2. The topology finding deserves a dedicated study: vary the rewiring null model
+   (preserve incoming strength too, preserve clustering) to isolate which graph
+   property costs effective dimensionality.
+3. More seeds. Three support descriptive intervals only.
+4. A nonlinear readout would test whether the biological code's lower linear
+   dimensionality is a real capacity limit or an artefact of linear decoding.
 
 ## Working tree
-Still no commit; the repository remains at 05b0ee7 with only README tracked.
-Everything else is untracked and reviewable. `data/`, `runs/`, `cache/` and `.venv`
-are ignored; `.secrets/` is ignored and must never be staged. LICENSE still
-reserves rights pending the owner's choice.
+Branch `flyarcade-v1.1-learning` off `ec27ad0`. `data/`, `runs/`, `cache/`, `.venv`
+ignored; `.secrets/` ignored and never staged. LICENSE still reserves rights.

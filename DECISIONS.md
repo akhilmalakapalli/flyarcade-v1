@@ -89,3 +89,76 @@ observations cannot be degraded by ablating them. The +0.025 transfer difference
 are reported as noise because no arm learned a source task to transfer from.
 Figures use the documented validated categorical palette slots 1-4 in fixed order
 with direct value labels.
+
+## D018 — v1.1 changes the learning rule only, on a branch
+Branch `flyarcade-v1.1-learning` from the frozen v1 commit ec27ad0. v1 is never
+altered, rewritten or reinterpreted. v1.1 code lives in `src/flyarcade/v11/` and
+reuses the v1 connectome, graph, LIF membrane equations, transmitter sign rule,
+sensory encoding, tasks and reward function unchanged. `tests/test_v11.py` asserts
+that a frozen `EpropCore` reproduces v1's `LIF` spike trains bit-for-bit, so any
+behavioural difference is attributable to credit assignment and not to dynamics.
+Adding files under `src/` changes the `model_code_sha256` that v1's `run_trial.py`
+computes, so a *future* re-run of v1 from scratch would record a different code
+hash. The frozen v1 artifacts keep the original hash, and v1's verification path
+(`replay_all.py`, `scientific_audit.py`) restores checkpoints and re-evaluates
+rather than recomputing that hash, so v1 remains verifiable on this branch.
+
+## D019 — two conditioning repairs were necessary, and are preprocessing not tuning
+Development exposed two failures that no hyperparameter could fix. First, the
+descending population carries a large state-independent common mode (mean absolute
+per-neuron mean 0.091 against a per-neuron sd of 0.109), which lets a
+state-independent direction dominate the policy gradient — the exact mechanism of
+v1's collapse. Second, with 1,293 features `||phi||^2` is of order 1,293, making
+every learning rate about a thousand times larger than it appears: the first
+development run saturated the critic inside one episode (|delta| pinned at its clip
+of 10) and drove entropy to 0.055 nats before episode two. Both are fixed by a
+frozen preprocessing step — per-neuron standardisation estimated once on
+development rollouts of the frozen core under a uniform-random behaviour policy,
+divided by sqrt(width). These are fixed constants of the readout, not searched
+parameters, and the statistics are never re-estimated from confirmatory data.
+
+## D020 — staged strategy stopped at stage A; tie broken on anti-collapse margin
+Stage A (recurrent core entirely frozen, only the actor-critic plastic) learned on
+development seeds, so per the protocol's "prefer the simplest model that genuinely
+learns" the search stopped there. Stages B (79,275 synapses onto descending
+neurons) and C (additionally 123,434 including central-complex intrinsic) are
+implemented and unit-tested but were not needed and support no claim.
+
+The search was coordinate-wise rather than a full grid, which is unaffordable on
+CPU; every configuration including rejected ones is recorded in
+`artifacts/v11_development/`. Rejection criteria were applied before any
+performance comparison. Because coordinate optima need not compose, the combined
+configuration was re-validated on five development seeds, two of which the sweeps
+never used, and compared head to head with the runner-up. The two tied on
+performance (0.736 vs 0.741 averaged over both tasks). The tie was broken on a
+pre-specified criterion rather than on score: the chosen configuration keeps far
+more state-dependence on dodge (0.30 vs 0.12, against a 0.05 rejection threshold)
+and higher entropy (0.90 vs 0.51). Preventing collapse is the point of v1.1, so the
+larger anti-collapse margin wins.
+
+## D021 — the topology result came out against the biological graph, and is reported that way
+With an identical rule, budget, neuron count, readout and per-graph standardisation,
+the degree-preserving rewired control learned catch *better* than the biological
+graph (0.817 vs 0.661; paired difference -0.156, interval [-0.325, -0.021], all
+three seeds) and was indistinguishable on dodge. The rewired arm is standardised
+against its own rates; reusing the biological statistics would have given the
+biological arm a calibrated readout and the control an uncalibrated one, which
+would have manufactured the opposite conclusion.
+
+A post-hoc analysis explains the direction: the rewired descending code has a
+participation ratio of 54.5 against 29.5, lower mean absolute pairwise correlation
+(0.112 vs 0.152), and higher linear probe accuracy (0.901 vs 0.774). Decorrelation
+gives a linear readout more independent directions. This is not a claim that the
+biology is worse: the readout is an artificial linear decoder on a circuit missing
+85% of its incoming synaptic weight, and correlated population structure may serve
+functions this task cannot measure. No result was reframed or re-run to soften the
+direction it came out.
+
+## D022 — lesions repeated only after state-dependent learning existed
+v1 reported perturbation insensitivity and refused to call it robustness. v1.1
+repeats the identical lesions against a genuinely state-dependent policy, where they
+degrade catch substantially (neuron ablation -0.332, sensory noise -0.208, edge
+ablation -0.044) and leave near-ceiling dodge unchanged. The same numbers mean
+opposite things depending on whether the policy uses its observations, which is
+itself recorded as a methodological finding rather than folded into a robustness
+claim.

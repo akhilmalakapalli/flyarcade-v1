@@ -1,0 +1,664 @@
+{
+  "trial_count": 18,
+  "plan_sha256": "0c79b867fecc5ad88c2f657ac09a4896ddb8a1444b35493749e2c247988dbf52",
+  "v11_code_sha256": "4f8085bd2d05ad205d2bb9906458f613d7aef0424e4b8d51a85c8bdad9367403",
+  "stage": "readout",
+  "hyperparameters": {
+    "actor_lr": 0.4,
+    "critic_lr": 0.2,
+    "discount": 0.9,
+    "trace_decay": 0.7,
+    "entropy_coefficient": 0.03,
+    "exploration_floor": 0.1
+  },
+  "evaluation": "greedy policy mode on confirmatory seeds never used for tuning",
+  "scope": "exploratory-to-confirmatory pilot; bootstrap resamples training seeds",
+  "primary": {
+    "catch/eprop": {
+      "before": {
+        "mean": 0.20555555555555552,
+        "seed_values": [
+          0.2208333333333333,
+          0.20416666666666666,
+          0.19166666666666665
+        ],
+        "descriptive_bootstrap_95": [
+          0.19166666666666665,
+          0.2208333333333333
+        ]
+      },
+      "after": {
+        "mean": 0.6611111111111111,
+        "seed_values": [
+          0.6333333333333332,
+          0.5916666666666667,
+          0.7583333333333333
+        ],
+        "descriptive_bootstrap_95": [
+          0.5916666666666667,
+          0.7583333333333333
+        ]
+      },
+      "random": {
+        "mean": 0.1972222222222222,
+        "seed_values": [
+          0.2125,
+          0.1833333333333333,
+          0.1958333333333333
+        ],
+        "descriptive_bootstrap_95": [
+          0.18333333333333326,
+          0.2125
+        ]
+      },
+      "heuristic": {
+        "mean": 1.0,
+        "seed_values": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "descriptive_bootstrap_95": [
+          1.0,
+          1.0
+        ]
+      },
+      "change": {
+        "mean": 0.4555555555555555,
+        "seed_values": [
+          0.41249999999999987,
+          0.3875,
+          0.5666666666666667
+        ],
+        "descriptive_bootstrap_95": [
+          0.3875,
+          0.5666666666666667
+        ]
+      }
+    },
+    "catch/frozen": {
+      "before": {
+        "mean": 0.20555555555555552,
+        "seed_values": [
+          0.2208333333333333,
+          0.20416666666666666,
+          0.19166666666666665
+        ],
+        "descriptive_bootstrap_95": [
+          0.19166666666666665,
+          0.2208333333333333
+        ]
+      },
+      "after": {
+        "mean": 0.20555555555555552,
+        "seed_values": [
+          0.2208333333333333,
+          0.20416666666666666,
+          0.19166666666666665
+        ],
+        "descriptive_bootstrap_95": [
+          0.19166666666666665,
+          0.2208333333333333
+        ]
+      },
+      "random": {
+        "mean": 0.1972222222222222,
+        "seed_values": [
+          0.2125,
+          0.1833333333333333,
+          0.1958333333333333
+        ],
+        "descriptive_bootstrap_95": [
+          0.18333333333333326,
+          0.2125
+        ]
+      },
+      "heuristic": {
+        "mean": 1.0,
+        "seed_values": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "descriptive_bootstrap_95": [
+          1.0,
+          1.0
+        ]
+      },
+      "change": {
+        "mean": 0.0,
+        "seed_values": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "descriptive_bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "catch/rewired": {
+      "before": {
+        "mean": 0.20555555555555552,
+        "seed_values": [
+          0.2208333333333333,
+          0.20416666666666666,
+          0.19166666666666665
+        ],
+        "descriptive_bootstrap_95": [
+          0.19166666666666665,
+          0.2208333333333333
+        ]
+      },
+      "after": {
+        "mean": 0.8166666666666668,
+        "seed_values": [
+          0.9583333333333334,
+          0.7125,
+          0.7791666666666667
+        ],
+        "descriptive_bootstrap_95": [
+          0.7125,
+          0.9583333333333334
+        ]
+      },
+      "random": {
+        "mean": 0.1972222222222222,
+        "seed_values": [
+          0.2125,
+          0.1833333333333333,
+          0.1958333333333333
+        ],
+        "descriptive_bootstrap_95": [
+          0.18333333333333326,
+          0.2125
+        ]
+      },
+      "heuristic": {
+        "mean": 1.0,
+        "seed_values": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "descriptive_bootstrap_95": [
+          1.0,
+          1.0
+        ]
+      },
+      "change": {
+        "mean": 0.6111111111111112,
+        "seed_values": [
+          0.7375,
+          0.5083333333333333,
+          0.5875
+        ],
+        "descriptive_bootstrap_95": [
+          0.5083333333333333,
+          0.7375000000000002
+        ]
+      }
+    },
+    "dodge/eprop": {
+      "before": {
+        "mean": 0.7944444444444444,
+        "seed_values": [
+          0.7791666666666666,
+          0.7958333333333334,
+          0.8083333333333333
+        ],
+        "descriptive_bootstrap_95": [
+          0.7791666666666665,
+          0.8083333333333332
+        ]
+      },
+      "after": {
+        "mean": 0.9263888888888889,
+        "seed_values": [
+          0.9,
+          0.9166666666666667,
+          0.9625
+        ],
+        "descriptive_bootstrap_95": [
+          0.9,
+          0.9625
+        ]
+      },
+      "random": {
+        "mean": 0.8027777777777777,
+        "seed_values": [
+          0.7875,
+          0.8166666666666667,
+          0.8041666666666666
+        ],
+        "descriptive_bootstrap_95": [
+          0.7875,
+          0.8166666666666668
+        ]
+      },
+      "heuristic": {
+        "mean": 1.0,
+        "seed_values": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "descriptive_bootstrap_95": [
+          1.0,
+          1.0
+        ]
+      },
+      "change": {
+        "mean": 0.1319444444444445,
+        "seed_values": [
+          0.12083333333333346,
+          0.12083333333333335,
+          0.15416666666666667
+        ],
+        "descriptive_bootstrap_95": [
+          0.12083333333333335,
+          0.15416666666666667
+        ]
+      }
+    },
+    "dodge/frozen": {
+      "before": {
+        "mean": 0.7944444444444444,
+        "seed_values": [
+          0.7791666666666666,
+          0.7958333333333334,
+          0.8083333333333333
+        ],
+        "descriptive_bootstrap_95": [
+          0.7791666666666665,
+          0.8083333333333332
+        ]
+      },
+      "after": {
+        "mean": 0.7944444444444444,
+        "seed_values": [
+          0.7791666666666666,
+          0.7958333333333334,
+          0.8083333333333333
+        ],
+        "descriptive_bootstrap_95": [
+          0.7791666666666665,
+          0.8083333333333332
+        ]
+      },
+      "random": {
+        "mean": 0.8027777777777777,
+        "seed_values": [
+          0.7875,
+          0.8166666666666667,
+          0.8041666666666666
+        ],
+        "descriptive_bootstrap_95": [
+          0.7875,
+          0.8166666666666668
+        ]
+      },
+      "heuristic": {
+        "mean": 1.0,
+        "seed_values": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "descriptive_bootstrap_95": [
+          1.0,
+          1.0
+        ]
+      },
+      "change": {
+        "mean": 0.0,
+        "seed_values": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "descriptive_bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "dodge/rewired": {
+      "before": {
+        "mean": 0.7944444444444444,
+        "seed_values": [
+          0.7791666666666666,
+          0.7958333333333334,
+          0.8083333333333333
+        ],
+        "descriptive_bootstrap_95": [
+          0.7791666666666665,
+          0.8083333333333332
+        ]
+      },
+      "after": {
+        "mean": 0.9375,
+        "seed_values": [
+          0.9791666666666666,
+          0.9416666666666668,
+          0.8916666666666668
+        ],
+        "descriptive_bootstrap_95": [
+          0.8916666666666669,
+          0.9791666666666666
+        ]
+      },
+      "random": {
+        "mean": 0.8027777777777777,
+        "seed_values": [
+          0.7875,
+          0.8166666666666667,
+          0.8041666666666666
+        ],
+        "descriptive_bootstrap_95": [
+          0.7875,
+          0.8166666666666668
+        ]
+      },
+      "heuristic": {
+        "mean": 1.0,
+        "seed_values": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "descriptive_bootstrap_95": [
+          1.0,
+          1.0
+        ]
+      },
+      "change": {
+        "mean": 0.14305555555555563,
+        "seed_values": [
+          0.20000000000000007,
+          0.14583333333333337,
+          0.08333333333333348
+        ],
+        "descriptive_bootstrap_95": [
+          0.08333333333333348,
+          0.20000000000000007
+        ]
+      }
+    }
+  },
+  "contrasts": {
+    "catch/eprop-minus-frozen": {
+      "mean": 0.4555555555555555,
+      "seed_values": [
+        0.41249999999999987,
+        0.3875,
+        0.5666666666666667
+      ],
+      "descriptive_bootstrap_95": [
+        0.3875,
+        0.5666666666666667
+      ]
+    },
+    "catch/eprop-minus-rewired": {
+      "mean": -0.15555555555555564,
+      "seed_values": [
+        -0.3250000000000002,
+        -0.12083333333333335,
+        -0.02083333333333337
+      ],
+      "descriptive_bootstrap_95": [
+        -0.3250000000000002,
+        -0.02083333333333337
+      ]
+    },
+    "catch/eprop-minus-random": {
+      "mean": 0.46388888888888885,
+      "seed_values": [
+        0.42083333333333317,
+        0.4083333333333334,
+        0.5625
+      ],
+      "descriptive_bootstrap_95": [
+        0.4083333333333334,
+        0.5625
+      ]
+    },
+    "dodge/eprop-minus-frozen": {
+      "mean": 0.1319444444444445,
+      "seed_values": [
+        0.12083333333333346,
+        0.12083333333333335,
+        0.15416666666666667
+      ],
+      "descriptive_bootstrap_95": [
+        0.12083333333333335,
+        0.15416666666666667
+      ]
+    },
+    "dodge/eprop-minus-rewired": {
+      "mean": -0.011111111111111146,
+      "seed_values": [
+        -0.07916666666666661,
+        -0.025000000000000022,
+        0.07083333333333319
+      ],
+      "descriptive_bootstrap_95": [
+        -0.07916666666666661,
+        0.07083333333333319
+      ]
+    },
+    "dodge/eprop-minus-random": {
+      "mean": 0.12361111111111119,
+      "seed_values": [
+        0.11250000000000004,
+        0.10000000000000009,
+        0.15833333333333344
+      ],
+      "descriptive_bootstrap_95": [
+        0.10000000000000009,
+        0.15833333333333344
+      ]
+    }
+  },
+  "state_dependence": {
+    "catch/eprop": {
+      "mean": 0.44166666666666665,
+      "seed_values": [
+        0.3885416666666667,
+        0.484375,
+        0.4520833333333333
+      ],
+      "descriptive_bootstrap_95": [
+        0.3885416666666666,
+        0.484375
+      ]
+    },
+    "catch/frozen": {
+      "mean": 0.0,
+      "seed_values": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "descriptive_bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    "catch/rewired": {
+      "mean": 0.48611111111111116,
+      "seed_values": [
+        0.4395833333333333,
+        0.6427083333333333,
+        0.3760416666666667
+      ],
+      "descriptive_bootstrap_95": [
+        0.3760416666666668,
+        0.6427083333333333
+      ]
+    },
+    "dodge/eprop": {
+      "mean": 0.40173611111111107,
+      "seed_values": [
+        0.4864583333333333,
+        0.2583333333333333,
+        0.4604166666666667
+      ],
+      "descriptive_bootstrap_95": [
+        0.2583333333333333,
+        0.4864583333333334
+      ]
+    },
+    "dodge/frozen": {
+      "mean": 0.0,
+      "seed_values": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "descriptive_bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    "dodge/rewired": {
+      "mean": 0.41805555555555557,
+      "seed_values": [
+        0.5802083333333333,
+        0.40937500000000004,
+        0.2645833333333333
+      ],
+      "descriptive_bootstrap_95": [
+        0.2645833333333333,
+        0.5802083333333333
+      ]
+    }
+  },
+  "robustness": {
+    "catch": {
+      "after": {
+        "mean": 0.6611111111111111,
+        "seed_values": [
+          0.6333333333333332,
+          0.5916666666666667,
+          0.7583333333333333
+        ],
+        "descriptive_bootstrap_95": [
+          0.5916666666666667,
+          0.7583333333333333
+        ]
+      },
+      "sensory_noise_0.1": {
+        "mean": 0.4527777777777778,
+        "seed_values": [
+          0.4125,
+          0.4083333333333333,
+          0.5375
+        ],
+        "descriptive_bootstrap_95": [
+          0.4083333333333334,
+          0.5375
+        ]
+      },
+      "edge_ablation_0.1": {
+        "mean": 0.6166666666666666,
+        "seed_values": [
+          0.6041666666666666,
+          0.5,
+          0.7458333333333333
+        ],
+        "descriptive_bootstrap_95": [
+          0.5,
+          0.7458333333333332
+        ]
+      },
+      "neuron_ablation_0.1": {
+        "mean": 0.32916666666666666,
+        "seed_values": [
+          0.3833333333333333,
+          0.2583333333333333,
+          0.3458333333333333
+        ],
+        "descriptive_bootstrap_95": [
+          0.2583333333333333,
+          0.3833333333333333
+        ]
+      }
+    },
+    "dodge": {
+      "after": {
+        "mean": 0.9263888888888889,
+        "seed_values": [
+          0.9,
+          0.9166666666666667,
+          0.9625
+        ],
+        "descriptive_bootstrap_95": [
+          0.9,
+          0.9625
+        ]
+      },
+      "sensory_noise_0.1": {
+        "mean": 0.9138888888888889,
+        "seed_values": [
+          0.9541666666666668,
+          0.875,
+          0.9125
+        ],
+        "descriptive_bootstrap_95": [
+          0.875,
+          0.9541666666666669
+        ]
+      },
+      "edge_ablation_0.1": {
+        "mean": 0.9236111111111112,
+        "seed_values": [
+          0.9,
+          0.9333333333333333,
+          0.9375
+        ],
+        "descriptive_bootstrap_95": [
+          0.9,
+          0.9375
+        ]
+      },
+      "neuron_ablation_0.1": {
+        "mean": 0.9388888888888888,
+        "seed_values": [
+          0.9083333333333332,
+          0.9875,
+          0.9208333333333334
+        ],
+        "descriptive_bootstrap_95": [
+          0.9083333333333332,
+          0.9875000000000002
+        ]
+      }
+    }
+  },
+  "result_files": {
+    "v11-catch-eprop-0": "4d8330ca5c9f7ba14b6d077fe1af4f88d7eded2977cbf1ae608ba8025087cc3f",
+    "v11-catch-eprop-1": "438a7fd4b87df20ab3e9daf80931b202f433ef06ee79fd340966d961b5c7f400",
+    "v11-catch-eprop-2": "56562c41854b5cfcd9799540871da484226fee304e2bd3dbebaeec2efa93d8a2",
+    "v11-catch-frozen-0": "797577d40b5cbeb93dabaa6939f1d4d2df5b7e5f54fa8ab94cdb41d33964ad99",
+    "v11-catch-frozen-1": "eb073b709201eeedecd316f2d6f843e66ed1fd48f0a7fcc8a6cf3815ae82a5b2",
+    "v11-catch-frozen-2": "b43823f6f457be05ba25f487f98450ce1228c4c4401b08649f440ab851270d59",
+    "v11-catch-rewired-0": "07da5511d75d74de27ee97cdc4eb6b4ffcfe7ea6a9959a4e84928b4dbc4306e6",
+    "v11-catch-rewired-1": "cdb832067ac30d204b4d12fda66017a2124db53864e80523e004d938f301d87b",
+    "v11-catch-rewired-2": "63deb7847cf5779f50f593bc4656f64897a3c48492f47a85768ccb7905cd782c",
+    "v11-dodge-eprop-0": "f9b16e00144c9dfe69285b97a062725f477a10f767b8ef1ce6980b811ce60243",
+    "v11-dodge-eprop-1": "4228046e8ebf12669a392d400c78dc339533f4e5e27b2b238be31e5391a911dc",
+    "v11-dodge-eprop-2": "30eea87780b2defe157ee3dafb91bbcef20985b98a3622336420fb66964cd6d9",
+    "v11-dodge-frozen-0": "f1196f6d1ea6c9259e903f6d2a987e90202b2ac0b681fd001667c1897cf36da3",
+    "v11-dodge-frozen-1": "abecb72465730ddf229ed7f298a3d4f7e91d0ca53bf068e291ed271a26c9bfe2",
+    "v11-dodge-frozen-2": "7f5c2183264241a26006dcca693a7e62ca07c095a5b3c9e8ed230dbedd135277",
+    "v11-dodge-rewired-0": "a38a475f398b438f1e651f0bb492851f8ca2378fb3e24a780230e8aaa2af20a8",
+    "v11-dodge-rewired-1": "19bdc73be57081b13877e0051c79ecb75504a082fb52660e2c65ec80f18c599c",
+    "v11-dodge-rewired-2": "fcc3c70320fdc82e8a6b0695f33ef051f64ed70812eb044010b54ddef222e7fe"
+  },
+  "resources": {
+    "max_trial_seconds": 35.472189749998506,
+    "max_rss_snapshot_mb": 219.796875
+  }
+}

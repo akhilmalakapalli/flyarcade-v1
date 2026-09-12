@@ -1,0 +1,13 @@
+{
+  "width": 1293,
+  "seeds": "FEATURE_FIT_SEEDS (4,200,000 block), uniform-random behaviour policy",
+  "mean_abs": 0.0905525949020366,
+  "scale_mean": 0.10896508110895377,
+  "scale_floor_hits": 79,
+  "gain": 0.02780998390775747,
+  "resources": {
+    "rss_mb": 180.796875,
+    "free_disk_mb": 348458.96875,
+    "elapsed_seconds": 2.7129174590227194
+  }
+}

@@ -1,47 +1,56 @@
-# What does and does not emerge from reward-modulated plasticity in a MaleCNS-derived visuomotor controller?
+# Credit assignment, not connectivity, gates learning in a MaleCNS-derived visuomotor controller
 
-**Status: complete v1 study with a negative primary result.** All preregistered
-trials, controls, ablations, robustness and transfer comparisons finished and were
-verified by exact checkpoint replay. Reward-modulated plasticity did **not** produce
-held-out improvement on either task. This manuscript reports that outcome and the
-mechanistic analyses that characterise it. Nothing was retuned in response to
-held-out results.
+**Status: two completed studies.** v1 (frozen at commit `ec27ad0`) is a preregistered
+negative result: reward-modulated STDP produced no held-out learning and collapsed
+the policy onto a constant action. v1.1 replaces the learning rule with an
+actor-critic e-prop three-factor rule over the *same* connectome, the same circuit
+and the same encoding, and obtains a confirmatory positive result on seeds never
+used for tuning. Neither study was retuned against its own held-out data.
 
 ## Abstract
 
-We built a spiking visuomotor controller whose recurrent connectivity is an
-authentic, checksummed subgraph of the HHMI Janelia MaleCNS v1.0 connectome
-(2,040 traced neurons, 126,676 directed edges, 1,054,402 synapses, no isolates),
-and trained it on two minimal lane arcade tasks with a reward-modulated
-eligibility rule at both the recurrent synapses and an artificial descending
-readout. Across three independent training seeds, two tasks and four conditions,
-the mean paired held-out change after 200 training episodes was -0.014 (catch)
-and -0.017 (dodge) landing-success, with descriptive three-seed bootstrap
-intervals spanning zero in every condition. Trained controllers did not exceed a
-uniform-random policy (catch 0.175 vs 0.194; dodge 0.794 vs 0.806), while a
-deterministic heuristic with identical observations scored 1.000 on both tasks —
-so the tasks are solvable and the controller did not solve them.
+We asked whether a spiking controller whose recurrent connectivity is an authentic
+subgraph of the HHMI Janelia MaleCNS v1.0 connectome (2,040 traced neurons, 126,676
+directed edges, no isolates) can learn two minimal lane arcade tasks, and if not,
+what the binding constraint is.
 
-Diagnostics on frozen saved weights, evaluated under a matched state distribution,
-locate the failure precisely. Descending-population rates carry substantial
-task-relevant information both before and after training: an analyst-fitted linear
-probe recovers the required movement direction at 0.654 (initial) and 0.658–0.713
-(trained) accuracy, against a 0.421 majority-class rate and a 0.358–0.425
-shuffled-label control. What collapses is the policy. Mean action entropy falls from 1.098 nats
-(uniform is log 3 = 1.099) to 0.36 (catch) and 0.13 (dodge), with the most likely
-action reaching probability 0.90 and 0.98. The trained controllers converge on
-near-constant single actions whose held-out scores (catch 0.13–0.23; dodge
-0.77–0.87 for the three degenerate policies) bracket the observed results
-entirely. The negative result is therefore not a sensory bottleneck in the
-connectome-derived circuit; it is a credit-assignment failure in the
-reward-modulated rule under dense shaping.
+**Study 1 (v1).** Under global reward-modulated STDP with a scalar advantage, the
+controller did not improve on either task, in any of four conditions, on any of
+three seeds (mean paired held-out change -0.014 catch, -0.017 dodge; all intervals
+spanning zero), and never exceeded a uniform-random policy. Post-hoc diagnostics
+showed the descending population carried linearly decodable task information the
+whole time (probe 0.654 against a 0.421 majority rate) while the policy collapsed
+to a near-constant action (entropy 1.098 → 0.361 / 0.128 nats). The failure was
+credit assignment, not sensory representation.
 
-Topology mattered less than the framing of such studies usually assumes: a
-degree-preserving rewired control was statistically indistinguishable from the
-biological graph (catch +0.017, dodge -0.025), as were freezing all plasticity and
-restricting learning to the readout. Performance was also insensitive to 10% edge
-ablation, 10% neuron ablation and sensory noise — which, given policy collapse, is
-evidence of degeneracy rather than of robustness.
+**Study 2 (v1.1).** Replacing only the learning rule — per-synapse eligibility
+traces, a learned critic, a temporal-difference error, neuron-specific learning
+signals, entropy regularisation and an exploration floor — produces learning on
+confirmatory seeds that were never used for tuning. Catch rises from 0.206 to
+**0.661** against a 0.197 random baseline (+0.464 over random, 3/3 seeds), dodge
+from 0.794 to **0.926** against 0.803 (+0.124, 3/3 seeds), and the policy stays
+state-dependent rather than collapsing. Three separate repairs were each necessary:
+removing the descending population's common mode, scaling the readout so 1,293
+features do not make every learning rate three orders of magnitude too large, and
+maintaining explicit exploration pressure.
+
+**The biological topology is not what makes the task learnable.** Under an identical
+rule, budget, neuron count and readout, a degree-preserving rewired graph learned
+catch *better* than the biological one (0.817 vs 0.661; paired difference -0.156,
+interval [-0.325, -0.021]) and was indistinguishable on dodge. A post-hoc analysis
+explains it: the rewired circuit's descending representation has nearly twice the
+effective dimensionality (participation ratio 54.5 vs 29.5) and lower pairwise
+correlation (0.112 vs 0.152), so a linear readout has more independent directions to
+exploit, and a linear probe decodes the required action better (0.901 vs 0.774).
+
+The combined result is narrow but clean: **the connectome-derived circuit contains
+task-relevant information, an appropriate credit-assignment mechanism is required to
+turn that information into behaviour, and the biological wiring itself confers no
+advantage over a degree-matched random graph for this task and this readout.**
+
+---
+
+# Part I — v1: the negative baseline
 
 ## 1. What is biological measurement and what is engineering
 
@@ -336,3 +345,231 @@ it threw that signal away.*
 Connectivity data are used under the terms linked from the MaleCNS site (CC-BY);
 verify attribution against the response bundle recorded in
 `artifacts/malecns_manifest.json`.
+
+---
+
+# Part II — v1.1: repairing credit assignment
+
+Everything in Part I is preserved unchanged as the negative baseline. v1.1 alters
+the learning rule and the readout conditioning only. The connectome, the selected
+2,040-neuron subgraph, the body IDs, the LIF membrane dynamics, the transmitter sign
+rule, the sensory encoding, the tasks and the reward function are all identical, and
+`tests/test_v11.py` asserts that a frozen v1.1 core reproduces v1's spike trains
+bit-for-bit.
+
+## 11. What changed, and why each change was needed
+
+v1's rule updated every plastic synapse by one global scalar advantage times a
+symmetric STDP pair term, with no value estimate, no discounting, no entropy term
+and no exploration floor. v1.1 replaces it with an actor-critic e-prop three-factor
+rule:
+
+1. **Local eligibility traces.** Each synapse accumulates its own presynaptic trace
+   gated by the postsynaptic surrogate derivative.
+2. **A learned critic.** A linear value estimate over the same descending features.
+3. **Temporal-difference error.** `delta_t = r_t + gamma*V(s_{t+1}) - V(s_t)`,
+   computed once per action; the circuit is advanced exactly once per step.
+4. **Neuron-specific learning signals.** Each synapse is driven by the signal of its
+   own postsynaptic neuron, obtained by projecting the actor's score through the
+   readout weights, never by one scalar shared across the population.
+5. **Separate actor and critic learning rates.**
+6. **Stochastic softmax action selection** during training.
+7. **Entropy regularisation**, applied without a trace so exploration pressure is
+   immediate.
+8. **An exploration floor**: the sampling distribution is mixed with the uniform
+   distribution, and the score function used for learning is the exact score of that
+   mixed distribution.
+9. **Bounded weights and clipped updates** on the actor, the critic and the core.
+10. **Firing-rate monitoring** in every development run, with explicit rejection
+    criteria. No activity normalisation proved necessary; firing stayed near 0.2
+    spikes per neuron per tick throughout.
+
+Two further repairs turned out to be as important as the rule itself, and both were
+found by diagnosing failures on development seeds rather than by tuning:
+
+- **Common-mode removal.** Descending rates share a large state-independent
+  component: the mean absolute per-neuron mean is 0.091 against a per-neuron
+  standard deviation of 0.109. Feeding raw centred rates to a linear readout lets
+  that state-independent direction dominate the policy gradient, which is precisely
+  the mechanism of v1's collapse. Per-neuron standardisation is estimated once, on
+  development rollouts of the frozen core under a uniform-random behaviour policy,
+  and frozen.
+- **Readout scaling.** With 1,293 features, `||phi||^2` is of order 1,293, so every
+  learning rate is effectively about a thousand times larger than it appears. In the
+  first development run the critic saturated within a single episode (|delta| pinned
+  at its clip of 10) and entropy fell to 0.055 nats before episode two. Dividing the
+  standardised features by `sqrt(width)` fixes this; it is a fixed preprocessing
+  constant, not a tuned parameter.
+
+## 12. Development protocol
+
+Development used seed blocks disjoint from everything v1 touched and from the v1.1
+confirmatory blocks: training in the 4,000,000 block, development evaluation in the
+4,500,000 block, feature fitting in the 4,200,000 block. `tests/test_v11.py` asserts
+the disjointness. **No v1 held-out seed was used at any point in v1.1 development.**
+
+A full grid over the seven requested axes is unaffordable on CPU, so the search was
+coordinate-wise from a documented baseline: sweep one axis at a time across three
+development seeds, 600 training episodes per trial, and keep a change only if it
+improved consistently. Every configuration is recorded in
+`artifacts/v11_development/`, including rejected ones.
+
+Rejection criteria were applied *before* any performance comparison: final action
+entropy below 0.1 nats, a state-dependence below 0.05 (one action dominating
+irrespective of state), a mean absolute TD error above 5 (critic divergence), or a
+firing rate outside [0.01, 0.6]. Every surviving configuration beat the random
+policy on 3/3 development seeds.
+
+The staged plasticity strategy was followed in order. **Stage A — readout-only, with
+the recurrent MaleCNS core entirely frozen — learned, so stages B and C were not
+used.** The protocol's instruction is to prefer the simplest model that genuinely
+learns, and stage A qualifies. Stage B (plasticity on the 79,275 synapses
+terminating on descending neurons) and stage C (additionally the central-complex
+intrinsic population, 123,434 synapses) are implemented and tested, but were not
+needed and are not part of any claim here.
+
+Coordinate-wise optima were `actor_lr` 0.4, `critic_lr` 0.2, `discount` 0.9,
+`trace_decay` 0.7, `entropy_coefficient` 0.03, `exploration_floor` 0.1. Because
+coordinate optima need not compose, the combined configuration was re-validated on
+five development seeds — two of which the sweeps never used — and compared head to
+head against the runner-up (`entropy_coefficient` 0.01, `exploration_floor` 0.05).
+The two were tied on performance (mean over both tasks 0.736 vs 0.741). The tie was
+broken on a pre-specified criterion rather than on score: the chosen configuration
+retains far more state-dependence on dodge (0.30 vs 0.12, where 0.05 is the
+rejection threshold) and higher action entropy (0.90 vs 0.51). Since the entire
+point of v1.1 is to prevent collapse, the larger anti-collapse margin wins.
+
+## 13. Freezing and the confirmatory design
+
+Before any confirmatory run, `experiments/v11_run_plan.json` froze the
+hyperparameters, the reward function, the plasticity mask, the sensory encoding, the
+motor decoding, the training schedule and the stopping criterion, and stated the
+success criterion in advance:
+
+1. training success improves from the first to the last fifth of training;
+2. held-out greedy success exceeds the random policy by more than 0.05 on every
+   seed;
+3. the policy stays state-dependent — state-dependence above 0.05 and final action
+   entropy above 0.1.
+
+Confirmatory seeds are in blocks never used for tuning: training
+`5,000,000 + 10,000*seed + episode`, evaluation `6,000,000 + 100*seed + i` for
+i = 0..39. Evaluation takes the greedy mode of the learned policy with all learning
+disabled. Conditions: the biological circuit with e-prop, the same circuit with
+learning disabled, the degree-preserving rewired circuit with the identical rule and
+budget, plus the random and heuristic reference policies.
+
+The rewired arm is standardised by the same procedure applied to *its own* rates.
+Reusing the biological graph's statistics would have handed the biological arm a
+calibrated readout and the control an uncalibrated one.
+
+## 14. Confirmatory result: the controller learns
+
+`artifacts/tables/v11_primary.csv`, Figure `artifacts/v11_confirmatory.png`:
+
+| Task | Condition | Before | After | Change | Bootstrap 95% | State-dependence |
+|---|---|---|---|---|---|---|
+| catch | e-prop | 0.206 | **0.661** | +0.456 | [0.388, 0.567] | 0.442 |
+| catch | frozen | 0.206 | 0.206 | 0.000 | [0.000, 0.000] | 0.000 |
+| catch | rewired | 0.206 | **0.817** | +0.611 | [0.508, 0.738] | 0.486 |
+| dodge | e-prop | 0.794 | **0.926** | +0.132 | [0.121, 0.154] | 0.402 |
+| dodge | frozen | 0.794 | 0.794 | 0.000 | [0.000, 0.000] | 0.000 |
+| dodge | rewired | 0.794 | **0.938** | +0.143 | [0.083, 0.200] | 0.418 |
+
+Random baselines are 0.197 (catch) and 0.803 (dodge); the heuristic scores 1.000.
+The e-prop arm beats the random policy by **+0.464** [0.408, 0.563] on catch and
+**+0.124** [0.100, 0.158] on dodge, on 3/3 seeds in both cases. All three
+preregistered success criteria are met. The frozen arm reproduces its initial score
+exactly, so the gain is attributable to learning and not to evaluation drift.
+
+Note that the frozen arm's greedy mode is degenerate by construction: with
+zero-initialised actor weights every logit ties and the mode is a constant action.
+The *random* policy is therefore the more informative chance reference, and it is
+the one the success criterion is stated against.
+
+## 15. The biological topology confers no advantage
+
+This is the comparison the protocol asked for as soon as genuine learning existed:
+identical learning rule, identical neuron count, identical readout architecture,
+identical training budget, identical standardisation procedure, biological versus
+degree-preserving rewired graph.
+
+| Contrast | Mean | Bootstrap 95% | Seeds |
+|---|---|---|---|
+| catch: e-prop − rewired | **-0.156** | [-0.325, -0.021] | -0.325, -0.121, -0.021 |
+| dodge: e-prop − rewired | -0.011 | [-0.079, 0.071] | -0.079, -0.025, +0.071 |
+
+On catch the rewired control is **better** than the biological graph on all three
+seeds, with an interval excluding zero. On dodge the two are indistinguishable. We
+report this in the direction it came out.
+
+A post-hoc analysis of the descending representation explains the direction
+(`artifacts/v11_topology_diagnostic.json`, frozen cores, matched uniform-random
+behaviour, development-block seeds):
+
+| Property | Biological | Rewired |
+|---|---|---|
+| Participation ratio (effective dimensions) | 29.5 | **54.5** |
+| Mean absolute pairwise correlation | 0.152 | **0.112** |
+| Linear probe accuracy (majority 0.431) | 0.774 | **0.901** |
+
+Degree-preserving rewiring decorrelates the descending population and nearly doubles
+the number of directions carrying variance, so a linear readout has more independent
+features to exploit. The biological wiring concentrates descending activity into a
+lower-dimensional, more correlated code.
+
+**We do not claim the biology is worse.** The readout here is an artificial linear
+decoder on a truncated circuit that is missing 85% of its incoming synaptic weight,
+and correlated population structure may serve functions this task cannot see —
+including robustness, multiplexing of other behaviours, or metabolic economy. What
+the experiment does establish is narrow and worth stating plainly: for this task,
+this readout and this learning rule, connectome-derived topology is not the
+ingredient that makes learning possible, and a degree-matched random graph does at
+least as well.
+
+## 16. Lesions, now that there is a policy to lesion
+
+v1 reported that perturbations changed nothing, and correctly refused to call that
+robustness, because a collapsed policy cannot be degraded by ablating inputs it
+ignores. With a genuinely state-dependent policy the same lesions become
+informative (`artifacts/tables/v11_robustness.csv`, Figure
+`artifacts/v11_robustness.png`):
+
+| Task | Unperturbed | Sensory noise sd0.1 | 10% edge ablation | 10% neuron ablation |
+|---|---|---|---|---|
+| catch | 0.661 | 0.453 | 0.617 | **0.329** |
+| dodge | 0.926 | 0.914 | 0.924 | 0.939 |
+
+On catch the learned policy degrades substantially: neuron ablation costs 0.332 and
+sensory noise 0.208, while edge ablation costs only 0.044. The ordering is
+interpretable — removing 10% of neurons deletes whole readout features, whereas
+removing 10% of edges perturbs a highly redundant recurrent drive. Dodge is
+unaffected because it sits near its ceiling and a mostly-correct policy still avoids
+a single object.
+
+This contrast is itself a methodological result: **lesion insensitivity is only
+evidence about a circuit that is doing something.** Running the identical lesions
+against v1 and v1.1 shows the same numbers meaning opposite things.
+
+## 17. What Part II adds, and what it does not
+
+**Supported.** Replacing global reward-modulated STDP with an actor-critic e-prop
+rule — holding the connectome, circuit, encoding, tasks and reward fixed — converts
+a preregistered negative result into a confirmatory positive one on untouched seeds.
+The readout-only stage suffices; recurrent plasticity was never required. Common-mode
+removal and readout scaling were each necessary. The learned policy is
+state-dependent and degrades under lesions in an interpretable order. A
+degree-matched random graph learns at least as well as the biological one, and its
+descending code is higher-dimensional and less correlated.
+
+**Not supported.** That this is how Drosophila learns anything. That e-prop is
+biologically implemented in the fly. That the connectome helps or hinders learning in
+general — we tested one task family, one readout and one rule. That the rewired
+control isolates a single graph property: it preserves in/out degree and outgoing
+strength but not incoming strength, and its mixing is unvalidated. That three seeds
+support confirmatory significance claims; the intervals remain descriptive.
+
+The honest one-line summary of both studies together: *the biology we could measure
+delivered a usable signal, the first learning rule we engineered threw it away, the
+second one used it — and a random graph with the same degrees used it slightly
+better.*

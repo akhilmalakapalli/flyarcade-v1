@@ -1,0 +1,309 @@
+{
+  "axis": "entropy_coefficient",
+  "task": "catch",
+  "stage": "readout",
+  "episodes": 600,
+  "dev_seeds": [
+    0,
+    1,
+    2
+  ],
+  "baseline": {
+    "actor_lr": 0.4,
+    "critic_lr": 0.5,
+    "discount": 0.9,
+    "trace_decay": 0.7,
+    "entropy_coefficient": 0.01,
+    "exploration_floor": 0.05
+  },
+  "records": [
+    {
+      "axis": "entropy_coefficient",
+      "value": 0.003,
+      "config": {
+        "actor_lr": 0.4,
+        "critic_lr": 0.5,
+        "discount": 0.9,
+        "trace_decay": 0.7,
+        "entropy_coefficient": 0.003,
+        "exploration_floor": 0.05
+      },
+      "rejected": false,
+      "rejection_reasons": [],
+      "mean_after": 0.5027777777777777,
+      "min_after": 0.425,
+      "mean_over_random": 0.30877777777777776,
+      "seeds_above_random": 3,
+      "mean_improvement": 0.26388888888888884,
+      "trials": [
+        {
+          "task": "catch",
+          "dev_seed": 0,
+          "episodes": 600,
+          "stage": "readout",
+          "before": 0.26666666666666666,
+          "after": 0.4833333333333333,
+          "improvement": 0.21666666666666662,
+          "over_random": 0.2893333333333333,
+          "train_first_fifth": 0.21944444444444441,
+          "train_last_fifth": 0.34027777777777773,
+          "final_entropy": 0.7568209584801509,
+          "final_max_probability": 0.6676960516720728,
+          "final_abs_delta": 0.5364558965407279,
+          "final_firing_rate": 0.21723762595315907,
+          "actor_update_abs": 0.0015258387252921576,
+          "core_update_abs": 0.0,
+          "state_dependence": 0.3208333333333333,
+          "seconds": 22.13168829199276,
+          "resources": {
+            "rss_mb": 95.140625,
+            "free_disk_mb": 348445.33203125,
+            "elapsed_seconds": 22.131754500005627
+          }
+        },
+        {
+          "task": "catch",
+          "dev_seed": 1,
+          "episodes": 600,
+          "stage": "readout",
+          "before": 0.225,
+          "after": 0.425,
+          "improvement": 0.19999999999999998,
+          "over_random": 0.23099999999999998,
+          "train_first_fifth": 0.21944444444444444,
+          "train_last_fifth": 0.36111111111111105,
+          "final_entropy": 0.7339745381215991,
+          "final_max_probability": 0.6796339360211292,
+          "final_abs_delta": 0.549436042892547,
+          "final_firing_rate": 0.21709235430283222,
+          "actor_update_abs": 0.0015387945840200773,
+          "core_update_abs": 0.0,
+          "state_dependence": 0.55,
+          "seconds": 21.952541459002532,
+          "resources": {
+            "rss_mb": 101.015625,
+            "free_disk_mb": 348443.796875,
+            "elapsed_seconds": 21.952622249984415
+          }
+        },
+        {
+          "task": "catch",
+          "dev_seed": 2,
+          "episodes": 600,
+          "stage": "readout",
+          "before": 0.225,
+          "after": 0.5999999999999999,
+          "improvement": 0.3749999999999999,
+          "over_random": 0.40599999999999986,
+          "train_first_fifth": 0.19722222222222224,
+          "train_last_fifth": 0.38749999999999996,
+          "final_entropy": 0.730104612907207,
+          "final_max_probability": 0.6823415926009794,
+          "final_abs_delta": 0.5386386491396477,
+          "final_firing_rate": 0.21691857298474945,
+          "actor_update_abs": 0.0015023275021922272,
+          "core_update_abs": 0.0,
+          "state_dependence": 0.30208333333333337,
+          "seconds": 22.092264082981274,
+          "resources": {
+            "rss_mb": 102.546875,
+            "free_disk_mb": 348443.83203125,
+            "elapsed_seconds": 22.092333374981536
+          }
+        }
+      ]
+    },
+    {
+      "axis": "entropy_coefficient",
+      "value": 0.01,
+      "config": {
+        "actor_lr": 0.4,
+        "critic_lr": 0.5,
+        "discount": 0.9,
+        "trace_decay": 0.7,
+        "entropy_coefficient": 0.01,
+        "exploration_floor": 0.05
+      },
+      "rejected": false,
+      "rejection_reasons": [],
+      "mean_after": 0.5916666666666667,
+      "min_after": 0.5083333333333332,
+      "mean_over_random": 0.3976666666666666,
+      "seeds_above_random": 3,
+      "mean_improvement": 0.3527777777777777,
+      "trials": [
+        {
+          "task": "catch",
+          "dev_seed": 0,
+          "episodes": 600,
+          "stage": "readout",
+          "before": 0.26666666666666666,
+          "after": 0.575,
+          "improvement": 0.3083333333333333,
+          "over_random": 0.38099999999999995,
+          "train_first_fifth": 0.24027777777777773,
+          "train_last_fifth": 0.35277777777777775,
+          "final_entropy": 0.7374094133956093,
+          "final_max_probability": 0.6751893631723759,
+          "final_abs_delta": 0.5342935336781053,
+          "final_firing_rate": 0.21714435253267975,
+          "actor_update_abs": 0.0015073026002765432,
+          "core_update_abs": 0.0,
+          "state_dependence": 0.38749999999999996,
+          "seconds": 21.47654695797246,
+          "resources": {
+            "rss_mb": 102.6875,
+            "free_disk_mb": 348440.94140625,
+            "elapsed_seconds": 21.47660024999641
+          }
+        },
+        {
+          "task": "catch",
+          "dev_seed": 1,
+          "episodes": 600,
+          "stage": "readout",
+          "before": 0.225,
+          "after": 0.6916666666666667,
+          "improvement": 0.4666666666666667,
+          "over_random": 0.49766666666666665,
+          "train_first_fifth": 0.20833333333333334,
+          "train_last_fifth": 0.3722222222222223,
+          "final_entropy": 0.8137387318770896,
+          "final_max_probability": 0.6289631468786822,
+          "final_abs_delta": 0.5483033881593751,
+          "final_firing_rate": 0.21711809810729846,
+          "actor_update_abs": 0.0016940600730355833,
+          "core_update_abs": 0.0,
+          "state_dependence": 0.37916666666666665,
+          "seconds": 21.873890290997224,
+          "resources": {
+            "rss_mb": 104.78125,
+            "free_disk_mb": 348439.87890625,
+            "elapsed_seconds": 21.873959165997803
+          }
+        },
+        {
+          "task": "catch",
+          "dev_seed": 2,
+          "episodes": 600,
+          "stage": "readout",
+          "before": 0.225,
+          "after": 0.5083333333333332,
+          "improvement": 0.2833333333333332,
+          "over_random": 0.3143333333333332,
+          "train_first_fifth": 0.21666666666666667,
+          "train_last_fifth": 0.38611111111111107,
+          "final_entropy": 0.7168663556526629,
+          "final_max_probability": 0.6873522223080161,
+          "final_abs_delta": 0.5435307451847978,
+          "final_firing_rate": 0.21699648522603485,
+          "actor_update_abs": 0.0015022275154500733,
+          "core_update_abs": 0.0,
+          "state_dependence": 0.3270833333333333,
+          "seconds": 21.57749379199231,
+          "resources": {
+            "rss_mb": 106.78125,
+            "free_disk_mb": 348439.18359375,
+            "elapsed_seconds": 21.577554958988912
+          }
+        }
+      ]
+    },
+    {
+      "axis": "entropy_coefficient",
+      "value": 0.03,
+      "config": {
+        "actor_lr": 0.4,
+        "critic_lr": 0.5,
+        "discount": 0.9,
+        "trace_decay": 0.7,
+        "entropy_coefficient": 0.03,
+        "exploration_floor": 0.05
+      },
+      "rejected": false,
+      "rejection_reasons": [],
+      "mean_after": 0.6222222222222222,
+      "min_after": 0.5416666666666666,
+      "mean_over_random": 0.4282222222222222,
+      "seeds_above_random": 3,
+      "mean_improvement": 0.38333333333333336,
+      "trials": [
+        {
+          "task": "catch",
+          "dev_seed": 0,
+          "episodes": 600,
+          "stage": "readout",
+          "before": 0.26666666666666666,
+          "after": 0.6166666666666667,
+          "improvement": 0.35000000000000003,
+          "over_random": 0.4226666666666667,
+          "train_first_fifth": 0.22222222222222224,
+          "train_last_fifth": 0.35555555555555546,
+          "final_entropy": 0.8039685604865343,
+          "final_max_probability": 0.6364024839769779,
+          "final_abs_delta": 0.5278283319542274,
+          "final_firing_rate": 0.21720149952342047,
+          "actor_update_abs": 0.0016263165032927393,
+          "core_update_abs": 0.0,
+          "state_dependence": 0.4208333333333333,
+          "seconds": 21.837311374983983,
+          "resources": {
+            "rss_mb": 107.265625,
+            "free_disk_mb": 348439.15625,
+            "elapsed_seconds": 21.837380125012714
+          }
+        },
+        {
+          "task": "catch",
+          "dev_seed": 1,
+          "episodes": 600,
+          "stage": "readout",
+          "before": 0.225,
+          "after": 0.7083333333333334,
+          "improvement": 0.4833333333333334,
+          "over_random": 0.5143333333333333,
+          "train_first_fifth": 0.22638888888888886,
+          "train_last_fifth": 0.40694444444444444,
+          "final_entropy": 0.7618388320867838,
+          "final_max_probability": 0.6604863704879309,
+          "final_abs_delta": 0.5575276559544083,
+          "final_firing_rate": 0.21695763548474947,
+          "actor_update_abs": 0.0016258424473389003,
+          "core_update_abs": 0.0,
+          "state_dependence": 0.43333333333333335,
+          "seconds": 22.153309832996456,
+          "resources": {
+            "rss_mb": 107.265625,
+            "free_disk_mb": 348439.1328125,
+            "elapsed_seconds": 22.153359124989947
+          }
+        },
+        {
+          "task": "catch",
+          "dev_seed": 2,
+          "episodes": 600,
+          "stage": "readout",
+          "before": 0.225,
+          "after": 0.5416666666666666,
+          "improvement": 0.31666666666666665,
+          "over_random": 0.3476666666666666,
+          "train_first_fifth": 0.20694444444444443,
+          "train_last_fifth": 0.38055555555555554,
+          "final_entropy": 0.7293325857435142,
+          "final_max_probability": 0.6823177115514196,
+          "final_abs_delta": 0.5294672052391272,
+          "final_firing_rate": 0.2167119842728758,
+          "actor_update_abs": 0.0015642520346458581,
+          "core_update_abs": 0.0,
+          "state_dependence": 0.3520833333333333,
+          "seconds": 21.531575458007865,
+          "resources": {
+            "rss_mb": 107.265625,
+            "free_disk_mb": 348438.125,
+            "elapsed_seconds": 21.531650416989578
+          }
+        }
+      ]
+    }
+  ]
+}

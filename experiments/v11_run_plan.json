@@ -1,0 +1,48 @@
+{
+  "frozen_at": "2026-09-12T20:40:00+00:00",
+  "supersedes": null,
+  "baseline_study": "v1 (commit ec27ad0), preserved unchanged as the negative baseline",
+  "graph_sha256": "3f4cbeedb17ca6a7d06162151429e0713ed72ce579d5f19a8845a446f6315697",
+  "stage": "readout",
+  "stage_rationale": "Stage A learned on development seeds, so the staged protocol stops at the simplest model that genuinely learns; stages B and C were not needed.",
+  "learning_rule": "actor-critic e-prop: per-synapse eligibility traces, a learned scalar critic, TD error delta = r + gamma*V(s') - V(s), neuron-specific learning signals, entropy regularisation and an exploration floor",
+  "tasks": ["catch", "dodge"],
+  "seeds": [0, 1, 2],
+  "conditions": ["eprop", "frozen", "rewired"],
+  "reference_policies": ["random", "heuristic"],
+  "training_episodes": 600,
+  "evaluation_episodes": 40,
+  "horizon": 24,
+  "hyperparameters": {
+    "actor_lr": 0.4,
+    "critic_lr": 0.2,
+    "discount": 0.9,
+    "trace_decay": 0.7,
+    "entropy_coefficient": 0.03,
+    "exploration_floor": 0.1
+  },
+  "frozen_components": [
+    "hyperparameters",
+    "reward function (unchanged from v1)",
+    "plasticity mask (stage A: recurrent core entirely frozen)",
+    "sensory encoding (unchanged from v1)",
+    "motor decoding (greedy softmax mode at evaluation)",
+    "training schedule (600 episodes, no early stopping)",
+    "feature standardisation procedure"
+  ],
+  "training_seed_rule": "5,000,000 + 10,000*seed + episode_index",
+  "evaluation_seed_rule": "6,000,000 + 100*seed + i, i=0..39",
+  "development_seed_rule": "4,000,000 / 4,500,000 blocks; feature fitting 4,200,000 block",
+  "seed_disjointness": "v1.1 confirmatory seeds were never used in v1, nor in any v1.1 development or feature-fitting run; tests/test_v11.py asserts this",
+  "success_criterion": {
+    "defined_before": "confirmatory runs",
+    "criteria": [
+      "training success improves from the first to the last fifth of training",
+      "held-out greedy success exceeds the random policy by more than 0.05 on every seed",
+      "action choice remains state-dependent: state_dependence > 0.05 and final action entropy > 0.1"
+    ]
+  },
+  "topology_test": "eprop on the biological graph versus the degree-preserving rewired graph, with identical learning rule, neuron count, readout architecture, training budget and per-graph standardisation procedure",
+  "inference": "exploratory three-seed descriptive bootstrap; no confirmatory p-values",
+  "resource_guard": "120 s per independently guarded trial, no parallel workers, no raised limits"
+}

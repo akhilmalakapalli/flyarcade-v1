@@ -1,0 +1,8 @@
+{
+  "actor_lr": 0.4,
+  "critic_lr": 0.2,
+  "discount": 0.9,
+  "trace_decay": 0.7,
+  "entropy_coefficient": 0.01,
+  "exploration_floor": 0.05
+}

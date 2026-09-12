@@ -7,7 +7,13 @@ from pathlib import Path
 
 
 def main():
-    names = sorted(p.parent.name for p in Path("runs").glob("*/result.json"))
+    # v1 trials only. v1.1 lives under runs/v11-* with a different checkpoint
+    # format and its own determinism check; this script verifies the frozen v1 grid.
+    names = sorted(
+        p.parent.name
+        for p in Path("runs").glob("*/result.json")
+        if not p.parent.name.startswith("v11-")
+    )
     if not names:
         raise SystemExit("no completed trials found")
     verdicts = []

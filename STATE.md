@@ -1,12 +1,24 @@
 # flyarcade-v1 State
 
 ## Overall status
-COMPLETE — v1 finished with a negative primary result, fully documented.
+IN_PROGRESS on branch `flyarcade-v1.1-learning`. v1 is COMPLETE and frozen at
+commit ec27ad0 and must not be altered. v1.1 has a confirmatory positive result.
 
 ## Current milestone
-M5 complete. Acquisition, dynamics, games, the frozen experiment grid, controls,
-ablations, robustness, transfer, replay verification, figures, CSV tables and the
-manuscript are all done. No milestone remains open.
+v1.1 complete through confirmatory evaluation, topology comparison, lesions,
+figures, tables and manuscript. Remaining: commit the branch.
+
+## v1.1 headline (confirmatory seeds, never used for tuning)
+- catch 0.206 -> 0.661 vs random 0.197 (+0.464 over random, 3/3 seeds).
+- dodge 0.794 -> 0.926 vs random 0.803 (+0.124 over random, 3/3 seeds).
+- All three preregistered success criteria met; frozen arm reproduced exactly.
+- Policy stays state-dependent (0.44 catch / 0.40 dodge), no collapse.
+- Stage A only: the recurrent MaleCNS core stayed entirely frozen.
+- Topology went AGAINST the biological graph: rewired beat biological on catch
+  (0.817 vs 0.661; difference -0.156 [-0.325, -0.021], 3/3 seeds), tied on dodge.
+  Rewired descending code is higher-dimensional (participation ratio 54.5 vs 29.5)
+  and less correlated (0.112 vs 0.152). Reported in the direction it came out.
+- Lesions are now informative: catch drops to 0.329 under 10% neuron ablation.
 
 ## Completed
 - M0-M3 retained and reverified; no bootstrap or acquisition restart.
