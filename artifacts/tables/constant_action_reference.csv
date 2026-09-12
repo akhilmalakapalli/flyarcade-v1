@@ -1,0 +1,7 @@
+task,policy,heldout_success
+catch,always_left,0.2083
+catch,always_stay,0.2333
+catch,always_right,0.1333
+dodge,always_left,0.7917
+dodge,always_stay,0.7667
+dodge,always_right,0.8667

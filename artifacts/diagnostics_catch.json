@@ -1,0 +1,95 @@
+{
+  "task": "catch",
+  "model_seed": 0,
+  "source_trial": "catch-learning-0-200",
+  "scope": "Post-hoc probe analysis of frozen saved weights. Probe decoders are analyst tools, not controller components, and were never used to select or tune any model.",
+  "conditions": [
+    {
+      "condition": "initial_weights",
+      "state_distribution": "visited under the controller's own policy",
+      "decisions": 480,
+      "mean_policy_entropy_nats": 1.0979061526241958,
+      "max_policy_entropy_nats": 1.0986122886681098,
+      "mean_max_action_probability": 0.34650597648939546,
+      "action_usage": [
+        159,
+        141,
+        180
+      ],
+      "descending_rate_sd_across_states": 0.10772910210859866,
+      "descending_neurons_dprime_above_0.5": 13,
+      "max_descending_dprime": 1.0534653201824307,
+      "label_majority_rate": 0.4354166666666667,
+      "probe_accuracy_descending_rates": 0.7166666666666667,
+      "probe_accuracy_shuffled_control": 0.3541666666666667
+    },
+    {
+      "condition": "trained_weights",
+      "state_distribution": "visited under the controller's own policy",
+      "decisions": 480,
+      "mean_policy_entropy_nats": 0.35644718585795815,
+      "max_policy_entropy_nats": 1.0986122886681098,
+      "mean_max_action_probability": 0.897170797835834,
+      "action_usage": [
+        3,
+        51,
+        426
+      ],
+      "descending_rate_sd_across_states": 0.1071987472754243,
+      "descending_neurons_dprime_above_0.5": 1041,
+      "max_descending_dprime": 3.0119879227098614,
+      "label_majority_rate": 0.8270833333333333,
+      "probe_accuracy_descending_rates": 0.875,
+      "probe_accuracy_shuffled_control": 0.8416666666666667
+    },
+    {
+      "condition": "initial_weights_matched_states",
+      "state_distribution": "matched uniform-random behaviour policy, identical across conditions",
+      "decisions": 480,
+      "mean_policy_entropy_nats": 1.097874188164313,
+      "max_policy_entropy_nats": 1.0986122886681098,
+      "mean_max_action_probability": 0.346584086300618,
+      "action_usage": [
+        163,
+        151,
+        166
+      ],
+      "descending_rate_sd_across_states": 0.10757517423743393,
+      "descending_neurons_dprime_above_0.5": 13,
+      "max_descending_dprime": 0.9402530106287404,
+      "label_majority_rate": 0.42083333333333334,
+      "probe_accuracy_descending_rates": 0.6541666666666667,
+      "probe_accuracy_shuffled_control": 0.38333333333333336
+    },
+    {
+      "condition": "trained_weights_matched_states",
+      "state_distribution": "matched uniform-random behaviour policy, identical across conditions",
+      "decisions": 480,
+      "mean_policy_entropy_nats": 0.36073091947274044,
+      "max_policy_entropy_nats": 1.0986122886681098,
+      "mean_max_action_probability": 0.8956554296579988,
+      "action_usage": [
+        163,
+        151,
+        166
+      ],
+      "descending_rate_sd_across_states": 0.10758673377827824,
+      "descending_neurons_dprime_above_0.5": 19,
+      "max_descending_dprime": 1.0817216681216244,
+      "label_majority_rate": 0.42083333333333334,
+      "probe_accuracy_descending_rates": 0.6583333333333333,
+      "probe_accuracy_shuffled_control": 0.425
+    }
+  ],
+  "constant_action_reference": {
+    "always_left": 0.20833333333333331,
+    "always_stay": 0.2333333333333333,
+    "always_right": 0.13333333333333333
+  },
+  "interpretation_note": "Compare the trained policy's action usage and entropy with these degenerate single-action references before attributing any held-out score to state-dependent control.",
+  "resources": {
+    "rss_mb": 239.140625,
+    "free_disk_mb": 348479.5546875,
+    "elapsed_seconds": 3.159788666991517
+  }
+}

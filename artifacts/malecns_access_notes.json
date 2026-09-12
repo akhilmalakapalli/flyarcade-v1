@@ -1,0 +1,19 @@
+{
+  "recorded_at": "2026-09-12T18:49:16.301580+00:00",
+  "server": "https://neuprint.janelia.org",
+  "dataset": "male-cns:v1.0",
+  "supported_client": "neuprint-python==0.6.3",
+  "installed_client_without_token": "RuntimeError: No token provided. Please provide one or set NEUPRINT_APPLICATION_CREDENTIALS",
+  "anonymous_http_probes": {
+    "constant_query": "HTTP 200",
+    "meta_schema_query": "HTTP 200"
+  },
+  "interpretation": "Missing token blocks supported Python Client, not proof all HTTP endpoints require authentication.",
+  "population_acquired": false,
+  "adjacency_acquired": false,
+  "full_graph_downloaded": false,
+  "documentation": [
+    "https://male-cns.janelia.org/download/",
+    "https://connectome-neuprint.github.io/neuprint-python/docs/quickstart.html"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "trial_hashes_and_invariants_checked": 36,
+  "exact_checkpoint_replays": [
+    "runs/catch-learning-0-200",
+    "runs/dodge-learning-0-200"
+  ],
+  "resources": {
+    "rss_mb": 112.71875,
+    "free_disk_mb": 348451.16015625,
+    "elapsed_seconds": 1.4159369169792626
+  },
+  "limitations": "Verifies implementation consistency, not physiological validity."
+}

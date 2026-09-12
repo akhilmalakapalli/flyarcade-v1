@@ -1,0 +1,46 @@
+{
+  "frozen_at": "2026-09-12T19:12:08.532742+00:00",
+  "graph_sha256": "3f4cbeedb17ca6a7d06162151429e0713ed72ce579d5f19a8845a446f6315697",
+  "tasks": [
+    "catch",
+    "dodge"
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "conditions": [
+    "learning",
+    "frozen",
+    "rewired",
+    "readout_only"
+  ],
+  "training_episodes": 200,
+  "horizon": 24,
+  "evaluation_episodes": 20,
+  "test_seed_rule": "3000000 + 100*seed + i, i=0..19",
+  "training_seed_rule": "1000 + seed*10000 + episode_index",
+  "development": {
+    "model_seed": 99,
+    "env_train_base": 1900000,
+    "env_eval_base": 2000000,
+    "candidate_count": 2,
+    "artifacts": [
+      "artifacts/development_pooled_readout.json",
+      "artifacts/development.json"
+    ]
+  },
+  "primary_metric": "paired held-out success change after minus before, aggregated at training seed level",
+  "secondary_metrics": [
+    "trained minus frozen",
+    "biological minus rewired",
+    "trained minus readout_only",
+    "sensory noise sd0.1",
+    "10 percent edge ablation",
+    "10 percent neuron ablation"
+  ],
+  "transfer": "100 source then100 target vs200 target and100 target fresh, both directions",
+  "inference": "exploratory three-seed descriptive paired bootstrap; no confirmatory significance claim",
+  "resource_guard": "120 s per independently checkpointed trial, no parallel workers"
+}

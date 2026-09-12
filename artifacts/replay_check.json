@@ -1,0 +1,621 @@
+{
+  "trials_replayed": 36,
+  "all_match": true,
+  "scope": "Bit-identical replay of held-out, sensory-noise and ablation evaluations from each saved final checkpoint. Pre-training evaluations predate the surviving checkpoint and are not replayed.",
+  "max_replay_seconds": 5.789724542002659,
+  "max_rss_snapshot_mb": 146.8125,
+  "verdicts": [
+    {
+      "trial": "catch-frozen-0-200",
+      "graph_sha256_match": true,
+      "evaluations_replayed": [
+        "after",
+        "edge_ablation_0.1",
+        "neuron_ablation_0.1",
+        "sensory_noise_0.1"
+      ],
+      "mismatches": [],
+      "status": "MATCH",
+      "resources": {
+        "rss_mb": 118.609375,
+        "free_disk_mb": 349493.7109375,
+        "elapsed_seconds": 2.8226025409821887
+      }
+    },
+    {
+      "trial": "catch-frozen-1-200",
+      "graph_sha256_match": true,
+      "evaluations_replayed": [
+        "after",
+        "edge_ablation_0.1",
+        "neuron_ablation_0.1",
+        "sensory_noise_0.1"
+      ],
+      "mismatches": [],
+      "status": "MATCH",
+      "resources": {
+        "rss_mb": 126.671875,
+        "free_disk_mb": 349493.67578125,
+        "elapsed_seconds": 2.85828774998663
+      }
+    },
+    {
+      "trial": "catch-frozen-2-200",
+      "graph_sha256_match": true,
+      "evaluations_replayed": [
+        "after",
+        "edge_ablation_0.1",
+        "neuron_ablation_0.1",
+        "sensory_noise_0.1"
+      ],
+      "mismatches": [],
+      "status": "MATCH",
+      "resources": {
+        "rss_mb": 115.875,
+        "free_disk_mb": 349493.671875,
+        "elapsed_seconds": 2.8447520839981735
+      }
+    },
+    {
+      "trial": "catch-learning-0-100",
+      "graph_sha256_match": true,
+      "evaluations_replayed": [
+        "after",
+        "edge_ablation_0.1",
+        "neuron_ablation_0.1",
+        "sensory_noise_0.1"
+      ],
+      "mismatches": [],
+      "status": "MATCH",
+      "resources": {
+        "rss_mb": 112.90625,
+        "free_disk_mb": 349493.6484375,
+        "elapsed_seconds": 2.8786358750076033
+      }
+    },
+    {
+      "trial": "catch-learning-0-200",
+      "graph_sha256_match": true,
+      "evaluations_replayed": [
+        "after",
+        "edge_ablation_0.1",
+        "neuron_ablation_0.1",
+        "sensory_noise_0.1"
+      ],
+      "mismatches": [],
+      "status": "MATCH",
+      "resources": {
+        "rss_mb": 111.15625,
+        "free_disk_mb": 349493.63671875,
+        "elapsed_seconds": 2.817403416003799
+      }
+    },
+    {
+      "trial": "catch-learning-0-200-from-dodge",
+      "graph_sha256_match": true,
+      "evaluations_replayed": [
+        "after",
+        "edge_ablation_0.1",
+        "neuron_ablation_0.1",
+        "sensory_noise_0.1"
+      ],
+      "mismatches": [],
+      "status": "MATCH",
+      "resources": {
+        "rss_mb": 112.09375,
+        "free_disk_mb": 349493.578125,
+        "elapsed_seconds": 2.829771874996368
+      }
+    },
+    {
+      "trial": "catch-learning-1-100",
+      "graph_sha256_match": true,
+      "evaluations_replayed": [
+        "after",
+        "edge_ablation_0.1",
+        "neuron_ablation_0.1",
+        "sensory_noise_0.1"
+      ],
+      "mismatches": [],
+      "status": "MATCH",
+      "resources": {
+        "rss_mb": 113.84375,
+        "free_disk_mb": 349493.5,
+        "elapsed_seconds": 2.7614239169924986
+      }
+    },
+    {
+      "trial": "catch-learning-1-200",
+      "graph_sha256_match": true,
+      "evaluations_replayed": [
+        "after",
+        "edge_ablation_0.1",
+        "neuron_ablation_0.1",
+        "sensory_noise_0.1"
+      ],
+      "mismatches": [],
+      "status": "MATCH",
+      "resources": {
+        "rss_mb": 114.859375,
+        "free_disk_mb": 349493.515625,
+        "elapsed_seconds": 2.835518875013804
+      }
+    },
+    {
+      "trial": "catch-learning-1-200-from-dodge",
+      "graph_sha256_match": true,
+      "evaluations_replayed": [
+        "after",
+        "edge_ablation_0.1",
+        "neuron_ablation_0.1",
+        "sensory_noise_0.1"
+      ],
+      "mismatches": [],
+      "status": "MATCH",
+      "resources": {
+        "rss_mb": 115.03125,
+        "free_disk_mb": 349493.50390625,
+        "elapsed_seconds": 2.837294709024718
+      }
+    },
+    {
+      "trial": "catch-learning-2-100",
+      "graph_sha256_match": true,
+      "evaluations_replayed": [
+        "after",
+        "edge_ablation_0.1",
+        "neuron_ablation_0.1",
+        "sensory_noise_0.1"
+      ],
+      "mismatches": [],
+      "status": "MATCH",
+      "resources": {
+        "rss_mb": 115.015625,
+        "free_disk_mb": 349493.50390625,
+        "elapsed_seconds": 2.8514837499824353
+      }
+    },
+    {
+      "trial": "catch-learning-2-200",
+      "graph_sha256_match": true,
+      "evaluations_replayed": [
+        "after",
+        "edge_ablation_0.1",
+        "neuron_ablation_0.1",
+        "sensory_noise_0.1"
+      ],
+      "mismatches": [],
+      "status": "MATCH",
+      "resources": {
+        "rss_mb": 113.453125,
+        "free_disk_mb": 349493.484375,
+        "elapsed_seconds": 2.8370030829973985
+      }
+    },
+    {
+      "trial": "catch-learning-2-200-from-dodge",
+      "graph_sha256_match": true,
+      "evaluations_replayed": [
+        "after",
+        "edge_ablation_0.1",
+        "neuron_ablation_0.1",
+        "sensory_noise_0.1"
+      ],
+      "mismatches": [],
+      "status": "MATCH",
+      "resources": {
+        "rss_mb": 114.671875,
+        "free_disk_mb": 349493.4453125,
+        "elapsed_seconds": 2.826608292001765
+      }
+    },
+    {
+      "trial": "catch-readout_only-0-200",
+      "graph_sha256_match": true,
+      "evaluations_replayed": [
+        "after",
+        "edge_ablation_0.1",
+        "neuron_ablation_0.1",
+        "sensory_noise_0.1"
+      ],
+      "mismatches": [],
+      "status": "MATCH",
+      "resources": {
+        "rss_mb": 114.765625,
+        "free_disk_mb": 349493.4453125,
+        "elapsed_seconds": 2.8213680000044405
+      }
+    },
+    {
+      "trial": "catch-readout_only-1-200",
+      "graph_sha256_match": true,
+      "evaluations_replayed": [
+        "after",
+        "edge_ablation_0.1",
+        "neuron_ablation_0.1",
+        "sensory_noise_0.1"
+      ],
+      "mismatches": [],
+      "status": "MATCH",
+      "resources": {
+        "rss_mb": 116.4375,
+        "free_disk_mb": 349493.7421875,
+        "elapsed_seconds": 2.8341120000113733
+      }
+    },
+    {
+      "trial": "catch-readout_only-2-200",
+      "graph_sha256_match": true,
+      "evaluations_replayed": [
+        "after",
+        "edge_ablation_0.1",
+        "neuron_ablation_0.1",
+        "sensory_noise_0.1"
+      ],
+      "mismatches": [],
+      "status": "MATCH",
+      "resources": {
+        "rss_mb": 113.4375,
+        "free_disk_mb": 349493.66796875,
+        "elapsed_seconds": 2.830122333019972
+      }
+    },
+    {
+      "trial": "catch-rewired-0-200",
+      "graph_sha256_match": true,
+      "evaluations_replayed": [
+        "after",
+        "edge_ablation_0.1",
+        "neuron_ablation_0.1",
+        "sensory_noise_0.1"
+      ],
+      "mismatches": [],
+      "status": "MATCH",
+      "resources": {
+        "rss_mb": 142.125,
+        "free_disk_mb": 349493.59765625,
+        "elapsed_seconds": 5.6528860419930425
+      }
+    },
+    {
+      "trial": "catch-rewired-1-200",
+      "graph_sha256_match": true,
+      "evaluations_replayed": [
+        "after",
+        "edge_ablation_0.1",
+        "neuron_ablation_0.1",
+        "sensory_noise_0.1"
+      ],
+      "mismatches": [],
+      "status": "MATCH",
+      "resources": {
+        "rss_mb": 144.65625,
+        "free_disk_mb": 349491.56640625,
+        "elapsed_seconds": 5.676779541012365
+      }
+    },
+    {
+      "trial": "catch-rewired-2-200",
+      "graph_sha256_match": true,
+      "evaluations_replayed": [
+        "after",
+        "edge_ablation_0.1",
+        "neuron_ablation_0.1",
+        "sensory_noise_0.1"
+      ],
+      "mismatches": [],
+      "status": "MATCH",
+      "resources": {
+        "rss_mb": 141.265625,
+        "free_disk_mb": 349491.46875,
+        "elapsed_seconds": 5.727270041999873
+      }
+    },
+    {
+      "trial": "dodge-frozen-0-200",
+      "graph_sha256_match": true,
+      "evaluations_replayed": [
+        "after",
+        "edge_ablation_0.1",
+        "neuron_ablation_0.1",
+        "sensory_noise_0.1"
+      ],
+      "mismatches": [],
+      "status": "MATCH",
+      "resources": {
+        "rss_mb": 114.21875,
+        "free_disk_mb": 349491.5,
+        "elapsed_seconds": 2.77564683300443
+      }
+    },
+    {
+      "trial": "dodge-frozen-1-200",
+      "graph_sha256_match": true,
+      "evaluations_replayed": [
+        "after",
+        "edge_ablation_0.1",
+        "neuron_ablation_0.1",
+        "sensory_noise_0.1"
+      ],
+      "mismatches": [],
+      "status": "MATCH",
+      "resources": {
+        "rss_mb": 112.09375,
+        "free_disk_mb": 349491.52734375,
+        "elapsed_seconds": 2.848207083006855
+      }
+    },
+    {
+      "trial": "dodge-frozen-2-200",
+      "graph_sha256_match": true,
+      "evaluations_replayed": [
+        "after",
+        "edge_ablation_0.1",
+        "neuron_ablation_0.1",
+        "sensory_noise_0.1"
+      ],
+      "mismatches": [],
+      "status": "MATCH",
+      "resources": {
+        "rss_mb": 114.828125,
+        "free_disk_mb": 349491.5078125,
+        "elapsed_seconds": 2.794850292004412
+      }
+    },
+    {
+      "trial": "dodge-learning-0-100",
+      "graph_sha256_match": true,
+      "evaluations_replayed": [
+        "after",
+        "edge_ablation_0.1",
+        "neuron_ablation_0.1",
+        "sensory_noise_0.1"
+      ],
+      "mismatches": [],
+      "status": "MATCH",
+      "resources": {
+        "rss_mb": 115.015625,
+        "free_disk_mb": 349491.359375,
+        "elapsed_seconds": 2.8801819999935105
+      }
+    },
+    {
+      "trial": "dodge-learning-0-200",
+      "graph_sha256_match": true,
+      "evaluations_replayed": [
+        "after",
+        "edge_ablation_0.1",
+        "neuron_ablation_0.1",
+        "sensory_noise_0.1"
+      ],
+      "mismatches": [],
+      "status": "MATCH",
+      "resources": {
+        "rss_mb": 114.765625,
+        "free_disk_mb": 349491.3515625,
+        "elapsed_seconds": 2.8049097080074716
+      }
+    },
+    {
+      "trial": "dodge-learning-0-200-from-catch",
+      "graph_sha256_match": true,
+      "evaluations_replayed": [
+        "after",
+        "edge_ablation_0.1",
+        "neuron_ablation_0.1",
+        "sensory_noise_0.1"
+      ],
+      "mismatches": [],
+      "status": "MATCH",
+      "resources": {
+        "rss_mb": 112.734375,
+        "free_disk_mb": 349491.328125,
+        "elapsed_seconds": 2.8347207499900833
+      }
+    },
+    {
+      "trial": "dodge-learning-1-100",
+      "graph_sha256_match": true,
+      "evaluations_replayed": [
+        "after",
+        "edge_ablation_0.1",
+        "neuron_ablation_0.1",
+        "sensory_noise_0.1"
+      ],
+      "mismatches": [],
+      "status": "MATCH",
+      "resources": {
+        "rss_mb": 115.390625,
+        "free_disk_mb": 349491.3203125,
+        "elapsed_seconds": 2.8245691249903757
+      }
+    },
+    {
+      "trial": "dodge-learning-1-200",
+      "graph_sha256_match": true,
+      "evaluations_replayed": [
+        "after",
+        "edge_ablation_0.1",
+        "neuron_ablation_0.1",
+        "sensory_noise_0.1"
+      ],
+      "mismatches": [],
+      "status": "MATCH",
+      "resources": {
+        "rss_mb": 118.953125,
+        "free_disk_mb": 349491.26171875,
+        "elapsed_seconds": 2.8517275000049267
+      }
+    },
+    {
+      "trial": "dodge-learning-1-200-from-catch",
+      "graph_sha256_match": true,
+      "evaluations_replayed": [
+        "after",
+        "edge_ablation_0.1",
+        "neuron_ablation_0.1",
+        "sensory_noise_0.1"
+      ],
+      "mismatches": [],
+      "status": "MATCH",
+      "resources": {
+        "rss_mb": 117.03125,
+        "free_disk_mb": 349491.265625,
+        "elapsed_seconds": 2.8211581670038868
+      }
+    },
+    {
+      "trial": "dodge-learning-2-100",
+      "graph_sha256_match": true,
+      "evaluations_replayed": [
+        "after",
+        "edge_ablation_0.1",
+        "neuron_ablation_0.1",
+        "sensory_noise_0.1"
+      ],
+      "mismatches": [],
+      "status": "MATCH",
+      "resources": {
+        "rss_mb": 112.984375,
+        "free_disk_mb": 349491.16015625,
+        "elapsed_seconds": 2.888295000011567
+      }
+    },
+    {
+      "trial": "dodge-learning-2-200",
+      "graph_sha256_match": true,
+      "evaluations_replayed": [
+        "after",
+        "edge_ablation_0.1",
+        "neuron_ablation_0.1",
+        "sensory_noise_0.1"
+      ],
+      "mismatches": [],
+      "status": "MATCH",
+      "resources": {
+        "rss_mb": 112.15625,
+        "free_disk_mb": 349491.1953125,
+        "elapsed_seconds": 2.829142792004859
+      }
+    },
+    {
+      "trial": "dodge-learning-2-200-from-catch",
+      "graph_sha256_match": true,
+      "evaluations_replayed": [
+        "after",
+        "edge_ablation_0.1",
+        "neuron_ablation_0.1",
+        "sensory_noise_0.1"
+      ],
+      "mismatches": [],
+      "status": "MATCH",
+      "resources": {
+        "rss_mb": 111.609375,
+        "free_disk_mb": 349491.16796875,
+        "elapsed_seconds": 2.841509624995524
+      }
+    },
+    {
+      "trial": "dodge-readout_only-0-200",
+      "graph_sha256_match": true,
+      "evaluations_replayed": [
+        "after",
+        "edge_ablation_0.1",
+        "neuron_ablation_0.1",
+        "sensory_noise_0.1"
+      ],
+      "mismatches": [],
+      "status": "MATCH",
+      "resources": {
+        "rss_mb": 112.625,
+        "free_disk_mb": 349491.16796875,
+        "elapsed_seconds": 2.7685839159821626
+      }
+    },
+    {
+      "trial": "dodge-readout_only-1-200",
+      "graph_sha256_match": true,
+      "evaluations_replayed": [
+        "after",
+        "edge_ablation_0.1",
+        "neuron_ablation_0.1",
+        "sensory_noise_0.1"
+      ],
+      "mismatches": [],
+      "status": "MATCH",
+      "resources": {
+        "rss_mb": 113.0625,
+        "free_disk_mb": 349491.15234375,
+        "elapsed_seconds": 2.771675875002984
+      }
+    },
+    {
+      "trial": "dodge-readout_only-2-200",
+      "graph_sha256_match": true,
+      "evaluations_replayed": [
+        "after",
+        "edge_ablation_0.1",
+        "neuron_ablation_0.1",
+        "sensory_noise_0.1"
+      ],
+      "mismatches": [],
+      "status": "MATCH",
+      "resources": {
+        "rss_mb": 113.546875,
+        "free_disk_mb": 349490.046875,
+        "elapsed_seconds": 2.805337083991617
+      }
+    },
+    {
+      "trial": "dodge-rewired-0-200",
+      "graph_sha256_match": true,
+      "evaluations_replayed": [
+        "after",
+        "edge_ablation_0.1",
+        "neuron_ablation_0.1",
+        "sensory_noise_0.1"
+      ],
+      "mismatches": [],
+      "status": "MATCH",
+      "resources": {
+        "rss_mb": 142.71875,
+        "free_disk_mb": 349490.09375,
+        "elapsed_seconds": 5.742978583992226
+      }
+    },
+    {
+      "trial": "dodge-rewired-1-200",
+      "graph_sha256_match": true,
+      "evaluations_replayed": [
+        "after",
+        "edge_ablation_0.1",
+        "neuron_ablation_0.1",
+        "sensory_noise_0.1"
+      ],
+      "mismatches": [],
+      "status": "MATCH",
+      "resources": {
+        "rss_mb": 146.8125,
+        "free_disk_mb": 349490.0546875,
+        "elapsed_seconds": 5.705509124993114
+      }
+    },
+    {
+      "trial": "dodge-rewired-2-200",
+      "graph_sha256_match": true,
+      "evaluations_replayed": [
+        "after",
+        "edge_ablation_0.1",
+        "neuron_ablation_0.1",
+        "sensory_noise_0.1"
+      ],
+      "mismatches": [],
+      "status": "MATCH",
+      "resources": {
+        "rss_mb": 142.84375,
+        "free_disk_mb": 349490.05078125,
+        "elapsed_seconds": 5.789724542002659
+      }
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+direction,arm,mean,boot_lo,boot_hi,seed0,seed1,seed2
+dodge-to-catch,transfer,0.2000,0.1917,0.2083,0.2083,0.1917,0.2000
+dodge-to-catch,target200,0.1750,0.1333,0.2417,0.1333,0.2417,0.1500
+dodge-to-catch,target100,0.1833,0.1333,0.2250,0.1333,0.2250,0.1917
+dodge-to-catch,paired_minus_target200,0.0250,-0.0500,0.0750,0.0750,-0.0500,0.0500
+catch-to-dodge,transfer,0.8194,0.7917,0.8667,0.8667,0.8000,0.7917
+catch-to-dodge,target200,0.7944,0.7833,0.8083,0.7917,0.8083,0.7833
+catch-to-dodge,target100,0.8000,0.7750,0.8250,0.7750,0.8000,0.8250
+catch-to-dodge,paired_minus_target200,0.0250,-0.0083,0.0750,0.0750,-0.0083,0.0083

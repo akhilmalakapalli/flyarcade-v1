@@ -1,0 +1,29 @@
+{
+  "kind": "synthetic-software-benchmark",
+  "seed": 42,
+  "control_seed": 43,
+  "python": "3.14.6",
+  "numpy": "2.5.3",
+  "platform": "macOS-26.6-arm64-arm-64bit-Mach-O",
+  "graph": {
+    "neurons": 1024,
+    "edges": 16384,
+    "synapses": 90342,
+    "isolates": 0,
+    "array_bytes": 401408,
+    "kind": "synthetic"
+  },
+  "accepted_swaps": 31578,
+  "attempted_swaps": 32768,
+  "archive_bytes": 49727,
+  "timings": {
+    "generate_seconds": 0.011495166982058436,
+    "rewire_seconds": 0.06852679199073464,
+    "save_load_seconds": 0.007753292011329904
+  },
+  "resources": {
+    "rss_mb": 51.1875,
+    "free_disk_mb": 348451.17578125,
+    "elapsed_seconds": 0.10572962500737049
+  }
+}

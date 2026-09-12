@@ -1,0 +1,7 @@
+contrast,mean,boot_lo,boot_hi,seed0,seed1,seed2
+catch/learning-minus-frozen,-0.0139,-0.1000,0.1083,-0.1000,0.1083,-0.0500
+catch/learning-minus-rewired,0.0167,-0.0083,0.0500,-0.0083,0.0500,0.0083
+catch/learning-minus-readout_only,0.0111,-0.0083,0.0417,-0.0083,0.0417,0.0000
+dodge/learning-minus-frozen,-0.0167,-0.0583,0.0250,0.0250,-0.0583,-0.0167
+dodge/learning-minus-rewired,-0.0250,-0.0500,0.0083,-0.0500,0.0083,-0.0333
+dodge/learning-minus-readout_only,-0.0389,-0.0667,0.0083,-0.0583,0.0083,-0.0667

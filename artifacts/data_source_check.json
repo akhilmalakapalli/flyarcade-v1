@@ -1,0 +1,18 @@
+{
+  "source_url": "https://male-cns.janelia.org/",
+  "server": "https://neuprint.janelia.org",
+  "dataset": "male-cns:v1.0",
+  "release": "1.0",
+  "access_method": "neuprint-python==0.6.3",
+  "checked_at": "2026-09-12T19:00:33.282608+00:00",
+  "population_acquired": false,
+  "bulk_downloaded": false,
+  "download_limit_bytes": 134217728,
+  "max_neurons": 4096,
+  "status": "CLIENT_READY_SELECTION_PENDING",
+  "resources": {
+    "rss_mb": 149.296875,
+    "free_disk_mb": 349692.1328125,
+    "elapsed_seconds": 0.7397442499932367
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "split": "development-only",
+  "seed": 99,
+  "before": 0.19999999999999998,
+  "learning_curve": [
+    {
+      "episodes": 50,
+      "success": 0.14166666666666666
+    },
+    {
+      "episodes": 100,
+      "success": 0.25
+    },
+    {
+      "episodes": 150,
+      "success": 0.15833333333333333
+    },
+    {
+      "episodes": 200,
+      "success": 0.27499999999999997
+    }
+  ],
+  "resources": {
+    "rss_mb": 152.71875,
+    "free_disk_mb": 349644.6640625,
+    "elapsed_seconds": 20.26124312498723
+  }
+}
