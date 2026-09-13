@@ -1,0 +1,25 @@
+{
+ "name": "flappy-validate-gru-t16-150k-s2",
+ "stage": "flappy_rescue_validate",
+ "config": {
+  "task": "flappy",
+  "seed": 2,
+  "source": "fly",
+  "lr": 0.0003,
+  "transitions": 150000,
+  "train_purpose": "validate_train",
+  "eval_purpose": "validate_eval",
+  "standardizer": "artifacts/v13/standardizers/flappy-biological-t16-descending.json",
+  "arch": "gru",
+  "ticks": 16,
+  "shaping": 0.0,
+  "ent": 0.003
+ },
+ "evaluation": {
+  "purpose": "validate_eval",
+  "episodes": 60,
+  "probe_purpose": "dev_probe"
+ },
+ "output": "runs/v13-flappy-rescue/validate/flappy-validate-gru-t16-150k-s2",
+ "selected_from": "screen2 s2-gru-t16-noshape-150k (0.746 / 0.742 on screen seeds 0,1)"
+}

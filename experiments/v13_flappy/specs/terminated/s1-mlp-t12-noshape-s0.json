@@ -1,0 +1,24 @@
+{
+ "name": "s1-mlp-t12-noshape-s0",
+ "stage": "flappy_rescue_screen1",
+ "config": {
+  "task": "flappy",
+  "seed": 0,
+  "source": "fly",
+  "lr": 0.0003,
+  "transitions": 150000,
+  "train_purpose": "screen_train",
+  "eval_purpose": "screen_eval",
+  "standardizer": "artifacts/v13/standardizers/flappy-biological-t12-descending.json",
+  "arch": "mlp",
+  "ticks": 12,
+  "shaping": 0.0,
+  "ent": 0.003
+ },
+ "evaluation": {
+  "purpose": "screen_eval",
+  "episodes": 40,
+  "probe_purpose": "dev_probe"
+ },
+ "output": "runs/v13-flappy-rescue/screen1/s1-mlp-t12-noshape-s0"
+}
