@@ -1,0 +1,417 @@
+{
+  "purpose": "Permanent, versioned copies of the frozen Pong and Flappy confirmatory inference files (biological condition), previously only in the rescue worktrees' Git-ignored runs/ folders. Copied byte-for-byte; nothing retrained, rescored or modified.",
+  "copied_at": "2026-09-13T16:36:47.842852+00:00",
+  "included_files": [
+    "policy.npz (final and initial actor-critic parameters)",
+    "result.json (frozen trial record: config, hashes, evaluations)"
+  ],
+  "excluded_files": {
+    "checkpoint.pkl": "training-resume state (optimizer, rollout, RNG); not needed for inference and unsafe to unpickle"
+  },
+  "standardizers": {
+    "pong": "artifacts/v13/standardizers/pong-biological-t8-descending.json (already versioned)",
+    "flappy": "artifacts/v13/standardizers/flappy-biological-t16-descending.json (already versioned)"
+  },
+  "models": {
+    "pong/biological-s0": {
+      "source_branch": "flyarcade-v1.3-pong-rescue",
+      "source_worktree_path": "/Users/akhil/Documents/Projects/flyarcade-v1-pong-rescue/runs/v13-pong-rescue/confirm/pong-confirm-biological-s0",
+      "source_relative_path": "runs/v13-pong-rescue/confirm/pong-confirm-biological-s0",
+      "frozen_plan_commit": "56c604b",
+      "results_commit": "94422be",
+      "frozen_plan": "experiments/v13_pong_run_plan.json",
+      "run_name": "pong-confirm-biological-s0",
+      "config": {
+        "task": "pong",
+        "seed": 0,
+        "source": "fly",
+        "topology": "biological",
+        "arch": "mlp",
+        "hidden": 128,
+        "core": 64,
+        "ticks": 8,
+        "readout": "descending",
+        "transitions": 150000,
+        "ent": 0.003,
+        "lr": 0.0003,
+        "shaping": 1.0
+      },
+      "graph_sha256": "46d585dcb1cc34e77025541dd855b2d728ee4c42aa9c2e15712caf5ae1907c35",
+      "standardizer_sha256": "77a7afa66a7079957f9735174c0434852a736d5d7e9d7fbd9ab3414b3c524f8f",
+      "final_params_sha256": "ff0d6aec39b180f0d2e22dc549617eee19158f28f6da8a4edd61304e4170c7b0",
+      "files": {
+        "policy.npz": {
+          "sha256": "dbfad83280e61a1ccc274e2bd5812ed9a6114445e67794d720edfa163849f2b8",
+          "bytes": 2795498,
+          "byte_identical_to_source": true
+        },
+        "result.json": {
+          "sha256": "69a32434b641955ea2fc7b614bed60a46abd760e41a2d349cc092891e2b90f0d",
+          "bytes": 90912,
+          "byte_identical_to_source": true
+        }
+      },
+      "policy_npz_matches_frozen_result_record": true
+    },
+    "pong/biological-s1": {
+      "source_branch": "flyarcade-v1.3-pong-rescue",
+      "source_worktree_path": "/Users/akhil/Documents/Projects/flyarcade-v1-pong-rescue/runs/v13-pong-rescue/confirm/pong-confirm-biological-s1",
+      "source_relative_path": "runs/v13-pong-rescue/confirm/pong-confirm-biological-s1",
+      "frozen_plan_commit": "56c604b",
+      "results_commit": "94422be",
+      "frozen_plan": "experiments/v13_pong_run_plan.json",
+      "run_name": "pong-confirm-biological-s1",
+      "config": {
+        "task": "pong",
+        "seed": 1,
+        "source": "fly",
+        "topology": "biological",
+        "arch": "mlp",
+        "hidden": 128,
+        "core": 64,
+        "ticks": 8,
+        "readout": "descending",
+        "transitions": 150000,
+        "ent": 0.003,
+        "lr": 0.0003,
+        "shaping": 1.0
+      },
+      "graph_sha256": "46d585dcb1cc34e77025541dd855b2d728ee4c42aa9c2e15712caf5ae1907c35",
+      "standardizer_sha256": "77a7afa66a7079957f9735174c0434852a736d5d7e9d7fbd9ab3414b3c524f8f",
+      "final_params_sha256": "8ef3cedcf8b370d1ccc2164039872fea35339e5458c97b9517bddfd613e2c760",
+      "files": {
+        "policy.npz": {
+          "sha256": "b4bf013b6ad938df0e70c1e937fb65a4bf0bcc81f362623df91af7210d2f3887",
+          "bytes": 2795498,
+          "byte_identical_to_source": true
+        },
+        "result.json": {
+          "sha256": "bda80df877b2061e7cc0c3416ef22c36645c694e4640b01e5a242241bf01f3e7",
+          "bytes": 90850,
+          "byte_identical_to_source": true
+        }
+      },
+      "policy_npz_matches_frozen_result_record": true
+    },
+    "pong/biological-s2": {
+      "source_branch": "flyarcade-v1.3-pong-rescue",
+      "source_worktree_path": "/Users/akhil/Documents/Projects/flyarcade-v1-pong-rescue/runs/v13-pong-rescue/confirm/pong-confirm-biological-s2",
+      "source_relative_path": "runs/v13-pong-rescue/confirm/pong-confirm-biological-s2",
+      "frozen_plan_commit": "56c604b",
+      "results_commit": "94422be",
+      "frozen_plan": "experiments/v13_pong_run_plan.json",
+      "run_name": "pong-confirm-biological-s2",
+      "config": {
+        "task": "pong",
+        "seed": 2,
+        "source": "fly",
+        "topology": "biological",
+        "arch": "mlp",
+        "hidden": 128,
+        "core": 64,
+        "ticks": 8,
+        "readout": "descending",
+        "transitions": 150000,
+        "ent": 0.003,
+        "lr": 0.0003,
+        "shaping": 1.0
+      },
+      "graph_sha256": "46d585dcb1cc34e77025541dd855b2d728ee4c42aa9c2e15712caf5ae1907c35",
+      "standardizer_sha256": "77a7afa66a7079957f9735174c0434852a736d5d7e9d7fbd9ab3414b3c524f8f",
+      "final_params_sha256": "9bfade780e38809d9b8922a4ccdcc08c6321360d478a824bbee3cf3b091fef8a",
+      "files": {
+        "policy.npz": {
+          "sha256": "c9f51287105b07906ab2b522de58d84e9e25235c31f1b81f56537e6577a2e03d",
+          "bytes": 2795498,
+          "byte_identical_to_source": true
+        },
+        "result.json": {
+          "sha256": "dbdfd9f572061937fece2faac10287a3d5b23078a01f8407eba4e2c317db08bd",
+          "bytes": 90988,
+          "byte_identical_to_source": true
+        }
+      },
+      "policy_npz_matches_frozen_result_record": true
+    },
+    "pong/biological-s3": {
+      "source_branch": "flyarcade-v1.3-pong-rescue",
+      "source_worktree_path": "/Users/akhil/Documents/Projects/flyarcade-v1-pong-rescue/runs/v13-pong-rescue/confirm/pong-confirm-biological-s3",
+      "source_relative_path": "runs/v13-pong-rescue/confirm/pong-confirm-biological-s3",
+      "frozen_plan_commit": "56c604b",
+      "results_commit": "94422be",
+      "frozen_plan": "experiments/v13_pong_run_plan.json",
+      "run_name": "pong-confirm-biological-s3",
+      "config": {
+        "task": "pong",
+        "seed": 3,
+        "source": "fly",
+        "topology": "biological",
+        "arch": "mlp",
+        "hidden": 128,
+        "core": 64,
+        "ticks": 8,
+        "readout": "descending",
+        "transitions": 150000,
+        "ent": 0.003,
+        "lr": 0.0003,
+        "shaping": 1.0
+      },
+      "graph_sha256": "46d585dcb1cc34e77025541dd855b2d728ee4c42aa9c2e15712caf5ae1907c35",
+      "standardizer_sha256": "77a7afa66a7079957f9735174c0434852a736d5d7e9d7fbd9ab3414b3c524f8f",
+      "final_params_sha256": "3ebe27a05565f4fc1837e513c8e5b98293205dfef7a1262863906272d3e4bd6e",
+      "files": {
+        "policy.npz": {
+          "sha256": "e8b7f47af0e494aa7ae5e45611ce1bd1c9d0eb53a923384bb945394c520e18c6",
+          "bytes": 2795498,
+          "byte_identical_to_source": true
+        },
+        "result.json": {
+          "sha256": "0fb5ff27552001f78326ce63ac481440949236a7c94948abf8fa6e8d61ffa58a",
+          "bytes": 91028,
+          "byte_identical_to_source": true
+        }
+      },
+      "policy_npz_matches_frozen_result_record": true
+    },
+    "pong/biological-s4": {
+      "source_branch": "flyarcade-v1.3-pong-rescue",
+      "source_worktree_path": "/Users/akhil/Documents/Projects/flyarcade-v1-pong-rescue/runs/v13-pong-rescue/confirm/pong-confirm-biological-s4",
+      "source_relative_path": "runs/v13-pong-rescue/confirm/pong-confirm-biological-s4",
+      "frozen_plan_commit": "56c604b",
+      "results_commit": "94422be",
+      "frozen_plan": "experiments/v13_pong_run_plan.json",
+      "run_name": "pong-confirm-biological-s4",
+      "config": {
+        "task": "pong",
+        "seed": 4,
+        "source": "fly",
+        "topology": "biological",
+        "arch": "mlp",
+        "hidden": 128,
+        "core": 64,
+        "ticks": 8,
+        "readout": "descending",
+        "transitions": 150000,
+        "ent": 0.003,
+        "lr": 0.0003,
+        "shaping": 1.0
+      },
+      "graph_sha256": "46d585dcb1cc34e77025541dd855b2d728ee4c42aa9c2e15712caf5ae1907c35",
+      "standardizer_sha256": "77a7afa66a7079957f9735174c0434852a736d5d7e9d7fbd9ab3414b3c524f8f",
+      "final_params_sha256": "0f0f07bc621d5832cff7484a3ecbfdb1d1ca44ad38ebae57d4d3e447c81d8e82",
+      "files": {
+        "policy.npz": {
+          "sha256": "07d5924effa5df88a3b6a985705d4909de035aca3a0a07172a768f22f2b0c94b",
+          "bytes": 2795498,
+          "byte_identical_to_source": true
+        },
+        "result.json": {
+          "sha256": "99f276f89504b15dc096757eaadd688be9788e7f2d3ed20ff6a37928b374e853",
+          "bytes": 90935,
+          "byte_identical_to_source": true
+        }
+      },
+      "policy_npz_matches_frozen_result_record": true
+    },
+    "flappy/biological-s0": {
+      "source_branch": "flyarcade-v1.3-flappy-rescue",
+      "source_worktree_path": "/Users/akhil/Documents/Projects/flyarcade-v1-flappy-rescue/runs/v13-flappy-rescue/confirm/flappy-confirm-biological-s0",
+      "source_relative_path": "runs/v13-flappy-rescue/confirm/flappy-confirm-biological-s0",
+      "frozen_plan_commit": "45bd666",
+      "results_commit": "0443717",
+      "frozen_plan": "experiments/v13_flappy/run_plan.json",
+      "run_name": "flappy-confirm-biological-s0",
+      "config": {
+        "task": "flappy",
+        "seed": 0,
+        "source": "fly",
+        "topology": "biological",
+        "arch": "gru",
+        "hidden": 128,
+        "core": 64,
+        "ticks": 16,
+        "readout": "descending",
+        "transitions": 150000,
+        "ent": 0.003,
+        "lr": 0.0003,
+        "shaping": 0.0
+      },
+      "graph_sha256": "46d585dcb1cc34e77025541dd855b2d728ee4c42aa9c2e15712caf5ae1907c35",
+      "standardizer_sha256": "ff20e43eebdc98769084168be9d413f8b2782026a0db6ade570ceacef9ecf7bd",
+      "final_params_sha256": "9c86179dcc929bc3ad6a974beb75e36b2d501fd2a8461d0e66b91710e0193f52",
+      "files": {
+        "policy.npz": {
+          "sha256": "dea0168e38e2721431ec467da8ad113722c142fabe1a02518abd33826362936a",
+          "bytes": 3259330,
+          "byte_identical_to_source": true
+        },
+        "result.json": {
+          "sha256": "72e219d57e7a705f6197dc40605936974f41489e5ba308d961b167725635fb54",
+          "bytes": 229958,
+          "byte_identical_to_source": true
+        }
+      },
+      "policy_npz_matches_frozen_result_record": true
+    },
+    "flappy/biological-s1": {
+      "source_branch": "flyarcade-v1.3-flappy-rescue",
+      "source_worktree_path": "/Users/akhil/Documents/Projects/flyarcade-v1-flappy-rescue/runs/v13-flappy-rescue/confirm/flappy-confirm-biological-s1",
+      "source_relative_path": "runs/v13-flappy-rescue/confirm/flappy-confirm-biological-s1",
+      "frozen_plan_commit": "45bd666",
+      "results_commit": "0443717",
+      "frozen_plan": "experiments/v13_flappy/run_plan.json",
+      "run_name": "flappy-confirm-biological-s1",
+      "config": {
+        "task": "flappy",
+        "seed": 1,
+        "source": "fly",
+        "topology": "biological",
+        "arch": "gru",
+        "hidden": 128,
+        "core": 64,
+        "ticks": 16,
+        "readout": "descending",
+        "transitions": 150000,
+        "ent": 0.003,
+        "lr": 0.0003,
+        "shaping": 0.0
+      },
+      "graph_sha256": "46d585dcb1cc34e77025541dd855b2d728ee4c42aa9c2e15712caf5ae1907c35",
+      "standardizer_sha256": "ff20e43eebdc98769084168be9d413f8b2782026a0db6ade570ceacef9ecf7bd",
+      "final_params_sha256": "fee3eaab1b6cba980e0e454cfdc90b2e213506220aee9653fda490f35e0e4348",
+      "files": {
+        "policy.npz": {
+          "sha256": "aac4763431ff0cc8b1a71a154bdb01420214dbf8f5f07ed9de8f039976492a45",
+          "bytes": 3259330,
+          "byte_identical_to_source": true
+        },
+        "result.json": {
+          "sha256": "19e4596b1267334e714a9361181f4ad7cdac6daa43a357309195cdb7004f0cbf",
+          "bytes": 229376,
+          "byte_identical_to_source": true
+        }
+      },
+      "policy_npz_matches_frozen_result_record": true
+    },
+    "flappy/biological-s2": {
+      "source_branch": "flyarcade-v1.3-flappy-rescue",
+      "source_worktree_path": "/Users/akhil/Documents/Projects/flyarcade-v1-flappy-rescue/runs/v13-flappy-rescue/confirm/flappy-confirm-biological-s2",
+      "source_relative_path": "runs/v13-flappy-rescue/confirm/flappy-confirm-biological-s2",
+      "frozen_plan_commit": "45bd666",
+      "results_commit": "0443717",
+      "frozen_plan": "experiments/v13_flappy/run_plan.json",
+      "run_name": "flappy-confirm-biological-s2",
+      "config": {
+        "task": "flappy",
+        "seed": 2,
+        "source": "fly",
+        "topology": "biological",
+        "arch": "gru",
+        "hidden": 128,
+        "core": 64,
+        "ticks": 16,
+        "readout": "descending",
+        "transitions": 150000,
+        "ent": 0.003,
+        "lr": 0.0003,
+        "shaping": 0.0
+      },
+      "graph_sha256": "46d585dcb1cc34e77025541dd855b2d728ee4c42aa9c2e15712caf5ae1907c35",
+      "standardizer_sha256": "ff20e43eebdc98769084168be9d413f8b2782026a0db6ade570ceacef9ecf7bd",
+      "final_params_sha256": "b6fd995e7172bf35c08b256176874e473f25d5de806cab89a90e222904aeb11f",
+      "files": {
+        "policy.npz": {
+          "sha256": "d7128b71f5ac5aec31a206cf06e30f01d79ab95e3aee2dc7c8587bb05fcf5db5",
+          "bytes": 3259330,
+          "byte_identical_to_source": true
+        },
+        "result.json": {
+          "sha256": "1eb2b15b568a0158002dd3165bb72a67929e485bcd2c084a26e38a46f539f21a",
+          "bytes": 230253,
+          "byte_identical_to_source": true
+        }
+      },
+      "policy_npz_matches_frozen_result_record": true
+    },
+    "flappy/biological-s3": {
+      "source_branch": "flyarcade-v1.3-flappy-rescue",
+      "source_worktree_path": "/Users/akhil/Documents/Projects/flyarcade-v1-flappy-rescue/runs/v13-flappy-rescue/confirm/flappy-confirm-biological-s3",
+      "source_relative_path": "runs/v13-flappy-rescue/confirm/flappy-confirm-biological-s3",
+      "frozen_plan_commit": "45bd666",
+      "results_commit": "0443717",
+      "frozen_plan": "experiments/v13_flappy/run_plan.json",
+      "run_name": "flappy-confirm-biological-s3",
+      "config": {
+        "task": "flappy",
+        "seed": 3,
+        "source": "fly",
+        "topology": "biological",
+        "arch": "gru",
+        "hidden": 128,
+        "core": 64,
+        "ticks": 16,
+        "readout": "descending",
+        "transitions": 150000,
+        "ent": 0.003,
+        "lr": 0.0003,
+        "shaping": 0.0
+      },
+      "graph_sha256": "46d585dcb1cc34e77025541dd855b2d728ee4c42aa9c2e15712caf5ae1907c35",
+      "standardizer_sha256": "ff20e43eebdc98769084168be9d413f8b2782026a0db6ade570ceacef9ecf7bd",
+      "final_params_sha256": "b41bdc7095a0470a0bc7aacfe04503b0c11ccb11de1b685f57d1126989c956aa",
+      "files": {
+        "policy.npz": {
+          "sha256": "84a434cacca996a2b98721640d54f56bc00d833b2a02b7c75d669bb36c98d59d",
+          "bytes": 3259330,
+          "byte_identical_to_source": true
+        },
+        "result.json": {
+          "sha256": "d51a499f69ae47bb41d018dd5fef3359e0901c070cc193587348c9355ccff952",
+          "bytes": 230351,
+          "byte_identical_to_source": true
+        }
+      },
+      "policy_npz_matches_frozen_result_record": true
+    },
+    "flappy/biological-s4": {
+      "source_branch": "flyarcade-v1.3-flappy-rescue",
+      "source_worktree_path": "/Users/akhil/Documents/Projects/flyarcade-v1-flappy-rescue/runs/v13-flappy-rescue/confirm/flappy-confirm-biological-s4",
+      "source_relative_path": "runs/v13-flappy-rescue/confirm/flappy-confirm-biological-s4",
+      "frozen_plan_commit": "45bd666",
+      "results_commit": "0443717",
+      "frozen_plan": "experiments/v13_flappy/run_plan.json",
+      "run_name": "flappy-confirm-biological-s4",
+      "config": {
+        "task": "flappy",
+        "seed": 4,
+        "source": "fly",
+        "topology": "biological",
+        "arch": "gru",
+        "hidden": 128,
+        "core": 64,
+        "ticks": 16,
+        "readout": "descending",
+        "transitions": 150000,
+        "ent": 0.003,
+        "lr": 0.0003,
+        "shaping": 0.0
+      },
+      "graph_sha256": "46d585dcb1cc34e77025541dd855b2d728ee4c42aa9c2e15712caf5ae1907c35",
+      "standardizer_sha256": "ff20e43eebdc98769084168be9d413f8b2782026a0db6ade570ceacef9ecf7bd",
+      "final_params_sha256": "cdd63d701ac802e7ca83098e7ed121454c11d4e81209ac67ce11a45d6e9149eb",
+      "files": {
+        "policy.npz": {
+          "sha256": "b57ffe2c680791995582fd808a90aa5bcebe62d81d822501f360a3a457e5c3dd",
+          "bytes": 3259330,
+          "byte_identical_to_source": true
+        },
+        "result.json": {
+          "sha256": "6fff53c7d9083f9790aab63635b399eca3ae63f1780a720ea113105ff044e5d3",
+          "bytes": 229664,
+          "byte_identical_to_source": true
+        }
+      },
+      "policy_npz_matches_frozen_result_record": true
+    }
+  }
+}

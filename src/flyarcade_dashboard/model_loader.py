@@ -286,13 +286,25 @@ class V13Agent:
         )
 
 
+# Permanent, versioned copies of the frozen rescue models inside this repository
+# (see artifacts/v13/models/MANIFEST.json). The rescue worktrees are never consulted.
+MODEL_DIR = PACKAGE_ROOT / "artifacts" / "v13" / "models"
+MODEL_MANIFEST = MODEL_DIR / "MANIFEST.json"
 _RESCUE = {
-    "pong": ("runs/v13-pong-rescue/confirm/pong-confirm-biological-s{seed}", "v1.3 Pong rescue"),
-    "flappy": (
-        "runs/v13-flappy-rescue/confirm/flappy-confirm-biological-s{seed}",
-        "v1.3 Flappy rescue",
-    ),
+    "pong": ("artifacts/v13/models/pong/biological-s{seed}", "v1.3 Pong rescue"),
+    "flappy": ("artifacts/v13/models/flappy/biological-s{seed}", "v1.3 Flappy rescue"),
 }
+
+
+def verify_model_files(task, seed):
+    """Check the versioned copies against the manifest before any use."""
+    manifest = json.loads(MODEL_MANIFEST.read_text())
+    entry = manifest["models"][f"{task}/biological-s{seed}"]
+    directory = MODEL_DIR / task / f"biological-s{seed}"
+    for name, record in entry["files"].items():
+        if sha256_file(directory / name) != record["sha256"]:
+            raise ValueError(f"{task} seed {seed}: {name} does not match MANIFEST.json")
+    return entry
 
 
 def _load_v13(task, seed, graph, roots):
@@ -303,9 +315,10 @@ def _load_v13(task, seed, graph, roots):
     from flyarcade_v13.study import graph_hash, standardizer_path
 
     pattern, study = _RESCUE[task]
-    run = find(pattern.format(seed=seed), roots)
-    if run is None:
+    run = PACKAGE_ROOT / pattern.format(seed=seed)
+    if not (run / "policy.npz").exists():
         return None
+    provenance = verify_model_files(task, seed)
     result = json.loads((run / "result.json").read_text())
     config = result["config"]
     if graph_hash(graph) != result["graph_sha256"]:
@@ -314,11 +327,9 @@ def _load_v13(task, seed, graph, roots):
         standardizer_path(task, "biological", config["ticks"], config["readout"])
     )
     std_file = None
-    for root in roots:
-        candidate = root / relative
-        if candidate.exists() and sha256_file(candidate) == result["standardizer_sha256"]:
-            std_file = candidate
-            break
+    candidate = PACKAGE_ROOT / relative  # versioned in this repository
+    if candidate.exists() and sha256_file(candidate) == result["standardizer_sha256"]:
+        std_file = candidate
     if std_file is None:
         raise ValueError(f"{task}: no standardizer matching the trained model")
     std = Standardizer.load(std_file)
@@ -340,6 +351,11 @@ def _load_v13(task, seed, graph, roots):
     info = {
         "study": f"{study} (frozen confirmatory)",
         "checkpoint": str(run / "policy.npz"),
+        "provenance": (
+            f"versioned copy; source {provenance['source_branch']} "
+            f"(frozen plan {provenance['frozen_plan_commit']}, "
+            f"results {provenance['results_commit']})"
+        ),
         "result": str(run / "result.json"),
         "architecture": (
             "Dense 128 tanh -> GRU 64 -> actor/critic (PPO)"
@@ -373,6 +389,8 @@ def available_seeds(task, roots=None):
     }
     if task not in patterns:
         return []
+    if task in _RESCUE:  # only the versioned copies in this repository
+        return [s for s in range(5) if (PACKAGE_ROOT / patterns[task].format(seed=s)).exists()]
     return [s for s in range(5) if find(patterns[task].format(seed=s), roots)]
 
 

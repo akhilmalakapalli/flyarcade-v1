@@ -100,3 +100,38 @@ def test_dashboard_code_is_outside_every_frozen_code_hash():
     # v1's run_trial hashes all of src/**; the dashboard documents that it never re-runs v1.
     del subprocess
     assert ml.PACKAGE_ROOT == ROOT
+
+
+def test_pong_and_flappy_models_are_versioned_and_match_the_manifest():
+    import json
+
+    manifest = json.loads(ml.MODEL_MANIFEST.read_text())
+    assert ml.MODEL_DIR.is_relative_to(ml.PACKAGE_ROOT)
+    for task, results_commit in (("pong", "94422be"), ("flappy", "0443717")):
+        for seed in range(5):
+            entry = ml.verify_model_files(task, seed)  # raises on any mismatch
+            assert entry["results_commit"] == results_commit
+            record = json.loads(
+                (ml.MODEL_DIR / task / f"biological-s{seed}" / "result.json").read_text()
+            )
+            assert entry["files"]["policy.npz"]["sha256"] == record["policy_npz_sha256"]
+            assert "checkpoint.pkl" not in entry["files"]
+    assert len(manifest["models"]) == 10
+
+
+def test_dashboard_runs_pong_and_flappy_without_the_rescue_worktrees(monkeypatch):
+    from flyarcade_dashboard.session import Dashboard
+
+    main_roots = [r for r in ml.repo_roots() if "rescue" not in r.name]
+    monkeypatch.setattr(ml, "repo_roots", lambda: main_roots)
+    if ml.find("data/malecns-v1.0/graph.npz", main_roots) is None:
+        pytest.skip("MaleCNS graph not available")
+    board = Dashboard()
+    assert all("rescue" not in str(r) for r in board.roots)
+    for task in ("pong", "flappy"):
+        assert ml.available_seeds(task, board.roots) == [0, 1, 2, 3, 4]
+        state = board.new_session(task, 0, 0)
+        assert state["available"] and "rescue" not in state["model"]["checkpoint"]
+        assert state["model"]["checkpoint"].startswith(str(ml.MODEL_DIR))
+        frames = run_episode(board, task)
+        assert frames[-1]["done"] and len(frames) > 10
