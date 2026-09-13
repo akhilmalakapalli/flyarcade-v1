@@ -1,0 +1,24 @@
+{
+ "name": "mlp_validate-pong-c07-s4",
+ "stage": "mlp_validate",
+ "config_index": 7,
+ "config": {
+  "task": "pong",
+  "seed": 4,
+  "source": "fly",
+  "arch": "mlp",
+  "transitions": 300000,
+  "train_purpose": "validate_train",
+  "eval_purpose": "validate_eval",
+  "lr": 0.0003,
+  "ent": 0.01,
+  "ticks": 8,
+  "shaping": 1.0
+ },
+ "evaluation": {
+  "purpose": "validate_eval",
+  "episodes": 60,
+  "probe_purpose": "dev_probe"
+ },
+ "output": "runs/v13-dev/mlp_validate/mlp_validate-pong-c07-s4"
+}

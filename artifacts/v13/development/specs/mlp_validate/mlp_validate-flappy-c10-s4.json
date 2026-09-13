@@ -1,0 +1,24 @@
+{
+ "name": "mlp_validate-flappy-c10-s4",
+ "stage": "mlp_validate",
+ "config_index": 10,
+ "config": {
+  "task": "flappy",
+  "seed": 4,
+  "source": "fly",
+  "arch": "mlp",
+  "transitions": 500000,
+  "train_purpose": "validate_train",
+  "eval_purpose": "validate_eval",
+  "lr": 0.001,
+  "ent": 0.003,
+  "ticks": 8,
+  "shaping": 0.0
+ },
+ "evaluation": {
+  "purpose": "validate_eval",
+  "episodes": 60,
+  "probe_purpose": "dev_probe"
+ },
+ "output": "runs/v13-dev/mlp_validate/mlp_validate-flappy-c10-s4"
+}

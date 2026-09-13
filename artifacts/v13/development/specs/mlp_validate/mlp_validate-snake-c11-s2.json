@@ -1,0 +1,24 @@
+{
+ "name": "mlp_validate-snake-c11-s2",
+ "stage": "mlp_validate",
+ "config_index": 11,
+ "config": {
+  "task": "snake",
+  "seed": 2,
+  "source": "fly",
+  "arch": "mlp",
+  "transitions": 1000000,
+  "train_purpose": "validate_train",
+  "eval_purpose": "validate_eval",
+  "lr": 0.001,
+  "ent": 0.003,
+  "ticks": 8,
+  "shaping": 1.0
+ },
+ "evaluation": {
+  "purpose": "validate_eval",
+  "episodes": 60,
+  "probe_purpose": "dev_probe"
+ },
+ "output": "runs/v13-dev/mlp_validate/mlp_validate-snake-c11-s2"
+}

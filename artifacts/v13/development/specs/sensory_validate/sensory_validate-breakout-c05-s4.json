@@ -1,0 +1,22 @@
+{
+ "name": "sensory_validate-breakout-c05-s4",
+ "stage": "sensory_validate",
+ "config_index": 5,
+ "config": {
+  "task": "breakout",
+  "seed": 4,
+  "source": "sensory",
+  "transitions": 500000,
+  "train_purpose": "validate_train",
+  "eval_purpose": "validate_eval",
+  "lr": 0.001,
+  "shaping": 0.0,
+  "ent": 0.01
+ },
+ "evaluation": {
+  "purpose": "validate_eval",
+  "episodes": 60,
+  "probe_purpose": "dev_probe"
+ },
+ "output": "runs/v13-dev/sensory_validate/sensory_validate-breakout-c05-s4"
+}

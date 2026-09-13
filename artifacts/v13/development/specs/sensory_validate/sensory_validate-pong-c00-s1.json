@@ -1,0 +1,22 @@
+{
+ "name": "sensory_validate-pong-c00-s1",
+ "stage": "sensory_validate",
+ "config_index": 0,
+ "config": {
+  "task": "pong",
+  "seed": 1,
+  "source": "sensory",
+  "transitions": 300000,
+  "train_purpose": "validate_train",
+  "eval_purpose": "validate_eval",
+  "lr": 0.0003,
+  "shaping": 0.0,
+  "ent": 0.003
+ },
+ "evaluation": {
+  "purpose": "validate_eval",
+  "episodes": 60,
+  "probe_purpose": "dev_probe"
+ },
+ "output": "runs/v13-dev/sensory_validate/sensory_validate-pong-c00-s1"
+}

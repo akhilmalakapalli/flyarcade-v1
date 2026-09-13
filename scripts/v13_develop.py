@@ -191,7 +191,38 @@ def stage_mlp_screen(tasks):
     return specs
 
 
-STAGES = {"sensory_screen": stage_sensory_screen, "mlp_screen": stage_mlp_screen}
+def _top(stage, task, count):
+    rows = json.loads((ROOT / f"{stage}.json").read_text())["configs"]
+    ranked = [r for r in rows if r["task"] == task and not r["collapsed_seed"]]
+    ranked.sort(key=lambda r: -r["rank_score"])
+    chosen = []
+    for row in ranked[:count]:
+        spec_path = ROOT / "specs" / stage / f"{stage}-{task}-c{row['config_index']:02d}-s0.json"
+        config = json.loads(spec_path.read_text())["config"]
+        config = {k: v for k, v in config.items() if k not in ("seed", "task")}
+        chosen.append((row["config_index"], config))
+    return chosen
+
+
+def validation_stage(name, source_stage, count):
+    def build(tasks):
+        specs = []
+        for task in tasks:
+            for index, config in _top(source_stage, task, count):
+                config = {**config, **VALIDATE, "transitions": FULL_BUDGET[task]}
+                for seed in range(5):
+                    specs.append(spec(name, task, index, seed, config, VALIDATE_EVAL))
+        return specs
+
+    return build
+
+
+STAGES = {
+    "sensory_screen": stage_sensory_screen,
+    "mlp_screen": stage_mlp_screen,
+    "mlp_validate": validation_stage("mlp_validate", "mlp_screen", 3),
+    "sensory_validate": validation_stage("sensory_validate", "sensory_screen", 1),
+}
 
 
 def load_stage_module():

@@ -1,0 +1,22 @@
+{
+ "name": "sensory_validate-snake-c02-s0",
+ "stage": "sensory_validate",
+ "config_index": 2,
+ "config": {
+  "task": "snake",
+  "seed": 0,
+  "source": "sensory",
+  "transitions": 1000000,
+  "train_purpose": "validate_train",
+  "eval_purpose": "validate_eval",
+  "lr": 0.0003,
+  "shaping": 1.0,
+  "ent": 0.003
+ },
+ "evaluation": {
+  "purpose": "validate_eval",
+  "episodes": 60,
+  "probe_purpose": "dev_probe"
+ },
+ "output": "runs/v13-dev/sensory_validate/sensory_validate-snake-c02-s0"
+}

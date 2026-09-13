@@ -580,6 +580,60 @@
     "episodes": 40,
     "probe_purpose": "dev_probe"
    }
+  },
+  {
+   "stage": "mlp_validate",
+   "generated_at": "2026-09-13T05:20:00.840700+00:00",
+   "tasks": [
+    "flappy",
+    "pong",
+    "breakout",
+    "snake"
+   ],
+   "specs": 60,
+   "new_specs": 60,
+   "configs": [
+    "{\"arch\": \"mlp\", \"ent\": 0.003, \"eval_purpose\": \"validate_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 0.0, \"source\": \"fly\", \"task\": \"flappy\", \"ticks\": 8, \"train_purpose\": \"validate_train\", \"transitions\": 500000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.003, \"eval_purpose\": \"validate_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 0.0, \"source\": \"fly\", \"task\": \"pong\", \"ticks\": 8, \"train_purpose\": \"validate_train\", \"transitions\": 300000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.003, \"eval_purpose\": \"validate_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 1.0, \"source\": \"fly\", \"task\": \"breakout\", \"ticks\": 8, \"train_purpose\": \"validate_train\", \"transitions\": 500000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.003, \"eval_purpose\": \"validate_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 1.0, \"source\": \"fly\", \"task\": \"pong\", \"ticks\": 8, \"train_purpose\": \"validate_train\", \"transitions\": 300000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.003, \"eval_purpose\": \"validate_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 0.0, \"source\": \"fly\", \"task\": \"flappy\", \"ticks\": 8, \"train_purpose\": \"validate_train\", \"transitions\": 500000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.003, \"eval_purpose\": \"validate_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 1.0, \"source\": \"fly\", \"task\": \"breakout\", \"ticks\": 8, \"train_purpose\": \"validate_train\", \"transitions\": 500000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.003, \"eval_purpose\": \"validate_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 1.0, \"source\": \"fly\", \"task\": \"snake\", \"ticks\": 8, \"train_purpose\": \"validate_train\", \"transitions\": 1000000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.01, \"eval_purpose\": \"validate_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 0.0, \"source\": \"fly\", \"task\": \"flappy\", \"ticks\": 8, \"train_purpose\": \"validate_train\", \"transitions\": 500000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.01, \"eval_purpose\": \"validate_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 1.0, \"source\": \"fly\", \"task\": \"breakout\", \"ticks\": 8, \"train_purpose\": \"validate_train\", \"transitions\": 500000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.01, \"eval_purpose\": \"validate_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 1.0, \"source\": \"fly\", \"task\": \"pong\", \"ticks\": 8, \"train_purpose\": \"validate_train\", \"transitions\": 300000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.01, \"eval_purpose\": \"validate_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 0.0, \"source\": \"fly\", \"task\": \"snake\", \"ticks\": 8, \"train_purpose\": \"validate_train\", \"transitions\": 1000000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.01, \"eval_purpose\": \"validate_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 1.0, \"source\": \"fly\", \"task\": \"snake\", \"ticks\": 8, \"train_purpose\": \"validate_train\", \"transitions\": 1000000}"
+   ],
+   "evaluation": {
+    "purpose": "validate_eval",
+    "episodes": 60,
+    "probe_purpose": "dev_probe"
+   }
+  },
+  {
+   "stage": "sensory_validate",
+   "generated_at": "2026-09-13T05:20:01.076203+00:00",
+   "tasks": [
+    "flappy",
+    "pong",
+    "breakout",
+    "snake"
+   ],
+   "specs": 20,
+   "new_specs": 20,
+   "configs": [
+    "{\"ent\": 0.003, \"eval_purpose\": \"validate_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 0.0, \"source\": \"sensory\", \"task\": \"flappy\", \"train_purpose\": \"validate_train\", \"transitions\": 500000}",
+    "{\"ent\": 0.003, \"eval_purpose\": \"validate_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 0.0, \"source\": \"sensory\", \"task\": \"pong\", \"train_purpose\": \"validate_train\", \"transitions\": 300000}",
+    "{\"ent\": 0.003, \"eval_purpose\": \"validate_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 1.0, \"source\": \"sensory\", \"task\": \"snake\", \"train_purpose\": \"validate_train\", \"transitions\": 1000000}",
+    "{\"ent\": 0.01, \"eval_purpose\": \"validate_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 0.0, \"source\": \"sensory\", \"task\": \"breakout\", \"train_purpose\": \"validate_train\", \"transitions\": 500000}"
+   ],
+   "evaluation": {
+    "purpose": "validate_eval",
+    "episodes": 60,
+    "probe_purpose": "dev_probe"
+   }
   }
  ],
  "amendments": []
