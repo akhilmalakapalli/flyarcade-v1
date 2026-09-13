@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FlyArcade Dashboard</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <strong>FlyArcade</strong>
+    <span class="sub" id="network-label">2,040-neuron MaleCNS-derived network</span>
+  </div>
+  <nav class="tasks" id="task-buttons" aria-label="Task"></nav>
+  <div class="controls">
+    <label class="inline">model seed <select id="model-seed"></select></label>
+    <button id="btn-run" class="primary">RUN</button>
+    <button id="btn-pause">PAUSE</button>
+    <button id="btn-step">STEP</button>
+    <button id="btn-reset">RESET</button>
+    <button id="btn-new">NEW DEMO</button>
+    <button id="btn-save">SAVE EPISODE</button>
+    <button id="btn-replay">REPLAY</button>
+    <label class="inline">speed
+      <select id="speed">
+        <option value="0.25">0.25x</option><option value="0.5">0.5x</option>
+        <option value="1" selected>1x</option><option value="2">2x</option><option value="4">4x</option>
+      </select>
+    </label>
+  </div>
+</header>
+
+<div class="banner">
+  <span class="badge" id="mode-badge">LIVE</span>
+  <span id="demo-label">Demo playback — not a new experiment</span>
+  <span class="sep">·</span>
+  <span id="activity-note">Neural activity shown here is simulated activity from the connectome-derived spiking model, not experimentally recorded neural activity.</span>
+</div>
+<div id="error-bar" class="error" hidden></div>
+<div id="replay-picker" class="picker" hidden>
+  <div class="picker-head">Saved episodes <button id="picker-close" class="small">close</button></div>
+  <ul id="replay-list"></ul>
+</div>
+
+<main class="grid">
+  <section class="panel game">
+    <div class="panel-head"><h2 id="game-title">Game</h2><span class="meta" id="model-info"></span></div>
+    <div class="canvas-wrap"><canvas id="game" width="480" height="480"></canvas>
+      <div id="unavailable" class="overlay" hidden></div></div>
+    <div class="caption" id="game-caption">Select a task.</div>
+  </section>
+
+  <section class="panel neural">
+    <div class="panel-head"><h2>Neural activity</h2>
+      <div class="toggle"><button id="view-2d" class="small active">2D map</button><button id="view-3d" class="small">3D soma</button></div>
+    </div>
+    <div class="canvas-wrap"><canvas id="neural" width="640" height="420"></canvas></div>
+    <div class="legend-row">
+      <canvas id="legend" width="220" height="12"></canvas>
+      <span id="legend-text" class="meta"></span>
+    </div>
+    <div class="caption" id="neural-caption"></div>
+    <div id="inspector" class="inspector">Click a neuron to inspect it.</div>
+  </section>
+
+  <section class="panel decision">
+    <div class="panel-head"><h2>Decision</h2><span class="meta" id="step-label"></span></div>
+    <dl class="kv">
+      <dt>Task</dt><dd id="d-task">—</dd>
+      <dt>Step</dt><dd id="d-step">—</dd>
+      <dt>Action</dt><dd id="d-action">—</dd>
+      <dt>Reward</dt><dd id="d-reward">—</dd>
+      <dt>Episode return</dt><dd id="d-return">—</dd>
+      <dt>Score</dt><dd id="d-score">—</dd>
+    </dl>
+    <div id="prob-bars" class="bars"></div>
+  </section>
+
+  <section class="panel heatmaps">
+    <div class="panel-head"><h2>Population heatmaps</h2><span class="meta">fixed neuron order</span></div>
+    <div class="heat"><span>Visual projection · 218</span><canvas id="heat-vp" width="640" height="46"></canvas></div>
+    <div class="heat"><span>Central-complex intrinsic · 529</span><canvas id="heat-cx" width="640" height="60"></canvas></div>
+    <div class="heat"><span>Descending · 1,293</span><canvas id="heat-dn" width="640" height="96"></canvas></div>
+  </section>
+
+  <section class="panel traces">
+    <div class="panel-head"><h2>Live traces</h2><span class="meta">last 100 decisions</span></div>
+    <canvas id="traces" width="1200" height="170"></canvas>
+    <div class="trace-legend" id="trace-legend"></div>
+  </section>
+</main>
+<script src="/static/app.js"></script>
+</body>
+</html>

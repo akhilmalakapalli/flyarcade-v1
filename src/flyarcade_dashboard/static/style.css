@@ -1,0 +1,74 @@
+:root {
+  --bg: #0f1218; --panel: #171b23; --line: #262c37; --text: #e6e9ef; --muted: #98a2b3;
+  --accent: #4f9cf9; --good: #34c38f; --bad: #f46a6a; --warn: #f1b44c;
+  --vp: #4f9cf9; --cx: #f1b44c; --dn: #34c38f;
+  font-size: 14px;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+.topbar { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center;
+  padding: 10px 16px; border-bottom: 1px solid var(--line); background: #12161d; }
+.brand strong { font-size: 17px; margin-right: 8px; }
+.sub, .meta { color: var(--muted); font-size: 12px; }
+.tasks { display: flex; gap: 4px; flex-wrap: wrap; }
+.controls { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; margin-left: auto; }
+button, select { background: #202633; color: var(--text); border: 1px solid var(--line);
+  border-radius: 6px; padding: 6px 10px; font: inherit; cursor: pointer; }
+button:hover:not(:disabled) { border-color: var(--accent); }
+button:disabled { opacity: .4; cursor: default; }
+button.primary { background: #1d4f8f; border-color: #2a64ad; }
+button.active, .tasks button.active { background: #2a64ad; border-color: #4f9cf9; }
+button.unavail { color: var(--muted); text-decoration: line-through; }
+button.small { padding: 3px 8px; font-size: 12px; }
+.inline { color: var(--muted); font-size: 12px; display: flex; gap: 4px; align-items: center; }
+.banner { padding: 6px 16px; font-size: 12px; color: var(--muted); display: flex; gap: 8px;
+  flex-wrap: wrap; align-items: center; border-bottom: 1px solid var(--line); }
+.badge { background: #2a3444; color: var(--text); border-radius: 4px; padding: 1px 6px; font-weight: 600; }
+.badge.replay { background: #6b4b12; }
+.sep { opacity: .5; }
+.error { background: #4a1f24; color: #ffd5d5; padding: 6px 16px; font-size: 12px; }
+.grid { display: grid; gap: 12px; padding: 12px 16px 20px;
+  grid-template-columns: minmax(320px, 5fr) minmax(360px, 7fr);
+  grid-template-areas: "game neural" "decision heatmaps" "traces traces"; }
+.game { grid-area: game; } .neural { grid-area: neural; } .decision { grid-area: decision; }
+.heatmaps { grid-area: heatmaps; } .traces { grid-area: traces; }
+@media (max-width: 1000px) {
+  .grid { grid-template-columns: 1fr;
+    grid-template-areas: "game" "neural" "decision" "heatmaps" "traces"; }
+  .controls { margin-left: 0; }
+}
+.panel { background: var(--panel); border: 1px solid var(--line); border-radius: 10px;
+  padding: 10px 12px; min-width: 0; }
+.panel-head { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-bottom: 8px; }
+h2 { font-size: 14px; margin: 0; font-weight: 600; }
+.canvas-wrap { position: relative; }
+canvas { width: 100%; height: auto; display: block; background: #0b0e14; border-radius: 6px; }
+#game { aspect-ratio: 1 / 1; }
+.overlay { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+  text-align: center; padding: 24px; background: rgba(11, 14, 20, .78); color: var(--warn);
+  border-radius: 6px; font-size: 13px; }
+.caption { color: var(--muted); font-size: 12px; margin-top: 6px; min-height: 16px; }
+.legend-row { display: flex; gap: 10px; align-items: center; margin-top: 6px; }
+#legend { width: 220px; height: 12px; }
+.inspector { margin-top: 8px; font-size: 12px; color: var(--muted); border-top: 1px solid var(--line);
+  padding-top: 6px; line-height: 1.5; }
+.inspector b { color: var(--text); font-weight: 600; }
+.kv { display: grid; grid-template-columns: max-content 1fr; gap: 3px 12px; margin: 0 0 10px; }
+.kv dt { color: var(--muted); } .kv dd { margin: 0; font-variant-numeric: tabular-nums; }
+.bars .bar { display: grid; grid-template-columns: 70px 1fr 48px; gap: 8px; align-items: center; margin: 4px 0; font-size: 12px; }
+.bars .track { height: 12px; background: #0b0e14; border-radius: 3px; overflow: hidden; }
+.bars .fill { height: 100%; background: #3b4a61; }
+.bars .bar.chosen .fill { background: var(--accent); }
+.bars .bar.chosen span:first-child { color: var(--text); font-weight: 600; }
+.heat span { display: block; font-size: 12px; color: var(--muted); margin: 6px 0 3px; }
+.trace-legend { display: flex; gap: 14px; flex-wrap: wrap; font-size: 12px; color: var(--muted); margin-top: 6px; }
+.trace-legend i { display: inline-block; width: 12px; height: 3px; margin-right: 5px; vertical-align: middle; }
+.picker { position: fixed; right: 16px; top: 64px; z-index: 10; width: 420px; max-height: 60vh; overflow: auto;
+  background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 10px; }
+.picker-head { display: flex; justify-content: space-between; margin-bottom: 6px; font-weight: 600; }
+.picker ul { list-style: none; margin: 0; padding: 0; }
+.picker li { padding: 6px; border-radius: 6px; cursor: pointer; font-size: 12px; }
+.picker li:hover { background: #202633; }
+
+[hidden] { display: none !important; }
