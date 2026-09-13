@@ -294,12 +294,114 @@ def report():
         print(c, [round(s["after"], 3) for s in rows.values()])
 
 
+def verify():
+    """Provenance and reproducibility checks for every confirmatory result."""
+    from flyarcade_v13.study import (
+        CONFIRMATORY_PURPOSES,
+        DEVELOPMENT_PURPOSES,
+        Trainer,
+        config_hash,
+        evaluate_policy,
+        make_source,
+        params_hash,
+        purpose_range,
+    )
+
+    plan = json.loads(PLAN.read_text())
+    out = {"plan_sha256": sha(PLAN)}
+    results = {}
+    for spec_path in plan["specs"]:
+        spec = json.loads(Path(spec_path).read_text())
+        results[spec["name"]] = (
+            spec,
+            json.loads((Path(spec["output"]) / "result.json").read_text()),
+        )
+    out["code_hash_matches_frozen_plan"] = all(
+        r["code_sha256"] == plan["code_sha256_extended"] for _, r in results.values()
+    )
+    out["current_code_hash_matches_frozen_plan"] = (
+        rescue.code_hash() == plan["code_sha256_extended"]
+    )
+    # Each result must equal its own committed frozen spec, and share every learner key
+    # of the frozen config except the keys that define the condition itself
+    # (source/topology/standardizer, and ticks which the sensory control has no use for).
+    condition_keys = {"source", "topology", "standardizer", "ticks"}
+    out["result_configs_match_frozen_specs"] = all(
+        all(r["config"].get(k) == v for k, v in spec["config"].items())
+        and all(
+            r["config"].get(k) == v
+            for k, v in plan["frozen_config"].items()
+            if k not in condition_keys
+        )
+        and r["config_sha256"] == config_hash(r["config"])
+        for spec, r in results.values()
+    )
+    out["standardizers_match_plan"] = all(
+        r.get("standardizer_sha256") == plan["standardizers"][r["config"]["topology"]]["sha256"]
+        for _, r in results.values()
+        if r["config"]["source"] == "fly"
+    )
+    out["graph_hashes_match_plan_and_disk"] = all(
+        r["graph_sha256"]
+        == plan["graph_sha256"][r["config"]["topology"]]
+        == graph_hash(load_topology(r["config"]["topology"]))
+        for _, r in results.values()
+        if r["config"]["source"] == "fly"
+    )
+    out["all_finite"] = all(r["finite"] for _, r in results.values())
+    out["policy_parameters_changed"] = all(
+        r["initial_params_sha256"] != r["final_params_sha256"] for _, r in results.values()
+    )
+    out["evaluation_modes"] = sorted({r["evaluation_mode"] for _, r in results.values()})
+    out["random_and_mpc_identical_across_conditions"] = all(
+        results[f"flappy-confirm-biological-s{s}"][1]["evaluations"][k]
+        == results[f"flappy-confirm-{c}-s{s}"][1]["evaluations"][k]
+        for s in SEEDS
+        for c in ("rewired", "sensory")
+        for k in ("random", "reference")
+    )
+    conf_eval = purpose_range("flappy", "conf_eval")
+    out["evaluation_seeds_in_conf_eval"] = all(
+        conf_eval[0] <= e < conf_eval[1] for _, r in results.values() for e in r["evaluation_seeds"]
+    )
+    dev = [purpose_range("flappy", p) for p in DEVELOPMENT_PURPOSES]
+    conf = [purpose_range("flappy", p) for p in CONFIRMATORY_PURPOSES]
+    out["development_and_confirmatory_ranges_disjoint"] = all(
+        a[1] <= b[0] or b[1] <= a[0] for a in dev for b in conf
+    )
+    replays = {}
+    for name in (
+        "flappy-confirm-biological-s2",
+        "flappy-confirm-rewired-s4",
+        "flappy-confirm-sensory-s1",
+    ):
+        spec, r = results[name]
+        trainer = Trainer(spec["config"])
+        with np.load(Path(spec["output"]) / "policy.npz") as z:
+            params = {k: z[f"final_{k}"].copy() for k in trainer.model.params}
+        if params_hash(params) != r["final_params_sha256"]:
+            replays[name] = False
+            continue
+        rows = evaluate_policy(
+            trainer.model, params, make_source(trainer.config, 16), "flappy", r["evaluation_seeds"]
+        )
+        replays[name] = rows == r["evaluations"]["after"]
+    out["saved_policies_replay_exactly"] = replays
+    out["passed"] = all(
+        v if not isinstance(v, (dict, list)) else all(v.values()) if isinstance(v, dict) else True
+        for k, v in out.items()
+        if k not in ("plan_sha256", "evaluation_modes")
+    )
+    (ROOT / "confirmatory_verification.json").write_text(json.dumps(out, indent=2) + "\n")
+    print(json.dumps(out, indent=2))
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("command", choices=["gate", "freeze", "report"])
+    parser.add_argument("command", choices=["gate", "freeze", "report", "verify"])
     args = parser.parse_args()
     rescue.install()
-    {"gate": gate, "freeze": freeze, "report": report}[args.command]()
+    {"gate": gate, "freeze": freeze, "report": report, "verify": verify}[args.command]()
 
 
 if __name__ == "__main__":

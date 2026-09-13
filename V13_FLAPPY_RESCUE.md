@@ -1,4 +1,115 @@
-# v1.3 Flappy rescue — running log
+# v1.3 Flappy rescue
+
+**Result: the frozen confirmatory criterion is MET.** A GRU policy reading the frozen
+2,040-neuron MaleCNS descending population learned the original v1.2 Flappy task on
+untouched confirmatory seeds: mean greedy success **0.605** (0.630, 0.480, 0.563, 0.717,
+0.633) vs 0.000 untrained, 0.000 random and 1.000 MPC. It clears the 0.60 minimum by 0.005
+and falls short of the 0.70 target; the protocol was not changed.
+
+| Item | Value |
+|---|---|
+| Branch | `flyarcade-v1.3-flappy-rescue` (worktree `../flyarcade-v1-flappy-rescue`) |
+| Base commit | `55e5b54` (flyarcade-v1.3-multitask) |
+| Frozen-plan commit | `45bd666` (`experiments/v13_flappy/run_plan.json`, sha256 `369d47d7...`) |
+| Final commit | see `git log` (the commit adding this file) |
+| Environment | unchanged v1.2 `Flappy` target level; `src/flyarcade/v12/environments.py` byte-identical to base |
+| MPC oracle | 1.000 (100 fresh dev seeds; 1.000 on every confirmatory seed) |
+| Sensory-only | 1.000 on all 5 confirmatory seeds |
+
+## Frozen protocol
+- **Neural substrate:** frozen MaleCNS v1.0 2,040-neuron subgraph, Stage A (no recurrent plasticity), no extra neurons.
+- **Sensory encoding:** unchanged v1.2 encoding (6 observations -> 12 Bernoulli channels into visual-projection neurons). The augmented encoding was tested and rejected.
+- **Ticks per action:** 16. **Readout:** descending neurons (1,293). Standardizer per topology via the unchanged feature_fit procedure.
+- **Learner:** 1293 -> Dense 128 tanh -> GRU 64 -> actor (2) + critic; NumPy, Adam.
+- **PPO:** gamma 0.99, GAE lambda 0.95, lr 3e-4 annealed to 5% floor, clip 0.2, entropy 0.003, value 0.5, grad-norm 0.5, 4 epochs, 16 envs x 128 steps, 8 minibatches, BPTT chunk 16, no exploration floor.
+- **Reward:** unchanged environment reward (+1 pipe passed, -1 death, small survival/alignment term); **no potential shaping** (both shapings tested slowed learning).
+- **Budget:** 150,000 transitions; no curriculum; no imitation.
+- **Evaluation:** 100 greedy episodes per seed, learning off, fresh neural and recurrent state, confirmatory seeds never used in development.
+- **Criterion (10 parts, pre-registered):** all met; see below.
+
+## Confirmatory results (`artifacts/v13/flappy-rescue/confirmatory_summary.json`)
+| Seed | Biological | Untrained | Rewired | Sensory-only | Random | MPC |
+|---|---|---|---|---|---|---|
+| 0 | 0.630 | 0.000 | 0.175 | 1.000 | 0.000 | 1.000 |
+| 1 | 0.480 | 0.002 | 0.102 | 1.000 | 0.000 | 1.000 |
+| 2 | 0.563 | 0.000 | 0.242 | 1.000 | 0.000 | 1.000 |
+| 3 | 0.717 | 0.000 | 0.243 | 1.000 | 0.000 | 1.000 |
+| 4 | 0.633 | 0.000 | 0.498 | 1.000 | 0.000 | 1.000 |
+| **mean** | **0.605** | **0.000** | **0.252** | **1.000** | **0.000** | **1.000** |
+
+Biological gap closure 0.605; state dependence 0.31 (per seed 0.15-0.40); greedy top-action
+fraction 0.87-0.90; final entropy 0.15-0.18. Biological deaths: mostly pipe collisions
+(42-76 of 100 per seed), few boundary deaths (1-11).
+
+| Criterion | Result |
+|---|---|
+| 1 mean learned > untrained | PASS (0.605 > 0.000) |
+| 2 mean > random + 0.10 | PASS |
+| 3 >= 4/5 seeds > random + 0.10 | PASS (5/5) |
+| 4 mean >= 0.60 | PASS (0.605) |
+| 5 gap closure >= 0.50 | PASS (0.605) |
+| 6 state dependence > 0.05 | PASS (0.31) |
+| 7 no constant-action policy | PASS (top fraction <= 0.90) |
+| 8 all parameters finite | PASS |
+| 9 checkpoints replay | PASS (biological s2, rewired s4, sensory s1 replay bit-identically) |
+| 10 frozen MaleCNS weights unchanged | PASS (graph hashes match plan and disk; Stage A has no plasticity path) |
+
+Verification (`artifacts/v13/flappy-rescue/confirmatory_verification.json`): result code hash =
+frozen plan hash; each result config equals its frozen spec; standardizer hashes match the plan;
+random and MPC rows identical across conditions; evaluation seeds inside `conf_eval`; development
+and confirmatory ranges disjoint.
+
+## Post-training perturbations (biological, no retraining)
+| | Mean | Per seed |
+|---|---|---|
+| intact | 0.605 | 0.630, 0.480, 0.563, 0.717, 0.633 |
+| sensory noise sd 0.1 | 0.537 | 0.568, 0.442, 0.547, 0.600, 0.528 |
+| 10% edge ablation | 0.000 | 0.000 on every seed |
+| 10% neuron ablation | 0.003 | 0.000, 0.017, 0.000, 0.000, 0.000 |
+
+The intact policy demonstrably uses the population code, so the collapse under lesions is a real
+dependence, not collapse-induced insensitivity. Caveat: the frozen per-topology standardizer is
+applied to lesioned activity it was never fitted on, so part of the drop may be distribution
+shift in the standardized features rather than information loss alone.
+
+## Topology caveat
+Rewired topologies (own standardizers, same frozen learner and budget) scored 0.252, well below
+biological, the opposite direction from catch, dodge and Pong. **Every development choice (ticks,
+architecture, entropy, budget) was selected on the biological graph** and applied unchanged to the
+rewired graphs, so this comparison favours the graph the learner was tuned on and cannot be read
+as intrinsic superiority of biological wiring.
+
+## Tests and audit
+171 tests pass (including historical-file protection, Pong external-freeze guards and the rescue
+tests: default configs train bit-identically, rescue code never changes the hashed multitask code,
+derived quantities exact, arrival potential state-only). New-code Ruff lint and format pass. README
+unchanged. Recurrent MaleCNS weights never changed; no extra neurons.
+
+## Limitations
+- The margin over the 0.60 minimum is 0.005; the 0.70 target was not reached; seed spread 0.48-0.72.
+- Five confirmatory training seeds; intervals are descriptive.
+- Learning lives in an artificial GRU readout; the MaleCNS core is fixed. Nothing here is fly biology.
+- The encoding, readout and 16-tick integration are engineered interfaces.
+- Development used a coordinate-wise, not exhaustive, search; the screens had two seeds per arm.
+- Lesion results conflate information loss with standardizer distribution shift (above).
+
+## Reproduce
+```sh
+cd ../flyarcade-v1-flappy-rescue          # data/{malecns-v1.0,v12,v13} symlinked to the main checkout
+export PYTHONPATH=src:scripts
+python scripts/v13_flappy_diagnose.py                                  # Phase 1 diagnostic
+python scripts/v13_flappy_suite.py experiments/v13_flappy/specs/validate/*.json --workers 5
+python scripts/v13_flappy_rescue.py gate
+python scripts/v13_flappy_suite.py experiments/v13_flappy/specs/confirm/*.json --workers 8
+python scripts/v13_flappy_rescue.py report
+python scripts/v13_flappy_rescue.py verify
+```
+Completed results are preserved by the suite; rerunning confirmatory training is unnecessary and
+would only reproduce the same deterministic numbers.
+
+---
+
+# Development log (chronological)
 
 Branch `flyarcade-v1.3-flappy-rescue` (worktree `../flyarcade-v1-flappy-rescue`), based on
 `flyarcade-v1.3-multitask` commit `55e5b54`. Development seeds only until a freeze.
