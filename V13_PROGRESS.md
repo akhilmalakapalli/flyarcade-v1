@@ -14,6 +14,7 @@ Branch: `flyarcade-v1.3-multitask` (user-specified name; mission text said
 | M5_FLY_MLP_DEVELOPMENT | COMPLETE (screen) |
 | M8_DEVELOPMENT_VALIDATION | IN PROGRESS (mlp_validate + sensory_validate) |
 | PONG_EXTERNAL_FREEZE | COMPLETE — frozen and confirmed separately; see D035 |
+| FLAPPY_EXTERNAL_FREEZE | COMPLETE — frozen and confirmed separately; see D036 |
 | M6..M14 | pending |
 
 ## Evidence
@@ -54,8 +55,20 @@ refuses any spent Pong confirmatory spec, and `v13_report.py` reads Pong only fr
 `experiments/v13_external_frozen.json`. Do not select, freeze, re-run or re-score Pong.
 Pong t8 rewired standardizers 0-4 already exist (identical procedure).
 
+## Flappy is closed (external freeze, D036)
+Flappy was pre-registered at `45bd666` and confirmed at `0443717` on
+`flyarcade-v1.3-flappy-rescue`, merged here unchanged. Biological 0.605 (0.630, 0.480,
+0.563, 0.717, 0.633), untrained 0.000, random 0.000, rewired 0.252, MPC 1.000,
+sensory-only 1.000; criterion met. Model: v1.2 encoding, 16 ticks, descending readout,
+Dense 128 tanh -> GRU 64, PPO + GAE, 150k transitions, no shaping, frozen core.
+**Flappy confirmatory seeds 0-4 are spent (including `conf_perturb`).** `v13_freeze.py`
+skips Flappy, both suites refuse spent Flappy confirmatory specs, and `v13_report.py`
+reads Flappy only from `experiments/v13_external_frozen.json`. Do not select, freeze,
+re-run or re-score Flappy, and do not use its confirmatory outcomes for model selection.
+This session's `mlp_validate` Flappy results are development evidence only.
+
 ## Next action
-Collect mlp_validate/sensory_validate; apply the development gate to Flappy, Breakout
-and Snake; if they pass, write selection.json, fit rewired standardizers at 8 ticks,
-freeze and run confirmatory for those three tasks only.
-If a task fails: GRU rung (then curriculum) on development seeds only.
+Collect mlp_validate/sensory_validate; apply the development gate to Breakout and Snake
+only; if they pass, write selection.json and freeze and run confirmatory for those two
+tasks. If a task fails: GRU rung (then curriculum) on development seeds only. Pong and
+Flappy are closed (D035, D036).

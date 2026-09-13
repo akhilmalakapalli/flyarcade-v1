@@ -52,6 +52,47 @@ def confirmatory_tasks(targets):
     return tuple(t for t in targets if t not in external)
 
 
+def _seed_values(entry, summary):
+    """Per-seed values for each reported condition, from either frozen summary format."""
+    seeds = entry["spent_confirmatory_seeds"]
+    per = summary["per_seed"]
+    if entry["summary_format"] == "pong_rescue":
+        bio = per["biological"]
+        pick = lambda cond, key: [per[cond][str(s)][key] for s in seeds]  # noqa: E731
+        return {
+            "biological": pick("biological", "after"),
+            "frozen": [bio[str(s)]["before"] for s in seeds],
+            "rewired": pick("rewired", "after"),
+            "sensory": pick("sensory", "after"),
+            "random": [bio[str(s)]["random"] for s in seeds],
+            "reference": [bio[str(s)]["reference"] for s in seeds],
+        }
+    if entry["summary_format"] == "flappy_rescue":
+        row = lambda cond, s: per[cond][f"flappy-confirm-{cond}-s{s}"]  # noqa: E731
+        return {
+            "biological": [row("biological", s)["after"] for s in seeds],
+            "frozen": [row("biological", s)["before"] for s in seeds],
+            "rewired": [row("rewired", s)["after"] for s in seeds],
+            "sensory": [row("sensory", s)["after"] for s in seeds],
+            "random": [row("biological", s)["random"] for s in seeds],
+            "reference": [row("biological", s)["reference"] for s in seeds],
+        }
+    raise ValueError(f"unknown frozen summary format for {entry}")
+
+
+def _criterion(entry, summary):
+    if entry["summary_format"] == "pong_rescue":
+        return bool(summary["criterion"]["met"]), summary["criterion"]
+    verification = json.loads(Path(entry["verification"]).read_text())
+    components = {
+        **summary["criterion_without_replay"]["checks"],
+        "10_checkpoint_replay_and_provenance_verification": bool(verification["passed"]),
+    }
+    return bool(
+        summary["criterion_without_replay"]["passed"] and verification["passed"]
+    ), components
+
+
 def external_summary_entry(task, describe):
     """Summary entry for an externally frozen task, read only from its frozen files.
 
@@ -61,28 +102,21 @@ def external_summary_entry(task, describe):
     registry = load_registry()
     entry = registry["tasks"][task]
     summary = json.loads(Path(entry["summary"]).read_text())
-    per = summary["per_seed"]
-    seeds = [str(s) for s in entry["spent_confirmatory_seeds"]]
-    bio = per["biological"]
-    primary = {
-        "biological": describe([bio[s]["after"] for s in seeds]),
-        "frozen": describe([bio[s]["before"] for s in seeds]),
-        "rewired": describe([per["rewired"][s]["after"] for s in seeds]),
-        "sensory": describe([per["sensory"][s]["after"] for s in seeds]),
-        "random": describe([bio[s]["random"] for s in seeds]),
-        "reference": describe([bio[s]["reference"] for s in seeds]),
-    }
+    primary = {k: describe(v) for k, v in _seed_values(entry, summary).items()}
+    passed, components = _criterion(entry, summary)
+    perturbations = summary.get("perturbations_biological") or None
     return {
         "external_freeze": True,
-        "architecture": "mlp (separate Pong freeze)",
+        "architecture": f"{entry['frozen_config'].get('arch', 'mlp')} (separate {task} freeze)",
         "criteria": {
-            "passed": bool(summary["criterion"]["met"]),
-            "criterion_source": "experiments/v13_pong_development.json (pre-registered)",
-            "components": summary["criterion"],
+            "passed": passed,
+            "criterion_source": entry["frozen_plan"],
+            "components": components,
             "not_rescored_under_multitask_gate": True,
         },
         "primary": primary,
         "perturbations": None,
+        "perturbation_means_reported_by_frozen_study": perturbations,
         "frozen_plan": entry["frozen_plan"],
         "frozen_plan_sha256": entry["file_sha256"][entry["frozen_plan"]],
         "frozen_plan_commit": entry["frozen_plan_commit"],

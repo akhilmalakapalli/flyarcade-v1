@@ -304,3 +304,43 @@ every Pong confirmatory result. Running multitask checkpoints and any later
 multitask freeze therefore remain valid. A different Pong configuration must not
 later replace this result; any new Pong confirmatory study requires a new version and
 new, unused seeds.
+
+## D036 — Flappy is externally frozen and integrated read-only
+Flappy's confirmatory study was pre-registered and completed on branch
+`flyarcade-v1.3-flappy-rescue`: the plan was committed at `45bd666` before any
+confirmatory run, and results at `0443717`. It is merged here unchanged, and 27 frozen
+Flappy files (plan, confirmatory specs, per-topology standardizers, diagnostics,
+validation gate, summary, verification) are pinned by SHA256 in
+`experiments/v13_external_frozen.json`.
+
+Frozen result (100 greedy episodes per seed, learning off, unchanged target
+environment, 5 confirmatory seeds): biological 0.605 (0.630, 0.480, 0.563, 0.717,
+0.633); untrained 0.000; random 0.000; rewired 0.252; MPC 1.000; sensory-only 1.000.
+All 10 parts of its pre-registered criterion pass, including exact checkpoint replay.
+The 0.60 minimum is cleared by 0.005 and the 0.70 target is not reached.
+
+Model: unchanged v1.2 sensory encoding, 16 ticks per action, 1,293-neuron descending
+readout, Dense 128 tanh -> GRU 64 -> actor/critic, PPO + GAE (gamma 0.99, lambda 0.95),
+lr 3e-4 annealed, entropy 0.003, 150,000 transitions, no additional reward shaping.
+The MaleCNS recurrent weights stayed frozen and no neurons were added.
+
+Flappy confirmatory seeds 0-4 are spent under every confirmatory purpose, including
+`conf_perturb`. The multitask study therefore:
+- neither gates, selects, freezes nor writes confirmatory specs for Flappy
+  (`confirmatory_tasks` now leaves Breakout and Snake);
+- refuses, with no override, any run touching a spent Flappy confirmatory purpose in
+  both `v13_suite.py` and the rescue's `v13_flappy_suite.py`. The result is reproduced
+  only by `v13_flappy_rescue.py verify` (exact policy replay), never by retraining;
+- reports Flappy from its frozen files under its own criterion, never re-scored under
+  the multitask gate (`external_summary_entry` now reads both frozen summary formats).
+
+**Neither these confirmatory outcomes nor the confirmatory seeds may be used for further
+model selection for any task.** The multitask study's own development Flappy results
+(e.g. `mlp_validate` 0.254) remain development evidence only and do not replace the
+frozen result.
+
+The rescue code lives in `src/flyarcade_v13_flappy/` and `scripts/v13_flappy_*.py`,
+outside the hashed multitask code, so the multitask code hash stays `504a571e…`. Two
+caveats travel with the result. The topology comparison favours the biological graph
+because every development choice was tuned on it. The near-total loss under 10% edge
+or neuron ablation may partly reflect standardizer distribution shift.

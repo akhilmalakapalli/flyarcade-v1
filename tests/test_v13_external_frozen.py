@@ -43,7 +43,7 @@ def test_registered_headline_matches_the_frozen_summary_and_reported_numbers():
 def test_multitask_freeze_never_writes_pong_confirmatory_specs():
     tasks = v13_external.confirmatory_tasks(TARGETS)
     assert "pong" not in tasks
-    assert set(tasks) == set(TARGETS) - {"pong"}
+    assert set(tasks) == set(TARGETS) - {"pong", "flappy"}  # Flappy: see test_..._flappy.py
 
 
 def test_every_pong_confirmatory_spec_is_refused_and_development_specs_are_not():

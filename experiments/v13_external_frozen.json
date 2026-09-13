@@ -105,7 +105,127 @@
         "the frozen (untrained) condition is each biological trial's initial policy on the same seeds, not a separate zero-transition trial",
         "configuration selected from the multitask mlp_screen (c03) and a 3-seed validate gate, not from the multitask selection.json"
       ],
-      "rule": "Never rerun, re-score under a different criterion, or tune against Pong confirmatory seeds 0-4. Any further Pong confirmatory study needs a new version and new, unused seeds."
+      "rule": "Never rerun, re-score under a different criterion, or tune against Pong confirmatory seeds 0-4. Any further Pong confirmatory study needs a new version and new, unused seeds.",
+      "summary_format": "pong_rescue"
+    },
+    "flappy": {
+      "branch": "flyarcade-v1.3-flappy-rescue",
+      "frozen_plan_commit": "45bd666",
+      "results_commit": "0443717",
+      "frozen_plan": "experiments/v13_flappy/run_plan.json",
+      "summary": "artifacts/v13/flappy-rescue/confirmatory_summary.json",
+      "summary_format": "flappy_rescue",
+      "verification": "artifacts/v13/flappy-rescue/confirmatory_verification.json",
+      "handoff": "V13_FLAPPY_RESCUE.md",
+      "spent_confirmatory_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "spent_confirmatory_purposes": [
+        "conf_train",
+        "conf_model",
+        "conf_rollout",
+        "conf_eval",
+        "conf_probe",
+        "conf_perturb"
+      ],
+      "file_sha256": {
+        "experiments/v13_flappy/run_plan.json": "369d47d76f992a03191e70a5bb16a48ea9cb0cddd6dc26aa33732a2abca8c9da",
+        "artifacts/v13/flappy-rescue/representation.json": "677d5e555a4fd7192c557aedda3b580b2180a01e59956802afa2948e01a8ac65",
+        "artifacts/v13/flappy-rescue/terminated_arms.json": "69088043864c9441572f05d232d2272d4e589b213170401e0fc966632e1cbfea",
+        "artifacts/v13/flappy-rescue/validation_gate.json": "946a2c9576bcb3bbf048862b2cd2fc2d2c85c82bb5e1daa68cf493928e8de4df",
+        "artifacts/v13/flappy-rescue/confirmatory_summary.json": "53553e65cb80f6b8a2c4a1c857b8d8173138f297ef19cd870c022942b5becdec",
+        "artifacts/v13/flappy-rescue/confirmatory_verification.json": "4bb58a3a55e320b76a8454f783cee94521311ac671c17c0ca76521cd36546856",
+        "artifacts/v13/standardizers/flappy-biological-t16-descending.json": "ff20e43eebdc98769084168be9d413f8b2782026a0db6ade570ceacef9ecf7bd",
+        "artifacts/v13/standardizers/flappy-rewired-0-t16-descending.json": "d3b48f40e6e9dc1d05d9bc1b597f329841ac9a98515828ae21e9a2d04f5ffc85",
+        "artifacts/v13/standardizers/flappy-rewired-1-t16-descending.json": "2ba65e86eaa2d43515a2cd660526b6456040d7e24ba95ec808647ef77707e88c",
+        "artifacts/v13/standardizers/flappy-rewired-2-t16-descending.json": "cea8d21213c5782337d8931fb821627497b6f2e4639cf49cfebfd081efa3f7df",
+        "artifacts/v13/standardizers/flappy-rewired-3-t16-descending.json": "719a7edb8cdbb8b530538fdb00178cd26584ff5d9da595d8a64c43afd8411632",
+        "artifacts/v13/standardizers/flappy-rewired-4-t16-descending.json": "97b71795e514ccf4deb548b29488c3a0fcde5da858805e783c734731e4434529",
+        "experiments/v13_flappy/specs/confirm/flappy-confirm-biological-s0.json": "b2e707cc5f294e17a0b15829d56a253629080834776fe5c413eaea92201576e6",
+        "experiments/v13_flappy/specs/confirm/flappy-confirm-biological-s1.json": "0ddf3d8d161d82ea052be23d1335cacaa6c347cf132186a87d5c09a899982415",
+        "experiments/v13_flappy/specs/confirm/flappy-confirm-biological-s2.json": "a9c2d4d378c6afef9d1274dee4061ef67c89caa0498e31c9bdf46c4d1cba8075",
+        "experiments/v13_flappy/specs/confirm/flappy-confirm-biological-s3.json": "95c738380c31b39500a98aa2fdaf4b87344ea10d41f989751b87b15c4e8e306a",
+        "experiments/v13_flappy/specs/confirm/flappy-confirm-biological-s4.json": "9209fb84172a02b698a64a146ddbc1d17d7124a93402c68fba41858e6b64ca93",
+        "experiments/v13_flappy/specs/confirm/flappy-confirm-rewired-s0.json": "4884fa5dd539867dc31efa01c2721f8557a614c3e31c2981a20a050636683332",
+        "experiments/v13_flappy/specs/confirm/flappy-confirm-rewired-s1.json": "a1a303cbeb2780c3aa7f5160f60fc406e7d50fcc1545f42846bee94bbafcf056",
+        "experiments/v13_flappy/specs/confirm/flappy-confirm-rewired-s2.json": "6d6034a51cad9471c74d229c7710415eb4a26c05ffa8773cba95c1c9fdc4c979",
+        "experiments/v13_flappy/specs/confirm/flappy-confirm-rewired-s3.json": "a493e784728239cf52f6919c8f2b633237664e9a82c1565b386105869075b9e0",
+        "experiments/v13_flappy/specs/confirm/flappy-confirm-rewired-s4.json": "80cd0bc241c7da0d611e76c713bb836b589ebe75829ef8558862415d41e1c941",
+        "experiments/v13_flappy/specs/confirm/flappy-confirm-sensory-s0.json": "0f8069e617c4996152776b6d20dadb834de10594205d5eb1ae46618a5dfe03ee",
+        "experiments/v13_flappy/specs/confirm/flappy-confirm-sensory-s1.json": "95b09fcef0c3119cb28ca7f4c7e77d9a45f11c3341800831204504d4c8fac323",
+        "experiments/v13_flappy/specs/confirm/flappy-confirm-sensory-s2.json": "c3df3e53e66e01c24c7f6d111521b246c0728243a2f7b449da1ac96c9332a756",
+        "experiments/v13_flappy/specs/confirm/flappy-confirm-sensory-s3.json": "3fe33c1372be97407cc10b80508ce382cfeaf5ed34850d92f8bf7624a288c89e",
+        "experiments/v13_flappy/specs/confirm/flappy-confirm-sensory-s4.json": "b6f549cde9158ac012874734c2103252be42eae86ce1ce3de0f6679bbdeb626b"
+      },
+      "headline": {
+        "biological_after": 0.6046666666666666,
+        "biological_before_untrained": 0.0003333333333333333,
+        "rewired_after": 0.252,
+        "sensory_after": 1.0,
+        "random": 0.0,
+        "heuristic_reference": 1.0,
+        "reference_policy": "flappy MPC oracle",
+        "criterion_met": true,
+        "per_seed_after": {
+          "biological": [
+            0.63,
+            0.48,
+            0.5633333333333332,
+            0.7166666666666667,
+            0.6333333333333333
+          ],
+          "rewired": [
+            0.17499999999999996,
+            0.10166666666666664,
+            0.24166666666666672,
+            0.24333333333333332,
+            0.49833333333333335
+          ],
+          "sensory": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "gap_closure": 0.6046666666666666,
+        "state_dependence": 0.31,
+        "perturbations_biological": {
+          "sensory_noise": 0.5370000000000001,
+          "edge_ablation": 0.0,
+          "neuron_ablation": 0.003333333333333333
+        }
+      },
+      "learner": "NumPy Dense 128 tanh -> GRU 64 -> actor/critic, clipped PPO + GAE, Adam",
+      "frozen_config": {
+        "task": "flappy",
+        "source": "fly",
+        "lr": 0.0003,
+        "transitions": 150000,
+        "arch": "gru",
+        "ticks": 16,
+        "shaping": 0.0,
+        "ent": 0.003
+      },
+      "frozen_config_sha256": "03cff10c087a0e8b4d5178e0085d955b71de12874a37a251c393d756bbcbaf26",
+      "code_sha256_extended": "cbc8078ac2f4b630529a6192b0fe85bb0a06babf27a616a6aa0f8ee6ca7f4895",
+      "base_multitask_code_sha256": "504a571e76244f199713ffb732eedd645d4504aba13a7fd4088f6d7e2206ae59",
+      "recurrent_core": "MaleCNS recurrent weights frozen (Stage A); descending-neuron readout; no extra neurons",
+      "sensory_encoding": "unchanged v1.2 encoding",
+      "shaping": "none",
+      "protocol_differences_from_v13_multitask_plan": [
+        "own pre-registered 10-part criterion (random + 0.10 margin, mean >= 0.60, gap closure >= 0.50, exact replay, graph hashes), not the multitask gap-closure-0.15 gate",
+        "GRU learner at 16 ticks per action and 150k transitions, selected from rescue development screens and a 5-seed validate gate, not from the multitask selection.json",
+        "rescue code in src/flyarcade_v13_flappy and scripts/v13_flappy_*.py (outside the hashed multitask code); extended code hash recorded in the plan",
+        "the untrained condition is each biological trial's initial policy on the same seeds, not a separate zero-transition trial",
+        "post-training perturbations run on the biological condition only"
+      ],
+      "rule": "Never rerun, re-score under a different criterion, or use Flappy confirmatory seeds 0-4 or their outcomes for model selection. Any further Flappy confirmatory study needs a new version and new, unused seeds."
     }
   }
 }
