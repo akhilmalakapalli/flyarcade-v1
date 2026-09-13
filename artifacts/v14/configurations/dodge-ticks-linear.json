@@ -1,0 +1,57 @@
+{
+  "name": "dodge-ticks-linear",
+  "phase": "ticks",
+  "config": {
+    "gamma": 0.99,
+    "lam": 0.95,
+    "lr": 0.0003,
+    "anneal_lr": true,
+    "clip": 0.2,
+    "ent": 0.003,
+    "vf": 0.5,
+    "max_grad_norm": 0.5,
+    "epochs": 4,
+    "envs": 16,
+    "steps": 128,
+    "minibatches": 8,
+    "chunk": 16,
+    "reward_scale": 1.0,
+    "shaping": 0.0,
+    "task": "dodge",
+    "arch": "linear",
+    "hidden": 0,
+    "core": 0,
+    "source": "fly",
+    "topology": "biological",
+    "ticks": 8,
+    "readout": "descending",
+    "transitions": 65536
+  },
+  "complete": true,
+  "stable": true,
+  "eligible": true,
+  "scores": [
+    0.9666666666666668,
+    0.8958333333333334,
+    0.8916666666666668
+  ],
+  "mean": 0.9180555555555557,
+  "sd": 0.034415310259344085,
+  "variance": 0.0011844135802469144,
+  "utility": 0.9094517279907197,
+  "state_probes": [
+    0.525,
+    0.475,
+    0.625
+  ],
+  "failure_reasons": [
+    null,
+    null,
+    null
+  ],
+  "specs": [
+    "experiments/v14/specs/dodge-ticks-linear-s0.json",
+    "experiments/v14/specs/dodge-ticks-linear-s1.json",
+    "experiments/v14/specs/dodge-ticks-linear-s2.json"
+  ]
+}

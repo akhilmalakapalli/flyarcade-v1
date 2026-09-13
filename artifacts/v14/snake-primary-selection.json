@@ -1,0 +1,232 @@
+{
+  "configurations": [
+    {
+      "name": "snake-primary-linear",
+      "phase": "primary",
+      "config": {
+        "gamma": 0.99,
+        "lam": 0.95,
+        "lr": 0.0003,
+        "anneal_lr": true,
+        "clip": 0.2,
+        "ent": 0.003,
+        "vf": 0.5,
+        "max_grad_norm": 0.5,
+        "epochs": 4,
+        "envs": 16,
+        "steps": 128,
+        "minibatches": 8,
+        "chunk": 16,
+        "reward_scale": 1.0,
+        "shaping": 0.0,
+        "task": "snake",
+        "arch": "linear",
+        "hidden": 0,
+        "core": 0,
+        "source": "fly",
+        "topology": "biological",
+        "ticks": 4,
+        "readout": "descending",
+        "transitions": 65536
+      },
+      "complete": true,
+      "stable": true,
+      "eligible": true,
+      "scores": [
+        0.875,
+        1.5,
+        1.025
+      ],
+      "mean": 1.1333333333333333,
+      "sd": 0.26640612271909636,
+      "variance": 0.07097222222222223,
+      "utility": 1.0667318026535593,
+      "state_probes": [
+        0.525,
+        0.44999999999999996,
+        0.525
+      ],
+      "failure_reasons": [
+        null,
+        null,
+        null
+      ],
+      "specs": [
+        "experiments/v14/specs/snake-primary-linear-s0.json",
+        "experiments/v14/specs/snake-primary-linear-s1.json",
+        "experiments/v14/specs/snake-primary-linear-s2.json"
+      ]
+    },
+    {
+      "name": "snake-primary-mlp",
+      "phase": "primary",
+      "config": {
+        "gamma": 0.99,
+        "lam": 0.95,
+        "lr": 0.0003,
+        "anneal_lr": true,
+        "clip": 0.2,
+        "ent": 0.003,
+        "vf": 0.5,
+        "max_grad_norm": 0.5,
+        "epochs": 4,
+        "envs": 16,
+        "steps": 128,
+        "minibatches": 8,
+        "chunk": 16,
+        "reward_scale": 1.0,
+        "shaping": 0.0,
+        "task": "snake",
+        "arch": "mlp",
+        "hidden": 128,
+        "core": 64,
+        "source": "fly",
+        "topology": "biological",
+        "ticks": 4,
+        "readout": "descending",
+        "transitions": 65536
+      },
+      "complete": true,
+      "stable": true,
+      "eligible": true,
+      "scores": [
+        0.725,
+        0.65,
+        0.55
+      ],
+      "mean": 0.6416666666666667,
+      "sd": 0.07168604389202186,
+      "variance": 0.0051388888888888856,
+      "utility": 0.6237451556936613,
+      "state_probes": [
+        0.32499999999999996,
+        0.525,
+        0.44999999999999996
+      ],
+      "failure_reasons": [
+        null,
+        null,
+        null
+      ],
+      "specs": [
+        "experiments/v14/specs/snake-primary-mlp-s0.json",
+        "experiments/v14/specs/snake-primary-mlp-s1.json",
+        "experiments/v14/specs/snake-primary-mlp-s2.json"
+      ]
+    },
+    {
+      "name": "snake-primary-gru",
+      "phase": "primary",
+      "config": {
+        "gamma": 0.99,
+        "lam": 0.95,
+        "lr": 0.0003,
+        "anneal_lr": true,
+        "clip": 0.2,
+        "ent": 0.003,
+        "vf": 0.5,
+        "max_grad_norm": 0.5,
+        "epochs": 4,
+        "envs": 16,
+        "steps": 128,
+        "minibatches": 8,
+        "chunk": 16,
+        "reward_scale": 1.0,
+        "shaping": 0.0,
+        "task": "snake",
+        "arch": "gru",
+        "hidden": 128,
+        "core": 64,
+        "source": "fly",
+        "topology": "biological",
+        "ticks": 4,
+        "readout": "descending",
+        "transitions": 65536
+      },
+      "complete": true,
+      "stable": true,
+      "eligible": true,
+      "scores": [
+        0.575,
+        1.35,
+        0.825
+      ],
+      "mean": 0.9166666666666666,
+      "sd": 0.3229637062512684,
+      "variance": 0.1043055555555556,
+      "utility": 0.8359257401038496,
+      "state_probes": [
+        0.6,
+        0.55,
+        0.625
+      ],
+      "failure_reasons": [
+        null,
+        null,
+        null
+      ],
+      "specs": [
+        "experiments/v14/specs/snake-primary-gru-s0.json",
+        "experiments/v14/specs/snake-primary-gru-s1.json",
+        "experiments/v14/specs/snake-primary-gru-s2.json"
+      ]
+    }
+  ],
+  "selected": {
+    "name": "snake-primary-linear",
+    "phase": "primary",
+    "config": {
+      "gamma": 0.99,
+      "lam": 0.95,
+      "lr": 0.0003,
+      "anneal_lr": true,
+      "clip": 0.2,
+      "ent": 0.003,
+      "vf": 0.5,
+      "max_grad_norm": 0.5,
+      "epochs": 4,
+      "envs": 16,
+      "steps": 128,
+      "minibatches": 8,
+      "chunk": 16,
+      "reward_scale": 1.0,
+      "shaping": 0.0,
+      "task": "snake",
+      "arch": "linear",
+      "hidden": 0,
+      "core": 0,
+      "source": "fly",
+      "topology": "biological",
+      "ticks": 4,
+      "readout": "descending",
+      "transitions": 65536
+    },
+    "complete": true,
+    "stable": true,
+    "eligible": true,
+    "scores": [
+      0.875,
+      1.5,
+      1.025
+    ],
+    "mean": 1.1333333333333333,
+    "sd": 0.26640612271909636,
+    "variance": 0.07097222222222223,
+    "utility": 1.0667318026535593,
+    "state_probes": [
+      0.525,
+      0.44999999999999996,
+      0.525
+    ],
+    "failure_reasons": [
+      null,
+      null,
+      null
+    ],
+    "specs": [
+      "experiments/v14/specs/snake-primary-linear-s0.json",
+      "experiments/v14/specs/snake-primary-linear-s1.json",
+      "experiments/v14/specs/snake-primary-linear-s2.json"
+    ]
+  }
+}

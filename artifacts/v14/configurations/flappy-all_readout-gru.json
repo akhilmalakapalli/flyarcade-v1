@@ -1,0 +1,57 @@
+{
+  "name": "flappy-all_readout-gru",
+  "phase": "all_readout",
+  "config": {
+    "gamma": 0.99,
+    "lam": 0.95,
+    "lr": 0.0003,
+    "anneal_lr": true,
+    "clip": 0.2,
+    "ent": 0.003,
+    "vf": 0.5,
+    "max_grad_norm": 0.5,
+    "epochs": 4,
+    "envs": 16,
+    "steps": 128,
+    "minibatches": 8,
+    "chunk": 16,
+    "reward_scale": 1.0,
+    "shaping": 0.0,
+    "task": "flappy",
+    "arch": "gru",
+    "hidden": 128,
+    "core": 64,
+    "source": "fly",
+    "topology": "biological",
+    "ticks": 4,
+    "readout": "all",
+    "transitions": 65536
+  },
+  "complete": true,
+  "stable": true,
+  "eligible": false,
+  "scores": [
+    0.3666666666666666,
+    0.2,
+    0.2
+  ],
+  "mean": 0.25555555555555554,
+  "sd": 0.07856742013183857,
+  "variance": 0.006172839506172832,
+  "utility": 0.2359137005225959,
+  "state_probes": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "failure_reasons": [
+    null,
+    null,
+    null
+  ],
+  "specs": [
+    "experiments/v14/specs/flappy-all_readout-gru-s0.json",
+    "experiments/v14/specs/flappy-all_readout-gru-s1.json",
+    "experiments/v14/specs/flappy-all_readout-gru-s2.json"
+  ]
+}

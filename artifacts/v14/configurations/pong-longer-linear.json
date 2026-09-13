@@ -1,0 +1,57 @@
+{
+  "name": "pong-longer-linear",
+  "phase": "longer",
+  "config": {
+    "gamma": 0.99,
+    "lam": 0.95,
+    "lr": 0.0003,
+    "anneal_lr": true,
+    "clip": 0.2,
+    "ent": 0.003,
+    "vf": 0.5,
+    "max_grad_norm": 0.5,
+    "epochs": 4,
+    "envs": 16,
+    "steps": 128,
+    "minibatches": 8,
+    "chunk": 16,
+    "reward_scale": 1.0,
+    "shaping": 0.0,
+    "task": "pong",
+    "arch": "linear",
+    "hidden": 0,
+    "core": 0,
+    "source": "fly",
+    "topology": "biological",
+    "ticks": 8,
+    "readout": "all",
+    "transitions": 131072
+  },
+  "complete": true,
+  "stable": true,
+  "eligible": true,
+  "scores": [
+    0.9361111111111111,
+    0.9416666666666667,
+    0.9388888888888889
+  ],
+  "mean": 0.9388888888888888,
+  "sd": 0.002268046058132564,
+  "variance": 5.144032921810662e-06,
+  "utility": 0.9383218773743557,
+  "state_probes": [
+    0.35,
+    0.6,
+    0.35
+  ],
+  "failure_reasons": [
+    null,
+    null,
+    null
+  ],
+  "specs": [
+    "experiments/v14/specs/pong-longer-linear-s0.json",
+    "experiments/v14/specs/pong-longer-linear-s1.json",
+    "experiments/v14/specs/pong-longer-linear-s2.json"
+  ]
+}

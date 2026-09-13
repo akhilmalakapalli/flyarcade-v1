@@ -1,0 +1,57 @@
+{
+  "name": "pong-primary-mlp",
+  "phase": "primary",
+  "config": {
+    "gamma": 0.99,
+    "lam": 0.95,
+    "lr": 0.0003,
+    "anneal_lr": true,
+    "clip": 0.2,
+    "ent": 0.003,
+    "vf": 0.5,
+    "max_grad_norm": 0.5,
+    "epochs": 4,
+    "envs": 16,
+    "steps": 128,
+    "minibatches": 8,
+    "chunk": 16,
+    "reward_scale": 1.0,
+    "shaping": 0.0,
+    "task": "pong",
+    "arch": "mlp",
+    "hidden": 128,
+    "core": 64,
+    "source": "fly",
+    "topology": "biological",
+    "ticks": 4,
+    "readout": "descending",
+    "transitions": 65536
+  },
+  "complete": true,
+  "stable": true,
+  "eligible": true,
+  "scores": [
+    0.3083333333333333,
+    0.475,
+    0.36944444444444435
+  ],
+  "mean": 0.38425925925925924,
+  "sd": 0.0688430751683004,
+  "variance": 0.00473936899862826,
+  "utility": 0.36704849046718413,
+  "state_probes": [
+    0.575,
+    0.22499999999999998,
+    0.5
+  ],
+  "failure_reasons": [
+    null,
+    null,
+    null
+  ],
+  "specs": [
+    "experiments/v14/specs/pong-primary-mlp-s0.json",
+    "experiments/v14/specs/pong-primary-mlp-s1.json",
+    "experiments/v14/specs/pong-primary-mlp-s2.json"
+  ]
+}

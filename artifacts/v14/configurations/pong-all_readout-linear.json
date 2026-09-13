@@ -1,0 +1,57 @@
+{
+  "name": "pong-all_readout-linear",
+  "phase": "all_readout",
+  "config": {
+    "gamma": 0.99,
+    "lam": 0.95,
+    "lr": 0.0003,
+    "anneal_lr": true,
+    "clip": 0.2,
+    "ent": 0.003,
+    "vf": 0.5,
+    "max_grad_norm": 0.5,
+    "epochs": 4,
+    "envs": 16,
+    "steps": 128,
+    "minibatches": 8,
+    "chunk": 16,
+    "reward_scale": 1.0,
+    "shaping": 0.0,
+    "task": "pong",
+    "arch": "linear",
+    "hidden": 0,
+    "core": 0,
+    "source": "fly",
+    "topology": "biological",
+    "ticks": 8,
+    "readout": "all",
+    "transitions": 65536
+  },
+  "complete": true,
+  "stable": true,
+  "eligible": true,
+  "scores": [
+    0.8972222222222221,
+    0.8194444444444443,
+    0.8833333333333332
+  ],
+  "mean": 0.8666666666666666,
+  "sd": 0.03386915029291091,
+  "variance": 0.0011471193415637873,
+  "utility": 0.8581993790934389,
+  "state_probes": [
+    0.475,
+    0.55,
+    0.6
+  ],
+  "failure_reasons": [
+    null,
+    null,
+    null
+  ],
+  "specs": [
+    "experiments/v14/specs/pong-all_readout-linear-s0.json",
+    "experiments/v14/specs/pong-all_readout-linear-s1.json",
+    "experiments/v14/specs/pong-all_readout-linear-s2.json"
+  ]
+}

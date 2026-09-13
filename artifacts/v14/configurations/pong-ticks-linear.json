@@ -1,0 +1,57 @@
+{
+  "name": "pong-ticks-linear",
+  "phase": "ticks",
+  "config": {
+    "gamma": 0.99,
+    "lam": 0.95,
+    "lr": 0.0003,
+    "anneal_lr": true,
+    "clip": 0.2,
+    "ent": 0.003,
+    "vf": 0.5,
+    "max_grad_norm": 0.5,
+    "epochs": 4,
+    "envs": 16,
+    "steps": 128,
+    "minibatches": 8,
+    "chunk": 16,
+    "reward_scale": 1.0,
+    "shaping": 0.0,
+    "task": "pong",
+    "arch": "linear",
+    "hidden": 0,
+    "core": 0,
+    "source": "fly",
+    "topology": "biological",
+    "ticks": 8,
+    "readout": "descending",
+    "transitions": 65536
+  },
+  "complete": true,
+  "stable": true,
+  "eligible": true,
+  "scores": [
+    0.6861111111111111,
+    0.638888888888889,
+    0.6222222222222221
+  ],
+  "mean": 0.6490740740740741,
+  "sd": 0.027058591104078652,
+  "variance": 0.0007321673525377243,
+  "utility": 0.6423094262980544,
+  "state_probes": [
+    0.5,
+    0.625,
+    0.6
+  ],
+  "failure_reasons": [
+    null,
+    null,
+    null
+  ],
+  "specs": [
+    "experiments/v14/specs/pong-ticks-linear-s0.json",
+    "experiments/v14/specs/pong-ticks-linear-s1.json",
+    "experiments/v14/specs/pong-ticks-linear-s2.json"
+  ]
+}

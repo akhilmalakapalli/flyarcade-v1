@@ -1,0 +1,57 @@
+{
+  "name": "snake-primary-gru",
+  "phase": "primary",
+  "config": {
+    "gamma": 0.99,
+    "lam": 0.95,
+    "lr": 0.0003,
+    "anneal_lr": true,
+    "clip": 0.2,
+    "ent": 0.003,
+    "vf": 0.5,
+    "max_grad_norm": 0.5,
+    "epochs": 4,
+    "envs": 16,
+    "steps": 128,
+    "minibatches": 8,
+    "chunk": 16,
+    "reward_scale": 1.0,
+    "shaping": 0.0,
+    "task": "snake",
+    "arch": "gru",
+    "hidden": 128,
+    "core": 64,
+    "source": "fly",
+    "topology": "biological",
+    "ticks": 4,
+    "readout": "descending",
+    "transitions": 65536
+  },
+  "complete": true,
+  "stable": true,
+  "eligible": true,
+  "scores": [
+    0.575,
+    1.35,
+    0.825
+  ],
+  "mean": 0.9166666666666666,
+  "sd": 0.3229637062512684,
+  "variance": 0.1043055555555556,
+  "utility": 0.8359257401038496,
+  "state_probes": [
+    0.6,
+    0.55,
+    0.625
+  ],
+  "failure_reasons": [
+    null,
+    null,
+    null
+  ],
+  "specs": [
+    "experiments/v14/specs/snake-primary-gru-s0.json",
+    "experiments/v14/specs/snake-primary-gru-s1.json",
+    "experiments/v14/specs/snake-primary-gru-s2.json"
+  ]
+}

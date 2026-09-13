@@ -1,0 +1,63 @@
+{
+  "name": "flappy-rescue-gru",
+  "phase": "rescue",
+  "config": {
+    "gamma": 0.99,
+    "lam": 0.95,
+    "lr": 0.0003,
+    "anneal_lr": true,
+    "clip": 0.2,
+    "ent": 0.003,
+    "vf": 0.5,
+    "max_grad_norm": 0.5,
+    "epochs": 4,
+    "envs": 16,
+    "steps": 128,
+    "minibatches": 8,
+    "chunk": 16,
+    "reward_scale": 1.0,
+    "shaping": 0.0,
+    "task": "flappy",
+    "arch": "gru",
+    "hidden": 128,
+    "core": 64,
+    "source": "fly",
+    "topology": "biological",
+    "ticks": 4,
+    "readout": "descending",
+    "transitions": 131072,
+    "curriculum": [
+      [
+        "target",
+        1.0
+      ]
+    ]
+  },
+  "complete": true,
+  "stable": true,
+  "eligible": true,
+  "scores": [
+    0.2333333333333333,
+    0.25833333333333336,
+    0.4041666666666666
+  ],
+  "mean": 0.2986111111111111,
+  "sd": 0.07533362012400341,
+  "variance": 0.005675154320987651,
+  "utility": 0.27977770608011027,
+  "state_probes": [
+    0.050000000000000044,
+    0.125,
+    0.30000000000000004
+  ],
+  "failure_reasons": [
+    null,
+    null,
+    null
+  ],
+  "specs": [
+    "experiments/v14/specs/flappy-rescue-gru-s0.json",
+    "experiments/v14/specs/flappy-rescue-gru-s1.json",
+    "experiments/v14/specs/flappy-rescue-gru-s2.json"
+  ]
+}

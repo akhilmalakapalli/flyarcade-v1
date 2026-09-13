@@ -1,0 +1,57 @@
+{
+  "name": "pong-primary-gru",
+  "phase": "primary",
+  "config": {
+    "gamma": 0.99,
+    "lam": 0.95,
+    "lr": 0.0003,
+    "anneal_lr": true,
+    "clip": 0.2,
+    "ent": 0.003,
+    "vf": 0.5,
+    "max_grad_norm": 0.5,
+    "epochs": 4,
+    "envs": 16,
+    "steps": 128,
+    "minibatches": 8,
+    "chunk": 16,
+    "reward_scale": 1.0,
+    "shaping": 0.0,
+    "task": "pong",
+    "arch": "gru",
+    "hidden": 128,
+    "core": 64,
+    "source": "fly",
+    "topology": "biological",
+    "ticks": 4,
+    "readout": "descending",
+    "transitions": 65536
+  },
+  "complete": true,
+  "stable": true,
+  "eligible": false,
+  "scores": [
+    0.2972222222222222,
+    0.32222222222222224,
+    0.29444444444444445
+  ],
+  "mean": 0.30462962962962964,
+  "sd": 0.012491423669659305,
+  "variance": 0.00015603566529492473,
+  "utility": 0.3015067737122148,
+  "state_probes": [
+    0.0,
+    0.050000000000000044,
+    0.0
+  ],
+  "failure_reasons": [
+    null,
+    null,
+    null
+  ],
+  "specs": [
+    "experiments/v14/specs/pong-primary-gru-s0.json",
+    "experiments/v14/specs/pong-primary-gru-s1.json",
+    "experiments/v14/specs/pong-primary-gru-s2.json"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "name": "snake-ticks-linear",
+  "phase": "ticks",
+  "config": {
+    "gamma": 0.99,
+    "lam": 0.95,
+    "lr": 0.0003,
+    "anneal_lr": true,
+    "clip": 0.2,
+    "ent": 0.003,
+    "vf": 0.5,
+    "max_grad_norm": 0.5,
+    "epochs": 4,
+    "envs": 16,
+    "steps": 128,
+    "minibatches": 8,
+    "chunk": 16,
+    "reward_scale": 1.0,
+    "shaping": 0.0,
+    "task": "snake",
+    "arch": "linear",
+    "hidden": 0,
+    "core": 0,
+    "source": "fly",
+    "topology": "biological",
+    "ticks": 8,
+    "readout": "descending",
+    "transitions": 65536
+  },
+  "complete": true,
+  "stable": true,
+  "eligible": true,
+  "scores": [
+    3.45,
+    3.35,
+    3.15
+  ],
+  "mean": 3.316666666666667,
+  "sd": 0.12472191289246483,
+  "variance": 0.015555555555555585,
+  "utility": 3.2854861884435507,
+  "state_probes": [
+    0.5,
+    0.625,
+    0.625
+  ],
+  "failure_reasons": [
+    null,
+    null,
+    null
+  ],
+  "specs": [
+    "experiments/v14/specs/snake-ticks-linear-s0.json",
+    "experiments/v14/specs/snake-ticks-linear-s1.json",
+    "experiments/v14/specs/snake-ticks-linear-s2.json"
+  ]
+}

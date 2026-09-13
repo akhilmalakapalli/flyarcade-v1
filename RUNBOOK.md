@@ -206,3 +206,72 @@ Additional read-only preservation and executor checks:
 .venv/bin/python scripts/v12_historical_replay.py
 .venv/bin/python scripts/v12_core_equivalence.py
 ```
+
+## v1.4 performance development (no confirmatory testing)
+
+Use branch `flyarcade-v1.4-performance`. The plan is already committed at `ee7d012`;
+read `experiments/v14/development_plan.json` and `experiments/v14/METHODS.md`.
+The original dashboard and all historical results remain frozen. Do not invoke
+historical training, evaluation, rescoring or artifact-writing scripts.
+
+Existing locked environment and graph are reused. For a fresh Python environment:
+
+```sh
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements-lock.txt
+.venv/bin/python -m pip install -e . --no-deps
+export OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1
+```
+
+The source graph and full checkpoints live in ignored data/run directories and
+must be backed up. Preserve the canonical graph's plan-recorded SHA256. No full
+connectome download is required, and no limit may be raised to acquire one.
+
+Development and progress reporting:
+
+```sh
+.venv/bin/python scripts/v14_suite.py
+.venv/bin/python scripts/v14_report.py
+```
+
+The suite prepares fresh feature fits, runs all primary comparisons, locks primary
+winners, then applies only declared secondary/rescue rules. It preserves completed
+trials and terminal failure records. Trial processes checkpoint after 70 seconds
+and return 7; the suite resumes up to the plan's 20-segment cap. Each process keeps
+the original 120-second and 2-GiB guards. To resume one existing spec:
+
+```sh
+.venv/bin/python scripts/v14_trial.py --spec experiments/v14/specs/catch-primary-linear-s0.json
+```
+
+After `artifacts/v14/selected_configs.json` is locked, validation and final reports:
+
+```sh
+.venv/bin/python scripts/v14_validate.py
+.venv/bin/python scripts/v14_report.py
+.venv/bin/python scripts/v14_audit.py
+```
+
+Validation preserves completed files and does not rescore them. Never delete a
+validation result to enable more tuning or repeat its use for selection. Any
+new training configuration requires a new development protocol/version and an
+untouched validation block. No v1.4 confirmatory execution is implemented or
+permitted by this mission.
+
+Verification that does not run historical scientific evaluation:
+
+```sh
+.venv/bin/python scripts/health_check.py
+.venv/bin/python -m pip check
+.venv/bin/python -m pytest -q
+.venv/bin/ruff check .
+.venv/bin/ruff format --check .
+.venv/bin/python scripts/v14_audit.py
+```
+
+The dashboard software tests use their dedicated demo seeds. The v1.4 audit uses
+fresh software-test seeds and a development-only training replay; it never reruns
+historical confirmatory or fresh validation episodes. Tables, summaries, progress,
+resource records and compressed development result archive are under artifacts/v14.
+The primary comparison CSV excludes secondary and rescue trials; their results
+have separate files. Review raw per-seed outcomes before interpreting any mean.

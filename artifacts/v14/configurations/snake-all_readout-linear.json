@@ -1,0 +1,57 @@
+{
+  "name": "snake-all_readout-linear",
+  "phase": "all_readout",
+  "config": {
+    "gamma": 0.99,
+    "lam": 0.95,
+    "lr": 0.0003,
+    "anneal_lr": true,
+    "clip": 0.2,
+    "ent": 0.003,
+    "vf": 0.5,
+    "max_grad_norm": 0.5,
+    "epochs": 4,
+    "envs": 16,
+    "steps": 128,
+    "minibatches": 8,
+    "chunk": 16,
+    "reward_scale": 1.0,
+    "shaping": 0.0,
+    "task": "snake",
+    "arch": "linear",
+    "hidden": 0,
+    "core": 0,
+    "source": "fly",
+    "topology": "biological",
+    "ticks": 8,
+    "readout": "all",
+    "transitions": 65536
+  },
+  "complete": true,
+  "stable": true,
+  "eligible": true,
+  "scores": [
+    11.45,
+    11.15,
+    12.125
+  ],
+  "mean": 11.575000000000001,
+  "sd": 0.40773766075750223,
+  "variance": 0.16624999999999998,
+  "utility": 11.473065584810625,
+  "state_probes": [
+    0.6,
+    0.7,
+    0.675
+  ],
+  "failure_reasons": [
+    null,
+    null,
+    null
+  ],
+  "specs": [
+    "experiments/v14/specs/snake-all_readout-linear-s0.json",
+    "experiments/v14/specs/snake-all_readout-linear-s1.json",
+    "experiments/v14/specs/snake-all_readout-linear-s2.json"
+  ]
+}

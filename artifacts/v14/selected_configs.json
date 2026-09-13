@@ -1,0 +1,2171 @@
+{
+  "plan_sha256": "f53ab5e9517d481491df19e64accb5023c744a4b1edbd32b27b5153f598a9501",
+  "code_sha256": "e85511e4bc365a05991535efbccd77a20b76410345f35b6711f223e77a7910ce",
+  "selection_data": "development only",
+  "tasks": {
+    "catch": {
+      "primary_selected": {
+        "name": "catch-primary-linear",
+        "phase": "primary",
+        "config": {
+          "gamma": 0.99,
+          "lam": 0.95,
+          "lr": 0.0003,
+          "anneal_lr": true,
+          "clip": 0.2,
+          "ent": 0.003,
+          "vf": 0.5,
+          "max_grad_norm": 0.5,
+          "epochs": 4,
+          "envs": 16,
+          "steps": 128,
+          "minibatches": 8,
+          "chunk": 16,
+          "reward_scale": 1.0,
+          "shaping": 0.0,
+          "task": "catch",
+          "arch": "linear",
+          "hidden": 0,
+          "core": 0,
+          "source": "fly",
+          "topology": "biological",
+          "ticks": 4,
+          "readout": "descending",
+          "transitions": 65536
+        },
+        "complete": true,
+        "stable": true,
+        "eligible": true,
+        "scores": [
+          0.7291666666666666,
+          0.7041666666666666,
+          0.75
+        ],
+        "mean": 0.7277777777777777,
+        "sd": 0.01873713550448897,
+        "variance": 0.00035108024691358114,
+        "utility": 0.7230934939016554,
+        "state_probes": [
+          0.275,
+          0.5,
+          0.35
+        ],
+        "failure_reasons": [
+          null,
+          null,
+          null
+        ],
+        "specs": [
+          "experiments/v14/specs/catch-primary-linear-s0.json",
+          "experiments/v14/specs/catch-primary-linear-s1.json",
+          "experiments/v14/specs/catch-primary-linear-s2.json"
+        ]
+      },
+      "final_selected": {
+        "name": "catch-ticks-linear",
+        "phase": "ticks",
+        "config": {
+          "gamma": 0.99,
+          "lam": 0.95,
+          "lr": 0.0003,
+          "anneal_lr": true,
+          "clip": 0.2,
+          "ent": 0.003,
+          "vf": 0.5,
+          "max_grad_norm": 0.5,
+          "epochs": 4,
+          "envs": 16,
+          "steps": 128,
+          "minibatches": 8,
+          "chunk": 16,
+          "reward_scale": 1.0,
+          "shaping": 0.0,
+          "task": "catch",
+          "arch": "linear",
+          "hidden": 0,
+          "core": 0,
+          "source": "fly",
+          "topology": "biological",
+          "ticks": 8,
+          "readout": "descending",
+          "transitions": 65536
+        },
+        "complete": true,
+        "stable": true,
+        "eligible": true,
+        "scores": [
+          0.9375,
+          0.9708333333333332,
+          0.95
+        ],
+        "mean": 0.9527777777777778,
+        "sd": 0.013749298523071708,
+        "variance": 0.00018904320987654183,
+        "utility": 0.9493404531470099,
+        "state_probes": [
+          0.32499999999999996,
+          0.5,
+          0.42500000000000004
+        ],
+        "failure_reasons": [
+          null,
+          null,
+          null
+        ],
+        "specs": [
+          "experiments/v14/specs/catch-ticks-linear-s0.json",
+          "experiments/v14/specs/catch-ticks-linear-s1.json",
+          "experiments/v14/specs/catch-ticks-linear-s2.json"
+        ]
+      },
+      "configurations": [
+        {
+          "name": "catch-primary-linear",
+          "phase": "primary",
+          "config": {
+            "gamma": 0.99,
+            "lam": 0.95,
+            "lr": 0.0003,
+            "anneal_lr": true,
+            "clip": 0.2,
+            "ent": 0.003,
+            "vf": 0.5,
+            "max_grad_norm": 0.5,
+            "epochs": 4,
+            "envs": 16,
+            "steps": 128,
+            "minibatches": 8,
+            "chunk": 16,
+            "reward_scale": 1.0,
+            "shaping": 0.0,
+            "task": "catch",
+            "arch": "linear",
+            "hidden": 0,
+            "core": 0,
+            "source": "fly",
+            "topology": "biological",
+            "ticks": 4,
+            "readout": "descending",
+            "transitions": 65536
+          },
+          "complete": true,
+          "stable": true,
+          "eligible": true,
+          "scores": [
+            0.7291666666666666,
+            0.7041666666666666,
+            0.75
+          ],
+          "mean": 0.7277777777777777,
+          "sd": 0.01873713550448897,
+          "variance": 0.00035108024691358114,
+          "utility": 0.7230934939016554,
+          "state_probes": [
+            0.275,
+            0.5,
+            0.35
+          ],
+          "failure_reasons": [
+            null,
+            null,
+            null
+          ],
+          "specs": [
+            "experiments/v14/specs/catch-primary-linear-s0.json",
+            "experiments/v14/specs/catch-primary-linear-s1.json",
+            "experiments/v14/specs/catch-primary-linear-s2.json"
+          ]
+        },
+        {
+          "name": "catch-primary-mlp",
+          "phase": "primary",
+          "config": {
+            "gamma": 0.99,
+            "lam": 0.95,
+            "lr": 0.0003,
+            "anneal_lr": true,
+            "clip": 0.2,
+            "ent": 0.003,
+            "vf": 0.5,
+            "max_grad_norm": 0.5,
+            "epochs": 4,
+            "envs": 16,
+            "steps": 128,
+            "minibatches": 8,
+            "chunk": 16,
+            "reward_scale": 1.0,
+            "shaping": 0.0,
+            "task": "catch",
+            "arch": "mlp",
+            "hidden": 128,
+            "core": 64,
+            "source": "fly",
+            "topology": "biological",
+            "ticks": 4,
+            "readout": "descending",
+            "transitions": 65536
+          },
+          "complete": true,
+          "stable": true,
+          "eligible": false,
+          "scores": [
+            0.2,
+            0.20833333333333331,
+            0.19999999999999998
+          ],
+          "mean": 0.20277777777777775,
+          "sd": 0.003928371006591923,
+          "variance": 1.5432098765432038e-05,
+          "utility": 0.20179568502612977,
+          "state_probes": [
+            0.0,
+            0.0,
+            0.19999999999999996
+          ],
+          "failure_reasons": [
+            null,
+            null,
+            null
+          ],
+          "specs": [
+            "experiments/v14/specs/catch-primary-mlp-s0.json",
+            "experiments/v14/specs/catch-primary-mlp-s1.json",
+            "experiments/v14/specs/catch-primary-mlp-s2.json"
+          ]
+        },
+        {
+          "name": "catch-primary-gru",
+          "phase": "primary",
+          "config": {
+            "gamma": 0.99,
+            "lam": 0.95,
+            "lr": 0.0003,
+            "anneal_lr": true,
+            "clip": 0.2,
+            "ent": 0.003,
+            "vf": 0.5,
+            "max_grad_norm": 0.5,
+            "epochs": 4,
+            "envs": 16,
+            "steps": 128,
+            "minibatches": 8,
+            "chunk": 16,
+            "reward_scale": 1.0,
+            "shaping": 0.0,
+            "task": "catch",
+            "arch": "gru",
+            "hidden": 128,
+            "core": 64,
+            "source": "fly",
+            "topology": "biological",
+            "ticks": 4,
+            "readout": "descending",
+            "transitions": 65536
+          },
+          "complete": true,
+          "stable": true,
+          "eligible": false,
+          "scores": [
+            0.20416666666666666,
+            0.1875,
+            0.2458333333333333
+          ],
+          "mean": 0.2125,
+          "sd": 0.02453266907313289,
+          "variance": 0.0006018518518518509,
+          "utility": 0.20636683273171677,
+          "state_probes": [
+            0.025000000000000022,
+            0.0,
+            0.0
+          ],
+          "failure_reasons": [
+            null,
+            null,
+            null
+          ],
+          "specs": [
+            "experiments/v14/specs/catch-primary-gru-s0.json",
+            "experiments/v14/specs/catch-primary-gru-s1.json",
+            "experiments/v14/specs/catch-primary-gru-s2.json"
+          ]
+        },
+        {
+          "name": "catch-ticks-linear",
+          "phase": "ticks",
+          "config": {
+            "gamma": 0.99,
+            "lam": 0.95,
+            "lr": 0.0003,
+            "anneal_lr": true,
+            "clip": 0.2,
+            "ent": 0.003,
+            "vf": 0.5,
+            "max_grad_norm": 0.5,
+            "epochs": 4,
+            "envs": 16,
+            "steps": 128,
+            "minibatches": 8,
+            "chunk": 16,
+            "reward_scale": 1.0,
+            "shaping": 0.0,
+            "task": "catch",
+            "arch": "linear",
+            "hidden": 0,
+            "core": 0,
+            "source": "fly",
+            "topology": "biological",
+            "ticks": 8,
+            "readout": "descending",
+            "transitions": 65536
+          },
+          "complete": true,
+          "stable": true,
+          "eligible": true,
+          "scores": [
+            0.9375,
+            0.9708333333333332,
+            0.95
+          ],
+          "mean": 0.9527777777777778,
+          "sd": 0.013749298523071708,
+          "variance": 0.00018904320987654183,
+          "utility": 0.9493404531470099,
+          "state_probes": [
+            0.32499999999999996,
+            0.5,
+            0.42500000000000004
+          ],
+          "failure_reasons": [
+            null,
+            null,
+            null
+          ],
+          "specs": [
+            "experiments/v14/specs/catch-ticks-linear-s0.json",
+            "experiments/v14/specs/catch-ticks-linear-s1.json",
+            "experiments/v14/specs/catch-ticks-linear-s2.json"
+          ]
+        }
+      ],
+      "stopping_reasons": [
+        "development target reached; no further escalation"
+      ]
+    },
+    "dodge": {
+      "primary_selected": {
+        "name": "dodge-primary-linear",
+        "phase": "primary",
+        "config": {
+          "gamma": 0.99,
+          "lam": 0.95,
+          "lr": 0.0003,
+          "anneal_lr": true,
+          "clip": 0.2,
+          "ent": 0.003,
+          "vf": 0.5,
+          "max_grad_norm": 0.5,
+          "epochs": 4,
+          "envs": 16,
+          "steps": 128,
+          "minibatches": 8,
+          "chunk": 16,
+          "reward_scale": 1.0,
+          "shaping": 0.0,
+          "task": "dodge",
+          "arch": "linear",
+          "hidden": 0,
+          "core": 0,
+          "source": "fly",
+          "topology": "biological",
+          "ticks": 4,
+          "readout": "descending",
+          "transitions": 65536
+        },
+        "complete": true,
+        "stable": true,
+        "eligible": true,
+        "scores": [
+          0.9583333333333334,
+          0.9375,
+          0.9291666666666668
+        ],
+        "mean": 0.9416666666666668,
+        "sd": 0.012266334536566424,
+        "variance": 0.00015046296296296222,
+        "utility": 0.9386000830325252,
+        "state_probes": [
+          0.5,
+          0.625,
+          0.22499999999999998
+        ],
+        "failure_reasons": [
+          null,
+          null,
+          null
+        ],
+        "specs": [
+          "experiments/v14/specs/dodge-primary-linear-s0.json",
+          "experiments/v14/specs/dodge-primary-linear-s1.json",
+          "experiments/v14/specs/dodge-primary-linear-s2.json"
+        ]
+      },
+      "final_selected": {
+        "name": "dodge-primary-linear",
+        "phase": "primary",
+        "config": {
+          "gamma": 0.99,
+          "lam": 0.95,
+          "lr": 0.0003,
+          "anneal_lr": true,
+          "clip": 0.2,
+          "ent": 0.003,
+          "vf": 0.5,
+          "max_grad_norm": 0.5,
+          "epochs": 4,
+          "envs": 16,
+          "steps": 128,
+          "minibatches": 8,
+          "chunk": 16,
+          "reward_scale": 1.0,
+          "shaping": 0.0,
+          "task": "dodge",
+          "arch": "linear",
+          "hidden": 0,
+          "core": 0,
+          "source": "fly",
+          "topology": "biological",
+          "ticks": 4,
+          "readout": "descending",
+          "transitions": 65536
+        },
+        "complete": true,
+        "stable": true,
+        "eligible": true,
+        "scores": [
+          0.9583333333333334,
+          0.9375,
+          0.9291666666666668
+        ],
+        "mean": 0.9416666666666668,
+        "sd": 0.012266334536566424,
+        "variance": 0.00015046296296296222,
+        "utility": 0.9386000830325252,
+        "state_probes": [
+          0.5,
+          0.625,
+          0.22499999999999998
+        ],
+        "failure_reasons": [
+          null,
+          null,
+          null
+        ],
+        "specs": [
+          "experiments/v14/specs/dodge-primary-linear-s0.json",
+          "experiments/v14/specs/dodge-primary-linear-s1.json",
+          "experiments/v14/specs/dodge-primary-linear-s2.json"
+        ]
+      },
+      "configurations": [
+        {
+          "name": "dodge-primary-linear",
+          "phase": "primary",
+          "config": {
+            "gamma": 0.99,
+            "lam": 0.95,
+            "lr": 0.0003,
+            "anneal_lr": true,
+            "clip": 0.2,
+            "ent": 0.003,
+            "vf": 0.5,
+            "max_grad_norm": 0.5,
+            "epochs": 4,
+            "envs": 16,
+            "steps": 128,
+            "minibatches": 8,
+            "chunk": 16,
+            "reward_scale": 1.0,
+            "shaping": 0.0,
+            "task": "dodge",
+            "arch": "linear",
+            "hidden": 0,
+            "core": 0,
+            "source": "fly",
+            "topology": "biological",
+            "ticks": 4,
+            "readout": "descending",
+            "transitions": 65536
+          },
+          "complete": true,
+          "stable": true,
+          "eligible": true,
+          "scores": [
+            0.9583333333333334,
+            0.9375,
+            0.9291666666666668
+          ],
+          "mean": 0.9416666666666668,
+          "sd": 0.012266334536566424,
+          "variance": 0.00015046296296296222,
+          "utility": 0.9386000830325252,
+          "state_probes": [
+            0.5,
+            0.625,
+            0.22499999999999998
+          ],
+          "failure_reasons": [
+            null,
+            null,
+            null
+          ],
+          "specs": [
+            "experiments/v14/specs/dodge-primary-linear-s0.json",
+            "experiments/v14/specs/dodge-primary-linear-s1.json",
+            "experiments/v14/specs/dodge-primary-linear-s2.json"
+          ]
+        },
+        {
+          "name": "dodge-primary-mlp",
+          "phase": "primary",
+          "config": {
+            "gamma": 0.99,
+            "lam": 0.95,
+            "lr": 0.0003,
+            "anneal_lr": true,
+            "clip": 0.2,
+            "ent": 0.003,
+            "vf": 0.5,
+            "max_grad_norm": 0.5,
+            "epochs": 4,
+            "envs": 16,
+            "steps": 128,
+            "minibatches": 8,
+            "chunk": 16,
+            "reward_scale": 1.0,
+            "shaping": 0.0,
+            "task": "dodge",
+            "arch": "mlp",
+            "hidden": 128,
+            "core": 64,
+            "source": "fly",
+            "topology": "biological",
+            "ticks": 4,
+            "readout": "descending",
+            "transitions": 65536
+          },
+          "complete": true,
+          "stable": true,
+          "eligible": false,
+          "scores": [
+            0.8625,
+            0.7916666666666667,
+            0.7708333333333333
+          ],
+          "mean": 0.8083333333333332,
+          "sd": 0.039234574699515405,
+          "variance": 0.0015393518518518542,
+          "utility": 0.7985246896584544,
+          "state_probes": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "failure_reasons": [
+            null,
+            null,
+            null
+          ],
+          "specs": [
+            "experiments/v14/specs/dodge-primary-mlp-s0.json",
+            "experiments/v14/specs/dodge-primary-mlp-s1.json",
+            "experiments/v14/specs/dodge-primary-mlp-s2.json"
+          ]
+        },
+        {
+          "name": "dodge-primary-gru",
+          "phase": "primary",
+          "config": {
+            "gamma": 0.99,
+            "lam": 0.95,
+            "lr": 0.0003,
+            "anneal_lr": true,
+            "clip": 0.2,
+            "ent": 0.003,
+            "vf": 0.5,
+            "max_grad_norm": 0.5,
+            "epochs": 4,
+            "envs": 16,
+            "steps": 128,
+            "minibatches": 8,
+            "chunk": 16,
+            "reward_scale": 1.0,
+            "shaping": 0.0,
+            "task": "dodge",
+            "arch": "gru",
+            "hidden": 128,
+            "core": 64,
+            "source": "fly",
+            "topology": "biological",
+            "ticks": 4,
+            "readout": "descending",
+            "transitions": 65536
+          },
+          "complete": true,
+          "stable": true,
+          "eligible": false,
+          "scores": [
+            0.7625,
+            0.8083333333333333,
+            0.7708333333333333
+          ],
+          "mean": 0.7805555555555556,
+          "sd": 0.01993430568667687,
+          "variance": 0.00039737654320987786,
+          "utility": 0.7755719791338863,
+          "state_probes": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "failure_reasons": [
+            null,
+            null,
+            null
+          ],
+          "specs": [
+            "experiments/v14/specs/dodge-primary-gru-s0.json",
+            "experiments/v14/specs/dodge-primary-gru-s1.json",
+            "experiments/v14/specs/dodge-primary-gru-s2.json"
+          ]
+        },
+        {
+          "name": "dodge-ticks-linear",
+          "phase": "ticks",
+          "config": {
+            "gamma": 0.99,
+            "lam": 0.95,
+            "lr": 0.0003,
+            "anneal_lr": true,
+            "clip": 0.2,
+            "ent": 0.003,
+            "vf": 0.5,
+            "max_grad_norm": 0.5,
+            "epochs": 4,
+            "envs": 16,
+            "steps": 128,
+            "minibatches": 8,
+            "chunk": 16,
+            "reward_scale": 1.0,
+            "shaping": 0.0,
+            "task": "dodge",
+            "arch": "linear",
+            "hidden": 0,
+            "core": 0,
+            "source": "fly",
+            "topology": "biological",
+            "ticks": 8,
+            "readout": "descending",
+            "transitions": 65536
+          },
+          "complete": true,
+          "stable": true,
+          "eligible": true,
+          "scores": [
+            0.9666666666666668,
+            0.8958333333333334,
+            0.8916666666666668
+          ],
+          "mean": 0.9180555555555557,
+          "sd": 0.034415310259344085,
+          "variance": 0.0011844135802469144,
+          "utility": 0.9094517279907197,
+          "state_probes": [
+            0.525,
+            0.475,
+            0.625
+          ],
+          "failure_reasons": [
+            null,
+            null,
+            null
+          ],
+          "specs": [
+            "experiments/v14/specs/dodge-ticks-linear-s0.json",
+            "experiments/v14/specs/dodge-ticks-linear-s1.json",
+            "experiments/v14/specs/dodge-ticks-linear-s2.json"
+          ]
+        }
+      ],
+      "stopping_reasons": [
+        "bounded protocol exhausted"
+      ]
+    },
+    "snake": {
+      "primary_selected": {
+        "name": "snake-primary-linear",
+        "phase": "primary",
+        "config": {
+          "gamma": 0.99,
+          "lam": 0.95,
+          "lr": 0.0003,
+          "anneal_lr": true,
+          "clip": 0.2,
+          "ent": 0.003,
+          "vf": 0.5,
+          "max_grad_norm": 0.5,
+          "epochs": 4,
+          "envs": 16,
+          "steps": 128,
+          "minibatches": 8,
+          "chunk": 16,
+          "reward_scale": 1.0,
+          "shaping": 0.0,
+          "task": "snake",
+          "arch": "linear",
+          "hidden": 0,
+          "core": 0,
+          "source": "fly",
+          "topology": "biological",
+          "ticks": 4,
+          "readout": "descending",
+          "transitions": 65536
+        },
+        "complete": true,
+        "stable": true,
+        "eligible": true,
+        "scores": [
+          0.875,
+          1.5,
+          1.025
+        ],
+        "mean": 1.1333333333333333,
+        "sd": 0.26640612271909636,
+        "variance": 0.07097222222222223,
+        "utility": 1.0667318026535593,
+        "state_probes": [
+          0.525,
+          0.44999999999999996,
+          0.525
+        ],
+        "failure_reasons": [
+          null,
+          null,
+          null
+        ],
+        "specs": [
+          "experiments/v14/specs/snake-primary-linear-s0.json",
+          "experiments/v14/specs/snake-primary-linear-s1.json",
+          "experiments/v14/specs/snake-primary-linear-s2.json"
+        ]
+      },
+      "final_selected": {
+        "name": "snake-all_readout-linear",
+        "phase": "all_readout",
+        "config": {
+          "gamma": 0.99,
+          "lam": 0.95,
+          "lr": 0.0003,
+          "anneal_lr": true,
+          "clip": 0.2,
+          "ent": 0.003,
+          "vf": 0.5,
+          "max_grad_norm": 0.5,
+          "epochs": 4,
+          "envs": 16,
+          "steps": 128,
+          "minibatches": 8,
+          "chunk": 16,
+          "reward_scale": 1.0,
+          "shaping": 0.0,
+          "task": "snake",
+          "arch": "linear",
+          "hidden": 0,
+          "core": 0,
+          "source": "fly",
+          "topology": "biological",
+          "ticks": 8,
+          "readout": "all",
+          "transitions": 65536
+        },
+        "complete": true,
+        "stable": true,
+        "eligible": true,
+        "scores": [
+          11.45,
+          11.15,
+          12.125
+        ],
+        "mean": 11.575000000000001,
+        "sd": 0.40773766075750223,
+        "variance": 0.16624999999999998,
+        "utility": 11.473065584810625,
+        "state_probes": [
+          0.6,
+          0.7,
+          0.675
+        ],
+        "failure_reasons": [
+          null,
+          null,
+          null
+        ],
+        "specs": [
+          "experiments/v14/specs/snake-all_readout-linear-s0.json",
+          "experiments/v14/specs/snake-all_readout-linear-s1.json",
+          "experiments/v14/specs/snake-all_readout-linear-s2.json"
+        ]
+      },
+      "configurations": [
+        {
+          "name": "snake-primary-linear",
+          "phase": "primary",
+          "config": {
+            "gamma": 0.99,
+            "lam": 0.95,
+            "lr": 0.0003,
+            "anneal_lr": true,
+            "clip": 0.2,
+            "ent": 0.003,
+            "vf": 0.5,
+            "max_grad_norm": 0.5,
+            "epochs": 4,
+            "envs": 16,
+            "steps": 128,
+            "minibatches": 8,
+            "chunk": 16,
+            "reward_scale": 1.0,
+            "shaping": 0.0,
+            "task": "snake",
+            "arch": "linear",
+            "hidden": 0,
+            "core": 0,
+            "source": "fly",
+            "topology": "biological",
+            "ticks": 4,
+            "readout": "descending",
+            "transitions": 65536
+          },
+          "complete": true,
+          "stable": true,
+          "eligible": true,
+          "scores": [
+            0.875,
+            1.5,
+            1.025
+          ],
+          "mean": 1.1333333333333333,
+          "sd": 0.26640612271909636,
+          "variance": 0.07097222222222223,
+          "utility": 1.0667318026535593,
+          "state_probes": [
+            0.525,
+            0.44999999999999996,
+            0.525
+          ],
+          "failure_reasons": [
+            null,
+            null,
+            null
+          ],
+          "specs": [
+            "experiments/v14/specs/snake-primary-linear-s0.json",
+            "experiments/v14/specs/snake-primary-linear-s1.json",
+            "experiments/v14/specs/snake-primary-linear-s2.json"
+          ]
+        },
+        {
+          "name": "snake-primary-mlp",
+          "phase": "primary",
+          "config": {
+            "gamma": 0.99,
+            "lam": 0.95,
+            "lr": 0.0003,
+            "anneal_lr": true,
+            "clip": 0.2,
+            "ent": 0.003,
+            "vf": 0.5,
+            "max_grad_norm": 0.5,
+            "epochs": 4,
+            "envs": 16,
+            "steps": 128,
+            "minibatches": 8,
+            "chunk": 16,
+            "reward_scale": 1.0,
+            "shaping": 0.0,
+            "task": "snake",
+            "arch": "mlp",
+            "hidden": 128,
+            "core": 64,
+            "source": "fly",
+            "topology": "biological",
+            "ticks": 4,
+            "readout": "descending",
+            "transitions": 65536
+          },
+          "complete": true,
+          "stable": true,
+          "eligible": true,
+          "scores": [
+            0.725,
+            0.65,
+            0.55
+          ],
+          "mean": 0.6416666666666667,
+          "sd": 0.07168604389202186,
+          "variance": 0.0051388888888888856,
+          "utility": 0.6237451556936613,
+          "state_probes": [
+            0.32499999999999996,
+            0.525,
+            0.44999999999999996
+          ],
+          "failure_reasons": [
+            null,
+            null,
+            null
+          ],
+          "specs": [
+            "experiments/v14/specs/snake-primary-mlp-s0.json",
+            "experiments/v14/specs/snake-primary-mlp-s1.json",
+            "experiments/v14/specs/snake-primary-mlp-s2.json"
+          ]
+        },
+        {
+          "name": "snake-primary-gru",
+          "phase": "primary",
+          "config": {
+            "gamma": 0.99,
+            "lam": 0.95,
+            "lr": 0.0003,
+            "anneal_lr": true,
+            "clip": 0.2,
+            "ent": 0.003,
+            "vf": 0.5,
+            "max_grad_norm": 0.5,
+            "epochs": 4,
+            "envs": 16,
+            "steps": 128,
+            "minibatches": 8,
+            "chunk": 16,
+            "reward_scale": 1.0,
+            "shaping": 0.0,
+            "task": "snake",
+            "arch": "gru",
+            "hidden": 128,
+            "core": 64,
+            "source": "fly",
+            "topology": "biological",
+            "ticks": 4,
+            "readout": "descending",
+            "transitions": 65536
+          },
+          "complete": true,
+          "stable": true,
+          "eligible": true,
+          "scores": [
+            0.575,
+            1.35,
+            0.825
+          ],
+          "mean": 0.9166666666666666,
+          "sd": 0.3229637062512684,
+          "variance": 0.1043055555555556,
+          "utility": 0.8359257401038496,
+          "state_probes": [
+            0.6,
+            0.55,
+            0.625
+          ],
+          "failure_reasons": [
+            null,
+            null,
+            null
+          ],
+          "specs": [
+            "experiments/v14/specs/snake-primary-gru-s0.json",
+            "experiments/v14/specs/snake-primary-gru-s1.json",
+            "experiments/v14/specs/snake-primary-gru-s2.json"
+          ]
+        },
+        {
+          "name": "snake-ticks-linear",
+          "phase": "ticks",
+          "config": {
+            "gamma": 0.99,
+            "lam": 0.95,
+            "lr": 0.0003,
+            "anneal_lr": true,
+            "clip": 0.2,
+            "ent": 0.003,
+            "vf": 0.5,
+            "max_grad_norm": 0.5,
+            "epochs": 4,
+            "envs": 16,
+            "steps": 128,
+            "minibatches": 8,
+            "chunk": 16,
+            "reward_scale": 1.0,
+            "shaping": 0.0,
+            "task": "snake",
+            "arch": "linear",
+            "hidden": 0,
+            "core": 0,
+            "source": "fly",
+            "topology": "biological",
+            "ticks": 8,
+            "readout": "descending",
+            "transitions": 65536
+          },
+          "complete": true,
+          "stable": true,
+          "eligible": true,
+          "scores": [
+            3.45,
+            3.35,
+            3.15
+          ],
+          "mean": 3.316666666666667,
+          "sd": 0.12472191289246483,
+          "variance": 0.015555555555555585,
+          "utility": 3.2854861884435507,
+          "state_probes": [
+            0.5,
+            0.625,
+            0.625
+          ],
+          "failure_reasons": [
+            null,
+            null,
+            null
+          ],
+          "specs": [
+            "experiments/v14/specs/snake-ticks-linear-s0.json",
+            "experiments/v14/specs/snake-ticks-linear-s1.json",
+            "experiments/v14/specs/snake-ticks-linear-s2.json"
+          ]
+        },
+        {
+          "name": "snake-all_readout-linear",
+          "phase": "all_readout",
+          "config": {
+            "gamma": 0.99,
+            "lam": 0.95,
+            "lr": 0.0003,
+            "anneal_lr": true,
+            "clip": 0.2,
+            "ent": 0.003,
+            "vf": 0.5,
+            "max_grad_norm": 0.5,
+            "epochs": 4,
+            "envs": 16,
+            "steps": 128,
+            "minibatches": 8,
+            "chunk": 16,
+            "reward_scale": 1.0,
+            "shaping": 0.0,
+            "task": "snake",
+            "arch": "linear",
+            "hidden": 0,
+            "core": 0,
+            "source": "fly",
+            "topology": "biological",
+            "ticks": 8,
+            "readout": "all",
+            "transitions": 65536
+          },
+          "complete": true,
+          "stable": true,
+          "eligible": true,
+          "scores": [
+            11.45,
+            11.15,
+            12.125
+          ],
+          "mean": 11.575000000000001,
+          "sd": 0.40773766075750223,
+          "variance": 0.16624999999999998,
+          "utility": 11.473065584810625,
+          "state_probes": [
+            0.6,
+            0.7,
+            0.675
+          ],
+          "failure_reasons": [
+            null,
+            null,
+            null
+          ],
+          "specs": [
+            "experiments/v14/specs/snake-all_readout-linear-s0.json",
+            "experiments/v14/specs/snake-all_readout-linear-s1.json",
+            "experiments/v14/specs/snake-all_readout-linear-s2.json"
+          ]
+        }
+      ],
+      "stopping_reasons": [
+        "development target reached; no further escalation"
+      ]
+    },
+    "pong": {
+      "primary_selected": {
+        "name": "pong-primary-linear",
+        "phase": "primary",
+        "config": {
+          "gamma": 0.99,
+          "lam": 0.95,
+          "lr": 0.0003,
+          "anneal_lr": true,
+          "clip": 0.2,
+          "ent": 0.003,
+          "vf": 0.5,
+          "max_grad_norm": 0.5,
+          "epochs": 4,
+          "envs": 16,
+          "steps": 128,
+          "minibatches": 8,
+          "chunk": 16,
+          "reward_scale": 1.0,
+          "shaping": 0.0,
+          "task": "pong",
+          "arch": "linear",
+          "hidden": 0,
+          "core": 0,
+          "source": "fly",
+          "topology": "biological",
+          "ticks": 4,
+          "readout": "descending",
+          "transitions": 65536
+        },
+        "complete": true,
+        "stable": true,
+        "eligible": true,
+        "scores": [
+          0.5333333333333333,
+          0.5805555555555556,
+          0.5194444444444445
+        ],
+        "mean": 0.5444444444444444,
+        "sd": 0.026156383133010257,
+        "variance": 0.0006841563786008234,
+        "utility": 0.5379053486611919,
+        "state_probes": [
+          0.525,
+          0.525,
+          0.375
+        ],
+        "failure_reasons": [
+          null,
+          null,
+          null
+        ],
+        "specs": [
+          "experiments/v14/specs/pong-primary-linear-s0.json",
+          "experiments/v14/specs/pong-primary-linear-s1.json",
+          "experiments/v14/specs/pong-primary-linear-s2.json"
+        ]
+      },
+      "final_selected": {
+        "name": "pong-longer-linear",
+        "phase": "longer",
+        "config": {
+          "gamma": 0.99,
+          "lam": 0.95,
+          "lr": 0.0003,
+          "anneal_lr": true,
+          "clip": 0.2,
+          "ent": 0.003,
+          "vf": 0.5,
+          "max_grad_norm": 0.5,
+          "epochs": 4,
+          "envs": 16,
+          "steps": 128,
+          "minibatches": 8,
+          "chunk": 16,
+          "reward_scale": 1.0,
+          "shaping": 0.0,
+          "task": "pong",
+          "arch": "linear",
+          "hidden": 0,
+          "core": 0,
+          "source": "fly",
+          "topology": "biological",
+          "ticks": 8,
+          "readout": "all",
+          "transitions": 131072
+        },
+        "complete": true,
+        "stable": true,
+        "eligible": true,
+        "scores": [
+          0.9361111111111111,
+          0.9416666666666667,
+          0.9388888888888889
+        ],
+        "mean": 0.9388888888888888,
+        "sd": 0.002268046058132564,
+        "variance": 5.144032921810662e-06,
+        "utility": 0.9383218773743557,
+        "state_probes": [
+          0.35,
+          0.6,
+          0.35
+        ],
+        "failure_reasons": [
+          null,
+          null,
+          null
+        ],
+        "specs": [
+          "experiments/v14/specs/pong-longer-linear-s0.json",
+          "experiments/v14/specs/pong-longer-linear-s1.json",
+          "experiments/v14/specs/pong-longer-linear-s2.json"
+        ]
+      },
+      "configurations": [
+        {
+          "name": "pong-primary-linear",
+          "phase": "primary",
+          "config": {
+            "gamma": 0.99,
+            "lam": 0.95,
+            "lr": 0.0003,
+            "anneal_lr": true,
+            "clip": 0.2,
+            "ent": 0.003,
+            "vf": 0.5,
+            "max_grad_norm": 0.5,
+            "epochs": 4,
+            "envs": 16,
+            "steps": 128,
+            "minibatches": 8,
+            "chunk": 16,
+            "reward_scale": 1.0,
+            "shaping": 0.0,
+            "task": "pong",
+            "arch": "linear",
+            "hidden": 0,
+            "core": 0,
+            "source": "fly",
+            "topology": "biological",
+            "ticks": 4,
+            "readout": "descending",
+            "transitions": 65536
+          },
+          "complete": true,
+          "stable": true,
+          "eligible": true,
+          "scores": [
+            0.5333333333333333,
+            0.5805555555555556,
+            0.5194444444444445
+          ],
+          "mean": 0.5444444444444444,
+          "sd": 0.026156383133010257,
+          "variance": 0.0006841563786008234,
+          "utility": 0.5379053486611919,
+          "state_probes": [
+            0.525,
+            0.525,
+            0.375
+          ],
+          "failure_reasons": [
+            null,
+            null,
+            null
+          ],
+          "specs": [
+            "experiments/v14/specs/pong-primary-linear-s0.json",
+            "experiments/v14/specs/pong-primary-linear-s1.json",
+            "experiments/v14/specs/pong-primary-linear-s2.json"
+          ]
+        },
+        {
+          "name": "pong-primary-mlp",
+          "phase": "primary",
+          "config": {
+            "gamma": 0.99,
+            "lam": 0.95,
+            "lr": 0.0003,
+            "anneal_lr": true,
+            "clip": 0.2,
+            "ent": 0.003,
+            "vf": 0.5,
+            "max_grad_norm": 0.5,
+            "epochs": 4,
+            "envs": 16,
+            "steps": 128,
+            "minibatches": 8,
+            "chunk": 16,
+            "reward_scale": 1.0,
+            "shaping": 0.0,
+            "task": "pong",
+            "arch": "mlp",
+            "hidden": 128,
+            "core": 64,
+            "source": "fly",
+            "topology": "biological",
+            "ticks": 4,
+            "readout": "descending",
+            "transitions": 65536
+          },
+          "complete": true,
+          "stable": true,
+          "eligible": true,
+          "scores": [
+            0.3083333333333333,
+            0.475,
+            0.36944444444444435
+          ],
+          "mean": 0.38425925925925924,
+          "sd": 0.0688430751683004,
+          "variance": 0.00473936899862826,
+          "utility": 0.36704849046718413,
+          "state_probes": [
+            0.575,
+            0.22499999999999998,
+            0.5
+          ],
+          "failure_reasons": [
+            null,
+            null,
+            null
+          ],
+          "specs": [
+            "experiments/v14/specs/pong-primary-mlp-s0.json",
+            "experiments/v14/specs/pong-primary-mlp-s1.json",
+            "experiments/v14/specs/pong-primary-mlp-s2.json"
+          ]
+        },
+        {
+          "name": "pong-primary-gru",
+          "phase": "primary",
+          "config": {
+            "gamma": 0.99,
+            "lam": 0.95,
+            "lr": 0.0003,
+            "anneal_lr": true,
+            "clip": 0.2,
+            "ent": 0.003,
+            "vf": 0.5,
+            "max_grad_norm": 0.5,
+            "epochs": 4,
+            "envs": 16,
+            "steps": 128,
+            "minibatches": 8,
+            "chunk": 16,
+            "reward_scale": 1.0,
+            "shaping": 0.0,
+            "task": "pong",
+            "arch": "gru",
+            "hidden": 128,
+            "core": 64,
+            "source": "fly",
+            "topology": "biological",
+            "ticks": 4,
+            "readout": "descending",
+            "transitions": 65536
+          },
+          "complete": true,
+          "stable": true,
+          "eligible": false,
+          "scores": [
+            0.2972222222222222,
+            0.32222222222222224,
+            0.29444444444444445
+          ],
+          "mean": 0.30462962962962964,
+          "sd": 0.012491423669659305,
+          "variance": 0.00015603566529492473,
+          "utility": 0.3015067737122148,
+          "state_probes": [
+            0.0,
+            0.050000000000000044,
+            0.0
+          ],
+          "failure_reasons": [
+            null,
+            null,
+            null
+          ],
+          "specs": [
+            "experiments/v14/specs/pong-primary-gru-s0.json",
+            "experiments/v14/specs/pong-primary-gru-s1.json",
+            "experiments/v14/specs/pong-primary-gru-s2.json"
+          ]
+        },
+        {
+          "name": "pong-ticks-linear",
+          "phase": "ticks",
+          "config": {
+            "gamma": 0.99,
+            "lam": 0.95,
+            "lr": 0.0003,
+            "anneal_lr": true,
+            "clip": 0.2,
+            "ent": 0.003,
+            "vf": 0.5,
+            "max_grad_norm": 0.5,
+            "epochs": 4,
+            "envs": 16,
+            "steps": 128,
+            "minibatches": 8,
+            "chunk": 16,
+            "reward_scale": 1.0,
+            "shaping": 0.0,
+            "task": "pong",
+            "arch": "linear",
+            "hidden": 0,
+            "core": 0,
+            "source": "fly",
+            "topology": "biological",
+            "ticks": 8,
+            "readout": "descending",
+            "transitions": 65536
+          },
+          "complete": true,
+          "stable": true,
+          "eligible": true,
+          "scores": [
+            0.6861111111111111,
+            0.638888888888889,
+            0.6222222222222221
+          ],
+          "mean": 0.6490740740740741,
+          "sd": 0.027058591104078652,
+          "variance": 0.0007321673525377243,
+          "utility": 0.6423094262980544,
+          "state_probes": [
+            0.5,
+            0.625,
+            0.6
+          ],
+          "failure_reasons": [
+            null,
+            null,
+            null
+          ],
+          "specs": [
+            "experiments/v14/specs/pong-ticks-linear-s0.json",
+            "experiments/v14/specs/pong-ticks-linear-s1.json",
+            "experiments/v14/specs/pong-ticks-linear-s2.json"
+          ]
+        },
+        {
+          "name": "pong-all_readout-linear",
+          "phase": "all_readout",
+          "config": {
+            "gamma": 0.99,
+            "lam": 0.95,
+            "lr": 0.0003,
+            "anneal_lr": true,
+            "clip": 0.2,
+            "ent": 0.003,
+            "vf": 0.5,
+            "max_grad_norm": 0.5,
+            "epochs": 4,
+            "envs": 16,
+            "steps": 128,
+            "minibatches": 8,
+            "chunk": 16,
+            "reward_scale": 1.0,
+            "shaping": 0.0,
+            "task": "pong",
+            "arch": "linear",
+            "hidden": 0,
+            "core": 0,
+            "source": "fly",
+            "topology": "biological",
+            "ticks": 8,
+            "readout": "all",
+            "transitions": 65536
+          },
+          "complete": true,
+          "stable": true,
+          "eligible": true,
+          "scores": [
+            0.8972222222222221,
+            0.8194444444444443,
+            0.8833333333333332
+          ],
+          "mean": 0.8666666666666666,
+          "sd": 0.03386915029291091,
+          "variance": 0.0011471193415637873,
+          "utility": 0.8581993790934389,
+          "state_probes": [
+            0.475,
+            0.55,
+            0.6
+          ],
+          "failure_reasons": [
+            null,
+            null,
+            null
+          ],
+          "specs": [
+            "experiments/v14/specs/pong-all_readout-linear-s0.json",
+            "experiments/v14/specs/pong-all_readout-linear-s1.json",
+            "experiments/v14/specs/pong-all_readout-linear-s2.json"
+          ]
+        },
+        {
+          "name": "pong-longer-linear",
+          "phase": "longer",
+          "config": {
+            "gamma": 0.99,
+            "lam": 0.95,
+            "lr": 0.0003,
+            "anneal_lr": true,
+            "clip": 0.2,
+            "ent": 0.003,
+            "vf": 0.5,
+            "max_grad_norm": 0.5,
+            "epochs": 4,
+            "envs": 16,
+            "steps": 128,
+            "minibatches": 8,
+            "chunk": 16,
+            "reward_scale": 1.0,
+            "shaping": 0.0,
+            "task": "pong",
+            "arch": "linear",
+            "hidden": 0,
+            "core": 0,
+            "source": "fly",
+            "topology": "biological",
+            "ticks": 8,
+            "readout": "all",
+            "transitions": 131072
+          },
+          "complete": true,
+          "stable": true,
+          "eligible": true,
+          "scores": [
+            0.9361111111111111,
+            0.9416666666666667,
+            0.9388888888888889
+          ],
+          "mean": 0.9388888888888888,
+          "sd": 0.002268046058132564,
+          "variance": 5.144032921810662e-06,
+          "utility": 0.9383218773743557,
+          "state_probes": [
+            0.35,
+            0.6,
+            0.35
+          ],
+          "failure_reasons": [
+            null,
+            null,
+            null
+          ],
+          "specs": [
+            "experiments/v14/specs/pong-longer-linear-s0.json",
+            "experiments/v14/specs/pong-longer-linear-s1.json",
+            "experiments/v14/specs/pong-longer-linear-s2.json"
+          ]
+        }
+      ],
+      "stopping_reasons": [
+        "development target reached; no further escalation"
+      ]
+    },
+    "flappy": {
+      "primary_selected": {
+        "name": "flappy-primary-gru",
+        "phase": "primary",
+        "config": {
+          "gamma": 0.99,
+          "lam": 0.95,
+          "lr": 0.0003,
+          "anneal_lr": true,
+          "clip": 0.2,
+          "ent": 0.003,
+          "vf": 0.5,
+          "max_grad_norm": 0.5,
+          "epochs": 4,
+          "envs": 16,
+          "steps": 128,
+          "minibatches": 8,
+          "chunk": 16,
+          "reward_scale": 1.0,
+          "shaping": 0.0,
+          "task": "flappy",
+          "arch": "gru",
+          "hidden": 128,
+          "core": 64,
+          "source": "fly",
+          "topology": "biological",
+          "ticks": 4,
+          "readout": "descending",
+          "transitions": 65536
+        },
+        "complete": true,
+        "stable": true,
+        "eligible": true,
+        "scores": [
+          0.12916666666666665,
+          0.2166666666666667,
+          0.2416666666666667
+        ],
+        "mean": 0.19583333333333333,
+        "sd": 0.048232653761625964,
+        "variance": 0.0023263888888888913,
+        "utility": 0.18377516989292683,
+        "state_probes": [
+          0.09999999999999998,
+          0.07499999999999996,
+          0.09999999999999998
+        ],
+        "failure_reasons": [
+          null,
+          null,
+          null
+        ],
+        "specs": [
+          "experiments/v14/specs/flappy-primary-gru-s0.json",
+          "experiments/v14/specs/flappy-primary-gru-s1.json",
+          "experiments/v14/specs/flappy-primary-gru-s2.json"
+        ]
+      },
+      "final_selected": {
+        "name": "flappy-longer-gru",
+        "phase": "longer",
+        "config": {
+          "gamma": 0.99,
+          "lam": 0.95,
+          "lr": 0.0003,
+          "anneal_lr": true,
+          "clip": 0.2,
+          "ent": 0.003,
+          "vf": 0.5,
+          "max_grad_norm": 0.5,
+          "epochs": 4,
+          "envs": 16,
+          "steps": 128,
+          "minibatches": 8,
+          "chunk": 16,
+          "reward_scale": 1.0,
+          "shaping": 0.0,
+          "task": "flappy",
+          "arch": "gru",
+          "hidden": 128,
+          "core": 64,
+          "source": "fly",
+          "topology": "biological",
+          "ticks": 4,
+          "readout": "descending",
+          "transitions": 131072
+        },
+        "complete": true,
+        "stable": true,
+        "eligible": true,
+        "scores": [
+          0.3166666666666666,
+          0.325,
+          0.4291666666666667
+        ],
+        "mean": 0.35694444444444445,
+        "sd": 0.05118201603524525,
+        "variance": 0.0026195987654321017,
+        "utility": 0.34414894043563315,
+        "state_probes": [
+          0.09999999999999998,
+          0.15000000000000002,
+          0.17500000000000004
+        ],
+        "failure_reasons": [
+          null,
+          null,
+          null
+        ],
+        "specs": [
+          "experiments/v14/specs/flappy-longer-gru-s0.json",
+          "experiments/v14/specs/flappy-longer-gru-s1.json",
+          "experiments/v14/specs/flappy-longer-gru-s2.json"
+        ]
+      },
+      "configurations": [
+        {
+          "name": "flappy-primary-linear",
+          "phase": "primary",
+          "config": {
+            "gamma": 0.99,
+            "lam": 0.95,
+            "lr": 0.0003,
+            "anneal_lr": true,
+            "clip": 0.2,
+            "ent": 0.003,
+            "vf": 0.5,
+            "max_grad_norm": 0.5,
+            "epochs": 4,
+            "envs": 16,
+            "steps": 128,
+            "minibatches": 8,
+            "chunk": 16,
+            "reward_scale": 1.0,
+            "shaping": 0.0,
+            "task": "flappy",
+            "arch": "linear",
+            "hidden": 0,
+            "core": 0,
+            "source": "fly",
+            "topology": "biological",
+            "ticks": 4,
+            "readout": "descending",
+            "transitions": 65536
+          },
+          "complete": true,
+          "stable": true,
+          "eligible": true,
+          "scores": [
+            0.0,
+            0.008333333333333333,
+            0.0
+          ],
+          "mean": 0.002777777777777778,
+          "sd": 0.00392837100659193,
+          "variance": 1.5432098765432092e-05,
+          "utility": 0.0017956850261297954,
+          "state_probes": [
+            0.42500000000000004,
+            0.07499999999999996,
+            0.35
+          ],
+          "failure_reasons": [
+            null,
+            null,
+            null
+          ],
+          "specs": [
+            "experiments/v14/specs/flappy-primary-linear-s0.json",
+            "experiments/v14/specs/flappy-primary-linear-s1.json",
+            "experiments/v14/specs/flappy-primary-linear-s2.json"
+          ]
+        },
+        {
+          "name": "flappy-primary-mlp",
+          "phase": "primary",
+          "config": {
+            "gamma": 0.99,
+            "lam": 0.95,
+            "lr": 0.0003,
+            "anneal_lr": true,
+            "clip": 0.2,
+            "ent": 0.003,
+            "vf": 0.5,
+            "max_grad_norm": 0.5,
+            "epochs": 4,
+            "envs": 16,
+            "steps": 128,
+            "minibatches": 8,
+            "chunk": 16,
+            "reward_scale": 1.0,
+            "shaping": 0.0,
+            "task": "flappy",
+            "arch": "mlp",
+            "hidden": 128,
+            "core": 64,
+            "source": "fly",
+            "topology": "biological",
+            "ticks": 4,
+            "readout": "descending",
+            "transitions": 65536
+          },
+          "complete": true,
+          "stable": true,
+          "eligible": false,
+          "scores": [
+            0.0125,
+            0.025,
+            0.0125
+          ],
+          "mean": 0.016666666666666666,
+          "sd": 0.005892556509887896,
+          "variance": 3.472222222222222e-05,
+          "utility": 0.015193527539194692,
+          "state_probes": [
+            0.050000000000000044,
+            0.0,
+            0.025000000000000022
+          ],
+          "failure_reasons": [
+            null,
+            null,
+            null
+          ],
+          "specs": [
+            "experiments/v14/specs/flappy-primary-mlp-s0.json",
+            "experiments/v14/specs/flappy-primary-mlp-s1.json",
+            "experiments/v14/specs/flappy-primary-mlp-s2.json"
+          ]
+        },
+        {
+          "name": "flappy-primary-gru",
+          "phase": "primary",
+          "config": {
+            "gamma": 0.99,
+            "lam": 0.95,
+            "lr": 0.0003,
+            "anneal_lr": true,
+            "clip": 0.2,
+            "ent": 0.003,
+            "vf": 0.5,
+            "max_grad_norm": 0.5,
+            "epochs": 4,
+            "envs": 16,
+            "steps": 128,
+            "minibatches": 8,
+            "chunk": 16,
+            "reward_scale": 1.0,
+            "shaping": 0.0,
+            "task": "flappy",
+            "arch": "gru",
+            "hidden": 128,
+            "core": 64,
+            "source": "fly",
+            "topology": "biological",
+            "ticks": 4,
+            "readout": "descending",
+            "transitions": 65536
+          },
+          "complete": true,
+          "stable": true,
+          "eligible": true,
+          "scores": [
+            0.12916666666666665,
+            0.2166666666666667,
+            0.2416666666666667
+          ],
+          "mean": 0.19583333333333333,
+          "sd": 0.048232653761625964,
+          "variance": 0.0023263888888888913,
+          "utility": 0.18377516989292683,
+          "state_probes": [
+            0.09999999999999998,
+            0.07499999999999996,
+            0.09999999999999998
+          ],
+          "failure_reasons": [
+            null,
+            null,
+            null
+          ],
+          "specs": [
+            "experiments/v14/specs/flappy-primary-gru-s0.json",
+            "experiments/v14/specs/flappy-primary-gru-s1.json",
+            "experiments/v14/specs/flappy-primary-gru-s2.json"
+          ]
+        },
+        {
+          "name": "flappy-ticks-gru",
+          "phase": "ticks",
+          "config": {
+            "gamma": 0.99,
+            "lam": 0.95,
+            "lr": 0.0003,
+            "anneal_lr": true,
+            "clip": 0.2,
+            "ent": 0.003,
+            "vf": 0.5,
+            "max_grad_norm": 0.5,
+            "epochs": 4,
+            "envs": 16,
+            "steps": 128,
+            "minibatches": 8,
+            "chunk": 16,
+            "reward_scale": 1.0,
+            "shaping": 0.0,
+            "task": "flappy",
+            "arch": "gru",
+            "hidden": 128,
+            "core": 64,
+            "source": "fly",
+            "topology": "biological",
+            "ticks": 8,
+            "readout": "descending",
+            "transitions": 65536
+          },
+          "complete": true,
+          "stable": true,
+          "eligible": false,
+          "scores": [
+            0.2125,
+            0.0125,
+            0.17916666666666664
+          ],
+          "mean": 0.13472222222222222,
+          "sd": 0.08748897637790902,
+          "variance": 0.007654320987654322,
+          "utility": 0.11284997812774496,
+          "state_probes": [
+            0.125,
+            0.0,
+            0.09999999999999998
+          ],
+          "failure_reasons": [
+            null,
+            null,
+            null
+          ],
+          "specs": [
+            "experiments/v14/specs/flappy-ticks-gru-s0.json",
+            "experiments/v14/specs/flappy-ticks-gru-s1.json",
+            "experiments/v14/specs/flappy-ticks-gru-s2.json"
+          ]
+        },
+        {
+          "name": "flappy-all_readout-gru",
+          "phase": "all_readout",
+          "config": {
+            "gamma": 0.99,
+            "lam": 0.95,
+            "lr": 0.0003,
+            "anneal_lr": true,
+            "clip": 0.2,
+            "ent": 0.003,
+            "vf": 0.5,
+            "max_grad_norm": 0.5,
+            "epochs": 4,
+            "envs": 16,
+            "steps": 128,
+            "minibatches": 8,
+            "chunk": 16,
+            "reward_scale": 1.0,
+            "shaping": 0.0,
+            "task": "flappy",
+            "arch": "gru",
+            "hidden": 128,
+            "core": 64,
+            "source": "fly",
+            "topology": "biological",
+            "ticks": 4,
+            "readout": "all",
+            "transitions": 65536
+          },
+          "complete": true,
+          "stable": true,
+          "eligible": false,
+          "scores": [
+            0.3666666666666666,
+            0.2,
+            0.2
+          ],
+          "mean": 0.25555555555555554,
+          "sd": 0.07856742013183857,
+          "variance": 0.006172839506172832,
+          "utility": 0.2359137005225959,
+          "state_probes": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "failure_reasons": [
+            null,
+            null,
+            null
+          ],
+          "specs": [
+            "experiments/v14/specs/flappy-all_readout-gru-s0.json",
+            "experiments/v14/specs/flappy-all_readout-gru-s1.json",
+            "experiments/v14/specs/flappy-all_readout-gru-s2.json"
+          ]
+        },
+        {
+          "name": "flappy-longer-gru",
+          "phase": "longer",
+          "config": {
+            "gamma": 0.99,
+            "lam": 0.95,
+            "lr": 0.0003,
+            "anneal_lr": true,
+            "clip": 0.2,
+            "ent": 0.003,
+            "vf": 0.5,
+            "max_grad_norm": 0.5,
+            "epochs": 4,
+            "envs": 16,
+            "steps": 128,
+            "minibatches": 8,
+            "chunk": 16,
+            "reward_scale": 1.0,
+            "shaping": 0.0,
+            "task": "flappy",
+            "arch": "gru",
+            "hidden": 128,
+            "core": 64,
+            "source": "fly",
+            "topology": "biological",
+            "ticks": 4,
+            "readout": "descending",
+            "transitions": 131072
+          },
+          "complete": true,
+          "stable": true,
+          "eligible": true,
+          "scores": [
+            0.3166666666666666,
+            0.325,
+            0.4291666666666667
+          ],
+          "mean": 0.35694444444444445,
+          "sd": 0.05118201603524525,
+          "variance": 0.0026195987654321017,
+          "utility": 0.34414894043563315,
+          "state_probes": [
+            0.09999999999999998,
+            0.15000000000000002,
+            0.17500000000000004
+          ],
+          "failure_reasons": [
+            null,
+            null,
+            null
+          ],
+          "specs": [
+            "experiments/v14/specs/flappy-longer-gru-s0.json",
+            "experiments/v14/specs/flappy-longer-gru-s1.json",
+            "experiments/v14/specs/flappy-longer-gru-s2.json"
+          ]
+        },
+        {
+          "name": "flappy-curriculum-gru",
+          "phase": "curriculum",
+          "config": {
+            "gamma": 0.99,
+            "lam": 0.95,
+            "lr": 0.0003,
+            "anneal_lr": true,
+            "clip": 0.2,
+            "ent": 0.003,
+            "vf": 0.5,
+            "max_grad_norm": 0.5,
+            "epochs": 4,
+            "envs": 16,
+            "steps": 128,
+            "minibatches": 8,
+            "chunk": 16,
+            "reward_scale": 1.0,
+            "shaping": 0.0,
+            "task": "flappy",
+            "arch": "gru",
+            "hidden": 128,
+            "core": 64,
+            "source": "fly",
+            "topology": "biological",
+            "ticks": 4,
+            "readout": "descending",
+            "transitions": 131072,
+            "curriculum": [
+              [
+                "easy",
+                0.25
+              ],
+              [
+                "intermediate",
+                0.25
+              ],
+              [
+                "target",
+                0.5
+              ]
+            ]
+          },
+          "complete": true,
+          "stable": true,
+          "eligible": true,
+          "scores": [
+            0.3208333333333333,
+            0.2791666666666667,
+            0.2625
+          ],
+          "mean": 0.28750000000000003,
+          "sd": 0.02453266907313289,
+          "variance": 0.0006018518518518509,
+          "utility": 0.2813668327317168,
+          "state_probes": [
+            0.07499999999999996,
+            0.07499999999999996,
+            0.125
+          ],
+          "failure_reasons": [
+            null,
+            null,
+            null
+          ],
+          "specs": [
+            "experiments/v14/specs/flappy-curriculum-gru-s0.json",
+            "experiments/v14/specs/flappy-curriculum-gru-s1.json",
+            "experiments/v14/specs/flappy-curriculum-gru-s2.json"
+          ]
+        },
+        {
+          "name": "flappy-rescue-gru",
+          "phase": "rescue",
+          "config": {
+            "gamma": 0.99,
+            "lam": 0.95,
+            "lr": 0.0003,
+            "anneal_lr": true,
+            "clip": 0.2,
+            "ent": 0.003,
+            "vf": 0.5,
+            "max_grad_norm": 0.5,
+            "epochs": 4,
+            "envs": 16,
+            "steps": 128,
+            "minibatches": 8,
+            "chunk": 16,
+            "reward_scale": 1.0,
+            "shaping": 0.0,
+            "task": "flappy",
+            "arch": "gru",
+            "hidden": 128,
+            "core": 64,
+            "source": "fly",
+            "topology": "biological",
+            "ticks": 4,
+            "readout": "descending",
+            "transitions": 131072,
+            "curriculum": [
+              [
+                "target",
+                1.0
+              ]
+            ]
+          },
+          "complete": true,
+          "stable": true,
+          "eligible": true,
+          "scores": [
+            0.2333333333333333,
+            0.25833333333333336,
+            0.4041666666666666
+          ],
+          "mean": 0.2986111111111111,
+          "sd": 0.07533362012400341,
+          "variance": 0.005675154320987651,
+          "utility": 0.27977770608011027,
+          "state_probes": [
+            0.050000000000000044,
+            0.125,
+            0.30000000000000004
+          ],
+          "failure_reasons": [
+            null,
+            null,
+            null
+          ],
+          "specs": [
+            "experiments/v14/specs/flappy-rescue-gru-s0.json",
+            "experiments/v14/specs/flappy-rescue-gru-s1.json",
+            "experiments/v14/specs/flappy-rescue-gru-s2.json"
+          ]
+        }
+      ],
+      "stopping_reasons": [
+        "bounded protocol exhausted"
+      ]
+    }
+  }
+}

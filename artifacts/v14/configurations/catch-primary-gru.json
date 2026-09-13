@@ -1,0 +1,57 @@
+{
+  "name": "catch-primary-gru",
+  "phase": "primary",
+  "config": {
+    "gamma": 0.99,
+    "lam": 0.95,
+    "lr": 0.0003,
+    "anneal_lr": true,
+    "clip": 0.2,
+    "ent": 0.003,
+    "vf": 0.5,
+    "max_grad_norm": 0.5,
+    "epochs": 4,
+    "envs": 16,
+    "steps": 128,
+    "minibatches": 8,
+    "chunk": 16,
+    "reward_scale": 1.0,
+    "shaping": 0.0,
+    "task": "catch",
+    "arch": "gru",
+    "hidden": 128,
+    "core": 64,
+    "source": "fly",
+    "topology": "biological",
+    "ticks": 4,
+    "readout": "descending",
+    "transitions": 65536
+  },
+  "complete": true,
+  "stable": true,
+  "eligible": false,
+  "scores": [
+    0.20416666666666666,
+    0.1875,
+    0.2458333333333333
+  ],
+  "mean": 0.2125,
+  "sd": 0.02453266907313289,
+  "variance": 0.0006018518518518509,
+  "utility": 0.20636683273171677,
+  "state_probes": [
+    0.025000000000000022,
+    0.0,
+    0.0
+  ],
+  "failure_reasons": [
+    null,
+    null,
+    null
+  ],
+  "specs": [
+    "experiments/v14/specs/catch-primary-gru-s0.json",
+    "experiments/v14/specs/catch-primary-gru-s1.json",
+    "experiments/v14/specs/catch-primary-gru-s2.json"
+  ]
+}

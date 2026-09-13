@@ -1,0 +1,232 @@
+{
+  "configurations": [
+    {
+      "name": "dodge-primary-linear",
+      "phase": "primary",
+      "config": {
+        "gamma": 0.99,
+        "lam": 0.95,
+        "lr": 0.0003,
+        "anneal_lr": true,
+        "clip": 0.2,
+        "ent": 0.003,
+        "vf": 0.5,
+        "max_grad_norm": 0.5,
+        "epochs": 4,
+        "envs": 16,
+        "steps": 128,
+        "minibatches": 8,
+        "chunk": 16,
+        "reward_scale": 1.0,
+        "shaping": 0.0,
+        "task": "dodge",
+        "arch": "linear",
+        "hidden": 0,
+        "core": 0,
+        "source": "fly",
+        "topology": "biological",
+        "ticks": 4,
+        "readout": "descending",
+        "transitions": 65536
+      },
+      "complete": true,
+      "stable": true,
+      "eligible": true,
+      "scores": [
+        0.9583333333333334,
+        0.9375,
+        0.9291666666666668
+      ],
+      "mean": 0.9416666666666668,
+      "sd": 0.012266334536566424,
+      "variance": 0.00015046296296296222,
+      "utility": 0.9386000830325252,
+      "state_probes": [
+        0.5,
+        0.625,
+        0.22499999999999998
+      ],
+      "failure_reasons": [
+        null,
+        null,
+        null
+      ],
+      "specs": [
+        "experiments/v14/specs/dodge-primary-linear-s0.json",
+        "experiments/v14/specs/dodge-primary-linear-s1.json",
+        "experiments/v14/specs/dodge-primary-linear-s2.json"
+      ]
+    },
+    {
+      "name": "dodge-primary-mlp",
+      "phase": "primary",
+      "config": {
+        "gamma": 0.99,
+        "lam": 0.95,
+        "lr": 0.0003,
+        "anneal_lr": true,
+        "clip": 0.2,
+        "ent": 0.003,
+        "vf": 0.5,
+        "max_grad_norm": 0.5,
+        "epochs": 4,
+        "envs": 16,
+        "steps": 128,
+        "minibatches": 8,
+        "chunk": 16,
+        "reward_scale": 1.0,
+        "shaping": 0.0,
+        "task": "dodge",
+        "arch": "mlp",
+        "hidden": 128,
+        "core": 64,
+        "source": "fly",
+        "topology": "biological",
+        "ticks": 4,
+        "readout": "descending",
+        "transitions": 65536
+      },
+      "complete": true,
+      "stable": true,
+      "eligible": false,
+      "scores": [
+        0.8625,
+        0.7916666666666667,
+        0.7708333333333333
+      ],
+      "mean": 0.8083333333333332,
+      "sd": 0.039234574699515405,
+      "variance": 0.0015393518518518542,
+      "utility": 0.7985246896584544,
+      "state_probes": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "failure_reasons": [
+        null,
+        null,
+        null
+      ],
+      "specs": [
+        "experiments/v14/specs/dodge-primary-mlp-s0.json",
+        "experiments/v14/specs/dodge-primary-mlp-s1.json",
+        "experiments/v14/specs/dodge-primary-mlp-s2.json"
+      ]
+    },
+    {
+      "name": "dodge-primary-gru",
+      "phase": "primary",
+      "config": {
+        "gamma": 0.99,
+        "lam": 0.95,
+        "lr": 0.0003,
+        "anneal_lr": true,
+        "clip": 0.2,
+        "ent": 0.003,
+        "vf": 0.5,
+        "max_grad_norm": 0.5,
+        "epochs": 4,
+        "envs": 16,
+        "steps": 128,
+        "minibatches": 8,
+        "chunk": 16,
+        "reward_scale": 1.0,
+        "shaping": 0.0,
+        "task": "dodge",
+        "arch": "gru",
+        "hidden": 128,
+        "core": 64,
+        "source": "fly",
+        "topology": "biological",
+        "ticks": 4,
+        "readout": "descending",
+        "transitions": 65536
+      },
+      "complete": true,
+      "stable": true,
+      "eligible": false,
+      "scores": [
+        0.7625,
+        0.8083333333333333,
+        0.7708333333333333
+      ],
+      "mean": 0.7805555555555556,
+      "sd": 0.01993430568667687,
+      "variance": 0.00039737654320987786,
+      "utility": 0.7755719791338863,
+      "state_probes": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "failure_reasons": [
+        null,
+        null,
+        null
+      ],
+      "specs": [
+        "experiments/v14/specs/dodge-primary-gru-s0.json",
+        "experiments/v14/specs/dodge-primary-gru-s1.json",
+        "experiments/v14/specs/dodge-primary-gru-s2.json"
+      ]
+    }
+  ],
+  "selected": {
+    "name": "dodge-primary-linear",
+    "phase": "primary",
+    "config": {
+      "gamma": 0.99,
+      "lam": 0.95,
+      "lr": 0.0003,
+      "anneal_lr": true,
+      "clip": 0.2,
+      "ent": 0.003,
+      "vf": 0.5,
+      "max_grad_norm": 0.5,
+      "epochs": 4,
+      "envs": 16,
+      "steps": 128,
+      "minibatches": 8,
+      "chunk": 16,
+      "reward_scale": 1.0,
+      "shaping": 0.0,
+      "task": "dodge",
+      "arch": "linear",
+      "hidden": 0,
+      "core": 0,
+      "source": "fly",
+      "topology": "biological",
+      "ticks": 4,
+      "readout": "descending",
+      "transitions": 65536
+    },
+    "complete": true,
+    "stable": true,
+    "eligible": true,
+    "scores": [
+      0.9583333333333334,
+      0.9375,
+      0.9291666666666668
+    ],
+    "mean": 0.9416666666666668,
+    "sd": 0.012266334536566424,
+    "variance": 0.00015046296296296222,
+    "utility": 0.9386000830325252,
+    "state_probes": [
+      0.5,
+      0.625,
+      0.22499999999999998
+    ],
+    "failure_reasons": [
+      null,
+      null,
+      null
+    ],
+    "specs": [
+      "experiments/v14/specs/dodge-primary-linear-s0.json",
+      "experiments/v14/specs/dodge-primary-linear-s1.json",
+      "experiments/v14/specs/dodge-primary-linear-s2.json"
+    ]
+  }
+}

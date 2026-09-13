@@ -1,0 +1,57 @@
+{
+  "name": "flappy-primary-gru",
+  "phase": "primary",
+  "config": {
+    "gamma": 0.99,
+    "lam": 0.95,
+    "lr": 0.0003,
+    "anneal_lr": true,
+    "clip": 0.2,
+    "ent": 0.003,
+    "vf": 0.5,
+    "max_grad_norm": 0.5,
+    "epochs": 4,
+    "envs": 16,
+    "steps": 128,
+    "minibatches": 8,
+    "chunk": 16,
+    "reward_scale": 1.0,
+    "shaping": 0.0,
+    "task": "flappy",
+    "arch": "gru",
+    "hidden": 128,
+    "core": 64,
+    "source": "fly",
+    "topology": "biological",
+    "ticks": 4,
+    "readout": "descending",
+    "transitions": 65536
+  },
+  "complete": true,
+  "stable": true,
+  "eligible": true,
+  "scores": [
+    0.12916666666666665,
+    0.2166666666666667,
+    0.2416666666666667
+  ],
+  "mean": 0.19583333333333333,
+  "sd": 0.048232653761625964,
+  "variance": 0.0023263888888888913,
+  "utility": 0.18377516989292683,
+  "state_probes": [
+    0.09999999999999998,
+    0.07499999999999996,
+    0.09999999999999998
+  ],
+  "failure_reasons": [
+    null,
+    null,
+    null
+  ],
+  "specs": [
+    "experiments/v14/specs/flappy-primary-gru-s0.json",
+    "experiments/v14/specs/flappy-primary-gru-s1.json",
+    "experiments/v14/specs/flappy-primary-gru-s2.json"
+  ]
+}

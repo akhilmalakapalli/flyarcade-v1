@@ -1,0 +1,232 @@
+{
+  "configurations": [
+    {
+      "name": "catch-primary-linear",
+      "phase": "primary",
+      "config": {
+        "gamma": 0.99,
+        "lam": 0.95,
+        "lr": 0.0003,
+        "anneal_lr": true,
+        "clip": 0.2,
+        "ent": 0.003,
+        "vf": 0.5,
+        "max_grad_norm": 0.5,
+        "epochs": 4,
+        "envs": 16,
+        "steps": 128,
+        "minibatches": 8,
+        "chunk": 16,
+        "reward_scale": 1.0,
+        "shaping": 0.0,
+        "task": "catch",
+        "arch": "linear",
+        "hidden": 0,
+        "core": 0,
+        "source": "fly",
+        "topology": "biological",
+        "ticks": 4,
+        "readout": "descending",
+        "transitions": 65536
+      },
+      "complete": true,
+      "stable": true,
+      "eligible": true,
+      "scores": [
+        0.7291666666666666,
+        0.7041666666666666,
+        0.75
+      ],
+      "mean": 0.7277777777777777,
+      "sd": 0.01873713550448897,
+      "variance": 0.00035108024691358114,
+      "utility": 0.7230934939016554,
+      "state_probes": [
+        0.275,
+        0.5,
+        0.35
+      ],
+      "failure_reasons": [
+        null,
+        null,
+        null
+      ],
+      "specs": [
+        "experiments/v14/specs/catch-primary-linear-s0.json",
+        "experiments/v14/specs/catch-primary-linear-s1.json",
+        "experiments/v14/specs/catch-primary-linear-s2.json"
+      ]
+    },
+    {
+      "name": "catch-primary-mlp",
+      "phase": "primary",
+      "config": {
+        "gamma": 0.99,
+        "lam": 0.95,
+        "lr": 0.0003,
+        "anneal_lr": true,
+        "clip": 0.2,
+        "ent": 0.003,
+        "vf": 0.5,
+        "max_grad_norm": 0.5,
+        "epochs": 4,
+        "envs": 16,
+        "steps": 128,
+        "minibatches": 8,
+        "chunk": 16,
+        "reward_scale": 1.0,
+        "shaping": 0.0,
+        "task": "catch",
+        "arch": "mlp",
+        "hidden": 128,
+        "core": 64,
+        "source": "fly",
+        "topology": "biological",
+        "ticks": 4,
+        "readout": "descending",
+        "transitions": 65536
+      },
+      "complete": true,
+      "stable": true,
+      "eligible": false,
+      "scores": [
+        0.2,
+        0.20833333333333331,
+        0.19999999999999998
+      ],
+      "mean": 0.20277777777777775,
+      "sd": 0.003928371006591923,
+      "variance": 1.5432098765432038e-05,
+      "utility": 0.20179568502612977,
+      "state_probes": [
+        0.0,
+        0.0,
+        0.19999999999999996
+      ],
+      "failure_reasons": [
+        null,
+        null,
+        null
+      ],
+      "specs": [
+        "experiments/v14/specs/catch-primary-mlp-s0.json",
+        "experiments/v14/specs/catch-primary-mlp-s1.json",
+        "experiments/v14/specs/catch-primary-mlp-s2.json"
+      ]
+    },
+    {
+      "name": "catch-primary-gru",
+      "phase": "primary",
+      "config": {
+        "gamma": 0.99,
+        "lam": 0.95,
+        "lr": 0.0003,
+        "anneal_lr": true,
+        "clip": 0.2,
+        "ent": 0.003,
+        "vf": 0.5,
+        "max_grad_norm": 0.5,
+        "epochs": 4,
+        "envs": 16,
+        "steps": 128,
+        "minibatches": 8,
+        "chunk": 16,
+        "reward_scale": 1.0,
+        "shaping": 0.0,
+        "task": "catch",
+        "arch": "gru",
+        "hidden": 128,
+        "core": 64,
+        "source": "fly",
+        "topology": "biological",
+        "ticks": 4,
+        "readout": "descending",
+        "transitions": 65536
+      },
+      "complete": true,
+      "stable": true,
+      "eligible": false,
+      "scores": [
+        0.20416666666666666,
+        0.1875,
+        0.2458333333333333
+      ],
+      "mean": 0.2125,
+      "sd": 0.02453266907313289,
+      "variance": 0.0006018518518518509,
+      "utility": 0.20636683273171677,
+      "state_probes": [
+        0.025000000000000022,
+        0.0,
+        0.0
+      ],
+      "failure_reasons": [
+        null,
+        null,
+        null
+      ],
+      "specs": [
+        "experiments/v14/specs/catch-primary-gru-s0.json",
+        "experiments/v14/specs/catch-primary-gru-s1.json",
+        "experiments/v14/specs/catch-primary-gru-s2.json"
+      ]
+    }
+  ],
+  "selected": {
+    "name": "catch-primary-linear",
+    "phase": "primary",
+    "config": {
+      "gamma": 0.99,
+      "lam": 0.95,
+      "lr": 0.0003,
+      "anneal_lr": true,
+      "clip": 0.2,
+      "ent": 0.003,
+      "vf": 0.5,
+      "max_grad_norm": 0.5,
+      "epochs": 4,
+      "envs": 16,
+      "steps": 128,
+      "minibatches": 8,
+      "chunk": 16,
+      "reward_scale": 1.0,
+      "shaping": 0.0,
+      "task": "catch",
+      "arch": "linear",
+      "hidden": 0,
+      "core": 0,
+      "source": "fly",
+      "topology": "biological",
+      "ticks": 4,
+      "readout": "descending",
+      "transitions": 65536
+    },
+    "complete": true,
+    "stable": true,
+    "eligible": true,
+    "scores": [
+      0.7291666666666666,
+      0.7041666666666666,
+      0.75
+    ],
+    "mean": 0.7277777777777777,
+    "sd": 0.01873713550448897,
+    "variance": 0.00035108024691358114,
+    "utility": 0.7230934939016554,
+    "state_probes": [
+      0.275,
+      0.5,
+      0.35
+    ],
+    "failure_reasons": [
+      null,
+      null,
+      null
+    ],
+    "specs": [
+      "experiments/v14/specs/catch-primary-linear-s0.json",
+      "experiments/v14/specs/catch-primary-linear-s1.json",
+      "experiments/v14/specs/catch-primary-linear-s2.json"
+    ]
+  }
+}

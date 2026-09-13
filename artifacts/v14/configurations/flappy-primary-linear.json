@@ -1,0 +1,57 @@
+{
+  "name": "flappy-primary-linear",
+  "phase": "primary",
+  "config": {
+    "gamma": 0.99,
+    "lam": 0.95,
+    "lr": 0.0003,
+    "anneal_lr": true,
+    "clip": 0.2,
+    "ent": 0.003,
+    "vf": 0.5,
+    "max_grad_norm": 0.5,
+    "epochs": 4,
+    "envs": 16,
+    "steps": 128,
+    "minibatches": 8,
+    "chunk": 16,
+    "reward_scale": 1.0,
+    "shaping": 0.0,
+    "task": "flappy",
+    "arch": "linear",
+    "hidden": 0,
+    "core": 0,
+    "source": "fly",
+    "topology": "biological",
+    "ticks": 4,
+    "readout": "descending",
+    "transitions": 65536
+  },
+  "complete": true,
+  "stable": true,
+  "eligible": true,
+  "scores": [
+    0.0,
+    0.008333333333333333,
+    0.0
+  ],
+  "mean": 0.002777777777777778,
+  "sd": 0.00392837100659193,
+  "variance": 1.5432098765432092e-05,
+  "utility": 0.0017956850261297954,
+  "state_probes": [
+    0.42500000000000004,
+    0.07499999999999996,
+    0.35
+  ],
+  "failure_reasons": [
+    null,
+    null,
+    null
+  ],
+  "specs": [
+    "experiments/v14/specs/flappy-primary-linear-s0.json",
+    "experiments/v14/specs/flappy-primary-linear-s1.json",
+    "experiments/v14/specs/flappy-primary-linear-s2.json"
+  ]
+}

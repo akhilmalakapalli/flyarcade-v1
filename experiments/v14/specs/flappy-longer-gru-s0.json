@@ -1,0 +1,33 @@
+{
+  "name": "flappy-longer-gru-s0",
+  "phase": "longer",
+  "config": {
+    "gamma": 0.99,
+    "lam": 0.95,
+    "lr": 0.0003,
+    "anneal_lr": true,
+    "clip": 0.2,
+    "ent": 0.003,
+    "vf": 0.5,
+    "max_grad_norm": 0.5,
+    "epochs": 4,
+    "envs": 16,
+    "steps": 128,
+    "minibatches": 8,
+    "chunk": 16,
+    "reward_scale": 1.0,
+    "shaping": 0.0,
+    "task": "flappy",
+    "arch": "gru",
+    "hidden": 128,
+    "core": 64,
+    "source": "fly",
+    "topology": "biological",
+    "ticks": 4,
+    "readout": "descending",
+    "transitions": 131072,
+    "seed": 0
+  },
+  "plan_sha256": "f53ab5e9517d481491df19e64accb5023c744a4b1edbd32b27b5153f598a9501",
+  "code_sha256": "e85511e4bc365a05991535efbccd77a20b76410345f35b6711f223e77a7910ce"
+}

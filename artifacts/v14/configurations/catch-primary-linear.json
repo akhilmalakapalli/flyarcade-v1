@@ -1,0 +1,57 @@
+{
+  "name": "catch-primary-linear",
+  "phase": "primary",
+  "config": {
+    "gamma": 0.99,
+    "lam": 0.95,
+    "lr": 0.0003,
+    "anneal_lr": true,
+    "clip": 0.2,
+    "ent": 0.003,
+    "vf": 0.5,
+    "max_grad_norm": 0.5,
+    "epochs": 4,
+    "envs": 16,
+    "steps": 128,
+    "minibatches": 8,
+    "chunk": 16,
+    "reward_scale": 1.0,
+    "shaping": 0.0,
+    "task": "catch",
+    "arch": "linear",
+    "hidden": 0,
+    "core": 0,
+    "source": "fly",
+    "topology": "biological",
+    "ticks": 4,
+    "readout": "descending",
+    "transitions": 65536
+  },
+  "complete": true,
+  "stable": true,
+  "eligible": true,
+  "scores": [
+    0.7291666666666666,
+    0.7041666666666666,
+    0.75
+  ],
+  "mean": 0.7277777777777777,
+  "sd": 0.01873713550448897,
+  "variance": 0.00035108024691358114,
+  "utility": 0.7230934939016554,
+  "state_probes": [
+    0.275,
+    0.5,
+    0.35
+  ],
+  "failure_reasons": [
+    null,
+    null,
+    null
+  ],
+  "specs": [
+    "experiments/v14/specs/catch-primary-linear-s0.json",
+    "experiments/v14/specs/catch-primary-linear-s1.json",
+    "experiments/v14/specs/catch-primary-linear-s2.json"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "name": "catch-ticks-linear",
+  "phase": "ticks",
+  "config": {
+    "gamma": 0.99,
+    "lam": 0.95,
+    "lr": 0.0003,
+    "anneal_lr": true,
+    "clip": 0.2,
+    "ent": 0.003,
+    "vf": 0.5,
+    "max_grad_norm": 0.5,
+    "epochs": 4,
+    "envs": 16,
+    "steps": 128,
+    "minibatches": 8,
+    "chunk": 16,
+    "reward_scale": 1.0,
+    "shaping": 0.0,
+    "task": "catch",
+    "arch": "linear",
+    "hidden": 0,
+    "core": 0,
+    "source": "fly",
+    "topology": "biological",
+    "ticks": 8,
+    "readout": "descending",
+    "transitions": 65536
+  },
+  "complete": true,
+  "stable": true,
+  "eligible": true,
+  "scores": [
+    0.9375,
+    0.9708333333333332,
+    0.95
+  ],
+  "mean": 0.9527777777777778,
+  "sd": 0.013749298523071708,
+  "variance": 0.00018904320987654183,
+  "utility": 0.9493404531470099,
+  "state_probes": [
+    0.32499999999999996,
+    0.5,
+    0.42500000000000004
+  ],
+  "failure_reasons": [
+    null,
+    null,
+    null
+  ],
+  "specs": [
+    "experiments/v14/specs/catch-ticks-linear-s0.json",
+    "experiments/v14/specs/catch-ticks-linear-s1.json",
+    "experiments/v14/specs/catch-ticks-linear-s2.json"
+  ]
+}
