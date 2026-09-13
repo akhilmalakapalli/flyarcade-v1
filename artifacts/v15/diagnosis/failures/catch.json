@@ -1,0 +1,522 @@
+{
+  "task": "catch",
+  "seed_purpose": "v1.5 diagnosis",
+  "controllers": {
+    "reference": {
+      "episodes": 100,
+      "success_by_initial_distance": {
+        "0": [
+          1.0,
+          139
+        ],
+        "1": [
+          1.0,
+          186
+        ],
+        "2": [
+          1.0,
+          162
+        ],
+        "3": [
+          1.0,
+          66
+        ],
+        "4": [
+          1.0,
+          47
+        ]
+      },
+      "worst_player_object_starts": [
+        {
+          "player": 0,
+          "object": 0,
+          "success": 1.0,
+          "n": 24
+        },
+        {
+          "player": 0,
+          "object": 1,
+          "success": 1.0,
+          "n": 21
+        },
+        {
+          "player": 0,
+          "object": 2,
+          "success": 1.0,
+          "n": 18
+        },
+        {
+          "player": 0,
+          "object": 3,
+          "success": 1.0,
+          "n": 14
+        },
+        {
+          "player": 0,
+          "object": 4,
+          "success": 1.0,
+          "n": 25
+        },
+        {
+          "player": 1,
+          "object": 0,
+          "success": 1.0,
+          "n": 14
+        }
+      ],
+      "score": 1.0
+    },
+    "random": {
+      "episodes": 100,
+      "success_by_initial_distance": {
+        "0": [
+          0.38016528925619836,
+          121
+        ],
+        "1": [
+          0.263681592039801,
+          201
+        ],
+        "2": [
+          0.16778523489932887,
+          149
+        ],
+        "3": [
+          0.02197802197802198,
+          91
+        ],
+        "4": [
+          0.0,
+          38
+        ]
+      },
+      "worst_player_object_starts": [
+        {
+          "player": 0,
+          "object": 4,
+          "success": 0.0,
+          "n": 23
+        },
+        {
+          "player": 3,
+          "object": 0,
+          "success": 0.0,
+          "n": 17
+        },
+        {
+          "player": 4,
+          "object": 0,
+          "success": 0.0,
+          "n": 15
+        },
+        {
+          "player": 4,
+          "object": 1,
+          "success": 0.0,
+          "n": 24
+        },
+        {
+          "player": 0,
+          "object": 3,
+          "success": 0.038461538461538464,
+          "n": 26
+        },
+        {
+          "player": 1,
+          "object": 4,
+          "success": 0.041666666666666664,
+          "n": 24
+        }
+      ],
+      "score": 0.21
+    },
+    "v14:catch-ticks-linear": [
+      {
+        "episodes": 100,
+        "success_by_initial_distance": {
+          "0": [
+            1.0,
+            137
+          ],
+          "1": [
+            0.956989247311828,
+            186
+          ],
+          "2": [
+            0.9702380952380952,
+            168
+          ],
+          "3": [
+            0.8571428571428571,
+            63
+          ],
+          "4": [
+            0.8695652173913043,
+            46
+          ]
+        },
+        "worst_player_object_starts": [
+          {
+            "player": 0,
+            "object": 3,
+            "success": 0.7692307692307693,
+            "n": 13
+          },
+          {
+            "player": 4,
+            "object": 0,
+            "success": 0.7727272727272727,
+            "n": 22
+          },
+          {
+            "player": 4,
+            "object": 1,
+            "success": 0.7777777777777778,
+            "n": 18
+          },
+          {
+            "player": 1,
+            "object": 2,
+            "success": 0.8,
+            "n": 20
+          },
+          {
+            "player": 0,
+            "object": 2,
+            "success": 0.8333333333333334,
+            "n": 18
+          },
+          {
+            "player": 3,
+            "object": 0,
+            "success": 0.875,
+            "n": 16
+          }
+        ],
+        "score": 0.9533333333333335
+      },
+      {
+        "episodes": 100,
+        "success_by_initial_distance": {
+          "0": [
+            0.9854014598540146,
+            137
+          ],
+          "1": [
+            0.9578947368421052,
+            190
+          ],
+          "2": [
+            0.9634146341463414,
+            164
+          ],
+          "3": [
+            0.859375,
+            64
+          ],
+          "4": [
+            0.8222222222222222,
+            45
+          ]
+        },
+        "worst_player_object_starts": [
+          {
+            "player": 4,
+            "object": 0,
+            "success": 0.7619047619047619,
+            "n": 21
+          },
+          {
+            "player": 0,
+            "object": 3,
+            "success": 0.7857142857142857,
+            "n": 14
+          },
+          {
+            "player": 3,
+            "object": 0,
+            "success": 0.8125,
+            "n": 16
+          },
+          {
+            "player": 0,
+            "object": 2,
+            "success": 0.8235294117647058,
+            "n": 17
+          },
+          {
+            "player": 0,
+            "object": 4,
+            "success": 0.875,
+            "n": 24
+          },
+          {
+            "player": 4,
+            "object": 1,
+            "success": 0.8888888888888888,
+            "n": 18
+          }
+        ],
+        "score": 0.945
+      },
+      {
+        "episodes": 100,
+        "success_by_initial_distance": {
+          "0": [
+            0.9851851851851852,
+            135
+          ],
+          "1": [
+            0.9424083769633508,
+            191
+          ],
+          "2": [
+            0.95,
+            160
+          ],
+          "3": [
+            0.8260869565217391,
+            69
+          ],
+          "4": [
+            0.8888888888888888,
+            45
+          ]
+        },
+        "worst_player_object_starts": [
+          {
+            "player": 0,
+            "object": 3,
+            "success": 0.6666666666666666,
+            "n": 15
+          },
+          {
+            "player": 0,
+            "object": 2,
+            "success": 0.6875,
+            "n": 16
+          },
+          {
+            "player": 1,
+            "object": 2,
+            "success": 0.7619047619047619,
+            "n": 21
+          },
+          {
+            "player": 4,
+            "object": 0,
+            "success": 0.8181818181818182,
+            "n": 22
+          },
+          {
+            "player": 1,
+            "object": 4,
+            "success": 0.8235294117647058,
+            "n": 17
+          },
+          {
+            "player": 3,
+            "object": 0,
+            "success": 0.8823529411764706,
+            "n": 17
+          }
+        ],
+        "score": 0.9366666666666665
+      }
+    ],
+    "v14:catch-primary-linear": [
+      {
+        "episodes": 100,
+        "success_by_initial_distance": {
+          "0": [
+            0.8873239436619719,
+            142
+          ],
+          "1": [
+            0.8041237113402062,
+            194
+          ],
+          "2": [
+            0.74375,
+            160
+          ],
+          "3": [
+            0.532258064516129,
+            62
+          ],
+          "4": [
+            0.40476190476190477,
+            42
+          ]
+        },
+        "worst_player_object_starts": [
+          {
+            "player": 4,
+            "object": 0,
+            "success": 0.25,
+            "n": 16
+          },
+          {
+            "player": 4,
+            "object": 1,
+            "success": 0.46153846153846156,
+            "n": 13
+          },
+          {
+            "player": 1,
+            "object": 4,
+            "success": 0.47058823529411764,
+            "n": 17
+          },
+          {
+            "player": 0,
+            "object": 4,
+            "success": 0.5,
+            "n": 26
+          },
+          {
+            "player": 0,
+            "object": 2,
+            "success": 0.5333333333333333,
+            "n": 15
+          },
+          {
+            "player": 0,
+            "object": 3,
+            "success": 0.5333333333333333,
+            "n": 15
+          }
+        ],
+        "score": 0.7516666666666667
+      },
+      {
+        "episodes": 100,
+        "success_by_initial_distance": {
+          "0": [
+            0.875,
+            136
+          ],
+          "1": [
+            0.8041237113402062,
+            194
+          ],
+          "2": [
+            0.7852760736196319,
+            163
+          ],
+          "3": [
+            0.5161290322580645,
+            62
+          ],
+          "4": [
+            0.37777777777777777,
+            45
+          ]
+        },
+        "worst_player_object_starts": [
+          {
+            "player": 4,
+            "object": 0,
+            "success": 0.2,
+            "n": 20
+          },
+          {
+            "player": 4,
+            "object": 1,
+            "success": 0.375,
+            "n": 16
+          },
+          {
+            "player": 0,
+            "object": 3,
+            "success": 0.38461538461538464,
+            "n": 13
+          },
+          {
+            "player": 1,
+            "object": 3,
+            "success": 0.4444444444444444,
+            "n": 27
+          },
+          {
+            "player": 0,
+            "object": 4,
+            "success": 0.52,
+            "n": 25
+          },
+          {
+            "player": 3,
+            "object": 0,
+            "success": 0.6111111111111112,
+            "n": 18
+          }
+        ],
+        "score": 0.7533333333333333
+      },
+      {
+        "episodes": 100,
+        "success_by_initial_distance": {
+          "0": [
+            0.8837209302325582,
+            129
+          ],
+          "1": [
+            0.78,
+            200
+          ],
+          "2": [
+            0.7358490566037735,
+            159
+          ],
+          "3": [
+            0.5223880597014925,
+            67
+          ],
+          "4": [
+            0.5555555555555556,
+            45
+          ]
+        },
+        "worst_player_object_starts": [
+          {
+            "player": 4,
+            "object": 0,
+            "success": 0.3181818181818182,
+            "n": 22
+          },
+          {
+            "player": 0,
+            "object": 3,
+            "success": 0.4375,
+            "n": 16
+          },
+          {
+            "player": 1,
+            "object": 4,
+            "success": 0.4444444444444444,
+            "n": 18
+          },
+          {
+            "player": 1,
+            "object": 2,
+            "success": 0.48,
+            "n": 25
+          },
+          {
+            "player": 0,
+            "object": 2,
+            "success": 0.5,
+            "n": 16
+          },
+          {
+            "player": 4,
+            "object": 2,
+            "success": 0.5263157894736842,
+            "n": 19
+          }
+        ],
+        "score": 0.745
+      }
+    ]
+  }
+}

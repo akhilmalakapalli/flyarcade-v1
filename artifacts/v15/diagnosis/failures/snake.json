@@ -1,0 +1,140 @@
+{
+  "task": "snake",
+  "seed_purpose": "v1.5 diagnosis",
+  "controllers": {
+    "reference": {
+      "episodes": 100,
+      "death_types": {
+        "wall": 16,
+        "self": 81,
+        "timeout": 3
+      },
+      "food_mean": 16.35,
+      "length_at_death_mean": 19.35,
+      "steps_mean": 106.79,
+      "food_quantiles": [
+        10.9,
+        16.0,
+        24.0
+      ],
+      "score": 16.35
+    },
+    "random": {
+      "episodes": 100,
+      "death_types": {
+        "wall": 99,
+        "self": 1
+      },
+      "food_mean": 0.17,
+      "length_at_death_mean": 3.17,
+      "steps_mean": 10.17,
+      "food_quantiles": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "score": 0.17
+    },
+    "v14:snake-all_readout-linear": [
+      {
+        "episodes": 100,
+        "death_types": {
+          "self": 92,
+          "wall": 8
+        },
+        "food_mean": 12.29,
+        "length_at_death_mean": 15.29,
+        "steps_mean": 75.56,
+        "food_quantiles": [
+          7.0,
+          12.0,
+          18.10000000000001
+        ],
+        "score": 12.29
+      },
+      {
+        "episodes": 100,
+        "death_types": {
+          "wall": 9,
+          "self": 91
+        },
+        "food_mean": 11.81,
+        "length_at_death_mean": 14.81,
+        "steps_mean": 71.48,
+        "food_quantiles": [
+          6.9,
+          11.0,
+          19.0
+        ],
+        "score": 11.81
+      },
+      {
+        "episodes": 100,
+        "death_types": {
+          "self": 92,
+          "wall": 8
+        },
+        "food_mean": 11.79,
+        "length_at_death_mean": 14.79,
+        "steps_mean": 71.44,
+        "food_quantiles": [
+          5.0,
+          11.0,
+          19.0
+        ],
+        "score": 11.79
+      }
+    ],
+    "v14:snake-primary-linear": [
+      {
+        "episodes": 100,
+        "death_types": {
+          "wall": 86,
+          "starved": 3,
+          "self": 11
+        },
+        "food_mean": 1.0,
+        "length_at_death_mean": 4.0,
+        "steps_mean": 24.5,
+        "food_quantiles": [
+          0.0,
+          1.0,
+          2.0
+        ],
+        "score": 1.0
+      },
+      {
+        "episodes": 100,
+        "death_types": {
+          "wall": 82,
+          "self": 18
+        },
+        "food_mean": 1.69,
+        "length_at_death_mean": 4.69,
+        "steps_mean": 24.45,
+        "food_quantiles": [
+          0.0,
+          1.0,
+          3.1000000000000085
+        ],
+        "score": 1.69
+      },
+      {
+        "episodes": 100,
+        "death_types": {
+          "wall": 97,
+          "self": 3
+        },
+        "food_mean": 0.81,
+        "length_at_death_mean": 3.81,
+        "steps_mean": 19.25,
+        "food_quantiles": [
+          0.0,
+          1.0,
+          2.0
+        ],
+        "score": 0.81
+      }
+    ]
+  }
+}

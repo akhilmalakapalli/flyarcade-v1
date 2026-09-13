@@ -1,0 +1,15 @@
+{
+  "name": "diag-flappy-gru-t16-desc-lr3e-4-s1",
+  "phase": "diagnosis",
+  "group": "D2_flappy_ticks",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "config": {
+    "train_purpose": "diagnosis_training",
+    "task": "flappy",
+    "arch": "gru",
+    "ticks": 16,
+    "lr": 0.0003,
+    "transitions": 150000,
+    "seed": 1
+  }
+}

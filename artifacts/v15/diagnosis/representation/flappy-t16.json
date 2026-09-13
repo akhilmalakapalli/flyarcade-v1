@@ -1,0 +1,266 @@
+{
+  "task": "flappy",
+  "ticks": 16,
+  "states": 4117,
+  "episodes": 256,
+  "seed_purpose": "v1.5 diagnosis",
+  "reference_action_counts": [
+    3781,
+    336
+  ],
+  "readouts": {
+    "descending": {
+      "width": 1293,
+      "ridge_penalty_state": 100.0,
+      "ridge_penalty_action": 10000.0,
+      "linear_action_balanced_accuracy": 0.6519846963175515,
+      "linear_state_r2": {
+        "bird_y": 0.3985,
+        "vertical_velocity": 0.7139,
+        "time_to_pipe": 0.6702,
+        "gap_center": 0.3303,
+        "signed_gap_error": 0.5082,
+        "projected_no_flap_crossing_error": 0.4717,
+        "velocity_error": 0.6549
+      },
+      "linear_state_r2_mean": 0.5353896392805964,
+      "activity": {
+        "neurons": 1293,
+        "active_fraction": 0.9489559164733179,
+        "mean_rate": 0.2495145733430191,
+        "rate_quantiles": [
+          0.0516,
+          0.2754,
+          0.3678,
+          0.4886
+        ],
+        "participation_ratio": 43.24475062204415,
+        "median_snr_active": 0.13874202124872573,
+        "fraction_snr_gt_1": 0.018744906275468622,
+        "standardized_clip_fraction": 0.0002626199894388442,
+        "floor_amplified_fraction": 0.02474864655839134,
+        "pc1_lag1_autocorrelation": 0.2658579807592399
+      }
+    },
+    "all": {
+      "width": 2040,
+      "ridge_penalty_state": 100.0,
+      "ridge_penalty_action": 10000.0,
+      "linear_action_balanced_accuracy": 0.6908576438705564,
+      "linear_state_r2": {
+        "bird_y": 0.8692,
+        "vertical_velocity": 0.9521,
+        "time_to_pipe": 0.945,
+        "gap_center": 0.8414,
+        "signed_gap_error": 0.8905,
+        "projected_no_flap_crossing_error": 0.7094,
+        "velocity_error": 0.8585
+      },
+      "linear_state_r2_mean": 0.8665889186274714,
+      "activity": {
+        "neurons": 2040,
+        "active_fraction": 0.9656862745098039,
+        "mean_rate": 0.2276099339420004,
+        "rate_quantiles": [
+          0.0622,
+          0.2353,
+          0.4164,
+          0.498
+        ],
+        "participation_ratio": 41.5207487833381,
+        "median_snr_active": 0.16248572068532657,
+        "fraction_snr_gt_1": 0.05634517766497462,
+        "standardized_clip_fraction": 0.00028730705301309255,
+        "floor_amplified_fraction": 0.0392156862745098,
+        "pc1_lag1_autocorrelation": 0.7547977164117314
+      }
+    },
+    "visual": {
+      "width": 218,
+      "ridge_penalty_state": 10.0,
+      "ridge_penalty_action": 10000.0,
+      "linear_action_balanced_accuracy": 0.7095090068547745,
+      "linear_state_r2": {
+        "bird_y": 0.9465,
+        "vertical_velocity": 0.9764,
+        "time_to_pipe": 0.978,
+        "gap_center": 0.931,
+        "signed_gap_error": 0.9468,
+        "projected_no_flap_crossing_error": 0.8566,
+        "velocity_error": 0.9356
+      },
+      "linear_state_r2_mean": 0.9386930235713143,
+      "activity": {
+        "neurons": 218,
+        "active_fraction": 0.9862385321100917,
+        "mean_rate": 0.41127538423141463,
+        "rate_quantiles": [
+          0.2922,
+          0.4303,
+          0.4976,
+          0.5
+        ],
+        "participation_ratio": 9.833519447810266,
+        "median_snr_active": 0.359919225016447,
+        "fraction_snr_gt_1": 0.25116279069767444,
+        "standardized_clip_fraction": 0.001061831341517494,
+        "floor_amplified_fraction": 0.1651376146788991,
+        "pc1_lag1_autocorrelation": 0.9254817211141957
+      }
+    },
+    "nonvisual": {
+      "width": 1822,
+      "ridge_penalty_state": 100.0,
+      "ridge_penalty_action": 10000.0,
+      "linear_action_balanced_accuracy": 0.6279212498007334,
+      "linear_state_r2": {
+        "bird_y": 0.2591,
+        "vertical_velocity": 0.6576,
+        "time_to_pipe": 0.603,
+        "gap_center": 0.2449,
+        "signed_gap_error": 0.4229,
+        "projected_no_flap_crossing_error": 0.3588,
+        "velocity_error": 0.5712
+      },
+      "linear_state_r2_mean": 0.4453533587485407,
+      "activity": {
+        "neurons": 1822,
+        "active_fraction": 0.9632272228320526,
+        "mean_rate": 0.20563459466478182,
+        "rate_quantiles": [
+          0.0557,
+          0.205,
+          0.3539,
+          0.4806
+        ],
+        "participation_ratio": 46.35658019453146,
+        "median_snr_active": 0.15161616753837392,
+        "fraction_snr_gt_1": 0.03247863247863248,
+        "standardized_clip_fraction": 0.00019463619961355383,
+        "floor_amplified_fraction": 0.024149286498353458,
+        "pc1_lag1_autocorrelation": 0.2881183800579402
+      }
+    },
+    "cb_intrinsic": {
+      "width": 529,
+      "ridge_penalty_state": 100.0,
+      "ridge_penalty_action": 0.1,
+      "linear_action_balanced_accuracy": 0.5169137573728678,
+      "linear_state_r2": {
+        "bird_y": 0.104,
+        "vertical_velocity": -0.0551,
+        "time_to_pipe": 0.2794,
+        "gap_center": 0.1733,
+        "signed_gap_error": 0.1331,
+        "projected_no_flap_crossing_error": 0.1155,
+        "velocity_error": 0.0468
+      },
+      "linear_state_r2_mean": 0.11385571218621851,
+      "activity": {
+        "neurons": 529,
+        "active_fraction": 0.998109640831758,
+        "mean_rate": 0.0983816411090903,
+        "rate_quantiles": [
+          0.0578,
+          0.0911,
+          0.1462,
+          0.2412
+        ],
+        "participation_ratio": 20.53884715377045,
+        "median_snr_active": 0.18238789148386267,
+        "fraction_snr_gt_1": 0.06439393939393939,
+        "standardized_clip_fraction": 2.8467881571776025e-05,
+        "floor_amplified_fraction": 0.022684310018903593,
+        "pc1_lag1_autocorrelation": -0.07004129912445248
+      }
+    },
+    "visual_cb": {
+      "width": 747,
+      "ridge_penalty_state": 100.0,
+      "ridge_penalty_action": 10000.0,
+      "linear_action_balanced_accuracy": 0.7145544396620437,
+      "linear_state_r2": {
+        "bird_y": 0.9157,
+        "vertical_velocity": 0.9707,
+        "time_to_pipe": 0.965,
+        "gap_center": 0.8945,
+        "signed_gap_error": 0.9373,
+        "projected_no_flap_crossing_error": 0.8366,
+        "velocity_error": 0.9232
+      },
+      "linear_state_r2_mean": 0.9204175295925643,
+      "activity": {
+        "neurons": 747,
+        "active_fraction": 0.9946452476572959,
+        "mean_rate": 0.18969467457718495,
+        "rate_quantiles": [
+          0.0656,
+          0.1063,
+          0.4826,
+          0.4995
+        ],
+        "participation_ratio": 20.543211235250155,
+        "median_snr_active": 0.21131717589062038,
+        "fraction_snr_gt_1": 0.11843876177658143,
+        "standardized_clip_fraction": 0.0003300384763082774,
+        "floor_amplified_fraction": 0.0642570281124498,
+        "pc1_lag1_autocorrelation": 0.8889883649386715
+      }
+    },
+    "pooled": {
+      "width": 605,
+      "ridge_penalty_state": 100.0,
+      "ridge_penalty_action": 10000.0,
+      "linear_action_balanced_accuracy": 0.6176869121632393,
+      "linear_state_r2": {
+        "bird_y": 0.4658,
+        "vertical_velocity": 0.6161,
+        "time_to_pipe": 0.6565,
+        "gap_center": 0.4556,
+        "signed_gap_error": 0.5148,
+        "projected_no_flap_crossing_error": 0.4834,
+        "velocity_error": 0.6054
+      },
+      "linear_state_r2_mean": 0.542528562097317,
+      "activity": {
+        "neurons": 605,
+        "active_fraction": 0.9735537190082645,
+        "mean_rate": 0.21401438783455062,
+        "rate_quantiles": [
+          0.0583,
+          0.2231,
+          0.346,
+          0.4564
+        ],
+        "participation_ratio": 21.296202083269993,
+        "median_snr_active": 0.25978661602894826,
+        "fraction_snr_gt_1": 0.0831918505942275,
+        "standardized_clip_fraction": 0.0002071636050482077,
+        "floor_amplified_fraction": 0.14214876033057852,
+        "pc1_lag1_autocorrelation": 0.29225802209335444
+      }
+    },
+    "sensory_encoding": {
+      "width": 12,
+      "ridge_penalty_state": 0.1,
+      "ridge_penalty_action": 1000.0,
+      "linear_action_balanced_accuracy": 0.7019687549816674,
+      "linear_state_r2": {
+        "bird_y": 1.0,
+        "vertical_velocity": 1.0,
+        "time_to_pipe": 1.0,
+        "gap_center": 1.0,
+        "signed_gap_error": 1.0,
+        "projected_no_flap_crossing_error": 0.8241,
+        "velocity_error": 0.9465
+      },
+      "linear_state_r2_mean": 0.9672240563824506
+    }
+  },
+  "elapsed_seconds": 32.92787891696207,
+  "resources": {
+    "rss_mb": 773.0625,
+    "free_disk_mb": 343785.8203125,
+    "elapsed_seconds": 32.92800025001634
+  }
+}

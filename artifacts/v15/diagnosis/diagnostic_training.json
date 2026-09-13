@@ -1,0 +1,5294 @@
+[
+ {
+  "name": "diag-catch-gru-t16-desc-lr1e-3-s0",
+  "phase": "diagnosis",
+  "config": {
+   "source": "fly",
+   "readout": "descending",
+   "ticks": 16,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "gru",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.001,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 131072,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 0,
+   "task": "catch"
+  },
+  "score": 0.9966666666666666,
+  "last_checkpoint_score": 0.9966666666666666,
+  "chosen_checkpoint_transitions": 131072,
+  "state_probe": {
+   "score": 0.32499999999999996,
+   "action_counts": [
+    7,
+    27,
+    6
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.5545833333333333,
+  "policy_entropy": 0.14978800852389912,
+  "random_score": 0.20666666666666667,
+  "reference_score": 1.0,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 0.8958333333333335
+   },
+   {
+    "transitions": 32768,
+    "score": 0.96875
+   },
+   {
+    "transitions": 49152,
+    "score": 0.984375
+   },
+   {
+    "transitions": 65536,
+    "score": 0.9895833333333334
+   },
+   {
+    "transitions": 81920,
+    "score": 0.9947916666666667
+   },
+   {
+    "transitions": 98304,
+    "score": 0.9895833333333334
+   },
+   {
+    "transitions": 114688,
+    "score": 0.9947916666666667
+   },
+   {
+    "transitions": 131072,
+    "score": 1.0
+   }
+  ],
+  "wall_clock_training_seconds": 277.6224668738432,
+  "peak_memory_mb": 308.5,
+  "checkpoint_sha256": "383aa3f143eb974f93b8ab504f3a94e237c67afcf5ed0087643c63be67faf631",
+  "policy_sha256": "2ada6dde402bb357fdfdfe57e7343279454d19ff9ddd74f5d90c33fe469bd594",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D3_step_size_t16"
+ },
+ {
+  "name": "diag-catch-gru-t16-desc-lr1e-3-s1",
+  "phase": "diagnosis",
+  "config": {
+   "source": "fly",
+   "readout": "descending",
+   "ticks": 16,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "gru",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.001,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 131072,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 1,
+   "task": "catch"
+  },
+  "score": 0.9933333333333333,
+  "last_checkpoint_score": 0.9933333333333333,
+  "chosen_checkpoint_transitions": 131072,
+  "state_probe": {
+   "score": 0.375,
+   "action_counts": [
+    9,
+    25,
+    6
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.5258333333333334,
+  "policy_entropy": 0.19333540122602913,
+  "random_score": 0.19166666666666668,
+  "reference_score": 1.0,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 0.59375
+   },
+   {
+    "transitions": 32768,
+    "score": 0.8958333333333334
+   },
+   {
+    "transitions": 49152,
+    "score": 0.984375
+   },
+   {
+    "transitions": 65536,
+    "score": 0.9947916666666667
+   },
+   {
+    "transitions": 81920,
+    "score": 0.9895833333333334
+   },
+   {
+    "transitions": 98304,
+    "score": 1.0
+   },
+   {
+    "transitions": 114688,
+    "score": 1.0
+   },
+   {
+    "transitions": 131072,
+    "score": 1.0
+   }
+  ],
+  "wall_clock_training_seconds": 279.2696820033598,
+  "peak_memory_mb": 301.046875,
+  "checkpoint_sha256": "55352f2fed4952b644a1cf31b680dd8d2477a6dc7c21a5e44d5fab8adfc6f28a",
+  "policy_sha256": "15d16f0a9efea119cee6e620c30cf83395b1dd63c289467703ec2773a69f0504",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D3_step_size_t16"
+ },
+ {
+  "name": "diag-catch-gru-t16-desc-lr3e-4-s0",
+  "phase": "diagnosis",
+  "config": {
+   "source": "fly",
+   "readout": "descending",
+   "ticks": 16,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "gru",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.0003,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 131072,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 0,
+   "task": "catch"
+  },
+  "score": 0.9866666666666667,
+  "last_checkpoint_score": 0.99,
+  "chosen_checkpoint_transitions": 114688,
+  "state_probe": {
+   "score": 0.32499999999999996,
+   "action_counts": [
+    4,
+    27,
+    9
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.5466666666666666,
+  "policy_entropy": 0.7065391426574,
+  "random_score": 0.20666666666666667,
+  "reference_score": 1.0,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 0.24479166666666663
+   },
+   {
+    "transitions": 32768,
+    "score": 0.30729166666666663
+   },
+   {
+    "transitions": 49152,
+    "score": 0.9583333333333335
+   },
+   {
+    "transitions": 65536,
+    "score": 0.984375
+   },
+   {
+    "transitions": 81920,
+    "score": 0.921875
+   },
+   {
+    "transitions": 98304,
+    "score": 0.9739583333333334
+   },
+   {
+    "transitions": 114688,
+    "score": 0.9895833333333334
+   },
+   {
+    "transitions": 131072,
+    "score": 0.9791666666666667
+   }
+  ],
+  "wall_clock_training_seconds": 279.7509697882924,
+  "peak_memory_mb": 300.859375,
+  "checkpoint_sha256": "ec06d23a4467b6c49118dfb511701d828c620825e7f1254613c56fa7099839c6",
+  "policy_sha256": "d5ad66a802adbc2d56bf98c682f5a4fce5c2279b8c7d481c3729785c7aa59534",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D3_step_size_t16"
+ },
+ {
+  "name": "diag-catch-gru-t16-desc-lr3e-4-s1",
+  "phase": "diagnosis",
+  "config": {
+   "source": "fly",
+   "readout": "descending",
+   "ticks": 16,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "gru",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.0003,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 131072,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 1,
+   "task": "catch"
+  },
+  "score": 0.975,
+  "last_checkpoint_score": 0.9733333333333334,
+  "chosen_checkpoint_transitions": 65536,
+  "state_probe": {
+   "score": 0.375,
+   "action_counts": [
+    8,
+    25,
+    7
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.5525,
+  "policy_entropy": 0.7964805602769792,
+  "random_score": 0.19166666666666668,
+  "reference_score": 1.0,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 0.22395833333333331
+   },
+   {
+    "transitions": 32768,
+    "score": 0.48958333333333337
+   },
+   {
+    "transitions": 49152,
+    "score": 0.953125
+   },
+   {
+    "transitions": 65536,
+    "score": 0.9895833333333334
+   },
+   {
+    "transitions": 81920,
+    "score": 0.953125
+   },
+   {
+    "transitions": 98304,
+    "score": 0.9583333333333334
+   },
+   {
+    "transitions": 114688,
+    "score": 0.9791666666666667
+   },
+   {
+    "transitions": 131072,
+    "score": 0.9791666666666667
+   }
+  ],
+  "wall_clock_training_seconds": 280.0037044174387,
+  "peak_memory_mb": 317.390625,
+  "checkpoint_sha256": "dd617904e851ed3d70eed9120636526e552a4bf5b8493b49ab6ad0ef3199a3a6",
+  "policy_sha256": "cadeb88894feece163389882deb40eddce9ca8fdc04f4ff778bf9d71bb504e6a",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D3_step_size_t16"
+ },
+ {
+  "name": "diag-dodge-gru-t16-desc-lr1e-3-s0",
+  "phase": "diagnosis",
+  "config": {
+   "source": "fly",
+   "readout": "descending",
+   "ticks": 16,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "gru",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.001,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 131072,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 0,
+   "task": "dodge"
+  },
+  "score": 0.9816666666666666,
+  "last_checkpoint_score": 0.9816666666666666,
+  "chosen_checkpoint_transitions": 131072,
+  "state_probe": {
+   "score": 0.5,
+   "action_counts": [
+    17,
+    3,
+    20
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.4216666666666667,
+  "policy_entropy": 0.5564604717025008,
+  "random_score": 0.7999999999999998,
+  "reference_score": 1.0,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 0.9375
+   },
+   {
+    "transitions": 32768,
+    "score": 0.9791666666666667
+   },
+   {
+    "transitions": 49152,
+    "score": 0.9583333333333334
+   },
+   {
+    "transitions": 65536,
+    "score": 0.9635416666666667
+   },
+   {
+    "transitions": 81920,
+    "score": 0.96875
+   },
+   {
+    "transitions": 98304,
+    "score": 0.9635416666666667
+   },
+   {
+    "transitions": 114688,
+    "score": 0.96875
+   },
+   {
+    "transitions": 131072,
+    "score": 0.984375
+   }
+  ],
+  "wall_clock_training_seconds": 280.3739300381858,
+  "peak_memory_mb": 307.625,
+  "checkpoint_sha256": "111cdfdbea3652932224f4ff8f482253babae75673cb08ccd9d254ffa23ca505",
+  "policy_sha256": "83ab0cda7b6f75b3f86d5e0985e0edebde9f9146d6699b46e940ce4f607fa5df",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D3_step_size_t16"
+ },
+ {
+  "name": "diag-dodge-gru-t16-desc-lr1e-3-s1",
+  "phase": "diagnosis",
+  "config": {
+   "source": "fly",
+   "readout": "descending",
+   "ticks": 16,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "gru",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.001,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 131072,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 1,
+   "task": "dodge"
+  },
+  "score": 0.9866666666666667,
+  "last_checkpoint_score": 0.9883333333333334,
+  "chosen_checkpoint_transitions": 98304,
+  "state_probe": {
+   "score": 0.575,
+   "action_counts": [
+    7,
+    17,
+    16
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.40041666666666664,
+  "policy_entropy": 0.582496893763041,
+  "random_score": 0.7983333333333333,
+  "reference_score": 1.0,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 0.96875
+   },
+   {
+    "transitions": 32768,
+    "score": 0.96875
+   },
+   {
+    "transitions": 49152,
+    "score": 0.9635416666666667
+   },
+   {
+    "transitions": 65536,
+    "score": 0.9375
+   },
+   {
+    "transitions": 81920,
+    "score": 0.9791666666666667
+   },
+   {
+    "transitions": 98304,
+    "score": 0.9791666666666667
+   },
+   {
+    "transitions": 114688,
+    "score": 0.9739583333333334
+   },
+   {
+    "transitions": 131072,
+    "score": 0.9739583333333334
+   }
+  ],
+  "wall_clock_training_seconds": 280.43162945396034,
+  "peak_memory_mb": 309.828125,
+  "checkpoint_sha256": "3c16d5c3af3fa904f136a146490e4c7308abc6e17ca8e6f04365043d42672013",
+  "policy_sha256": "23b8ce787330ee07a509ca24af3deb635703fa75064c43a88330b4b2743efc3e",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D3_step_size_t16"
+ },
+ {
+  "name": "diag-dodge-gru-t16-desc-lr3e-4-s0",
+  "phase": "diagnosis",
+  "config": {
+   "source": "fly",
+   "readout": "descending",
+   "ticks": 16,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "gru",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.0003,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 131072,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 0,
+   "task": "dodge"
+  },
+  "score": 0.9783333333333334,
+  "last_checkpoint_score": 0.9816666666666667,
+  "chosen_checkpoint_transitions": 114688,
+  "state_probe": {
+   "score": 0.44999999999999996,
+   "action_counts": [
+    13,
+    22,
+    5
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.6154166666666666,
+  "policy_entropy": 1.0117936419475253,
+  "random_score": 0.7999999999999998,
+  "reference_score": 1.0,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 0.75
+   },
+   {
+    "transitions": 32768,
+    "score": 0.75
+   },
+   {
+    "transitions": 49152,
+    "score": 0.78125
+   },
+   {
+    "transitions": 65536,
+    "score": 0.8489583333333334
+   },
+   {
+    "transitions": 81920,
+    "score": 0.96875
+   },
+   {
+    "transitions": 98304,
+    "score": 0.984375
+   },
+   {
+    "transitions": 114688,
+    "score": 0.9947916666666667
+   },
+   {
+    "transitions": 131072,
+    "score": 0.9895833333333334
+   }
+  ],
+  "wall_clock_training_seconds": 277.8797758711735,
+  "peak_memory_mb": 295.25,
+  "checkpoint_sha256": "7dec9dacd2ea5d5d8faafc4714e2880d1fcd8d2eeef1f36cc81f860fbc7808e8",
+  "policy_sha256": "699f6a40b04f7a23feb2059d2370853d86472aed82b6abfcf614a97e04d68c60",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D3_step_size_t16"
+ },
+ {
+  "name": "diag-dodge-gru-t16-desc-lr3e-4-s1",
+  "phase": "diagnosis",
+  "config": {
+   "source": "fly",
+   "readout": "descending",
+   "ticks": 16,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "gru",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.0003,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 131072,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 1,
+   "task": "dodge"
+  },
+  "score": 0.9983333333333333,
+  "last_checkpoint_score": 0.9983333333333333,
+  "chosen_checkpoint_transitions": 131072,
+  "state_probe": {
+   "score": 0.050000000000000044,
+   "action_counts": [
+    2,
+    38,
+    0
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.9491666666666667,
+  "policy_entropy": 0.9803883698167729,
+  "random_score": 0.7983333333333333,
+  "reference_score": 1.0,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 0.8072916666666667
+   },
+   {
+    "transitions": 32768,
+    "score": 0.9375
+   },
+   {
+    "transitions": 49152,
+    "score": 0.9166666666666667
+   },
+   {
+    "transitions": 65536,
+    "score": 0.9375
+   },
+   {
+    "transitions": 81920,
+    "score": 0.984375
+   },
+   {
+    "transitions": 98304,
+    "score": 0.9895833333333334
+   },
+   {
+    "transitions": 114688,
+    "score": 1.0
+   },
+   {
+    "transitions": 131072,
+    "score": 1.0
+   }
+  ],
+  "wall_clock_training_seconds": 278.9986546249129,
+  "peak_memory_mb": 307.46875,
+  "checkpoint_sha256": "6eebee30310975d515b2d90de729fd58fd8d1a9ee37e383f87a504c848b31b40",
+  "policy_sha256": "5e272e2a7fae43318eb51f49f7a4802bd44ab9207e3fdcfa11bc20f236e213e6",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D3_step_size_t16"
+ },
+ {
+  "name": "diag-flappy-gru-t16-desc-lr1e-3-s0",
+  "phase": "diagnosis",
+  "config": {
+   "source": "fly",
+   "readout": "descending",
+   "ticks": 16,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "gru",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.001,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 150000,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 0,
+   "task": "flappy"
+  },
+  "score": 0.37,
+  "last_checkpoint_score": 0.37166666666666665,
+  "chosen_checkpoint_transitions": 147456,
+  "state_probe": {
+   "score": 0.050000000000000044,
+   "action_counts": [
+    38,
+    2
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.781891232601521,
+  "policy_entropy": 0.143114938327979,
+  "random_score": 0.0,
+  "reference_score": 1.0,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 0.0
+   },
+   {
+    "transitions": 32768,
+    "score": 0.026041666666666664
+   },
+   {
+    "transitions": 49152,
+    "score": 0.13541666666666666
+   },
+   {
+    "transitions": 65536,
+    "score": 0.17708333333333331
+   },
+   {
+    "transitions": 81920,
+    "score": 0.26041666666666663
+   },
+   {
+    "transitions": 98304,
+    "score": 0.296875
+   },
+   {
+    "transitions": 114688,
+    "score": 0.359375
+   },
+   {
+    "transitions": 131072,
+    "score": 0.4427083333333333
+   },
+   {
+    "transitions": 147456,
+    "score": 0.44791666666666663
+   },
+   {
+    "transitions": 151552,
+    "score": 0.42708333333333326
+   }
+  ],
+  "wall_clock_training_seconds": 346.50493833376095,
+  "peak_memory_mb": 319.453125,
+  "checkpoint_sha256": "ebf95e70372fec36048bc19953f0cccdc0e897084aa3b03049c386ef0d059daf",
+  "policy_sha256": "61273ad76fc9e40423bf03bce3677921d1b7a1ef1cc9e037c782fe4a40ef3dba",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D3_step_size_t16"
+ },
+ {
+  "name": "diag-flappy-gru-t16-desc-lr1e-3-s1",
+  "phase": "diagnosis",
+  "config": {
+   "source": "fly",
+   "readout": "descending",
+   "ticks": 16,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "gru",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.001,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 150000,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 1,
+   "task": "flappy"
+  },
+  "score": 0.295,
+  "last_checkpoint_score": 0.295,
+  "chosen_checkpoint_transitions": 151552,
+  "state_probe": {
+   "score": 0.0,
+   "action_counts": [
+    40,
+    0
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.8366178204480377,
+  "policy_entropy": 0.14002766637490063,
+  "random_score": 0.0,
+  "reference_score": 1.0,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 0.010416666666666666
+   },
+   {
+    "transitions": 32768,
+    "score": 0.005208333333333333
+   },
+   {
+    "transitions": 49152,
+    "score": 0.046875
+   },
+   {
+    "transitions": 65536,
+    "score": 0.041666666666666664
+   },
+   {
+    "transitions": 81920,
+    "score": 0.0625
+   },
+   {
+    "transitions": 98304,
+    "score": 0.09375
+   },
+   {
+    "transitions": 114688,
+    "score": 0.10937499999999999
+   },
+   {
+    "transitions": 131072,
+    "score": 0.140625
+   },
+   {
+    "transitions": 147456,
+    "score": 0.22916666666666669
+   },
+   {
+    "transitions": 151552,
+    "score": 0.234375
+   }
+  ],
+  "wall_clock_training_seconds": 346.7765409165877,
+  "peak_memory_mb": 321.703125,
+  "checkpoint_sha256": "ee21256a3c556a65576ef3b1b408155de825e48253569719dd6ac77c4a718767",
+  "policy_sha256": "f7e7bb40105dec279b8ad5a85f5564c2f7d3ff8991adc6efeb810c656f77cb28",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D3_step_size_t16"
+ },
+ {
+  "name": "diag-flappy-gru-t16-desc-lr3e-4-s0",
+  "phase": "diagnosis",
+  "config": {
+   "source": "fly",
+   "readout": "descending",
+   "ticks": 16,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "gru",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.0003,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 150000,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 0,
+   "task": "flappy"
+  },
+  "score": 0.5616666666666665,
+  "last_checkpoint_score": 0.5883333333333333,
+  "chosen_checkpoint_transitions": 114688,
+  "state_probe": {
+   "score": 0.30000000000000004,
+   "action_counts": [
+    28,
+    12
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.8770913067249864,
+  "policy_entropy": 0.22953881049595837,
+  "random_score": 0.0,
+  "reference_score": 1.0,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 0.0
+   },
+   {
+    "transitions": 32768,
+    "score": 0.35416666666666663
+   },
+   {
+    "transitions": 49152,
+    "score": 0.49479166666666663
+   },
+   {
+    "transitions": 65536,
+    "score": 0.5833333333333333
+   },
+   {
+    "transitions": 81920,
+    "score": 0.5364583333333334
+   },
+   {
+    "transitions": 98304,
+    "score": 0.5885416666666667
+   },
+   {
+    "transitions": 114688,
+    "score": 0.7239583333333333
+   },
+   {
+    "transitions": 131072,
+    "score": 0.6666666666666667
+   },
+   {
+    "transitions": 147456,
+    "score": 0.59375
+   },
+   {
+    "transitions": 151552,
+    "score": 0.6197916666666667
+   }
+  ],
+  "wall_clock_training_seconds": 347.0406188701163,
+  "peak_memory_mb": 312.21875,
+  "checkpoint_sha256": "e8b787ed1f8c88e27302f07b06bc3fda9af17da71fc62d348a60e90a53af64a1",
+  "policy_sha256": "b8803de823a5ed46afbb7eba04e31d5c1d3d5da5e4a0ef77017b16752e1f5fe4",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D2_flappy_ticks"
+ },
+ {
+  "name": "diag-flappy-gru-t16-desc-lr3e-4-s1",
+  "phase": "diagnosis",
+  "config": {
+   "source": "fly",
+   "readout": "descending",
+   "ticks": 16,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "gru",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.0003,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 150000,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 1,
+   "task": "flappy"
+  },
+  "score": 0.6733333333333333,
+  "last_checkpoint_score": 0.6433333333333333,
+  "chosen_checkpoint_transitions": 131072,
+  "state_probe": {
+   "score": 0.30000000000000004,
+   "action_counts": [
+    28,
+    12
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.8949728131260135,
+  "policy_entropy": 0.2320281677070956,
+  "random_score": 0.0,
+  "reference_score": 1.0,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 0.0
+   },
+   {
+    "transitions": 32768,
+    "score": 0.109375
+   },
+   {
+    "transitions": 49152,
+    "score": 0.47916666666666663
+   },
+   {
+    "transitions": 65536,
+    "score": 0.4270833333333333
+   },
+   {
+    "transitions": 81920,
+    "score": 0.53125
+   },
+   {
+    "transitions": 98304,
+    "score": 0.6197916666666667
+   },
+   {
+    "transitions": 114688,
+    "score": 0.6145833333333334
+   },
+   {
+    "transitions": 131072,
+    "score": 0.6875
+   },
+   {
+    "transitions": 147456,
+    "score": 0.65625
+   },
+   {
+    "transitions": 151552,
+    "score": 0.65625
+   }
+  ],
+  "wall_clock_training_seconds": 346.104813668062,
+  "peak_memory_mb": 314.578125,
+  "checkpoint_sha256": "8d6b0e168d3f357c690f3e910360f99ab3f23984e9ce3d0f2702a62601627801",
+  "policy_sha256": "f0b339903fab5c6652fb3e4db539d0b36d1d03ae0cf0710a1ed8aa293f463800",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D2_flappy_ticks"
+ },
+ {
+  "name": "diag-flappy-gru-t4-desc-lr3e-4-s0",
+  "phase": "diagnosis",
+  "config": {
+   "source": "fly",
+   "readout": "descending",
+   "ticks": 4,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "gru",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.0003,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 150000,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 0,
+   "task": "flappy"
+  },
+  "score": 0.29833333333333334,
+  "last_checkpoint_score": 0.29833333333333334,
+  "chosen_checkpoint_transitions": 151552,
+  "state_probe": {
+   "score": 0.44999999999999996,
+   "action_counts": [
+    22,
+    18
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.8889256198347107,
+  "policy_entropy": 0.1911659627921921,
+  "random_score": 0.0,
+  "reference_score": 1.0,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 0.0
+   },
+   {
+    "transitions": 32768,
+    "score": 0.057291666666666664
+   },
+   {
+    "transitions": 49152,
+    "score": 0.203125
+   },
+   {
+    "transitions": 65536,
+    "score": 0.23958333333333331
+   },
+   {
+    "transitions": 81920,
+    "score": 0.375
+   },
+   {
+    "transitions": 98304,
+    "score": 0.32291666666666663
+   },
+   {
+    "transitions": 114688,
+    "score": 0.359375
+   },
+   {
+    "transitions": 131072,
+    "score": 0.34375
+   },
+   {
+    "transitions": 147456,
+    "score": 0.36458333333333337
+   },
+   {
+    "transitions": 151552,
+    "score": 0.421875
+   }
+  ],
+  "wall_clock_training_seconds": 120.50866000086535,
+  "peak_memory_mb": 324.828125,
+  "checkpoint_sha256": "d16976c94e0abb4c8235c6c81686cbf8a2a94d3b006b4944a906dc049c64962f",
+  "policy_sha256": "92af05b232faa5db0e73360d217ef5a413058ce62633cc916677ef92ea120618",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D2_flappy_ticks"
+ },
+ {
+  "name": "diag-flappy-gru-t4-desc-lr3e-4-s1",
+  "phase": "diagnosis",
+  "config": {
+   "source": "fly",
+   "readout": "descending",
+   "ticks": 4,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "gru",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.0003,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 150000,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 1,
+   "task": "flappy"
+  },
+  "score": 0.245,
+  "last_checkpoint_score": 0.3416666666666666,
+  "chosen_checkpoint_transitions": 98304,
+  "state_probe": {
+   "score": 0.17500000000000004,
+   "action_counts": [
+    33,
+    7
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.8709560816916682,
+  "policy_entropy": 0.2771360987678979,
+  "random_score": 0.0,
+  "reference_score": 1.0,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 0.0
+   },
+   {
+    "transitions": 32768,
+    "score": 0.03125
+   },
+   {
+    "transitions": 49152,
+    "score": 0.16145833333333334
+   },
+   {
+    "transitions": 65536,
+    "score": 0.19270833333333331
+   },
+   {
+    "transitions": 81920,
+    "score": 0.203125
+   },
+   {
+    "transitions": 98304,
+    "score": 0.296875
+   },
+   {
+    "transitions": 114688,
+    "score": 0.265625
+   },
+   {
+    "transitions": 131072,
+    "score": 0.2916666666666667
+   },
+   {
+    "transitions": 147456,
+    "score": 0.2708333333333333
+   },
+   {
+    "transitions": 151552,
+    "score": 0.26041666666666663
+   }
+  ],
+  "wall_clock_training_seconds": 119.86064609180903,
+  "peak_memory_mb": 332.625,
+  "checkpoint_sha256": "3104916eff71fd41ea4e65ba96f63d53f1a7e8a74b22ed52ca2b95b49b447791",
+  "policy_sha256": "89dd312a87379f5d60d3f8811ad0480fd08e4de96346b71b510243a4e236ec8c",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D2_flappy_ticks"
+ },
+ {
+  "name": "diag-pong-gru-t16-desc-lr1e-3-s0",
+  "phase": "diagnosis",
+  "config": {
+   "source": "fly",
+   "readout": "descending",
+   "ticks": 16,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "gru",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.001,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 131072,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 0,
+   "task": "pong"
+  },
+  "score": 0.8733333333333333,
+  "last_checkpoint_score": 0.8733333333333333,
+  "chosen_checkpoint_transitions": 131072,
+  "state_probe": {
+   "score": 0.30000000000000004,
+   "action_counts": [
+    28,
+    7,
+    5
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.38340277777777776,
+  "policy_entropy": 0.5438234562653301,
+  "random_score": 0.2577777777777778,
+  "reference_score": 1.0,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 0.7326388888888888
+   },
+   {
+    "transitions": 32768,
+    "score": 0.7569444444444444
+   },
+   {
+    "transitions": 49152,
+    "score": 0.8055555555555555
+   },
+   {
+    "transitions": 65536,
+    "score": 0.78125
+   },
+   {
+    "transitions": 81920,
+    "score": 0.8506944444444444
+   },
+   {
+    "transitions": 98304,
+    "score": 0.8472222222222221
+   },
+   {
+    "transitions": 114688,
+    "score": 0.8715277777777777
+   },
+   {
+    "transitions": 131072,
+    "score": 0.8923611111111112
+   }
+  ],
+  "wall_clock_training_seconds": 303.29587133199675,
+  "peak_memory_mb": 308.40625,
+  "checkpoint_sha256": "ec6d371fcbde6fc5bda848b91d13ebc0a4538588550be5ddc25a3993cbe39a51",
+  "policy_sha256": "fb28d142f577827f96e6d6fd71b2fc1f9212bdfdd761bd02fabcb71330225a1d",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D3_step_size_t16"
+ },
+ {
+  "name": "diag-pong-gru-t16-desc-lr1e-3-s1",
+  "phase": "diagnosis",
+  "config": {
+   "source": "fly",
+   "readout": "descending",
+   "ticks": 16,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "gru",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.001,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 131072,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 1,
+   "task": "pong"
+  },
+  "score": 0.8844444444444445,
+  "last_checkpoint_score": 0.8844444444444445,
+  "chosen_checkpoint_transitions": 131072,
+  "state_probe": {
+   "score": 0.44999999999999996,
+   "action_counts": [
+    22,
+    8,
+    10
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.36506944444444445,
+  "policy_entropy": 0.5111436467677626,
+  "random_score": 0.2755555555555555,
+  "reference_score": 1.0,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 0.5625
+   },
+   {
+    "transitions": 32768,
+    "score": 0.7013888888888888
+   },
+   {
+    "transitions": 49152,
+    "score": 0.7951388888888888
+   },
+   {
+    "transitions": 65536,
+    "score": 0.84375
+   },
+   {
+    "transitions": 81920,
+    "score": 0.8541666666666665
+   },
+   {
+    "transitions": 98304,
+    "score": 0.8784722222222221
+   },
+   {
+    "transitions": 114688,
+    "score": 0.8715277777777778
+   },
+   {
+    "transitions": 131072,
+    "score": 0.8819444444444444
+   }
+  ],
+  "wall_clock_training_seconds": 303.74801528593525,
+  "peak_memory_mb": 314.25,
+  "checkpoint_sha256": "9698733d802287ca28547ef064d837396d0822b83125e31d1094f6becc758909",
+  "policy_sha256": "789e728b47a3e9c4a14b4ceb6a10efffe028227e0b6b19ed2147c3ad9fa7618a",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D3_step_size_t16"
+ },
+ {
+  "name": "diag-pong-gru-t16-desc-lr3e-4-s0",
+  "phase": "diagnosis",
+  "config": {
+   "source": "fly",
+   "readout": "descending",
+   "ticks": 16,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "gru",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.0003,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 131072,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 0,
+   "task": "pong"
+  },
+  "score": 0.8455555555555554,
+  "last_checkpoint_score": 0.8366666666666666,
+  "chosen_checkpoint_transitions": 114688,
+  "state_probe": {
+   "score": 0.30000000000000004,
+   "action_counts": [
+    28,
+    0,
+    12
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.5017361111111112,
+  "policy_entropy": 0.7235840645184162,
+  "random_score": 0.2577777777777778,
+  "reference_score": 1.0,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 0.6319444444444444
+   },
+   {
+    "transitions": 32768,
+    "score": 0.6666666666666666
+   },
+   {
+    "transitions": 49152,
+    "score": 0.7708333333333334
+   },
+   {
+    "transitions": 65536,
+    "score": 0.8020833333333333
+   },
+   {
+    "transitions": 81920,
+    "score": 0.8055555555555556
+   },
+   {
+    "transitions": 98304,
+    "score": 0.8055555555555556
+   },
+   {
+    "transitions": 114688,
+    "score": 0.8368055555555555
+   },
+   {
+    "transitions": 131072,
+    "score": 0.8159722222222223
+   }
+  ],
+  "wall_clock_training_seconds": 301.2937486250303,
+  "peak_memory_mb": 320.53125,
+  "checkpoint_sha256": "5089a0b5e6314e47571631afa3b135865e07c03b8c2242807aebcfb46aadb21f",
+  "policy_sha256": "c7a9c37c18b40e5f8a3b23e3a8a644952423bb52c7c69651e7d82fe18b13edfe",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D3_step_size_t16"
+ },
+ {
+  "name": "diag-pong-gru-t16-desc-lr3e-4-s1",
+  "phase": "diagnosis",
+  "config": {
+   "source": "fly",
+   "readout": "descending",
+   "ticks": 16,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "gru",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.0003,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 131072,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 1,
+   "task": "pong"
+  },
+  "score": 0.8255555555555556,
+  "last_checkpoint_score": 0.8255555555555556,
+  "chosen_checkpoint_transitions": 131072,
+  "state_probe": {
+   "score": 0.42500000000000004,
+   "action_counts": [
+    23,
+    0,
+    17
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.5236111111111111,
+  "policy_entropy": 0.8502745282644701,
+  "random_score": 0.2755555555555555,
+  "reference_score": 1.0,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 0.3715277777777778
+   },
+   {
+    "transitions": 32768,
+    "score": 0.6111111111111112
+   },
+   {
+    "transitions": 49152,
+    "score": 0.6874999999999999
+   },
+   {
+    "transitions": 65536,
+    "score": 0.7569444444444444
+   },
+   {
+    "transitions": 81920,
+    "score": 0.7881944444444444
+   },
+   {
+    "transitions": 98304,
+    "score": 0.7638888888888888
+   },
+   {
+    "transitions": 114688,
+    "score": 0.8055555555555555
+   },
+   {
+    "transitions": 131072,
+    "score": 0.829861111111111
+   }
+  ],
+  "wall_clock_training_seconds": 303.4304379139212,
+  "peak_memory_mb": 322.703125,
+  "checkpoint_sha256": "a9d2e176e48b66d6fc23655a4d11aa77236508e299ec8c4c0241331509d8920d",
+  "policy_sha256": "88286320a30d64ea6ed6c06c2265790019b89a6ecce6315fad6961afa1a67b8d",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D3_step_size_t16"
+ },
+ {
+  "name": "diag-pong-linear-t8-all-s0",
+  "phase": "diagnosis",
+  "config": {
+   "source": "fly",
+   "readout": "all",
+   "ticks": 8,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "linear",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.0003,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 65536,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 0,
+   "task": "pong"
+  },
+  "score": 0.8577777777777775,
+  "last_checkpoint_score": 0.8811111111111108,
+  "chosen_checkpoint_transitions": 49152,
+  "state_probe": {
+   "score": 0.275,
+   "action_counts": [
+    29,
+    5,
+    6
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.43444444444444447,
+  "policy_entropy": 0.8399817012716236,
+  "random_score": 0.2577777777777778,
+  "reference_score": 1.0,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 0.6076388888888888
+   },
+   {
+    "transitions": 32768,
+    "score": 0.8090277777777777
+   },
+   {
+    "transitions": 49152,
+    "score": 0.8645833333333333
+   },
+   {
+    "transitions": 65536,
+    "score": 0.8402777777777778
+   }
+  ],
+  "wall_clock_training_seconds": 72.60089399776189,
+  "peak_memory_mb": 281.71875,
+  "checkpoint_sha256": "ef0148b9e1016cc5572acef2ab3333c8fa6f3442f54b95aac6e3af54101343dd",
+  "policy_sha256": "37d1937e6528b4143b7ae3a3242e61e79305d3af4d27e87c1b9d7b9dab1597a7",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D4_readout_leakage"
+ },
+ {
+  "name": "diag-pong-linear-t8-all-s1",
+  "phase": "diagnosis",
+  "config": {
+   "source": "fly",
+   "readout": "all",
+   "ticks": 8,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "linear",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.0003,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 65536,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 1,
+   "task": "pong"
+  },
+  "score": 0.8877777777777777,
+  "last_checkpoint_score": 0.8877777777777777,
+  "chosen_checkpoint_transitions": 65536,
+  "state_probe": {
+   "score": 0.5,
+   "action_counts": [
+    20,
+    14,
+    6
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.42409722222222224,
+  "policy_entropy": 0.8226225543484793,
+  "random_score": 0.2755555555555555,
+  "reference_score": 1.0,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 0.7777777777777777
+   },
+   {
+    "transitions": 32768,
+    "score": 0.8159722222222222
+   },
+   {
+    "transitions": 49152,
+    "score": 0.8576388888888888
+   },
+   {
+    "transitions": 65536,
+    "score": 0.8611111111111112
+   }
+  ],
+  "wall_clock_training_seconds": 72.84716954122996,
+  "peak_memory_mb": 275.125,
+  "checkpoint_sha256": "8fcf02cc1939400110e46a36706d8ea089e9ccafcd3c5c9d9f99fc25ca3ebeb7",
+  "policy_sha256": "8fa2339865a2b52d2e53c0d81afabd3a81b00927c9e57a282d934acdc71ea6e2",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D4_readout_leakage"
+ },
+ {
+  "name": "diag-pong-linear-t8-nonvisual-s0",
+  "phase": "diagnosis",
+  "config": {
+   "source": "fly",
+   "readout": "nonvisual",
+   "ticks": 8,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "linear",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.0003,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 65536,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 0,
+   "task": "pong"
+  },
+  "score": 0.7322222222222221,
+  "last_checkpoint_score": 0.7322222222222221,
+  "chosen_checkpoint_transitions": 65536,
+  "state_probe": {
+   "score": 0.525,
+   "action_counts": [
+    17,
+    19,
+    4
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.37305555555555553,
+  "policy_entropy": 0.9079927000330973,
+  "random_score": 0.2577777777777778,
+  "reference_score": 1.0,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 0.5555555555555556
+   },
+   {
+    "transitions": 32768,
+    "score": 0.642361111111111
+   },
+   {
+    "transitions": 49152,
+    "score": 0.7083333333333333
+   },
+   {
+    "transitions": 65536,
+    "score": 0.7291666666666666
+   }
+  ],
+  "wall_clock_training_seconds": 72.61936008231714,
+  "peak_memory_mb": 263.703125,
+  "checkpoint_sha256": "89da700bf1ffdcf76dc8a4e0e239996c377eeec60d9322b49023a53504043aff",
+  "policy_sha256": "4a175948931042d0c9e182d50a588a66973c75c604d1359f0550281a456128c1",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D4_readout_leakage"
+ },
+ {
+  "name": "diag-pong-linear-t8-nonvisual-s1",
+  "phase": "diagnosis",
+  "config": {
+   "source": "fly",
+   "readout": "nonvisual",
+   "ticks": 8,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "linear",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.0003,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 65536,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 1,
+   "task": "pong"
+  },
+  "score": 0.71,
+  "last_checkpoint_score": 0.71,
+  "chosen_checkpoint_transitions": 65536,
+  "state_probe": {
+   "score": 0.4,
+   "action_counts": [
+    14,
+    2,
+    24
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.3984027777777778,
+  "policy_entropy": 0.9074141644574617,
+  "random_score": 0.2755555555555555,
+  "reference_score": 1.0,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 0.5694444444444444
+   },
+   {
+    "transitions": 32768,
+    "score": 0.6041666666666667
+   },
+   {
+    "transitions": 49152,
+    "score": 0.6909722222222221
+   },
+   {
+    "transitions": 65536,
+    "score": 0.7013888888888888
+   }
+  ],
+  "wall_clock_training_seconds": 74.19943212985527,
+  "peak_memory_mb": 263.84375,
+  "checkpoint_sha256": "31e6865ee66d889168cf41f2c12505bb94a089b44f602250c2942073e6f9e2c6",
+  "policy_sha256": "13b69fdb352367a9d547807639df74dd891c146f4b7fae5cc0ddbf8dd2b76d95",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D4_readout_leakage"
+ },
+ {
+  "name": "diag-pong-linear-t8-visual-s0",
+  "phase": "diagnosis",
+  "config": {
+   "source": "fly",
+   "readout": "visual",
+   "ticks": 8,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "linear",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.0003,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 65536,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 0,
+   "task": "pong"
+  },
+  "score": 0.8677777777777778,
+  "last_checkpoint_score": 0.8777777777777778,
+  "chosen_checkpoint_transitions": 49152,
+  "state_probe": {
+   "score": 0.09999999999999998,
+   "action_counts": [
+    36,
+    2,
+    2
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.4545138888888889,
+  "policy_entropy": 0.8690385895129787,
+  "random_score": 0.2577777777777778,
+  "reference_score": 1.0,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 0.7569444444444444
+   },
+   {
+    "transitions": 32768,
+    "score": 0.8263888888888888
+   },
+   {
+    "transitions": 49152,
+    "score": 0.875
+   },
+   {
+    "transitions": 65536,
+    "score": 0.8645833333333333
+   }
+  ],
+  "wall_clock_training_seconds": 71.81045058608288,
+  "peak_memory_mb": 176.90625,
+  "checkpoint_sha256": "d4b28f671d00165b045b5c5cebed1714a869174618dc7e517c7a57def12f25c4",
+  "policy_sha256": "9454bca6ad8f0aaaae882bfb17642b83e4e3d18a82714d1abc52fcaf33a4e24d",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D4_readout_leakage"
+ },
+ {
+  "name": "diag-pong-linear-t8-visual-s1",
+  "phase": "diagnosis",
+  "config": {
+   "source": "fly",
+   "readout": "visual",
+   "ticks": 8,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "linear",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.0003,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 65536,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 1,
+   "task": "pong"
+  },
+  "score": 0.8688888888888888,
+  "last_checkpoint_score": 0.8688888888888888,
+  "chosen_checkpoint_transitions": 65536,
+  "state_probe": {
+   "score": 0.275,
+   "action_counts": [
+    29,
+    5,
+    6
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.4854861111111111,
+  "policy_entropy": 0.8748716310208594,
+  "random_score": 0.2755555555555555,
+  "reference_score": 1.0,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 0.7465277777777777
+   },
+   {
+    "transitions": 32768,
+    "score": 0.798611111111111
+   },
+   {
+    "transitions": 49152,
+    "score": 0.8576388888888888
+   },
+   {
+    "transitions": 65536,
+    "score": 0.8784722222222221
+   }
+  ],
+  "wall_clock_training_seconds": 71.83416595694143,
+  "peak_memory_mb": 178.78125,
+  "checkpoint_sha256": "a392492bc87174108e7ee551d20aae0c121ec9acdbe92fdae27efe8c9cca21ac",
+  "policy_sha256": "d54985975eaf03b68e7dfcc086a0f26c85d7c03540551ae74e37344e8e905e78",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D4_readout_leakage"
+ },
+ {
+  "name": "diag-sensory-catch-gru-s0",
+  "phase": "diagnosis",
+  "config": {
+   "source": "sensory",
+   "readout": "descending",
+   "ticks": 4,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "gru",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.0003,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 131072,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 0,
+   "task": "catch"
+  },
+  "score": 1.0,
+  "last_checkpoint_score": 1.0,
+  "chosen_checkpoint_transitions": 131072,
+  "state_probe": {
+   "score": 0.32499999999999996,
+   "action_counts": [
+    7,
+    27,
+    6
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.6179166666666667,
+  "policy_entropy": 0.5102243344554052,
+  "random_score": 0.20666666666666667,
+  "reference_score": 1.0,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 0.703125
+   },
+   {
+    "transitions": 32768,
+    "score": 1.0
+   },
+   {
+    "transitions": 49152,
+    "score": 1.0
+   },
+   {
+    "transitions": 65536,
+    "score": 1.0
+   },
+   {
+    "transitions": 81920,
+    "score": 1.0
+   },
+   {
+    "transitions": 98304,
+    "score": 1.0
+   },
+   {
+    "transitions": 114688,
+    "score": 1.0
+   },
+   {
+    "transitions": 131072,
+    "score": 1.0
+   }
+  ],
+  "wall_clock_training_seconds": 19.771153626206797,
+  "peak_memory_mb": 123.03125,
+  "checkpoint_sha256": "fab9178d97f570202cb03e73c45c60fa0f819bc4a91466fbe5f86def2bd719e2",
+  "policy_sha256": "42dd89bd0434c1acbd4e724f52b0e9054fa7d1fc40a7e28ca1da7257495e1fe0",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D1_sensory_ceiling"
+ },
+ {
+  "name": "diag-sensory-catch-gru-s1",
+  "phase": "diagnosis",
+  "config": {
+   "source": "sensory",
+   "readout": "descending",
+   "ticks": 4,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "gru",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.0003,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 131072,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 1,
+   "task": "catch"
+  },
+  "score": 1.0,
+  "last_checkpoint_score": 1.0,
+  "chosen_checkpoint_transitions": 131072,
+  "state_probe": {
+   "score": 0.375,
+   "action_counts": [
+    8,
+    25,
+    7
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.6179166666666667,
+  "policy_entropy": 0.491251069385493,
+  "random_score": 0.19166666666666668,
+  "reference_score": 1.0,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 0.671875
+   },
+   {
+    "transitions": 32768,
+    "score": 1.0
+   },
+   {
+    "transitions": 49152,
+    "score": 1.0
+   },
+   {
+    "transitions": 65536,
+    "score": 1.0
+   },
+   {
+    "transitions": 81920,
+    "score": 1.0
+   },
+   {
+    "transitions": 98304,
+    "score": 1.0
+   },
+   {
+    "transitions": 114688,
+    "score": 1.0
+   },
+   {
+    "transitions": 131072,
+    "score": 1.0
+   }
+  ],
+  "wall_clock_training_seconds": 19.75218262488488,
+  "peak_memory_mb": 122.625,
+  "checkpoint_sha256": "ad1d84123372819d7ccf032e86fc954bd021ca17059ea1dad5cf9e28984391fd",
+  "policy_sha256": "577b9fb52897b67c3981cbc6c75131fb650b33a5445e9eba07da743a2bbb8ddb",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D1_sensory_ceiling"
+ },
+ {
+  "name": "diag-sensory-catch-linear-s0",
+  "phase": "diagnosis",
+  "config": {
+   "source": "sensory",
+   "readout": "descending",
+   "ticks": 4,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "linear",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.0003,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 131072,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 0,
+   "task": "catch"
+  },
+  "score": 0.965,
+  "last_checkpoint_score": 0.93,
+  "chosen_checkpoint_transitions": 98304,
+  "state_probe": {
+   "score": 0.32499999999999996,
+   "action_counts": [
+    7,
+    27,
+    6
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.5891666666666666,
+  "policy_entropy": 0.9841436373537834,
+  "random_score": 0.20666666666666667,
+  "reference_score": 1.0,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 0.7708333333333333
+   },
+   {
+    "transitions": 32768,
+    "score": 0.8489583333333334
+   },
+   {
+    "transitions": 49152,
+    "score": 0.9322916666666667
+   },
+   {
+    "transitions": 65536,
+    "score": 0.8958333333333333
+   },
+   {
+    "transitions": 81920,
+    "score": 0.8958333333333333
+   },
+   {
+    "transitions": 98304,
+    "score": 0.9322916666666667
+   },
+   {
+    "transitions": 114688,
+    "score": 0.8958333333333333
+   },
+   {
+    "transitions": 131072,
+    "score": 0.8958333333333333
+   }
+  ],
+  "wall_clock_training_seconds": 4.951848168566357,
+  "peak_memory_mb": 62.984375,
+  "checkpoint_sha256": "8878d09870a07a92f965a2c8e7d1552a42b363074dd95ce56fe71bbfd6425202",
+  "policy_sha256": "1dd525a6e549222f607e3c4c74416deef233165a822a633f6b173576a3e38a4a",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D1_sensory_ceiling"
+ },
+ {
+  "name": "diag-sensory-catch-linear-s1",
+  "phase": "diagnosis",
+  "config": {
+   "source": "sensory",
+   "readout": "descending",
+   "ticks": 4,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "linear",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.0003,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 131072,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 1,
+   "task": "catch"
+  },
+  "score": 0.92,
+  "last_checkpoint_score": 0.92,
+  "chosen_checkpoint_transitions": 131072,
+  "state_probe": {
+   "score": 0.375,
+   "action_counts": [
+    8,
+    25,
+    7
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.5495833333333333,
+  "policy_entropy": 0.9637257991352854,
+  "random_score": 0.19166666666666668,
+  "reference_score": 1.0,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 0.84375
+   },
+   {
+    "transitions": 32768,
+    "score": 0.8958333333333333
+   },
+   {
+    "transitions": 49152,
+    "score": 0.8958333333333333
+   },
+   {
+    "transitions": 65536,
+    "score": 0.8958333333333333
+   },
+   {
+    "transitions": 81920,
+    "score": 0.8958333333333333
+   },
+   {
+    "transitions": 98304,
+    "score": 0.8958333333333333
+   },
+   {
+    "transitions": 114688,
+    "score": 0.8958333333333333
+   },
+   {
+    "transitions": 131072,
+    "score": 0.8958333333333333
+   }
+  ],
+  "wall_clock_training_seconds": 5.003807793371379,
+  "peak_memory_mb": 62.9375,
+  "checkpoint_sha256": "15a958c131b78de78ba03bca8e1335ac8e8bc0cb0060d2aab3bf53290271c47f",
+  "policy_sha256": "e3f4407e1783073cd9b281407cc1a48f4afbccc5572821eb81ea8ab0ff5eeb84",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D1_sensory_ceiling"
+ },
+ {
+  "name": "diag-sensory-dodge-gru-s0",
+  "phase": "diagnosis",
+  "config": {
+   "source": "sensory",
+   "readout": "descending",
+   "ticks": 4,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "gru",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.0003,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 131072,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 0,
+   "task": "dodge"
+  },
+  "score": 1.0,
+  "last_checkpoint_score": 1.0,
+  "chosen_checkpoint_transitions": 131072,
+  "state_probe": {
+   "score": 0.475,
+   "action_counts": [
+    21,
+    0,
+    19
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.5366666666666666,
+  "policy_entropy": 0.6590113637334865,
+  "random_score": 0.7999999999999998,
+  "reference_score": 1.0,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 0.8072916666666667
+   },
+   {
+    "transitions": 32768,
+    "score": 1.0
+   },
+   {
+    "transitions": 49152,
+    "score": 1.0
+   },
+   {
+    "transitions": 65536,
+    "score": 1.0
+   },
+   {
+    "transitions": 81920,
+    "score": 1.0
+   },
+   {
+    "transitions": 98304,
+    "score": 1.0
+   },
+   {
+    "transitions": 114688,
+    "score": 1.0
+   },
+   {
+    "transitions": 131072,
+    "score": 1.0
+   }
+  ],
+  "wall_clock_training_seconds": 19.579906079976354,
+  "peak_memory_mb": 122.09375,
+  "checkpoint_sha256": "5890d3bad9e41994fe36192c683d9f0b0c36b3d1c170a23d8d7d72eb9ae86e1c",
+  "policy_sha256": "52685e6760ff6480201a8173a1eda98615502e1c726ba4c992663f8fb2171772",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D1_sensory_ceiling"
+ },
+ {
+  "name": "diag-sensory-dodge-gru-s1",
+  "phase": "diagnosis",
+  "config": {
+   "source": "sensory",
+   "readout": "descending",
+   "ticks": 4,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "gru",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.0003,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 131072,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 1,
+   "task": "dodge"
+  },
+  "score": 0.9816666666666667,
+  "last_checkpoint_score": 0.9816666666666667,
+  "chosen_checkpoint_transitions": 131072,
+  "state_probe": {
+   "score": 0.0,
+   "action_counts": [
+    0,
+    40,
+    0
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.9570833333333333,
+  "policy_entropy": 0.6358794622594623,
+  "random_score": 0.7983333333333333,
+  "reference_score": 1.0,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 0.7395833333333334
+   },
+   {
+    "transitions": 32768,
+    "score": 0.7395833333333334
+   },
+   {
+    "transitions": 49152,
+    "score": 0.7395833333333334
+   },
+   {
+    "transitions": 65536,
+    "score": 0.9895833333333334
+   },
+   {
+    "transitions": 81920,
+    "score": 0.9895833333333334
+   },
+   {
+    "transitions": 98304,
+    "score": 0.9895833333333334
+   },
+   {
+    "transitions": 114688,
+    "score": 0.9895833333333334
+   },
+   {
+    "transitions": 131072,
+    "score": 0.9895833333333334
+   }
+  ],
+  "wall_clock_training_seconds": 19.61002454138361,
+  "peak_memory_mb": 123.984375,
+  "checkpoint_sha256": "a60802e43ec02d8bd6a97b17707bc844d395e8c4ee668c8fe591302b984aeb44",
+  "policy_sha256": "1f488a6d95d86f36b18e6f19a9573c16efccc218dca509051c22312a0e817f19",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D1_sensory_ceiling"
+ },
+ {
+  "name": "diag-sensory-dodge-linear-s0",
+  "phase": "diagnosis",
+  "config": {
+   "source": "sensory",
+   "readout": "descending",
+   "ticks": 4,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "linear",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.0003,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 131072,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 0,
+   "task": "dodge"
+  },
+  "score": 1.0,
+  "last_checkpoint_score": 1.0,
+  "chosen_checkpoint_transitions": 131072,
+  "state_probe": {
+   "score": 0.32499999999999996,
+   "action_counts": [
+    2,
+    11,
+    27
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.5016666666666667,
+  "policy_entropy": 1.0275329960326796,
+  "random_score": 0.7999999999999998,
+  "reference_score": 1.0,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 1.0
+   },
+   {
+    "transitions": 32768,
+    "score": 1.0
+   },
+   {
+    "transitions": 49152,
+    "score": 1.0
+   },
+   {
+    "transitions": 65536,
+    "score": 1.0
+   },
+   {
+    "transitions": 81920,
+    "score": 1.0
+   },
+   {
+    "transitions": 98304,
+    "score": 1.0
+   },
+   {
+    "transitions": 114688,
+    "score": 1.0
+   },
+   {
+    "transitions": 131072,
+    "score": 1.0
+   }
+  ],
+  "wall_clock_training_seconds": 4.983784086070955,
+  "peak_memory_mb": 62.890625,
+  "checkpoint_sha256": "af1ee383c71f7a7700fcd928adc8fb75cd43a21d0d22646e7e0275097905acb4",
+  "policy_sha256": "7630adc08f82be6c419efe7d1d2099c93ef1bd8a02ace1c97b524cad1f67f854",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D1_sensory_ceiling"
+ },
+ {
+  "name": "diag-sensory-dodge-linear-s1",
+  "phase": "diagnosis",
+  "config": {
+   "source": "sensory",
+   "readout": "descending",
+   "ticks": 4,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "linear",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.0003,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 131072,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 1,
+   "task": "dodge"
+  },
+  "score": 1.0,
+  "last_checkpoint_score": 1.0,
+  "chosen_checkpoint_transitions": 131072,
+  "state_probe": {
+   "score": 0.44999999999999996,
+   "action_counts": [
+    22,
+    11,
+    7
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.6083333333333333,
+  "policy_entropy": 1.0310038243455573,
+  "random_score": 0.7983333333333333,
+  "reference_score": 1.0,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 1.0
+   },
+   {
+    "transitions": 32768,
+    "score": 1.0
+   },
+   {
+    "transitions": 49152,
+    "score": 1.0
+   },
+   {
+    "transitions": 65536,
+    "score": 1.0
+   },
+   {
+    "transitions": 81920,
+    "score": 1.0
+   },
+   {
+    "transitions": 98304,
+    "score": 1.0
+   },
+   {
+    "transitions": 114688,
+    "score": 1.0
+   },
+   {
+    "transitions": 131072,
+    "score": 1.0
+   }
+  ],
+  "wall_clock_training_seconds": 4.901908123982139,
+  "peak_memory_mb": 63.078125,
+  "checkpoint_sha256": "0af0d5d567e626a1672b6332f3762c58a34d36ab97b5d4729791a4acf6f867fe",
+  "policy_sha256": "3cc1b977776095de637043793807c8cbffc065688ed436de134eefbcbb325940",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D1_sensory_ceiling"
+ },
+ {
+  "name": "diag-sensory-flappy-gru-s0",
+  "phase": "diagnosis",
+  "config": {
+   "source": "sensory",
+   "readout": "descending",
+   "ticks": 4,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "gru",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.0003,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 150000,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 0,
+   "task": "flappy"
+  },
+  "score": 1.0,
+  "last_checkpoint_score": 1.0,
+  "chosen_checkpoint_transitions": 151552,
+  "state_probe": {
+   "score": 0.125,
+   "action_counts": [
+    35,
+    5
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.9192028985507247,
+  "policy_entropy": 0.0969822400528149,
+  "random_score": 0.0,
+  "reference_score": 1.0,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 0.625
+   },
+   {
+    "transitions": 32768,
+    "score": 0.9583333333333333
+   },
+   {
+    "transitions": 49152,
+    "score": 1.0
+   },
+   {
+    "transitions": 65536,
+    "score": 1.0
+   },
+   {
+    "transitions": 81920,
+    "score": 1.0
+   },
+   {
+    "transitions": 98304,
+    "score": 1.0
+   },
+   {
+    "transitions": 114688,
+    "score": 1.0
+   },
+   {
+    "transitions": 131072,
+    "score": 1.0
+   },
+   {
+    "transitions": 147456,
+    "score": 1.0
+   },
+   {
+    "transitions": 151552,
+    "score": 1.0
+   }
+  ],
+  "wall_clock_training_seconds": 21.428107707120944,
+  "peak_memory_mb": 123.328125,
+  "checkpoint_sha256": "f80b5d8e80f2879791e381bdbcbe4ea12569120ce8184e624a5ca5fb74f48c33",
+  "policy_sha256": "34aadff3d6f8a531a7d085c51611404d30ed59f203be80f06abff76b7713d8e7",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D1_sensory_ceiling"
+ },
+ {
+  "name": "diag-sensory-flappy-gru-s1",
+  "phase": "diagnosis",
+  "config": {
+   "source": "sensory",
+   "readout": "descending",
+   "ticks": 4,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "gru",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.0003,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 150000,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 1,
+   "task": "flappy"
+  },
+  "score": 1.0,
+  "last_checkpoint_score": 1.0,
+  "chosen_checkpoint_transitions": 151552,
+  "state_probe": {
+   "score": 0.19999999999999996,
+   "action_counts": [
+    32,
+    8
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.915,
+  "policy_entropy": 0.1163618599851974,
+  "random_score": 0.0,
+  "reference_score": 1.0,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 0.6354166666666667
+   },
+   {
+    "transitions": 32768,
+    "score": 0.8489583333333333
+   },
+   {
+    "transitions": 49152,
+    "score": 0.9791666666666667
+   },
+   {
+    "transitions": 65536,
+    "score": 0.9947916666666667
+   },
+   {
+    "transitions": 81920,
+    "score": 0.9947916666666667
+   },
+   {
+    "transitions": 98304,
+    "score": 0.9947916666666667
+   },
+   {
+    "transitions": 114688,
+    "score": 1.0
+   },
+   {
+    "transitions": 131072,
+    "score": 1.0
+   },
+   {
+    "transitions": 147456,
+    "score": 1.0
+   },
+   {
+    "transitions": 151552,
+    "score": 1.0
+   }
+  ],
+  "wall_clock_training_seconds": 21.388557417027187,
+  "peak_memory_mb": 125.0625,
+  "checkpoint_sha256": "d5b12ed3a335e14ea2b8780e20099dd3bf865e41f8263da2e45b78822b88b354",
+  "policy_sha256": "23cc0f5c331c69111ef59fff7103c8493e72389bd19c973d039d6dc9a3e0d455",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D1_sensory_ceiling"
+ },
+ {
+  "name": "diag-sensory-flappy-linear-s0",
+  "phase": "diagnosis",
+  "config": {
+   "source": "sensory",
+   "readout": "descending",
+   "ticks": 4,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "linear",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.0003,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 150000,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 0,
+   "task": "flappy"
+  },
+  "score": 0.245,
+  "last_checkpoint_score": 0.21833333333333332,
+  "chosen_checkpoint_transitions": 49152,
+  "state_probe": {
+   "score": 0.0,
+   "action_counts": [
+    40,
+    0
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.9130434782608695,
+  "policy_entropy": 0.6267657509323495,
+  "random_score": 0.0,
+  "reference_score": 1.0,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 0.0
+   },
+   {
+    "transitions": 32768,
+    "score": 0.23958333333333331
+   },
+   {
+    "transitions": 49152,
+    "score": 0.28645833333333337
+   },
+   {
+    "transitions": 65536,
+    "score": 0.15104166666666666
+   },
+   {
+    "transitions": 81920,
+    "score": 0.15104166666666666
+   },
+   {
+    "transitions": 98304,
+    "score": 0.17708333333333331
+   },
+   {
+    "transitions": 114688,
+    "score": 0.16145833333333331
+   },
+   {
+    "transitions": 131072,
+    "score": 0.16666666666666669
+   },
+   {
+    "transitions": 147456,
+    "score": 0.18229166666666666
+   },
+   {
+    "transitions": 151552,
+    "score": 0.18229166666666666
+   }
+  ],
+  "wall_clock_training_seconds": 5.3668376674177125,
+  "peak_memory_mb": 65.359375,
+  "checkpoint_sha256": "a4ad40256a2c11becee5b52e1be8c5fe76cfa700761c4b26262551c7b3240d74",
+  "policy_sha256": "f00f12f33b95f54ca0b8694124c469b0f0f4b70f0837cac5486b647c1991d92c",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D1_sensory_ceiling"
+ },
+ {
+  "name": "diag-sensory-flappy-linear-s1",
+  "phase": "diagnosis",
+  "config": {
+   "source": "sensory",
+   "readout": "descending",
+   "ticks": 4,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "linear",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.0003,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 150000,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 1,
+   "task": "flappy"
+  },
+  "score": 0.2783333333333333,
+  "last_checkpoint_score": 0.13166666666666668,
+  "chosen_checkpoint_transitions": 16384,
+  "state_probe": {
+   "score": 0.050000000000000044,
+   "action_counts": [
+    38,
+    2
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.9130293159609121,
+  "policy_entropy": 0.6777750013870287,
+  "random_score": 0.0,
+  "reference_score": 1.0,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 0.32291666666666663
+   },
+   {
+    "transitions": 32768,
+    "score": 0.27604166666666663
+   },
+   {
+    "transitions": 49152,
+    "score": 0.26041666666666663
+   },
+   {
+    "transitions": 65536,
+    "score": 0.1875
+   },
+   {
+    "transitions": 81920,
+    "score": 0.17708333333333331
+   },
+   {
+    "transitions": 98304,
+    "score": 0.13541666666666666
+   },
+   {
+    "transitions": 114688,
+    "score": 0.11979166666666666
+   },
+   {
+    "transitions": 131072,
+    "score": 0.11979166666666666
+   },
+   {
+    "transitions": 147456,
+    "score": 0.11979166666666666
+   },
+   {
+    "transitions": 151552,
+    "score": 0.11979166666666666
+   }
+  ],
+  "wall_clock_training_seconds": 5.235971712798346,
+  "peak_memory_mb": 65.6875,
+  "checkpoint_sha256": "be09603eb97a1e123cd26eee5d5cdefd446809b34dd2d5416401122e384e3222",
+  "policy_sha256": "ec965d12adb187fb06427485ff37d425c44518f518e9f118e3c856f0dee41db5",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D1_sensory_ceiling"
+ },
+ {
+  "name": "diag-sensory-pong-gru-s0",
+  "phase": "diagnosis",
+  "config": {
+   "source": "sensory",
+   "readout": "descending",
+   "ticks": 4,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "gru",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.0003,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 131072,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 0,
+   "task": "pong"
+  },
+  "score": 1.0,
+  "last_checkpoint_score": 1.0,
+  "chosen_checkpoint_transitions": 131072,
+  "state_probe": {
+   "score": 0.44999999999999996,
+   "action_counts": [
+    13,
+    5,
+    22
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.46381944444444445,
+  "policy_entropy": 0.8497631697684055,
+  "random_score": 0.2577777777777778,
+  "reference_score": 1.0,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 0.6875
+   },
+   {
+    "transitions": 32768,
+    "score": 0.9270833333333333
+   },
+   {
+    "transitions": 49152,
+    "score": 0.9722222222222221
+   },
+   {
+    "transitions": 65536,
+    "score": 0.9895833333333334
+   },
+   {
+    "transitions": 81920,
+    "score": 1.0
+   },
+   {
+    "transitions": 98304,
+    "score": 1.0
+   },
+   {
+    "transitions": 114688,
+    "score": 1.0
+   },
+   {
+    "transitions": 131072,
+    "score": 1.0
+   }
+  ],
+  "wall_clock_training_seconds": 18.932937295001466,
+  "peak_memory_mb": 127.03125,
+  "checkpoint_sha256": "5c6bfd0e4eb5ced8b5eb5aa0eb4eab0ff69e4aea45be13379190ebe8c8b62867",
+  "policy_sha256": "d0da3d5639832fc31126ae0aed10ca12923cf62b5a31a390a0515972c987645f",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D1_sensory_ceiling"
+ },
+ {
+  "name": "diag-sensory-pong-gru-s1",
+  "phase": "diagnosis",
+  "config": {
+   "source": "sensory",
+   "readout": "descending",
+   "ticks": 4,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "gru",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.0003,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 131072,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 1,
+   "task": "pong"
+  },
+  "score": 1.0,
+  "last_checkpoint_score": 1.0,
+  "chosen_checkpoint_transitions": 131072,
+  "state_probe": {
+   "score": 0.375,
+   "action_counts": [
+    25,
+    0,
+    15
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.5229166666666667,
+  "policy_entropy": 0.775425845438624,
+  "random_score": 0.2755555555555555,
+  "reference_score": 1.0,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 0.704861111111111
+   },
+   {
+    "transitions": 32768,
+    "score": 0.923611111111111
+   },
+   {
+    "transitions": 49152,
+    "score": 0.9513888888888888
+   },
+   {
+    "transitions": 65536,
+    "score": 0.9930555555555556
+   },
+   {
+    "transitions": 81920,
+    "score": 0.9895833333333334
+   },
+   {
+    "transitions": 98304,
+    "score": 0.9895833333333333
+   },
+   {
+    "transitions": 114688,
+    "score": 1.0
+   },
+   {
+    "transitions": 131072,
+    "score": 1.0
+   }
+  ],
+  "wall_clock_training_seconds": 19.400724622013513,
+  "peak_memory_mb": 125.234375,
+  "checkpoint_sha256": "d3f69d3e856af2ff3e80a797676a2d5ec6aa4d444b3921008ac7f62df4261769",
+  "policy_sha256": "045b2676bac9a4bc048044ae0d979a0a1565385b150ba5178e8b2184040e6e98",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D1_sensory_ceiling"
+ },
+ {
+  "name": "diag-sensory-pong-linear-s0",
+  "phase": "diagnosis",
+  "config": {
+   "source": "sensory",
+   "readout": "descending",
+   "ticks": 4,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "linear",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.0003,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 131072,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 0,
+   "task": "pong"
+  },
+  "score": 0.7088888888888887,
+  "last_checkpoint_score": 0.681111111111111,
+  "chosen_checkpoint_transitions": 32768,
+  "state_probe": {
+   "score": 0.32499999999999996,
+   "action_counts": [
+    27,
+    0,
+    13
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.4582638888888889,
+  "policy_entropy": 1.082656338067635,
+  "random_score": 0.2577777777777778,
+  "reference_score": 1.0,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 0.44791666666666663
+   },
+   {
+    "transitions": 32768,
+    "score": 0.6979166666666666
+   },
+   {
+    "transitions": 49152,
+    "score": 0.6701388888888888
+   },
+   {
+    "transitions": 65536,
+    "score": 0.6840277777777777
+   },
+   {
+    "transitions": 81920,
+    "score": 0.6736111111111112
+   },
+   {
+    "transitions": 98304,
+    "score": 0.6527777777777777
+   },
+   {
+    "transitions": 114688,
+    "score": 0.6458333333333333
+   },
+   {
+    "transitions": 131072,
+    "score": 0.6319444444444444
+   }
+  ],
+  "wall_clock_training_seconds": 5.233998210227583,
+  "peak_memory_mb": 63.78125,
+  "checkpoint_sha256": "44512ed0fcc39200f35c161a977367a30ba2815ada4cad542edf40530b3e154e",
+  "policy_sha256": "4dcb2180f7af6a6c30082416c14435fb0c64786750dbcfd7a6fc95b32ff4c6d7",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D1_sensory_ceiling"
+ },
+ {
+  "name": "diag-sensory-pong-linear-s1",
+  "phase": "diagnosis",
+  "config": {
+   "source": "sensory",
+   "readout": "descending",
+   "ticks": 4,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "linear",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.0003,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 131072,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 1,
+   "task": "pong"
+  },
+  "score": 0.6977777777777778,
+  "last_checkpoint_score": 0.65,
+  "chosen_checkpoint_transitions": 49152,
+  "state_probe": {
+   "score": 0.32499999999999996,
+   "action_counts": [
+    27,
+    0,
+    13
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.5207638888888889,
+  "policy_entropy": 1.0634676248820714,
+  "random_score": 0.2755555555555555,
+  "reference_score": 1.0,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 0.6076388888888888
+   },
+   {
+    "transitions": 32768,
+    "score": 0.6493055555555556
+   },
+   {
+    "transitions": 49152,
+    "score": 0.71875
+   },
+   {
+    "transitions": 65536,
+    "score": 0.6770833333333333
+   },
+   {
+    "transitions": 81920,
+    "score": 0.6736111111111112
+   },
+   {
+    "transitions": 98304,
+    "score": 0.6666666666666667
+   },
+   {
+    "transitions": 114688,
+    "score": 0.6597222222222222
+   },
+   {
+    "transitions": 131072,
+    "score": 0.6631944444444444
+   }
+  ],
+  "wall_clock_training_seconds": 5.40017224609619,
+  "peak_memory_mb": 63.1875,
+  "checkpoint_sha256": "2f345488cbca9c6ed303b79ff44df301275306595271d8cf51dff80419556f5a",
+  "policy_sha256": "746ef9e9fbff87ac0126978eb3d29988da1112fc1f3f28a94ffe17d03d9c740e",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D1_sensory_ceiling"
+ },
+ {
+  "name": "diag-sensory-snake-gru-s0",
+  "phase": "diagnosis",
+  "config": {
+   "source": "sensory",
+   "readout": "descending",
+   "ticks": 4,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "gru",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.0003,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 131072,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 0,
+   "task": "snake"
+  },
+  "score": 12.55,
+  "last_checkpoint_score": 12.6,
+  "chosen_checkpoint_transitions": 114688,
+  "state_probe": {
+   "score": 0.675,
+   "action_counts": [
+    9,
+    11,
+    7,
+    13
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.257829373650108,
+  "policy_entropy": 0.39481242617093903,
+  "random_score": 0.15,
+  "reference_score": 17.21,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 8.6875
+   },
+   {
+    "transitions": 32768,
+    "score": 10.4375
+   },
+   {
+    "transitions": 49152,
+    "score": 11.3125
+   },
+   {
+    "transitions": 65536,
+    "score": 11.75
+   },
+   {
+    "transitions": 81920,
+    "score": 11.71875
+   },
+   {
+    "transitions": 98304,
+    "score": 11.96875
+   },
+   {
+    "transitions": 114688,
+    "score": 12.4375
+   },
+   {
+    "transitions": 131072,
+    "score": 12.40625
+   }
+  ],
+  "wall_clock_training_seconds": 20.175119459221605,
+  "peak_memory_mb": 124.109375,
+  "checkpoint_sha256": "1cf76d8fc2c3625c4cfb1f0bb2c0a8ef7b0c63396c9a9add50b86093fb61916a",
+  "policy_sha256": "888e92c2059ca9fa5b7e28aa35689f7b699a3a34b5423db8e745d733eeb742ac",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D1_sensory_ceiling"
+ },
+ {
+  "name": "diag-sensory-snake-gru-s1",
+  "phase": "diagnosis",
+  "config": {
+   "source": "sensory",
+   "readout": "descending",
+   "ticks": 4,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "gru",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.0003,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 131072,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 1,
+   "task": "snake"
+  },
+  "score": 11.42,
+  "last_checkpoint_score": 12.12,
+  "chosen_checkpoint_transitions": 81920,
+  "state_probe": {
+   "score": 0.675,
+   "action_counts": [
+    10,
+    8,
+    9,
+    13
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.2544959951639716,
+  "policy_entropy": 0.4737848418846746,
+  "random_score": 0.16,
+  "reference_score": 17.51,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 8.96875
+   },
+   {
+    "transitions": 32768,
+    "score": 10.71875
+   },
+   {
+    "transitions": 49152,
+    "score": 11.6875
+   },
+   {
+    "transitions": 65536,
+    "score": 12.15625
+   },
+   {
+    "transitions": 81920,
+    "score": 12.78125
+   },
+   {
+    "transitions": 98304,
+    "score": 10.75
+   },
+   {
+    "transitions": 114688,
+    "score": 11.875
+   },
+   {
+    "transitions": 131072,
+    "score": 12.0
+   }
+  ],
+  "wall_clock_training_seconds": 20.31023466179613,
+  "peak_memory_mb": 126.359375,
+  "checkpoint_sha256": "7ec3cdb5dcaeac7f8b5b872a822e7997e09a9d90fe604d59dbdd2224fd5ccd03",
+  "policy_sha256": "87641d9f5fc916361dbc28ea80400a4a3b8ad78366f73c7797c719fa341b5705",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D1_sensory_ceiling"
+ },
+ {
+  "name": "diag-sensory-snake-linear-s0",
+  "phase": "diagnosis",
+  "config": {
+   "source": "sensory",
+   "readout": "descending",
+   "ticks": 4,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "linear",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.0003,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 131072,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 0,
+   "task": "snake"
+  },
+  "score": 7.07,
+  "last_checkpoint_score": 7.69,
+  "chosen_checkpoint_transitions": 65536,
+  "state_probe": {
+   "score": 0.6,
+   "action_counts": [
+    16,
+    13,
+    8,
+    3
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.27048528241845665,
+  "policy_entropy": 1.2774793283870374,
+  "random_score": 0.15,
+  "reference_score": 17.21,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 0.53125
+   },
+   {
+    "transitions": 32768,
+    "score": 3.4375
+   },
+   {
+    "transitions": 49152,
+    "score": 6.1875
+   },
+   {
+    "transitions": 65536,
+    "score": 9.3125
+   },
+   {
+    "transitions": 81920,
+    "score": 8.375
+   },
+   {
+    "transitions": 98304,
+    "score": 8.53125
+   },
+   {
+    "transitions": 114688,
+    "score": 9.03125
+   },
+   {
+    "transitions": 131072,
+    "score": 8.84375
+   }
+  ],
+  "wall_clock_training_seconds": 5.172132623149082,
+  "peak_memory_mb": 66.765625,
+  "checkpoint_sha256": "737b2db73aa3b265fd956d9637fd6e9788bd101192381e6fbcd6d60fe77b1604",
+  "policy_sha256": "b04743efd1b859da597d1e34ae400ff3fa95976acd4c686ff65f69c744c5c8d7",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D1_sensory_ceiling"
+ },
+ {
+  "name": "diag-sensory-snake-linear-s1",
+  "phase": "diagnosis",
+  "config": {
+   "source": "sensory",
+   "readout": "descending",
+   "ticks": 4,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "linear",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.0003,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 131072,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 1,
+   "task": "snake"
+  },
+  "score": 9.8,
+  "last_checkpoint_score": 9.8,
+  "chosen_checkpoint_transitions": 131072,
+  "state_probe": {
+   "score": 0.65,
+   "action_counts": [
+    14,
+    6,
+    11,
+    9
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.2652284263959391,
+  "policy_entropy": 1.1263555114965924,
+  "random_score": 0.16,
+  "reference_score": 17.51,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 1.6875
+   },
+   {
+    "transitions": 32768,
+    "score": 4.09375
+   },
+   {
+    "transitions": 49152,
+    "score": 6.5625
+   },
+   {
+    "transitions": 65536,
+    "score": 8.1875
+   },
+   {
+    "transitions": 81920,
+    "score": 9.40625
+   },
+   {
+    "transitions": 98304,
+    "score": 9.75
+   },
+   {
+    "transitions": 114688,
+    "score": 10.75
+   },
+   {
+    "transitions": 131072,
+    "score": 10.75
+   }
+  ],
+  "wall_clock_training_seconds": 5.136672664026264,
+  "peak_memory_mb": 65.859375,
+  "checkpoint_sha256": "e579f2bebad934cafa49df8543d68d1e11a7c11d1d46ec852a45341853766920",
+  "policy_sha256": "38578ab2d532755d7511bafb325018a2068e2376cf33a1eb6c0ec46b1a228bad",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D1_sensory_ceiling"
+ },
+ {
+  "name": "diag-snake-gru-t16-desc-lr1e-3-s0",
+  "phase": "diagnosis",
+  "config": {
+   "source": "fly",
+   "readout": "descending",
+   "ticks": 16,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "gru",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.001,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 131072,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 0,
+   "task": "snake"
+  },
+  "score": 7.13,
+  "last_checkpoint_score": 9.09,
+  "chosen_checkpoint_transitions": 81920,
+  "state_probe": {
+   "score": 0.725,
+   "action_counts": [
+    8,
+    11,
+    11,
+    10
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.26514740459395914,
+  "policy_entropy": 0.47897016824255045,
+  "random_score": 0.15,
+  "reference_score": 17.21,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 2.78125
+   },
+   {
+    "transitions": 32768,
+    "score": 4.59375
+   },
+   {
+    "transitions": 49152,
+    "score": 5.96875
+   },
+   {
+    "transitions": 65536,
+    "score": 8.1875
+   },
+   {
+    "transitions": 81920,
+    "score": 8.875
+   },
+   {
+    "transitions": 98304,
+    "score": 7.125
+   },
+   {
+    "transitions": 114688,
+    "score": 8.625
+   },
+   {
+    "transitions": 131072,
+    "score": 8.46875
+   }
+  ],
+  "wall_clock_training_seconds": 269.97888824599795,
+  "peak_memory_mb": 332.578125,
+  "checkpoint_sha256": "65fd876d352b5f100249d88ab4200e5ca210b08329b1d5505ccb94a02a078ddb",
+  "policy_sha256": "5526c96f2bc113f2b30eb5571a2c2542de4e4426ebc942c16c36df490a6f0f26",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D3_step_size_t16"
+ },
+ {
+  "name": "diag-snake-gru-t16-desc-lr1e-3-s1",
+  "phase": "diagnosis",
+  "config": {
+   "source": "fly",
+   "readout": "descending",
+   "ticks": 16,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "gru",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.001,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 131072,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 1,
+   "task": "snake"
+  },
+  "score": 8.29,
+  "last_checkpoint_score": 8.29,
+  "chosen_checkpoint_transitions": 131072,
+  "state_probe": {
+   "score": 0.675,
+   "action_counts": [
+    13,
+    10,
+    9,
+    8
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.26699759326113115,
+  "policy_entropy": 0.4359231637622405,
+  "random_score": 0.16,
+  "reference_score": 17.51,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 2.34375
+   },
+   {
+    "transitions": 32768,
+    "score": 4.78125
+   },
+   {
+    "transitions": 49152,
+    "score": 6.25
+   },
+   {
+    "transitions": 65536,
+    "score": 6.40625
+   },
+   {
+    "transitions": 81920,
+    "score": 6.34375
+   },
+   {
+    "transitions": 98304,
+    "score": 7.34375
+   },
+   {
+    "transitions": 114688,
+    "score": 7.59375
+   },
+   {
+    "transitions": 131072,
+    "score": 10.09375
+   }
+  ],
+  "wall_clock_training_seconds": 270.37106892018346,
+  "peak_memory_mb": 335.96875,
+  "checkpoint_sha256": "3e35ee984dc6d3229000ab04934ba8a77f32827d3bf0a1dc71eb0cc036be6af9",
+  "policy_sha256": "4fe61c9687d5a05f729f964679f2dc45082224bb75d0c774aa326884cf7ceb43",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D3_step_size_t16"
+ },
+ {
+  "name": "diag-snake-gru-t16-desc-lr3e-4-s0",
+  "phase": "diagnosis",
+  "config": {
+   "source": "fly",
+   "readout": "descending",
+   "ticks": 16,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "gru",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.0003,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 131072,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 0,
+   "task": "snake"
+  },
+  "score": 8.62,
+  "last_checkpoint_score": 8.62,
+  "chosen_checkpoint_transitions": 131072,
+  "state_probe": {
+   "score": 0.7,
+   "action_counts": [
+    12,
+    10,
+    10,
+    8
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.25630252100840334,
+  "policy_entropy": 0.603368357270421,
+  "random_score": 0.15,
+  "reference_score": 17.21,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 0.375
+   },
+   {
+    "transitions": 32768,
+    "score": 2.53125
+   },
+   {
+    "transitions": 49152,
+    "score": 7.40625
+   },
+   {
+    "transitions": 65536,
+    "score": 8.5
+   },
+   {
+    "transitions": 81920,
+    "score": 8.21875
+   },
+   {
+    "transitions": 98304,
+    "score": 9.25
+   },
+   {
+    "transitions": 114688,
+    "score": 9.375
+   },
+   {
+    "transitions": 131072,
+    "score": 9.46875
+   }
+  ],
+  "wall_clock_training_seconds": 270.85475971072447,
+  "peak_memory_mb": 332.484375,
+  "checkpoint_sha256": "16bd3116b7a4c79f4fafe6e51e7bc5994ffc496f102c988899235506453cf94e",
+  "policy_sha256": "4b2b6297df23770beacbb61014d360a0e75b5e2f272835a3c54eced0f7d42d6c",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D3_step_size_t16"
+ },
+ {
+  "name": "diag-snake-gru-t16-desc-lr3e-4-s1",
+  "phase": "diagnosis",
+  "config": {
+   "source": "fly",
+   "readout": "descending",
+   "ticks": 16,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "gru",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.0003,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 131072,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 1,
+   "task": "snake"
+  },
+  "score": 9.69,
+  "last_checkpoint_score": 9.83,
+  "chosen_checkpoint_transitions": 114688,
+  "state_probe": {
+   "score": 0.7,
+   "action_counts": [
+    9,
+    8,
+    11,
+    12
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.2518143228810078,
+  "policy_entropy": 0.6203669214704091,
+  "random_score": 0.16,
+  "reference_score": 17.51,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 0.46875
+   },
+   {
+    "transitions": 32768,
+    "score": 2.28125
+   },
+   {
+    "transitions": 49152,
+    "score": 7.0625
+   },
+   {
+    "transitions": 65536,
+    "score": 6.40625
+   },
+   {
+    "transitions": 81920,
+    "score": 8.0625
+   },
+   {
+    "transitions": 98304,
+    "score": 8.46875
+   },
+   {
+    "transitions": 114688,
+    "score": 9.3125
+   },
+   {
+    "transitions": 131072,
+    "score": 8.96875
+   }
+  ],
+  "wall_clock_training_seconds": 269.91563687782036,
+  "peak_memory_mb": 330.375,
+  "checkpoint_sha256": "1626ee98c98e6d19f42930cfaf67025d291223cb2def1ed8d03d29f64290726b",
+  "policy_sha256": "07cc4d31010ab681148ed3774d7254750e0269cbe2fa94da34d5323dcb24602d",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D3_step_size_t16"
+ },
+ {
+  "name": "diag-snake-linear-t8-all-s0",
+  "phase": "diagnosis",
+  "config": {
+   "source": "fly",
+   "readout": "all",
+   "ticks": 8,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "linear",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.0003,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 65536,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 0,
+   "task": "snake"
+  },
+  "score": 11.6,
+  "last_checkpoint_score": 11.6,
+  "chosen_checkpoint_transitions": 65536,
+  "state_probe": {
+   "score": 0.675,
+   "action_counts": [
+    13,
+    11,
+    8,
+    8
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.2566613855681982,
+  "policy_entropy": 0.6058519677994322,
+  "random_score": 0.15,
+  "reference_score": 17.21,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 5.40625
+   },
+   {
+    "transitions": 32768,
+    "score": 10.34375
+   },
+   {
+    "transitions": 49152,
+    "score": 11.875
+   },
+   {
+    "transitions": 65536,
+    "score": 12.0
+   }
+  ],
+  "wall_clock_training_seconds": 77.04874216578901,
+  "peak_memory_mb": 263.203125,
+  "checkpoint_sha256": "f8b76634b48a287438f0b35d7d52f1aba9d918cb5b37016640497102e5688248",
+  "policy_sha256": "44c17847e887b81129ea0281740317485e26eeb5379766b9b9251e12ee28f6ed",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D4_readout_leakage"
+ },
+ {
+  "name": "diag-snake-linear-t8-all-s1",
+  "phase": "diagnosis",
+  "config": {
+   "source": "fly",
+   "readout": "all",
+   "ticks": 8,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "linear",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.0003,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 65536,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 1,
+   "task": "snake"
+  },
+  "score": 10.74,
+  "last_checkpoint_score": 10.74,
+  "chosen_checkpoint_transitions": 65536,
+  "state_probe": {
+   "score": 0.6,
+   "action_counts": [
+    6,
+    6,
+    12,
+    16
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.25475703727001103,
+  "policy_entropy": 0.6115538569531899,
+  "random_score": 0.16,
+  "reference_score": 17.51,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 5.0
+   },
+   {
+    "transitions": 32768,
+    "score": 11.90625
+   },
+   {
+    "transitions": 49152,
+    "score": 11.25
+   },
+   {
+    "transitions": 65536,
+    "score": 11.90625
+   }
+  ],
+  "wall_clock_training_seconds": 77.05492975207744,
+  "peak_memory_mb": 263.359375,
+  "checkpoint_sha256": "ec7770845dd031657a6841813dad7f26a7e9737df5e54e64b231c8450a1b2f54",
+  "policy_sha256": "49f5882f87dd4f0a352b1a82514dc6ca9adb443648b29d5afc4e65ef88a20fec",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D4_readout_leakage"
+ },
+ {
+  "name": "diag-snake-linear-t8-nonvisual-s0",
+  "phase": "diagnosis",
+  "config": {
+   "source": "fly",
+   "readout": "nonvisual",
+   "ticks": 8,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "linear",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.0003,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 65536,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 0,
+   "task": "snake"
+  },
+  "score": 4.11,
+  "last_checkpoint_score": 4.11,
+  "chosen_checkpoint_transitions": 65536,
+  "state_probe": {
+   "score": 0.5,
+   "action_counts": [
+    17,
+    20,
+    3,
+    0
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.27555555555555555,
+  "policy_entropy": 1.0358007747824187,
+  "random_score": 0.15,
+  "reference_score": 17.21,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 1.125
+   },
+   {
+    "transitions": 32768,
+    "score": 2.15625
+   },
+   {
+    "transitions": 49152,
+    "score": 3.3125
+   },
+   {
+    "transitions": 65536,
+    "score": 3.4375
+   }
+  ],
+  "wall_clock_training_seconds": 76.0394337917678,
+  "peak_memory_mb": 256.3125,
+  "checkpoint_sha256": "ae4e1dd0792ddc72b7ddd6a2435bacf901d67faa3573f23fbd6b8adb6ecd12e9",
+  "policy_sha256": "80df4f73e0acf4ca327d3ec50d4898a8ab3d5c5549b05c1a9ff38e97013e7b17",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D4_readout_leakage"
+ },
+ {
+  "name": "diag-snake-linear-t8-nonvisual-s1",
+  "phase": "diagnosis",
+  "config": {
+   "source": "fly",
+   "readout": "nonvisual",
+   "ticks": 8,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "linear",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.0003,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 65536,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 1,
+   "task": "snake"
+  },
+  "score": 3.5,
+  "last_checkpoint_score": 3.73,
+  "chosen_checkpoint_transitions": 49152,
+  "state_probe": {
+   "score": 0.525,
+   "action_counts": [
+    19,
+    7,
+    3,
+    11
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.27881970492623154,
+  "policy_entropy": 1.074383313907305,
+  "random_score": 0.16,
+  "reference_score": 17.51,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 1.03125
+   },
+   {
+    "transitions": 32768,
+    "score": 2.65625
+   },
+   {
+    "transitions": 49152,
+    "score": 3.6875
+   },
+   {
+    "transitions": 65536,
+    "score": 3.34375
+   }
+  ],
+  "wall_clock_training_seconds": 76.6661634570919,
+  "peak_memory_mb": 255.203125,
+  "checkpoint_sha256": "db8bb0dd80fb9623db86e15fc25edefb5c2b7f05fadc6c7ff20b547bdd2c996a",
+  "policy_sha256": "21225b61dfe22492284bb81db0e75b750c6c200cebeba46f54d3b2286588fe1f",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D4_readout_leakage"
+ },
+ {
+  "name": "diag-snake-linear-t8-visual-s0",
+  "phase": "diagnosis",
+  "config": {
+   "source": "fly",
+   "readout": "visual",
+   "ticks": 8,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "linear",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.0003,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 65536,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 0,
+   "task": "snake"
+  },
+  "score": 13.43,
+  "last_checkpoint_score": 13.43,
+  "chosen_checkpoint_transitions": 65536,
+  "state_probe": {
+   "score": 0.65,
+   "action_counts": [
+    14,
+    10,
+    8,
+    8
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.2550476898302985,
+  "policy_entropy": 0.5986661041678119,
+  "random_score": 0.15,
+  "reference_score": 17.21,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 11.40625
+   },
+   {
+    "transitions": 32768,
+    "score": 11.71875
+   },
+   {
+    "transitions": 49152,
+    "score": 12.3125
+   },
+   {
+    "transitions": 65536,
+    "score": 13.375
+   }
+  ],
+  "wall_clock_training_seconds": 67.94184675219003,
+  "peak_memory_mb": 174.140625,
+  "checkpoint_sha256": "a94a90a20a5c93f51923d79eb840bfe92ea671f41cb51e0f41896c347955207b",
+  "policy_sha256": "cbc5bf10f3cfb072483f3327ca95478371af41c71f11d0489a1779e8303b60a8",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D4_readout_leakage"
+ },
+ {
+  "name": "diag-snake-linear-t8-visual-s1",
+  "phase": "diagnosis",
+  "config": {
+   "source": "fly",
+   "readout": "visual",
+   "ticks": 8,
+   "stack": 1,
+   "std_floor": 0.02,
+   "arch": "linear",
+   "hidden": 128,
+   "core": 64,
+   "gamma": 0.99,
+   "lam": 0.95,
+   "lr": 0.0003,
+   "lr_schedule": "linear",
+   "lr_floor": 0.05,
+   "clip": 0.2,
+   "ent": 0.003,
+   "ent_final": null,
+   "vf": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "envs": 16,
+   "steps": 128,
+   "minibatches": 8,
+   "chunk": 16,
+   "transitions": 65536,
+   "curriculum": [
+    [
+     "target",
+     1.0
+    ]
+   ],
+   "imitation": 0,
+   "eval_every": 16384,
+   "select_episodes": 32,
+   "checkpoint_selection": "best",
+   "train_purpose": "diagnosis_training",
+   "seed": 1,
+   "task": "snake"
+  },
+  "score": 14.61,
+  "last_checkpoint_score": 14.24,
+  "chosen_checkpoint_transitions": 49152,
+  "state_probe": {
+   "score": 0.7,
+   "action_counts": [
+    11,
+    6,
+    11,
+    12
+   ],
+   "states": 40,
+   "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "dominant_action_fraction": 0.25602926048691277,
+  "policy_entropy": 0.6273566207123701,
+  "random_score": 0.16,
+  "reference_score": 17.51,
+  "training_curve": [
+   {
+    "transitions": 16384,
+    "score": 9.875
+   },
+   {
+    "transitions": 32768,
+    "score": 12.65625
+   },
+   {
+    "transitions": 49152,
+    "score": 14.3125
+   },
+   {
+    "transitions": 65536,
+    "score": 13.875
+   }
+  ],
+  "wall_clock_training_seconds": 67.787459044368,
+  "peak_memory_mb": 170.03125,
+  "checkpoint_sha256": "5e11939ec8829b181075ffe8bec0df6b981eb8a6b8ae0af3008bb6eafef37306",
+  "policy_sha256": "23eff8070840186f9b155d2f26319475e1bb27cc750b94fa4bdc3763ba1b61c6",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "group": "D4_readout_leakage"
+ }
+]

@@ -1,0 +1,176 @@
+{
+  "task": "flappy",
+  "seed_purpose": "v1.5 diagnosis",
+  "controllers": {
+    "reference": {
+      "episodes": 100,
+      "death_types": {
+        "survived": 100
+      },
+      "death_locations": {},
+      "pipes_passed_distribution": {
+        "6": 100
+      },
+      "score": 1.0
+    },
+    "random": {
+      "episodes": 100,
+      "death_types": {
+        "boundary": 99,
+        "pipe": 1
+      },
+      "death_locations": {
+        "top": 99,
+        "pipe_above_gap": 1
+      },
+      "pipes_passed_distribution": {
+        "0": 100
+      },
+      "score": 0.0
+    },
+    "v14:flappy-longer-gru": [
+      {
+        "episodes": 100,
+        "death_types": {
+          "pipe": 89,
+          "boundary": 5,
+          "survived": 6
+        },
+        "death_locations": {
+          "pipe_below_gap": 50,
+          "pipe_above_gap": 39,
+          "bottom": 4,
+          "top": 1
+        },
+        "pipes_passed_distribution": {
+          "0": 41,
+          "1": 20,
+          "3": 8,
+          "2": 13,
+          "4": 7,
+          "5": 5,
+          "6": 6
+        },
+        "score": 0.265
+      },
+      {
+        "episodes": 100,
+        "death_types": {
+          "pipe": 86,
+          "survived": 7,
+          "boundary": 7
+        },
+        "death_locations": {
+          "pipe_below_gap": 39,
+          "pipe_above_gap": 47,
+          "bottom": 6,
+          "top": 1
+        },
+        "pipes_passed_distribution": {
+          "1": 31,
+          "2": 16,
+          "0": 26,
+          "6": 7,
+          "3": 8,
+          "5": 8,
+          "4": 4
+        },
+        "score": 0.3083333333333333
+      },
+      {
+        "episodes": 100,
+        "death_types": {
+          "pipe": 87,
+          "boundary": 7,
+          "survived": 6
+        },
+        "death_locations": {
+          "pipe_below_gap": 49,
+          "bottom": 7,
+          "pipe_above_gap": 38
+        },
+        "pipes_passed_distribution": {
+          "0": 36,
+          "2": 18,
+          "3": 13,
+          "1": 23,
+          "4": 2,
+          "6": 6,
+          "5": 2
+        },
+        "score": 0.25333333333333335
+      }
+    ],
+    "v14:flappy-primary-gru": [
+      {
+        "episodes": 100,
+        "death_types": {
+          "survived": 6,
+          "boundary": 16,
+          "pipe": 78
+        },
+        "death_locations": {
+          "bottom": 16,
+          "pipe_below_gap": 63,
+          "pipe_above_gap": 15
+        },
+        "pipes_passed_distribution": {
+          "6": 6,
+          "1": 29,
+          "0": 42,
+          "4": 5,
+          "2": 7,
+          "5": 4,
+          "3": 7
+        },
+        "score": 0.23333333333333336
+      },
+      {
+        "episodes": 100,
+        "death_types": {
+          "pipe": 79,
+          "boundary": 18,
+          "survived": 3
+        },
+        "death_locations": {
+          "pipe_below_gap": 58,
+          "pipe_above_gap": 21,
+          "bottom": 18
+        },
+        "pipes_passed_distribution": {
+          "2": 9,
+          "3": 11,
+          "1": 35,
+          "0": 38,
+          "4": 3,
+          "6": 3,
+          "5": 1
+        },
+        "score": 0.20166666666666672
+      },
+      {
+        "episodes": 100,
+        "death_types": {
+          "pipe": 72,
+          "boundary": 22,
+          "survived": 6
+        },
+        "death_locations": {
+          "pipe_below_gap": 54,
+          "bottom": 22,
+          "pipe_above_gap": 18
+        },
+        "pipes_passed_distribution": {
+          "0": 41,
+          "2": 11,
+          "1": 32,
+          "6": 6,
+          "3": 7,
+          "4": 2,
+          "5": 1
+        },
+        "score": 0.20666666666666664
+      }
+    ]
+  }
+}

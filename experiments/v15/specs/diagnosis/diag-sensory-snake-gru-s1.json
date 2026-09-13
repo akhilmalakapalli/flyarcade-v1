@@ -1,0 +1,14 @@
+{
+  "name": "diag-sensory-snake-gru-s1",
+  "phase": "diagnosis",
+  "group": "D1_sensory_ceiling",
+  "code_sha256": "199be6c0f684a8f14d929be97bd935f4b7512d870cd2c78bb8f6dbfdf4301275",
+  "config": {
+    "train_purpose": "diagnosis_training",
+    "task": "snake",
+    "source": "sensory",
+    "arch": "gru",
+    "transitions": 131072,
+    "seed": 1
+  }
+}

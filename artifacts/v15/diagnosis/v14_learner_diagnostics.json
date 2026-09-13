@@ -1,0 +1,1211 @@
+{
+  "catch-primary-gru": {
+    "ticks": 4.0,
+    "transitions": 65536.0,
+    "dev_score": 0.2125,
+    "state_probe": 0.00833333333333334,
+    "greedy_dominant_action": 0.9642361111111111,
+    "entropy_first_quarter": 1.0686362014922364,
+    "entropy_last_quarter": 0.9433180317090771,
+    "value_loss_first_quarter": 0.7989660309656266,
+    "value_loss_last_quarter": 0.9104338901454591,
+    "clip_fraction_last_quarter": 0.0,
+    "approx_kl_last_quarter": 4.547977109119995e-05,
+    "grad_norm_first_quarter": 1.0284321771568858,
+    "grad_norm_last_quarter": 1.4268475627700241,
+    "train_success_last_quarter": 0.20097222222222225,
+    "rollout_dominant_action_last_quarter": 0.5523885091145834,
+    "curve_peak": 0.1875,
+    "curve_final": 0.13194444444444445,
+    "late_drop": 0.055555555555555546,
+    "wall_seconds": 16.618651137823083,
+    "transitions_per_second": 3943.6372672255716,
+    "curves": [
+      [
+        0.125,
+        0.125,
+        0.125,
+        0.125
+      ],
+      [
+        0.14583333333333331,
+        0.14583333333333331,
+        0.14583333333333331,
+        0.14583333333333331
+      ],
+      [
+        0.15625,
+        0.29166666666666663,
+        0.125,
+        0.125
+      ]
+    ],
+    "still_rising_seeds": 2
+  },
+  "catch-primary-linear": {
+    "ticks": 4.0,
+    "transitions": 65536.0,
+    "dev_score": 0.7277777777777777,
+    "state_probe": 0.375,
+    "greedy_dominant_action": 0.4368055555555555,
+    "entropy_first_quarter": 1.0612220938568655,
+    "entropy_last_quarter": 0.8519705061557353,
+    "value_loss_first_quarter": 1.699473848525633,
+    "value_loss_last_quarter": 0.9989018441274181,
+    "clip_fraction_last_quarter": 0.0013224283854166667,
+    "approx_kl_last_quarter": 0.00016347943129058998,
+    "grad_norm_first_quarter": 2.682520461410649,
+    "grad_norm_last_quarter": 2.107787438743759,
+    "train_success_last_quarter": 0.4288194444444445,
+    "rollout_dominant_action_last_quarter": 0.3437703450520833,
+    "curve_peak": 0.795138888888889,
+    "curve_final": 0.7916666666666666,
+    "late_drop": 0.0034722222222222467,
+    "wall_seconds": 13.161976417138552,
+    "transitions_per_second": 4979.200123052855,
+    "curves": [
+      [
+        0.6041666666666666,
+        0.75,
+        0.8020833333333334,
+        0.8229166666666667
+      ],
+      [
+        0.53125,
+        0.6145833333333333,
+        0.7916666666666667,
+        0.78125
+      ],
+      [
+        0.4583333333333333,
+        0.6979166666666667,
+        0.71875,
+        0.7708333333333333
+      ]
+    ],
+    "still_rising_seeds": 2
+  },
+  "catch-primary-mlp": {
+    "ticks": 4.0,
+    "transitions": 65536.0,
+    "dev_score": 0.20277777777777775,
+    "state_probe": 0.06666666666666665,
+    "greedy_dominant_action": 0.9770833333333333,
+    "entropy_first_quarter": 1.096584829107062,
+    "entropy_last_quarter": 1.0852657135851238,
+    "value_loss_first_quarter": 1.3204494137836675,
+    "value_loss_last_quarter": 1.211575445305997,
+    "clip_fraction_last_quarter": 0.0,
+    "approx_kl_last_quarter": 6.541579012106784e-05,
+    "grad_norm_first_quarter": 1.3916215037597286,
+    "grad_norm_last_quarter": 2.161403938242879,
+    "train_success_last_quarter": 0.20590277777777777,
+    "rollout_dominant_action_last_quarter": 0.3955485026041667,
+    "curve_peak": 0.2604166666666667,
+    "curve_final": 0.20833333333333334,
+    "late_drop": 0.05208333333333332,
+    "wall_seconds": 15.182214403660813,
+    "transitions_per_second": 4316.638526702787,
+    "curves": [
+      [
+        0.23958333333333331,
+        0.20833333333333331,
+        0.125,
+        0.125
+      ],
+      [
+        0.29166666666666663,
+        0.17708333333333331,
+        0.24999999999999997,
+        0.24999999999999997
+      ],
+      [
+        0.25,
+        0.23958333333333331,
+        0.23958333333333331,
+        0.25
+      ]
+    ],
+    "still_rising_seeds": 1
+  },
+  "catch-ticks-linear": {
+    "ticks": 8.0,
+    "transitions": 65536.0,
+    "dev_score": 0.9527777777777778,
+    "state_probe": 0.4166666666666667,
+    "greedy_dominant_action": 0.5305555555555556,
+    "entropy_first_quarter": 1.0347223792821436,
+    "entropy_last_quarter": 0.5326932076608397,
+    "value_loss_first_quarter": 1.6158787891079747,
+    "value_loss_last_quarter": 1.396150599558548,
+    "clip_fraction_last_quarter": 0.0006052652994791666,
+    "approx_kl_last_quarter": 9.854787849730789e-05,
+    "grad_norm_first_quarter": 2.623169299959342,
+    "grad_norm_last_quarter": 2.233801246613188,
+    "train_success_last_quarter": 0.7207638888888889,
+    "rollout_dominant_action_last_quarter": 0.4110310872395833,
+    "curve_peak": 0.9583333333333334,
+    "curve_final": 0.9548611111111112,
+    "late_drop": 0.00347222222222221,
+    "wall_seconds": 26.268117708076414,
+    "transitions_per_second": 2494.921069829769,
+    "curves": [
+      [
+        0.8645833333333334,
+        0.9791666666666667,
+        0.9791666666666667,
+        0.9791666666666667
+      ],
+      [
+        0.8229166666666667,
+        0.9166666666666666,
+        0.9166666666666667,
+        0.9375
+      ],
+      [
+        0.8333333333333333,
+        0.90625,
+        0.9583333333333334,
+        0.9479166666666667
+      ]
+    ],
+    "still_rising_seeds": 2
+  },
+  "dodge-primary-gru": {
+    "ticks": 4.0,
+    "transitions": 65536.0,
+    "dev_score": 0.7805555555555556,
+    "state_probe": 0.0,
+    "greedy_dominant_action": 0.9861111111111112,
+    "entropy_first_quarter": 1.0833861486001413,
+    "entropy_last_quarter": 0.8678770680630641,
+    "value_loss_first_quarter": 0.7809417517019717,
+    "value_loss_last_quarter": 0.9631455026556507,
+    "clip_fraction_last_quarter": 0.0,
+    "approx_kl_last_quarter": 0.00010065023468183684,
+    "grad_norm_first_quarter": 1.0298215153640766,
+    "grad_norm_last_quarter": 1.5523363965697508,
+    "train_success_last_quarter": 0.8032638888888887,
+    "rollout_dominant_action_last_quarter": 0.6067097981770834,
+    "curve_peak": 0.8159722222222223,
+    "curve_final": 0.7986111111111112,
+    "late_drop": 0.017361111111111122,
+    "wall_seconds": 17.337809681950603,
+    "transitions_per_second": 3781.0979116038166,
+    "curves": [
+      [
+        0.8958333333333334,
+        0.78125,
+        0.8958333333333334,
+        0.8958333333333334
+      ],
+      [
+        0.8020833333333334,
+        0.8020833333333334,
+        0.75,
+        0.75
+      ],
+      [
+        0.75,
+        0.75,
+        0.75,
+        0.75
+      ]
+    ],
+    "still_rising_seeds": 2
+  },
+  "dodge-primary-linear": {
+    "ticks": 4.0,
+    "transitions": 65536.0,
+    "dev_score": 0.9416666666666668,
+    "state_probe": 0.45,
+    "greedy_dominant_action": 0.42013888888888884,
+    "entropy_first_quarter": 1.0683313207902352,
+    "entropy_last_quarter": 0.932354922659064,
+    "value_loss_first_quarter": 1.9322178823740643,
+    "value_loss_last_quarter": 1.974036724506729,
+    "clip_fraction_last_quarter": 0.00152587890625,
+    "approx_kl_last_quarter": 0.00019024079989642337,
+    "grad_norm_first_quarter": 2.857784945398777,
+    "grad_norm_last_quarter": 2.7300142579052484,
+    "train_success_last_quarter": 0.8857638888888889,
+    "rollout_dominant_action_last_quarter": 0.3598836263020833,
+    "curve_peak": 0.9375,
+    "curve_final": 0.9340277777777778,
+    "late_drop": 0.00347222222222221,
+    "wall_seconds": 13.298574484457882,
+    "transitions_per_second": 4928.053422484255,
+    "curves": [
+      [
+        0.875,
+        0.8854166666666667,
+        0.90625,
+        0.9375
+      ],
+      [
+        0.90625,
+        0.9270833333333334,
+        0.9375,
+        0.9479166666666667
+      ],
+      [
+        0.9270833333333334,
+        0.90625,
+        0.84375,
+        0.9166666666666667
+      ]
+    ],
+    "still_rising_seeds": 2
+  },
+  "dodge-primary-mlp": {
+    "ticks": 4.0,
+    "transitions": 65536.0,
+    "dev_score": 0.8083333333333332,
+    "state_probe": 0.0,
+    "greedy_dominant_action": 1.0,
+    "entropy_first_quarter": 1.0910241821992017,
+    "entropy_last_quarter": 0.6195254366068711,
+    "value_loss_first_quarter": 1.2765854766582867,
+    "value_loss_last_quarter": 1.1979871204965624,
+    "clip_fraction_last_quarter": 5.086263020833333e-06,
+    "approx_kl_last_quarter": 4.400845299212699e-05,
+    "grad_norm_first_quarter": 1.3488095373139155,
+    "grad_norm_last_quarter": 1.9467936691081027,
+    "train_success_last_quarter": 0.8011111111111111,
+    "rollout_dominant_action_last_quarter": 0.7845052083333334,
+    "curve_peak": 0.7708333333333334,
+    "curve_final": 0.7673611111111112,
+    "late_drop": 0.00347222222222221,
+    "wall_seconds": 15.564766015896263,
+    "transitions_per_second": 4210.772137876939,
+    "curves": [
+      [
+        0.7708333333333333,
+        0.78125,
+        0.78125,
+        0.78125
+      ],
+      [
+        0.7708333333333334,
+        0.7708333333333334,
+        0.7708333333333334,
+        0.7708333333333334
+      ],
+      [
+        0.7604166666666666,
+        0.75,
+        0.75,
+        0.75
+      ]
+    ],
+    "still_rising_seeds": 2
+  },
+  "dodge-ticks-linear": {
+    "ticks": 8.0,
+    "transitions": 65536.0,
+    "dev_score": 0.9180555555555557,
+    "state_probe": 0.5416666666666666,
+    "greedy_dominant_action": 0.4913194444444445,
+    "entropy_first_quarter": 1.0539782674001021,
+    "entropy_last_quarter": 0.8334608774707428,
+    "value_loss_first_quarter": 2.024286258468764,
+    "value_loss_last_quarter": 2.739952132310103,
+    "clip_fraction_last_quarter": 0.0013987223307291667,
+    "approx_kl_last_quarter": 0.00018763066417330627,
+    "grad_norm_first_quarter": 2.886591588280386,
+    "grad_norm_last_quarter": 3.075916137432119,
+    "train_success_last_quarter": 0.9025000000000002,
+    "rollout_dominant_action_last_quarter": 0.4109293619791667,
+    "curve_peak": 0.9652777777777778,
+    "curve_final": 0.9305555555555557,
+    "late_drop": 0.03472222222222221,
+    "wall_seconds": 26.31361351237865,
+    "transitions_per_second": 2490.575844027396,
+    "curves": [
+      [
+        0.9375,
+        0.96875,
+        0.96875,
+        0.9791666666666667
+      ],
+      [
+        0.9583333333333334,
+        0.875,
+        0.9166666666666667,
+        0.8958333333333334
+      ],
+      [
+        0.9583333333333334,
+        0.9375,
+        0.9166666666666667,
+        0.9166666666666667
+      ]
+    ],
+    "still_rising_seeds": 1
+  },
+  "flappy-all_readout-gru": {
+    "ticks": 4.0,
+    "transitions": 65536.0,
+    "dev_score": 0.25555555555555554,
+    "state_probe": 0.0,
+    "greedy_dominant_action": 0.8584593712723884,
+    "entropy_first_quarter": 0.5995962305848007,
+    "entropy_last_quarter": 0.2761248332445317,
+    "value_loss_first_quarter": 0.020028510482818923,
+    "value_loss_last_quarter": 0.1612136992538806,
+    "clip_fraction_last_quarter": 0.013788859049479166,
+    "approx_kl_last_quarter": 0.001189854065186155,
+    "grad_norm_first_quarter": 0.20510078497895842,
+    "grad_norm_last_quarter": 0.5009238597597255,
+    "train_success_last_quarter": 0.14881944444444445,
+    "rollout_dominant_action_last_quarter": 0.8271280924479166,
+    "curve_peak": 0.2743055555555555,
+    "curve_final": 0.2743055555555555,
+    "late_drop": 0.0,
+    "wall_seconds": 18.01651461261402,
+    "transitions_per_second": 3637.6001173468394,
+    "curves": [
+      [
+        0.020833333333333332,
+        0.08333333333333333,
+        0.25,
+        0.40625
+      ],
+      [
+        0.05208333333333333,
+        0.03125,
+        0.08333333333333333,
+        0.21875
+      ],
+      [
+        0.03125,
+        0.020833333333333332,
+        0.11458333333333333,
+        0.19791666666666663
+      ]
+    ],
+    "still_rising_seeds": 3
+  },
+  "flappy-curriculum-gru": {
+    "ticks": 4.0,
+    "transitions": 131072.0,
+    "dev_score": 0.28750000000000003,
+    "state_probe": 0.09166666666666663,
+    "greedy_dominant_action": 0.88499084115885,
+    "entropy_first_quarter": 0.4828675201997032,
+    "entropy_last_quarter": 0.19292071615991402,
+    "value_loss_first_quarter": 0.05175915776481691,
+    "value_loss_last_quarter": 0.3234253053183589,
+    "clip_fraction_last_quarter": 0.006815592447916667,
+    "approx_kl_last_quarter": 0.0005939807390336634,
+    "grad_norm_first_quarter": 0.2387361897444226,
+    "grad_norm_last_quarter": 0.7089881248729376,
+    "train_success_last_quarter": 0.2709375,
+    "rollout_dominant_action_last_quarter": 0.8769429524739584,
+    "curve_peak": 0.34722222222222215,
+    "curve_final": 0.2743055555555555,
+    "late_drop": 0.07291666666666669,
+    "wall_seconds": 32.701099112513475,
+    "transitions_per_second": 4008.20181074963,
+    "curves": [
+      [
+        0.0,
+        0.0625,
+        0.2708333333333333,
+        0.20833333333333331,
+        0.17708333333333331,
+        0.32291666666666663,
+        0.2916666666666667,
+        0.32291666666666663
+      ],
+      [
+        0.0,
+        0.09375,
+        0.14583333333333331,
+        0.22916666666666666,
+        0.19791666666666663,
+        0.21875,
+        0.20833333333333334,
+        0.2604166666666667
+      ],
+      [
+        0.0,
+        0.07291666666666666,
+        0.25,
+        0.20833333333333331,
+        0.375,
+        0.45833333333333337,
+        0.34375,
+        0.23958333333333331
+      ]
+    ],
+    "still_rising_seeds": 2
+  },
+  "flappy-longer-gru": {
+    "ticks": 4.0,
+    "transitions": 131072.0,
+    "dev_score": 0.35694444444444445,
+    "state_probe": 0.1416666666666667,
+    "greedy_dominant_action": 0.8770934021928235,
+    "entropy_first_quarter": 0.4818574247102028,
+    "entropy_last_quarter": 0.20670717947108055,
+    "value_loss_first_quarter": 0.0485993420228459,
+    "value_loss_last_quarter": 0.2889552646161793,
+    "clip_fraction_last_quarter": 0.009562174479166666,
+    "approx_kl_last_quarter": 0.0008137947633628913,
+    "grad_norm_first_quarter": 0.22729023989920805,
+    "grad_norm_last_quarter": 0.6773732946637193,
+    "train_success_last_quarter": 0.21847222222222226,
+    "rollout_dominant_action_last_quarter": 0.8649698893229166,
+    "curve_peak": 0.34375,
+    "curve_final": 0.25,
+    "late_drop": 0.09375,
+    "wall_seconds": 32.703108862430476,
+    "transitions_per_second": 4007.950099788583,
+    "curves": [
+      [
+        0.0,
+        0.07291666666666666,
+        0.19791666666666666,
+        0.10416666666666666,
+        0.26041666666666663,
+        0.33333333333333337,
+        0.3645833333333333,
+        0.17708333333333334
+      ],
+      [
+        0.0,
+        0.13541666666666669,
+        0.15625,
+        0.16666666666666666,
+        0.23958333333333334,
+        0.17708333333333331,
+        0.23958333333333334,
+        0.35416666666666663
+      ],
+      [
+        0.0,
+        0.0,
+        0.3125,
+        0.16666666666666669,
+        0.2708333333333333,
+        0.14583333333333331,
+        0.16666666666666666,
+        0.21875
+      ]
+    ],
+    "still_rising_seeds": 1
+  },
+  "flappy-primary-gru": {
+    "ticks": 4.0,
+    "transitions": 65536.0,
+    "dev_score": 0.19583333333333333,
+    "state_probe": 0.09166666666666663,
+    "greedy_dominant_action": 0.8911651135759512,
+    "entropy_first_quarter": 0.6246961979090204,
+    "entropy_last_quarter": 0.2557901829001257,
+    "value_loss_first_quarter": 0.023190246021577682,
+    "value_loss_last_quarter": 0.23144742985420064,
+    "clip_fraction_last_quarter": 0.005472819010416667,
+    "approx_kl_last_quarter": 0.0005323876981930918,
+    "grad_norm_first_quarter": 0.19509033968893183,
+    "grad_norm_last_quarter": 0.4816510658120429,
+    "train_success_last_quarter": 0.1663888888888889,
+    "rollout_dominant_action_last_quarter": 0.8779703776041666,
+    "curve_peak": 0.15277777777777776,
+    "curve_final": 0.15277777777777776,
+    "late_drop": 0.0,
+    "wall_seconds": 16.104488210422762,
+    "transitions_per_second": 4069.486240104661,
+    "curves": [
+      [
+        0.0,
+        0.020833333333333332,
+        0.10416666666666666,
+        0.10416666666666666
+      ],
+      [
+        0.0,
+        0.0,
+        0.17708333333333331,
+        0.20833333333333331
+      ],
+      [
+        0.0,
+        0.020833333333333332,
+        0.08333333333333333,
+        0.14583333333333331
+      ]
+    ],
+    "still_rising_seeds": 3
+  },
+  "flappy-primary-linear": {
+    "ticks": 4.0,
+    "transitions": 65536.0,
+    "dev_score": 0.002777777777777778,
+    "state_probe": 0.2833333333333333,
+    "greedy_dominant_action": 0.6628040208359954,
+    "entropy_first_quarter": 0.659549846215445,
+    "entropy_last_quarter": 0.46195120101906034,
+    "value_loss_first_quarter": 0.36603701315545384,
+    "value_loss_last_quarter": 0.14281522460019663,
+    "clip_fraction_last_quarter": 0.0009409586588541666,
+    "approx_kl_last_quarter": 0.00013890993664632123,
+    "grad_norm_first_quarter": 1.783371761485389,
+    "grad_norm_last_quarter": 1.2457698666374009,
+    "train_success_last_quarter": 0.013402777777777777,
+    "rollout_dominant_action_last_quarter": 0.6487833658854166,
+    "curve_peak": 0.013888888888888888,
+    "curve_final": 0.003472222222222222,
+    "late_drop": 0.010416666666666666,
+    "wall_seconds": 12.65479134884663,
+    "transitions_per_second": 5179.041062121236,
+    "curves": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.041666666666666664,
+        0.010416666666666666,
+        0.010416666666666666
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "still_rising_seeds": 2
+  },
+  "flappy-primary-mlp": {
+    "ticks": 4.0,
+    "transitions": 65536.0,
+    "dev_score": 0.016666666666666666,
+    "state_probe": 0.025000000000000022,
+    "greedy_dominant_action": 0.9445369459571219,
+    "entropy_first_quarter": 0.6817931071197932,
+    "entropy_last_quarter": 0.2397471672922198,
+    "value_loss_first_quarter": 0.040303860673928826,
+    "value_loss_last_quarter": 0.08607613048973427,
+    "clip_fraction_last_quarter": 0.0017751057942708333,
+    "approx_kl_last_quarter": 0.00018235879185679856,
+    "grad_norm_first_quarter": 0.29483927968443374,
+    "grad_norm_last_quarter": 0.2865721615411045,
+    "train_success_last_quarter": 0.041597222222222216,
+    "rollout_dominant_action_last_quarter": 0.8858642578125,
+    "curve_peak": 0.04513888888888889,
+    "curve_final": 0.027777777777777776,
+    "late_drop": 0.01736111111111111,
+    "wall_seconds": 14.812928125650311,
+    "transitions_per_second": 4424.465592579161,
+    "curves": [
+      [
+        0.05208333333333333,
+        0.020833333333333332,
+        0.03125,
+        0.03125
+      ],
+      [
+        0.0,
+        0.03125,
+        0.020833333333333332,
+        0.0
+      ],
+      [
+        0.041666666666666664,
+        0.020833333333333332,
+        0.041666666666666664,
+        0.05208333333333333
+      ]
+    ],
+    "still_rising_seeds": 1
+  },
+  "flappy-rescue-gru": {
+    "ticks": 4.0,
+    "transitions": 131072.0,
+    "dev_score": 0.2986111111111111,
+    "state_probe": 0.15833333333333335,
+    "greedy_dominant_action": 0.8882445694212094,
+    "entropy_first_quarter": 0.34755789392485115,
+    "entropy_last_quarter": 0.1616360186235489,
+    "value_loss_first_quarter": 0.06344711788940423,
+    "value_loss_last_quarter": 0.3145496031858618,
+    "clip_fraction_last_quarter": 0.005475362141927083,
+    "approx_kl_last_quarter": 0.00045623657924966825,
+    "grad_norm_first_quarter": 0.27973341357080744,
+    "grad_norm_last_quarter": 0.6373666832987874,
+    "train_success_last_quarter": 0.26774305555555555,
+    "rollout_dominant_action_last_quarter": 0.8847554524739584,
+    "curve_peak": 0.3993055555555555,
+    "curve_final": 0.38888888888888884,
+    "late_drop": 0.010416666666666666,
+    "wall_seconds": 32.97523073479533,
+    "transitions_per_second": 3974.967296607123,
+    "curves": [
+      [
+        0.0,
+        0.09375,
+        0.19791666666666663,
+        0.24999999999999997,
+        0.2708333333333333,
+        0.3645833333333333,
+        0.36458333333333337,
+        0.4583333333333333
+      ],
+      [
+        0.0,
+        0.010416666666666666,
+        0.21875,
+        0.27083333333333337,
+        0.28125,
+        0.40625,
+        0.20833333333333334,
+        0.375
+      ],
+      [
+        0.0,
+        0.0625,
+        0.17708333333333331,
+        0.30208333333333337,
+        0.2708333333333333,
+        0.20833333333333331,
+        0.23958333333333331,
+        0.3333333333333333
+      ]
+    ],
+    "still_rising_seeds": 2
+  },
+  "flappy-ticks-gru": {
+    "ticks": 8.0,
+    "transitions": 65536.0,
+    "dev_score": 0.13472222222222222,
+    "state_probe": 0.075,
+    "greedy_dominant_action": 0.796887987780312,
+    "entropy_first_quarter": 0.6521035920842047,
+    "entropy_last_quarter": 0.30783461994911865,
+    "value_loss_first_quarter": 0.021721279856248096,
+    "value_loss_last_quarter": 0.18088338583428687,
+    "clip_fraction_last_quarter": 0.007502237955729167,
+    "approx_kl_last_quarter": 0.0007613677466311018,
+    "grad_norm_first_quarter": 0.19256312713771842,
+    "grad_norm_last_quarter": 0.5046729925742722,
+    "train_success_last_quarter": 0.14298611111111112,
+    "rollout_dominant_action_last_quarter": 0.783447265625,
+    "curve_peak": 0.18055555555555555,
+    "curve_final": 0.18055555555555555,
+    "late_drop": 0.0,
+    "wall_seconds": 28.11105103198982,
+    "transitions_per_second": 2331.3263330995683,
+    "curves": [
+      [
+        0.010416666666666666,
+        0.03125,
+        0.07291666666666667,
+        0.12499999999999999
+      ],
+      [
+        0.0,
+        0.010416666666666666,
+        0.010416666666666666,
+        0.010416666666666666
+      ],
+      [
+        0.0,
+        0.05208333333333333,
+        0.3541666666666667,
+        0.40625
+      ]
+    ],
+    "still_rising_seeds": 3
+  },
+  "pong-all_readout-linear": {
+    "ticks": 8.0,
+    "transitions": 65536.0,
+    "dev_score": 0.8666666666666666,
+    "state_probe": 0.5416666666666666,
+    "greedy_dominant_action": 0.4341435185185185,
+    "entropy_first_quarter": 1.0463294085708492,
+    "entropy_last_quarter": 0.7787251088135365,
+    "value_loss_first_quarter": 0.47347150337069843,
+    "value_loss_last_quarter": 0.3243305568873392,
+    "clip_fraction_last_quarter": 0.0004221598307291667,
+    "approx_kl_last_quarter": 0.00017373057838493723,
+    "grad_norm_first_quarter": 2.385553184262386,
+    "grad_norm_last_quarter": 2.2245626800594214,
+    "train_success_last_quarter": 0.8107407407407407,
+    "rollout_dominant_action_last_quarter": 0.3826090494791667,
+    "curve_peak": 0.8819444444444443,
+    "curve_final": 0.8703703703703702,
+    "late_drop": 0.01157407407407407,
+    "wall_seconds": 25.53153026503666,
+    "transitions_per_second": 2566.9286542041045,
+    "curves": [
+      [
+        0.8194444444444444,
+        0.8958333333333333,
+        0.9305555555555555,
+        0.9027777777777777
+      ],
+      [
+        0.5277777777777778,
+        0.7916666666666666,
+        0.8263888888888888,
+        0.8333333333333333
+      ],
+      [
+        0.7083333333333333,
+        0.8333333333333333,
+        0.8819444444444444,
+        0.875
+      ]
+    ],
+    "still_rising_seeds": 1
+  },
+  "pong-longer-linear": {
+    "ticks": 8.0,
+    "transitions": 131072.0,
+    "dev_score": 0.9388888888888888,
+    "state_probe": 0.4333333333333333,
+    "greedy_dominant_action": 0.4200810185185185,
+    "entropy_first_quarter": 0.9611033092193787,
+    "entropy_last_quarter": 0.7025247691422996,
+    "value_loss_first_quarter": 0.3851661160639835,
+    "value_loss_last_quarter": 0.3029949897066117,
+    "clip_fraction_last_quarter": 0.00030517578125,
+    "approx_kl_last_quarter": 0.00015312041943633842,
+    "grad_norm_first_quarter": 2.206772913361399,
+    "grad_norm_last_quarter": 2.107237333780579,
+    "train_success_last_quarter": 0.9030324074074074,
+    "rollout_dominant_action_last_quarter": 0.386688232421875,
+    "curve_peak": 0.9675925925925926,
+    "curve_final": 0.9560185185185185,
+    "late_drop": 0.011574074074074034,
+    "wall_seconds": 50.82880177868841,
+    "transitions_per_second": 2578.7143330678477,
+    "curves": [
+      [
+        0.75,
+        0.8472222222222221,
+        0.9305555555555556,
+        0.9444444444444444,
+        0.9583333333333333,
+        0.9097222222222221,
+        0.9652777777777777,
+        0.9583333333333333
+      ],
+      [
+        0.6944444444444444,
+        0.8055555555555556,
+        0.8819444444444444,
+        0.8888888888888888,
+        0.9513888888888888,
+        0.9583333333333333,
+        0.9652777777777777,
+        0.9375
+      ],
+      [
+        0.7361111111111112,
+        0.8055555555555556,
+        0.8680555555555556,
+        0.8958333333333333,
+        0.875,
+        0.9375,
+        0.9513888888888888,
+        0.9722222222222222
+      ]
+    ],
+    "still_rising_seeds": 1
+  },
+  "pong-primary-gru": {
+    "ticks": 4.0,
+    "transitions": 65536.0,
+    "dev_score": 0.30462962962962964,
+    "state_probe": 0.01666666666666668,
+    "greedy_dominant_action": 0.9947337962962962,
+    "entropy_first_quarter": 1.092877575724535,
+    "entropy_last_quarter": 0.8904097200336042,
+    "value_loss_first_quarter": 0.1722627180225992,
+    "value_loss_last_quarter": 0.3005655224139,
+    "clip_fraction_last_quarter": 0.00010172526041666667,
+    "approx_kl_last_quarter": 8.942566569019676e-05,
+    "grad_norm_first_quarter": 0.4794821920207126,
+    "grad_norm_last_quarter": 0.7845514310449649,
+    "train_success_last_quarter": 0.31055555555555553,
+    "rollout_dominant_action_last_quarter": 0.5958251953125,
+    "curve_peak": 0.33564814814814814,
+    "curve_final": 0.33564814814814814,
+    "late_drop": 0.0,
+    "wall_seconds": 16.2096108320596,
+    "transitions_per_second": 4043.058468666964,
+    "curves": [
+      [
+        0.3055555555555556,
+        0.3055555555555556,
+        0.3055555555555556,
+        0.3055555555555556
+      ],
+      [
+        0.32638888888888884,
+        0.32638888888888884,
+        0.32638888888888884,
+        0.32638888888888884
+      ],
+      [
+        0.375,
+        0.375,
+        0.375,
+        0.375
+      ]
+    ],
+    "still_rising_seeds": 3
+  },
+  "pong-primary-linear": {
+    "ticks": 4.0,
+    "transitions": 65536.0,
+    "dev_score": 0.5444444444444444,
+    "state_probe": 0.47500000000000003,
+    "greedy_dominant_action": 0.3668402777777778,
+    "entropy_first_quarter": 1.0704009075458345,
+    "entropy_last_quarter": 0.9936696981179396,
+    "value_loss_first_quarter": 0.514610494993891,
+    "value_loss_last_quarter": 0.29510466748488834,
+    "clip_fraction_last_quarter": 0.00018819173177083334,
+    "approx_kl_last_quarter": 6.919666850912453e-05,
+    "grad_norm_first_quarter": 2.0160020593244474,
+    "grad_norm_last_quarter": 1.8334630762009188,
+    "train_success_last_quarter": 0.35152777777777783,
+    "rollout_dominant_action_last_quarter": 0.3468017578125,
+    "curve_peak": 0.5277777777777778,
+    "curve_final": 0.5277777777777778,
+    "late_drop": 0.0,
+    "wall_seconds": 12.791743279686974,
+    "transitions_per_second": 5123.378223031829,
+    "curves": [
+      [
+        0.3680555555555556,
+        0.5138888888888888,
+        0.5208333333333333,
+        0.5277777777777778
+      ],
+      [
+        0.41666666666666663,
+        0.4930555555555555,
+        0.45138888888888884,
+        0.5277777777777778
+      ],
+      [
+        0.3958333333333333,
+        0.4583333333333333,
+        0.45138888888888884,
+        0.5277777777777778
+      ]
+    ],
+    "still_rising_seeds": 3
+  },
+  "pong-primary-mlp": {
+    "ticks": 4.0,
+    "transitions": 65536.0,
+    "dev_score": 0.38425925925925924,
+    "state_probe": 0.4333333333333333,
+    "greedy_dominant_action": 0.6376157407407408,
+    "entropy_first_quarter": 1.0976508123295352,
+    "entropy_last_quarter": 1.0857318112318366,
+    "value_loss_first_quarter": 0.2812618480544569,
+    "value_loss_last_quarter": 0.26772720296019364,
+    "clip_fraction_last_quarter": 0.0,
+    "approx_kl_last_quarter": 6.9231071901987155e-06,
+    "grad_norm_first_quarter": 0.5341519845456267,
+    "grad_norm_last_quarter": 0.6944697780494722,
+    "train_success_last_quarter": 0.2756018518518519,
+    "rollout_dominant_action_last_quarter": 0.3688151041666667,
+    "curve_peak": 0.33564814814814814,
+    "curve_final": 0.32175925925925924,
+    "late_drop": 0.013888888888888895,
+    "wall_seconds": 14.78193268092582,
+    "transitions_per_second": 4433.537124505711,
+    "curves": [
+      [
+        0.3333333333333333,
+        0.3402777777777778,
+        0.3194444444444444,
+        0.3125
+      ],
+      [
+        0.2986111111111111,
+        0.3472222222222222,
+        0.3472222222222222,
+        0.38888888888888884
+      ],
+      [
+        0.25,
+        0.26388888888888884,
+        0.2777777777777778,
+        0.2638888888888889
+      ]
+    ],
+    "still_rising_seeds": 1
+  },
+  "pong-ticks-linear": {
+    "ticks": 8.0,
+    "transitions": 65536.0,
+    "dev_score": 0.6490740740740741,
+    "state_probe": 0.5750000000000001,
+    "greedy_dominant_action": 0.4078125000000001,
+    "entropy_first_quarter": 1.0665449968361067,
+    "entropy_last_quarter": 0.9449462082645946,
+    "value_loss_first_quarter": 0.5117243827544885,
+    "value_loss_last_quarter": 0.27079927561727424,
+    "clip_fraction_last_quarter": 1.0172526041666666e-05,
+    "approx_kl_last_quarter": 5.632320370371868e-05,
+    "grad_norm_first_quarter": 2.0212910003724045,
+    "grad_norm_last_quarter": 1.7931555531658632,
+    "train_success_last_quarter": 0.45763888888888893,
+    "rollout_dominant_action_last_quarter": 0.35455322265625,
+    "curve_peak": 0.6712962962962963,
+    "curve_final": 0.6481481481481481,
+    "late_drop": 0.02314814814814814,
+    "wall_seconds": 25.958924612593062,
+    "transitions_per_second": 2532.7976486233347,
+    "curves": [
+      [
+        0.5347222222222222,
+        0.6180555555555556,
+        0.75,
+        0.6875
+      ],
+      [
+        0.4375,
+        0.5486111111111112,
+        0.5902777777777778,
+        0.6319444444444444
+      ],
+      [
+        0.5694444444444444,
+        0.6180555555555556,
+        0.6319444444444444,
+        0.625
+      ]
+    ],
+    "still_rising_seeds": 1
+  },
+  "snake-all_readout-linear": {
+    "ticks": 8.0,
+    "transitions": 65536.0,
+    "dev_score": 11.575000000000001,
+    "state_probe": 0.6583333333333333,
+    "greedy_dominant_action": 0.26088514140534896,
+    "entropy_first_quarter": 1.3105921145112391,
+    "entropy_last_quarter": 0.6324705008640761,
+    "value_loss_first_quarter": 0.3570041350459632,
+    "value_loss_last_quarter": 1.0389376430593755,
+    "clip_fraction_last_quarter": 0.0004425048828125,
+    "approx_kl_last_quarter": 0.00015990674464561283,
+    "grad_norm_first_quarter": 2.746869027584067,
+    "grad_norm_last_quarter": 2.5745472427100675,
+    "train_success_last_quarter": 5.665416666666666,
+    "rollout_dominant_action_last_quarter": 0.26373291015625,
+    "curve_peak": 12.3125,
+    "curve_final": 11.458333333333334,
+    "late_drop": 0.8541666666666666,
+    "wall_seconds": 25.023478345945477,
+    "transitions_per_second": 2618.9940664336796,
+    "curves": [
+      [
+        4.125,
+        10.3125,
+        12.0625,
+        11.1875
+      ],
+      [
+        6.5625,
+        11.0625,
+        12.125,
+        11.3125
+      ],
+      [
+        6.625,
+        12.1875,
+        12.75,
+        11.875
+      ]
+    ],
+    "still_rising_seeds": 0
+  },
+  "snake-primary-gru": {
+    "ticks": 4.0,
+    "transitions": 65536.0,
+    "dev_score": 0.9166666666666666,
+    "state_probe": 0.5916666666666667,
+    "greedy_dominant_action": 0.3626010279870266,
+    "entropy_first_quarter": 1.384184008317255,
+    "entropy_last_quarter": 1.1971085654975988,
+    "value_loss_first_quarter": 0.04371723835862532,
+    "value_loss_last_quarter": 0.09802860095073858,
+    "clip_fraction_last_quarter": 0.0001068115234375,
+    "approx_kl_last_quarter": 0.00021127883071180833,
+    "grad_norm_first_quarter": 0.18912837175098415,
+    "grad_norm_last_quarter": 0.3650502881349791,
+    "train_success_last_quarter": 0.5033333333333333,
+    "rollout_dominant_action_last_quarter": 0.2923583984375,
+    "curve_peak": 1.0208333333333333,
+    "curve_final": 0.9583333333333334,
+    "late_drop": 0.0625,
+    "wall_seconds": 15.915142320271116,
+    "transitions_per_second": 4117.861410207998,
+    "curves": [
+      [
+        0.0,
+        0.625,
+        0.8125,
+        0.75
+      ],
+      [
+        0.625,
+        0.6875,
+        0.9375,
+        1.4375
+      ],
+      [
+        0.0,
+        0.25,
+        0.8125,
+        0.6875
+      ]
+    ],
+    "still_rising_seeds": 1
+  },
+  "snake-primary-linear": {
+    "ticks": 4.0,
+    "transitions": 65536.0,
+    "dev_score": 1.1333333333333333,
+    "state_probe": 0.5,
+    "greedy_dominant_action": 0.3006985842877989,
+    "entropy_first_quarter": 1.3390839900686646,
+    "entropy_last_quarter": 1.133366951875109,
+    "value_loss_first_quarter": 0.37862496858846023,
+    "value_loss_last_quarter": 0.1691642029490907,
+    "clip_fraction_last_quarter": 0.0018870035807291667,
+    "approx_kl_last_quarter": 0.00022203575641189326,
+    "grad_norm_first_quarter": 2.2866766541084345,
+    "grad_norm_last_quarter": 1.7069703839529522,
+    "train_success_last_quarter": 0.5249999999999999,
+    "rollout_dominant_action_last_quarter": 0.2763468424479167,
+    "curve_peak": 1.1041666666666667,
+    "curve_final": 1.0833333333333333,
+    "late_drop": 0.020833333333333332,
+    "wall_seconds": 12.978587168249456,
+    "transitions_per_second": 5049.6642261488805,
+    "curves": [
+      [
+        0.375,
+        0.9375,
+        0.875,
+        0.875
+      ],
+      [
+        0.75,
+        0.875,
+        1.375,
+        1.4375
+      ],
+      [
+        0.5,
+        0.5,
+        0.8125,
+        0.9375
+      ]
+    ],
+    "still_rising_seeds": 2
+  },
+  "snake-primary-mlp": {
+    "ticks": 4.0,
+    "transitions": 65536.0,
+    "dev_score": 0.6416666666666667,
+    "state_probe": 0.4333333333333333,
+    "greedy_dominant_action": 0.3899836995402886,
+    "entropy_first_quarter": 1.3828300734427839,
+    "entropy_last_quarter": 1.192057666325583,
+    "value_loss_first_quarter": 0.07532805340313044,
+    "value_loss_last_quarter": 0.08014369612665091,
+    "clip_fraction_last_quarter": 0.0010426839192708333,
+    "approx_kl_last_quarter": 0.00028393983785456636,
+    "grad_norm_first_quarter": 0.34709461557571325,
+    "grad_norm_last_quarter": 0.47943630301426216,
+    "train_success_last_quarter": 0.39375,
+    "rollout_dominant_action_last_quarter": 0.29327392578125,
+    "curve_peak": 0.7083333333333334,
+    "curve_final": 0.7083333333333334,
+    "late_drop": 0.0,
+    "wall_seconds": 15.089868775665915,
+    "transitions_per_second": 4343.919698222949,
+    "curves": [
+      [
+        0.125,
+        0.4375,
+        0.625,
+        0.6875
+      ],
+      [
+        0.25,
+        0.5,
+        0.6875,
+        0.75
+      ],
+      [
+        0.4375,
+        0.4375,
+        0.5625,
+        0.6875
+      ]
+    ],
+    "still_rising_seeds": 3
+  },
+  "snake-ticks-linear": {
+    "ticks": 8.0,
+    "transitions": 65536.0,
+    "dev_score": 3.316666666666667,
+    "state_probe": 0.5833333333333334,
+    "greedy_dominant_action": 0.2816420143840495,
+    "entropy_first_quarter": 1.3458697954518664,
+    "entropy_last_quarter": 1.0697248095478589,
+    "value_loss_first_quarter": 0.3837503140315002,
+    "value_loss_last_quarter": 0.18117170358132015,
+    "clip_fraction_last_quarter": 0.000701904296875,
+    "approx_kl_last_quarter": 0.0001318214751525839,
+    "grad_norm_first_quarter": 2.143664099898784,
+    "grad_norm_last_quarter": 1.6814582736492785,
+    "train_success_last_quarter": 0.9987500000000001,
+    "rollout_dominant_action_last_quarter": 0.27130126953125,
+    "curve_peak": 3.5625,
+    "curve_final": 3.2916666666666665,
+    "late_drop": 0.2708333333333333,
+    "wall_seconds": 25.422403486950014,
+    "transitions_per_second": 2579.8585149313753,
+    "curves": [
+      [
+        0.9375,
+        2.0,
+        3.125,
+        2.9375
+      ],
+      [
+        1.25,
+        1.6875,
+        3.6875,
+        4.0625
+      ],
+      [
+        0.9375,
+        1.875,
+        3.5,
+        2.875
+      ]
+    ],
+    "still_rising_seeds": 1
+  }
+}
