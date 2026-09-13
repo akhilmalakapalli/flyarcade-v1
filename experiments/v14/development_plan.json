@@ -1,0 +1,223 @@
+{
+  "version": "flyarcade-v1.4-development-1",
+  "created_at": "2026-09-13T17:30:54.798387+00:00",
+  "base_branch": "flyarcade-v1.3-dashboard",
+  "base_commit": "b44463187e69ea67c3642a3960b6a1da0af32ea4",
+  "question": "How does downstream learning architecture affect behavior extracted from the same fixed 2040-neuron MaleCNS substrate?",
+  "canonical_dataset": "HHMI Janelia MaleCNS male-cns:v1.0",
+  "graph_file": "data/malecns-v1.0/graph.npz",
+  "graph_file_sha256": "3f4cbeedb17ca6a7d06162151429e0713ed72ce579d5f19a8845a446f6315697",
+  "tasks": [
+    "catch",
+    "dodge",
+    "snake",
+    "pong",
+    "flappy"
+  ],
+  "environments": {
+    "catch": "unchanged LaneGame(catch), horizon24",
+    "dodge": "unchanged LaneGame(dodge), horizon24",
+    "snake": "unchanged historical SnakeGame, 8x8 absolute4 actions, max_steps200, starvation64",
+    "pong": "unchanged v1.2 Pong horizon144",
+    "flappy": "unchanged v1.2 Flappy horizon138"
+  },
+  "metrics": {
+    "catch": "fraction successful catches",
+    "dodge": "fraction successful dodges",
+    "snake": "raw food per episode",
+    "pong": "fraction returns hit",
+    "flappy": "pipes passed /6"
+  },
+  "encodings": "historical 8-channel Catch/Dodge and 21-channel Snake; unchanged v1.3 complementary Pong/Flappy; shared across all learners",
+  "primary_learners": [
+    "linear",
+    "mlp",
+    "gru"
+  ],
+  "linear_definition": "Historical-style affine downstream actor/critic, trained with the SAME PPO/GAE/Adam as nonlinear arms to isolate architecture. Historical online-TD learner is referenced separately, not rerun.",
+  "architectures": {
+    "linear": {
+      "hidden": 0,
+      "core": 0
+    },
+    "mlp": {
+      "hidden": 128,
+      "core": 64
+    },
+    "gru": {
+      "hidden": 128,
+      "core": 64
+    }
+  },
+  "primary_transitions": 65536,
+  "training_seeds": [
+    0,
+    1,
+    2
+  ],
+  "primary_ticks": 4,
+  "primary_readout": "descending",
+  "ppo": {
+    "gamma": 0.99,
+    "lam": 0.95,
+    "lr": 0.0003,
+    "anneal_lr": true,
+    "clip": 0.2,
+    "ent": 0.003,
+    "vf": 0.5,
+    "max_grad_norm": 0.5,
+    "epochs": 4,
+    "envs": 16,
+    "steps": 128,
+    "minibatches": 8,
+    "chunk": 16,
+    "reward_scale": 1.0,
+    "shaping": 0.0
+  },
+  "allowed_hyperparameters": "Exactly the listed values, no primary per-learner tuning; same feature standardizer and optimizer. Larger architecture allowed only in one labeled rescue if specified below (this plan uses imitation only).",
+  "feature_fit": {
+    "samples": 8192,
+    "policy": "alternating heuristic/reference and random; fresh feature_fit seeds",
+    "scale_floor": 0.02,
+    "clip": 4.0,
+    "normalise": false
+  },
+  "seed_namespace": {
+    "base": 100000000000,
+    "task_block": 100000000000,
+    "purpose_block": 5000000000,
+    "seed_slot": 1000000,
+    "purposes": [
+      "software",
+      "feature_fit",
+      "train",
+      "model",
+      "rollout",
+      "curve",
+      "dev_eval",
+      "dev_probe",
+      "imitation",
+      "primary_validation",
+      "final_validation",
+      "validation_probe"
+    ],
+    "future_confirmatory_purpose_indices": [
+      15,
+      16,
+      17
+    ],
+    "max_seed": 3,
+    "max_index": 999999,
+    "note": "Shared paired development episode blocks across configurations; disjoint task/purpose blocks including +1B neural and +2B behavior RNG offsets. All historical and dashboard seeds <12B. Runtime API rejects any confirmatory purpose."
+  },
+  "evaluation": {
+    "development_episodes": 40,
+    "curve_episodes": 16,
+    "every_transitions": 16384,
+    "validation_episodes_per_trained_seed": 100,
+    "validation_training": false,
+    "policy": "greedy; no optimizer updates; unchanged target environment"
+  },
+  "meaningful_improvement": {
+    "catch": 0.05,
+    "dodge": 0.02,
+    "snake": 1.0,
+    "pong": 0.1,
+    "flappy": 0.1
+  },
+  "development_targets": {
+    "catch": 0.85,
+    "dodge": 0.97,
+    "snake": 4.0,
+    "pong": 0.9,
+    "flappy": 0.8
+  },
+  "useful_performance": {
+    "catch": 0.75,
+    "dodge": 0.95,
+    "snake": 2.0,
+    "pong": 0.75,
+    "flappy": 0.6
+  },
+  "selection_rule": "Across all 3 seeds require finite parameters, state-intervention diversity >0.05 and dominant trajectory action fraction <0.98 on every seed; rank eligible configurations by mean score minus 0.25*population SD; tie within1e-12 prefers simpler learner then fewer ticks/readout/budget. If none eligible choose best stable by same score and label collapsed/failed; never best single seed.",
+  "primary_selection": "Lock best of the three primary architectures for every task using development only before secondary runs.",
+  "secondary_protocol": [
+    {
+      "name": "ticks",
+      "change": "winner architecture, ticks=8, otherwise primary settings",
+      "tasks": [
+        "catch",
+        "dodge",
+        "snake",
+        "pong",
+        "flappy"
+      ]
+    },
+    {
+      "name": "all_readout",
+      "change": "best previous development config, readout=all 2040, primary budget",
+      "tasks": [
+        "catch",
+        "snake",
+        "pong",
+        "flappy"
+      ]
+    },
+    {
+      "name": "longer",
+      "change": "best previous config, transitions=131072",
+      "tasks": [
+        "catch",
+        "snake",
+        "pong",
+        "flappy"
+      ]
+    },
+    {
+      "name": "curriculum",
+      "change": "best previous architecture/ticks/readout, 131072 transitions; 25% easy,25% intermediate,50% target",
+      "tasks": [
+        "snake",
+        "flappy"
+      ]
+    }
+  ],
+  "curricula": {
+    "snake": "training-only same SnakeGame class, grid4 then6 then8, same max_steps and starvation; target eval always8",
+    "flappy": "existing v1.3 wide tolerance0.24 speed0.03 then intermediate tolerance0.20 speed0.035 then target"
+  },
+  "escalation_rule": "Apply secondary factors in order, one at a time on best current development configuration. Stop task escalation once eligible best reaches target. Dodge only gets tick comparison; no longer/curriculum/rescue. Complete all three primary learners regardless of target.",
+  "max_development_configurations": {
+    "catch": 6,
+    "dodge": 4,
+    "snake": 8,
+    "pong": 6,
+    "flappy": 8
+  },
+  "rescue": {
+    "label": "SECONDARY RESCUE PHASE",
+    "tasks": [
+      "snake",
+      "flappy"
+    ],
+    "max_attempts_per_task": 1,
+    "trigger": "after allowed primary+secondary stages, best eligible mean below useful_performance or no eligible model",
+    "method": "same best architecture/ticks/readout, supervised heuristic warm-start on8192 fresh target transitions,4 supervised passes,Adam lr3e-4; then131072 PPO transitions on original target with original rewards. No extra shaping or auxiliary objectives. Warm-start transitions counted separately.",
+    "selection": "report separately from headline primary; same 3 seeds and development rule"
+  },
+  "validation_rule": "Select and lock primary winner and final overall winner BEFORE accessing any validation outcomes. Evaluate each distinct selected checkpoint once on separate fresh validation blocks, all3 trained seeds,100 episodes each. If same primary/final config validate only once. No training on validation, no reselection, no confirmatory testing.",
+  "stopping": "All tasks primary comparisons and fresh validation complete, or declared task resource/stability failure after bounded attempts. No searching beyond enumerated configurations. Preserve every attempted/failing run.",
+  "resources": {
+    "max_seconds_per_process": 120,
+    "checkpoint_after_seconds": 70,
+    "max_segments_per_trial": 20,
+    "max_rss_mb": 2048,
+    "min_free_disk_mb": 1024,
+    "max_download_mb": 128,
+    "max_neurons": 4096,
+    "max_edges": 250000,
+    "peak_memory": "OS process high-water RSS, plus cooperative snapshots; accumulated max across resumed segments"
+  },
+  "history_policy": "Reference existing summary scores only; never execute historical confirmatory episodes, retrain historical trials, rescore them, modify dashboard or write historical artifacts.",
+  "confirmatory_testing": false
+}
