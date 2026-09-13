@@ -344,3 +344,19 @@ outside the hashed multitask code, so the multitask code hash stays `504a571e…
 caveats travel with the result. The topology comparison favours the biological graph
 because every development choice was tuned on it. The near-total loss under 10% edge
 or neuron ablation may partly reflect standardizer distribution shift.
+
+## v1.4 D001 — prospective architecture comparison
+Branch flyarcade-v1.4-performance starts at dashboard b444631. Plan ee7d012
+was committed before training. Historical results and dashboard files are frozen;
+2,022 files are checksummed. No historical confirmatory execution is permitted.
+The Linear arm is an affine actor/critic with the same PPO/GAE/Adam objective as
+MLP and GRU, isolating architecture. Historical online-TD results are references
+only. Original task encoders, metrics and the MaleCNS recurrent substrate remain
+fixed across all primary arms. Snake is the historical absolute-action 8x8 task.
+
+## v1.4 D002 — bounded development and held-out validation
+Three seeds per configuration, 65,536 primary transitions each. Selection penalizes
+variance and excludes constant-action collapse. Four secondary factors have a fixed
+order and strict per-task caps. At most one imitation rescue on Snake/Flappy is
+allowed, reported separately. All choices lock before validation; future
+confirmatory seed blocks are reserved and rejected by the execution API.
