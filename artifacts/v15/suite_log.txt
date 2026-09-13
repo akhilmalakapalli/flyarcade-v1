@@ -1,0 +1,21 @@
+artifacts/v15/standardizers/catch-t16-descending-f0p02.json
+artifacts/v15/standardizers/catch-t24-descending-f0p02.json
+artifacts/v15/standardizers/dodge-t16-descending-f0p02.json
+artifacts/v15/standardizers/dodge-t24-descending-f0p02.json
+artifacts/v15/standardizers/flappy-t16-descending-f0p02.json
+artifacts/v15/standardizers/flappy-t24-descending-f0p02.json
+artifacts/v15/standardizers/flappy-t32-descending-f0p02.json
+artifacts/v15/standardizers/pong-t16-descending-f0p02.json
+artifacts/v15/standardizers/pong-t24-descending-f0p02.json
+artifacts/v15/standardizers/pong-t32-descending-f0p02.json
+artifacts/v15/standardizers/snake-t16-descending-f0p02.json
+artifacts/v15/standardizers/snake-t24-descending-f0p02.json
+[    316s] catch-A-linear-t16-descending-s0: COMPLETE
+[    318s] catch-A-linear-t16-descending-s1: COMPLETE
+[    322s] catch-A-linear-t16-descending-s2: COMPLETE
+[    339s] catch-A-mlp-t16-descending-s0: COMPLETE
+[    344s] catch-A-mlp-t16-descending-s1: COMPLETE
+[    344s] catch-A-mlp-t16-descending-s2: COMPLETE
+[    355s] catch-A-gru-t16-descending-s0: COMPLETE
+[    355s] catch-A-gru-t16-descending-s1: COMPLETE
+[    694s] catch-A-gru-t16-descending-s2: COMPLETE
