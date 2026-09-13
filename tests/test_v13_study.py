@@ -229,3 +229,37 @@ def test_curriculum_schedule_and_transition_accounting(graph, fly_config):
     assert trainer.level_transitions["size4"] >= 48
     with pytest.raises(ValueError):
         Trainer(fly_config(curriculum=[["target", 0.5], ["size4", 0.5]]), graph)
+
+
+def _fake_result(after, random, reference=1.0, before=0.1, probe=0.3, counts=(10, 10), entropy=0.5):
+    rows = lambda v: [{"success": v, "action_counts": list(counts)}]  # noqa: E731
+    return {
+        "evaluations": {
+            "after": rows(after),
+            "before": rows(before),
+            "random": rows(random),
+            "reference": rows(reference),
+        },
+        "history": [{"entropy": entropy}],
+        "state_probe": {"score": probe},
+        "finite": True,
+    }
+
+
+def test_task_gate_criteria():
+    from flyarcade_v13.gates import task_gate
+
+    passing = [_fake_result(0.5, 0.2) for _ in range(5)]
+    assert task_gate(passing)["passed"]
+    three = [_fake_result(0.5, 0.2)] * 3 + [_fake_result(0.24, 0.2)] * 2
+    assert not task_gate(three)["checks"]["seeds_beating_random_margin"]
+    exact = [_fake_result(0.25, 0.2)] * 5  # margin must be strictly exceeded
+    assert not task_gate(exact)["checks"]["after_gt_random_plus_margin"]
+    small_gap = [_fake_result(0.30, 0.2, reference=0.9)] * 5
+    assert not task_gate(small_gap)["checks"]["gap_closure_ge_0.15"]
+    collapsed = [_fake_result(0.5, 0.2, counts=(99, 1))] * 5
+    assert not task_gate(collapsed)["checks"]["no_constant_action_collapse"]
+    no_probe = [_fake_result(0.5, 0.2, probe=0.0)] * 5
+    assert not task_gate(no_probe)["checks"]["state_dependence_gt_0.05"]
+    entropy_dead = [_fake_result(0.5, 0.2, entropy=0.0)] * 5
+    assert not task_gate(entropy_dead)["checks"]["nonzero_entropy"]

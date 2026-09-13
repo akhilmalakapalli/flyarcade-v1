@@ -1,0 +1,363 @@
+{
+ "stage": "mlp_validate",
+ "collected_at": "2026-09-13T08:31:00.556099+00:00",
+ "results": 18,
+ "specs": 60,
+ "configs": [
+  {
+   "task": "breakout",
+   "config_index": 11,
+   "seeds": 5,
+   "mean_after": 0.5513333333333333,
+   "mean_before": 0.45599999999999996,
+   "mean_random": 0.4546666666666666,
+   "mean_reference": 0.5879999999999999,
+   "mean_gap_closure": 0.7396863898259561,
+   "sd_gap_closure": 0.1704747158374897,
+   "mean_state_probe": 0.33,
+   "collapsed_seed": false,
+   "rank_score": 0.6544490319072113,
+   "gate_if_validation": {
+    "passed": true,
+    "checks": {
+     "after_gt_before": true,
+     "after_gt_random_plus_margin": true,
+     "seeds_beating_random_margin": true,
+     "state_dependence_gt_0.05": true,
+     "finite": true,
+     "nonzero_entropy": true,
+     "no_constant_action_collapse": true,
+     "gap_closure_ge_0.15": true
+    },
+    "means": {
+     "after": 0.5513333333333333,
+     "before": 0.45599999999999996,
+     "random": 0.4546666666666666,
+     "reference": 0.5879999999999999,
+     "gap_closure": 0.7396863898259561,
+     "state_probe": 0.33
+    },
+    "seeds_beating_random_margin": 5,
+    "seed_count": 5,
+    "seeds": [
+     {
+      "after": 0.5566666666666668,
+      "before": 0.42999999999999994,
+      "random": 0.4433333333333333,
+      "reference": 0.5866666666666664,
+      "gap_closure": 0.7906976744186065,
+      "state_probe": 0.25,
+      "final_entropy": 0.2445319523841627,
+      "max_greedy_action_fraction": 0.3623963334788302,
+      "finite": true,
+      "beats_random_margin": true
+     },
+     {
+      "after": 0.58,
+      "before": 0.4600000000000001,
+      "random": 0.45999999999999996,
+      "reference": 0.5866666666666664,
+      "gap_closure": 0.947368421052633,
+      "state_probe": 0.375,
+      "final_entropy": 0.2134630946265324,
+      "max_greedy_action_fraction": 0.3423264042459089,
+      "finite": true,
+      "beats_random_margin": true
+     },
+     {
+      "after": 0.5400000000000001,
+      "before": 0.4666666666666666,
+      "random": 0.4466666666666666,
+      "reference": 0.5533333333333331,
+      "gap_closure": 0.8750000000000032,
+      "state_probe": 0.35,
+      "final_entropy": 0.23163173464251754,
+      "max_greedy_action_fraction": 0.33661094723041624,
+      "finite": true,
+      "beats_random_margin": true
+     },
+     {
+      "after": 0.5566666666666666,
+      "before": 0.4466666666666666,
+      "random": 0.47666666666666657,
+      "reference": 0.6133333333333332,
+      "gap_closure": 0.5853658536585373,
+      "state_probe": 0.375,
+      "final_entropy": 0.2558343565359359,
+      "max_greedy_action_fraction": 0.3383714741883981,
+      "finite": true,
+      "beats_random_margin": true
+     },
+     {
+      "after": 0.5233333333333333,
+      "before": 0.4766666666666667,
+      "random": 0.4466666666666666,
+      "reference": 0.5999999999999999,
+      "gap_closure": 0.5000000000000006,
+      "state_probe": 0.30000000000000004,
+      "final_entropy": 0.21476864168476562,
+      "max_greedy_action_fraction": 0.37076888590002244,
+      "finite": true,
+      "beats_random_margin": true
+     }
+    ]
+   },
+   "config": {
+    "ent": 0.003,
+    "eval_purpose": "validate_eval",
+    "lr": 0.001,
+    "shaping": 1.0,
+    "source": "fly",
+    "task": "breakout",
+    "ticks": 8,
+    "train_purpose": "validate_train",
+    "transitions": 500000
+   },
+   "wall_seconds": 963.5149014725932
+  },
+  {
+   "task": "breakout",
+   "config_index": 3,
+   "seeds": 5,
+   "mean_after": 0.5473333333333333,
+   "mean_before": 0.45599999999999996,
+   "mean_random": 0.4546666666666666,
+   "mean_reference": 0.5879999999999999,
+   "mean_gap_closure": 0.7065660487441457,
+   "sd_gap_closure": 0.20546684880970018,
+   "mean_state_probe": 0.4699999999999999,
+   "collapsed_seed": false,
+   "rank_score": 0.6038326243392956,
+   "gate_if_validation": {
+    "passed": true,
+    "checks": {
+     "after_gt_before": true,
+     "after_gt_random_plus_margin": true,
+     "seeds_beating_random_margin": true,
+     "state_dependence_gt_0.05": true,
+     "finite": true,
+     "nonzero_entropy": true,
+     "no_constant_action_collapse": true,
+     "gap_closure_ge_0.15": true
+    },
+    "means": {
+     "after": 0.5473333333333333,
+     "before": 0.45599999999999996,
+     "random": 0.4546666666666666,
+     "reference": 0.5879999999999999,
+     "gap_closure": 0.7065660487441457,
+     "state_probe": 0.4699999999999999
+    },
+    "seeds_beating_random_margin": 5,
+    "seed_count": 5,
+    "seeds": [
+     {
+      "after": 0.5466666666666666,
+      "before": 0.42999999999999994,
+      "random": 0.4433333333333333,
+      "reference": 0.5866666666666664,
+      "gap_closure": 0.7209302325581405,
+      "state_probe": 0.5,
+      "final_entropy": 0.34541688818689475,
+      "max_greedy_action_fraction": 0.34823554882009095,
+      "finite": true,
+      "beats_random_margin": true
+     },
+     {
+      "after": 0.52,
+      "before": 0.4600000000000001,
+      "random": 0.45999999999999996,
+      "reference": 0.5866666666666664,
+      "gap_closure": 0.4736842105263169,
+      "state_probe": 0.375,
+      "final_entropy": 0.3273226595855794,
+      "max_greedy_action_fraction": 0.3718999235223424,
+      "finite": true,
+      "beats_random_margin": true
+     },
+     {
+      "after": 0.5599999999999999,
+      "before": 0.4666666666666666,
+      "random": 0.4466666666666666,
+      "reference": 0.5533333333333331,
+      "gap_closure": 1.0625000000000016,
+      "state_probe": 0.4,
+      "final_entropy": 0.3075052823339622,
+      "max_greedy_action_fraction": 0.35773510800785513,
+      "finite": true,
+      "beats_random_margin": true
+     },
+     {
+      "after": 0.5500000000000002,
+      "before": 0.4466666666666666,
+      "random": 0.47666666666666657,
+      "reference": 0.6133333333333332,
+      "gap_closure": 0.5365853658536606,
+      "state_probe": 0.625,
+      "final_entropy": 0.31809905424456497,
+      "max_greedy_action_fraction": 0.35182181857498107,
+      "finite": true,
+      "beats_random_margin": true
+     },
+     {
+      "after": 0.5599999999999999,
+      "before": 0.4766666666666667,
+      "random": 0.4466666666666666,
+      "reference": 0.5999999999999999,
+      "gap_closure": 0.7391304347826091,
+      "state_probe": 0.44999999999999996,
+      "final_entropy": 0.3121482344186397,
+      "max_greedy_action_fraction": 0.3742430795847751,
+      "finite": true,
+      "beats_random_margin": true
+     }
+    ]
+   },
+   "config": {
+    "ent": 0.003,
+    "eval_purpose": "validate_eval",
+    "shaping": 1.0,
+    "source": "fly",
+    "task": "breakout",
+    "ticks": 8,
+    "train_purpose": "validate_train",
+    "transitions": 500000
+   },
+   "wall_seconds": 1097.5119714105908
+  },
+  {
+   "task": "breakout",
+   "config_index": 7,
+   "seeds": 5,
+   "mean_after": 0.54,
+   "mean_before": 0.45599999999999996,
+   "mean_random": 0.4546666666666666,
+   "mean_reference": 0.5879999999999999,
+   "mean_gap_closure": 0.6528380948456135,
+   "sd_gap_closure": 0.20949404338314725,
+   "mean_state_probe": 0.475,
+   "collapsed_seed": false,
+   "rank_score": 0.5480910731540398,
+   "gate_if_validation": {
+    "passed": true,
+    "checks": {
+     "after_gt_before": true,
+     "after_gt_random_plus_margin": true,
+     "seeds_beating_random_margin": true,
+     "state_dependence_gt_0.05": true,
+     "finite": true,
+     "nonzero_entropy": true,
+     "no_constant_action_collapse": true,
+     "gap_closure_ge_0.15": true
+    },
+    "means": {
+     "after": 0.54,
+     "before": 0.45599999999999996,
+     "random": 0.4546666666666666,
+     "reference": 0.5879999999999999,
+     "gap_closure": 0.6528380948456135,
+     "state_probe": 0.475
+    },
+    "seeds_beating_random_margin": 4,
+    "seed_count": 5,
+    "seeds": [
+     {
+      "after": 0.5466666666666666,
+      "before": 0.42999999999999994,
+      "random": 0.4433333333333333,
+      "reference": 0.5866666666666664,
+      "gap_closure": 0.7209302325581405,
+      "state_probe": 0.5,
+      "final_entropy": 0.39502683430914487,
+      "max_greedy_action_fraction": 0.37177704076174173,
+      "finite": true,
+      "beats_random_margin": true
+     },
+     {
+      "after": 0.5366666666666666,
+      "before": 0.4600000000000001,
+      "random": 0.45999999999999996,
+      "reference": 0.5866666666666664,
+      "gap_closure": 0.6052631578947377,
+      "state_probe": 0.5,
+      "final_entropy": 0.36947589968378847,
+      "max_greedy_action_fraction": 0.358844287604764,
+      "finite": true,
+      "beats_random_margin": true
+     },
+     {
+      "after": 0.55,
+      "before": 0.4666666666666666,
+      "random": 0.4466666666666666,
+      "reference": 0.5533333333333331,
+      "gap_closure": 0.9687500000000023,
+      "state_probe": 0.44999999999999996,
+      "final_entropy": 0.37912247466616905,
+      "max_greedy_action_fraction": 0.3524937520373791,
+      "finite": true,
+      "beats_random_margin": true
+     },
+     {
+      "after": 0.52,
+      "before": 0.4466666666666666,
+      "random": 0.47666666666666657,
+      "reference": 0.6133333333333332,
+      "gap_closure": 0.31707317073170826,
+      "state_probe": 0.375,
+      "final_entropy": 0.39271443153660995,
+      "max_greedy_action_fraction": 0.3749590298262865,
+      "finite": true,
+      "beats_random_margin": false
+     },
+     {
+      "after": 0.5466666666666666,
+      "before": 0.4766666666666667,
+      "random": 0.4466666666666666,
+      "reference": 0.5999999999999999,
+      "gap_closure": 0.6521739130434787,
+      "state_probe": 0.55,
+      "final_entropy": 0.381937702737367,
+      "max_greedy_action_fraction": 0.3527260995806001,
+      "finite": true,
+      "beats_random_margin": true
+     }
+    ]
+   },
+   "config": {
+    "eval_purpose": "validate_eval",
+    "shaping": 1.0,
+    "source": "fly",
+    "task": "breakout",
+    "ticks": 8,
+    "train_purpose": "validate_train",
+    "transitions": 500000
+   },
+   "wall_seconds": 1070.7362223885314
+  },
+  {
+   "task": "flappy",
+   "config_index": 2,
+   "seeds": 3,
+   "mean_after": 0.25370370370370365,
+   "mean_before": 0.0,
+   "mean_random": 0.0,
+   "mean_reference": 1.0,
+   "mean_gap_closure": 0.25370370370370365,
+   "sd_gap_closure": 0.07144645082911269,
+   "mean_state_probe": 0.15,
+   "collapsed_seed": false,
+   "rank_score": 0.2179804782891473,
+   "gate_if_validation": null,
+   "config": {
+    "ent": 0.003,
+    "eval_purpose": "validate_eval",
+    "source": "fly",
+    "task": "flappy",
+    "ticks": 8,
+    "train_purpose": "validate_train",
+    "transitions": 500000
+   },
+   "wall_seconds": 903.6566548314877
+  }
+ ]
+}
