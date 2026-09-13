@@ -1,0 +1,77 @@
+{
+  "frozen_at": "2026-09-13T05:25:49.031397+00:00",
+  "frozen_after": "validation gate passed; before any confirmatory run",
+  "frozen_config": {
+    "task": "pong",
+    "source": "fly",
+    "arch": "mlp",
+    "transitions": 150000,
+    "lr": 0.0003,
+    "ent": 0.003,
+    "ticks": 8,
+    "shaping": 1.0
+  },
+  "frozen_config_sha256": "0d3783628e341cc4a974580bb42f3a9b816d33fd41b1bf2cd2fa98675f015d39",
+  "learner": "NumPy MLP actor-critic (128 tanh) + clipped PPO + GAE, Adam, grad-norm 0.5",
+  "defaults_applied": "flyarcade_v13.study.DEFAULTS for every key not listed",
+  "conditions": [
+    "biological",
+    "rewired",
+    "sensory"
+  ],
+  "frozen_condition": "the untrained initial policy of each biological trial, evaluated greedily on the same confirmatory seeds with learning off (reported as 'before')",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "seed_purposes": [
+    "conf_train",
+    "conf_model",
+    "conf_rollout",
+    "conf_eval",
+    "conf_probe"
+  ],
+  "evaluation": "40 greedy episodes, learning disabled, fresh neural and recurrent state",
+  "standardisation": "each topology uses its own feature_fit standardizer (artifacts/v13/standardizers/pong-<topology>-t8-descending.json)",
+  "success_criterion": {
+    "defined_before": "any confirmatory run",
+    "per_seed_all_required": [
+      "after > before (untrained frozen policy, same seeds)",
+      "after > random + 0.10",
+      "finite actor and critic",
+      "greedy state probe uses more than one action (no constant-action collapse)"
+    ],
+    "study_level_required": [
+      "every biological seed passes all per-seed components",
+      "mean biological after >= 0.70"
+    ],
+    "reported_regardless": [
+      "rewired",
+      "sensory-only",
+      "random",
+      "heuristic",
+      "frozen (= before)"
+    ]
+  },
+  "validation_gate": "artifacts/v13/pong/validation_gate.json",
+  "specs": [
+    "experiments/v13_pong/specs/confirm/pong-confirm-biological-s0.json",
+    "experiments/v13_pong/specs/confirm/pong-confirm-biological-s1.json",
+    "experiments/v13_pong/specs/confirm/pong-confirm-biological-s2.json",
+    "experiments/v13_pong/specs/confirm/pong-confirm-biological-s3.json",
+    "experiments/v13_pong/specs/confirm/pong-confirm-biological-s4.json",
+    "experiments/v13_pong/specs/confirm/pong-confirm-rewired-s0.json",
+    "experiments/v13_pong/specs/confirm/pong-confirm-rewired-s1.json",
+    "experiments/v13_pong/specs/confirm/pong-confirm-rewired-s2.json",
+    "experiments/v13_pong/specs/confirm/pong-confirm-rewired-s3.json",
+    "experiments/v13_pong/specs/confirm/pong-confirm-rewired-s4.json",
+    "experiments/v13_pong/specs/confirm/pong-confirm-sensory-s0.json",
+    "experiments/v13_pong/specs/confirm/pong-confirm-sensory-s1.json",
+    "experiments/v13_pong/specs/confirm/pong-confirm-sensory-s2.json",
+    "experiments/v13_pong/specs/confirm/pong-confirm-sensory-s3.json",
+    "experiments/v13_pong/specs/confirm/pong-confirm-sensory-s4.json"
+  ]
+}

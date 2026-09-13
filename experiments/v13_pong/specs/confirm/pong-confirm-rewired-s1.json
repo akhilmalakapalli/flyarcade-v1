@@ -1,0 +1,27 @@
+{
+ "name": "pong-confirm-rewired-s1",
+ "stage": "pong_rescue_confirm",
+ "condition": "rewired",
+ "config": {
+  "task": "pong",
+  "source": "fly",
+  "arch": "mlp",
+  "transitions": 150000,
+  "lr": 0.0003,
+  "ent": 0.003,
+  "ticks": 8,
+  "shaping": 1.0,
+  "topology": "rewired-1",
+  "seed": 1,
+  "train_purpose": "conf_train",
+  "model_purpose": "conf_model",
+  "rollout_purpose": "conf_rollout",
+  "eval_purpose": "conf_eval"
+ },
+ "evaluation": {
+  "purpose": "conf_eval",
+  "episodes": 40,
+  "probe_purpose": "conf_probe"
+ },
+ "output": "runs/v13-pong-rescue/confirm/pong-confirm-rewired-s1"
+}

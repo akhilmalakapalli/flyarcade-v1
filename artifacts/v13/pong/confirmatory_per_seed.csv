@@ -1,0 +1,16 @@
+condition,seed,before,after,random,heuristic,finite,probe_left,probe_stay,probe_right,seed_passes
+biological,0,0.2750,0.7778,0.2389,1.0000,True,22,0,18,True
+biological,1,0.2861,0.7722,0.2556,1.0000,True,26,1,13,True
+biological,2,0.3167,0.7944,0.2722,1.0000,True,29,1,10,True
+biological,3,0.2361,0.8028,0.2694,1.0000,True,18,1,21,True
+biological,4,0.4139,0.8194,0.2306,1.0000,True,22,1,17,True
+rewired,0,0.2944,0.8694,0.2389,1.0000,True,19,0,21,
+rewired,1,0.2611,0.8694,0.2556,1.0000,True,18,0,22,
+rewired,2,0.2472,0.8833,0.2722,1.0000,True,30,0,10,
+rewired,3,0.2556,0.8806,0.2694,1.0000,True,17,1,22,
+rewired,4,0.2556,0.8472,0.2306,1.0000,True,16,0,24,
+sensory,0,0.3889,1.0000,0.2389,1.0000,True,26,0,14,
+sensory,1,0.4417,1.0000,0.2556,1.0000,True,21,0,19,
+sensory,2,0.3972,1.0000,0.2722,1.0000,True,16,2,22,
+sensory,3,0.2889,1.0000,0.2694,1.0000,True,24,0,16,
+sensory,4,0.2333,1.0000,0.2306,1.0000,True,7,0,33,
