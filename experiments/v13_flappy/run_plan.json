@@ -1,0 +1,124 @@
+{
+  "task": "flappy",
+  "frozen_at": "2026-09-13T13:26:55.552938+00:00",
+  "frozen_after": "development validation gate passed; before any confirmatory run",
+  "source_commit_at_freeze": "2385c14f13ed18e92e685142f840c24c1df3fda0",
+  "code_sha256_extended": "cbc8078ac2f4b630529a6192b0fe85bb0a06babf27a616a6aa0f8ee6ca7f4895",
+  "base_multitask_code_sha256": "504a571e76244f199713ffb732eedd645d4504aba13a7fd4088f6d7e2206ae59",
+  "environment": "unchanged flyarcade.v12.environments.Flappy (target level only)",
+  "environment_source_sha256": "37090574965053743a4eff06579fb34b5f4f32023a12541272d810fa6e470448",
+  "graph_sha256": {
+    "biological": "46d585dcb1cc34e77025541dd855b2d728ee4c42aa9c2e15712caf5ae1907c35",
+    "rewired-0": "344a24cf5708ed2929983a637a5bcf29ea0f49a906b2a363cb664f1e5f376c7d",
+    "rewired-1": "c555fbeee9c5a346532f0e76ba152ea6afcea46732a548f3abcc447ffc67852d",
+    "rewired-2": "c29bfa4b69c0fdd49de8175bc093012c3afecd7dc17436b3d81d72ba48d00255",
+    "rewired-3": "aac9a36d17193f5eb5156b0f6fabf6f83580a0d1ce1f4949c2070cc1004e0e1b",
+    "rewired-4": "09ddb197143210284e9df7d96b8b757ee16429a99316c42b57774d2d710072ad"
+  },
+  "standardizers": {
+    "biological": {
+      "path": "artifacts/v13/standardizers/flappy-biological-t16-descending.json",
+      "sha256": "ff20e43eebdc98769084168be9d413f8b2782026a0db6ade570ceacef9ecf7bd"
+    },
+    "rewired-0": {
+      "path": "artifacts/v13/standardizers/flappy-rewired-0-t16-descending.json",
+      "sha256": "d3b48f40e6e9dc1d05d9bc1b597f329841ac9a98515828ae21e9a2d04f5ffc85"
+    },
+    "rewired-1": {
+      "path": "artifacts/v13/standardizers/flappy-rewired-1-t16-descending.json",
+      "sha256": "2ba65e86eaa2d43515a2cd660526b6456040d7e24ba95ec808647ef77707e88c"
+    },
+    "rewired-2": {
+      "path": "artifacts/v13/standardizers/flappy-rewired-2-t16-descending.json",
+      "sha256": "cea8d21213c5782337d8931fb821627497b6f2e4639cf49cfebfd081efa3f7df"
+    },
+    "rewired-3": {
+      "path": "artifacts/v13/standardizers/flappy-rewired-3-t16-descending.json",
+      "sha256": "719a7edb8cdbb8b530538fdb00178cd26584ff5d9da595d8a64c43afd8411632"
+    },
+    "rewired-4": {
+      "path": "artifacts/v13/standardizers/flappy-rewired-4-t16-descending.json",
+      "sha256": "97b71795e514ccf4deb548b29488c3a0fcde5da858805e783c734731e4434529"
+    }
+  },
+  "standardizer_procedure": "flyarcade_v13.study.fit_standardizer on feature_fit development seeds, one per topology",
+  "frozen_config": {
+    "task": "flappy",
+    "source": "fly",
+    "lr": 0.0003,
+    "transitions": 150000,
+    "arch": "gru",
+    "ticks": 16,
+    "shaping": 0.0,
+    "ent": 0.003
+  },
+  "frozen_config_sha256": "03cff10c087a0e8b4d5178e0085d955b71de12874a37a251c393d756bbcbaf26",
+  "defaults_applied": "flyarcade_v13.study.DEFAULTS for every key not listed",
+  "recurrent_core": "MaleCNS recurrent weights frozen (fixed-core Stage A); no extra neurons",
+  "conditions": {
+    "biological": "authentic MaleCNS core + frozen learner/budget (+ post-training perturbations)",
+    "untrained": "each biological trial's initial policy on the same seeds ('before')",
+    "rewired": "degree-preserving rewired core k for seed k, its own standardizer, same learner/budget",
+    "sensory": "engineered observation into the same learner and budget, no SNN",
+    "random": "uniform random actions on matched evaluation seeds",
+    "mpc": "flappy MPC oracle on matched evaluation seeds"
+  },
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "seed_purposes": [
+    "conf_train",
+    "conf_model",
+    "conf_rollout",
+    "conf_eval",
+    "conf_probe",
+    "conf_perturb"
+  ],
+  "seed_note": "no Flappy confirmatory seed had been used by any session before this freeze",
+  "evaluation": "100 greedy episodes per seed, learning off, target environment, fresh state",
+  "thresholds": {
+    "random_margin": 0.1,
+    "min_seeds_beating_margin": 4,
+    "mean_success_minimum": 0.6,
+    "mean_success_preferred": 0.7,
+    "gap_closure": 0.5,
+    "state_dependence": 0.05,
+    "constant_action_fraction": 0.98
+  },
+  "success_criterion": [
+    "mean biological learned > mean biological untrained",
+    "mean biological learned > random + 0.10",
+    ">= 4/5 biological seeds individually > random + 0.10",
+    "mean biological success >= 0.60",
+    "mean random-to-MPC gap closure >= 0.50",
+    "policy state dependence > 0.05",
+    "no constant-action policy (greedy top-action fraction < 0.98 on every seed)",
+    "all parameters finite",
+    "saved checkpoints replay exactly",
+    "frozen MaleCNS weights unchanged (graph hashes match)"
+  ],
+  "target": "mean >= 0.70 (reported; the protocol is not changed if confirmatory lands below it)",
+  "development_gate": "artifacts/v13/flappy-rescue/validation_gate.json",
+  "development_gate_sha256": "946a2c9576bcb3bbf048862b2cd2fc2d2c85c82bb5e1daa68cf493928e8de4df",
+  "specs": [
+    "experiments/v13_flappy/specs/confirm/flappy-confirm-biological-s0.json",
+    "experiments/v13_flappy/specs/confirm/flappy-confirm-biological-s1.json",
+    "experiments/v13_flappy/specs/confirm/flappy-confirm-biological-s2.json",
+    "experiments/v13_flappy/specs/confirm/flappy-confirm-biological-s3.json",
+    "experiments/v13_flappy/specs/confirm/flappy-confirm-biological-s4.json",
+    "experiments/v13_flappy/specs/confirm/flappy-confirm-rewired-s0.json",
+    "experiments/v13_flappy/specs/confirm/flappy-confirm-rewired-s1.json",
+    "experiments/v13_flappy/specs/confirm/flappy-confirm-rewired-s2.json",
+    "experiments/v13_flappy/specs/confirm/flappy-confirm-rewired-s3.json",
+    "experiments/v13_flappy/specs/confirm/flappy-confirm-rewired-s4.json",
+    "experiments/v13_flappy/specs/confirm/flappy-confirm-sensory-s0.json",
+    "experiments/v13_flappy/specs/confirm/flappy-confirm-sensory-s1.json",
+    "experiments/v13_flappy/specs/confirm/flappy-confirm-sensory-s2.json",
+    "experiments/v13_flappy/specs/confirm/flappy-confirm-sensory-s3.json",
+    "experiments/v13_flappy/specs/confirm/flappy-confirm-sensory-s4.json"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+ "name": "flappy-confirm-sensory-s2",
+ "stage": "flappy_rescue_confirm",
+ "condition": "sensory",
+ "config": {
+  "task": "flappy",
+  "source": "sensory",
+  "lr": 0.0003,
+  "transitions": 150000,
+  "arch": "gru",
+  "shaping": 0.0,
+  "ent": 0.003,
+  "train_purpose": "conf_train",
+  "eval_purpose": "conf_eval",
+  "model_purpose": "conf_model",
+  "rollout_purpose": "conf_rollout",
+  "seed": 2
+ },
+ "evaluation": {
+  "purpose": "conf_eval",
+  "episodes": 100,
+  "probe_purpose": "conf_probe"
+ },
+ "output": "runs/v13-flappy-rescue/confirm/flappy-confirm-sensory-s2"
+}

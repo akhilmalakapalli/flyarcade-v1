@@ -1,0 +1,6 @@
+{
+  "s1-gru-t12-arrival1 (seeds 0,1)": "terminated at 81,920/150k (last checkpoint): training success 0.052 / 0.120; greedy curve s0 0.073, s1 rose to 0.417. Behind the matched no-shaping GRU (0.41 / 0.35 training at ~105-127k), but not hopeless on seed 1.",
+  "s1-mlp-t12-arrival1 (seeds 0,1)": "never started: removed from the queue after the matched GRU arm showed arrival shaping x1.0 suppresses learning",
+  "s1-gru-t12-arrival05 (seeds 0,1)": "terminated at ~46k: training success 0.025 / 0.112 vs 0.19 / 0.17 for no-shaping GRU at ~41k",
+  "s1-mlp-t12-noshape (seeds 0,1)": "terminated at 49k: training success 0.020 / 0.013, greedy curve 0.062 / 0.031, vs GRU 0.19 / 0.17 at ~41k (same ticks, encoding, budget): answers whether temporal integration matters"
+}

@@ -1,0 +1,30 @@
+{
+ "name": "flappy-confirm-biological-s1",
+ "stage": "flappy_rescue_confirm",
+ "condition": "biological",
+ "config": {
+  "task": "flappy",
+  "source": "fly",
+  "lr": 0.0003,
+  "transitions": 150000,
+  "arch": "gru",
+  "ticks": 16,
+  "shaping": 0.0,
+  "ent": 0.003,
+  "train_purpose": "conf_train",
+  "eval_purpose": "conf_eval",
+  "model_purpose": "conf_model",
+  "rollout_purpose": "conf_rollout",
+  "seed": 1,
+  "topology": "biological",
+  "standardizer": "artifacts/v13/standardizers/flappy-biological-t16-descending.json"
+ },
+ "evaluation": {
+  "purpose": "conf_eval",
+  "episodes": 100,
+  "probe_purpose": "conf_probe",
+  "perturbations": true,
+  "perturb_purpose": "conf_perturb"
+ },
+ "output": "runs/v13-flappy-rescue/confirm/flappy-confirm-biological-s1"
+}

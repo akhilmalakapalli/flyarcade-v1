@@ -1,0 +1,22 @@
+{
+  "plan_sha256": "369d47d76f992a03191e70a5bb16a48ea9cb0cddd6dc26aa33732a2abca8c9da",
+  "code_hash_matches_frozen_plan": true,
+  "current_code_hash_matches_frozen_plan": true,
+  "result_configs_match_frozen_specs": true,
+  "standardizers_match_plan": true,
+  "graph_hashes_match_plan_and_disk": true,
+  "all_finite": true,
+  "policy_parameters_changed": true,
+  "evaluation_modes": [
+    "greedy argmax, no learning, fresh neural and recurrent state"
+  ],
+  "random_and_mpc_identical_across_conditions": true,
+  "evaluation_seeds_in_conf_eval": true,
+  "development_and_confirmatory_ranges_disjoint": true,
+  "saved_policies_replay_exactly": {
+    "flappy-confirm-biological-s2": true,
+    "flappy-confirm-rewired-s4": true,
+    "flappy-confirm-sensory-s1": true
+  },
+  "passed": true
+}

@@ -1,0 +1,28 @@
+{
+ "name": "flappy-confirm-rewired-s3",
+ "stage": "flappy_rescue_confirm",
+ "condition": "rewired",
+ "config": {
+  "task": "flappy",
+  "source": "fly",
+  "lr": 0.0003,
+  "transitions": 150000,
+  "arch": "gru",
+  "ticks": 16,
+  "shaping": 0.0,
+  "ent": 0.003,
+  "train_purpose": "conf_train",
+  "eval_purpose": "conf_eval",
+  "model_purpose": "conf_model",
+  "rollout_purpose": "conf_rollout",
+  "seed": 3,
+  "topology": "rewired-3",
+  "standardizer": "artifacts/v13/standardizers/flappy-rewired-3-t16-descending.json"
+ },
+ "evaluation": {
+  "purpose": "conf_eval",
+  "episodes": 100,
+  "probe_purpose": "conf_probe"
+ },
+ "output": "runs/v13-flappy-rescue/confirm/flappy-confirm-rewired-s3"
+}

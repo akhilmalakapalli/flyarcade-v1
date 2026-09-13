@@ -1,0 +1,87 @@
+{
+  "passed": true,
+  "checks": {
+    "1_mean_after_gt_before": true,
+    "2_mean_after_gt_random_plus_0.10": true,
+    "3_at_least_4_of_5_seeds_beat_random_plus_0.10": true,
+    "4_mean_success_ge_0.60": true,
+    "5_mean_gap_closure_ge_0.50": true,
+    "6_state_dependence_gt_0.05": true,
+    "7_no_constant_action_policy": true,
+    "8_all_parameters_finite": true,
+    "9_frozen_malecns_graphs_match_disk": true,
+    "preferred_mean_ge_0.70 (reported, not required)": false
+  },
+  "means": {
+    "after": 0.6527777777777779,
+    "before": 0.001111111111111111,
+    "random": 0.0,
+    "reference": 1.0,
+    "gap_closure": 0.6527777777777779,
+    "state_probe": 0.26999999999999996
+  },
+  "seeds_beating_random_plus_0.10": 5,
+  "seed_count": 5,
+  "seeds": {
+    "flappy-validate-gru-t16-150k-s0": {
+      "after": 0.5527777777777778,
+      "before": 0.0,
+      "random": 0.0,
+      "reference": 1.0,
+      "gap_closure": 0.5527777777777778,
+      "state_probe": 0.44999999999999996,
+      "final_entropy": 0.18613193092824387,
+      "max_greedy_action_fraction": 0.8798852635353173,
+      "finite": true,
+      "beats_random_margin": true
+    },
+    "flappy-validate-gru-t16-150k-s1": {
+      "after": 0.5527777777777777,
+      "before": 0.0027777777777777775,
+      "random": 0.0,
+      "reference": 1.0,
+      "gap_closure": 0.5527777777777777,
+      "state_probe": 0.19999999999999996,
+      "final_entropy": 0.16195076823203375,
+      "max_greedy_action_fraction": 0.8993572084481175,
+      "finite": true,
+      "beats_random_margin": true
+    },
+    "flappy-validate-gru-t16-150k-s2": {
+      "after": 0.6166666666666666,
+      "before": 0.0,
+      "random": 0.0,
+      "reference": 1.0,
+      "gap_closure": 0.6166666666666666,
+      "state_probe": 0.22499999999999998,
+      "final_entropy": 0.17513309823854822,
+      "max_greedy_action_fraction": 0.890619650804519,
+      "finite": true,
+      "beats_random_margin": true
+    },
+    "flappy-validate-gru-t16-150k-s3": {
+      "after": 0.8111111111111112,
+      "before": 0.0027777777777777775,
+      "random": 0.0,
+      "reference": 1.0,
+      "gap_closure": 0.8111111111111112,
+      "state_probe": 0.275,
+      "final_entropy": 0.14751858451488564,
+      "max_greedy_action_fraction": 0.8983497434475107,
+      "finite": true,
+      "beats_random_margin": true
+    },
+    "flappy-validate-gru-t16-150k-s4": {
+      "after": 0.7305555555555555,
+      "before": 0.0,
+      "random": 0.0,
+      "reference": 1.0,
+      "gap_closure": 0.7305555555555555,
+      "state_probe": 0.19999999999999996,
+      "final_entropy": 0.17494361534284741,
+      "max_greedy_action_fraction": 0.8932096918935089,
+      "finite": true,
+      "beats_random_margin": true
+    }
+  }
+}
