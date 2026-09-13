@@ -14,6 +14,7 @@ from pathlib import Path
 
 import numpy as np
 import v15_path  # noqa: F401
+from flyarcade_v15.imitation import warm_start
 from flyarcade_v15.provenance import code_hash
 from flyarcade_v15.seeds import seed_for
 from flyarcade_v15.trainer import (
@@ -23,6 +24,7 @@ from flyarcade_v15.trainer import (
     digest,
     ensure_standardizer,
     evaluate,
+    make_source,
     params_hash,
     state_probe,
     summarize_rows,
@@ -100,8 +102,11 @@ def main(argv=None):
         return False
 
     core_hash = array_hash(trainer.source.base_magnitude) if c["source"] == "fly" else None
-    if c["imitation"]:
-        raise NotImplementedError("imitation warm-start is a rescue method; not enabled")
+    if c["imitation"] and "imitation" not in extra:
+        extra["imitation"] = warm_start(trainer, make_source, guard, count=c["imitation"])
+        save()
+        if pause():
+            return 7
     while not trainer.done():
         guard.check()
         trainer.train_step()
@@ -166,6 +171,7 @@ def main(argv=None):
         "peak_memory_mb": max(s["peak_memory_mb"] for s in extra["segments"]),
         "segments": extra["segments"],
         "optimizer": "Adam(betas=0.9,0.999, eps=1e-5)",
+        "imitation": extra.get("imitation"),
         "checkpoint_path": str(checkpoint),
         "checkpoint_sha256": digest(checkpoint),
         "policy_path": str(policy_path),

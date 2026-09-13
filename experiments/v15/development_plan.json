@@ -1,0 +1,347 @@
+{
+  "version": "flyarcade-v1.5-development-1",
+  "created_at": "2026-09-13T19:47:05.230140+00:00",
+  "branch": "flyarcade-v1.5-performance",
+  "base_commit": "6bf07045f76bc8b406b6969e0a1f17c4c4f5aa2b",
+  "v14_frozen_commit": "73ea7a1",
+  "diagnosis": "artifacts/v15/diagnosis.md",
+  "diagnosis_sha256": "71e4fe2918888ed0f09a5e10a0f213487615a6507c9a1bab317f70ecae74ea39",
+  "question": "How much behaviour can be extracted from the fixed 2,040-neuron MaleCNS-derived spiking substrate when integration time, readout scope and downstream learner are chosen from diagnosis, while separating substrate-mediated computation from direct input-neuron leakage?",
+  "fixed_substrate": "unchanged MaleCNS v1.0 graph, LIF core, encoders, background/stimulus; no recurrent weight change, no added neurons, no topology change",
+  "graph_file": "data/malecns-v1.0/graph.npz",
+  "graph_file_sha256": "3f4cbeedb17ca6a7d06162151429e0713ed72ce579d5f19a8845a446f6315697",
+  "tasks": [
+    "catch",
+    "dodge",
+    "snake",
+    "pong",
+    "flappy"
+  ],
+  "environments": "unchanged v1.4 target adapters (LaneGame catch/dodge horizon 24; historical 8x8 SnakeGame; v1.2 Pong horizon 144; v1.2 Flappy horizon 138)",
+  "metrics": {
+    "catch": "fraction caught",
+    "dodge": "fraction dodged",
+    "snake": "raw food per episode",
+    "pong": "fraction of returns hit",
+    "flappy": "pipes passed / 6"
+  },
+  "rewards": "original environment rewards; no additional shaping; no curriculum",
+  "code_sha256": "defe27e5005137246a30ff78cef7cbbecc70718f7094418adfef94b85f4ad781",
+  "code_scope": "src/**/*.py + src_v15/**/*.py + scripts/v15_trial.py",
+  "suite_sha256": "1831f270466dc632420dccbecd9a043271507e5321a9ae736c92740e42af2db7",
+  "runner_sha256": "78aa97cf1fdb1824e84847809cd3898074427b3bdfe53e203d85f508f994a888",
+  "trial_sha256": "7a637c02fd171f01d3c36b3cd80332c219b4fc67f00938bd9a5a7e4901525369",
+  "seed_namespace": {
+    "range": [
+      1000000000000,
+      1499999999999
+    ],
+    "task_block": 100000000000,
+    "purpose_block": 5000000000,
+    "seed_slot": 10000000,
+    "purposes": [
+      "software",
+      "diagnosis",
+      "feature_fit",
+      "train",
+      "model",
+      "rollout",
+      "curve",
+      "checkpoint_select",
+      "dev_eval",
+      "dev_probe",
+      "imitation",
+      "validation",
+      "validation_probe",
+      "diagnosis_training",
+      "spare"
+    ],
+    "development_purposes": [
+      "feature_fit",
+      "train",
+      "model",
+      "rollout",
+      "curve",
+      "checkpoint_select",
+      "dev_eval",
+      "dev_probe",
+      "imitation"
+    ],
+    "validation_purposes": [
+      "validation",
+      "validation_probe"
+    ],
+    "diagnosis_purposes_already_used": [
+      "diagnosis",
+      "diagnosis_training"
+    ],
+    "future_confirmatory_reserved_purpose_indices": [
+      15,
+      16,
+      17
+    ],
+    "disjointness": "v1.5 seeds in [1e12,1.5e12); v1.4 in [1e11,6e11); historical/dashboard < 1.2e10; neural +1e9 and behaviour +2e9 offsets remain inside each 5e9 purpose block",
+    "note": "validation purposes are never used by the suite or trial; confirmatory indices are rejected by seed_for"
+  },
+  "development_seeds": [
+    0,
+    1,
+    2
+  ],
+  "dev_eval_episodes_per_seed": 100,
+  "checkpoint_selection": "within each run, evaluate every 16,384 transitions on 32 checkpoint_select episodes; keep the best (ties -> later); the dev score is then measured once on 100 dev_eval episodes. dev_eval never influences which checkpoint is kept.",
+  "ppo": {
+    "arch": "gru",
+    "hidden": 128,
+    "core": 64,
+    "ticks": 16,
+    "gamma": 0.99,
+    "lam": 0.95,
+    "lr": 0.0003,
+    "lr_schedule": "linear",
+    "lr_floor": 0.05,
+    "clip": 0.2,
+    "ent": 0.003,
+    "ent_final": null,
+    "vf": 0.5,
+    "max_grad_norm": 0.5,
+    "epochs": 4,
+    "envs": 16,
+    "steps": 128,
+    "minibatches": 8,
+    "chunk": 16,
+    "std_floor": 0.02,
+    "stack": 1,
+    "imitation": 0,
+    "eval_every": 16384,
+    "select_episodes": 32,
+    "checkpoint_selection": "best",
+    "train_purpose": "train"
+  },
+  "optimizer": "Adam(0.9, 0.999, eps 1e-5), gradient clip 0.5, BPTT chunk 16 steps from stored rollout states",
+  "budgets": {
+    "catch": 131072,
+    "dodge": 131072,
+    "snake": 262144,
+    "pong": 262144,
+    "flappy": 262144
+  },
+  "budget_rationale": "diagnosis: Catch/Dodge reach ~0.98 by 131k at 16 ticks; Snake/Pong/Flappy curves still improving and sensory-ceiling Snake budget-limited at 131k",
+  "hypotheses": {
+    "catch": "16+ ticks with GRU/MLP policy reaches >=0.97 from the descending readout (diagnosis 0.98-0.995)",
+    "dodge": "16+ ticks reduces edge-lane errors; >=0.97 without targeted sampling (diagnosis 0.98-0.99)",
+    "snake": "leakage-free readout at 16-24 ticks with GRU and longer budget yields substantially more food than the v1.4 descending baseline (1.1-3.3) and may approach the all-readout number without input leakage",
+    "pong": "longer integration (16-32 ticks) with GRU reaches >=0.90 without input leakage (diagnosis 0.84-0.88 at 16 ticks)",
+    "flappy": "restoring >=16 ticks restores >=0.605; 24-32 ticks and longer budget push toward >=0.80"
+  },
+  "stage_A": {
+    "name": "learner x integration time (descending readout, all tasks, always run)",
+    "arms": [
+      {
+        "overrides": {
+          "arch": "linear",
+          "ticks": 16
+        }
+      },
+      {
+        "overrides": {
+          "arch": "mlp",
+          "ticks": 16
+        }
+      },
+      {
+        "overrides": {
+          "arch": "gru",
+          "ticks": 16
+        }
+      },
+      {
+        "overrides": {
+          "arch": "gru",
+          "ticks": 24
+        }
+      },
+      {
+        "overrides": {
+          "arch": "gru",
+          "ticks": 32
+        },
+        "tasks": [
+          "pong",
+          "flappy"
+        ]
+      }
+    ]
+  },
+  "stage_B": {
+    "name": "readout scope on the stage-A winner (all tasks, always run)",
+    "arms": [
+      {
+        "overrides": {
+          "readout": "nonvisual"
+        },
+        "role": "headline"
+      },
+      {
+        "overrides": {
+          "readout": "pooled"
+        },
+        "role": "headline"
+      },
+      {
+        "overrides": {
+          "readout": "all"
+        },
+        "role": "control"
+      },
+      {
+        "overrides": {
+          "readout": "visual"
+        },
+        "role": "control"
+      },
+      {
+        "overrides": {
+          "source": "sensory"
+        },
+        "role": "control"
+      }
+    ],
+    "leakage_rule": "headline-eligible readouts exclude the 218 directly stimulated visual-projection input neurons (descending, nonvisual, cb_intrinsic, pooled). all-2,040, visual-only and sensory-only are pre-declared leakage controls: always reported, never selectable as the headline."
+  },
+  "stage_C": {
+    "name": "conditional optimisation/budget/capacity, in order, one change at a time on the current best headline configuration; skipped for a task once its dev mean reaches the stretch target",
+    "steps": [
+      {
+        "name": "C1_longer",
+        "tasks": [
+          "catch",
+          "dodge",
+          "snake",
+          "pong",
+          "flappy"
+        ],
+        "rule": "double transitions, only if the chosen checkpoint lies in the last 25% of training for >=2 of 3 seeds"
+      },
+      {
+        "name": "C2_capacity",
+        "tasks": [
+          "catch",
+          "dodge",
+          "snake",
+          "pong",
+          "flappy"
+        ],
+        "rule": "hidden 256 / core 128 for MLP or GRU; skipped for linear"
+      },
+      {
+        "name": "C3_optimisation",
+        "tasks": [
+          "catch",
+          "dodge",
+          "snake",
+          "pong",
+          "flappy"
+        ],
+        "overrides": {
+          "catch": {
+            "lr": 0.001
+          },
+          "dodge": {
+            "lr": 0.001
+          },
+          "pong": {
+            "lr": 0.001
+          },
+          "snake": {
+            "ent": 0.01,
+            "ent_final": 0.0005
+          },
+          "flappy": {
+            "ent": 0.01,
+            "ent_final": 0.0005
+          }
+        },
+        "suffix": {
+          "catch": "lr1e-3",
+          "dodge": "lr1e-3",
+          "pong": "lr1e-3",
+          "snake": "entsched",
+          "flappy": "entsched"
+        },
+        "rule": "diagnosis: lr 1e-3 helped Catch/Pong and hurt Snake/Flappy, so Snake/Flappy get an exploration (entropy) schedule instead"
+      }
+    ]
+  },
+  "rescue": {
+    "label": "SECONDARY RESCUE PHASE",
+    "tasks": [
+      "snake",
+      "pong",
+      "flappy"
+    ],
+    "max_attempts_per_task": 1,
+    "trigger": "after stages A-C, best eligible headline dev mean below useful_performance",
+    "method": "reference-controller imitation warm-start on 16,384 fresh imitation-seed transitions (4 passes, separate Adam 3e-4), then the best headline configuration's PPO on original rewards; warm-start transitions reported separately",
+    "reporting": "separate; not eligible for the headline selection; locked and validated separately only if its dev utility exceeds the headline's"
+  },
+  "excluded_by_diagnosis": {
+    "curriculum": "v1.4 curriculum hurt and Flappy fails at target-task pipe precision",
+    "state_balanced_sampling_dodge": "16-tick GRU already ~0.98-0.99 on diagnosis seeds",
+    "reward_shaping": "not needed; original objective retained",
+    "temporal_stacking": "GRU memory already present; stack not selected"
+  },
+  "stretch_targets": {
+    "catch": 0.99,
+    "dodge": 0.99,
+    "snake": 17.0,
+    "pong": 0.99,
+    "flappy": 0.9
+  },
+  "targets": {
+    "catch": 0.97,
+    "dodge": 0.97,
+    "snake": 15.0,
+    "pong": 0.97,
+    "flappy": 0.8
+  },
+  "useful_performance": {
+    "catch": 0.95,
+    "dodge": 0.95,
+    "snake": 12.0,
+    "pong": 0.9,
+    "flappy": 0.8
+  },
+  "v14_validation_reference": {
+    "catch": 0.9388888888888888,
+    "dodge": 0.9411111111111111,
+    "snake": 12.156666666666666,
+    "pong": 0.9403703703703704,
+    "flappy": 0.2972222222222222
+  },
+  "meaningful_improvement_over_v14": {
+    "catch": 0.02,
+    "dodge": 0.02,
+    "snake": 1.0,
+    "pong": 0.02,
+    "flappy": 0.1
+  },
+  "selection_rule": "per configuration: 3/3 seeds complete and finite; every seed state-probe > 0.05 and greedy dominant-action fraction < 0.98; utility = mean - 0.25*population SD over seeds; highest utility wins; ties within 1e-12 prefer linear<mlp<gru, smaller width, fewer ticks, simpler readout, fewer transitions. Never a single best seed. If no configuration passes the gates the best stable one is used to continue escalation but is labelled and cannot pass validation gates silently.",
+  "max_development_configurations": {
+    "catch": 12,
+    "dodge": 12,
+    "snake": 13,
+    "pong": 14,
+    "flappy": 14
+  },
+  "validation_rule": "after selected_configs.json is written it is committed BEFORE any validation. Each locked selection (headline, and rescue if locked) is evaluated exactly once: each of its 3 trained seeds' chosen checkpoint on 100 fresh validation episodes plus a validation_probe; no training, no reselection, no re-evaluation. Any further development requires a new plan version and a new validation block.",
+  "stopping": "all tasks complete stages A and B, the conditional stage C and rescue rules are exhausted, selections are locked and validated once. No configurations beyond those enumerated here. Failures are preserved.",
+  "resources": {
+    "max_seconds_per_process": 120,
+    "checkpoint_after_seconds": 70,
+    "max_segments_per_trial": 60,
+    "max_rss_mb": 2048,
+    "parallel_single_thread_workers": 8
+  },
+  "confirmatory_testing": false
+}

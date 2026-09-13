@@ -17,13 +17,16 @@ def main():
     for name, rs in groups.items():
         h = [r["training_history"][-8:] for r in rs]
         mean = lambda key: np.mean([np.mean([x[key] for x in hh]) for hh in h])  # noqa: E731
+        seeds = [round(r["score"], 3) for r in rs]
+        last = [round(r["last_checkpoint_score"], 3) for r in rs]
+        probe = [round(r["state_probe"]["score"], 2) for r in rs]
+        tps = np.mean([r["training_transitions"] / r["wall_clock_training_seconds"] for r in rs])
         print(
             f"{name:44s} n={len(rs)} score={np.mean([r['score'] for r in rs]):7.3f} "
-            f"seeds={[round(r['score'], 3) for r in rs]} last={[round(r['last_checkpoint_score'], 3) for r in rs]} "
-            f"probe={[round(r['state_probe']['score'], 2) for r in rs]} "
+            f"seeds={seeds} last={last} probe={probe} "
             f"dom={np.mean([r['dominant_action_fraction'] for r in rs]):.2f} "
-            f"kl={mean('approx_kl'):.4f} clip={mean('clip_fraction'):.3f} ev={mean('explained_variance'):.2f} "
-            f"H={mean('entropy'):.2f} tps={np.mean([r['training_transitions'] / r['wall_clock_training_seconds'] for r in rs]):.0f}"
+            f"kl={mean('approx_kl'):.4f} clip={mean('clip_fraction'):.3f} "
+            f"ev={mean('explained_variance'):.2f} H={mean('entropy'):.2f} tps={tps:.0f}"
         )
 
 

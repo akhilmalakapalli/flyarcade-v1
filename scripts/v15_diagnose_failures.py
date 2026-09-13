@@ -12,8 +12,8 @@ import pickle
 import sys
 from pathlib import Path
 
-import v15_path  # noqa: F401
 import numpy as np
+import v15_path  # noqa: F401
 from flyarcade_v15.seeds import BEHAVIOUR_OFFSET, seed_for
 
 from flyarcade_v14.environments import make_env, reference_action
