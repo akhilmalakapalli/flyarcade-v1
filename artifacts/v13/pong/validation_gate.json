@@ -1,0 +1,52 @@
+{
+  "mean_after": 0.8101851851851851,
+  "checks": {
+    "mean_after_at_least_0.70": true,
+    "every_seed_after_gt_before": true,
+    "every_seed_after_gt_random_plus_0.10": true,
+    "every_seed_finite": true,
+    "every_seed_state_dependent": true
+  },
+  "passed": true,
+  "seeds": {
+    "pong-validate-biological-s0": {
+      "before": 0.24722222222222223,
+      "after": 0.825,
+      "random": 0.24444444444444446,
+      "reference": 1.0,
+      "finite": true,
+      "probe_action_counts": [
+        18,
+        2,
+        20
+      ],
+      "state_dependent": true
+    },
+    "pong-validate-biological-s1": {
+      "before": 0.20277777777777778,
+      "after": 0.8111111111111111,
+      "random": 0.275,
+      "reference": 1.0,
+      "finite": true,
+      "probe_action_counts": [
+        19,
+        0,
+        21
+      ],
+      "state_dependent": true
+    },
+    "pong-validate-biological-s2": {
+      "before": 0.225,
+      "after": 0.7944444444444444,
+      "random": 0.21388888888888888,
+      "reference": 1.0,
+      "finite": true,
+      "probe_action_counts": [
+        21,
+        2,
+        17
+      ],
+      "state_dependent": true
+    }
+  }
+}

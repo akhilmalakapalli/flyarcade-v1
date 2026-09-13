@@ -1,0 +1,113 @@
+{
+  "written_at": "2026-09-13T05:11:07.401560+00:00",
+  "written_before": "any validation or confirmatory Pong rescue result existed",
+  "branch": "flyarcade-v1.3-pong-rescue (worktree), based on flyarcade-v1.3-multitask commit 2f17881",
+  "coordination": "Another session was concurrently running the v1.3 multitask screen in the main working tree. By user decision, this sprint freezes from that session's completed Pong development screen rather than rerunning it, and runs in a separate git worktree so no files under that session's running jobs are touched.",
+  "phase1_representation_diagnostic": {
+    "source": "artifacts/v13/representation-pong.json (produced by the concurrent v1.3 session on development seeds)",
+    "target": "heuristic (reference) action; balanced accuracy, chance 0.333",
+    "sensory_observation": {
+      "linear": 0.7368,
+      "mlp": 0.9448
+    },
+    "biological_descending": {
+      "t4": {
+        "linear": 0.4538,
+        "mlp": 0.4564
+      },
+      "t8": {
+        "linear": 0.489,
+        "mlp": 0.506
+      },
+      "t12": {
+        "linear": 0.499,
+        "mlp": 0.525
+      },
+      "t16": {
+        "linear": 0.535,
+        "mlp": 0.553
+      }
+    },
+    "interpretation": "Nonlinear decoding of the exact heuristic action stays far below 0.80 at every tick count, so by the sprint rule this is a poor-decoding case; integration time helps monotonically. The reward learner nevertheless reached 0.83 at 8 ticks, so exact heuristic-action imitation is a stricter target than the coarse intercept information the policy needs."
+  },
+  "phase2_screen": {
+    "source": "runs/v13-dev/mlp_screen/mlp_screen-pong-c*-s{0,1} (16 configs x 2 dev seeds, screen_train/screen_eval purposes)",
+    "learner": "NumPy MLP actor-critic (hidden 128, tanh) + clipped PPO + GAE, Adam, grad-norm clip 0.5",
+    "fixed": {
+      "gamma": 0.99,
+      "lam": 0.95,
+      "clip": 0.2,
+      "epochs": 4,
+      "envs": 16,
+      "steps": 128,
+      "minibatches": 8,
+      "vf": 0.5,
+      "anneal_lr": true,
+      "transitions": 150000,
+      "exploration_floor": "none (pure softmax sampling)"
+    },
+    "swept": {
+      "ticks": [
+        4,
+        8
+      ],
+      "lr": [
+        0.0003,
+        0.001
+      ],
+      "ent": [
+        0.003,
+        0.01
+      ],
+      "shaping": [
+        0.0,
+        1.0
+      ]
+    },
+    "result": "every ticks=8 config 0.742-0.829; every ticks=4 config 0.486-0.654",
+    "selected": {
+      "config_index": 3,
+      "ticks": 8,
+      "lr": 0.0003,
+      "ent": 0.003,
+      "shaping": 1.0,
+      "screen_after": [
+        0.836,
+        0.822
+      ]
+    },
+    "selection_rule": "highest two-seed mean; runner-up configs c02 0.812, c07 0.808 make the choice insensitive to screening noise"
+  },
+  "validation_gate_before_freeze": {
+    "specs": "experiments/v13_pong/specs/validate/*.json",
+    "seeds": "dev seeds 0,1,2 under validate_train / validate_eval purposes (never screen, never confirmatory)",
+    "pass_if": [
+      "mean greedy success after training >= 0.70",
+      "every seed: after > before",
+      "every seed: after > random + 0.10",
+      "every seed: finite parameters",
+      "every seed: greedy state probe uses more than one action"
+    ],
+    "if_fail": "do not freeze c03; escalate per ladder (12 ticks, then GRU) on development seeds only"
+  },
+  "confirmatory_success_criterion": {
+    "defined_before": "any confirmatory run",
+    "per_seed_all_required": [
+      "after > before (untrained frozen policy, same seeds)",
+      "after > random + 0.10",
+      "finite actor and critic",
+      "greedy state probe uses more than one action (no constant-action collapse)"
+    ],
+    "study_level_required": [
+      "every biological seed passes all per-seed components",
+      "mean biological after >= 0.70"
+    ],
+    "reported_regardless": [
+      "rewired",
+      "sensory-only",
+      "random",
+      "heuristic",
+      "frozen (= before)"
+    ]
+  }
+}
