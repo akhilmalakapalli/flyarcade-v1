@@ -13,6 +13,7 @@ Branch: `flyarcade-v1.3-multitask` (user-specified name; mission text said
 | M4_REPRESENTATION_DIAGNOSTICS | COMPLETE for tick sweep (bio vs rewired pending post-freeze) |
 | M5_FLY_MLP_DEVELOPMENT | COMPLETE (screen) |
 | M8_DEVELOPMENT_VALIDATION | IN PROGRESS (mlp_validate + sensory_validate) |
+| PONG_EXTERNAL_FREEZE | COMPLETE — frozen and confirmed separately; see D035 |
 | M6..M14 | pending |
 
 ## Evidence
@@ -44,7 +45,17 @@ Branch: `flyarcade-v1.3-multitask` (user-specified name; mission text said
   0.350 / 0.368 / 0.000 / 0.043.
 - Machine idle sleep paused trials once (23:10-23:32); suites now run under caffeinate.
 
+## Pong is closed (external freeze, D035)
+Pong was pre-registered at `56c604b` and confirmed at `94422be` on
+`flyarcade-v1.3-pong-rescue`, merged here unchanged. Biological 0.793, untrained 0.306,
+random 0.253, rewired 0.870, sensory-only 1.000, heuristic 1.000; criterion met.
+**Pong confirmatory seeds 0-4 are spent.** `v13_freeze.py` skips Pong, `v13_suite.py`
+refuses any spent Pong confirmatory spec, and `v13_report.py` reads Pong only from
+`experiments/v13_external_frozen.json`. Do not select, freeze, re-run or re-score Pong.
+Pong t8 rewired standardizers 0-4 already exist (identical procedure).
+
 ## Next action
-Collect mlp_validate/sensory_validate; apply the development gate; if all pass, write
-selection.json, fit rewired standardizers at 8 ticks, freeze and run confirmatory.
+Collect mlp_validate/sensory_validate; apply the development gate to Flappy, Breakout
+and Snake; if they pass, write selection.json, fit rewired standardizers at 8 ticks,
+freeze and run confirmatory for those three tasks only.
 If a task fails: GRU rung (then curriculum) on development seeds only.

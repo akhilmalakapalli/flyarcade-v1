@@ -11,6 +11,7 @@ import json
 from pathlib import Path
 
 import numpy as np
+from v13_external import confirmatory_tasks, external_summary_entry, external_tasks, load_registry
 
 from flyarcade_v13.environments import TARGETS
 from flyarcade_v13.gates import seed_summary, task_gate
@@ -58,7 +59,7 @@ def success(rows):
 
 def load(plan):
     results, files = {}, {}
-    for task in TARGETS:
+    for task in confirmatory_tasks(TARGETS):
         for condition in CONDITIONS:
             for seed in plan["training_seeds"]:
                 path = Path("runs") / f"v13-{task}-{condition}-{seed}" / "result.json"
@@ -103,7 +104,9 @@ def main():
     FIG.mkdir(parents=True, exist_ok=True)
     summary = {"plan_sha256": digest(PLAN), "result_files": files, "tasks": {}}
     primary, contrasts, perturb, specific = [], [], [], []
-    for task in TARGETS:
+    study_tasks = confirmatory_tasks(TARGETS)
+    external = external_tasks()
+    for task in study_tasks:
         bio = [results[(task, "biological", s)] for s in seeds]
         gate = task_gate(bio)
         entry = {"architecture": plan["tasks"][task]["architecture"], "criteria": gate, "primary": {}}
@@ -177,6 +180,19 @@ def main():
                 perturb.append({"task": task, "perturbation": key, "mean": float(np.mean(values)), "delta_mean": float(np.mean(deltas)), "seed_values": values})
         entry["level_transitions"] = [results[(task, "biological", s)]["level_transitions"] for s in seeds]
         summary["tasks"][task] = entry
+    for task in external:
+        summary["tasks"][task] = external_summary_entry(task, describe)
+        for condition, stats in summary["tasks"][task]["primary"].items():
+            primary.append(
+                {"task": task, "condition": condition, "external_freeze": True, **stats}
+            )
+    summary["externally_frozen_tasks"] = {
+        "registry": "experiments/v13_external_frozen.json",
+        "registry_sha256": digest("experiments/v13_external_frozen.json"),
+        "tasks": list(external),
+        "note": "read from frozen files; not re-run, not re-scored under the multitask gate",
+    }
+    load_registry()  # re-verify frozen file hashes before writing any summary
     write_csv("primary.csv", primary)
     write_csv("contrasts.csv", contrasts)
     write_csv("perturbations.csv", perturb)
@@ -253,8 +269,8 @@ def main():
     save(fig, "six_task_performance")
 
     # 2 learning curves (transitions)
-    fig, axes = plt.subplots(1, 4, figsize=(16, 3.6))
-    for ax, task in zip(axes, TARGETS, strict=True):
+    fig, axes = plt.subplots(1, len(study_tasks), figsize=(4 * len(study_tasks), 3.6))
+    for ax, task in zip(np.atleast_1d(axes), study_tasks, strict=True):
         for condition in ("biological", "rewired", "sensory"):
             for s in seeds:
                 curve = results[(task, condition, s)]["curve"]
@@ -263,8 +279,8 @@ def main():
         ax.set_title(task)
         ax.set_xlabel("environment transitions")
         ax.set_ylim(0, 1.05)
-    axes[0].set_ylabel("curve-seed greedy success")
-    axes[0].legend(fontsize=7)
+    np.atleast_1d(axes)[0].set_ylabel("curve-seed greedy success")
+    np.atleast_1d(axes)[0].legend(fontsize=7)
     save(fig, "learning_curves")
 
     # 3 capacity ladder
@@ -273,7 +289,10 @@ def main():
         ladder = json.loads(ladder_path.read_text())
         fig, axes = plt.subplots(1, 4, figsize=(15, 3.6), sharey=True)
         for ax, task in zip(axes, TARGETS, strict=True):
-            rungs = ladder[task]
+            rungs = ladder.get(task)
+            if not rungs:
+                ax.set_title(f"{task} (no ladder)")
+                continue
             ax.bar(range(len(rungs)), [r["mean_after"] for r in rungs], color="#2878b5")
             ax.axhline(rungs[0]["random"], color=COLORS["random"], ls="--", lw=1, label="random")
             ax.set_xticks(range(len(rungs)), [r["label"] for r in rungs], rotation=45, fontsize=7)
@@ -290,7 +309,9 @@ def main():
         for j, condition in enumerate(("biological", "rewired")):
             ax.bar(i + (j - 0.5) * 0.35, p[condition]["mean"], 0.35, color=COLORS[condition], label=condition if i == 0 else None)
             ax.scatter(np.full(len(seeds), i + (j - 0.5) * 0.35), p[condition]["seed_values"], s=8, color="black", zorder=3)
-    ax.set_xticks(range(4), TARGETS)
+    ax.set_xticks(
+        range(len(TARGETS)), [f"{t}\n(separate freeze)" if t in external else t for t in TARGETS]
+    )
     ax.set_ylim(0, 1.05)
     ax.set_ylabel("held-out success")
     ax.legend(fontsize=8)
@@ -298,11 +319,11 @@ def main():
 
     # 5 perturbations
     fig, ax = plt.subplots(figsize=(7, 3.8))
-    for i, task in enumerate(TARGETS):
+    for i, task in enumerate(study_tasks):
         pr = summary["tasks"][task]["perturbations"]
         for j, key in enumerate(PERTURBATIONS):
             ax.bar(i + (j - 1.5) * 0.2, pr[key]["mean"], 0.2, color=plt.cm.viridis(j / 3), label=key if i == 0 else None)
-    ax.set_xticks(range(4), TARGETS)
+    ax.set_xticks(range(len(study_tasks)), study_tasks)
     ax.set_ylim(0, 1.05)
     ax.set_ylabel("biological held-out success")
     ax.legend(fontsize=7)

@@ -15,6 +15,7 @@ from pathlib import Path
 
 import numpy as np
 import scipy
+from v13_external import REGISTRY, confirmatory_tasks, load_registry
 
 from flyarcade_v13.environments import TARGETS
 from flyarcade_v13.gates import CONSTANT_ACTION, ENTROPY_FLOOR, GAP_CLOSURE, MARGIN, PROBE
@@ -46,7 +47,11 @@ def main():
         print(f"{PLAN}: already frozen; refusing to overwrite")
         return 1
     selection = json.loads(SELECTION.read_text())
-    if not all(selection["development_gate_passed"][t] for t in TARGETS):
+    # Pong was frozen and confirmed separately (experiments/v13_external_frozen.json):
+    # it is neither gated, re-frozen nor re-run here, and its spent seeds stay spent.
+    registry = load_registry()
+    study_tasks = confirmatory_tasks(TARGETS)
+    if not all(selection["development_gate_passed"][t] for t in study_tasks):
         raise SystemExit("development gate not passed for every task; freeze refused")
     status = subprocess.run(["git", "status", "--porcelain", "src/flyarcade_v13", "scripts/v13_trial.py"], capture_output=True, text=True).stdout
     commit = subprocess.run(["git", "rev-parse", "HEAD"], capture_output=True, text=True).stdout.strip()
@@ -55,7 +60,7 @@ def main():
     graphs = {"biological": graph_hash(load_topology("biological"))}
     for seed in SEEDS:
         graphs[f"rewired-{seed}"] = graph_hash(load_topology(f"rewired-{seed}"))
-    for task in TARGETS:
+    for task in study_tasks:
         chosen = selection["tasks"][task]
         fly = {k: v for k, v in chosen["fly_config"].items() if k not in ("seed", "task")}
         sensory = {k: v for k, v in chosen["sensory_config"].items() if k not in ("seed", "task")}
@@ -87,6 +92,26 @@ def main():
         "graph_sha256": graphs,
         "standardizer_sha256": standardizers,
         "tasks": tasks,
+        "externally_frozen_tasks": {
+            "registry": str(REGISTRY),
+            "registry_sha256": digest(REGISTRY),
+            "tasks": {
+                t: {
+                    k: e[k]
+                    for k in (
+                        "frozen_plan",
+                        "frozen_plan_commit",
+                        "results_commit",
+                        "summary",
+                        "spent_confirmatory_seeds",
+                        "headline",
+                        "protocol_differences_from_v13_multitask_plan",
+                        "rule",
+                    )
+                }
+                for t, e in registry["tasks"].items()
+            },
+        },
         "conditions": {
             "biological": "authentic MaleCNS core, selected learner and budget",
             "frozen": "identical initialisation, no learning (zero-transition budget; before == after)",

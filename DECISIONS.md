@@ -270,3 +270,37 @@ own neural RNG (episode seed + 1e9), reproducing the v1.2 controller bit for bit
 4 ticks. Standardizers are refit on v1.3 feature_fit seeds per task/topology/ticks,
 without sqrt(N) normalisation (the LayerNorm learner does not need it), with at least
 8,000 states. Time-limit truncations bootstrap V(s_T); genuine terminals do not.
+
+## D035 — Pong is externally frozen and integrated read-only
+Pong's confirmatory study was pre-registered and completed on branch
+`flyarcade-v1.3-pong-rescue`: the plan was committed at `56c604b` before any
+confirmatory run, and results at `94422be`. It is merged here unchanged, and every
+frozen Pong file is pinned by SHA256 in `experiments/v13_external_frozen.json`.
+
+Frozen result (40 greedy episodes per seed, learning off, 5 confirmatory seeds):
+biological 0.793 (0.778, 0.772, 0.794, 0.803, 0.819); untrained 0.306; random 0.253;
+rewired 0.870; sensory-only 1.000; heuristic 1.000. Its pre-registered criterion is
+met. The MaleCNS recurrent weights stayed frozen and no extra neurons were used. The
+learner was a 128-unit tanh MLP with PPO + GAE, 8 ticks per action, gamma 0.99,
+lambda 0.95 and 150,000 transitions.
+
+Pong confirmatory seeds 0-4 (`conf_train`, `conf_model`, `conf_rollout`, `conf_eval`,
+`conf_probe`) are spent. The multitask study therefore:
+- does not gate, select, freeze or write confirmatory specs for Pong
+  (`scripts/v13_freeze.py` uses `confirmatory_tasks`);
+- refuses, with no override, any suite run whose spec touches a spent Pong
+  confirmatory purpose (`scripts/v13_suite.py`). Reproduction of the frozen result is
+  by exact policy replay (`artifacts/v13/pong/confirmatory_verification.json`), never
+  by retraining on those seeds;
+- reports Pong from its frozen files under its own pre-registered criterion. It is
+  never re-scored under the multitask gap-closure gate, because the protocols differ:
+  40 vs 100 episodes, no perturbations, and a different criterion
+  (`scripts/v13_report.py`, `external_summary_entry`).
+
+The guards live in `scripts/` rather than `src/flyarcade_v13/` on purpose. The
+multitask code hash covers `src/flyarcade_v13/**` and `scripts/v13_trial.py`, and it
+is unchanged by this integration (`504a571e…`), identical to the hash recorded in
+every Pong confirmatory result. Running multitask checkpoints and any later
+multitask freeze therefore remain valid. A different Pong configuration must not
+later replace this result; any new Pong confirmatory study requires a new version and
+new, unused seeds.

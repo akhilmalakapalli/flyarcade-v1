@@ -1,0 +1,111 @@
+{
+  "purpose": "Tasks whose confirmatory study was frozen and completed outside the v1.3 multitask plan. The multitask freeze, suite and report treat these as closed: no new confirmatory specs, no reruns, results read only from the files below.",
+  "tasks": {
+    "pong": {
+      "branch": "flyarcade-v1.3-pong-rescue",
+      "frozen_plan_commit": "56c604b",
+      "results_commit": "94422be",
+      "frozen_plan": "experiments/v13_pong_run_plan.json",
+      "summary": "artifacts/v13/pong/confirmatory_summary.json",
+      "per_seed_table": "artifacts/v13/pong/confirmatory_per_seed.csv",
+      "verification": "artifacts/v13/pong/confirmatory_verification.json",
+      "handoff": "V13_PONG_RESCUE.md",
+      "spent_confirmatory_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "spent_confirmatory_purposes": [
+        "conf_train",
+        "conf_model",
+        "conf_rollout",
+        "conf_eval",
+        "conf_probe"
+      ],
+      "file_sha256": {
+        "experiments/v13_pong_development.json": "e872f25f8e2d5d326f0a832f898400b5daa15d93c5c198d7510fd054e566db62",
+        "experiments/v13_pong_run_plan.json": "98932484f51cde7d54df4bc2ba9568809aefddb6f378cf2a6f808dd53e34bfb0",
+        "artifacts/v13/pong/validation_gate.json": "08b745e8c9228d051be6ae6af15b3016d7d3da2f41bd00704ebf2c43c94759d2",
+        "artifacts/v13/pong/confirmatory_summary.json": "b9a02fa5eee2e94adf84d1683ff867531b123a857ccada5b8cd447f6892383a2",
+        "artifacts/v13/pong/confirmatory_per_seed.csv": "19d24d923eaa1ea24fb5ff784f7784bdde448aab8ac9445ec5ae27228d1dd1c6",
+        "artifacts/v13/pong/confirmatory_verification.json": "7b2ccc1141c633c7cc5d86968bca18824426816a8b730b0f7dade6551103e696",
+        "artifacts/v13/standardizers/pong-biological-t8-descending.json": "77a7afa66a7079957f9735174c0434852a736d5d7e9d7fbd9ab3414b3c524f8f",
+        "artifacts/v13/standardizers/pong-rewired-0-t8-descending.json": "b30943bfc08ab8621e77f2638e553ab4f1d525a45db9b274f3cfce7988eea625",
+        "artifacts/v13/standardizers/pong-rewired-1-t8-descending.json": "05ca37082797085b3a960674ce2327527579e25bc7300ec18bcc6fca52c1dac0",
+        "artifacts/v13/standardizers/pong-rewired-2-t8-descending.json": "02fbfd7125ac921674e7a7f16015332cfb5bcd05bf6840923a52f4161edfae41",
+        "artifacts/v13/standardizers/pong-rewired-3-t8-descending.json": "ee4bde90520f58194d9f96d27abedcca6a0736af1f9299451e637860ba9b7b4f",
+        "artifacts/v13/standardizers/pong-rewired-4-t8-descending.json": "21e046a23f59e6d7d4b2f3262deac757b82d570a27d10556a10e33fa9a2e436e",
+        "experiments/v13_pong/specs/confirm/pong-confirm-biological-s0.json": "dbc1c9f20d955bc12dadb2dec6adade3a6343d2c1b7266c0a6793aeb969f310b",
+        "experiments/v13_pong/specs/confirm/pong-confirm-biological-s1.json": "344bb1550853eb4a756ae68bb23e46e44938734ecd4921841a03eccd0f336bda",
+        "experiments/v13_pong/specs/confirm/pong-confirm-biological-s2.json": "7818eb4d2ace5c439517c086151582a15d98431c0e1a853234a47550250be418",
+        "experiments/v13_pong/specs/confirm/pong-confirm-biological-s3.json": "150df51bddbf90548397cb09ef371990c5ebf49a07141b5e6881fa99e83536b9",
+        "experiments/v13_pong/specs/confirm/pong-confirm-biological-s4.json": "eb9fc64e85a738aaaf7ab21fb5ecedb7d68ff366ff95bd58ea27a12a56e1a60d",
+        "experiments/v13_pong/specs/confirm/pong-confirm-rewired-s0.json": "ee8f7a61043579510634300e6102fa668c1de97f913f923d3eda0b9f36900dbc",
+        "experiments/v13_pong/specs/confirm/pong-confirm-rewired-s1.json": "93a0f608b3493097e6e12c9029e3230784558419a0cb001570fa5c7a9449e052",
+        "experiments/v13_pong/specs/confirm/pong-confirm-rewired-s2.json": "a271e114460e175cc925209866b9a7b63115d1ce5b646df5db62c498b579a99a",
+        "experiments/v13_pong/specs/confirm/pong-confirm-rewired-s3.json": "beaeba55db9cf26c68d69ff273fbcdb402438f66ff0e9768341568b1cbf93397",
+        "experiments/v13_pong/specs/confirm/pong-confirm-rewired-s4.json": "5dca9a3680139ca84039174526b038971831e24a6fd12ca84805627d01966c08",
+        "experiments/v13_pong/specs/confirm/pong-confirm-sensory-s0.json": "5571684d613ff23c7f02f974d7b4bd3e790d2f1afe9a02c3c60f2e61161e1312",
+        "experiments/v13_pong/specs/confirm/pong-confirm-sensory-s1.json": "597e746507419a65000807bb9e0581ecfb1f1a55d26dbe1dce97dd6b76bd84fa",
+        "experiments/v13_pong/specs/confirm/pong-confirm-sensory-s2.json": "c93758bc575ea84662d8e129158fe9f535a335c3d54997106016b8c8cfe48309",
+        "experiments/v13_pong/specs/confirm/pong-confirm-sensory-s3.json": "3df0da9110c68dbbcc2546f849852074f88837162df8d188f783a6dfbcc09eae",
+        "experiments/v13_pong/specs/confirm/pong-confirm-sensory-s4.json": "d536408466c9dd819a9203df70fb5fe931805763021bc05399d77b06e15ae917"
+      },
+      "headline": {
+        "biological_after": 0.7933333333333332,
+        "biological_before_untrained": 0.3055555555555556,
+        "rewired_after": 0.8699999999999999,
+        "sensory_after": 1.0,
+        "random": 0.2533333333333333,
+        "heuristic_reference": 1.0,
+        "criterion_met": true,
+        "per_seed_after": {
+          "biological": [
+            0.7777777777777777,
+            0.7722222222222221,
+            0.7944444444444445,
+            0.8027777777777777,
+            0.8194444444444443
+          ],
+          "rewired": [
+            0.8694444444444442,
+            0.8694444444444445,
+            0.8833333333333332,
+            0.8805555555555558,
+            0.8472222222222221
+          ],
+          "sensory": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "learner": "NumPy MLP actor-critic (128 tanh) + clipped PPO + GAE, Adam, grad-norm 0.5",
+      "frozen_config": {
+        "task": "pong",
+        "source": "fly",
+        "arch": "mlp",
+        "transitions": 150000,
+        "lr": 0.0003,
+        "ent": 0.003,
+        "ticks": 8,
+        "shaping": 1.0
+      },
+      "frozen_config_sha256": "0d3783628e341cc4a974580bb42f3a9b816d33fd41b1bf2cd2fa98675f015d39",
+      "recurrent_core": "MaleCNS recurrent weights frozen; descending-neuron readout; no extra neurons",
+      "protocol_differences_from_v13_multitask_plan": [
+        "40 greedy evaluation episodes per seed (multitask plan: 100)",
+        "success criterion pre-registered in experiments/v13_pong_development.json (every biological seed beats untrained and random + 0.10, finite, state-dependent; mean >= 0.70), not the multitask gap-closure criterion",
+        "no perturbation or lesion evaluations were pre-registered or run",
+        "the frozen (untrained) condition is each biological trial's initial policy on the same seeds, not a separate zero-transition trial",
+        "configuration selected from the multitask mlp_screen (c03) and a 3-seed validate gate, not from the multitask selection.json"
+      ],
+      "rule": "Never rerun, re-score under a different criterion, or tune against Pong confirmatory seeds 0-4. Any further Pong confirmatory study needs a new version and new, unused seeds."
+    }
+  }
+}

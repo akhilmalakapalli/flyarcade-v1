@@ -14,6 +14,8 @@ import time
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
+from v13_external import spent
+
 ENV = {
     **os.environ,
     "OPENBLAS_NUM_THREADS": "1",
@@ -60,6 +62,13 @@ def main():
     args = parser.parse_args()
     Path(args.log_dir).mkdir(parents=True, exist_ok=True)
     specs = sorted(args.specs)
+    # Externally frozen tasks (Pong, see experiments/v13_external_frozen.json) have
+    # already spent their confirmatory seeds. No override exists: reproducing that
+    # result is done by exact policy replay, never by retraining on those seeds.
+    refused = [s for s in specs if spent(json.loads(Path(s).read_text()))]
+    if refused:
+        print(json.dumps({"refused_spent_confirmatory_specs": refused}), flush=True)
+        return 2
     with ThreadPoolExecutor(args.workers) as pool:
         futures = [pool.submit(run, s, args.log_dir) for s in specs]
         outcomes = []
