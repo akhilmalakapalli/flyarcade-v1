@@ -1,0 +1,5468 @@
+{
+  "task": "snake",
+  "candidate": 1,
+  "hyperparameters": {
+    "actor_lr": 8.0,
+    "critic_lr": 0.2,
+    "discount": 0.9,
+    "trace_decay": 0.7,
+    "entropy_coefficient": 0.003,
+    "exploration_floor": 0.02,
+    "weight_bound": 4.0,
+    "update_clip": 0.05,
+    "init_scale": 0.0
+  },
+  "split": "development",
+  "before": [
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        40,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        40,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        40,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        40,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        40,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        40,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        40,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        40,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        40,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        40,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        40,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        40,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        40,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        40,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        40,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        40,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        40,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        40,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        40,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        40,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    }
+  ],
+  "after": [
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        0,
+        3,
+        37
+      ],
+      "action_entropy": 0.2663844632679184,
+      "state_dependence": 0.07499999999999996,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 35,
+      "length": 4,
+      "death": "wall",
+      "return": -0.3400000000000002,
+      "action_counts": [
+        0,
+        6,
+        29
+      ],
+      "action_entropy": 0.4581441790615237,
+      "state_dependence": 0.17142857142857137,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        1,
+        7,
+        32
+      ],
+      "action_entropy": 0.5757564557894721,
+      "state_dependence": 0.19999999999999996,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        1,
+        3,
+        36
+      ],
+      "action_entropy": 0.38131648785332606,
+      "state_dependence": 0.09999999999999998,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        1,
+        1,
+        38
+      ],
+      "action_entropy": 0.2331726023738669,
+      "state_dependence": 0.050000000000000044,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        0,
+        1,
+        39
+      ],
+      "action_entropy": 0.11690684913752906,
+      "state_dependence": 0.025000000000000022,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        1,
+        2,
+        37
+      ],
+      "action_entropy": 0.3141230258900284,
+      "state_dependence": 0.07499999999999996,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        1,
+        4,
+        35
+      ],
+      "action_entropy": 0.4393204641987073,
+      "state_dependence": 0.125,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 41,
+      "length": 4,
+      "death": "starvation",
+      "return": 0.5899999999999996,
+      "action_counts": [
+        0,
+        7,
+        34
+      ],
+      "action_entropy": 0.45704453303755754,
+      "state_dependence": 0.1707317073170732,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        0,
+        2,
+        38
+      ],
+      "action_entropy": 0.19851524334587062,
+      "state_dependence": 0.050000000000000044,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 72,
+      "length": 4,
+      "death": "starvation",
+      "return": 0.2799999999999996,
+      "action_counts": [
+        0,
+        11,
+        61
+      ],
+      "action_entropy": 0.4274973174139136,
+      "state_dependence": 0.1527777777777778,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        1,
+        6,
+        33
+      ],
+      "action_entropy": 0.5354967955198788,
+      "state_dependence": 0.17500000000000004,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        0,
+        3,
+        37
+      ],
+      "action_entropy": 0.2663844632679184,
+      "state_dependence": 0.07499999999999996,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 65,
+      "length": 4,
+      "death": "starvation",
+      "return": 0.34999999999999953,
+      "action_counts": [
+        0,
+        8,
+        57
+      ],
+      "action_entropy": 0.37301104528012674,
+      "state_dependence": 0.12307692307692308,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        1,
+        3,
+        36
+      ],
+      "action_entropy": 0.38131648785332606,
+      "state_dependence": 0.09999999999999998,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 43,
+      "length": 4,
+      "death": "starvation",
+      "return": 0.5699999999999996,
+      "action_counts": [
+        0,
+        6,
+        37
+      ],
+      "action_entropy": 0.40411826492135966,
+      "state_dependence": 0.13953488372093026,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        1,
+        3,
+        36
+      ],
+      "action_entropy": 0.38131648785332606,
+      "state_dependence": 0.09999999999999998,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 44,
+      "length": 4,
+      "death": "starvation",
+      "return": 0.5599999999999996,
+      "action_counts": [
+        0,
+        5,
+        39
+      ],
+      "action_entropy": 0.3540511393449248,
+      "state_dependence": 0.11363636363636365,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        0,
+        3,
+        37
+      ],
+      "action_entropy": 0.2663844632679184,
+      "state_dependence": 0.07499999999999996,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        0,
+        9,
+        31
+      ],
+      "action_entropy": 0.5331638407372966,
+      "state_dependence": 0.22499999999999998,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    }
+  ],
+  "training": [
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 4,
+      "length": 3,
+      "death": "wall",
+      "return": -1.03,
+      "action_counts": [
+        1,
+        2,
+        1
+      ],
+      "action_entropy": 1.039720770839915,
+      "state_dependence": 0.5,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 5,
+      "length": 3,
+      "death": "wall",
+      "return": -1.04,
+      "action_counts": [
+        2,
+        3,
+        0
+      ],
+      "action_entropy": 0.6730116670092545,
+      "state_dependence": 0.4,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 5,
+      "length": 3,
+      "death": "wall",
+      "return": -1.04,
+      "action_counts": [
+        1,
+        2,
+        2
+      ],
+      "action_entropy": 1.054920167986141,
+      "state_dependence": 0.6,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 6,
+      "length": 3,
+      "death": "wall",
+      "return": -1.05,
+      "action_counts": [
+        3,
+        0,
+        3
+      ],
+      "action_entropy": 0.6931471805599433,
+      "state_dependence": 0.5,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 22,
+      "length": 3,
+      "death": "wall",
+      "return": -1.21,
+      "action_counts": [
+        2,
+        3,
+        17
+      ],
+      "action_entropy": 0.6889170862637723,
+      "state_dependence": 0.2272727272727273,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 28,
+      "length": 3,
+      "death": "wall",
+      "return": -1.27,
+      "action_counts": [
+        7,
+        2,
+        19
+      ],
+      "action_entropy": 0.7982042955798633,
+      "state_dependence": 0.3214285714285714,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 5,
+      "length": 3,
+      "death": "wall",
+      "return": -1.04,
+      "action_counts": [
+        2,
+        1,
+        2
+      ],
+      "action_entropy": 1.054920167986141,
+      "state_dependence": 0.6,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 10,
+      "length": 3,
+      "death": "wall",
+      "return": -1.09,
+      "action_counts": [
+        6,
+        2,
+        2
+      ],
+      "action_entropy": 0.9502705392332316,
+      "state_dependence": 0.4,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 5,
+      "length": 3,
+      "death": "wall",
+      "return": -1.04,
+      "action_counts": [
+        2,
+        1,
+        2
+      ],
+      "action_entropy": 1.054920167986141,
+      "state_dependence": 0.6,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 29,
+      "length": 4,
+      "death": "wall",
+      "return": -0.28000000000000025,
+      "action_counts": [
+        10,
+        2,
+        17
+      ],
+      "action_entropy": 0.8646485148135048,
+      "state_dependence": 0.4137931034482759,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 23,
+      "length": 4,
+      "death": "wall",
+      "return": -0.2200000000000002,
+      "action_counts": [
+        13,
+        3,
+        7
+      ],
+      "action_entropy": 0.9502094526077772,
+      "state_dependence": 0.4347826086956522,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 14,
+      "length": 3,
+      "death": "wall",
+      "return": -1.13,
+      "action_counts": [
+        2,
+        2,
+        10
+      ],
+      "action_entropy": 0.79631164017381,
+      "state_dependence": 0.2857142857142857,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 5,
+      "length": 3,
+      "death": "wall",
+      "return": -1.04,
+      "action_counts": [
+        2,
+        0,
+        3
+      ],
+      "action_entropy": 0.6730116670092545,
+      "state_dependence": 0.4,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 5,
+      "length": 3,
+      "death": "wall",
+      "return": -1.04,
+      "action_counts": [
+        2,
+        0,
+        3
+      ],
+      "action_entropy": 0.6730116670092545,
+      "state_dependence": 0.4,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 6,
+      "length": 3,
+      "death": "wall",
+      "return": -1.05,
+      "action_counts": [
+        2,
+        1,
+        3
+      ],
+      "action_entropy": 1.0114042647073487,
+      "state_dependence": 0.5,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 6,
+      "length": 3,
+      "death": "wall",
+      "return": -1.05,
+      "action_counts": [
+        2,
+        1,
+        3
+      ],
+      "action_entropy": 1.0114042647073487,
+      "state_dependence": 0.5,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 5,
+      "length": 3,
+      "death": "wall",
+      "return": -1.04,
+      "action_counts": [
+        2,
+        1,
+        2
+      ],
+      "action_entropy": 1.054920167986141,
+      "state_dependence": 0.6,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        3,
+        3,
+        34
+      ],
+      "action_entropy": 0.5266811648899796,
+      "state_dependence": 0.15000000000000002,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 23,
+      "length": 3,
+      "death": "wall",
+      "return": -1.22,
+      "action_counts": [
+        1,
+        4,
+        18
+      ],
+      "action_entropy": 0.6323694730330368,
+      "state_dependence": 0.21739130434782605,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 17,
+      "length": 3,
+      "death": "wall",
+      "return": -1.16,
+      "action_counts": [
+        2,
+        0,
+        15
+      ],
+      "action_entropy": 0.362210557135447,
+      "state_dependence": 0.11764705882352944,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 38,
+      "length": 3,
+      "death": "wall",
+      "return": -1.37,
+      "action_counts": [
+        4,
+        2,
+        32
+      ],
+      "action_entropy": 0.5366645624845221,
+      "state_dependence": 0.1578947368421053,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 14,
+      "length": 3,
+      "death": "wall",
+      "return": -1.13,
+      "action_counts": [
+        2,
+        1,
+        11
+      ],
+      "action_entropy": 0.6559757323365437,
+      "state_dependence": 0.2142857142857143,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 14,
+      "length": 3,
+      "death": "wall",
+      "return": -1.13,
+      "action_counts": [
+        4,
+        1,
+        9
+      ],
+      "action_entropy": 0.8304717124362887,
+      "state_dependence": 0.3571428571428571,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 10,
+      "length": 3,
+      "death": "wall",
+      "return": -1.09,
+      "action_counts": [
+        2,
+        1,
+        7
+      ],
+      "action_entropy": 0.8018185525433343,
+      "state_dependence": 0.30000000000000004,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        3,
+        2,
+        35
+      ],
+      "action_entropy": 0.4608966196325908,
+      "state_dependence": 0.125,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 51,
+      "length": 4,
+      "death": "starvation",
+      "return": 0.48999999999999966,
+      "action_counts": [
+        5,
+        5,
+        41
+      ],
+      "action_entropy": 0.6308288903867223,
+      "state_dependence": 0.196078431372549,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 6,
+      "length": 3,
+      "death": "wall",
+      "return": -1.05,
+      "action_counts": [
+        2,
+        1,
+        3
+      ],
+      "action_entropy": 1.0114042647073487,
+      "state_dependence": 0.5,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        6,
+        1,
+        33
+      ],
+      "action_entropy": 0.5354967955198788,
+      "state_dependence": 0.17500000000000004,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        2,
+        3,
+        35
+      ],
+      "action_entropy": 0.4608966196325908,
+      "state_dependence": 0.125,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 25,
+      "length": 3,
+      "death": "wall",
+      "return": -1.24,
+      "action_counts": [
+        4,
+        3,
+        18
+      ],
+      "action_entropy": 0.7841675867636034,
+      "state_dependence": 0.28,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 5,
+      "length": 3,
+      "death": "wall",
+      "return": -1.04,
+      "action_counts": [
+        2,
+        1,
+        2
+      ],
+      "action_entropy": 1.054920167986141,
+      "state_dependence": 0.6,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 25,
+      "length": 3,
+      "death": "wall",
+      "return": -1.24,
+      "action_counts": [
+        9,
+        2,
+        14
+      ],
+      "action_entropy": 0.8945510979978184,
+      "state_dependence": 0.43999999999999995,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 3,
+      "length": 3,
+      "death": "wall",
+      "return": -1.02,
+      "action_counts": [
+        0,
+        3,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        6,
+        4,
+        30
+      ],
+      "action_entropy": 0.7305880613711194,
+      "state_dependence": 0.25,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 11,
+      "length": 3,
+      "death": "wall",
+      "return": -1.1,
+      "action_counts": [
+        3,
+        3,
+        5
+      ],
+      "action_entropy": 1.0670895187820804,
+      "state_dependence": 0.5454545454545454,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 19,
+      "length": 3,
+      "death": "wall",
+      "return": -1.18,
+      "action_counts": [
+        3,
+        2,
+        14
+      ],
+      "action_entropy": 0.7534424611802353,
+      "state_dependence": 0.26315789473684215,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 5,
+      "length": 4,
+      "death": "wall",
+      "return": -0.040000000000000036,
+      "action_counts": [
+        2,
+        2,
+        1
+      ],
+      "action_entropy": 1.054920167986141,
+      "state_dependence": 0.6,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 9,
+      "length": 3,
+      "death": "wall",
+      "return": -1.08,
+      "action_counts": [
+        2,
+        2,
+        5
+      ],
+      "action_entropy": 0.9950269901795182,
+      "state_dependence": 0.4444444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 15,
+      "length": 3,
+      "death": "wall",
+      "return": -1.14,
+      "action_counts": [
+        2,
+        3,
+        10
+      ],
+      "action_entropy": 0.8608513906312285,
+      "state_dependence": 0.33333333333333337,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 11,
+      "length": 3,
+      "death": "wall",
+      "return": -1.1,
+      "action_counts": [
+        2,
+        3,
+        6
+      ],
+      "action_entropy": 0.9949236325717722,
+      "state_dependence": 0.4545454545454546,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 4,
+      "length": 3,
+      "death": "wall",
+      "return": -1.03,
+      "action_counts": [
+        1,
+        3,
+        0
+      ],
+      "action_entropy": 0.5623351446188063,
+      "state_dependence": 0.25,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 6,
+      "length": 3,
+      "death": "wall",
+      "return": -1.05,
+      "action_counts": [
+        3,
+        1,
+        2
+      ],
+      "action_entropy": 1.0114042647073487,
+      "state_dependence": 0.5,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        9,
+        1,
+        30
+      ],
+      "action_entropy": 0.6436058879666674,
+      "state_dependence": 0.25,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 10,
+      "length": 3,
+      "death": "wall",
+      "return": -1.09,
+      "action_counts": [
+        5,
+        2,
+        3
+      ],
+      "action_entropy": 1.0296530140645705,
+      "state_dependence": 0.5,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 13,
+      "length": 3,
+      "death": "wall",
+      "return": -1.1199999999999999,
+      "action_counts": [
+        2,
+        1,
+        10
+      ],
+      "action_entropy": 0.6870920273799686,
+      "state_dependence": 0.23076923076923073,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 11,
+      "length": 3,
+      "death": "wall",
+      "return": -1.1,
+      "action_counts": [
+        4,
+        0,
+        7
+      ],
+      "action_entropy": 0.6554817739013907,
+      "state_dependence": 0.36363636363636365,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 22,
+      "length": 4,
+      "death": "wall",
+      "return": -0.2100000000000002,
+      "action_counts": [
+        3,
+        2,
+        17
+      ],
+      "action_entropy": 0.6889170862637723,
+      "state_dependence": 0.2272727272727273,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        3,
+        0,
+        37
+      ],
+      "action_entropy": 0.2663844632679184,
+      "state_dependence": 0.07499999999999996,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        3,
+        1,
+        36
+      ],
+      "action_entropy": 0.38131648785332606,
+      "state_dependence": 0.09999999999999998,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 23,
+      "length": 3,
+      "death": "wall",
+      "return": -1.22,
+      "action_counts": [
+        6,
+        0,
+        17
+      ],
+      "action_entropy": 0.5739644913933215,
+      "state_dependence": 0.26086956521739135,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 15,
+      "length": 3,
+      "death": "wall",
+      "return": -1.14,
+      "action_counts": [
+        6,
+        1,
+        8
+      ],
+      "action_entropy": 0.8823109245150726,
+      "state_dependence": 0.4666666666666667,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 28,
+      "length": 3,
+      "death": "wall",
+      "return": -1.27,
+      "action_counts": [
+        1,
+        2,
+        25
+      ],
+      "action_entropy": 0.40869772507431124,
+      "state_dependence": 0.1071428571428571,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        2,
+        3,
+        35
+      ],
+      "action_entropy": 0.4608966196325908,
+      "state_dependence": 0.125,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 19,
+      "length": 3,
+      "death": "wall",
+      "return": -1.18,
+      "action_counts": [
+        4,
+        0,
+        15
+      ],
+      "action_entropy": 0.5146531654289273,
+      "state_dependence": 0.21052631578947367,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        1,
+        1,
+        38
+      ],
+      "action_entropy": 0.2331726023738669,
+      "state_dependence": 0.050000000000000044,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        1,
+        1,
+        38
+      ],
+      "action_entropy": 0.2331726023738669,
+      "state_dependence": 0.050000000000000044,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        3,
+        2,
+        35
+      ],
+      "action_entropy": 0.4608966196325908,
+      "state_dependence": 0.125,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        3,
+        2,
+        35
+      ],
+      "action_entropy": 0.4608966196325908,
+      "state_dependence": 0.125,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 13,
+      "length": 3,
+      "death": "wall",
+      "return": -1.1199999999999999,
+      "action_counts": [
+        1,
+        3,
+        9
+      ],
+      "action_entropy": 0.7902679680745874,
+      "state_dependence": 0.3076923076923077,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 60,
+      "length": 4,
+      "death": "starvation",
+      "return": 0.3999999999999996,
+      "action_counts": [
+        1,
+        2,
+        57
+      ],
+      "action_entropy": 0.23034095176061026,
+      "state_dependence": 0.050000000000000044,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 8,
+      "length": 3,
+      "death": "wall",
+      "return": -1.07,
+      "action_counts": [
+        1,
+        2,
+        5
+      ],
+      "action_entropy": 0.9002560512685338,
+      "state_dependence": 0.375,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 20,
+      "length": 3,
+      "death": "wall",
+      "return": -1.19,
+      "action_counts": [
+        1,
+        2,
+        17
+      ],
+      "action_entropy": 0.5181862130502098,
+      "state_dependence": 0.15000000000000002,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        1,
+        4,
+        35
+      ],
+      "action_entropy": 0.4393204641987073,
+      "state_dependence": 0.125,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 20,
+      "length": 3,
+      "death": "wall",
+      "return": -1.19,
+      "action_counts": [
+        1,
+        2,
+        17
+      ],
+      "action_entropy": 0.5181862130502098,
+      "state_dependence": 0.15000000000000002,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 43,
+      "length": 4,
+      "death": "starvation",
+      "return": 0.5699999999999996,
+      "action_counts": [
+        2,
+        2,
+        39
+      ],
+      "action_entropy": 0.3739560942680713,
+      "state_dependence": 0.09302325581395354,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        1,
+        5,
+        34
+      ],
+      "action_entropy": 0.4902932691359336,
+      "state_dependence": 0.15000000000000002,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 16,
+      "length": 4,
+      "death": "wall",
+      "return": -0.15000000000000002,
+      "action_counts": [
+        3,
+        3,
+        10
+      ],
+      "action_entropy": 0.9214934308679585,
+      "state_dependence": 0.375,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 27,
+      "length": 4,
+      "death": "wall",
+      "return": -0.2600000000000001,
+      "action_counts": [
+        1,
+        5,
+        21
+      ],
+      "action_entropy": 0.6298309121390525,
+      "state_dependence": 0.2222222222222222,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        0,
+        1,
+        39
+      ],
+      "action_entropy": 0.11690684913752906,
+      "state_dependence": 0.025000000000000022,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        1,
+        2,
+        37
+      ],
+      "action_entropy": 0.3141230258900284,
+      "state_dependence": 0.07499999999999996,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 21,
+      "length": 3,
+      "death": "wall",
+      "return": -1.2,
+      "action_counts": [
+        1,
+        3,
+        17
+      ],
+      "action_entropy": 0.5940241655824674,
+      "state_dependence": 0.19047619047619047,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 42,
+      "length": 4,
+      "death": "starvation",
+      "return": 0.5799999999999996,
+      "action_counts": [
+        1,
+        3,
+        38
+      ],
+      "action_entropy": 0.36804792934034175,
+      "state_dependence": 0.09523809523809523,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        3,
+        4,
+        33
+      ],
+      "action_entropy": 0.5832353581419899,
+      "state_dependence": 0.17500000000000004,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 6,
+      "length": 3,
+      "death": "wall",
+      "return": -1.05,
+      "action_counts": [
+        2,
+        2,
+        2
+      ],
+      "action_entropy": 1.0986122886681067,
+      "state_dependence": 0.6666666666666667,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 9,
+      "length": 3,
+      "death": "wall",
+      "return": -1.08,
+      "action_counts": [
+        1,
+        2,
+        6
+      ],
+      "action_entropy": 0.8486855577264141,
+      "state_dependence": 0.33333333333333337,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        0,
+        6,
+        34
+      ],
+      "action_entropy": 0.42270908780598887,
+      "state_dependence": 0.15000000000000002,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        0,
+        3,
+        37
+      ],
+      "action_entropy": 0.2663844632679184,
+      "state_dependence": 0.07499999999999996,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        1,
+        1,
+        38
+      ],
+      "action_entropy": 0.2331726023738669,
+      "state_dependence": 0.050000000000000044,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        1,
+        4,
+        35
+      ],
+      "action_entropy": 0.4393204641987073,
+      "state_dependence": 0.125,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        1,
+        2,
+        37
+      ],
+      "action_entropy": 0.3141230258900284,
+      "state_dependence": 0.07499999999999996,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "food": 2,
+      "steps": 43,
+      "length": 5,
+      "death": "self",
+      "return": 0.5799999999999996,
+      "action_counts": [
+        2,
+        3,
+        38
+      ],
+      "action_entropy": 0.43770231809525995,
+      "state_dependence": 0.11627906976744184,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 27,
+      "length": 3,
+      "death": "wall",
+      "return": -1.26,
+      "action_counts": [
+        1,
+        5,
+        21
+      ],
+      "action_entropy": 0.6298309121390525,
+      "state_dependence": 0.2222222222222222,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 43,
+      "length": 4,
+      "death": "starvation",
+      "return": 0.5699999999999996,
+      "action_counts": [
+        1,
+        3,
+        39
+      ],
+      "action_entropy": 0.36178753278517484,
+      "state_dependence": 0.09302325581395354,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        2,
+        2,
+        36
+      ],
+      "action_entropy": 0.39439769144743975,
+      "state_dependence": 0.09999999999999998,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 59,
+      "length": 4,
+      "death": "starvation",
+      "return": 0.4099999999999996,
+      "action_counts": [
+        4,
+        2,
+        53
+      ],
+      "action_entropy": 0.3935214570605993,
+      "state_dependence": 0.10169491525423724,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 9,
+      "length": 3,
+      "death": "wall",
+      "return": -1.08,
+      "action_counts": [
+        1,
+        2,
+        6
+      ],
+      "action_entropy": 0.8486855577264141,
+      "state_dependence": 0.33333333333333337,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        0,
+        2,
+        38
+      ],
+      "action_entropy": 0.19851524334587062,
+      "state_dependence": 0.050000000000000044,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 28,
+      "length": 3,
+      "death": "wall",
+      "return": -1.27,
+      "action_counts": [
+        2,
+        3,
+        23
+      ],
+      "action_entropy": 0.5894010032646773,
+      "state_dependence": 0.1785714285714286,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 19,
+      "length": 3,
+      "death": "wall",
+      "return": -1.18,
+      "action_counts": [
+        3,
+        3,
+        13
+      ],
+      "action_entropy": 0.842543432902825,
+      "state_dependence": 0.3157894736842105,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        1,
+        3,
+        36
+      ],
+      "action_entropy": 0.38131648785332606,
+      "state_dependence": 0.09999999999999998,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 20,
+      "length": 4,
+      "death": "wall",
+      "return": -0.19000000000000017,
+      "action_counts": [
+        3,
+        4,
+        13
+      ],
+      "action_entropy": 0.8864644756797945,
+      "state_dependence": 0.35,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 10,
+      "length": 3,
+      "death": "wall",
+      "return": -1.09,
+      "action_counts": [
+        1,
+        3,
+        6
+      ],
+      "action_entropy": 0.8979457248567768,
+      "state_dependence": 0.4,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 32,
+      "length": 4,
+      "death": "wall",
+      "return": -0.31000000000000005,
+      "action_counts": [
+        2,
+        4,
+        26
+      ],
+      "action_entropy": 0.6019239717322864,
+      "state_dependence": 0.1875,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 26,
+      "length": 3,
+      "death": "wall",
+      "return": -1.25,
+      "action_counts": [
+        2,
+        1,
+        23
+      ],
+      "action_entropy": 0.431071102348774,
+      "state_dependence": 0.11538461538461542,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 79,
+      "length": 4,
+      "death": "starvation",
+      "return": 0.20999999999999952,
+      "action_counts": [
+        4,
+        5,
+        70
+      ],
+      "action_entropy": 0.4329031189213832,
+      "state_dependence": 0.11392405063291144,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        3,
+        2,
+        35
+      ],
+      "action_entropy": 0.4608966196325908,
+      "state_dependence": 0.125,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 55,
+      "length": 4,
+      "death": "starvation",
+      "return": 0.4499999999999996,
+      "action_counts": [
+        0,
+        8,
+        47
+      ],
+      "action_entropy": 0.41474282861771544,
+      "state_dependence": 0.1454545454545455,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 14,
+      "length": 3,
+      "death": "wall",
+      "return": -1.13,
+      "action_counts": [
+        2,
+        1,
+        11
+      ],
+      "action_entropy": 0.6559757323365437,
+      "state_dependence": 0.2142857142857143,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "food": 2,
+      "steps": 41,
+      "length": 5,
+      "death": "self",
+      "return": 0.5999999999999996,
+      "action_counts": [
+        2,
+        5,
+        34
+      ],
+      "action_entropy": 0.5591881213326005,
+      "state_dependence": 0.1707317073170732,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 31,
+      "length": 3,
+      "death": "wall",
+      "return": -1.3,
+      "action_counts": [
+        0,
+        8,
+        23
+      ],
+      "action_entropy": 0.5710227109429142,
+      "state_dependence": 0.25806451612903225,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 5,
+      "length": 3,
+      "death": "wall",
+      "return": -1.04,
+      "action_counts": [
+        1,
+        2,
+        2
+      ],
+      "action_entropy": 1.054920167986141,
+      "state_dependence": 0.6,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "food": 2,
+      "steps": 29,
+      "length": 5,
+      "death": "self",
+      "return": 0.7199999999999998,
+      "action_counts": [
+        0,
+        5,
+        24
+      ],
+      "action_entropy": 0.45969301996849976,
+      "state_dependence": 0.1724137931034483,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 55,
+      "length": 4,
+      "death": "wall",
+      "return": -0.5400000000000004,
+      "action_counts": [
+        1,
+        21,
+        33
+      ],
+      "action_entropy": 0.7469746266763637,
+      "state_dependence": 0.4,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 24,
+      "length": 3,
+      "death": "wall",
+      "return": -1.23,
+      "action_counts": [
+        1,
+        8,
+        15
+      ],
+      "action_entropy": 0.7923752740991161,
+      "state_dependence": 0.375,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 11,
+      "length": 3,
+      "death": "wall",
+      "return": -1.1,
+      "action_counts": [
+        1,
+        4,
+        6
+      ],
+      "action_entropy": 0.9164648855394683,
+      "state_dependence": 0.4545454545454546,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 18,
+      "length": 4,
+      "death": "wall",
+      "return": -0.17000000000000004,
+      "action_counts": [
+        2,
+        6,
+        10
+      ],
+      "action_entropy": 0.9368883075390129,
+      "state_dependence": 0.4444444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 12,
+      "length": 4,
+      "death": "wall",
+      "return": -0.1100000000000001,
+      "action_counts": [
+        1,
+        4,
+        7
+      ],
+      "action_entropy": 0.887694275799101,
+      "state_dependence": 0.41666666666666663,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 4,
+      "length": 3,
+      "death": "wall",
+      "return": -1.03,
+      "action_counts": [
+        1,
+        2,
+        1
+      ],
+      "action_entropy": 1.039720770839915,
+      "state_dependence": 0.5,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 5,
+      "length": 3,
+      "death": "wall",
+      "return": -1.04,
+      "action_counts": [
+        1,
+        2,
+        2
+      ],
+      "action_entropy": 1.054920167986141,
+      "state_dependence": 0.6,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 18,
+      "length": 3,
+      "death": "wall",
+      "return": -1.17,
+      "action_counts": [
+        1,
+        5,
+        12
+      ],
+      "action_entropy": 0.7867012379169114,
+      "state_dependence": 0.33333333333333337,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 12,
+      "length": 3,
+      "death": "wall",
+      "return": -1.1099999999999999,
+      "action_counts": [
+        1,
+        7,
+        4
+      ],
+      "action_entropy": 0.887694275799101,
+      "state_dependence": 0.41666666666666663,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        2,
+        3,
+        35
+      ],
+      "action_entropy": 0.4608966196325908,
+      "state_dependence": 0.125,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 30,
+      "length": 4,
+      "death": "wall",
+      "return": -0.29000000000000015,
+      "action_counts": [
+        3,
+        3,
+        24
+      ],
+      "action_entropy": 0.639031859650174,
+      "state_dependence": 0.19999999999999996,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 20,
+      "length": 3,
+      "death": "wall",
+      "return": -1.19,
+      "action_counts": [
+        2,
+        8,
+        10
+      ],
+      "action_entropy": 0.9433483923290362,
+      "state_dependence": 0.5,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 20,
+      "length": 3,
+      "death": "wall",
+      "return": -1.19,
+      "action_counts": [
+        1,
+        10,
+        9
+      ],
+      "action_entropy": 0.8556886672556665,
+      "state_dependence": 0.5,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 9,
+      "length": 3,
+      "death": "wall",
+      "return": -1.08,
+      "action_counts": [
+        0,
+        5,
+        4
+      ],
+      "action_entropy": 0.6869615765973214,
+      "state_dependence": 0.4444444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 8,
+      "length": 3,
+      "death": "wall",
+      "return": -1.07,
+      "action_counts": [
+        1,
+        4,
+        3
+      ],
+      "action_entropy": 0.9743147528693464,
+      "state_dependence": 0.5,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 22,
+      "length": 4,
+      "death": "wall",
+      "return": -0.2100000000000002,
+      "action_counts": [
+        2,
+        7,
+        13
+      ],
+      "action_entropy": 0.8932239510170829,
+      "state_dependence": 0.40909090909090906,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 12,
+      "length": 3,
+      "death": "wall",
+      "return": -1.1099999999999999,
+      "action_counts": [
+        1,
+        5,
+        6
+      ],
+      "action_entropy": 0.9184277849930946,
+      "state_dependence": 0.5,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 5,
+      "length": 3,
+      "death": "wall",
+      "return": -1.04,
+      "action_counts": [
+        1,
+        2,
+        2
+      ],
+      "action_entropy": 1.054920167986141,
+      "state_dependence": 0.6,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 4,
+      "length": 3,
+      "death": "wall",
+      "return": -1.03,
+      "action_counts": [
+        1,
+        1,
+        2
+      ],
+      "action_entropy": 1.039720770839915,
+      "state_dependence": 0.5,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 7,
+      "length": 3,
+      "death": "wall",
+      "return": -1.06,
+      "action_counts": [
+        0,
+        3,
+        4
+      ],
+      "action_entropy": 0.6829081047004697,
+      "state_dependence": 0.4285714285714286,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 21,
+      "length": 3,
+      "death": "wall",
+      "return": -1.2,
+      "action_counts": [
+        3,
+        7,
+        11
+      ],
+      "action_entropy": 0.9829007277151534,
+      "state_dependence": 0.47619047619047616,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 15,
+      "length": 3,
+      "death": "wall",
+      "return": -1.14,
+      "action_counts": [
+        2,
+        4,
+        9
+      ],
+      "action_entropy": 0.9276173343271785,
+      "state_dependence": 0.4,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 18,
+      "length": 3,
+      "death": "wall",
+      "return": -1.17,
+      "action_counts": [
+        1,
+        9,
+        8
+      ],
+      "action_entropy": 0.8675632284814583,
+      "state_dependence": 0.5,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 22,
+      "length": 4,
+      "death": "wall",
+      "return": -0.21000000000000008,
+      "action_counts": [
+        1,
+        7,
+        14
+      ],
+      "action_entropy": 0.7924891052673668,
+      "state_dependence": 0.36363636363636365,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 3,
+      "length": 3,
+      "death": "wall",
+      "return": -1.02,
+      "action_counts": [
+        0,
+        3,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "food": 2,
+      "steps": 19,
+      "length": 5,
+      "death": "self",
+      "return": 0.8199999999999998,
+      "action_counts": [
+        1,
+        8,
+        10
+      ],
+      "action_entropy": 0.8569977547780614,
+      "state_dependence": 0.4736842105263158,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 42,
+      "length": 4,
+      "death": "wall",
+      "return": -0.41000000000000014,
+      "action_counts": [
+        1,
+        14,
+        27
+      ],
+      "action_entropy": 0.7392315707421628,
+      "state_dependence": 0.3571428571428571,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 4,
+      "length": 3,
+      "death": "wall",
+      "return": -1.03,
+      "action_counts": [
+        0,
+        3,
+        1
+      ],
+      "action_entropy": 0.5623351446188063,
+      "state_dependence": 0.25,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "food": 2,
+      "steps": 9,
+      "length": 5,
+      "death": "wall",
+      "return": 0.9199999999999999,
+      "action_counts": [
+        0,
+        6,
+        3
+      ],
+      "action_entropy": 0.6365141682948108,
+      "state_dependence": 0.33333333333333337,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "food": 2,
+      "steps": 23,
+      "length": 5,
+      "death": "self",
+      "return": 0.78,
+      "action_counts": [
+        0,
+        3,
+        20
+      ],
+      "action_entropy": 0.38721237518635865,
+      "state_dependence": 0.13043478260869568,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 9,
+      "length": 3,
+      "death": "wall",
+      "return": -1.08,
+      "action_counts": [
+        0,
+        6,
+        3
+      ],
+      "action_entropy": 0.6365141682948108,
+      "state_dependence": 0.33333333333333337,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 7,
+      "length": 3,
+      "death": "wall",
+      "return": -1.06,
+      "action_counts": [
+        0,
+        3,
+        4
+      ],
+      "action_entropy": 0.6829081047004697,
+      "state_dependence": 0.4285714285714286,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 25,
+      "length": 4,
+      "death": "wall",
+      "return": -0.2400000000000002,
+      "action_counts": [
+        2,
+        11,
+        12
+      ],
+      "action_entropy": 0.9155949384938791,
+      "state_dependence": 0.52,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        0,
+        5,
+        35
+      ],
+      "action_entropy": 0.37677016125643475,
+      "state_dependence": 0.125,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        3,
+        7,
+        30
+      ],
+      "action_entropy": 0.7150512201325286,
+      "state_dependence": 0.25,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "food": 2,
+      "steps": 31,
+      "length": 5,
+      "death": "self",
+      "return": 0.7,
+      "action_counts": [
+        3,
+        4,
+        24
+      ],
+      "action_entropy": 0.6883644225872534,
+      "state_dependence": 0.22580645161290325,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 31,
+      "length": 4,
+      "death": "wall",
+      "return": -0.30000000000000027,
+      "action_counts": [
+        5,
+        6,
+        20
+      ],
+      "action_entropy": 0.8948777900135738,
+      "state_dependence": 0.3548387096774194,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "food": 2,
+      "steps": 37,
+      "length": 5,
+      "death": "wall",
+      "return": 0.6399999999999997,
+      "action_counts": [
+        3,
+        3,
+        31
+      ],
+      "action_entropy": 0.5556401539672433,
+      "state_dependence": 0.16216216216216217,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 27,
+      "length": 3,
+      "death": "wall",
+      "return": -1.26,
+      "action_counts": [
+        4,
+        2,
+        21
+      ],
+      "action_entropy": 0.6711537920120544,
+      "state_dependence": 0.2222222222222222,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 30,
+      "length": 4,
+      "death": "wall",
+      "return": -0.29000000000000026,
+      "action_counts": [
+        4,
+        7,
+        19
+      ],
+      "action_entropy": 0.8975010785945149,
+      "state_dependence": 0.3666666666666667,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 35,
+      "length": 3,
+      "death": "wall",
+      "return": -1.34,
+      "action_counts": [
+        1,
+        6,
+        28
+      ],
+      "action_entropy": 0.5824256871958666,
+      "state_dependence": 0.19999999999999996,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        1,
+        9,
+        30
+      ],
+      "action_entropy": 0.6436058879666674,
+      "state_dependence": 0.25,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 25,
+      "length": 3,
+      "death": "wall",
+      "return": -1.24,
+      "action_counts": [
+        0,
+        6,
+        19
+      ],
+      "action_entropy": 0.5510799280869707,
+      "state_dependence": 0.24,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 15,
+      "length": 4,
+      "death": "wall",
+      "return": -0.14000000000000012,
+      "action_counts": [
+        1,
+        7,
+        7
+      ],
+      "action_entropy": 0.891867395317248,
+      "state_dependence": 0.5333333333333333,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 24,
+      "length": 4,
+      "death": "wall",
+      "return": -0.2300000000000001,
+      "action_counts": [
+        1,
+        6,
+        17
+      ],
+      "action_entropy": 0.723254511001109,
+      "state_dependence": 0.29166666666666663,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 25,
+      "length": 4,
+      "death": "wall",
+      "return": -0.2400000000000001,
+      "action_counts": [
+        2,
+        6,
+        17
+      ],
+      "action_entropy": 0.8068167038504419,
+      "state_dependence": 0.31999999999999995,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        0,
+        5,
+        35
+      ],
+      "action_entropy": 0.37677016125643475,
+      "state_dependence": 0.125,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        1,
+        13,
+        26
+      ],
+      "action_entropy": 0.7375081632249705,
+      "state_dependence": 0.35,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 16,
+      "length": 3,
+      "death": "wall",
+      "return": -1.15,
+      "action_counts": [
+        2,
+        5,
+        9
+      ],
+      "action_entropy": 0.9470571522825052,
+      "state_dependence": 0.4375,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 27,
+      "length": 3,
+      "death": "wall",
+      "return": -1.26,
+      "action_counts": [
+        3,
+        6,
+        18
+      ],
+      "action_entropy": 0.8486855577264141,
+      "state_dependence": 0.33333333333333337,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 38,
+      "length": 3,
+      "death": "wall",
+      "return": -1.37,
+      "action_counts": [
+        4,
+        13,
+        21
+      ],
+      "action_entropy": 0.931678520682398,
+      "state_dependence": 0.4473684210526315,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 33,
+      "length": 4,
+      "death": "wall",
+      "return": -0.3200000000000003,
+      "action_counts": [
+        2,
+        14,
+        17
+      ],
+      "action_entropy": 0.8753644152637747,
+      "state_dependence": 0.48484848484848486,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 15,
+      "length": 3,
+      "death": "wall",
+      "return": -1.14,
+      "action_counts": [
+        0,
+        6,
+        9
+      ],
+      "action_entropy": 0.6730116670092545,
+      "state_dependence": 0.4,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        4,
+        11,
+        25
+      ],
+      "action_entropy": 0.879031427439767,
+      "state_dependence": 0.375,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 16,
+      "length": 3,
+      "death": "wall",
+      "return": -1.15,
+      "action_counts": [
+        2,
+        5,
+        9
+      ],
+      "action_entropy": 0.9470571522825052,
+      "state_dependence": 0.4375,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 3,
+      "length": 3,
+      "death": "wall",
+      "return": -1.02,
+      "action_counts": [
+        0,
+        3,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 9,
+      "length": 3,
+      "death": "wall",
+      "return": -1.08,
+      "action_counts": [
+        0,
+        5,
+        4
+      ],
+      "action_entropy": 0.6869615765973214,
+      "state_dependence": 0.4444444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        2,
+        10,
+        28
+      ],
+      "action_entropy": 0.7460326647147819,
+      "state_dependence": 0.30000000000000004,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 17,
+      "length": 3,
+      "death": "wall",
+      "return": -1.16,
+      "action_counts": [
+        1,
+        7,
+        9
+      ],
+      "action_entropy": 0.868719682914262,
+      "state_dependence": 0.47058823529411764,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 17,
+      "length": 4,
+      "death": "wall",
+      "return": -0.16000000000000014,
+      "action_counts": [
+        0,
+        8,
+        9
+      ],
+      "action_entropy": 0.6914160776171163,
+      "state_dependence": 0.47058823529411764,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 35,
+      "length": 4,
+      "death": "wall",
+      "return": -0.3400000000000003,
+      "action_counts": [
+        2,
+        8,
+        25
+      ],
+      "action_entropy": 0.741241709596165,
+      "state_dependence": 0.2857142857142857,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        1,
+        11,
+        28
+      ],
+      "action_entropy": 0.6969150969717387,
+      "state_dependence": 0.30000000000000004,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "food": 2,
+      "steps": 4,
+      "length": 5,
+      "death": "self",
+      "return": 0.97,
+      "action_counts": [
+        0,
+        1,
+        3
+      ],
+      "action_entropy": 0.5623351446188063,
+      "state_dependence": 0.25,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "food": 2,
+      "steps": 17,
+      "length": 5,
+      "death": "self",
+      "return": 0.8400000000000001,
+      "action_counts": [
+        0,
+        8,
+        9
+      ],
+      "action_entropy": 0.6914160776171163,
+      "state_dependence": 0.47058823529411764,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 10,
+      "length": 3,
+      "death": "wall",
+      "return": -1.09,
+      "action_counts": [
+        1,
+        5,
+        4
+      ],
+      "action_entropy": 0.9433483923290362,
+      "state_dependence": 0.5,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 17,
+      "length": 3,
+      "death": "wall",
+      "return": -1.16,
+      "action_counts": [
+        0,
+        10,
+        7
+      ],
+      "action_entropy": 0.6774944044487052,
+      "state_dependence": 0.4117647058823529,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 28,
+      "length": 3,
+      "death": "wall",
+      "return": -1.27,
+      "action_counts": [
+        1,
+        15,
+        12
+      ],
+      "action_entropy": 0.8165033382470168,
+      "state_dependence": 0.4642857142857143,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        2,
+        11,
+        27
+      ],
+      "action_entropy": 0.770111010513462,
+      "state_dependence": 0.32499999999999996,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        0,
+        9,
+        31
+      ],
+      "action_entropy": 0.5331638407372966,
+      "state_dependence": 0.22499999999999998,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "food": 2,
+      "steps": 17,
+      "length": 5,
+      "death": "self",
+      "return": 0.8399999999999999,
+      "action_counts": [
+        0,
+        6,
+        11
+      ],
+      "action_entropy": 0.649248354870896,
+      "state_dependence": 0.3529411764705882,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 23,
+      "length": 3,
+      "death": "wall",
+      "return": -1.22,
+      "action_counts": [
+        1,
+        6,
+        16
+      ],
+      "action_entropy": 0.7393213302245889,
+      "state_dependence": 0.30434782608695654,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 15,
+      "length": 3,
+      "death": "wall",
+      "return": -1.14,
+      "action_counts": [
+        0,
+        8,
+        7
+      ],
+      "action_entropy": 0.6909233093138161,
+      "state_dependence": 0.4666666666666667,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 43,
+      "length": 4,
+      "death": "wall",
+      "return": -0.42000000000000015,
+      "action_counts": [
+        1,
+        13,
+        29
+      ],
+      "action_entropy": 0.7147833548422171,
+      "state_dependence": 0.32558139534883723,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 10,
+      "length": 3,
+      "death": "wall",
+      "return": -1.09,
+      "action_counts": [
+        1,
+        5,
+        4
+      ],
+      "action_entropy": 0.9433483923290362,
+      "state_dependence": 0.5,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 42,
+      "length": 4,
+      "death": "wall",
+      "return": -0.41000000000000025,
+      "action_counts": [
+        0,
+        10,
+        32
+      ],
+      "action_entropy": 0.5488743844849924,
+      "state_dependence": 0.23809523809523814,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "food": 2,
+      "steps": 35,
+      "length": 5,
+      "death": "self",
+      "return": 0.6599999999999997,
+      "action_counts": [
+        0,
+        9,
+        26
+      ],
+      "action_entropy": 0.570047170501283,
+      "state_dependence": 0.2571428571428571,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        0,
+        8,
+        32
+      ],
+      "action_entropy": 0.5004024235381859,
+      "state_dependence": 0.19999999999999996,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        0,
+        9,
+        31
+      ],
+      "action_entropy": 0.5331638407372966,
+      "state_dependence": 0.22499999999999998,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 19,
+      "length": 3,
+      "death": "wall",
+      "return": -1.18,
+      "action_counts": [
+        1,
+        4,
+        14
+      ],
+      "action_entropy": 0.70801897605627,
+      "state_dependence": 0.26315789473684215,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 33,
+      "length": 4,
+      "death": "wall",
+      "return": -0.3200000000000003,
+      "action_counts": [
+        0,
+        9,
+        24
+      ],
+      "action_entropy": 0.5859526183035488,
+      "state_dependence": 0.2727272727272727,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        0,
+        9,
+        31
+      ],
+      "action_entropy": 0.5331638407372966,
+      "state_dependence": 0.22499999999999998,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 41,
+      "length": 4,
+      "death": "wall",
+      "return": -0.40000000000000036,
+      "action_counts": [
+        0,
+        14,
+        27
+      ],
+      "action_entropy": 0.6420013838572203,
+      "state_dependence": 0.3414634146341463,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 36,
+      "length": 4,
+      "death": "wall",
+      "return": -0.3500000000000003,
+      "action_counts": [
+        1,
+        12,
+        23
+      ],
+      "action_entropy": 0.7519843061275946,
+      "state_dependence": 0.36111111111111116,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        1,
+        9,
+        30
+      ],
+      "action_entropy": 0.6436058879666674,
+      "state_dependence": 0.25,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 20,
+      "length": 4,
+      "death": "wall",
+      "return": -0.19000000000000006,
+      "action_counts": [
+        0,
+        8,
+        12
+      ],
+      "action_entropy": 0.6730116670092545,
+      "state_dependence": 0.4,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 28,
+      "length": 4,
+      "death": "wall",
+      "return": -0.27000000000000013,
+      "action_counts": [
+        0,
+        7,
+        21
+      ],
+      "action_entropy": 0.5623351446188063,
+      "state_dependence": 0.25,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 29,
+      "length": 3,
+      "death": "wall",
+      "return": -1.28,
+      "action_counts": [
+        0,
+        10,
+        19
+      ],
+      "action_entropy": 0.6441857770863746,
+      "state_dependence": 0.3448275862068966,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        0,
+        12,
+        28
+      ],
+      "action_entropy": 0.6108643020548915,
+      "state_dependence": 0.30000000000000004,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 8,
+      "length": 3,
+      "death": "wall",
+      "return": -1.07,
+      "action_counts": [
+        1,
+        4,
+        3
+      ],
+      "action_entropy": 0.9743147528693464,
+      "state_dependence": 0.5,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "food": 2,
+      "steps": 47,
+      "length": 5,
+      "death": "wall",
+      "return": 0.5399999999999998,
+      "action_counts": [
+        0,
+        16,
+        31
+      ],
+      "action_entropy": 0.641317327350992,
+      "state_dependence": 0.34042553191489366,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 38,
+      "length": 4,
+      "death": "wall",
+      "return": -0.3700000000000001,
+      "action_counts": [
+        1,
+        13,
+        24
+      ],
+      "action_entropy": 0.7529115919539966,
+      "state_dependence": 0.368421052631579,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        0,
+        15,
+        25
+      ],
+      "action_entropy": 0.6615632381579801,
+      "state_dependence": 0.375,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 5,
+      "length": 3,
+      "death": "wall",
+      "return": -1.04,
+      "action_counts": [
+        0,
+        4,
+        1
+      ],
+      "action_entropy": 0.5004024235381859,
+      "state_dependence": 0.19999999999999996,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 28,
+      "length": 3,
+      "death": "wall",
+      "return": -1.27,
+      "action_counts": [
+        1,
+        5,
+        22
+      ],
+      "action_entropy": 0.6161286696018634,
+      "state_dependence": 0.2142857142857143,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 39,
+      "length": 3,
+      "death": "wall",
+      "return": -1.3800000000000001,
+      "action_counts": [
+        2,
+        13,
+        24
+      ],
+      "action_entropy": 0.8173070836560392,
+      "state_dependence": 0.3846153846153846,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "food": 2,
+      "steps": 41,
+      "length": 5,
+      "death": "self",
+      "return": 0.5999999999999999,
+      "action_counts": [
+        1,
+        9,
+        31
+      ],
+      "action_entropy": 0.6348251268246583,
+      "state_dependence": 0.24390243902439024,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 43,
+      "length": 4,
+      "death": "wall",
+      "return": -0.4200000000000004,
+      "action_counts": [
+        1,
+        9,
+        33
+      ],
+      "action_entropy": 0.6179496337303076,
+      "state_dependence": 0.2325581395348837,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "food": 2,
+      "steps": 55,
+      "length": 5,
+      "death": "self",
+      "return": 0.45999999999999974,
+      "action_counts": [
+        1,
+        11,
+        43
+      ],
+      "action_entropy": 0.5871794947669178,
+      "state_dependence": 0.21818181818181814,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 6,
+      "length": 3,
+      "death": "wall",
+      "return": -1.05,
+      "action_counts": [
+        1,
+        3,
+        2
+      ],
+      "action_entropy": 1.0114042647073487,
+      "state_dependence": 0.5,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        1,
+        7,
+        32
+      ],
+      "action_entropy": 0.5757564557894721,
+      "state_dependence": 0.19999999999999996,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 13,
+      "length": 3,
+      "death": "wall",
+      "return": -1.1199999999999999,
+      "action_counts": [
+        0,
+        4,
+        9
+      ],
+      "action_entropy": 0.6172417697303396,
+      "state_dependence": 0.3076923076923077,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 28,
+      "length": 3,
+      "death": "wall",
+      "return": -1.27,
+      "action_counts": [
+        1,
+        5,
+        22
+      ],
+      "action_entropy": 0.6161286696018634,
+      "state_dependence": 0.2142857142857143,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        0,
+        7,
+        33
+      ],
+      "action_entropy": 0.4637264398194083,
+      "state_dependence": 0.17500000000000004,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 32,
+      "length": 3,
+      "death": "wall",
+      "return": -1.31,
+      "action_counts": [
+        0,
+        4,
+        28
+      ],
+      "action_entropy": 0.37677016125643475,
+      "state_dependence": 0.125,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        0,
+        4,
+        36
+      ],
+      "action_entropy": 0.32508297339144626,
+      "state_dependence": 0.09999999999999998,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "food": 2,
+      "steps": 46,
+      "length": 5,
+      "death": "self",
+      "return": 0.5499999999999996,
+      "action_counts": [
+        1,
+        7,
+        38
+      ],
+      "action_entropy": 0.527562154902356,
+      "state_dependence": 0.17391304347826086,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 25,
+      "length": 4,
+      "death": "wall",
+      "return": -0.2400000000000001,
+      "action_counts": [
+        0,
+        7,
+        18
+      ],
+      "action_entropy": 0.5929533174474725,
+      "state_dependence": 0.28,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 7,
+      "length": 3,
+      "death": "wall",
+      "return": -1.06,
+      "action_counts": [
+        0,
+        3,
+        4
+      ],
+      "action_entropy": 0.6829081047004697,
+      "state_dependence": 0.4285714285714286,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 50,
+      "length": 4,
+      "death": "starvation",
+      "return": 0.49999999999999967,
+      "action_counts": [
+        3,
+        7,
+        40
+      ],
+      "action_entropy": 0.6225752839491636,
+      "state_dependence": 0.19999999999999996,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 9,
+      "length": 3,
+      "death": "wall",
+      "return": -1.08,
+      "action_counts": [
+        0,
+        4,
+        5
+      ],
+      "action_entropy": 0.6869615765973214,
+      "state_dependence": 0.4444444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        1,
+        8,
+        31
+      ],
+      "action_entropy": 0.6116510623019777,
+      "state_dependence": 0.22499999999999998,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 30,
+      "length": 3,
+      "death": "wall",
+      "return": -1.29,
+      "action_counts": [
+        0,
+        7,
+        23
+      ],
+      "action_entropy": 0.5432727813368987,
+      "state_dependence": 0.23333333333333328,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 21,
+      "length": 3,
+      "death": "wall",
+      "return": -1.2,
+      "action_counts": [
+        0,
+        6,
+        15
+      ],
+      "action_entropy": 0.5982695885852551,
+      "state_dependence": 0.2857142857142857,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 11,
+      "length": 3,
+      "death": "wall",
+      "return": -1.1,
+      "action_counts": [
+        0,
+        3,
+        8
+      ],
+      "action_entropy": 0.5859526183035488,
+      "state_dependence": 0.2727272727272727,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "food": 2,
+      "steps": 23,
+      "length": 5,
+      "death": "wall",
+      "return": 0.7799999999999998,
+      "action_counts": [
+        2,
+        6,
+        15
+      ],
+      "action_entropy": 0.8416853379716958,
+      "state_dependence": 0.34782608695652173,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        0,
+        5,
+        35
+      ],
+      "action_entropy": 0.37677016125643475,
+      "state_dependence": 0.125,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 64,
+      "length": 4,
+      "death": "wall",
+      "return": -0.6300000000000003,
+      "action_counts": [
+        1,
+        7,
+        56
+      ],
+      "action_entropy": 0.4238664314134884,
+      "state_dependence": 0.125,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "food": 2,
+      "steps": 34,
+      "length": 5,
+      "death": "self",
+      "return": 0.6699999999999997,
+      "action_counts": [
+        0,
+        8,
+        26
+      ],
+      "action_entropy": 0.5455945739691823,
+      "state_dependence": 0.23529411764705888,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3,
+      "food": 3,
+      "steps": 28,
+      "length": 6,
+      "death": "self",
+      "return": 1.7300000000000004,
+      "action_counts": [
+        1,
+        4,
+        23
+      ],
+      "action_entropy": 0.558577924073415,
+      "state_dependence": 0.1785714285714286,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        0,
+        10,
+        30
+      ],
+      "action_entropy": 0.5623351446188063,
+      "state_dependence": 0.25,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 23,
+      "length": 3,
+      "death": "wall",
+      "return": -1.22,
+      "action_counts": [
+        0,
+        8,
+        15
+      ],
+      "action_entropy": 0.6460905050608068,
+      "state_dependence": 0.34782608695652173,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 42,
+      "length": 4,
+      "death": "starvation",
+      "return": 0.5799999999999996,
+      "action_counts": [
+        0,
+        8,
+        34
+      ],
+      "action_entropy": 0.4869127094646002,
+      "state_dependence": 0.19047619047619047,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        0,
+        11,
+        29
+      ],
+      "action_entropy": 0.5881687773541888,
+      "state_dependence": 0.275,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 52,
+      "length": 4,
+      "death": "starvation",
+      "return": 0.47999999999999965,
+      "action_counts": [
+        2,
+        11,
+        39
+      ],
+      "action_entropy": 0.6696659001014594,
+      "state_dependence": 0.25,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        0,
+        6,
+        34
+      ],
+      "action_entropy": 0.42270908780598887,
+      "state_dependence": 0.15000000000000002,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        0,
+        6,
+        34
+      ],
+      "action_entropy": 0.42270908780598887,
+      "state_dependence": 0.15000000000000002,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "food": 2,
+      "steps": 28,
+      "length": 5,
+      "death": "self",
+      "return": 0.7299999999999998,
+      "action_counts": [
+        0,
+        10,
+        18
+      ],
+      "action_entropy": 0.6517565611726512,
+      "state_dependence": 0.3571428571428571,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        0,
+        6,
+        34
+      ],
+      "action_entropy": 0.42270908780598887,
+      "state_dependence": 0.15000000000000002,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        1,
+        10,
+        29
+      ],
+      "action_entropy": 0.6719437041252282,
+      "state_dependence": 0.275,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 22,
+      "length": 3,
+      "death": "wall",
+      "return": -1.21,
+      "action_counts": [
+        0,
+        10,
+        12
+      ],
+      "action_entropy": 0.6890092384766566,
+      "state_dependence": 0.4545454545454546,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 19,
+      "length": 3,
+      "death": "wall",
+      "return": -1.18,
+      "action_counts": [
+        1,
+        4,
+        14
+      ],
+      "action_entropy": 0.70801897605627,
+      "state_dependence": 0.26315789473684215,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 53,
+      "length": 4,
+      "death": "starvation",
+      "return": 0.46999999999999964,
+      "action_counts": [
+        0,
+        10,
+        43
+      ],
+      "action_entropy": 0.4843021794999756,
+      "state_dependence": 0.18867924528301883,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        0,
+        7,
+        33
+      ],
+      "action_entropy": 0.4637264398194083,
+      "state_dependence": 0.17500000000000004,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        0,
+        5,
+        35
+      ],
+      "action_entropy": 0.37677016125643475,
+      "state_dependence": 0.125,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        1,
+        9,
+        30
+      ],
+      "action_entropy": 0.6436058879666674,
+      "state_dependence": 0.25,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "wall",
+      "return": -1.3900000000000001,
+      "action_counts": [
+        0,
+        8,
+        32
+      ],
+      "action_entropy": 0.5004024235381859,
+      "state_dependence": 0.19999999999999996,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        1,
+        4,
+        35
+      ],
+      "action_entropy": 0.4393204641987073,
+      "state_dependence": 0.125,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        1,
+        5,
+        34
+      ],
+      "action_entropy": 0.4902932691359336,
+      "state_dependence": 0.15000000000000002,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 24,
+      "length": 3,
+      "death": "wall",
+      "return": -1.23,
+      "action_counts": [
+        2,
+        5,
+        17
+      ],
+      "action_entropy": 0.7781325481710233,
+      "state_dependence": 0.29166666666666663,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        2,
+        5,
+        33
+      ],
+      "action_entropy": 0.5684236178218274,
+      "state_dependence": 0.17500000000000004,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        2,
+        7,
+        31
+      ],
+      "action_entropy": 0.6523477355252678,
+      "state_dependence": 0.22499999999999998,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 36,
+      "length": 3,
+      "death": "wall",
+      "return": -1.35,
+      "action_counts": [
+        1,
+        5,
+        30
+      ],
+      "action_entropy": 0.5256547436773524,
+      "state_dependence": 0.16666666666666663,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 7,
+      "length": 3,
+      "death": "wall",
+      "return": -1.06,
+      "action_counts": [
+        2,
+        2,
+        3
+      ],
+      "action_entropy": 1.0789922078775802,
+      "state_dependence": 0.5714285714285714,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        1,
+        7,
+        32
+      ],
+      "action_entropy": 0.5757564557894721,
+      "state_dependence": 0.19999999999999996,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 25,
+      "length": 4,
+      "death": "wall",
+      "return": -0.2400000000000002,
+      "action_counts": [
+        0,
+        6,
+        19
+      ],
+      "action_entropy": 0.5510799280869707,
+      "state_dependence": 0.24,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        0,
+        4,
+        36
+      ],
+      "action_entropy": 0.32508297339144626,
+      "state_dependence": 0.09999999999999998,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        1,
+        6,
+        33
+      ],
+      "action_entropy": 0.5354967955198788,
+      "state_dependence": 0.17500000000000004,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 70,
+      "length": 4,
+      "death": "starvation",
+      "return": 0.2999999999999996,
+      "action_counts": [
+        0,
+        10,
+        60
+      ],
+      "action_entropy": 0.410116318288407,
+      "state_dependence": 0.1428571428571429,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        2,
+        11,
+        27
+      ],
+      "action_entropy": 0.770111010513462,
+      "state_dependence": 0.32499999999999996,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        1,
+        5,
+        34
+      ],
+      "action_entropy": 0.4902932691359336,
+      "state_dependence": 0.15000000000000002,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        1,
+        7,
+        32
+      ],
+      "action_entropy": 0.5757564557894721,
+      "state_dependence": 0.19999999999999996,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 40,
+      "length": 4,
+      "death": "wall",
+      "return": -0.39000000000000035,
+      "action_counts": [
+        2,
+        9,
+        29
+      ],
+      "action_entropy": 0.718557088445093,
+      "state_dependence": 0.275,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 7,
+      "length": 4,
+      "death": "wall",
+      "return": -0.06000000000000005,
+      "action_counts": [
+        2,
+        2,
+        3
+      ],
+      "action_entropy": 1.0789922078775802,
+      "state_dependence": 0.5714285714285714,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        0,
+        12,
+        28
+      ],
+      "action_entropy": 0.6108643020548915,
+      "state_dependence": 0.30000000000000004,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 19,
+      "length": 3,
+      "death": "wall",
+      "return": -1.18,
+      "action_counts": [
+        1,
+        7,
+        11
+      ],
+      "action_entropy": 0.8392695557891074,
+      "state_dependence": 0.42105263157894735,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 4,
+      "length": 3,
+      "death": "wall",
+      "return": -1.03,
+      "action_counts": [
+        1,
+        2,
+        1
+      ],
+      "action_entropy": 1.039720770839915,
+      "state_dependence": 0.5,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        0,
+        5,
+        35
+      ],
+      "action_entropy": 0.37677016125643475,
+      "state_dependence": 0.125,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 32,
+      "length": 4,
+      "death": "wall",
+      "return": -0.31000000000000016,
+      "action_counts": [
+        2,
+        4,
+        26
+      ],
+      "action_entropy": 0.6019239717322864,
+      "state_dependence": 0.1875,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 11,
+      "length": 3,
+      "death": "wall",
+      "return": -1.1,
+      "action_counts": [
+        2,
+        4,
+        5
+      ],
+      "action_entropy": 1.0361987848192806,
+      "state_dependence": 0.5454545454545454,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 14,
+      "length": 3,
+      "death": "wall",
+      "return": -1.13,
+      "action_counts": [
+        1,
+        3,
+        10
+      ],
+      "action_entropy": 0.7589367727620565,
+      "state_dependence": 0.2857142857142857,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "food": 2,
+      "steps": 50,
+      "length": 5,
+      "death": "self",
+      "return": 0.5099999999999996,
+      "action_counts": [
+        1,
+        11,
+        38
+      ],
+      "action_entropy": 0.6199205640204484,
+      "state_dependence": 0.24,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 48,
+      "length": 4,
+      "death": "starvation",
+      "return": 0.5199999999999996,
+      "action_counts": [
+        1,
+        9,
+        38
+      ],
+      "action_entropy": 0.5794656928739581,
+      "state_dependence": 0.20833333333333337,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        3,
+        7,
+        30
+      ],
+      "action_entropy": 0.7150512201325286,
+      "state_dependence": 0.25,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 9,
+      "length": 3,
+      "death": "wall",
+      "return": -1.08,
+      "action_counts": [
+        0,
+        4,
+        5
+      ],
+      "action_entropy": 0.6869615765973214,
+      "state_dependence": 0.4444444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        2,
+        9,
+        29
+      ],
+      "action_entropy": 0.718557088445093,
+      "state_dependence": 0.275,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        0,
+        11,
+        29
+      ],
+      "action_entropy": 0.5881687773541888,
+      "state_dependence": 0.275,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        2,
+        5,
+        33
+      ],
+      "action_entropy": 0.5684236178218274,
+      "state_dependence": 0.17500000000000004,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 4,
+      "length": 3,
+      "death": "wall",
+      "return": -1.03,
+      "action_counts": [
+        0,
+        3,
+        1
+      ],
+      "action_entropy": 0.5623351446188063,
+      "state_dependence": 0.25,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 43,
+      "length": 4,
+      "death": "wall",
+      "return": -0.42000000000000015,
+      "action_counts": [
+        3,
+        9,
+        31
+      ],
+      "action_entropy": 0.7490033389244934,
+      "state_dependence": 0.2790697674418605,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        2,
+        7,
+        31
+      ],
+      "action_entropy": 0.6523477355252678,
+      "state_dependence": 0.22499999999999998,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        1,
+        5,
+        34
+      ],
+      "action_entropy": 0.4902932691359336,
+      "state_dependence": 0.15000000000000002,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        2,
+        5,
+        33
+      ],
+      "action_entropy": 0.5684236178218274,
+      "state_dependence": 0.17500000000000004,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        1,
+        7,
+        32
+      ],
+      "action_entropy": 0.5757564557894721,
+      "state_dependence": 0.19999999999999996,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        3,
+        5,
+        32
+      ],
+      "action_entropy": 0.6327150711697813,
+      "state_dependence": 0.19999999999999996,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        0,
+        6,
+        34
+      ],
+      "action_entropy": 0.42270908780598887,
+      "state_dependence": 0.15000000000000002,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        1,
+        3,
+        36
+      ],
+      "action_entropy": 0.38131648785332606,
+      "state_dependence": 0.09999999999999998,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        1,
+        7,
+        32
+      ],
+      "action_entropy": 0.5757564557894721,
+      "state_dependence": 0.19999999999999996,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 11,
+      "length": 3,
+      "death": "wall",
+      "return": -1.1,
+      "action_counts": [
+        0,
+        3,
+        8
+      ],
+      "action_entropy": 0.5859526183035488,
+      "state_dependence": 0.2727272727272727,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        0,
+        6,
+        34
+      ],
+      "action_entropy": 0.42270908780598887,
+      "state_dependence": 0.15000000000000002,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        0,
+        4,
+        36
+      ],
+      "action_entropy": 0.32508297339144626,
+      "state_dependence": 0.09999999999999998,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        1,
+        5,
+        34
+      ],
+      "action_entropy": 0.4902932691359336,
+      "state_dependence": 0.15000000000000002,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 28,
+      "length": 3,
+      "death": "wall",
+      "return": -1.27,
+      "action_counts": [
+        1,
+        5,
+        22
+      ],
+      "action_entropy": 0.6161286696018634,
+      "state_dependence": 0.2142857142857143,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "food": 2,
+      "steps": 58,
+      "length": 5,
+      "death": "self",
+      "return": 0.4299999999999997,
+      "action_counts": [
+        1,
+        8,
+        49
+      ],
+      "action_entropy": 0.4857063391522889,
+      "state_dependence": 0.15517241379310343,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "food": 2,
+      "steps": 25,
+      "length": 5,
+      "death": "self",
+      "return": 0.7599999999999998,
+      "action_counts": [
+        2,
+        3,
+        20
+      ],
+      "action_entropy": 0.6350047569400361,
+      "state_dependence": 0.19999999999999996,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        1,
+        9,
+        30
+      ],
+      "action_entropy": 0.6436058879666674,
+      "state_dependence": 0.25,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "food": 2,
+      "steps": 40,
+      "length": 5,
+      "death": "self",
+      "return": 0.6099999999999997,
+      "action_counts": [
+        3,
+        1,
+        36
+      ],
+      "action_entropy": 0.38131648785332606,
+      "state_dependence": 0.09999999999999998,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 59,
+      "length": 4,
+      "death": "starvation",
+      "return": 0.4099999999999996,
+      "action_counts": [
+        2,
+        6,
+        51
+      ],
+      "action_entropy": 0.47313136855946497,
+      "state_dependence": 0.13559322033898302,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        3,
+        5,
+        32
+      ],
+      "action_entropy": 0.6327150711697813,
+      "state_dependence": 0.19999999999999996,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "food": 2,
+      "steps": 9,
+      "length": 5,
+      "death": "self",
+      "return": 0.9199999999999999,
+      "action_counts": [
+        1,
+        2,
+        6
+      ],
+      "action_entropy": 0.8486855577264141,
+      "state_dependence": 0.33333333333333337,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 23,
+      "length": 3,
+      "death": "wall",
+      "return": -1.22,
+      "action_counts": [
+        1,
+        6,
+        16
+      ],
+      "action_entropy": 0.7393213302245889,
+      "state_dependence": 0.30434782608695654,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        3,
+        6,
+        31
+      ],
+      "action_entropy": 0.6763795286036285,
+      "state_dependence": 0.22499999999999998,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        0,
+        9,
+        31
+      ],
+      "action_entropy": 0.5331638407372966,
+      "state_dependence": 0.22499999999999998,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 4,
+      "length": 3,
+      "death": "wall",
+      "return": -1.03,
+      "action_counts": [
+        0,
+        3,
+        1
+      ],
+      "action_entropy": 0.5623351446188063,
+      "state_dependence": 0.25,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 8,
+      "length": 3,
+      "death": "wall",
+      "return": -1.07,
+      "action_counts": [
+        1,
+        2,
+        5
+      ],
+      "action_entropy": 0.9002560512685338,
+      "state_dependence": 0.375,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1,
+      "food": 1,
+      "steps": 38,
+      "length": 4,
+      "death": "wall",
+      "return": -0.3700000000000002,
+      "action_counts": [
+        1,
+        5,
+        32
+      ],
+      "action_entropy": 0.5073035688905472,
+      "state_dependence": 0.1578947368421053,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3,
+      "food": 3,
+      "steps": 40,
+      "length": 6,
+      "death": "self",
+      "return": 1.6099999999999994,
+      "action_counts": [
+        4,
+        6,
+        30
+      ],
+      "action_entropy": 0.7305880613711194,
+      "state_dependence": 0.25,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 40,
+      "length": 3,
+      "death": "starvation",
+      "return": -0.4000000000000002,
+      "action_counts": [
+        4,
+        4,
+        32
+      ],
+      "action_entropy": 0.639031859650174,
+      "state_dependence": 0.19999999999999996,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "food": 0,
+      "steps": 8,
+      "length": 3,
+      "death": "wall",
+      "return": -1.07,
+      "action_counts": [
+        1,
+        2,
+        5
+      ],
+      "action_entropy": 0.9002560512685338,
+      "state_dependence": 0.375,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    }
+  ],
+  "mean_success": 0.03,
+  "resources": {
+    "rss_mb": 121.59375,
+    "free_disk_mb": 348295.52734375,
+    "elapsed_seconds": 4.080199041985907
+  }
+}

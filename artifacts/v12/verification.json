@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "command": [
+        "/Users/akhil/Documents/Projects/flyarcade-v1/.venv/bin/python",
+        "scripts/health_check.py"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"status\": \"ok\",\n  \"package\": \"0.1.0\",\n  \"python\": \"3.14.6 | packaged by Anaconda, Inc. | (main, Jul  9 2026, 14:30:20) [Clang 20.1.8 ]\",\n  \"platform\": \"macOS-26.6-arm64-arm-64bit-Mach-O\",\n  \"resources\": {\n    \"rss_mb\": 25.03125,\n    \"free_disk_mb\": 348243.2890625,\n    \"elapsed_seconds\": 0.00010883301729336381\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Users/akhil/Documents/Projects/flyarcade-v1/.venv/bin/python",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "returncode": 0,
+      "stdout": "No broken requirements found.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        ".venv/bin/ruff",
+        "check",
+        "."
+      ],
+      "returncode": 0,
+      "stdout": "All checks passed!\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        ".venv/bin/ruff",
+        "format",
+        "--check",
+        "."
+      ],
+      "returncode": 0,
+      "stdout": "102 files already formatted\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Users/akhil/Documents/Projects/flyarcade-v1/.venv/bin/python",
+        "-m",
+        "pytest",
+        "-q"
+      ],
+      "returncode": 0,
+      "stdout": "........................................................................ [ 68%]\n.................................                                        [100%]\n105 passed in 1.19s\n",
+      "stderr": ""
+    }
+  ],
+  "readme_sha256": "a46572881f00b6963a0bbddcf2cc439d7acfd1ca46158711ad1a6fe8caaa7769"
+}

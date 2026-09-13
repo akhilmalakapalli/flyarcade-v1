@@ -1,0 +1,1815 @@
+{
+  "n": 3,
+  "uncertainty": "descriptive 95% seed bootstrap; no p-values",
+  "plan_sha256": "de15ca3f4468aac89784d8e7523e54b531afb4b1ed866aadde65ad11d274a666",
+  "tasks": {
+    "catch": {
+      "primary": {
+        "biological": {
+          "mean": 0.6611111111111111,
+          "seed_values": [
+            0.6333333333333332,
+            0.5916666666666667,
+            0.7583333333333333
+          ],
+          "descriptive_bootstrap_95": [
+            0.5916666666666667,
+            0.7583333333333333
+          ]
+        },
+        "frozen": {
+          "mean": 0.20555555555555552,
+          "seed_values": [
+            0.2208333333333333,
+            0.20416666666666666,
+            0.19166666666666665
+          ],
+          "descriptive_bootstrap_95": [
+            0.19166666666666665,
+            0.2208333333333333
+          ]
+        },
+        "rewired": {
+          "mean": 0.8166666666666668,
+          "seed_values": [
+            0.9583333333333334,
+            0.7125,
+            0.7791666666666667
+          ],
+          "descriptive_bootstrap_95": [
+            0.7125,
+            0.9583333333333334
+          ]
+        },
+        "random": {
+          "mean": 0.1972222222222222,
+          "seed_values": [
+            0.2125,
+            0.1833333333333333,
+            0.1958333333333333
+          ],
+          "descriptive_bootstrap_95": [
+            0.18333333333333326,
+            0.2125
+          ]
+        },
+        "heuristic": {
+          "mean": 1.0,
+          "seed_values": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "descriptive_bootstrap_95": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "before": {
+        "mean": 0.20555555555555552,
+        "seed_values": [
+          0.2208333333333333,
+          0.20416666666666666,
+          0.19166666666666665
+        ],
+        "descriptive_bootstrap_95": [
+          0.19166666666666665,
+          0.2208333333333333
+        ]
+      },
+      "change": {
+        "mean": 0.4555555555555555,
+        "seed_values": [
+          0.41249999999999987,
+          0.3875,
+          0.5666666666666667
+        ],
+        "descriptive_bootstrap_95": [
+          0.3875,
+          0.5666666666666667
+        ]
+      },
+      "contrasts": {
+        "biological_minus_random": {
+          "mean": 0.46388888888888885,
+          "seed_values": [
+            0.42083333333333317,
+            0.4083333333333334,
+            0.5625
+          ],
+          "descriptive_bootstrap_95": [
+            0.4083333333333334,
+            0.5625
+          ]
+        },
+        "biological_minus_rewired": {
+          "mean": -0.15555555555555564,
+          "seed_values": [
+            -0.3250000000000002,
+            -0.12083333333333335,
+            -0.02083333333333337
+          ],
+          "descriptive_bootstrap_95": [
+            -0.3250000000000002,
+            -0.02083333333333337
+          ]
+        }
+      },
+      "perturbations": {
+        "after": {
+          "mean": 0.6611111111111111,
+          "seed_values": [
+            0.6333333333333332,
+            0.5916666666666667,
+            0.7583333333333333
+          ],
+          "descriptive_bootstrap_95": [
+            0.5916666666666667,
+            0.7583333333333333
+          ]
+        },
+        "sensory_noise": {
+          "mean": 0.4527777777777778,
+          "seed_values": [
+            0.4125,
+            0.4083333333333333,
+            0.5375
+          ],
+          "descriptive_bootstrap_95": [
+            0.4083333333333334,
+            0.5375
+          ]
+        },
+        "edge_ablation": {
+          "mean": 0.6166666666666666,
+          "seed_values": [
+            0.6041666666666666,
+            0.5,
+            0.7458333333333333
+          ],
+          "descriptive_bootstrap_95": [
+            0.5,
+            0.7458333333333332
+          ]
+        },
+        "neuron_ablation": {
+          "mean": 0.32916666666666666,
+          "seed_values": [
+            0.3833333333333333,
+            0.2583333333333333,
+            0.3458333333333333
+          ],
+          "descriptive_bootstrap_95": [
+            0.2583333333333333,
+            0.3833333333333333
+          ]
+        }
+      },
+      "condition_before": {
+        "biological": {
+          "mean": 0.20555555555555552,
+          "seed_values": [
+            0.2208333333333333,
+            0.20416666666666666,
+            0.19166666666666665
+          ],
+          "descriptive_bootstrap_95": [
+            0.19166666666666665,
+            0.2208333333333333
+          ]
+        },
+        "frozen": {
+          "mean": 0.20555555555555552,
+          "seed_values": [
+            0.2208333333333333,
+            0.20416666666666666,
+            0.19166666666666665
+          ],
+          "descriptive_bootstrap_95": [
+            0.19166666666666665,
+            0.2208333333333333
+          ]
+        },
+        "rewired": {
+          "mean": 0.20555555555555552,
+          "seed_values": [
+            0.2208333333333333,
+            0.20416666666666666,
+            0.19166666666666665
+          ],
+          "descriptive_bootstrap_95": [
+            0.19166666666666665,
+            0.2208333333333333
+          ]
+        }
+      }
+    },
+    "dodge": {
+      "primary": {
+        "biological": {
+          "mean": 0.9263888888888889,
+          "seed_values": [
+            0.9,
+            0.9166666666666667,
+            0.9625
+          ],
+          "descriptive_bootstrap_95": [
+            0.9,
+            0.9625
+          ]
+        },
+        "frozen": {
+          "mean": 0.7944444444444444,
+          "seed_values": [
+            0.7791666666666666,
+            0.7958333333333334,
+            0.8083333333333333
+          ],
+          "descriptive_bootstrap_95": [
+            0.7791666666666665,
+            0.8083333333333332
+          ]
+        },
+        "rewired": {
+          "mean": 0.9375,
+          "seed_values": [
+            0.9791666666666666,
+            0.9416666666666668,
+            0.8916666666666668
+          ],
+          "descriptive_bootstrap_95": [
+            0.8916666666666669,
+            0.9791666666666666
+          ]
+        },
+        "random": {
+          "mean": 0.8027777777777777,
+          "seed_values": [
+            0.7875,
+            0.8166666666666667,
+            0.8041666666666666
+          ],
+          "descriptive_bootstrap_95": [
+            0.7875,
+            0.8166666666666668
+          ]
+        },
+        "heuristic": {
+          "mean": 1.0,
+          "seed_values": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "descriptive_bootstrap_95": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "before": {
+        "mean": 0.7944444444444444,
+        "seed_values": [
+          0.7791666666666666,
+          0.7958333333333334,
+          0.8083333333333333
+        ],
+        "descriptive_bootstrap_95": [
+          0.7791666666666665,
+          0.8083333333333332
+        ]
+      },
+      "change": {
+        "mean": 0.1319444444444445,
+        "seed_values": [
+          0.12083333333333346,
+          0.12083333333333335,
+          0.15416666666666667
+        ],
+        "descriptive_bootstrap_95": [
+          0.12083333333333335,
+          0.15416666666666667
+        ]
+      },
+      "contrasts": {
+        "biological_minus_random": {
+          "mean": 0.12361111111111119,
+          "seed_values": [
+            0.11250000000000004,
+            0.10000000000000009,
+            0.15833333333333344
+          ],
+          "descriptive_bootstrap_95": [
+            0.10000000000000009,
+            0.15833333333333344
+          ]
+        },
+        "biological_minus_rewired": {
+          "mean": -0.011111111111111146,
+          "seed_values": [
+            -0.07916666666666661,
+            -0.025000000000000022,
+            0.07083333333333319
+          ],
+          "descriptive_bootstrap_95": [
+            -0.07916666666666661,
+            0.07083333333333319
+          ]
+        }
+      },
+      "perturbations": {
+        "after": {
+          "mean": 0.9263888888888889,
+          "seed_values": [
+            0.9,
+            0.9166666666666667,
+            0.9625
+          ],
+          "descriptive_bootstrap_95": [
+            0.9,
+            0.9625
+          ]
+        },
+        "sensory_noise": {
+          "mean": 0.9138888888888889,
+          "seed_values": [
+            0.9541666666666668,
+            0.875,
+            0.9125
+          ],
+          "descriptive_bootstrap_95": [
+            0.875,
+            0.9541666666666669
+          ]
+        },
+        "edge_ablation": {
+          "mean": 0.9236111111111112,
+          "seed_values": [
+            0.9,
+            0.9333333333333333,
+            0.9375
+          ],
+          "descriptive_bootstrap_95": [
+            0.9,
+            0.9375
+          ]
+        },
+        "neuron_ablation": {
+          "mean": 0.9388888888888888,
+          "seed_values": [
+            0.9083333333333332,
+            0.9875,
+            0.9208333333333334
+          ],
+          "descriptive_bootstrap_95": [
+            0.9083333333333332,
+            0.9875000000000002
+          ]
+        }
+      },
+      "condition_before": {
+        "biological": {
+          "mean": 0.7944444444444444,
+          "seed_values": [
+            0.7791666666666666,
+            0.7958333333333334,
+            0.8083333333333333
+          ],
+          "descriptive_bootstrap_95": [
+            0.7791666666666665,
+            0.8083333333333332
+          ]
+        },
+        "frozen": {
+          "mean": 0.7944444444444444,
+          "seed_values": [
+            0.7791666666666666,
+            0.7958333333333334,
+            0.8083333333333333
+          ],
+          "descriptive_bootstrap_95": [
+            0.7791666666666665,
+            0.8083333333333332
+          ]
+        },
+        "rewired": {
+          "mean": 0.7944444444444444,
+          "seed_values": [
+            0.7791666666666666,
+            0.7958333333333334,
+            0.8083333333333333
+          ],
+          "descriptive_bootstrap_95": [
+            0.7791666666666665,
+            0.8083333333333332
+          ]
+        }
+      }
+    },
+    "flappy": {
+      "primary": {
+        "biological": {
+          "mean": 0.0,
+          "seed_values": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "descriptive_bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "frozen": {
+          "mean": 0.0,
+          "seed_values": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "descriptive_bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "rewired": {
+          "mean": 0.0,
+          "seed_values": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "descriptive_bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "random": {
+          "mean": 0.0,
+          "seed_values": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "descriptive_bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "heuristic": {
+          "mean": 0.08749999999999998,
+          "seed_values": [
+            0.09166666666666666,
+            0.0875,
+            0.08333333333333333
+          ],
+          "descriptive_bootstrap_95": [
+            0.08333333333333333,
+            0.09166666666666666
+          ]
+        }
+      },
+      "before": {
+        "mean": 0.0,
+        "seed_values": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "descriptive_bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "change": {
+        "mean": 0.0,
+        "seed_values": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "descriptive_bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "contrasts": {
+        "biological_minus_random": {
+          "mean": 0.0,
+          "seed_values": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "descriptive_bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "biological_minus_rewired": {
+          "mean": 0.0,
+          "seed_values": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "descriptive_bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "perturbations": {
+        "after": {
+          "mean": 0.0,
+          "seed_values": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "descriptive_bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "sensory_noise": {
+          "mean": 0.001388888888888889,
+          "seed_values": [
+            0.004166666666666667,
+            0.0,
+            0.0
+          ],
+          "descriptive_bootstrap_95": [
+            0.0,
+            0.004166666666666667
+          ]
+        },
+        "edge_ablation": {
+          "mean": 0.004166666666666667,
+          "seed_values": [
+            0.008333333333333333,
+            0.004166666666666667,
+            0.0
+          ],
+          "descriptive_bootstrap_95": [
+            0.0,
+            0.008333333333333333
+          ]
+        },
+        "neuron_ablation": {
+          "mean": 0.016666666666666666,
+          "seed_values": [
+            0.025,
+            0.020833333333333332,
+            0.004166666666666667
+          ],
+          "descriptive_bootstrap_95": [
+            0.004166666666666667,
+            0.025000000000000005
+          ]
+        }
+      },
+      "success_checks": [
+        {
+          "seed": 0,
+          "improved": false,
+          "beats_random_margin": false,
+          "state_sensitive": false
+        },
+        {
+          "seed": 1,
+          "improved": false,
+          "beats_random_margin": false,
+          "state_sensitive": false
+        },
+        {
+          "seed": 2,
+          "improved": false,
+          "beats_random_margin": false,
+          "state_sensitive": false
+        }
+      ],
+      "meets_frozen_success_criteria": false,
+      "state_probe": {
+        "mean": 0.0,
+        "seed_values": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "descriptive_bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "action_entropy": {
+        "mean": 0.20932322197014785,
+        "seed_values": [
+          0.25455487105476926,
+          0.17489955150980369,
+          0.19851524334587062
+        ],
+        "descriptive_bootstrap_95": [
+          0.17489955150980366,
+          0.25455487105476926
+        ]
+      },
+      "condition_before": {
+        "biological": {
+          "mean": 0.0,
+          "seed_values": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "descriptive_bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "frozen": {
+          "mean": 0.0,
+          "seed_values": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "descriptive_bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "rewired": {
+          "mean": 0.0,
+          "seed_values": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "descriptive_bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "raw_biological": {
+        "success": {
+          "mean": 0.0,
+          "seed_values": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "descriptive_bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "obstacles_passed": {
+          "mean": 0.0,
+          "seed_values": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "descriptive_bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "steps": {
+          "mean": 20.375,
+          "seed_values": [
+            21.175,
+            19.95,
+            20.0
+          ],
+          "descriptive_bootstrap_95": [
+            19.95,
+            21.175
+          ]
+        },
+        "return": {
+          "mean": -0.8127838398003658,
+          "seed_values": [
+            -0.8047510036197956,
+            -0.8169070564332778,
+            -0.8166934593480244
+          ],
+          "descriptive_bootstrap_95": [
+            -0.8169070564332778,
+            -0.8047510036197956
+          ]
+        },
+        "action_entropy": {
+          "mean": 0.20932322197014785,
+          "seed_values": [
+            0.25455487105476926,
+            0.17489955150980369,
+            0.19851524334587062
+          ],
+          "descriptive_bootstrap_95": [
+            0.17489955150980366,
+            0.25455487105476926
+          ]
+        },
+        "state_dependence": {
+          "mean": 0.05525911286780857,
+          "seed_values": [
+            0.07193675889328068,
+            0.043840579710144975,
+            0.050000000000000044
+          ],
+          "descriptive_bootstrap_95": [
+            0.04384057971014497,
+            0.07193675889328068
+          ]
+        }
+      }
+    },
+    "pong": {
+      "primary": {
+        "biological": {
+          "mean": 0.3499999999999999,
+          "seed_values": [
+            0.3083333333333333,
+            0.35,
+            0.39166666666666666
+          ],
+          "descriptive_bootstrap_95": [
+            0.3083333333333333,
+            0.39166666666666666
+          ]
+        },
+        "frozen": {
+          "mean": 0.3009259259259259,
+          "seed_values": [
+            0.3055555555555555,
+            0.2972222222222222,
+            0.3
+          ],
+          "descriptive_bootstrap_95": [
+            0.2972222222222222,
+            0.3055555555555555
+          ]
+        },
+        "rewired": {
+          "mean": 0.4888888888888889,
+          "seed_values": [
+            0.5666666666666667,
+            0.4833333333333333,
+            0.4166666666666667
+          ],
+          "descriptive_bootstrap_95": [
+            0.4166666666666667,
+            0.5666666666666667
+          ]
+        },
+        "random": {
+          "mean": 0.25277777777777777,
+          "seed_values": [
+            0.2583333333333333,
+            0.24166666666666664,
+            0.2583333333333333
+          ],
+          "descriptive_bootstrap_95": [
+            0.2416666666666666,
+            0.2583333333333333
+          ]
+        },
+        "heuristic": {
+          "mean": 1.0,
+          "seed_values": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "descriptive_bootstrap_95": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "before": {
+        "mean": 0.3009259259259259,
+        "seed_values": [
+          0.3055555555555555,
+          0.2972222222222222,
+          0.3
+        ],
+        "descriptive_bootstrap_95": [
+          0.2972222222222222,
+          0.3055555555555555
+        ]
+      },
+      "change": {
+        "mean": 0.04907407407407407,
+        "seed_values": [
+          0.002777777777777768,
+          0.05277777777777776,
+          0.09166666666666667
+        ],
+        "descriptive_bootstrap_95": [
+          0.002777777777777768,
+          0.09166666666666667
+        ]
+      },
+      "contrasts": {
+        "biological_minus_random": {
+          "mean": 0.09722222222222222,
+          "seed_values": [
+            0.04999999999999999,
+            0.10833333333333334,
+            0.13333333333333336
+          ],
+          "descriptive_bootstrap_95": [
+            0.04999999999999999,
+            0.13333333333333336
+          ]
+        },
+        "biological_minus_rewired": {
+          "mean": -0.1388888888888889,
+          "seed_values": [
+            -0.25833333333333336,
+            -0.1333333333333333,
+            -0.025000000000000022
+          ],
+          "descriptive_bootstrap_95": [
+            -0.25833333333333336,
+            -0.025000000000000022
+          ]
+        }
+      },
+      "perturbations": {
+        "after": {
+          "mean": 0.3499999999999999,
+          "seed_values": [
+            0.3083333333333333,
+            0.35,
+            0.39166666666666666
+          ],
+          "descriptive_bootstrap_95": [
+            0.3083333333333333,
+            0.39166666666666666
+          ]
+        },
+        "sensory_noise": {
+          "mean": 0.35555555555555557,
+          "seed_values": [
+            0.3111111111111111,
+            0.35,
+            0.40555555555555556
+          ],
+          "descriptive_bootstrap_95": [
+            0.3111111111111111,
+            0.4055555555555556
+          ]
+        },
+        "edge_ablation": {
+          "mean": 0.33981481481481485,
+          "seed_values": [
+            0.32222222222222224,
+            0.3388888888888889,
+            0.35833333333333334
+          ],
+          "descriptive_bootstrap_95": [
+            0.32222222222222224,
+            0.35833333333333334
+          ]
+        },
+        "neuron_ablation": {
+          "mean": 0.3398148148148148,
+          "seed_values": [
+            0.3277777777777778,
+            0.33611111111111114,
+            0.3555555555555555
+          ],
+          "descriptive_bootstrap_95": [
+            0.3277777777777778,
+            0.35555555555555546
+          ]
+        }
+      },
+      "success_checks": [
+        {
+          "seed": 0,
+          "improved": true,
+          "beats_random_margin": false,
+          "state_sensitive": true
+        },
+        {
+          "seed": 1,
+          "improved": true,
+          "beats_random_margin": true,
+          "state_sensitive": true
+        },
+        {
+          "seed": 2,
+          "improved": true,
+          "beats_random_margin": true,
+          "state_sensitive": true
+        }
+      ],
+      "meets_frozen_success_criteria": false,
+      "state_probe": {
+        "mean": 0.2833333333333333,
+        "seed_values": [
+          0.15000000000000002,
+          0.32499999999999996,
+          0.375
+        ],
+        "descriptive_bootstrap_95": [
+          0.15000000000000002,
+          0.375
+        ]
+      },
+      "action_entropy": {
+        "mean": 0.9852823251511618,
+        "seed_values": [
+          0.9204534331365342,
+          0.9856831734432546,
+          1.0497103688736966
+        ],
+        "descriptive_bootstrap_95": [
+          0.9204534331365343,
+          1.0497103688736966
+        ]
+      },
+      "condition_before": {
+        "biological": {
+          "mean": 0.3009259259259259,
+          "seed_values": [
+            0.3055555555555555,
+            0.2972222222222222,
+            0.3
+          ],
+          "descriptive_bootstrap_95": [
+            0.2972222222222222,
+            0.3055555555555555
+          ]
+        },
+        "frozen": {
+          "mean": 0.3009259259259259,
+          "seed_values": [
+            0.3055555555555555,
+            0.2972222222222222,
+            0.3
+          ],
+          "descriptive_bootstrap_95": [
+            0.2972222222222222,
+            0.3055555555555555
+          ]
+        },
+        "rewired": {
+          "mean": 0.3009259259259259,
+          "seed_values": [
+            0.3055555555555555,
+            0.2972222222222222,
+            0.3
+          ],
+          "descriptive_bootstrap_95": [
+            0.2972222222222222,
+            0.3055555555555555
+          ]
+        }
+      },
+      "raw_biological": {
+        "success": {
+          "mean": 0.3499999999999999,
+          "seed_values": [
+            0.3083333333333333,
+            0.35,
+            0.39166666666666666
+          ],
+          "descriptive_bootstrap_95": [
+            0.3083333333333333,
+            0.39166666666666666
+          ]
+        },
+        "returns": {
+          "mean": 3.15,
+          "seed_values": [
+            2.775,
+            3.15,
+            3.525
+          ],
+          "descriptive_bootstrap_95": [
+            2.775,
+            3.525
+          ]
+        },
+        "attempted_returns": {
+          "mean": 9.0,
+          "seed_values": [
+            9.0,
+            9.0,
+            9.0
+          ],
+          "descriptive_bootstrap_95": [
+            9.0,
+            9.0
+          ]
+        },
+        "steps": {
+          "mean": 144.0,
+          "seed_values": [
+            144.0,
+            144.0,
+            144.0
+          ],
+          "descriptive_bootstrap_95": [
+            144.0,
+            144.0
+          ]
+        },
+        "return": {
+          "mean": -2.6964111236641,
+          "seed_values": [
+            -3.451540232259881,
+            -2.6995981058515484,
+            -1.9380950328808706
+          ],
+          "descriptive_bootstrap_95": [
+            -3.4515402322598816,
+            -1.9380950328808708
+          ]
+        },
+        "action_entropy": {
+          "mean": 0.9852823251511618,
+          "seed_values": [
+            0.9204534331365342,
+            0.9856831734432546,
+            1.0497103688736966
+          ],
+          "descriptive_bootstrap_95": [
+            0.9204534331365343,
+            1.0497103688736966
+          ]
+        },
+        "state_dependence": {
+          "mean": 0.48090277777777773,
+          "seed_values": [
+            0.43715277777777767,
+            0.46388888888888885,
+            0.5416666666666667
+          ],
+          "descriptive_bootstrap_95": [
+            0.43715277777777767,
+            0.5416666666666667
+          ]
+        }
+      }
+    },
+    "breakout": {
+      "primary": {
+        "biological": {
+          "mean": 0.36833333333333335,
+          "seed_values": [
+            0.37,
+            0.37,
+            0.365
+          ],
+          "descriptive_bootstrap_95": [
+            0.365,
+            0.36999999999999994
+          ]
+        },
+        "frozen": {
+          "mean": 0.365,
+          "seed_values": [
+            0.37,
+            0.37,
+            0.35500000000000004
+          ],
+          "descriptive_bootstrap_95": [
+            0.35500000000000004,
+            0.36999999999999994
+          ]
+        },
+        "rewired": {
+          "mean": 0.40166666666666667,
+          "seed_values": [
+            0.48,
+            0.37,
+            0.35500000000000004
+          ],
+          "descriptive_bootstrap_95": [
+            0.35500000000000004,
+            0.48
+          ]
+        },
+        "random": {
+          "mean": 0.46833333333333327,
+          "seed_values": [
+            0.4699999999999999,
+            0.4699999999999999,
+            0.465
+          ],
+          "descriptive_bootstrap_95": [
+            0.465,
+            0.4699999999999999
+          ]
+        },
+        "heuristic": {
+          "mean": 0.6166666666666667,
+          "seed_values": [
+            0.6,
+            0.64,
+            0.61
+          ],
+          "descriptive_bootstrap_95": [
+            0.6,
+            0.64
+          ]
+        }
+      },
+      "before": {
+        "mean": 0.365,
+        "seed_values": [
+          0.37,
+          0.37,
+          0.35500000000000004
+        ],
+        "descriptive_bootstrap_95": [
+          0.35500000000000004,
+          0.36999999999999994
+        ]
+      },
+      "change": {
+        "mean": 0.003333333333333318,
+        "seed_values": [
+          0.0,
+          0.0,
+          0.009999999999999953
+        ],
+        "descriptive_bootstrap_95": [
+          0.0,
+          0.009999999999999953
+        ]
+      },
+      "contrasts": {
+        "biological_minus_random": {
+          "mean": -0.09999999999999996,
+          "seed_values": [
+            -0.09999999999999992,
+            -0.09999999999999992,
+            -0.10000000000000003
+          ],
+          "descriptive_bootstrap_95": [
+            -0.10000000000000003,
+            -0.09999999999999992
+          ]
+        },
+        "biological_minus_rewired": {
+          "mean": -0.03333333333333335,
+          "seed_values": [
+            -0.10999999999999999,
+            0.0,
+            0.009999999999999953
+          ],
+          "descriptive_bootstrap_95": [
+            -0.10999999999999999,
+            0.009999999999999953
+          ]
+        }
+      },
+      "perturbations": {
+        "after": {
+          "mean": 0.36833333333333335,
+          "seed_values": [
+            0.37,
+            0.37,
+            0.365
+          ],
+          "descriptive_bootstrap_95": [
+            0.365,
+            0.36999999999999994
+          ]
+        },
+        "sensory_noise": {
+          "mean": 0.3666666666666667,
+          "seed_values": [
+            0.37,
+            0.37,
+            0.36
+          ],
+          "descriptive_bootstrap_95": [
+            0.36000000000000004,
+            0.36999999999999994
+          ]
+        },
+        "edge_ablation": {
+          "mean": 0.44166666666666665,
+          "seed_values": [
+            0.485,
+            0.37,
+            0.47000000000000003
+          ],
+          "descriptive_bootstrap_95": [
+            0.36999999999999994,
+            0.48500000000000004
+          ]
+        },
+        "neuron_ablation": {
+          "mean": 0.38166666666666665,
+          "seed_values": [
+            0.37,
+            0.37,
+            0.40499999999999997
+          ],
+          "descriptive_bootstrap_95": [
+            0.36999999999999994,
+            0.40499999999999997
+          ]
+        }
+      },
+      "success_checks": [
+        {
+          "seed": 0,
+          "improved": false,
+          "beats_random_margin": false,
+          "state_sensitive": true
+        },
+        {
+          "seed": 1,
+          "improved": false,
+          "beats_random_margin": false,
+          "state_sensitive": true
+        },
+        {
+          "seed": 2,
+          "improved": true,
+          "beats_random_margin": false,
+          "state_sensitive": false
+        }
+      ],
+      "meets_frozen_success_criteria": false,
+      "state_probe": {
+        "mean": 0.19166666666666665,
+        "seed_values": [
+          0.32499999999999996,
+          0.25,
+          0.0
+        ],
+        "descriptive_bootstrap_95": [
+          0.0,
+          0.32499999999999996
+        ]
+      },
+      "action_entropy": {
+        "mean": 0.8889890448098218,
+        "seed_values": [
+          0.9169453415402475,
+          0.8407085099975724,
+          0.9093132828916456
+        ],
+        "descriptive_bootstrap_95": [
+          0.8407085099975724,
+          0.9169453415402474
+        ]
+      },
+      "condition_before": {
+        "biological": {
+          "mean": 0.365,
+          "seed_values": [
+            0.37,
+            0.37,
+            0.35500000000000004
+          ],
+          "descriptive_bootstrap_95": [
+            0.35500000000000004,
+            0.36999999999999994
+          ]
+        },
+        "frozen": {
+          "mean": 0.365,
+          "seed_values": [
+            0.37,
+            0.37,
+            0.35500000000000004
+          ],
+          "descriptive_bootstrap_95": [
+            0.35500000000000004,
+            0.36999999999999994
+          ]
+        },
+        "rewired": {
+          "mean": 0.365,
+          "seed_values": [
+            0.37,
+            0.37,
+            0.35500000000000004
+          ],
+          "descriptive_bootstrap_95": [
+            0.35500000000000004,
+            0.36999999999999994
+          ]
+        }
+      },
+      "raw_biological": {
+        "success": {
+          "mean": 0.36833333333333335,
+          "seed_values": [
+            0.37,
+            0.37,
+            0.365
+          ],
+          "descriptive_bootstrap_95": [
+            0.365,
+            0.36999999999999994
+          ]
+        },
+        "bricks_destroyed": {
+          "mean": 1.8416666666666668,
+          "seed_values": [
+            1.85,
+            1.85,
+            1.825
+          ],
+          "descriptive_bootstrap_95": [
+            1.825,
+            1.8500000000000003
+          ]
+        },
+        "interceptions": {
+          "mean": 0.041666666666666664,
+          "seed_values": [
+            0.05,
+            0.0,
+            0.075
+          ],
+          "descriptive_bootstrap_95": [
+            0.0,
+            0.075
+          ]
+        },
+        "misses": {
+          "mean": 3.0,
+          "seed_values": [
+            3.0,
+            3.0,
+            3.0
+          ],
+          "descriptive_bootstrap_95": [
+            3.0,
+            3.0
+          ]
+        },
+        "completion": {
+          "mean": 0.0,
+          "seed_values": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "descriptive_bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "steps": {
+          "mean": 100.54166666666667,
+          "seed_values": [
+            100.85,
+            99.0,
+            101.775
+          ],
+          "descriptive_bootstrap_95": [
+            99.0,
+            101.77500000000002
+          ]
+        },
+        "return": {
+          "mean": -1.1564131818181818,
+          "seed_values": [
+            -1.1467163636363638,
+            -1.1536175,
+            -1.1689056818181816
+          ],
+          "descriptive_bootstrap_95": [
+            -1.1689056818181816,
+            -1.1467163636363638
+          ]
+        },
+        "action_entropy": {
+          "mean": 0.8889890448098218,
+          "seed_values": [
+            0.9169453415402475,
+            0.8407085099975724,
+            0.9093132828916456
+          ],
+          "descriptive_bootstrap_95": [
+            0.8407085099975724,
+            0.9169453415402474
+          ]
+        },
+        "state_dependence": {
+          "mean": 0.44890015349574175,
+          "seed_values": [
+            0.4037154634581105,
+            0.47702020202020207,
+            0.4659647950089127
+          ],
+          "descriptive_bootstrap_95": [
+            0.40371546345811044,
+            0.47702020202020207
+          ]
+        }
+      }
+    },
+    "snake": {
+      "primary": {
+        "biological": {
+          "mean": 0.0425,
+          "seed_values": [
+            0.04,
+            0.052500000000000005,
+            0.034999999999999996
+          ],
+          "descriptive_bootstrap_95": [
+            0.034999999999999996,
+            0.05250000000000001
+          ]
+        },
+        "frozen": {
+          "mean": 0.005,
+          "seed_values": [
+            0.01,
+            0.0,
+            0.005
+          ],
+          "descriptive_bootstrap_95": [
+            0.0,
+            0.01
+          ]
+        },
+        "rewired": {
+          "mean": 0.06166666666666667,
+          "seed_values": [
+            0.045,
+            0.05500000000000001,
+            0.08499999999999999
+          ],
+          "descriptive_bootstrap_95": [
+            0.045000000000000005,
+            0.085
+          ]
+        },
+        "random": {
+          "mean": 0.025000000000000005,
+          "seed_values": [
+            0.04,
+            0.01,
+            0.025
+          ],
+          "descriptive_bootstrap_95": [
+            0.01,
+            0.04
+          ]
+        },
+        "heuristic": {
+          "mean": 0.9283333333333333,
+          "seed_values": [
+            0.9625,
+            0.9175000000000001,
+            0.905
+          ],
+          "descriptive_bootstrap_95": [
+            0.9049999999999999,
+            0.9625
+          ]
+        }
+      },
+      "before": {
+        "mean": 0.005,
+        "seed_values": [
+          0.01,
+          0.0,
+          0.005
+        ],
+        "descriptive_bootstrap_95": [
+          0.0,
+          0.01
+        ]
+      },
+      "change": {
+        "mean": 0.0375,
+        "seed_values": [
+          0.03,
+          0.052500000000000005,
+          0.029999999999999995
+        ],
+        "descriptive_bootstrap_95": [
+          0.029999999999999995,
+          0.05250000000000001
+        ]
+      },
+      "contrasts": {
+        "biological_minus_random": {
+          "mean": 0.017499999999999998,
+          "seed_values": [
+            0.0,
+            0.0425,
+            0.009999999999999995
+          ],
+          "descriptive_bootstrap_95": [
+            0.0,
+            0.0425
+          ]
+        },
+        "biological_minus_rewired": {
+          "mean": -0.019166666666666665,
+          "seed_values": [
+            -0.0049999999999999975,
+            -0.0025000000000000022,
+            -0.049999999999999996
+          ],
+          "descriptive_bootstrap_95": [
+            -0.049999999999999996,
+            -0.0025000000000000022
+          ]
+        }
+      },
+      "perturbations": {
+        "after": {
+          "mean": 0.0425,
+          "seed_values": [
+            0.04,
+            0.052500000000000005,
+            0.034999999999999996
+          ],
+          "descriptive_bootstrap_95": [
+            0.034999999999999996,
+            0.05250000000000001
+          ]
+        },
+        "sensory_noise": {
+          "mean": 0.04416666666666667,
+          "seed_values": [
+            0.05,
+            0.0475,
+            0.035
+          ],
+          "descriptive_bootstrap_95": [
+            0.035,
+            0.05000000000000001
+          ]
+        },
+        "edge_ablation": {
+          "mean": 0.020000000000000004,
+          "seed_values": [
+            0.030000000000000006,
+            0.01,
+            0.02
+          ],
+          "descriptive_bootstrap_95": [
+            0.01,
+            0.03000000000000001
+          ]
+        },
+        "neuron_ablation": {
+          "mean": 0.018333333333333337,
+          "seed_values": [
+            0.01,
+            0.025,
+            0.02
+          ],
+          "descriptive_bootstrap_95": [
+            0.01,
+            0.025000000000000005
+          ]
+        }
+      },
+      "success_checks": [
+        {
+          "seed": 0,
+          "improved": true,
+          "beats_random_margin": false,
+          "state_sensitive": true
+        },
+        {
+          "seed": 1,
+          "improved": true,
+          "beats_random_margin": false,
+          "state_sensitive": true
+        },
+        {
+          "seed": 2,
+          "improved": true,
+          "beats_random_margin": false,
+          "state_sensitive": true
+        }
+      ],
+      "meets_frozen_success_criteria": false,
+      "state_probe": {
+        "mean": 0.4333333333333333,
+        "seed_values": [
+          0.475,
+          0.375,
+          0.44999999999999996
+        ],
+        "descriptive_bootstrap_95": [
+          0.375,
+          0.4749999999999999
+        ]
+      },
+      "action_entropy": {
+        "mean": 0.4975001417140394,
+        "seed_values": [
+          0.4512522601094629,
+          0.5870930100404506,
+          0.45415515499220477
+        ],
+        "descriptive_bootstrap_95": [
+          0.4512522601094629,
+          0.5870930100404506
+        ]
+      },
+      "condition_before": {
+        "biological": {
+          "mean": 0.005,
+          "seed_values": [
+            0.01,
+            0.0,
+            0.005
+          ],
+          "descriptive_bootstrap_95": [
+            0.0,
+            0.01
+          ]
+        },
+        "frozen": {
+          "mean": 0.005,
+          "seed_values": [
+            0.01,
+            0.0,
+            0.005
+          ],
+          "descriptive_bootstrap_95": [
+            0.0,
+            0.01
+          ]
+        },
+        "rewired": {
+          "mean": 0.005,
+          "seed_values": [
+            0.01,
+            0.0,
+            0.005
+          ],
+          "descriptive_bootstrap_95": [
+            0.0,
+            0.01
+          ]
+        }
+      },
+      "raw_biological": {
+        "success": {
+          "mean": 0.0425,
+          "seed_values": [
+            0.04,
+            0.052500000000000005,
+            0.034999999999999996
+          ],
+          "descriptive_bootstrap_95": [
+            0.034999999999999996,
+            0.05250000000000001
+          ]
+        },
+        "food": {
+          "mean": 0.425,
+          "seed_values": [
+            0.4,
+            0.525,
+            0.35
+          ],
+          "descriptive_bootstrap_95": [
+            0.3499999999999999,
+            0.525
+          ]
+        },
+        "steps": {
+          "mean": 39.016666666666666,
+          "seed_values": [
+            38.275,
+            39.85,
+            38.925
+          ],
+          "descriptive_bootstrap_95": [
+            38.275,
+            39.85
+          ]
+        },
+        "length": {
+          "mean": 3.4250000000000003,
+          "seed_values": [
+            3.4,
+            3.525,
+            3.35
+          ],
+          "descriptive_bootstrap_95": [
+            3.35,
+            3.525
+          ]
+        },
+        "return": {
+          "mean": -0.2126666666666669,
+          "seed_values": [
+            -0.18075000000000022,
+            -0.19525000000000023,
+            -0.26200000000000023
+          ],
+          "descriptive_bootstrap_95": [
+            -0.26200000000000023,
+            -0.18075000000000022
+          ]
+        },
+        "action_entropy": {
+          "mean": 0.4975001417140394,
+          "seed_values": [
+            0.4512522601094629,
+            0.5870930100404506,
+            0.45415515499220477
+          ],
+          "descriptive_bootstrap_95": [
+            0.4512522601094629,
+            0.5870930100404506
+          ]
+        },
+        "state_dependence": {
+          "mean": 0.18716121387710585,
+          "seed_values": [
+            0.17272796400965898,
+            0.21246629559063318,
+            0.17628938203102545
+          ],
+          "descriptive_bootstrap_95": [
+            0.17272796400965898,
+            0.2124662955906332
+          ]
+        }
+      }
+    }
+  },
+  "result_files": {
+    "runs/v11-catch-eprop-0/result.json": "9626caeb2913347231343afed509e66f2c82193824a96a3d654d760cb44c39f0",
+    "runs/v11-catch-eprop-1/result.json": "438a7fd4b87df20ab3e9daf80931b202f433ef06ee79fd340966d961b5c7f400",
+    "runs/v11-catch-eprop-2/result.json": "56562c41854b5cfcd9799540871da484226fee304e2bd3dbebaeec2efa93d8a2",
+    "runs/v11-catch-frozen-0/result.json": "797577d40b5cbeb93dabaa6939f1d4d2df5b7e5f54fa8ab94cdb41d33964ad99",
+    "runs/v11-catch-frozen-1/result.json": "eb073b709201eeedecd316f2d6f843e66ed1fd48f0a7fcc8a6cf3815ae82a5b2",
+    "runs/v11-catch-frozen-2/result.json": "b43823f6f457be05ba25f487f98450ce1228c4c4401b08649f440ab851270d59",
+    "runs/v11-catch-rewired-0/result.json": "07da5511d75d74de27ee97cdc4eb6b4ffcfe7ea6a9959a4e84928b4dbc4306e6",
+    "runs/v11-catch-rewired-1/result.json": "cdb832067ac30d204b4d12fda66017a2124db53864e80523e004d938f301d87b",
+    "runs/v11-catch-rewired-2/result.json": "63deb7847cf5779f50f593bc4656f64897a3c48492f47a85768ccb7905cd782c",
+    "runs/v11-dodge-eprop-0/result.json": "f9b16e00144c9dfe69285b97a062725f477a10f767b8ef1ce6980b811ce60243",
+    "runs/v11-dodge-eprop-1/result.json": "4228046e8ebf12669a392d400c78dc339533f4e5e27b2b238be31e5391a911dc",
+    "runs/v11-dodge-eprop-2/result.json": "30eea87780b2defe157ee3dafb91bbcef20985b98a3622336420fb66964cd6d9",
+    "runs/v11-dodge-frozen-0/result.json": "f1196f6d1ea6c9259e903f6d2a987e90202b2ac0b681fd001667c1897cf36da3",
+    "runs/v11-dodge-frozen-1/result.json": "abecb72465730ddf229ed7f298a3d4f7e91d0ca53bf068e291ed271a26c9bfe2",
+    "runs/v11-dodge-frozen-2/result.json": "7f5c2183264241a26006dcca693a7e62ca07c095a5b3c9e8ed230dbedd135277",
+    "runs/v11-dodge-rewired-0/result.json": "a38a475f398b438f1e651f0bb492851f8ca2378fb3e24a780230e8aaa2af20a8",
+    "runs/v11-dodge-rewired-1/result.json": "19bdc73be57081b13877e0051c79ecb75504a082fb52660e2c65ec80f18c599c",
+    "runs/v11-dodge-rewired-2/result.json": "fcc3c70320fdc82e8a6b0695f33ef051f64ed70812eb044010b54ddef222e7fe",
+    "runs/v12-flappy-biological-0/result.json": "44b70fd7f34064a2de1e7dfc9d92e9dff13a0dec70cb43cd0dd30bbabb0d93d6",
+    "runs/v12-flappy-biological-1/result.json": "6d660b640e987d1a59e883cb46efc93805b9f5517820255467b2251f556c1c6b",
+    "runs/v12-flappy-biological-2/result.json": "84d396f2adc8a6901f03375bb4eb991344d56fc0159516efeb2e769b2e37436b",
+    "runs/v12-flappy-frozen-0/result.json": "69a776be07b3277b384577ecfdc09f79473042b53fc473e7f56c2f52051d5e83",
+    "runs/v12-flappy-frozen-1/result.json": "045cad6aae293b123467bcb41567978cabd8472c4f77174856ec4e5608e6186f",
+    "runs/v12-flappy-frozen-2/result.json": "26d25c2e1a7cc1562270729c28354d3157c87f5e5df5801cee3a1fa51247c0f4",
+    "runs/v12-flappy-rewired-0/result.json": "60940dd5fc704a69dedec8a66f3c43d425be709e2e54b7a3028cf49b1aa0e6f2",
+    "runs/v12-flappy-rewired-1/result.json": "5ad46341cde1e913fe6ae47fb843f1a12de9b271b0f0d7f24ad55936cc0a88ac",
+    "runs/v12-flappy-rewired-2/result.json": "5af6696046409bd46b41f9abe271517ae7c14e2bdf627b8b71a647a4b11aa78a",
+    "runs/v12-pong-biological-0/result.json": "80d79e1077170f0e5c6f8fc5ca33a727d7ed2040b5f3b9324108635c8d314b2d",
+    "runs/v12-pong-biological-1/result.json": "a4f4787889a47050fa3792fd71669bb4a0fdfc087323d5e8bf6f0c39bc7ec3ea",
+    "runs/v12-pong-biological-2/result.json": "b299ad5b07c93609266f43a57462d6e6b0878d937a602d5d1eb0ff8e89b0cc17",
+    "runs/v12-pong-frozen-0/result.json": "baf0489f98003c0243312c60a9a6deb7b33fcc080fa6004882d4122713eeacd8",
+    "runs/v12-pong-frozen-1/result.json": "fbfe71e227598fccb1ad7fddc143054b0ac308c4126621d7498b77821e821e84",
+    "runs/v12-pong-frozen-2/result.json": "f018c66fa3e19c00ae3ac38d6c6404aa62349963cc29fa77636031696e1c517d",
+    "runs/v12-pong-rewired-0/result.json": "2e085541246a8bce17bd216ea9c20561f4f1a468b32b9cad04a822aac36dab84",
+    "runs/v12-pong-rewired-1/result.json": "11fc704befe82cc54d11c1d0c54a06baefa49263beefeb1edfa8745bf53efcb9",
+    "runs/v12-pong-rewired-2/result.json": "e6c9d61d0f92bf1039f66b63c8893669c006e33a5052398473b5e8c0449253c2",
+    "runs/v12-breakout-biological-0/result.json": "d4ec615d1b8a78af763d0c212c359c431ccd5f3a16566d6f638d9f54b0f9ec57",
+    "runs/v12-breakout-biological-1/result.json": "175e6b9abe68179cb531958424a9dc6b6ce098c403d3465f6f2c19d204a0b749",
+    "runs/v12-breakout-biological-2/result.json": "738fee169ee450c165f0831ebdbe290d1d10fbb1d973fbd0a07e93619068d67e",
+    "runs/v12-breakout-frozen-0/result.json": "895fc6142ca6b832e266d13c34a50cbd07a3c7340f704ed63a0ca6dd0d217ac3",
+    "runs/v12-breakout-frozen-1/result.json": "f829eaf74ea435b0f36e50936bfdfae7e4d8c02ae04d4124c6dd5a0af5737909",
+    "runs/v12-breakout-frozen-2/result.json": "07e43ea1100960502f170c9b20b032f90ec771cd454f92bae2d6e1ab52513892",
+    "runs/v12-breakout-rewired-0/result.json": "2ce9772f4e542b7cacfbc8f429c5ebfe0abf8dcf819a440ce54f6c62b15229d9",
+    "runs/v12-breakout-rewired-1/result.json": "2e2a83bead9023c8c454b73a836ae468c79d3983f9b46bcf604e7c19bb69ae3c",
+    "runs/v12-breakout-rewired-2/result.json": "bdb68521ab863b61967e310fbdbf7ad2f0c5574719589ba2821ff33fd0912405",
+    "runs/v12-snake-biological-0/result.json": "ba91156dce46ce08002471e31eb71d908312f7e7e4f4a4049819327802efa91a",
+    "runs/v12-snake-biological-1/result.json": "4adda435cac9e1ea3d5194931be650296eed67c2dd0380cef58d756f2d4f8cd9",
+    "runs/v12-snake-biological-2/result.json": "539413d1129587667212022d2953189b79c2956707308c4205a8f389675a1f73",
+    "runs/v12-snake-frozen-0/result.json": "a2bb306af654b7ea551b2251917cd908fef699c3cd9aa8d45d252c91583f930c",
+    "runs/v12-snake-frozen-1/result.json": "2c4f68b212f64d05a58bc40f4e69414c43e754158bbf515667d6fb9537e7b1bf",
+    "runs/v12-snake-frozen-2/result.json": "871bbe60bb81dbd3826ed834645b907c9107215fd571189b8dd6e9b4799051b1",
+    "runs/v12-snake-rewired-0/result.json": "9d84a90791c694cae95429974ae472e85ade5d536fe0ce793dddc813bfadc707",
+    "runs/v12-snake-rewired-1/result.json": "c7c4829df973d7fc78c0b5d6f77fad1f47fc2bd673f9b93cb3e710c0bd0df710",
+    "runs/v12-snake-rewired-2/result.json": "d0e4ee76a8dbe7ed2b32546a01fcbd1113a3cee80e0db3b634af205b1c507faf"
+  },
+  "historical": [
+    "catch",
+    "dodge"
+  ]
+}

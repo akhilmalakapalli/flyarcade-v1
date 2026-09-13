@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "graphs": [
+    {
+      "path": "data/malecns-v1.0/graph.npz",
+      "graph_sha256": "46d585dcb1cc34e77025541dd855b2d728ee4c42aa9c2e15712caf5ae1907c35",
+      "ticks": 300,
+      "spikes_and_voltages": "bit-identical",
+      "phases": [
+        "intact",
+        "edge10%",
+        "neuron10%"
+      ]
+    },
+    {
+      "path": "data/v12/rewired-0.npz",
+      "graph_sha256": "344a24cf5708ed2929983a637a5bcf29ea0f49a906b2a363cb664f1e5f376c7d",
+      "ticks": 300,
+      "spikes_and_voltages": "bit-identical",
+      "phases": [
+        "intact",
+        "edge10%",
+        "neuron10%"
+      ]
+    }
+  ],
+  "resources": {
+    "rss_mb": 166.5,
+    "free_disk_mb": 348261.0546875,
+    "elapsed_seconds": 0.6068039579840843
+  }
+}

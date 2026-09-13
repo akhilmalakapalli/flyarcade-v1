@@ -1,0 +1,113 @@
+{
+  "status": "PASS",
+  "summary_sha256": "55f09a51b40fa6831210cb34f1980fd62ada2ddbcca04f0a76bbf1c544004a85",
+  "analysis_files": {
+    "artifacts/v12/contrasts.csv": "4ed9a5bfac9c22e845b4de99eb39e83bd2ad91fadb9a699a0f9e482dd8ad5535",
+    "artifacts/v12/figures/learning_curves.png": "ef926b280cbf633cc906f6935600c46e3e078501d8cfa166cabc93c318c9f2f3",
+    "artifacts/v12/figures/learning_curves.svg": "58888a11c3497a9b894eda3ac9c59b6ac8d9d070b88f2a12b2799b5e4e608188",
+    "artifacts/v12/figures/perturbations.png": "e00f05b046607236ba0f1eb12fdaaa5fbdf92d2e4162fd7c55a4981cf8c7f937",
+    "artifacts/v12/figures/perturbations.svg": "3dc30d111ff5c53aa5d171751299bf60f9bdc70520486d296b2734519e9fafd1",
+    "artifacts/v12/figures/representations.png": "1bb717a9a9efac6e36e0039654fed638f246e31ff7d46111f060fac74d05493e",
+    "artifacts/v12/figures/representations.svg": "06dc9c16a1fab8d4cefa58bb8cdf2edbfcf28dffa59c4f738a8fb5b243b73b78",
+    "artifacts/v12/figures/six_task_performance.png": "13bebaadb8a2842637c26321de1a30580dac2340651239baab90130a11d9877f",
+    "artifacts/v12/figures/six_task_performance.svg": "e051ec49a7662ef702d85f136793125970b52d370eeb2c4acad1d510d6aad4ac",
+    "artifacts/v12/figures/topology.png": "d3cffe2f7fc05f5c3be505f16910be0251b6cc54b820b2db1c5eb6ba758d6ed5",
+    "artifacts/v12/figures/topology.svg": "13d44d707e740443fac529069da208da082910a66e86c6ed763e155a38775ffa",
+    "artifacts/v12/perturbations.csv": "3c81d66a59b8d465f2ccca2489e26ce1736f3042772e6d5dd504b9fcbe0740c3",
+    "artifacts/v12/primary.csv": "4a1f3cf658da3eeb66c048b610757be10a1ecc22b262d99d6e18c90085114714",
+    "artifacts/v12/representations.csv": "31fe9ae4977aa268362638daa5df0c84b482c1390ed6862ba319a6a798dd085a",
+    "artifacts/v12/representations.json": "f2d14eb1e60af239fa18867d750e7e37e3373262918c8d49ddf9aa10d33fec4a",
+    "artifacts/v12/table.md": "55f336af2513d1c598b1113f8cd629a78e90b963f1bcbff3e43436e94857aa1d",
+    "artifacts/v12/task_specific.csv": "41a3e4d7e6d18ab223917f8aa4fc999abfda6125911cca80cd76edc106f26877"
+  },
+  "trials": 36,
+  "expected_trials": 36,
+  "historical_files_preserved": 467,
+  "source_graph_sha256": "3f4cbeedb17ca6a7d06162151429e0713ed72ce579d5f19a8845a446f6315697",
+  "plan_sha256": "de15ca3f4468aac89784d8e7523e54b531afb4b1ed866aadde65ad11d274a666",
+  "code_sha256": "9736ec692fe7d488f67ead1041f473d322ab924c3a1c3152c78ca13e273836b7",
+  "checkpoint_replays": [
+    {
+      "task": "flappy",
+      "clean_and_three_perturbations": "exact match",
+      "completed_rerun_preserved": true
+    },
+    {
+      "task": "pong",
+      "clean_and_three_perturbations": "exact match",
+      "completed_rerun_preserved": true
+    },
+    {
+      "task": "breakout",
+      "clean_and_three_perturbations": "exact match",
+      "completed_rerun_preserved": true
+    },
+    {
+      "task": "snake",
+      "clean_and_three_perturbations": "exact match",
+      "completed_rerun_preserved": true
+    }
+  ],
+  "fresh_full_budget_rerun": "flappy biological seed 0: full history, actor and critic exact",
+  "controls": {
+    "0": {
+      "graph_sha256": "344a24cf5708ed2929983a637a5bcf29ea0f49a906b2a363cb664f1e5f376c7d",
+      "degree_and_outgoing_strength": true
+    },
+    "1": {
+      "graph_sha256": "c555fbeee9c5a346532f0e76ba152ea6afcea46732a548f3abcc447ffc67852d",
+      "degree_and_outgoing_strength": true
+    },
+    "2": {
+      "graph_sha256": "c29bfa4b69c0fdd49de8175bc093012c3afecd7dc17436b3d81d72ba48d00255",
+      "degree_and_outgoing_strength": true
+    }
+  },
+  "seeds_disjoint": true,
+  "frozen_and_stage_a_invariants": true,
+  "max_segment_seconds": 46.893897666974226,
+  "max_rss_snapshot_mb": 136.515625,
+  "result_files": {
+    "runs/v12-flappy-biological-0/result.json": "44b70fd7f34064a2de1e7dfc9d92e9dff13a0dec70cb43cd0dd30bbabb0d93d6",
+    "runs/v12-flappy-biological-1/result.json": "6d660b640e987d1a59e883cb46efc93805b9f5517820255467b2251f556c1c6b",
+    "runs/v12-flappy-biological-2/result.json": "84d396f2adc8a6901f03375bb4eb991344d56fc0159516efeb2e769b2e37436b",
+    "runs/v12-flappy-frozen-0/result.json": "69a776be07b3277b384577ecfdc09f79473042b53fc473e7f56c2f52051d5e83",
+    "runs/v12-flappy-frozen-1/result.json": "045cad6aae293b123467bcb41567978cabd8472c4f77174856ec4e5608e6186f",
+    "runs/v12-flappy-frozen-2/result.json": "26d25c2e1a7cc1562270729c28354d3157c87f5e5df5801cee3a1fa51247c0f4",
+    "runs/v12-flappy-rewired-0/result.json": "60940dd5fc704a69dedec8a66f3c43d425be709e2e54b7a3028cf49b1aa0e6f2",
+    "runs/v12-flappy-rewired-1/result.json": "5ad46341cde1e913fe6ae47fb843f1a12de9b271b0f0d7f24ad55936cc0a88ac",
+    "runs/v12-flappy-rewired-2/result.json": "5af6696046409bd46b41f9abe271517ae7c14e2bdf627b8b71a647a4b11aa78a",
+    "runs/v12-pong-biological-0/result.json": "80d79e1077170f0e5c6f8fc5ca33a727d7ed2040b5f3b9324108635c8d314b2d",
+    "runs/v12-pong-biological-1/result.json": "a4f4787889a47050fa3792fd71669bb4a0fdfc087323d5e8bf6f0c39bc7ec3ea",
+    "runs/v12-pong-biological-2/result.json": "b299ad5b07c93609266f43a57462d6e6b0878d937a602d5d1eb0ff8e89b0cc17",
+    "runs/v12-pong-frozen-0/result.json": "baf0489f98003c0243312c60a9a6deb7b33fcc080fa6004882d4122713eeacd8",
+    "runs/v12-pong-frozen-1/result.json": "fbfe71e227598fccb1ad7fddc143054b0ac308c4126621d7498b77821e821e84",
+    "runs/v12-pong-frozen-2/result.json": "f018c66fa3e19c00ae3ac38d6c6404aa62349963cc29fa77636031696e1c517d",
+    "runs/v12-pong-rewired-0/result.json": "2e085541246a8bce17bd216ea9c20561f4f1a468b32b9cad04a822aac36dab84",
+    "runs/v12-pong-rewired-1/result.json": "11fc704befe82cc54d11c1d0c54a06baefa49263beefeb1edfa8745bf53efcb9",
+    "runs/v12-pong-rewired-2/result.json": "e6c9d61d0f92bf1039f66b63c8893669c006e33a5052398473b5e8c0449253c2",
+    "runs/v12-breakout-biological-0/result.json": "d4ec615d1b8a78af763d0c212c359c431ccd5f3a16566d6f638d9f54b0f9ec57",
+    "runs/v12-breakout-biological-1/result.json": "175e6b9abe68179cb531958424a9dc6b6ce098c403d3465f6f2c19d204a0b749",
+    "runs/v12-breakout-biological-2/result.json": "738fee169ee450c165f0831ebdbe290d1d10fbb1d973fbd0a07e93619068d67e",
+    "runs/v12-breakout-frozen-0/result.json": "895fc6142ca6b832e266d13c34a50cbd07a3c7340f704ed63a0ca6dd0d217ac3",
+    "runs/v12-breakout-frozen-1/result.json": "f829eaf74ea435b0f36e50936bfdfae7e4d8c02ae04d4124c6dd5a0af5737909",
+    "runs/v12-breakout-frozen-2/result.json": "07e43ea1100960502f170c9b20b032f90ec771cd454f92bae2d6e1ab52513892",
+    "runs/v12-breakout-rewired-0/result.json": "2ce9772f4e542b7cacfbc8f429c5ebfe0abf8dcf819a440ce54f6c62b15229d9",
+    "runs/v12-breakout-rewired-1/result.json": "2e2a83bead9023c8c454b73a836ae468c79d3983f9b46bcf604e7c19bb69ae3c",
+    "runs/v12-breakout-rewired-2/result.json": "bdb68521ab863b61967e310fbdbf7ad2f0c5574719589ba2821ff33fd0912405",
+    "runs/v12-snake-biological-0/result.json": "ba91156dce46ce08002471e31eb71d908312f7e7e4f4a4049819327802efa91a",
+    "runs/v12-snake-biological-1/result.json": "4adda435cac9e1ea3d5194931be650296eed67c2dd0380cef58d756f2d4f8cd9",
+    "runs/v12-snake-biological-2/result.json": "539413d1129587667212022d2953189b79c2956707308c4205a8f389675a1f73",
+    "runs/v12-snake-frozen-0/result.json": "a2bb306af654b7ea551b2251917cd908fef699c3cd9aa8d45d252c91583f930c",
+    "runs/v12-snake-frozen-1/result.json": "2c4f68b212f64d05a58bc40f4e69414c43e754158bbf515667d6fb9537e7b1bf",
+    "runs/v12-snake-frozen-2/result.json": "871bbe60bb81dbd3826ed834645b907c9107215fd571189b8dd6e9b4799051b1",
+    "runs/v12-snake-rewired-0/result.json": "9d84a90791c694cae95429974ae472e85ade5d536fe0ce793dddc813bfadc707",
+    "runs/v12-snake-rewired-1/result.json": "c7c4829df973d7fc78c0b5d6f77fad1f47fc2bd673f9b93cb3e710c0bd0df710",
+    "runs/v12-snake-rewired-2/result.json": "d0e4ee76a8dbe7ed2b32546a01fcbd1113a3cee80e0db3b634af205b1c507faf"
+  },
+  "resources": {
+    "rss_mb": 299.671875,
+    "free_disk_mb": 348241.7265625,
+    "elapsed_seconds": 26.346713042003103
+  }
+}

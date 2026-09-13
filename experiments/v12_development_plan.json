@@ -1,0 +1,113 @@
+{
+  "created_at": "2026-09-13T00:34:07.379948+00:00",
+  "episodes": 300,
+  "model_seed": 0,
+  "candidate_count": 2,
+  "candidates": {
+    "flappy": [
+      {
+        "actor_lr": 0.4,
+        "critic_lr": 0.2,
+        "discount": 0.9,
+        "trace_decay": 0.7,
+        "entropy_coefficient": 0.03,
+        "exploration_floor": 0.1,
+        "weight_bound": 4.0,
+        "update_clip": 0.05,
+        "init_scale": 0.0
+      },
+      {
+        "actor_lr": 1.5,
+        "critic_lr": 0.2,
+        "discount": 0.9,
+        "trace_decay": 0.7,
+        "entropy_coefficient": 0.01,
+        "exploration_floor": 0.05,
+        "weight_bound": 4.0,
+        "update_clip": 0.05,
+        "init_scale": 0.0
+      }
+    ],
+    "pong": [
+      {
+        "actor_lr": 0.4,
+        "critic_lr": 0.2,
+        "discount": 0.9,
+        "trace_decay": 0.7,
+        "entropy_coefficient": 0.03,
+        "exploration_floor": 0.1,
+        "weight_bound": 4.0,
+        "update_clip": 0.05,
+        "init_scale": 0.0
+      },
+      {
+        "actor_lr": 1.5,
+        "critic_lr": 0.2,
+        "discount": 0.9,
+        "trace_decay": 0.7,
+        "entropy_coefficient": 0.01,
+        "exploration_floor": 0.05,
+        "weight_bound": 4.0,
+        "update_clip": 0.05,
+        "init_scale": 0.0
+      }
+    ],
+    "breakout": [
+      {
+        "actor_lr": 0.4,
+        "critic_lr": 0.2,
+        "discount": 0.9,
+        "trace_decay": 0.7,
+        "entropy_coefficient": 0.03,
+        "exploration_floor": 0.1,
+        "weight_bound": 4.0,
+        "update_clip": 0.05,
+        "init_scale": 0.0
+      },
+      {
+        "actor_lr": 1.5,
+        "critic_lr": 0.2,
+        "discount": 0.9,
+        "trace_decay": 0.7,
+        "entropy_coefficient": 0.01,
+        "exploration_floor": 0.05,
+        "weight_bound": 4.0,
+        "update_clip": 0.05,
+        "init_scale": 0.0
+      }
+    ],
+    "snake": [
+      {
+        "actor_lr": 0.4,
+        "critic_lr": 0.2,
+        "discount": 0.9,
+        "trace_decay": 0.7,
+        "entropy_coefficient": 0.03,
+        "exploration_floor": 0.1,
+        "weight_bound": 4.0,
+        "update_clip": 0.05,
+        "init_scale": 0.0
+      },
+      {
+        "actor_lr": 8.0,
+        "critic_lr": 0.2,
+        "discount": 0.9,
+        "trace_decay": 0.7,
+        "entropy_coefficient": 0.003,
+        "exploration_floor": 0.02,
+        "weight_bound": 4.0,
+        "update_clip": 0.05,
+        "init_scale": 0.0
+      }
+    ]
+  },
+  "selection_rule": "highest mean development success; exact ties choose candidate0; retain failures; no further search",
+  "confirmation_budgets": {
+    "flappy": 1200,
+    "pong": 600,
+    "breakout": 600,
+    "snake": 2000
+  },
+  "stage": "readout only; unchanged core",
+  "historical_studies": "v1/v1.1/absolute-action Snake immutable"
+}

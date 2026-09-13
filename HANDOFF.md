@@ -1,104 +1,83 @@
-# Handoff — FlyArcade-v1 complete (branch `flyarcade-v1.1-learning`)
+# Handoff — completed v1.2 task battery
 
-**All three studies are finished and the final manuscript is written.** v1 is frozen
-at commit `ec27ad0` and must not be altered, rewritten or reinterpreted. No
-background process, download or training job is running. Do not edit README.md. Do
-not raise any resource limit.
+The requested extension is complete, including negative outcomes. No process is
+running and no blocker or resource guard is pending. Do not edit README.md or
+mutate any historical experiment. No commit was made.
 
 ## Read first
-`FLYARCADE_MASTER.md`, `STATE.md`, `DECISIONS.md` (now through D027),
-`experiments/METHODS.md`, the three preregistrations (`experiments/run_plan.json`,
-`v11_run_plan.json`, `snake_run_plan.json`), then `paper/manuscript.md`.
+FLYARCADE_MASTER.md, STATE.md, DECISIONS.md, experiments/METHODS_V12.md,
+experiments/v12_run_plan.json and RUNBOOK.md. Preserve historical Catch/Dodge and
+absolute-action Snake exactly. The prior paper is archived verbatim; the current
+paper appends a generated extension.
 
-## The three studies
-1. **v1 (negative, frozen).** Naive reward-modulated plasticity did not improve
-   held-out performance on catch or dodge and collapsed the policy onto a constant
-   action, while the circuit demonstrably carried decodable task information.
-2. **v1.1 (positive).** A reward-guided actor-critic mechanism plus two feature
-   conditioning fixes: catch 0.206 → 0.661 vs 0.197 random, dodge 0.794 → 0.926 vs
-   0.803, 3/3 seeds.
-3. **Snake (positive).** Same architecture, four documented task-specific parameters.
+## Results
+- flappy: before 0.000000, biological 0.000000, random 0.000000, rewired 0.000000; criteria FAIL (0/3 seeds meet all components).
+- pong: before 0.300926, biological 0.350000, random 0.252778, rewired 0.488889; criteria FAIL (2/3 seeds meet all components).
+- breakout: before 0.365000, biological 0.368333, random 0.468333, rewired 0.401667; criteria FAIL (0/3 seeds meet all components).
+- snake: before 0.005000, biological 0.042500, random 0.025000, rewired 0.061667; criteria FAIL (0/3 seeds meet all components).
 
-## Snake headline (confirmatory seeds, never used for tuning)
-| Condition | Food | Steps | Return | State-dep. |
-|---|---|---|---|---|
-| actor-critic | **1.483** (1.150, 1.750, 1.550) | 29.85 | +0.202 | 0.712 |
-| frozen | 0.100 | 5.00 | -0.950 | 0.000 |
-| rewired | 1.933 (1.875, 1.200, 2.725) | 33.37 | +0.600 | 0.691 |
-| random | 0.150 | 10.57 | — | — |
-| heuristic | 17.258 | 112.32 | — | — |
+The frozen criteria require all three seeds to pass. Pong's first seed reaches
+exactly the random +0.05 margin, which fails the strict greater-than criterion.
+See results_summary.json for per-seed checks, descriptive intervals, raw outcomes
+and all perturbations. Small gains are retained even when task-level criteria fail.
+No recurrent plasticity was introduced: only the downstream actor–critic learned.
 
-Contrasts: vs frozen **+1.383** [1.050, 1.650]; vs random **+1.333** [1.050, 1.625],
-3/3 seeds; vs rewired -0.450 [-1.175, 0.550]. All three preregistered criteria met.
+## Deliverables and validation
+- New code: src/flyarcade/v12/ and scripts/v12_*.py.
+- New tests: tests/test_v12_environments.py and test_v12_learning.py.
+- Frozen development and confirmatory plans: experiments/v12_*.json.
+- Artifacts: artifacts/v12/ primary/contrast/perturbation/raw/representation CSVs,
+  full result archive, standardizers, core equivalence, historical replay,
+  verification and scientific audits; five PNG/SVG figure pairs.
+- 105 tests; health, pip, Ruff checks PASS. Scientific audit PASS for all 36 trials.
+- Checkpoint replay covers every new task and perturbation at seed zero; a full
+  Flappy repetition reproduces history and learned arrays. All 18 historical
+  Catch/Dodge evaluations reproduce exactly;
+  467 historical hashes preserved.
 
-**Competence is modest and must stay stated that way:** 0.078 of the way from random
-to heuristic, with the learning curve still rising at the frozen 4,000-episode
-budget. Do not extend the budget and re-report it as the same experiment.
-
-## Two things a successor must not undo
-
-**1. Per-graph standardisation.** An early Snake run standardised the rewired arm
-with the *biological* circuit's statistics and made it look as though rewiring
-abolished Snake learning entirely (0.100 / 0.075 / 0.100 food). Per-graph calibration
-raised the same arm to 1.875 / 1.200 / 2.725. The whole apparent topology effect was
-readout calibration. Every topology comparison must calibrate each graph by the same
-procedure applied to its own activity. This is D025 and it is reported in the paper,
-not quietly corrected.
-
-**2. No single topology conclusion.** Biological never exceeds rewired on any task,
-but only catch resolves from zero. Normalised biological/rewired: catch 0.578/0.772,
-dodge 0.627/0.683, snake 0.078/0.104. Report the consistent direction; do not claim a
-uniform effect, and do not reframe it in either direction.
-
-## Cross-task findings
-- One frozen MaleCNS recurrent core supports learning on all three tasks (stage A
-  throughout; the connectome-derived weights never learned).
-- Lesion severity tracks task difficulty. Fraction of learned gain retained under 10%
-  neuron ablation: dodge 1.10, catch 0.28, Snake 0.12. Snake shows a graded
-  dose-response (5/10/25% → 0.442/0.308/0.100 food) down to its random baseline.
-- Firing statistics barely differ across tasks: 0.2167, 0.2173, 0.2085 spikes per
-  neuron per tick.
-- **Do not call perturbation insensitivity robustness.** Dodge sits near ceiling; v1
-  showed the same lesions on a collapsed policy meaning the opposite thing.
-
-## Verification
-
+## Reproduce in the existing environment
 ```sh
-sh scripts/verify.sh                          # health, lint, format, 80 tests, benchmark
-.venv/bin/python scripts/replay_all.py        # v1 only: must report 36/36 MATCH
-.venv/bin/python scripts/scientific_audit.py  # v1: must report PASS
-.venv/bin/python scripts/v11_summarize.py
-.venv/bin/python scripts/snake_run_suite.py   # skips completed trials
-.venv/bin/python scripts/snake_summarize.py
-.venv/bin/python scripts/cross_task_analysis.py
-.venv/bin/python scripts/snake_visualize.py --trial runs/snake-eprop-1 --gif
-shasum -a 256 README.md                       # must stay a4657288...caaa7769
+export OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1
+.venv/bin/python scripts/v12_restore_graphs.py
+.venv/bin/python scripts/v12_suite.py
+for task in flappy pong breakout snake; do
+  .venv/bin/python scripts/v12_representation.py --task "$task"
+done
+.venv/bin/python scripts/v12_report.py
+.venv/bin/python scripts/v12_audit.py
+.venv/bin/python scripts/v12_manuscript.py
+.venv/bin/python scripts/v12_verify.py
 ```
+Completed trials and representation outputs are preserved. For a fresh repetition,
+use a separate workspace with the delivered frozen plan, standardizers and source
+graph, without that copy's v1.2 run outputs. Never delete historical runs.
+Installation, bounded development, freeze and full checkpoint/perturbation replay
+commands are in RUNBOOK.md. Do not rerun historical artifact writers merely to
+verify this extension: verify.sh overwrites the protected historical timing file.
 
-`replay_all.py` matches the v1 naming convention positively; v1.1 and Snake use
-different checkpoint formats and were verified by delete-and-re-run instead.
+## Scientific and operational limitations
+- Three training seeds; bootstrap intervals are descriptive and no p-values claimed.
+- Artificial engineered inputs/actions, truncated circuit, simplified LIF/sign
+  assumptions and fixed readout architecture constrain interpretation.
+- Only ~15.05% incoming and ~7.12% outgoing anatomical synaptic weight retained.
+- Development was limited to two candidates. Flappy's heuristic and feature-fit
+  coverage are limited; new Snake differs from the previously successful task.
+- Rewiring preserves degrees and outgoing counts, not all biological properties
+  or incoming strength. It is not uniform random graph sampling.
+- Representation analyses are post-hoc and use matched exogenous states. Biological
+  replicas yield identical deterministic activity, not independent preparations.
+- Perturbations of failed policies do not establish meaningful robustness.
+- No model bug required confirmatory invalidation or parameter changes. A v1.2-only
+  CSR optimization was verified exact before freeze and again on authentic graphs.
+- Guards remain cooperative. Maximum segment 46.894 seconds;
+  Trial RSS snapshot maximum 136.52 MiB, not a measured peak.
 
-## Resource posture
-Unchanged guards throughout all three studies: 4,096 neurons, 250,000 edges, 2 GiB
-RSS, ≥1 GiB free disk, 120 s per independently guarded process. Snake trials
-checkpoint at episode boundaries and resume in a **fresh** process rather than
-resetting a guard mid-operation (D024). **No limit was raised at any point.**
-Background processes are descheduled by the host, so trust the guard-measured
-`elapsed_seconds` in each artifact, not wall-clock.
-
-## If you continue — all require a NEW preregistration
-1. **Stage B/C recurrent plasticity.** Implemented and unit-tested, never used in a
-   confirmatory setting. This is the most interesting open question: every positive
-   result here comes from an artificial readout over a *frozen* connectome circuit.
-2. **A longer Snake budget.** The curve was still rising; a larger frozen budget is a
-   new experiment, not a continuation of this one.
-3. **Better rewiring null models** — preserve incoming strength, or preserve
-   clustering — to isolate which graph property costs effective dimensionality.
-4. **A nonlinear readout**, to test whether the biological code's lower *linear*
-   dimensionality is a real capacity limit or an artefact of linear decoding.
-5. **More seeds.** Three support descriptive intervals only.
-
-## Working tree
-Branch `flyarcade-v1.1-learning` off `ec27ad0`. `data/`, `runs/`, `cache/` and
-`.venv` are ignored; `.secrets/` is ignored and has never been staged. LICENSE still
-reserves rights pending the owner's choice.
+## Working tree and protected inputs
+The new extension and allowed documentation changes are uncommitted, reviewable
+and ready for a user-selected commit. README SHA256 remains
+`a46572881f00b6963a0bbddcf2cc439d7acfd1ca46158711ad1a6fe8caaa7769`.
+Source graph SHA256 is `3f4cbeedb17ca6a7d06162151429e0713ed72ce579d5f19a8845a446f6315697`.
+The token file remains ignored; no token was printed or needed for this extension.
+Raw data and checkpoints remain ignored under data/ and runs/; keep backups.
+No full connectome download occurred. Any future tuning must use a new version,
+new development seeds and a newly frozen protocol; never retrofit these results.

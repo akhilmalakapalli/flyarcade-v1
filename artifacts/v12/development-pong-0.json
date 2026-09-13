@@ -1,0 +1,5128 @@
+{
+  "task": "pong",
+  "candidate": 0,
+  "hyperparameters": {
+    "actor_lr": 0.4,
+    "critic_lr": 0.2,
+    "discount": 0.9,
+    "trace_decay": 0.7,
+    "entropy_coefficient": 0.03,
+    "exploration_floor": 0.1,
+    "weight_bound": 4.0,
+    "update_clip": 0.05,
+    "init_scale": 0.0
+  },
+  "split": "development",
+  "before": [
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -3.008,
+      "action_counts": [
+        144,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.992,
+      "action_counts": [
+        144,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.992,
+      "action_counts": [
+        144,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -0.9923701920501884,
+      "action_counts": [
+        144,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.5555555555555556,
+      "returns": 5,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": 1.008,
+      "action_counts": [
+        144,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -5.008,
+      "action_counts": [
+        144,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.7777777777777778,
+      "returns": 7,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": 5.008,
+      "action_counts": [
+        144,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.992,
+      "action_counts": [
+        144,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -5.00229798926278,
+      "action_counts": [
+        144,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -5.008,
+      "action_counts": [
+        144,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.992,
+      "action_counts": [
+        144,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -5.008,
+      "action_counts": [
+        144,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "returns": 0,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -9.00219901487599,
+      "action_counts": [
+        144,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.5555555555555556,
+      "returns": 5,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": 1.008,
+      "action_counts": [
+        144,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -0.9940228265458257,
+      "action_counts": [
+        144,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -0.992,
+      "action_counts": [
+        144,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.992,
+      "action_counts": [
+        144,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -4.999535761746696,
+      "action_counts": [
+        144,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -5.008,
+      "action_counts": [
+        144,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.9933787942249133,
+      "action_counts": [
+        144,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    }
+  ],
+  "after": [
+    {
+      "success": 0.5555555555555556,
+      "returns": 5,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": 1.008,
+      "action_counts": [
+        12,
+        37,
+        95
+      ],
+      "action_entropy": 0.8306386657749998,
+      "state_dependence": 0.3402777777777778,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -5.0060442799707605,
+      "action_counts": [
+        23,
+        37,
+        84
+      ],
+      "action_entropy": 0.9565567659854067,
+      "state_dependence": 0.41666666666666663,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -1.0051999999999999,
+      "action_counts": [
+        22,
+        32,
+        90
+      ],
+      "action_entropy": 0.9150261246232334,
+      "state_dependence": 0.375,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "returns": 0,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -9.0066,
+      "action_counts": [
+        28,
+        31,
+        85
+      ],
+      "action_entropy": 0.9602251993980662,
+      "state_dependence": 0.4097222222222222,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -7.007208550513474,
+      "action_counts": [
+        32,
+        33,
+        79
+      ],
+      "action_entropy": 1.0012391415004434,
+      "state_dependence": 0.45138888888888884,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -3.0057014249837435,
+      "action_counts": [
+        21,
+        34,
+        89
+      ],
+      "action_entropy": 0.9189808972475129,
+      "state_dependence": 0.3819444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -7.006599999999999,
+      "action_counts": [
+        33,
+        32,
+        79
+      ],
+      "action_entropy": 1.0012391415004434,
+      "state_dependence": 0.45138888888888884,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -5.000732456873948,
+      "action_counts": [
+        22,
+        40,
+        82
+      ],
+      "action_entropy": 0.9635001717002396,
+      "state_dependence": 0.4305555555555556,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -1.008,
+      "action_counts": [
+        30,
+        29,
+        85
+      ],
+      "action_entropy": 0.9606962348457941,
+      "state_dependence": 0.4097222222222222,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.5555555555555556,
+      "returns": 5,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": 0.9956477720554154,
+      "action_counts": [
+        20,
+        32,
+        92
+      ],
+      "action_entropy": 0.8946553589566728,
+      "state_dependence": 0.36111111111111116,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -1.0088,
+      "action_counts": [
+        16,
+        41,
+        87
+      ],
+      "action_entropy": 0.9062585730922346,
+      "state_dependence": 0.39583333333333337,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.999307678162115,
+      "action_counts": [
+        19,
+        33,
+        92
+      ],
+      "action_entropy": 0.8911074716519147,
+      "state_dependence": 0.36111111111111116,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -1.008,
+      "action_counts": [
+        20,
+        35,
+        89
+      ],
+      "action_entropy": 0.915365629233152,
+      "state_dependence": 0.3819444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -7.00382346955371,
+      "action_counts": [
+        27,
+        38,
+        79
+      ],
+      "action_entropy": 0.9947976759883987,
+      "state_dependence": 0.45138888888888884,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -7.005199999999999,
+      "action_counts": [
+        31,
+        34,
+        79
+      ],
+      "action_entropy": 1.0008116223476384,
+      "state_dependence": 0.45138888888888884,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -1.0024728090065085,
+      "action_counts": [
+        21,
+        36,
+        87
+      ],
+      "action_entropy": 0.9317878877734933,
+      "state_dependence": 0.39583333333333337,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "returns": 0,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -9.005199999999999,
+      "action_counts": [
+        27,
+        38,
+        79
+      ],
+      "action_entropy": 0.9947976759883987,
+      "state_dependence": 0.45138888888888884,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -7.004987010954566,
+      "action_counts": [
+        26,
+        35,
+        83
+      ],
+      "action_entropy": 0.9704281427162362,
+      "state_dependence": 0.42361111111111116,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -0.994422705762663,
+      "action_counts": [
+        19,
+        31,
+        94
+      ],
+      "action_entropy": 0.876287928210843,
+      "state_dependence": 0.3472222222222222,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -7.005222619854999,
+      "action_counts": [
+        25,
+        38,
+        81
+      ],
+      "action_entropy": 0.9791844716608918,
+      "state_dependence": 0.4375,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    }
+  ],
+  "training": [
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -5.007654629789994,
+      "action_counts": [
+        50,
+        59,
+        35
+      ],
+      "action_entropy": 1.076667177256732,
+      "state_dependence": 0.5902777777777778,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -7.002399999999998,
+      "action_counts": [
+        49,
+        45,
+        50
+      ],
+      "action_entropy": 1.0975899876420228,
+      "state_dependence": 0.6527777777777778,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -3.0024350040321552,
+      "action_counts": [
+        43,
+        49,
+        52
+      ],
+      "action_entropy": 1.095539181878233,
+      "state_dependence": 0.6388888888888888,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -6.994800000000002,
+      "action_counts": [
+        36,
+        51,
+        57
+      ],
+      "action_entropy": 1.0810375265209287,
+      "state_dependence": 0.6041666666666667,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "returns": 0,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -9.012581104434236,
+      "action_counts": [
+        51,
+        54,
+        39
+      ],
+      "action_entropy": 1.0892080913644167,
+      "state_dependence": 0.625,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -7.003850462570734,
+      "action_counts": [
+        50,
+        53,
+        41
+      ],
+      "action_entropy": 1.0928474910722032,
+      "state_dependence": 0.6319444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.9995542536254804,
+      "action_counts": [
+        46,
+        60,
+        38
+      ],
+      "action_entropy": 1.0808796048438651,
+      "state_dependence": 0.5833333333333333,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -3.0081870851900447,
+      "action_counts": [
+        44,
+        62,
+        38
+      ],
+      "action_entropy": 1.076653925723207,
+      "state_dependence": 0.5694444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -5.020029718785121,
+      "action_counts": [
+        52,
+        53,
+        39
+      ],
+      "action_entropy": 1.089472681634658,
+      "state_dependence": 0.6319444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -3.0023999999999997,
+      "action_counts": [
+        37,
+        41,
+        66
+      ],
+      "action_entropy": 1.064413087933935,
+      "state_dependence": 0.5416666666666667,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -7.007572130416446,
+      "action_counts": [
+        43,
+        43,
+        58
+      ],
+      "action_entropy": 1.0880847956778121,
+      "state_dependence": 0.5972222222222222,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -4.998172477820391,
+      "action_counts": [
+        69,
+        22,
+        53
+      ],
+      "action_entropy": 1.0074400064554676,
+      "state_dependence": 0.5208333333333333,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "returns": 0,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -9.01258579013607,
+      "action_counts": [
+        66,
+        39,
+        39
+      ],
+      "action_entropy": 1.0651256511603275,
+      "state_dependence": 0.5416666666666667,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -7.002854642271681,
+      "action_counts": [
+        44,
+        43,
+        57
+      ],
+      "action_entropy": 1.0900225278135252,
+      "state_dependence": 0.6041666666666667,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.5555555555555556,
+      "returns": 5,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": 1.0122000000000004,
+      "action_counts": [
+        34,
+        34,
+        76
+      ],
+      "action_entropy": 1.01892267780058,
+      "state_dependence": 0.4722222222222222,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -7.005911176431225,
+      "action_counts": [
+        39,
+        34,
+        71
+      ],
+      "action_entropy": 1.0432477905069761,
+      "state_dependence": 0.5069444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -5.0009999999999994,
+      "action_counts": [
+        47,
+        34,
+        63
+      ],
+      "action_entropy": 1.0679335573538533,
+      "state_dependence": 0.5625,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -7.000564998919594,
+      "action_counts": [
+        46,
+        41,
+        57
+      ],
+      "action_entropy": 1.0890641242986063,
+      "state_dependence": 0.6041666666666667,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -5.004176142645585,
+      "action_counts": [
+        57,
+        41,
+        46
+      ],
+      "action_entropy": 1.0890641242986063,
+      "state_dependence": 0.6041666666666667,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -5.002485604778525,
+      "action_counts": [
+        55,
+        48,
+        41
+      ],
+      "action_entropy": 1.0914978242548776,
+      "state_dependence": 0.6180555555555556,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -7.0177017582966545,
+      "action_counts": [
+        50,
+        45,
+        49
+      ],
+      "action_entropy": 1.0975899876420225,
+      "state_dependence": 0.6527777777777778,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -4.9934,
+      "action_counts": [
+        49,
+        51,
+        44
+      ],
+      "action_entropy": 1.0967115928484643,
+      "state_dependence": 0.6458333333333333,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -5.008,
+      "action_counts": [
+        67,
+        42,
+        35
+      ],
+      "action_entropy": 1.059162524442486,
+      "state_dependence": 0.5347222222222222,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -5.018413198122211,
+      "action_counts": [
+        67,
+        28,
+        49
+      ],
+      "action_entropy": 1.041234644079323,
+      "state_dependence": 0.5347222222222222,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.993069548920957,
+      "action_counts": [
+        63,
+        37,
+        44
+      ],
+      "action_entropy": 1.0731063938613703,
+      "state_dependence": 0.5625,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.997263027492049,
+      "action_counts": [
+        64,
+        29,
+        51
+      ],
+      "action_entropy": 1.0507632740651132,
+      "state_dependence": 0.5555555555555556,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -5.022628800022412,
+      "action_counts": [
+        59,
+        27,
+        58
+      ],
+      "action_entropy": 1.045729971907618,
+      "state_dependence": 0.5902777777777778,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.9916,
+      "action_counts": [
+        57,
+        30,
+        57
+      ],
+      "action_entropy": 1.0604815913606964,
+      "state_dependence": 0.6041666666666667,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -4.9864298374829055,
+      "action_counts": [
+        57,
+        36,
+        51
+      ],
+      "action_entropy": 1.0810375265209287,
+      "state_dependence": 0.6041666666666667,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -7.003158478840145,
+      "action_counts": [
+        70,
+        44,
+        30
+      ],
+      "action_entropy": 1.0397096031473638,
+      "state_dependence": 0.5138888888888888,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -0.9958589202142587,
+      "action_counts": [
+        58,
+        42,
+        44
+      ],
+      "action_entropy": 1.0879232824093499,
+      "state_dependence": 0.5972222222222222,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "returns": 0,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -9.002400000000002,
+      "action_counts": [
+        39,
+        52,
+        53
+      ],
+      "action_entropy": 1.089472681634658,
+      "state_dependence": 0.6319444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -5.0108,
+      "action_counts": [
+        34,
+        58,
+        52
+      ],
+      "action_entropy": 1.0749061758615808,
+      "state_dependence": 0.5972222222222222,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.9959084834140777,
+      "action_counts": [
+        30,
+        62,
+        52
+      ],
+      "action_entropy": 1.0574318642364522,
+      "state_dependence": 0.5694444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.9884000000000004,
+      "action_counts": [
+        24,
+        64,
+        56
+      ],
+      "action_entropy": 1.0263306332944833,
+      "state_dependence": 0.5555555555555556,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.997910845182752,
+      "action_counts": [
+        38,
+        58,
+        48
+      ],
+      "action_entropy": 1.0840381800977077,
+      "state_dependence": 0.5972222222222222,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.5555555555555556,
+      "returns": 5,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": 1.001900013675021,
+      "action_counts": [
+        35,
+        55,
+        54
+      ],
+      "action_entropy": 1.0792185366983156,
+      "state_dependence": 0.6180555555555556,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -0.9934921463942107,
+      "action_counts": [
+        29,
+        59,
+        56
+      ],
+      "action_entropy": 1.055605084706459,
+      "state_dependence": 0.5902777777777778,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.9952469469217435,
+      "action_counts": [
+        42,
+        33,
+        69
+      ],
+      "action_entropy": 1.0495339779544266,
+      "state_dependence": 0.5208333333333333,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -5.0038,
+      "action_counts": [
+        45,
+        46,
+        53
+      ],
+      "action_entropy": 1.0959050516841558,
+      "state_dependence": 0.6319444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -0.9785520078891972,
+      "action_counts": [
+        34,
+        74,
+        36
+      ],
+      "action_entropy": 1.0295094348643448,
+      "state_dependence": 0.48611111111111116,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -5.004833278429203,
+      "action_counts": [
+        39,
+        62,
+        43
+      ],
+      "action_entropy": 1.0775019034185318,
+      "state_dependence": 0.5694444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -7.017395543020141,
+      "action_counts": [
+        35,
+        47,
+        62
+      ],
+      "action_entropy": 1.0720601655114288,
+      "state_dependence": 0.5694444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -7.012109097194812,
+      "action_counts": [
+        37,
+        63,
+        44
+      ],
+      "action_entropy": 1.0731063938613703,
+      "state_dependence": 0.5625,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.998893199272766,
+      "action_counts": [
+        50,
+        60,
+        34
+      ],
+      "action_entropy": 1.0728821756754223,
+      "state_dependence": 0.5833333333333333,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -3.004069096580237,
+      "action_counts": [
+        60,
+        50,
+        34
+      ],
+      "action_entropy": 1.0728821756754223,
+      "state_dependence": 0.5833333333333333,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -5.0024,
+      "action_counts": [
+        61,
+        58,
+        25
+      ],
+      "action_entropy": 1.034112633270655,
+      "state_dependence": 0.5763888888888888,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "returns": 0,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -8.997964940385952,
+      "action_counts": [
+        81,
+        39,
+        24
+      ],
+      "action_entropy": 0.9760453991879805,
+      "state_dependence": 0.4375,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.5555555555555556,
+      "returns": 5,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": 1.003748080516106,
+      "action_counts": [
+        66,
+        50,
+        28
+      ],
+      "action_entropy": 1.0432849000617124,
+      "state_dependence": 0.5416666666666667,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -0.9932412493008715,
+      "action_counts": [
+        62,
+        49,
+        33
+      ],
+      "action_entropy": 1.0672697161828713,
+      "state_dependence": 0.5694444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.5555555555555556,
+      "returns": 5,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": 1.0052285860246404,
+      "action_counts": [
+        83,
+        41,
+        20
+      ],
+      "action_entropy": 0.9494322533740944,
+      "state_dependence": 0.42361111111111116,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6666666666666666,
+      "returns": 6,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": 3.008306931964885,
+      "action_counts": [
+        65,
+        42,
+        37
+      ],
+      "action_entropy": 1.067582332361038,
+      "state_dependence": 0.5486111111111112,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "returns": 0,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -9.002147753035972,
+      "action_counts": [
+        63,
+        52,
+        29
+      ],
+      "action_entropy": 1.0522178815307996,
+      "state_dependence": 0.5625,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "returns": 0,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -9.002400000000002,
+      "action_counts": [
+        66,
+        40,
+        38
+      ],
+      "action_entropy": 1.0649475689655519,
+      "state_dependence": 0.5416666666666667,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -0.9957259766961377,
+      "action_counts": [
+        63,
+        47,
+        34
+      ],
+      "action_entropy": 1.067933557353853,
+      "state_dependence": 0.5625,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -3.0107999999999997,
+      "action_counts": [
+        61,
+        38,
+        45
+      ],
+      "action_entropy": 1.0789008563548932,
+      "state_dependence": 0.5763888888888888,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -6.998999999999996,
+      "action_counts": [
+        51,
+        39,
+        54
+      ],
+      "action_entropy": 1.0892080913644167,
+      "state_dependence": 0.625,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -7.000623151031273,
+      "action_counts": [
+        45,
+        48,
+        51
+      ],
+      "action_entropy": 1.0973093562969436,
+      "state_dependence": 0.6458333333333333,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.999328247070536,
+      "action_counts": [
+        34,
+        56,
+        54
+      ],
+      "action_entropy": 1.0759168340719096,
+      "state_dependence": 0.6111111111111112,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -1.0043999999999995,
+      "action_counts": [
+        38,
+        55,
+        51
+      ],
+      "action_entropy": 1.0867945042542673,
+      "state_dependence": 0.6180555555555556,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -3.0041255751433544,
+      "action_counts": [
+        37,
+        50,
+        57
+      ],
+      "action_entropy": 1.0832922210634075,
+      "state_dependence": 0.6041666666666667,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -7.013600000000001,
+      "action_counts": [
+        53,
+        42,
+        49
+      ],
+      "action_entropy": 1.0940717023983266,
+      "state_dependence": 0.6319444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "returns": 0,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -9.007602830826706,
+      "action_counts": [
+        46,
+        46,
+        52
+      ],
+      "action_entropy": 1.0968988423313382,
+      "state_dependence": 0.6388888888888888,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "returns": 0,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -9.0086,
+      "action_counts": [
+        48,
+        44,
+        52
+      ],
+      "action_entropy": 1.0962947871994944,
+      "state_dependence": 0.6388888888888888,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -1.0052000000000012,
+      "action_counts": [
+        33,
+        41,
+        70
+      ],
+      "action_entropy": 1.0459530828626253,
+      "state_dependence": 0.5138888888888888,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -7.008000000000001,
+      "action_counts": [
+        34,
+        50,
+        60
+      ],
+      "action_entropy": 1.0728821756754223,
+      "state_dependence": 0.5833333333333333,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -7.015937182348257,
+      "action_counts": [
+        59,
+        35,
+        50
+      ],
+      "action_entropy": 1.076667177256732,
+      "state_dependence": 0.5902777777777778,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.5555555555555556,
+      "returns": 5,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": 1.0038,
+      "action_counts": [
+        65,
+        43,
+        36
+      ],
+      "action_entropy": 1.0665253877533618,
+      "state_dependence": 0.5486111111111112,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.996916178808616,
+      "action_counts": [
+        48,
+        53,
+        43
+      ],
+      "action_entropy": 1.0949888209880503,
+      "state_dependence": 0.6319444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -7.016652802658703,
+      "action_counts": [
+        46,
+        60,
+        38
+      ],
+      "action_entropy": 1.0808796048438651,
+      "state_dependence": 0.5833333333333333,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.9836000000000005,
+      "action_counts": [
+        47,
+        56,
+        41
+      ],
+      "action_entropy": 1.0904168641842078,
+      "state_dependence": 0.6111111111111112,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -5.000073654072341,
+      "action_counts": [
+        35,
+        61,
+        48
+      ],
+      "action_entropy": 1.0738540190879404,
+      "state_dependence": 0.5763888888888888,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -3.000890581888625,
+      "action_counts": [
+        46,
+        49,
+        49
+      ],
+      "action_entropy": 1.0981751505944715,
+      "state_dependence": 0.6597222222222222,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "returns": 0,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -8.998199999999999,
+      "action_counts": [
+        47,
+        52,
+        45
+      ],
+      "action_entropy": 1.0967478642546686,
+      "state_dependence": 0.6388888888888888,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -5.007219373950175,
+      "action_counts": [
+        56,
+        38,
+        50
+      ],
+      "action_entropy": 1.0861388619219814,
+      "state_dependence": 0.6111111111111112,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -3.0066850450474933,
+      "action_counts": [
+        52,
+        53,
+        39
+      ],
+      "action_entropy": 1.089472681634658,
+      "state_dependence": 0.6319444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.9962,
+      "action_counts": [
+        58,
+        31,
+        55
+      ],
+      "action_entropy": 1.0645173055585133,
+      "state_dependence": 0.5972222222222222,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -0.9793390887839187,
+      "action_counts": [
+        48,
+        48,
+        48
+      ],
+      "action_entropy": 1.0986122886681067,
+      "state_dependence": 0.6666666666666667,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -1.002661706085687,
+      "action_counts": [
+        42,
+        57,
+        45
+      ],
+      "action_entropy": 1.0897031726722808,
+      "state_dependence": 0.6041666666666667,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -5.00025968022974,
+      "action_counts": [
+        46,
+        47,
+        51
+      ],
+      "action_entropy": 1.0976080996606383,
+      "state_dependence": 0.6458333333333333,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -4.998837386480898,
+      "action_counts": [
+        53,
+        38,
+        53
+      ],
+      "action_entropy": 1.0873187377278895,
+      "state_dependence": 0.6319444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -3.007162233095581,
+      "action_counts": [
+        49,
+        28,
+        67
+      ],
+      "action_entropy": 1.041234644079323,
+      "state_dependence": 0.5347222222222222,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -3.0004520198542863,
+      "action_counts": [
+        56,
+        31,
+        57
+      ],
+      "action_entropy": 1.0647631586956001,
+      "state_dependence": 0.6041666666666667,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -5.004200000000003,
+      "action_counts": [
+        53,
+        43,
+        48
+      ],
+      "action_entropy": 1.0949888209880503,
+      "state_dependence": 0.6319444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -7.010898022250264,
+      "action_counts": [
+        53,
+        48,
+        43
+      ],
+      "action_entropy": 1.0949888209880503,
+      "state_dependence": 0.6319444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.994238263505296,
+      "action_counts": [
+        59,
+        48,
+        37
+      ],
+      "action_entropy": 1.0809499628964663,
+      "state_dependence": 0.5902777777777778,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -4.988690074575803,
+      "action_counts": [
+        52,
+        37,
+        55
+      ],
+      "action_entropy": 1.0845913459519947,
+      "state_dependence": 0.6180555555555556,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -3.0156861268236645,
+      "action_counts": [
+        60,
+        37,
+        47
+      ],
+      "action_entropy": 1.0793857038708927,
+      "state_dependence": 0.5833333333333333,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.989799999999997,
+      "action_counts": [
+        57,
+        33,
+        54
+      ],
+      "action_entropy": 1.072286839093817,
+      "state_dependence": 0.6041666666666667,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -5.0024,
+      "action_counts": [
+        47,
+        50,
+        47
+      ],
+      "action_entropy": 1.0981811826860475,
+      "state_dependence": 0.6527777777777778,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -5.008,
+      "action_counts": [
+        34,
+        46,
+        64
+      ],
+      "action_entropy": 1.0657696925588667,
+      "state_dependence": 0.5555555555555556,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -5.009112268573549,
+      "action_counts": [
+        40,
+        49,
+        55
+      ],
+      "action_entropy": 1.0902459526331918,
+      "state_dependence": 0.6180555555555556,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -4.989352351040663,
+      "action_counts": [
+        51,
+        51,
+        42
+      ],
+      "action_entropy": 1.0946165043969511,
+      "state_dependence": 0.6458333333333333,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -7.002351899275709,
+      "action_counts": [
+        49,
+        38,
+        57
+      ],
+      "action_entropy": 1.0852203069121593,
+      "state_dependence": 0.6041666666666667,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -5.009203991421778,
+      "action_counts": [
+        37,
+        34,
+        73
+      ],
+      "action_entropy": 1.034370523127259,
+      "state_dependence": 0.4930555555555556,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -3.010799999999999,
+      "action_counts": [
+        46,
+        44,
+        54
+      ],
+      "action_entropy": 1.0946258923164651,
+      "state_dependence": 0.625,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -5.0024,
+      "action_counts": [
+        30,
+        48,
+        66
+      ],
+      "action_entropy": 1.05057175133164,
+      "state_dependence": 0.5416666666666667,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -5.002793655889443,
+      "action_counts": [
+        35,
+        55,
+        54
+      ],
+      "action_entropy": 1.0792185366983156,
+      "state_dependence": 0.6180555555555556,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -7.0052,
+      "action_counts": [
+        23,
+        79,
+        42
+      ],
+      "action_entropy": 0.9817239156928961,
+      "state_dependence": 0.45138888888888884,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -7.0066,
+      "action_counts": [
+        24,
+        74,
+        46
+      ],
+      "action_entropy": 1.0052882088540696,
+      "state_dependence": 0.48611111111111116,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -4.994858965095295,
+      "action_counts": [
+        27,
+        71,
+        46
+      ],
+      "action_entropy": 1.027067668391632,
+      "state_dependence": 0.5069444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -0.9979696523160759,
+      "action_counts": [
+        26,
+        63,
+        55
+      ],
+      "action_entropy": 1.038345779166199,
+      "state_dependence": 0.5625,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -4.998583377175408,
+      "action_counts": [
+        41,
+        64,
+        39
+      ],
+      "action_entropy": 1.0718697143749432,
+      "state_dependence": 0.5555555555555556,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.9999085442808484,
+      "action_counts": [
+        33,
+        61,
+        50
+      ],
+      "action_entropy": 1.0687771501706285,
+      "state_dependence": 0.5763888888888888,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -5.002014361107148,
+      "action_counts": [
+        36,
+        68,
+        40
+      ],
+      "action_entropy": 1.0566995224860485,
+      "state_dependence": 0.5277777777777778,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -7.005999999999998,
+      "action_counts": [
+        37,
+        60,
+        47
+      ],
+      "action_entropy": 1.0793857038708927,
+      "state_dependence": 0.5833333333333333,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -6.992600000000001,
+      "action_counts": [
+        48,
+        47,
+        49
+      ],
+      "action_entropy": 1.0984676022748017,
+      "state_dependence": 0.6597222222222222,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6666666666666666,
+      "returns": 6,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": 3.0187443520554034,
+      "action_counts": [
+        45,
+        43,
+        56
+      ],
+      "action_entropy": 1.091680579467276,
+      "state_dependence": 0.6111111111111112,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.9880366507373264,
+      "action_counts": [
+        51,
+        43,
+        50
+      ],
+      "action_entropy": 1.0958142543317537,
+      "state_dependence": 0.6458333333333333,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -0.9949270980517081,
+      "action_counts": [
+        48,
+        43,
+        53
+      ],
+      "action_entropy": 1.0949888209880503,
+      "state_dependence": 0.6319444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.978800000000001,
+      "action_counts": [
+        52,
+        44,
+        48
+      ],
+      "action_entropy": 1.0962947871994944,
+      "state_dependence": 0.6388888888888888,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -5.004101937578873,
+      "action_counts": [
+        36,
+        66,
+        42
+      ],
+      "action_entropy": 1.0635215028672094,
+      "state_dependence": 0.5416666666666667,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.9980104239331826,
+      "action_counts": [
+        39,
+        74,
+        31
+      ],
+      "action_entropy": 1.0265263243315232,
+      "state_dependence": 0.48611111111111116,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -4.999792146199259,
+      "action_counts": [
+        40,
+        64,
+        40
+      ],
+      "action_entropy": 1.0720433435750678,
+      "state_dependence": 0.5555555555555556,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -6.99860958828105,
+      "action_counts": [
+        45,
+        59,
+        40
+      ],
+      "action_entropy": 1.0848848315575303,
+      "state_dependence": 0.5902777777777778,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -5.013821811887988,
+      "action_counts": [
+        37,
+        61,
+        46
+      ],
+      "action_entropy": 1.07755793345859,
+      "state_dependence": 0.5763888888888888,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.9889999999999994,
+      "action_counts": [
+        50,
+        49,
+        45
+      ],
+      "action_entropy": 1.0975899876420228,
+      "state_dependence": 0.6527777777777778,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -7.008420359558799,
+      "action_counts": [
+        43,
+        61,
+        40
+      ],
+      "action_entropy": 1.0805765714235487,
+      "state_dependence": 0.5763888888888888,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.9904965590923136,
+      "action_counts": [
+        42,
+        71,
+        31
+      ],
+      "action_entropy": 1.0386605316810367,
+      "state_dependence": 0.5069444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "returns": 0,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -8.988399999999999,
+      "action_counts": [
+        42,
+        58,
+        44
+      ],
+      "action_entropy": 1.0879232824093499,
+      "state_dependence": 0.5972222222222222,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -5.014964494279699,
+      "action_counts": [
+        36,
+        68,
+        40
+      ],
+      "action_entropy": 1.0566995224860485,
+      "state_dependence": 0.5277777777777778,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -7.014400000000003,
+      "action_counts": [
+        52,
+        53,
+        39
+      ],
+      "action_entropy": 1.089472681634658,
+      "state_dependence": 0.6319444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -1.001394621047023,
+      "action_counts": [
+        53,
+        48,
+        43
+      ],
+      "action_entropy": 1.0949888209880503,
+      "state_dependence": 0.6319444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "returns": 0,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -9.018768044785507,
+      "action_counts": [
+        60,
+        29,
+        55
+      ],
+      "action_entropy": 1.0551217857515554,
+      "state_dependence": 0.5833333333333333,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -5.004577170051575,
+      "action_counts": [
+        45,
+        49,
+        50
+      ],
+      "action_entropy": 1.0975899876420228,
+      "state_dependence": 0.6527777777777778,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -4.993999999999998,
+      "action_counts": [
+        51,
+        47,
+        46
+      ],
+      "action_entropy": 1.0976080996606383,
+      "state_dependence": 0.6458333333333333,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "returns": 0,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -9.002627715748357,
+      "action_counts": [
+        50,
+        47,
+        47
+      ],
+      "action_entropy": 1.0981811826860475,
+      "state_dependence": 0.6527777777777778,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.9880151762504017,
+      "action_counts": [
+        51,
+        40,
+        53
+      ],
+      "action_entropy": 1.0913149881054383,
+      "state_dependence": 0.6319444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -4.993945118266266,
+      "action_counts": [
+        42,
+        39,
+        63
+      ],
+      "action_entropy": 1.0748236056202738,
+      "state_dependence": 0.5625,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -5.0102,
+      "action_counts": [
+        51,
+        48,
+        45
+      ],
+      "action_entropy": 1.0973093562969436,
+      "state_dependence": 0.6458333333333333,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -3.0199999999999987,
+      "action_counts": [
+        53,
+        40,
+        51
+      ],
+      "action_entropy": 1.0913149881054383,
+      "state_dependence": 0.6319444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -6.994,
+      "action_counts": [
+        56,
+        38,
+        50
+      ],
+      "action_entropy": 1.0861388619219814,
+      "state_dependence": 0.6111111111111112,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -3.005084803083069,
+      "action_counts": [
+        46,
+        37,
+        61
+      ],
+      "action_entropy": 1.0775579334585903,
+      "state_dependence": 0.5763888888888888,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -6.9934402015542325,
+      "action_counts": [
+        58,
+        39,
+        47
+      ],
+      "action_entropy": 1.0854970767209888,
+      "state_dependence": 0.5972222222222222,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -5.013422344753334,
+      "action_counts": [
+        60,
+        47,
+        37
+      ],
+      "action_entropy": 1.0793857038708927,
+      "state_dependence": 0.5833333333333333,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "returns": 0,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -8.9982,
+      "action_counts": [
+        61,
+        40,
+        43
+      ],
+      "action_entropy": 1.080576571423549,
+      "state_dependence": 0.5763888888888888,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "returns": 0,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -9.0052,
+      "action_counts": [
+        62,
+        37,
+        45
+      ],
+      "action_entropy": 1.075465336518384,
+      "state_dependence": 0.5694444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.9863999999999997,
+      "action_counts": [
+        58,
+        34,
+        52
+      ],
+      "action_entropy": 1.0749061758615808,
+      "state_dependence": 0.5972222222222222,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "returns": 0,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -9.0136,
+      "action_counts": [
+        59,
+        36,
+        49
+      ],
+      "action_entropy": 1.0789758996990662,
+      "state_dependence": 0.5902777777777778,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -0.9995999999999999,
+      "action_counts": [
+        59,
+        46,
+        39
+      ],
+      "action_entropy": 1.0839027604927196,
+      "state_dependence": 0.5902777777777778,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -3.0009999999999994,
+      "action_counts": [
+        53,
+        54,
+        37
+      ],
+      "action_entropy": 1.0848509891553755,
+      "state_dependence": 0.625,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.5555555555555556,
+      "returns": 5,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": 1.0050671809845524,
+      "action_counts": [
+        43,
+        56,
+        45
+      ],
+      "action_entropy": 1.091680579467276,
+      "state_dependence": 0.6111111111111112,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "returns": 0,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -9.006272714259888,
+      "action_counts": [
+        40,
+        56,
+        48
+      ],
+      "action_entropy": 1.089309678955827,
+      "state_dependence": 0.6111111111111112,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -6.9984012812591825,
+      "action_counts": [
+        39,
+        53,
+        52
+      ],
+      "action_entropy": 1.089472681634658,
+      "state_dependence": 0.6319444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -3.0052000000000003,
+      "action_counts": [
+        40,
+        49,
+        55
+      ],
+      "action_entropy": 1.0902459526331918,
+      "state_dependence": 0.6180555555555556,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -1.0066446738896095,
+      "action_counts": [
+        60,
+        42,
+        42
+      ],
+      "action_entropy": 1.0835291213181575,
+      "state_dependence": 0.5833333333333333,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -3.000424020556804,
+      "action_counts": [
+        43,
+        50,
+        51
+      ],
+      "action_entropy": 1.0958142543317537,
+      "state_dependence": 0.6458333333333333,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -0.9827957013174466,
+      "action_counts": [
+        62,
+        42,
+        40
+      ],
+      "action_entropy": 1.0780102856506184,
+      "state_dependence": 0.5694444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -6.994743804742955,
+      "action_counts": [
+        61,
+        40,
+        43
+      ],
+      "action_entropy": 1.080576571423549,
+      "state_dependence": 0.5763888888888888,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -0.997735893819367,
+      "action_counts": [
+        48,
+        43,
+        53
+      ],
+      "action_entropy": 1.0949888209880503,
+      "state_dependence": 0.6319444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -0.9931204441520423,
+      "action_counts": [
+        30,
+        44,
+        70
+      ],
+      "action_entropy": 1.0397096031473638,
+      "state_dependence": 0.5138888888888888,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -0.9948000000000006,
+      "action_counts": [
+        38,
+        54,
+        52
+      ],
+      "action_entropy": 1.0871877026988608,
+      "state_dependence": 0.625,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.9990985450856376,
+      "action_counts": [
+        30,
+        54,
+        60
+      ],
+      "action_entropy": 1.059384593342237,
+      "state_dependence": 0.5833333333333333,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -3.0001590576897024,
+      "action_counts": [
+        36,
+        67,
+        41
+      ],
+      "action_entropy": 1.060247035558697,
+      "state_dependence": 0.5347222222222222,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "returns": 0,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -9.009400000000001,
+      "action_counts": [
+        44,
+        67,
+        33
+      ],
+      "action_entropy": 1.0559001126316083,
+      "state_dependence": 0.5347222222222222,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -3.0019196501935808,
+      "action_counts": [
+        50,
+        62,
+        32
+      ],
+      "action_entropy": 1.0643478062857599,
+      "state_dependence": 0.5694444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.9906230379804426,
+      "action_counts": [
+        39,
+        60,
+        45
+      ],
+      "action_entropy": 1.0820397581034515,
+      "state_dependence": 0.5833333333333333,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.995897143476794,
+      "action_counts": [
+        48,
+        51,
+        45
+      ],
+      "action_entropy": 1.0973093562969436,
+      "state_dependence": 0.6458333333333333,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -5.013599999999999,
+      "action_counts": [
+        47,
+        46,
+        51
+      ],
+      "action_entropy": 1.0976080996606383,
+      "state_dependence": 0.6458333333333333,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -0.9939135424059067,
+      "action_counts": [
+        55,
+        38,
+        51
+      ],
+      "action_entropy": 1.0867945042542673,
+      "state_dependence": 0.6180555555555556,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.9821999999999997,
+      "action_counts": [
+        51,
+        29,
+        64
+      ],
+      "action_entropy": 1.0507632740651132,
+      "state_dependence": 0.5555555555555556,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -0.9753796523159782,
+      "action_counts": [
+        61,
+        39,
+        44
+      ],
+      "action_entropy": 1.0799066759229998,
+      "state_dependence": 0.5763888888888888,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -7.002236041421464,
+      "action_counts": [
+        45,
+        53,
+        46
+      ],
+      "action_entropy": 1.0959050516841558,
+      "state_dependence": 0.6319444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -7.003799999999997,
+      "action_counts": [
+        50,
+        32,
+        62
+      ],
+      "action_entropy": 1.0643478062857599,
+      "state_dependence": 0.5694444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -0.9786683600121195,
+      "action_counts": [
+        51,
+        41,
+        52
+      ],
+      "action_entropy": 1.093117220617307,
+      "state_dependence": 0.6388888888888888,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -1.0204832571586444,
+      "action_counts": [
+        57,
+        36,
+        51
+      ],
+      "action_entropy": 1.0810375265209287,
+      "state_dependence": 0.6041666666666667,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -0.9875753294457578,
+      "action_counts": [
+        49,
+        43,
+        52
+      ],
+      "action_entropy": 1.095539181878233,
+      "state_dependence": 0.6388888888888888,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -4.99513922546634,
+      "action_counts": [
+        40,
+        48,
+        56
+      ],
+      "action_entropy": 1.089309678955827,
+      "state_dependence": 0.6111111111111112,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -4.987,
+      "action_counts": [
+        46,
+        49,
+        49
+      ],
+      "action_entropy": 1.0981751505944715,
+      "state_dependence": 0.6597222222222222,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.5555555555555556,
+      "returns": 5,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": 1.004710309734362,
+      "action_counts": [
+        50,
+        53,
+        41
+      ],
+      "action_entropy": 1.0928474910722032,
+      "state_dependence": 0.6319444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -4.993093875759376,
+      "action_counts": [
+        48,
+        47,
+        49
+      ],
+      "action_entropy": 1.0984676022748017,
+      "state_dependence": 0.6597222222222222,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -3.007200890723589,
+      "action_counts": [
+        51,
+        43,
+        50
+      ],
+      "action_entropy": 1.0958142543317537,
+      "state_dependence": 0.6458333333333333,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -0.9735144659675757,
+      "action_counts": [
+        54,
+        39,
+        51
+      ],
+      "action_entropy": 1.0892080913644167,
+      "state_dependence": 0.625,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.5555555555555556,
+      "returns": 5,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": 1.0096108811958118,
+      "action_counts": [
+        55,
+        52,
+        37
+      ],
+      "action_entropy": 1.0845913459519947,
+      "state_dependence": 0.6180555555555556,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -3.0010000000000012,
+      "action_counts": [
+        59,
+        42,
+        43
+      ],
+      "action_entropy": 1.0858658125401497,
+      "state_dependence": 0.5902777777777778,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -0.9947024128950144,
+      "action_counts": [
+        53,
+        59,
+        32
+      ],
+      "action_entropy": 1.0677040669489757,
+      "state_dependence": 0.5902777777777778,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -6.999,
+      "action_counts": [
+        55,
+        45,
+        44
+      ],
+      "action_entropy": 1.093372458465902,
+      "state_dependence": 0.6180555555555556,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -4.994658368165705,
+      "action_counts": [
+        44,
+        61,
+        39
+      ],
+      "action_entropy": 1.0799066759229998,
+      "state_dependence": 0.5763888888888888,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.5555555555555556,
+      "returns": 5,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": 1.0184171108998867,
+      "action_counts": [
+        36,
+        50,
+        58
+      ],
+      "action_entropy": 1.080136031051556,
+      "state_dependence": 0.5972222222222222,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "returns": 0,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -8.9954,
+      "action_counts": [
+        33,
+        61,
+        50
+      ],
+      "action_entropy": 1.0687771501706285,
+      "state_dependence": 0.5763888888888888,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -4.999217718790862,
+      "action_counts": [
+        43,
+        57,
+        44
+      ],
+      "action_entropy": 1.0900225278135252,
+      "state_dependence": 0.6041666666666667,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -0.988112303211101,
+      "action_counts": [
+        63,
+        45,
+        36
+      ],
+      "action_entropy": 1.0717300941124497,
+      "state_dependence": 0.5625,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -0.9836000000000005,
+      "action_counts": [
+        51,
+        67,
+        26
+      ],
+      "action_entropy": 1.0326742526545125,
+      "state_dependence": 0.5347222222222222,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -4.990128276392547,
+      "action_counts": [
+        44,
+        68,
+        32
+      ],
+      "action_entropy": 1.0508242944789838,
+      "state_dependence": 0.5277777777777778,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -7.0066000000000015,
+      "action_counts": [
+        51,
+        57,
+        36
+      ],
+      "action_entropy": 1.0810375265209287,
+      "state_dependence": 0.6041666666666667,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -3.009404872327152,
+      "action_counts": [
+        54,
+        59,
+        31
+      ],
+      "action_entropy": 1.064025445104138,
+      "state_dependence": 0.5902777777777778,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "returns": 0,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -8.994458245123186,
+      "action_counts": [
+        48,
+        45,
+        51
+      ],
+      "action_entropy": 1.0973093562969436,
+      "state_dependence": 0.6458333333333333,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -4.9962,
+      "action_counts": [
+        59,
+        46,
+        39
+      ],
+      "action_entropy": 1.0839027604927196,
+      "state_dependence": 0.5902777777777778,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6666666666666666,
+      "returns": 6,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": 3.0065728886408047,
+      "action_counts": [
+        62,
+        32,
+        50
+      ],
+      "action_entropy": 1.0643478062857599,
+      "state_dependence": 0.5694444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -5.003682635931792,
+      "action_counts": [
+        54,
+        44,
+        46
+      ],
+      "action_entropy": 1.0946258923164651,
+      "state_dependence": 0.625,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -3.0038,
+      "action_counts": [
+        53,
+        51,
+        40
+      ],
+      "action_entropy": 1.0913149881054385,
+      "state_dependence": 0.6319444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -4.99515261320408,
+      "action_counts": [
+        53,
+        43,
+        48
+      ],
+      "action_entropy": 1.0949888209880503,
+      "state_dependence": 0.6319444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -6.992071090125914,
+      "action_counts": [
+        50,
+        53,
+        41
+      ],
+      "action_entropy": 1.0928474910722032,
+      "state_dependence": 0.6319444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -5.006892715134731,
+      "action_counts": [
+        54,
+        37,
+        53
+      ],
+      "action_entropy": 1.0848509891553755,
+      "state_dependence": 0.625,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -5.0084677430744335,
+      "action_counts": [
+        60,
+        47,
+        37
+      ],
+      "action_entropy": 1.0793857038708927,
+      "state_dependence": 0.5833333333333333,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -0.9770956760150835,
+      "action_counts": [
+        49,
+        56,
+        39
+      ],
+      "action_entropy": 1.0878841781340167,
+      "state_dependence": 0.6111111111111112,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -7.000585482170103,
+      "action_counts": [
+        49,
+        46,
+        49
+      ],
+      "action_entropy": 1.0981751505944715,
+      "state_dependence": 0.6597222222222222,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -4.9884,
+      "action_counts": [
+        41,
+        55,
+        48
+      ],
+      "action_entropy": 1.0914978242548776,
+      "state_dependence": 0.6180555555555556,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.5555555555555556,
+      "returns": 5,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": 1.003078191329629,
+      "action_counts": [
+        44,
+        54,
+        46
+      ],
+      "action_entropy": 1.0946258923164651,
+      "state_dependence": 0.625,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -4.991199999999997,
+      "action_counts": [
+        55,
+        37,
+        52
+      ],
+      "action_entropy": 1.0845913459519947,
+      "state_dependence": 0.6180555555555556,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.979884525824058,
+      "action_counts": [
+        57,
+        33,
+        54
+      ],
+      "action_entropy": 1.072286839093817,
+      "state_dependence": 0.6041666666666667,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -5.008000000000001,
+      "action_counts": [
+        67,
+        39,
+        38
+      ],
+      "action_entropy": 1.0613300789659033,
+      "state_dependence": 0.5347222222222222,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -4.988350901178713,
+      "action_counts": [
+        60,
+        45,
+        39
+      ],
+      "action_entropy": 1.0820397581034515,
+      "state_dependence": 0.5833333333333333,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -7.013238167152559,
+      "action_counts": [
+        63,
+        39,
+        42
+      ],
+      "action_entropy": 1.0748236056202738,
+      "state_dependence": 0.5625,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -3.006920559891406,
+      "action_counts": [
+        58,
+        47,
+        39
+      ],
+      "action_entropy": 1.0854970767209886,
+      "state_dependence": 0.5972222222222222,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -3.001553772379094,
+      "action_counts": [
+        41,
+        76,
+        27
+      ],
+      "action_entropy": 1.0088425775013123,
+      "state_dependence": 0.4722222222222222,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -6.994,
+      "action_counts": [
+        59,
+        54,
+        31
+      ],
+      "action_entropy": 1.064025445104138,
+      "state_dependence": 0.5902777777777778,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -4.9884,
+      "action_counts": [
+        54,
+        60,
+        30
+      ],
+      "action_entropy": 1.0593845933422372,
+      "state_dependence": 0.5833333333333333,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.9928809449137956,
+      "action_counts": [
+        71,
+        52,
+        21
+      ],
+      "action_entropy": 0.9972444396568345,
+      "state_dependence": 0.5069444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -0.985353712476952,
+      "action_counts": [
+        68,
+        43,
+        33
+      ],
+      "action_entropy": 1.0528488658593846,
+      "state_dependence": 0.5277777777777778,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -5.009512269164917,
+      "action_counts": [
+        69,
+        38,
+        37
+      ],
+      "action_entropy": 1.053246732529818,
+      "state_dependence": 0.5208333333333333,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.9897001810587933,
+      "action_counts": [
+        62,
+        39,
+        43
+      ],
+      "action_entropy": 1.0775019034185318,
+      "state_dependence": 0.5694444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -6.9940924415502215,
+      "action_counts": [
+        47,
+        50,
+        47
+      ],
+      "action_entropy": 1.0981811826860475,
+      "state_dependence": 0.6527777777777778,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -1.0016961378660545,
+      "action_counts": [
+        34,
+        49,
+        61
+      ],
+      "action_entropy": 1.0714885901388993,
+      "state_dependence": 0.5763888888888888,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.9863999999999997,
+      "action_counts": [
+        38,
+        46,
+        60
+      ],
+      "action_entropy": 1.0808796048438651,
+      "state_dependence": 0.5833333333333333,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.5555555555555556,
+      "returns": 5,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": 1.0032,
+      "action_counts": [
+        34,
+        34,
+        76
+      ],
+      "action_entropy": 1.01892267780058,
+      "state_dependence": 0.4722222222222222,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -3.0082660432343076,
+      "action_counts": [
+        51,
+        40,
+        53
+      ],
+      "action_entropy": 1.0913149881054383,
+      "state_dependence": 0.6319444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -5.007506482025685,
+      "action_counts": [
+        53,
+        37,
+        54
+      ],
+      "action_entropy": 1.0848509891553755,
+      "state_dependence": 0.625,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -4.978242388170831,
+      "action_counts": [
+        54,
+        27,
+        63
+      ],
+      "action_entropy": 1.0433534269422875,
+      "state_dependence": 0.5625,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -7.002399999999998,
+      "action_counts": [
+        52,
+        41,
+        51
+      ],
+      "action_entropy": 1.093117220617307,
+      "state_dependence": 0.6388888888888888,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.5555555555555556,
+      "returns": 5,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": 1.002210336672629,
+      "action_counts": [
+        43,
+        39,
+        62
+      ],
+      "action_entropy": 1.0775019034185318,
+      "state_dependence": 0.5694444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -1.0004517664344381,
+      "action_counts": [
+        33,
+        43,
+        68
+      ],
+      "action_entropy": 1.0528488658593844,
+      "state_dependence": 0.5277777777777778,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -7.008600000000001,
+      "action_counts": [
+        47,
+        44,
+        53
+      ],
+      "action_entropy": 1.0955997399160067,
+      "state_dependence": 0.6319444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.971113009934096,
+      "action_counts": [
+        44,
+        54,
+        46
+      ],
+      "action_entropy": 1.0946258923164651,
+      "state_dependence": 0.625,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -4.99464510506742,
+      "action_counts": [
+        37,
+        54,
+        53
+      ],
+      "action_entropy": 1.0848509891553755,
+      "state_dependence": 0.625,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.989079889823051,
+      "action_counts": [
+        29,
+        53,
+        62
+      ],
+      "action_entropy": 1.053428699849151,
+      "state_dependence": 0.5694444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -0.9898250627424153,
+      "action_counts": [
+        30,
+        52,
+        62
+      ],
+      "action_entropy": 1.057431864236452,
+      "state_dependence": 0.5694444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.5555555555555556,
+      "returns": 5,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": 0.9978469407582784,
+      "action_counts": [
+        40,
+        43,
+        61
+      ],
+      "action_entropy": 1.080576571423549,
+      "state_dependence": 0.5763888888888888,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -3.0051999999999994,
+      "action_counts": [
+        37,
+        59,
+        48
+      ],
+      "action_entropy": 1.0809499628964663,
+      "state_dependence": 0.5902777777777778,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -4.9918000000000005,
+      "action_counts": [
+        38,
+        63,
+        43
+      ],
+      "action_entropy": 1.0741371411934115,
+      "state_dependence": 0.5625,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -4.9892,
+      "action_counts": [
+        44,
+        62,
+        38
+      ],
+      "action_entropy": 1.076653925723207,
+      "state_dependence": 0.5694444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.7777777777777778,
+      "returns": 7,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": 5.015677848644593,
+      "action_counts": [
+        35,
+        65,
+        44
+      ],
+      "action_entropy": 1.065114003827738,
+      "state_dependence": 0.5486111111111112,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -3.008802564366693,
+      "action_counts": [
+        46,
+        56,
+        42
+      ],
+      "action_entropy": 1.0912068906345518,
+      "state_dependence": 0.6111111111111112,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.5555555555555556,
+      "returns": 5,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": 1.0102827817499702,
+      "action_counts": [
+        63,
+        38,
+        43
+      ],
+      "action_entropy": 1.0741371411934115,
+      "state_dependence": 0.5625,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -7.013600000000002,
+      "action_counts": [
+        53,
+        57,
+        34
+      ],
+      "action_entropy": 1.0755379417858497,
+      "state_dependence": 0.6041666666666667,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -5.002381479747635,
+      "action_counts": [
+        53,
+        52,
+        39
+      ],
+      "action_entropy": 1.089472681634658,
+      "state_dependence": 0.6319444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -1.000499455774038,
+      "action_counts": [
+        73,
+        46,
+        25
+      ],
+      "action_entropy": 1.0129178894090813,
+      "state_dependence": 0.4930555555555556,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -7.010550173732569,
+      "action_counts": [
+        54,
+        58,
+        32
+      ],
+      "action_entropy": 1.0683245355777033,
+      "state_dependence": 0.5972222222222222,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -7.006030016908014,
+      "action_counts": [
+        46,
+        47,
+        51
+      ],
+      "action_entropy": 1.0976080996606383,
+      "state_dependence": 0.6458333333333333,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "returns": 0,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -9.009371883340119,
+      "action_counts": [
+        43,
+        52,
+        49
+      ],
+      "action_entropy": 1.095539181878233,
+      "state_dependence": 0.6388888888888888,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.984393264596945,
+      "action_counts": [
+        48,
+        56,
+        40
+      ],
+      "action_entropy": 1.089309678955827,
+      "state_dependence": 0.6111111111111112,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.9763598562847635,
+      "action_counts": [
+        51,
+        37,
+        56
+      ],
+      "action_entropy": 1.0840718779235998,
+      "state_dependence": 0.6111111111111112,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.978001573642075,
+      "action_counts": [
+        51,
+        43,
+        50
+      ],
+      "action_entropy": 1.0958142543317537,
+      "state_dependence": 0.6458333333333333,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -1.002010093417249,
+      "action_counts": [
+        64,
+        42,
+        38
+      ],
+      "action_entropy": 1.0713486094890314,
+      "state_dependence": 0.5555555555555556,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -5.0043560306814685,
+      "action_counts": [
+        69,
+        32,
+        43
+      ],
+      "action_entropy": 1.0476709198424883,
+      "state_dependence": 0.5208333333333333,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -6.9904749594634,
+      "action_counts": [
+        59,
+        31,
+        54
+      ],
+      "action_entropy": 1.064025445104138,
+      "state_dependence": 0.5902777777777778,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -0.9982000000000011,
+      "action_counts": [
+        50,
+        30,
+        64
+      ],
+      "action_entropy": 1.0544967089073105,
+      "state_dependence": 0.5555555555555556,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -0.9942513120373861,
+      "action_counts": [
+        53,
+        39,
+        52
+      ],
+      "action_entropy": 1.089472681634658,
+      "state_dependence": 0.6319444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -4.987135558999438,
+      "action_counts": [
+        51,
+        39,
+        54
+      ],
+      "action_entropy": 1.0892080913644167,
+      "state_dependence": 0.625,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.5555555555555556,
+      "returns": 5,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": 0.9917089567440802,
+      "action_counts": [
+        35,
+        35,
+        74
+      ],
+      "action_entropy": 1.029707874566501,
+      "state_dependence": 0.48611111111111116,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.0,
+      "returns": 0,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -8.995362449682856,
+      "action_counts": [
+        28,
+        49,
+        67
+      ],
+      "action_entropy": 1.041234644079323,
+      "state_dependence": 0.5347222222222222,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.9986843612600693,
+      "action_counts": [
+        40,
+        55,
+        49
+      ],
+      "action_entropy": 1.0902459526331918,
+      "state_dependence": 0.6180555555555556,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -4.998218640431759,
+      "action_counts": [
+        48,
+        46,
+        50
+      ],
+      "action_entropy": 1.0980334173990223,
+      "state_dependence": 0.6527777777777778,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.9822000000000006,
+      "action_counts": [
+        52,
+        43,
+        49
+      ],
+      "action_entropy": 1.095539181878233,
+      "state_dependence": 0.6388888888888888,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -7.006468041903623,
+      "action_counts": [
+        39,
+        61,
+        44
+      ],
+      "action_entropy": 1.0799066759229998,
+      "state_dependence": 0.5763888888888888,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -0.9875006250373608,
+      "action_counts": [
+        38,
+        65,
+        41
+      ],
+      "action_entropy": 1.0682862068836665,
+      "state_dependence": 0.5486111111111112,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.9835349191657254,
+      "action_counts": [
+        41,
+        50,
+        53
+      ],
+      "action_entropy": 1.0928474910722032,
+      "state_dependence": 0.6319444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -5.008000000000001,
+      "action_counts": [
+        30,
+        73,
+        41
+      ],
+      "action_entropy": 1.0288694427109015,
+      "state_dependence": 0.4930555555555556,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -7.015000000000002,
+      "action_counts": [
+        39,
+        57,
+        48
+      ],
+      "action_entropy": 1.0868238899287452,
+      "state_dependence": 0.6041666666666667,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -0.9864082108406538,
+      "action_counts": [
+        52,
+        57,
+        35
+      ],
+      "action_entropy": 1.0784537316250735,
+      "state_dependence": 0.6041666666666667,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.999837414979747,
+      "action_counts": [
+        51,
+        64,
+        29
+      ],
+      "action_entropy": 1.0507632740651132,
+      "state_dependence": 0.5555555555555556,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.9897128776030764,
+      "action_counts": [
+        46,
+        62,
+        36
+      ],
+      "action_entropy": 1.0739347030779836,
+      "state_dependence": 0.5694444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.5555555555555556,
+      "returns": 5,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": 1.0052169109801903,
+      "action_counts": [
+        39,
+        56,
+        49
+      ],
+      "action_entropy": 1.0878841781340167,
+      "state_dependence": 0.6111111111111112,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.990442473016566,
+      "action_counts": [
+        52,
+        53,
+        39
+      ],
+      "action_entropy": 1.089472681634658,
+      "state_dependence": 0.6319444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -6.992000000000001,
+      "action_counts": [
+        52,
+        51,
+        41
+      ],
+      "action_entropy": 1.093117220617307,
+      "state_dependence": 0.6388888888888888,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -0.9862071949407193,
+      "action_counts": [
+        42,
+        42,
+        60
+      ],
+      "action_entropy": 1.0835291213181575,
+      "state_dependence": 0.5833333333333333,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -4.984999999999999,
+      "action_counts": [
+        49,
+        39,
+        56
+      ],
+      "action_entropy": 1.0878841781340167,
+      "state_dependence": 0.6111111111111112,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -7.003517139900495,
+      "action_counts": [
+        54,
+        37,
+        53
+      ],
+      "action_entropy": 1.0848509891553755,
+      "state_dependence": 0.625,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.9889857615358943,
+      "action_counts": [
+        55,
+        32,
+        57
+      ],
+      "action_entropy": 1.0686966582985913,
+      "state_dependence": 0.6041666666666667,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.9979760981338566,
+      "action_counts": [
+        53,
+        40,
+        51
+      ],
+      "action_entropy": 1.0913149881054383,
+      "state_dependence": 0.6319444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -4.981599999999999,
+      "action_counts": [
+        59,
+        35,
+        50
+      ],
+      "action_entropy": 1.076667177256732,
+      "state_dependence": 0.5902777777777778,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -0.9850000000000003,
+      "action_counts": [
+        54,
+        56,
+        34
+      ],
+      "action_entropy": 1.0759168340719096,
+      "state_dependence": 0.6111111111111112,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -5.002800000000001,
+      "action_counts": [
+        54,
+        36,
+        54
+      ],
+      "action_entropy": 1.0821955300387642,
+      "state_dependence": 0.625,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -4.99153971475861,
+      "action_counts": [
+        44,
+        40,
+        60
+      ],
+      "action_entropy": 1.0828674954767825,
+      "state_dependence": 0.5833333333333333,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -3.0072537868083,
+      "action_counts": [
+        67,
+        29,
+        48
+      ],
+      "action_entropy": 1.0449269586566836,
+      "state_dependence": 0.5347222222222222,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -0.9873100762221234,
+      "action_counts": [
+        53,
+        31,
+        60
+      ],
+      "action_entropy": 1.0632872683910808,
+      "state_dependence": 0.5833333333333333,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -5.007256366395934,
+      "action_counts": [
+        35,
+        47,
+        62
+      ],
+      "action_entropy": 1.0720601655114288,
+      "state_dependence": 0.5694444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -4.984611915330659,
+      "action_counts": [
+        47,
+        42,
+        55
+      ],
+      "action_entropy": 1.0924356159922468,
+      "state_dependence": 0.6180555555555556,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -3.0059379723747526,
+      "action_counts": [
+        50,
+        61,
+        33
+      ],
+      "action_entropy": 1.0687771501706287,
+      "state_dependence": 0.5763888888888888,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.5555555555555556,
+      "returns": 5,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": 0.9955101899746708,
+      "action_counts": [
+        50,
+        62,
+        32
+      ],
+      "action_entropy": 1.0643478062857599,
+      "state_dependence": 0.5694444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -5.012799999999999,
+      "action_counts": [
+        52,
+        48,
+        44
+      ],
+      "action_entropy": 1.0962947871994944,
+      "state_dependence": 0.6388888888888888,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -3.0023518914451515,
+      "action_counts": [
+        58,
+        46,
+        40
+      ],
+      "action_entropy": 1.0866301258624689,
+      "state_dependence": 0.5972222222222222,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -7.0136,
+      "action_counts": [
+        46,
+        45,
+        53
+      ],
+      "action_entropy": 1.0959050516841558,
+      "state_dependence": 0.6319444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -7.0047775527910945,
+      "action_counts": [
+        37,
+        49,
+        58
+      ],
+      "action_entropy": 1.082251827444405,
+      "state_dependence": 0.5972222222222222,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -3.0050023180148235,
+      "action_counts": [
+        40,
+        55,
+        49
+      ],
+      "action_entropy": 1.0902459526331918,
+      "state_dependence": 0.6180555555555556,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.9968000000000004,
+      "action_counts": [
+        36,
+        65,
+        43
+      ],
+      "action_entropy": 1.0665253877533618,
+      "state_dependence": 0.5486111111111112,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.9954,
+      "action_counts": [
+        56,
+        63,
+        25
+      ],
+      "action_entropy": 1.032944701898637,
+      "state_dependence": 0.5625,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -7.0018,
+      "action_counts": [
+        57,
+        51,
+        36
+      ],
+      "action_entropy": 1.0810375265209287,
+      "state_dependence": 0.6041666666666667,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2222222222222222,
+      "returns": 2,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -4.9996,
+      "action_counts": [
+        53,
+        47,
+        44
+      ],
+      "action_entropy": 1.0955997399160067,
+      "state_dependence": 0.6319444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -3.0127552145666927,
+      "action_counts": [
+        48,
+        55,
+        41
+      ],
+      "action_entropy": 1.0914978242548776,
+      "state_dependence": 0.6180555555555556,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -0.9934082977591927,
+      "action_counts": [
+        37,
+        58,
+        49
+      ],
+      "action_entropy": 1.082251827444405,
+      "state_dependence": 0.5972222222222222,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -3.0015458801825634,
+      "action_counts": [
+        21,
+        60,
+        63
+      ],
+      "action_entropy": 1.0072221003524944,
+      "state_dependence": 0.5625,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -2.9878000000000005,
+      "action_counts": [
+        26,
+        51,
+        67
+      ],
+      "action_entropy": 1.0326742526545125,
+      "state_dependence": 0.5347222222222222,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -0.99859158750569,
+      "action_counts": [
+        39,
+        65,
+        40
+      ],
+      "action_entropy": 1.0686379182785666,
+      "state_dependence": 0.5486111111111112,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -0.9991675031487881,
+      "action_counts": [
+        61,
+        61,
+        22
+      ],
+      "action_entropy": 1.0147470120549773,
+      "state_dependence": 0.5763888888888888,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -3.007116189256847,
+      "action_counts": [
+        59,
+        55,
+        30
+      ],
+      "action_entropy": 1.059994161880942,
+      "state_dependence": 0.5902777777777778,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.3333333333333333,
+      "returns": 3,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -3.0101641143058666,
+      "action_counts": [
+        47,
+        49,
+        48
+      ],
+      "action_entropy": 1.0984676022748017,
+      "state_dependence": 0.6597222222222222,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -0.9787723153486201,
+      "action_counts": [
+        37,
+        57,
+        50
+      ],
+      "action_entropy": 1.0832922210634075,
+      "state_dependence": 0.6041666666666667,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.1111111111111111,
+      "returns": 1,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -7.009290220334685,
+      "action_counts": [
+        41,
+        55,
+        48
+      ],
+      "action_entropy": 1.0914978242548776,
+      "state_dependence": 0.6180555555555556,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4444444444444444,
+      "returns": 4,
+      "attempted_returns": 9,
+      "steps": 144,
+      "return": -0.9937143062567081,
+      "action_counts": [
+        39,
+        49,
+        56
+      ],
+      "action_entropy": 1.0878841781340167,
+      "state_dependence": 0.6111111111111112,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    }
+  ],
+  "mean_success": 0.2777777777777778,
+  "resources": {
+    "rss_mb": 129.421875,
+    "free_disk_mb": 348299.8359375,
+    "elapsed_seconds": 70.47256075000041
+  }
+}

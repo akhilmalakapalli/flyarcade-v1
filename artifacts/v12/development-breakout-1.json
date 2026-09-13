@@ -1,0 +1,5808 @@
+{
+  "task": "breakout",
+  "candidate": 1,
+  "hyperparameters": {
+    "actor_lr": 1.5,
+    "critic_lr": 0.2,
+    "discount": 0.9,
+    "trace_decay": 0.7,
+    "entropy_coefficient": 0.01,
+    "exploration_floor": 0.05,
+    "weight_bound": 4.0,
+    "update_clip": 0.05,
+    "init_scale": 0.0
+  },
+  "split": "development",
+  "before": [
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.004,
+      "action_counts": [
+        99,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.004,
+      "action_counts": [
+        99,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -2.004,
+      "action_counts": [
+        99,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.004,
+      "action_counts": [
+        99,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.004,
+      "action_counts": [
+        99,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -2.004,
+      "action_counts": [
+        99,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -2.004,
+      "action_counts": [
+        99,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.004,
+      "action_counts": [
+        99,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -2.004,
+      "action_counts": [
+        99,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.004,
+      "action_counts": [
+        99,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.004,
+      "action_counts": [
+        99,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.004,
+      "action_counts": [
+        99,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -2.004,
+      "action_counts": [
+        99,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -2.004,
+      "action_counts": [
+        99,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.004,
+      "action_counts": [
+        99,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.004,
+      "action_counts": [
+        99,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.004,
+      "action_counts": [
+        99,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.004,
+      "action_counts": [
+        99,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.004,
+      "action_counts": [
+        99,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.004,
+      "action_counts": [
+        99,
+        0,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15,
+      "state_dependence": 0.0,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    }
+  ],
+  "after": [
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 3,
+      "misses": 1,
+      "completion": false,
+      "steps": 160,
+      "return": 2.296123636363638,
+      "action_counts": [
+        12,
+        128,
+        20
+      ],
+      "action_entropy": 0.6327150711697813,
+      "state_dependence": 0.19999999999999996,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 3,
+      "misses": 1,
+      "completion": false,
+      "steps": 160,
+      "return": 1.302928181818182,
+      "action_counts": [
+        21,
+        114,
+        25
+      ],
+      "action_entropy": 0.7980895031658903,
+      "state_dependence": 0.2875,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": -0.9024909090909092,
+      "action_counts": [
+        15,
+        99,
+        22
+      ],
+      "action_entropy": 0.7689743551938395,
+      "state_dependence": 0.2720588235294118,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0026000000000002,
+      "action_counts": [
+        5,
+        82,
+        12
+      ],
+      "action_entropy": 0.5626244194750388,
+      "state_dependence": 0.1717171717171717,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0023,
+      "action_counts": [
+        6,
+        79,
+        14
+      ],
+      "action_entropy": 0.6265972261459338,
+      "state_dependence": 0.202020202020202,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": 1.199690909090909,
+      "action_counts": [
+        17,
+        121,
+        22
+      ],
+      "action_entropy": 0.7223099599835472,
+      "state_dependence": 0.24375000000000002,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": -0.898990909090909,
+      "action_counts": [
+        9,
+        104,
+        23
+      ],
+      "action_entropy": 0.6853898734338493,
+      "state_dependence": 0.23529411764705888,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0012,
+      "action_counts": [
+        4,
+        79,
+        16
+      ],
+      "action_entropy": 0.6042816951324581,
+      "state_dependence": 0.202020202020202,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": 1.2036090909090904,
+      "action_counts": [
+        13,
+        133,
+        14
+      ],
+      "action_entropy": 0.5707514507644061,
+      "state_dependence": 0.16874999999999996,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -0.9990999999999999,
+      "action_counts": [
+        8,
+        77,
+        14
+      ],
+      "action_entropy": 0.6753688154801831,
+      "state_dependence": 0.2222222222222222,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": 1.1999727272727272,
+      "action_counts": [
+        12,
+        125,
+        23
+      ],
+      "action_entropy": 0.6659584156924858,
+      "state_dependence": 0.21875,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 3,
+      "misses": 1,
+      "completion": false,
+      "steps": 160,
+      "return": 2.2982727272727272,
+      "action_counts": [
+        9,
+        129,
+        22
+      ],
+      "action_entropy": 0.608337844405295,
+      "state_dependence": 0.19374999999999998,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": 0.20229999999999904,
+      "action_counts": [
+        13,
+        126,
+        21
+      ],
+      "action_entropy": 0.658606108264586,
+      "state_dependence": 0.21250000000000002,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -2.0060999999999996,
+      "action_counts": [
+        7,
+        75,
+        17
+      ],
+      "action_entropy": 0.7001945328864441,
+      "state_dependence": 0.24242424242424243,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": 0.09869090909090983,
+      "action_counts": [
+        5,
+        118,
+        13
+      ],
+      "action_entropy": 0.469034908558704,
+      "state_dependence": 0.13235294117647056,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": -0.9082000000000001,
+      "action_counts": [
+        9,
+        111,
+        16
+      ],
+      "action_entropy": 0.597255671783611,
+      "state_dependence": 0.18382352941176472,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0012,
+      "action_counts": [
+        2,
+        84,
+        13
+      ],
+      "action_entropy": 0.48482442477137266,
+      "state_dependence": 0.1515151515151515,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0007000000000001,
+      "action_counts": [
+        8,
+        82,
+        9
+      ],
+      "action_entropy": 0.5773265995776837,
+      "state_dependence": 0.1717171717171717,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": -0.904590909090909,
+      "action_counts": [
+        15,
+        91,
+        30
+      ],
+      "action_entropy": 0.8454130507402317,
+      "state_dependence": 0.3308823529411765,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": 1.2047000000000014,
+      "action_counts": [
+        9,
+        134,
+        17
+      ],
+      "action_entropy": 0.5486101824938003,
+      "state_dependence": 0.16249999999999998,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    }
+  ],
+  "training": [
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": -0.8952281818181813,
+      "action_counts": [
+        41,
+        54,
+        41
+      ],
+      "action_entropy": 1.0897280623226369,
+      "state_dependence": 0.6029411764705883,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": 0.09531999999999963,
+      "action_counts": [
+        47,
+        49,
+        40
+      ],
+      "action_entropy": 1.0949246647628805,
+      "state_dependence": 0.6397058823529411,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 3,
+      "misses": 1,
+      "completion": false,
+      "steps": 160,
+      "return": 1.3036020909090906,
+      "action_counts": [
+        58,
+        46,
+        56
+      ],
+      "action_entropy": 1.0936557306628298,
+      "state_dependence": 0.6375,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0037,
+      "action_counts": [
+        28,
+        50,
+        21
+      ],
+      "action_entropy": 1.0311011860082748,
+      "state_dependence": 0.4949494949494949,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": 0.09409090909090922,
+      "action_counts": [
+        50,
+        39,
+        47
+      ],
+      "action_entropy": 1.0932652405093117,
+      "state_dependence": 0.6323529411764706,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": 1.203071090909093,
+      "action_counts": [
+        35,
+        67,
+        58
+      ],
+      "action_entropy": 1.0648158010899706,
+      "state_dependence": 0.58125,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0036999999999998,
+      "action_counts": [
+        19,
+        37,
+        43
+      ],
+      "action_entropy": 1.046837947641437,
+      "state_dependence": 0.5656565656565656,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": -0.9077000000000004,
+      "action_counts": [
+        55,
+        37,
+        44
+      ],
+      "action_entropy": 1.0853634750888013,
+      "state_dependence": 0.5955882352941176,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0040000000000002,
+      "action_counts": [
+        41,
+        34,
+        24
+      ],
+      "action_entropy": 1.0756652592237101,
+      "state_dependence": 0.5858585858585859,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": -0.8983999999999999,
+      "action_counts": [
+        54,
+        53,
+        29
+      ],
+      "action_entropy": 1.0635211430717768,
+      "state_dependence": 0.6029411764705883,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": -0.8894100000000004,
+      "action_counts": [
+        54,
+        41,
+        41
+      ],
+      "action_entropy": 1.0897280623226369,
+      "state_dependence": 0.6029411764705883,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0050999999999997,
+      "action_counts": [
+        31,
+        36,
+        32
+      ],
+      "action_entropy": 1.0964952641441754,
+      "state_dependence": 0.6363636363636364,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": -0.9043,
+      "action_counts": [
+        59,
+        38,
+        39
+      ],
+      "action_entropy": 1.0767586544191643,
+      "state_dependence": 0.5661764705882353,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": 1.1997790909090902,
+      "action_counts": [
+        62,
+        48,
+        50
+      ],
+      "action_entropy": 1.092041748560188,
+      "state_dependence": 0.6125,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0032999999999999,
+      "action_counts": [
+        35,
+        26,
+        38
+      ],
+      "action_entropy": 1.0862717065962972,
+      "state_dependence": 0.6161616161616161,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0040000000000002,
+      "action_counts": [
+        34,
+        38,
+        27
+      ],
+      "action_entropy": 1.088936746208637,
+      "state_dependence": 0.6161616161616161,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": 1.200700000000001,
+      "action_counts": [
+        60,
+        53,
+        47
+      ],
+      "action_entropy": 1.0936545500340662,
+      "state_dependence": 0.625,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.8,
+      "bricks_destroyed": 4,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": 2.205575454545454,
+      "action_counts": [
+        67,
+        42,
+        51
+      ],
+      "action_entropy": 1.0800510856335939,
+      "state_dependence": 0.58125,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.9984,
+      "action_counts": [
+        40,
+        30,
+        29
+      ],
+      "action_entropy": 1.0876180452453965,
+      "state_dependence": 0.595959595959596,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": 0.08986909090909112,
+      "action_counts": [
+        61,
+        25,
+        50
+      ],
+      "action_entropy": 1.0388581827383703,
+      "state_dependence": 0.5514705882352942,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": 0.10040909090909067,
+      "action_counts": [
+        55,
+        27,
+        54
+      ],
+      "action_entropy": 1.0538603336450667,
+      "state_dependence": 0.5955882352941176,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.002890909090909,
+      "action_counts": [
+        44,
+        34,
+        21
+      ],
+      "action_entropy": 1.0563766893109015,
+      "state_dependence": 0.5555555555555556,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.9966999999999997,
+      "action_counts": [
+        31,
+        28,
+        40
+      ],
+      "action_entropy": 1.0869329027759738,
+      "state_dependence": 0.595959595959596,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.007790909090909,
+      "action_counts": [
+        37,
+        26,
+        36
+      ],
+      "action_entropy": 1.0868253598233264,
+      "state_dependence": 0.6262626262626263,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": 1.2063799999999996,
+      "action_counts": [
+        55,
+        49,
+        56
+      ],
+      "action_entropy": 1.0969099747564803,
+      "state_dependence": 0.65,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": 1.19504,
+      "action_counts": [
+        34,
+        69,
+        57
+      ],
+      "action_entropy": 1.059526759479263,
+      "state_dependence": 0.56875,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": -0.9041000000000002,
+      "action_counts": [
+        36,
+        52,
+        48
+      ],
+      "action_entropy": 1.0870004469549244,
+      "state_dependence": 0.6176470588235294,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0008999999999997,
+      "action_counts": [
+        21,
+        41,
+        37
+      ],
+      "action_entropy": 1.061833095640599,
+      "state_dependence": 0.5858585858585859,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 3,
+      "misses": 1,
+      "completion": false,
+      "steps": 160,
+      "return": 2.305288399999996,
+      "action_counts": [
+        48,
+        67,
+        45
+      ],
+      "action_entropy": 1.0824746523435873,
+      "state_dependence": 0.58125,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": -0.8951909090909086,
+      "action_counts": [
+        44,
+        47,
+        45
+      ],
+      "action_entropy": 1.0982350827033973,
+      "state_dependence": 0.6544117647058824,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": 0.09339000000000108,
+      "action_counts": [
+        30,
+        65,
+        41
+      ],
+      "action_entropy": 1.0477464392069482,
+      "state_dependence": 0.5220588235294117,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": 0.10179999999999989,
+      "action_counts": [
+        23,
+        94,
+        19
+      ],
+      "action_entropy": 0.8308135835013932,
+      "state_dependence": 0.3088235294117647,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": -0.9101936363636358,
+      "action_counts": [
+        26,
+        78,
+        32
+      ],
+      "action_entropy": 0.975615566912976,
+      "state_dependence": 0.42647058823529416,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": 0.10140909090909145,
+      "action_counts": [
+        40,
+        65,
+        31
+      ],
+      "action_entropy": 1.0498316942153623,
+      "state_dependence": 0.5220588235294117,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": 0.08749090909090929,
+      "action_counts": [
+        47,
+        58,
+        31
+      ],
+      "action_entropy": 1.0676825678602797,
+      "state_dependence": 0.5735294117647058,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -2.0033,
+      "action_counts": [
+        56,
+        23,
+        20
+      ],
+      "action_entropy": 0.9845066469162169,
+      "state_dependence": 0.43434343434343436,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -0.9989909090909094,
+      "action_counts": [
+        52,
+        22,
+        25
+      ],
+      "action_entropy": 1.0199733555707264,
+      "state_dependence": 0.4747474747474747,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0005000000000002,
+      "action_counts": [
+        54,
+        22,
+        23
+      ],
+      "action_entropy": 1.0039638960464636,
+      "state_dependence": 0.4545454545454546,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -2.0036,
+      "action_counts": [
+        54,
+        15,
+        30
+      ],
+      "action_entropy": 0.9783338604288433,
+      "state_dependence": 0.4545454545454546,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -2.0037,
+      "action_counts": [
+        48,
+        21,
+        30
+      ],
+      "action_entropy": 1.0417002424008968,
+      "state_dependence": 0.5151515151515151,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0043,
+      "action_counts": [
+        52,
+        20,
+        27
+      ],
+      "action_entropy": 1.0156560701403352,
+      "state_dependence": 0.4747474747474747,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": -0.9047000000000001,
+      "action_counts": [
+        59,
+        42,
+        35
+      ],
+      "action_entropy": 1.0744635966884872,
+      "state_dependence": 0.5661764705882353,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -0.9961090909090909,
+      "action_counts": [
+        30,
+        30,
+        39
+      ],
+      "action_entropy": 1.0905668491367533,
+      "state_dependence": 0.6060606060606061,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0047,
+      "action_counts": [
+        30,
+        23,
+        46
+      ],
+      "action_entropy": 1.0570411364504104,
+      "state_dependence": 0.5353535353535354,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.004,
+      "action_counts": [
+        18,
+        15,
+        66
+      ],
+      "action_entropy": 0.866183914453696,
+      "state_dependence": 0.33333333333333337,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0054,
+      "action_counts": [
+        20,
+        24,
+        55
+      ],
+      "action_entropy": 0.9931879048091685,
+      "state_dependence": 0.4444444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": -0.9023000000000002,
+      "action_counts": [
+        31,
+        54,
+        51
+      ],
+      "action_entropy": 1.071611877482733,
+      "state_dependence": 0.6029411764705883,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -0.9997999999999998,
+      "action_counts": [
+        13,
+        43,
+        43
+      ],
+      "action_entropy": 0.9910031673401795,
+      "state_dependence": 0.5656565656565656,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0047,
+      "action_counts": [
+        16,
+        47,
+        36
+      ],
+      "action_entropy": 1.0160790559868171,
+      "state_dependence": 0.5252525252525253,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -2.0016,
+      "action_counts": [
+        18,
+        32,
+        49
+      ],
+      "action_entropy": 1.023105353779608,
+      "state_dependence": 0.505050505050505,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0068,
+      "action_counts": [
+        30,
+        16,
+        53
+      ],
+      "action_entropy": 0.9908490175692979,
+      "state_dependence": 0.46464646464646464,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.004,
+      "action_counts": [
+        12,
+        34,
+        53
+      ],
+      "action_entropy": 0.9573359203096581,
+      "state_dependence": 0.46464646464646464,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.9977999999999998,
+      "action_counts": [
+        10,
+        33,
+        56
+      ],
+      "action_entropy": 0.9200663638769843,
+      "state_dependence": 0.43434343434343436,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": -0.8972090909090907,
+      "action_counts": [
+        46,
+        27,
+        63
+      ],
+      "action_entropy": 1.0441064490942709,
+      "state_dependence": 0.5367647058823529,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0058,
+      "action_counts": [
+        30,
+        21,
+        48
+      ],
+      "action_entropy": 1.0417002424008968,
+      "state_dependence": 0.5151515151515151,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0061,
+      "action_counts": [
+        18,
+        36,
+        45
+      ],
+      "action_entropy": 1.0361987848192806,
+      "state_dependence": 0.5454545454545454,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0034909090909092,
+      "action_counts": [
+        14,
+        49,
+        36
+      ],
+      "action_entropy": 0.9925675369380791,
+      "state_dependence": 0.505050505050505,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.9949,
+      "action_counts": [
+        11,
+        36,
+        52
+      ],
+      "action_entropy": 0.9501885051705843,
+      "state_dependence": 0.4747474747474747,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -2.0054,
+      "action_counts": [
+        17,
+        29,
+        53
+      ],
+      "action_entropy": 0.9967190689545276,
+      "state_dependence": 0.46464646464646464,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -0.9956,
+      "action_counts": [
+        8,
+        31,
+        60
+      ],
+      "action_entropy": 0.8703743005810085,
+      "state_dependence": 0.3939393939393939,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0047,
+      "action_counts": [
+        6,
+        28,
+        65
+      ],
+      "action_entropy": 0.8033273688872086,
+      "state_dependence": 0.3434343434343434,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.9967,
+      "action_counts": [
+        16,
+        20,
+        63
+      ],
+      "action_entropy": 0.9052859835731437,
+      "state_dependence": 0.36363636363636365,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -2.004,
+      "action_counts": [
+        19,
+        34,
+        46
+      ],
+      "action_entropy": 1.0399874998354937,
+      "state_dependence": 0.5353535353535354,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -0.9988000000000001,
+      "action_counts": [
+        23,
+        16,
+        60
+      ],
+      "action_entropy": 0.9371556051292033,
+      "state_dependence": 0.3939393939393939,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -0.9993999999999998,
+      "action_counts": [
+        23,
+        10,
+        66
+      ],
+      "action_entropy": 0.8409841847804962,
+      "state_dependence": 0.33333333333333337,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -2.0047,
+      "action_counts": [
+        28,
+        10,
+        61
+      ],
+      "action_entropy": 0.8871311336758176,
+      "state_dependence": 0.38383838383838387,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0044,
+      "action_counts": [
+        21,
+        18,
+        60
+      ],
+      "action_entropy": 0.942368975713891,
+      "state_dependence": 0.3939393939393939,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -0.9997999999999998,
+      "action_counts": [
+        15,
+        15,
+        69
+      ],
+      "action_entropy": 0.8234546496267364,
+      "state_dependence": 0.303030303030303,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0060999999999998,
+      "action_counts": [
+        15,
+        12,
+        72
+      ],
+      "action_entropy": 0.7733057755573634,
+      "state_dependence": 0.2727272727272727,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0019,
+      "action_counts": [
+        11,
+        10,
+        78
+      ],
+      "action_entropy": 0.663544219705186,
+      "state_dependence": 0.21212121212121215,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -0.9959999999999999,
+      "action_counts": [
+        11,
+        19,
+        69
+      ],
+      "action_entropy": 0.8125487650623107,
+      "state_dependence": 0.303030303030303,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": -1.9039999999999997,
+      "action_counts": [
+        13,
+        17,
+        106
+      ],
+      "action_entropy": 0.6785849410902052,
+      "state_dependence": 0.22058823529411764,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0001,
+      "action_counts": [
+        24,
+        20,
+        55
+      ],
+      "action_entropy": 0.9931879048091685,
+      "state_dependence": 0.4444444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": 1.2036999999999998,
+      "action_counts": [
+        44,
+        41,
+        75
+      ],
+      "action_entropy": 1.0590962705931777,
+      "state_dependence": 0.53125,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": 0.08980909090909162,
+      "action_counts": [
+        51,
+        46,
+        39
+      ],
+      "action_entropy": 1.0926584467177018,
+      "state_dependence": 0.625,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": 0.19780636363636372,
+      "action_counts": [
+        69,
+        30,
+        61
+      ],
+      "action_entropy": 1.0442202153485267,
+      "state_dependence": 0.56875,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": 0.09732909090909103,
+      "action_counts": [
+        52,
+        24,
+        60
+      ],
+      "action_entropy": 1.0347237164131742,
+      "state_dependence": 0.5588235294117647,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": 1.2017909090909087,
+      "action_counts": [
+        66,
+        21,
+        73
+      ],
+      "action_entropy": 0.9898255441727706,
+      "state_dependence": 0.54375,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -0.9983999999999996,
+      "action_counts": [
+        32,
+        19,
+        48
+      ],
+      "action_entropy": 1.0328416883433507,
+      "state_dependence": 0.5151515151515151,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": 1.1962100000000002,
+      "action_counts": [
+        53,
+        54,
+        53
+      ],
+      "action_entropy": 1.0985733067901007,
+      "state_dependence": 0.6625,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0042909090909091,
+      "action_counts": [
+        39,
+        33,
+        27
+      ],
+      "action_entropy": 1.0875314752904763,
+      "state_dependence": 0.6060606060606061,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0020090909090906,
+      "action_counts": [
+        39,
+        24,
+        36
+      ],
+      "action_entropy": 1.0783635075908813,
+      "state_dependence": 0.6060606060606061,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.9969999999999999,
+      "action_counts": [
+        44,
+        25,
+        30
+      ],
+      "action_entropy": 1.0697444868621306,
+      "state_dependence": 0.5555555555555556,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -2.0004,
+      "action_counts": [
+        55,
+        18,
+        26
+      ],
+      "action_entropy": 0.987639781261098,
+      "state_dependence": 0.4444444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0047000000000001,
+      "action_counts": [
+        47,
+        38,
+        14
+      ],
+      "action_entropy": 0.9978267797852027,
+      "state_dependence": 0.5252525252525253,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0061,
+      "action_counts": [
+        52,
+        28,
+        19
+      ],
+      "action_entropy": 1.0121830798790081,
+      "state_dependence": 0.4747474747474747,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": -0.9051000000000001,
+      "action_counts": [
+        73,
+        39,
+        24
+      ],
+      "action_entropy": 0.9982744788887,
+      "state_dependence": 0.4632352941176471,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": -0.9072000000000003,
+      "action_counts": [
+        61,
+        20,
+        55
+      ],
+      "action_entropy": 1.0076455006372425,
+      "state_dependence": 0.5514705882352942,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": 0.20600090909090957,
+      "action_counts": [
+        64,
+        32,
+        64
+      ],
+      "action_entropy": 1.054920167986141,
+      "state_dependence": 0.6,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0026000000000002,
+      "action_counts": [
+        48,
+        15,
+        36
+      ],
+      "action_entropy": 1.0047654731191136,
+      "state_dependence": 0.5151515151515151,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 3,
+      "misses": 1,
+      "completion": false,
+      "steps": 160,
+      "return": 1.2957899999999996,
+      "action_counts": [
+        84,
+        26,
+        50
+      ],
+      "action_entropy": 0.9970471192162977,
+      "state_dependence": 0.475,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": 0.09748909090909053,
+      "action_counts": [
+        43,
+        40,
+        53
+      ],
+      "action_entropy": 1.091241249282791,
+      "state_dependence": 0.6102941176470589,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": -0.90240909090909,
+      "action_counts": [
+        43,
+        52,
+        41
+      ],
+      "action_entropy": 1.0931494954718284,
+      "state_dependence": 0.6176470588235294,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -0.9997999999999999,
+      "action_counts": [
+        19,
+        52,
+        28
+      ],
+      "action_entropy": 1.0121830798790081,
+      "state_dependence": 0.4747474747474747,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": 0.20477272727272713,
+      "action_counts": [
+        28,
+        96,
+        36
+      ],
+      "action_entropy": 0.9471373499198368,
+      "state_dependence": 0.4,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": 1.1958999999999997,
+      "action_counts": [
+        30,
+        108,
+        22
+      ],
+      "action_entropy": 0.851992390526553,
+      "state_dependence": 0.32499999999999996,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": 0.10220000000000051,
+      "action_counts": [
+        32,
+        63,
+        41
+      ],
+      "action_entropy": 1.058408625536531,
+      "state_dependence": 0.5367647058823529,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": -0.8977800000000009,
+      "action_counts": [
+        33,
+        46,
+        57
+      ],
+      "action_entropy": 1.0747418266664786,
+      "state_dependence": 0.5808823529411764,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": -1.9054000000000002,
+      "action_counts": [
+        34,
+        47,
+        55
+      ],
+      "action_entropy": 1.079886354080842,
+      "state_dependence": 0.5955882352941176,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": -0.8991000000000001,
+      "action_counts": [
+        20,
+        59,
+        57
+      ],
+      "action_entropy": 1.0086602024412945,
+      "state_dependence": 0.5661764705882353,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": -0.9062090909090903,
+      "action_counts": [
+        28,
+        62,
+        46
+      ],
+      "action_entropy": 1.0501433975286978,
+      "state_dependence": 0.5441176470588236,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": -1.904,
+      "action_counts": [
+        30,
+        44,
+        62
+      ],
+      "action_entropy": 1.0566063768017562,
+      "state_dependence": 0.5441176470588236,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.004990909090909,
+      "action_counts": [
+        15,
+        31,
+        53
+      ],
+      "action_entropy": 0.9840104786817068,
+      "state_dependence": 0.46464646464646464,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -2.0054,
+      "action_counts": [
+        8,
+        40,
+        51
+      ],
+      "action_entropy": 0.9111418928928016,
+      "state_dependence": 0.48484848484848486,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -0.9984000000000001,
+      "action_counts": [
+        25,
+        22,
+        52
+      ],
+      "action_entropy": 1.0199733555707264,
+      "state_dependence": 0.4747474747474747,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -2.0082,
+      "action_counts": [
+        23,
+        30,
+        46
+      ],
+      "action_entropy": 1.0570411364504104,
+      "state_dependence": 0.5353535353535354,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": 0.19691818181818221,
+      "action_counts": [
+        36,
+        58,
+        66
+      ],
+      "action_entropy": 1.0687388816722216,
+      "state_dependence": 0.5875,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0037,
+      "action_counts": [
+        24,
+        26,
+        49
+      ],
+      "action_entropy": 1.04276634988883,
+      "state_dependence": 0.505050505050505,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0056,
+      "action_counts": [
+        30,
+        35,
+        34
+      ],
+      "action_entropy": 1.0964394315593986,
+      "state_dependence": 0.6464646464646464,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": -0.8032999999999998,
+      "action_counts": [
+        38,
+        40,
+        82
+      ],
+      "action_entropy": 1.0305836245473934,
+      "state_dependence": 0.48750000000000004,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": 1.195409090909091,
+      "action_counts": [
+        36,
+        48,
+        76
+      ],
+      "action_entropy": 1.0504234141728246,
+      "state_dependence": 0.525,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.003,
+      "action_counts": [
+        14,
+        23,
+        62
+      ],
+      "action_entropy": 0.9088016536317612,
+      "state_dependence": 0.3737373737373737,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.9990999999999999,
+      "action_counts": [
+        24,
+        32,
+        43
+      ],
+      "action_entropy": 1.070792114854131,
+      "state_dependence": 0.5656565656565656,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": 0.1966127272727273,
+      "action_counts": [
+        50,
+        42,
+        68
+      ],
+      "action_entropy": 1.0782375765382988,
+      "state_dependence": 0.575,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.008618181818182,
+      "action_counts": [
+        35,
+        25,
+        39
+      ],
+      "action_entropy": 1.082109931216499,
+      "state_dependence": 0.6060606060606061,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": 0.10247909090909135,
+      "action_counts": [
+        41,
+        43,
+        52
+      ],
+      "action_entropy": 1.0931494954718282,
+      "state_dependence": 0.6176470588235294,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": -0.8991000000000002,
+      "action_counts": [
+        35,
+        52,
+        49
+      ],
+      "action_entropy": 1.0847059877523402,
+      "state_dependence": 0.6176470588235294,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.9984,
+      "action_counts": [
+        13,
+        37,
+        49
+      ],
+      "action_entropy": 0.9825188499097689,
+      "state_dependence": 0.505050505050505,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -0.9959000000000002,
+      "action_counts": [
+        21,
+        21,
+        57
+      ],
+      "action_entropy": 0.9756868738623331,
+      "state_dependence": 0.4242424242424242,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0050999999999999,
+      "action_counts": [
+        23,
+        22,
+        54
+      ],
+      "action_entropy": 1.0039638960464636,
+      "state_dependence": 0.4545454545454546,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -2.0046999999999997,
+      "action_counts": [
+        12,
+        15,
+        72
+      ],
+      "action_entropy": 0.7733057755573634,
+      "state_dependence": 0.2727272727272727,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0043,
+      "action_counts": [
+        11,
+        16,
+        72
+      ],
+      "action_entropy": 0.7702892630055509,
+      "state_dependence": 0.2727272727272727,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -0.9997999999999999,
+      "action_counts": [
+        19,
+        22,
+        58
+      ],
+      "action_entropy": 0.9642817775109744,
+      "state_dependence": 0.41414141414141414,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0014999999999998,
+      "action_counts": [
+        21,
+        27,
+        51
+      ],
+      "action_entropy": 1.0249615284856033,
+      "state_dependence": 0.48484848484848486,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0054000000000003,
+      "action_counts": [
+        12,
+        52,
+        35
+      ],
+      "action_entropy": 0.9615770691667112,
+      "state_dependence": 0.4747474747474747,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": 1.196679000000001,
+      "action_counts": [
+        26,
+        69,
+        65
+      ],
+      "action_entropy": 1.0239298693026624,
+      "state_dependence": 0.56875,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0047000000000004,
+      "action_counts": [
+        21,
+        50,
+        28
+      ],
+      "action_entropy": 1.0311011860082746,
+      "state_dependence": 0.4949494949494949,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -0.9991000000000002,
+      "action_counts": [
+        18,
+        52,
+        29
+      ],
+      "action_entropy": 1.007817384700517,
+      "state_dependence": 0.4747474747474747,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 3,
+      "misses": 1,
+      "completion": false,
+      "steps": 160,
+      "return": 2.3068390909090923,
+      "action_counts": [
+        45,
+        64,
+        51
+      ],
+      "action_entropy": 1.087727336211174,
+      "state_dependence": 0.6,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 3,
+      "misses": 1,
+      "completion": false,
+      "steps": 160,
+      "return": 2.3018272727272726,
+      "action_counts": [
+        27,
+        87,
+        46
+      ],
+      "action_entropy": 0.9899294030865488,
+      "state_dependence": 0.45625000000000004,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -0.9977,
+      "action_counts": [
+        20,
+        41,
+        38
+      ],
+      "action_entropy": 1.0557322311895456,
+      "state_dependence": 0.5858585858585859,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0033,
+      "action_counts": [
+        23,
+        44,
+        32
+      ],
+      "action_entropy": 1.064571771868272,
+      "state_dependence": 0.5555555555555556,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0026000000000002,
+      "action_counts": [
+        26,
+        41,
+        32
+      ],
+      "action_entropy": 1.0812762782858354,
+      "state_dependence": 0.5858585858585859,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": -0.9017999999999996,
+      "action_counts": [
+        41,
+        37,
+        58
+      ],
+      "action_entropy": 1.0790805319536574,
+      "state_dependence": 0.5735294117647058,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.001409090909091,
+      "action_counts": [
+        38,
+        19,
+        42
+      ],
+      "action_entropy": 1.0481022880975517,
+      "state_dependence": 0.5757575757575757,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.8,
+      "bricks_destroyed": 4,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": 2.1939081818181805,
+      "action_counts": [
+        73,
+        24,
+        63
+      ],
+      "action_entropy": 1.0095843221410126,
+      "state_dependence": 0.54375,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": -0.8953000000000002,
+      "action_counts": [
+        60,
+        28,
+        48
+      ],
+      "action_entropy": 1.0539780582227363,
+      "state_dependence": 0.5588235294117647,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.005690909090909,
+      "action_counts": [
+        46,
+        33,
+        20
+      ],
+      "action_entropy": 1.0454542012661825,
+      "state_dependence": 0.5353535353535354,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": 1.1977619090909104,
+      "action_counts": [
+        73,
+        48,
+        39
+      ],
+      "action_entropy": 1.063298240693402,
+      "state_dependence": 0.54375,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0040999999999998,
+      "action_counts": [
+        49,
+        18,
+        32
+      ],
+      "action_entropy": 1.023105353779608,
+      "state_dependence": 0.505050505050505,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": 1.1862499090909102,
+      "action_counts": [
+        58,
+        54,
+        48
+      ],
+      "action_entropy": 1.095620804922937,
+      "state_dependence": 0.6375,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": 1.1925000000000003,
+      "action_counts": [
+        50,
+        68,
+        42
+      ],
+      "action_entropy": 1.0782375765382988,
+      "state_dependence": 0.575,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": 0.2029409090909089,
+      "action_counts": [
+        44,
+        68,
+        48
+      ],
+      "action_entropy": 1.0798705879340895,
+      "state_dependence": 0.575,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": 1.1947090909090912,
+      "action_counts": [
+        32,
+        71,
+        57
+      ],
+      "action_entropy": 1.0501254250707364,
+      "state_dependence": 0.55625,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": -0.9014909090909089,
+      "action_counts": [
+        30,
+        55,
+        51
+      ],
+      "action_entropy": 1.0673434599522904,
+      "state_dependence": 0.5955882352941176,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": -0.8047,
+      "action_counts": [
+        29,
+        63,
+        68
+      ],
+      "action_entropy": 1.040201372832264,
+      "state_dependence": 0.575,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -2.0005,
+      "action_counts": [
+        20,
+        28,
+        51
+      ],
+      "action_entropy": 1.0219937993777573,
+      "state_dependence": 0.48484848484848486,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": -0.9081999999999999,
+      "action_counts": [
+        33,
+        60,
+        43
+      ],
+      "action_entropy": 1.0687061487026441,
+      "state_dependence": 0.5588235294117647,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": 0.1989090909090915,
+      "action_counts": [
+        31,
+        77,
+        52
+      ],
+      "action_entropy": 1.0352282265587776,
+      "state_dependence": 0.51875,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": 0.0963999999999996,
+      "action_counts": [
+        24,
+        79,
+        33
+      ],
+      "action_entropy": 0.9652694313122311,
+      "state_dependence": 0.4191176470588235,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": 1.2021600000000001,
+      "action_counts": [
+        20,
+        111,
+        29
+      ],
+      "action_entropy": 0.8231483346940948,
+      "state_dependence": 0.30625,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": 0.10000909090909094,
+      "action_counts": [
+        19,
+        92,
+        25
+      ],
+      "action_entropy": 0.8507373466597321,
+      "state_dependence": 0.32352941176470584,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -2.004,
+      "action_counts": [
+        21,
+        67,
+        11
+      ],
+      "action_entropy": 0.8372791966783375,
+      "state_dependence": 0.3232323232323232,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0012,
+      "action_counts": [
+        33,
+        57,
+        9
+      ],
+      "action_entropy": 0.9020522441649992,
+      "state_dependence": 0.4242424242424242,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -2.002490909090909,
+      "action_counts": [
+        32,
+        54,
+        13
+      ],
+      "action_entropy": 0.9622609708309299,
+      "state_dependence": 0.4545454545454546,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0029,
+      "action_counts": [
+        48,
+        39,
+        12
+      ],
+      "action_entropy": 0.9737518448811426,
+      "state_dependence": 0.5151515151515151,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0021999999999998,
+      "action_counts": [
+        39,
+        40,
+        20
+      ],
+      "action_entropy": 1.0562438114003092,
+      "state_dependence": 0.595959595959596,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -2.0026,
+      "action_counts": [
+        61,
+        25,
+        13
+      ],
+      "action_entropy": 0.9124982038388599,
+      "state_dependence": 0.38383838383838387,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": -0.9026700000000007,
+      "action_counts": [
+        72,
+        21,
+        43
+      ],
+      "action_entropy": 0.9892244685583207,
+      "state_dependence": 0.47058823529411764,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -0.9994000000000004,
+      "action_counts": [
+        59,
+        16,
+        24
+      ],
+      "action_entropy": 0.9465398433201966,
+      "state_dependence": 0.4040404040404041,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0088909090909088,
+      "action_counts": [
+        51,
+        11,
+        37
+      ],
+      "action_entropy": 0.953666132583486,
+      "state_dependence": 0.48484848484848486,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.9967000000000001,
+      "action_counts": [
+        58,
+        17,
+        24
+      ],
+      "action_entropy": 0.9593257754982365,
+      "state_dependence": 0.41414141414141414,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0008,
+      "action_counts": [
+        62,
+        9,
+        28
+      ],
+      "action_entropy": 0.8682604627231995,
+      "state_dependence": 0.3737373737373737,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -0.9974000000000002,
+      "action_counts": [
+        56,
+        16,
+        27
+      ],
+      "action_entropy": 0.9711934903454784,
+      "state_dependence": 0.43434343434343436,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": 0.09750909090909166,
+      "action_counts": [
+        70,
+        28,
+        38
+      ],
+      "action_entropy": 1.023502920309847,
+      "state_dependence": 0.4852941176470589,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0032999999999999,
+      "action_counts": [
+        50,
+        23,
+        26
+      ],
+      "action_entropy": 1.035240787242301,
+      "state_dependence": 0.4949494949494949,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": 0.10379999999999989,
+      "action_counts": [
+        70,
+        32,
+        34
+      ],
+      "action_entropy": 1.0288719911037265,
+      "state_dependence": 0.4852941176470589,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0033,
+      "action_counts": [
+        60,
+        12,
+        27
+      ],
+      "action_entropy": 0.9136334974790421,
+      "state_dependence": 0.3939393939393939,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.8,
+      "bricks_destroyed": 4,
+      "interceptions": 3,
+      "misses": 1,
+      "completion": false,
+      "steps": 160,
+      "return": 3.293270272727268,
+      "action_counts": [
+        81,
+        31,
+        48
+      ],
+      "action_entropy": 1.0237886065395374,
+      "state_dependence": 0.49375,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -2.0033000000000003,
+      "action_counts": [
+        47,
+        22,
+        30
+      ],
+      "action_entropy": 1.0497078026182196,
+      "state_dependence": 0.5252525252525253,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0024909090909093,
+      "action_counts": [
+        51,
+        28,
+        20
+      ],
+      "action_entropy": 1.0219937993777573,
+      "state_dependence": 0.48484848484848486,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": 0.10048999999999952,
+      "action_counts": [
+        52,
+        44,
+        40
+      ],
+      "action_entropy": 1.0926240370360847,
+      "state_dependence": 0.6176470588235294,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -0.9972999999999999,
+      "action_counts": [
+        29,
+        46,
+        24
+      ],
+      "action_entropy": 1.0593382820895687,
+      "state_dependence": 0.5353535353535354,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -2.0026,
+      "action_counts": [
+        40,
+        36,
+        23
+      ],
+      "action_entropy": 1.0731175580603662,
+      "state_dependence": 0.595959595959596,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0068,
+      "action_counts": [
+        41,
+        42,
+        16
+      ],
+      "action_entropy": 1.0234026960071667,
+      "state_dependence": 0.5757575757575757,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0026,
+      "action_counts": [
+        42,
+        40,
+        17
+      ],
+      "action_entropy": 1.0324741028475708,
+      "state_dependence": 0.5757575757575757,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": 1.2005000000000006,
+      "action_counts": [
+        55,
+        46,
+        59
+      ],
+      "action_entropy": 1.093326698879313,
+      "state_dependence": 0.63125,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": 0.20550000000000007,
+      "action_counts": [
+        74,
+        26,
+        60
+      ],
+      "action_entropy": 1.0197238113651168,
+      "state_dependence": 0.5375,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -2.0021,
+      "action_counts": [
+        38,
+        27,
+        34
+      ],
+      "action_entropy": 1.088936746208637,
+      "state_dependence": 0.6161616161616161,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.8,
+      "bricks_destroyed": 4,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": 2.204108181818182,
+      "action_counts": [
+        58,
+        37,
+        65
+      ],
+      "action_entropy": 1.0723936282166675,
+      "state_dependence": 0.59375,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": 1.1992900000000002,
+      "action_counts": [
+        53,
+        40,
+        67
+      ],
+      "action_entropy": 1.0770797209712324,
+      "state_dependence": 0.58125,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": 1.200459090909092,
+      "action_counts": [
+        58,
+        49,
+        53
+      ],
+      "action_entropy": 1.0962340612502273,
+      "state_dependence": 0.6375,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -0.9965,
+      "action_counts": [
+        43,
+        30,
+        26
+      ],
+      "action_entropy": 1.0751396843442196,
+      "state_dependence": 0.5656565656565656,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0057999999999998,
+      "action_counts": [
+        51,
+        18,
+        30
+      ],
+      "action_entropy": 1.013445907094827,
+      "state_dependence": 0.48484848484848486,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -2.0009000000000006,
+      "action_counts": [
+        50,
+        21,
+        28
+      ],
+      "action_entropy": 1.0311011860082746,
+      "state_dependence": 0.4949494949494949,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0050999999999999,
+      "action_counts": [
+        54,
+        15,
+        30
+      ],
+      "action_entropy": 0.9783338604288433,
+      "state_dependence": 0.4545454545454546,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": -0.9012,
+      "action_counts": [
+        70,
+        26,
+        40
+      ],
+      "action_entropy": 1.018093451202438,
+      "state_dependence": 0.4852941176470589,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0095999999999998,
+      "action_counts": [
+        47,
+        16,
+        36
+      ],
+      "action_entropy": 1.0160790559868171,
+      "state_dependence": 0.5252525252525253,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.8,
+      "bricks_destroyed": 4,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": 2.203108181818182,
+      "action_counts": [
+        61,
+        21,
+        78
+      ],
+      "action_entropy": 0.9844140315553738,
+      "state_dependence": 0.5125,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": 1.196315454545453,
+      "action_counts": [
+        57,
+        47,
+        56
+      ],
+      "action_entropy": 1.0949828513081334,
+      "state_dependence": 0.64375,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.9976999999999996,
+      "action_counts": [
+        27,
+        34,
+        38
+      ],
+      "action_entropy": 1.088936746208637,
+      "state_dependence": 0.6161616161616161,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": 1.19693,
+      "action_counts": [
+        33,
+        51,
+        76
+      ],
+      "action_entropy": 1.0436513736144764,
+      "state_dependence": 0.525,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -0.9958999999999998,
+      "action_counts": [
+        13,
+        43,
+        43
+      ],
+      "action_entropy": 0.9910031673401795,
+      "state_dependence": 0.5656565656565656,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -0.9969999999999999,
+      "action_counts": [
+        7,
+        39,
+        53
+      ],
+      "action_entropy": 0.8887991767941237,
+      "state_dependence": 0.46464646464646464,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -0.9997999999999997,
+      "action_counts": [
+        15,
+        29,
+        55
+      ],
+      "action_entropy": 0.9721334130242152,
+      "state_dependence": 0.4444444444444444,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -2.0047,
+      "action_counts": [
+        15,
+        24,
+        60
+      ],
+      "action_entropy": 0.9329509745971133,
+      "state_dependence": 0.3939393939393939,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.002490909090909,
+      "action_counts": [
+        24,
+        41,
+        34
+      ],
+      "action_entropy": 1.0756652592237101,
+      "state_dependence": 0.5858585858585859,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": 1.2047999999999992,
+      "action_counts": [
+        48,
+        48,
+        64
+      ],
+      "action_entropy": 1.0888999753452206,
+      "state_dependence": 0.6,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 3,
+      "misses": 1,
+      "completion": false,
+      "steps": 160,
+      "return": 2.3008727272727274,
+      "action_counts": [
+        51,
+        58,
+        51
+      ],
+      "action_entropy": 1.0967243830489892,
+      "state_dependence": 0.6375,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": 0.20046818181818135,
+      "action_counts": [
+        37,
+        65,
+        58
+      ],
+      "action_entropy": 1.0723936282166675,
+      "state_dependence": 0.59375,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0016,
+      "action_counts": [
+        25,
+        34,
+        40
+      ],
+      "action_entropy": 1.0807427630314357,
+      "state_dependence": 0.595959595959596,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": -0.9061000000000001,
+      "action_counts": [
+        31,
+        30,
+        75
+      ],
+      "action_entropy": 0.9986759643821705,
+      "state_dependence": 0.44852941176470584,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.995,
+      "action_counts": [
+        18,
+        34,
+        47
+      ],
+      "action_entropy": 1.0306765495340495,
+      "state_dependence": 0.5252525252525253,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.9993999999999996,
+      "action_counts": [
+        12,
+        34,
+        53
+      ],
+      "action_entropy": 0.9573359203096581,
+      "state_dependence": 0.46464646464646464,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -0.9941999999999999,
+      "action_counts": [
+        12,
+        37,
+        50
+      ],
+      "action_entropy": 0.968614871986106,
+      "state_dependence": 0.4949494949494949,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0039999999999998,
+      "action_counts": [
+        9,
+        48,
+        42
+      ],
+      "action_entropy": 0.9327481967254334,
+      "state_dependence": 0.5151515151515151,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0075000000000003,
+      "action_counts": [
+        10,
+        47,
+        42
+      ],
+      "action_entropy": 0.9490096261122165,
+      "state_dependence": 0.5252525252525253,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0011999999999999,
+      "action_counts": [
+        4,
+        44,
+        51
+      ],
+      "action_entropy": 0.8317599652272772,
+      "state_dependence": 0.48484848484848486,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.9983999999999997,
+      "action_counts": [
+        16,
+        37,
+        46
+      ],
+      "action_entropy": 1.0185250363752822,
+      "state_dependence": 0.5353535353535354,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.004,
+      "action_counts": [
+        18,
+        38,
+        43
+      ],
+      "action_entropy": 1.0396999442097705,
+      "state_dependence": 0.5656565656565656,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0043,
+      "action_counts": [
+        17,
+        42,
+        40
+      ],
+      "action_entropy": 1.0324741028475708,
+      "state_dependence": 0.5757575757575757,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -0.9997999999999998,
+      "action_counts": [
+        16,
+        45,
+        38
+      ],
+      "action_entropy": 1.0204783787699045,
+      "state_dependence": 0.5454545454545454,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": -0.8960699999999998,
+      "action_counts": [
+        19,
+        74,
+        43
+      ],
+      "action_entropy": 0.9701786910588863,
+      "state_dependence": 0.4558823529411765,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0011999999999999,
+      "action_counts": [
+        19,
+        38,
+        42
+      ],
+      "action_entropy": 1.0481022880975517,
+      "state_dependence": 0.5757575757575757,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0002,
+      "action_counts": [
+        14,
+        42,
+        43
+      ],
+      "action_entropy": 1.0025892283432913,
+      "state_dependence": 0.5656565656565656,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": -1.9047000000000003,
+      "action_counts": [
+        17,
+        56,
+        63
+      ],
+      "action_entropy": 0.9817592291714123,
+      "state_dependence": 0.5367647058823529,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -2.004,
+      "action_counts": [
+        27,
+        20,
+        52
+      ],
+      "action_entropy": 1.0156560701403352,
+      "state_dependence": 0.4747474747474747,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -2.004,
+      "action_counts": [
+        18,
+        24,
+        57
+      ],
+      "action_entropy": 0.971343023497708,
+      "state_dependence": 0.4242424242424242,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -0.9903999999999998,
+      "action_counts": [
+        25,
+        26,
+        48
+      ],
+      "action_entropy": 1.0496647578735534,
+      "state_dependence": 0.5151515151515151,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -0.9990999999999999,
+      "action_counts": [
+        37,
+        24,
+        38
+      ],
+      "action_entropy": 1.0789023878538833,
+      "state_dependence": 0.6161616161616161,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.9962999999999997,
+      "action_counts": [
+        36,
+        30,
+        33
+      ],
+      "action_entropy": 1.0958536606125822,
+      "state_dependence": 0.6363636363636364,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": 1.1988770000000002,
+      "action_counts": [
+        59,
+        42,
+        59
+      ],
+      "action_entropy": 1.0868516755539717,
+      "state_dependence": 0.63125,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -2.0022,
+      "action_counts": [
+        46,
+        19,
+        34
+      ],
+      "action_entropy": 1.0399874998354937,
+      "state_dependence": 0.5353535353535354,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": 0.19960636363636305,
+      "action_counts": [
+        51,
+        40,
+        69
+      ],
+      "action_entropy": 1.0737261011668928,
+      "state_dependence": 0.56875,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": 0.1954727272727282,
+      "action_counts": [
+        55,
+        35,
+        70
+      ],
+      "action_entropy": 1.0612039759627583,
+      "state_dependence": 0.5625,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -0.9960090909090908,
+      "action_counts": [
+        28,
+        29,
+        42
+      ],
+      "action_entropy": 1.0806205640495876,
+      "state_dependence": 0.5757575757575757,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -0.9985909090909092,
+      "action_counts": [
+        28,
+        29,
+        42
+      ],
+      "action_entropy": 1.0806205640495876,
+      "state_dependence": 0.5757575757575757,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0023,
+      "action_counts": [
+        30,
+        27,
+        42
+      ],
+      "action_entropy": 1.0799113572064758,
+      "state_dependence": 0.5757575757575757,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0019,
+      "action_counts": [
+        28,
+        31,
+        40
+      ],
+      "action_entropy": 1.0869329027759738,
+      "state_dependence": 0.595959595959596,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -2.0021999999999998,
+      "action_counts": [
+        47,
+        21,
+        31
+      ],
+      "action_entropy": 1.0461752863810094,
+      "state_dependence": 0.5252525252525253,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -0.9979,
+      "action_counts": [
+        37,
+        20,
+        42
+      ],
+      "action_entropy": 1.0547084137020861,
+      "state_dependence": 0.5757575757575757,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": -0.9026,
+      "action_counts": [
+        50,
+        21,
+        65
+      ],
+      "action_entropy": 1.0091894886271107,
+      "state_dependence": 0.5220588235294117,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -0.9882000000000003,
+      "action_counts": [
+        33,
+        22,
+        44
+      ],
+      "action_entropy": 1.0608569471580185,
+      "state_dependence": 0.5555555555555556,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": -1.9038909090909089,
+      "action_counts": [
+        44,
+        40,
+        52
+      ],
+      "action_entropy": 1.0926240370360847,
+      "state_dependence": 0.6176470588235294,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": 0.10249090909090897,
+      "action_counts": [
+        31,
+        62,
+        43
+      ],
+      "action_entropy": 1.0592170902459137,
+      "state_dependence": 0.5441176470588236,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": 1.1994009090909072,
+      "action_counts": [
+        52,
+        65,
+        43
+      ],
+      "action_entropy": 1.0843522472071125,
+      "state_dependence": 0.59375,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": 0.19907181818181835,
+      "action_counts": [
+        40,
+        73,
+        47
+      ],
+      "action_entropy": 1.0644509736790566,
+      "state_dependence": 0.54375,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": -0.9034090909090908,
+      "action_counts": [
+        39,
+        42,
+        55
+      ],
+      "action_entropy": 1.0871816993041108,
+      "state_dependence": 0.5955882352941176,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.8,
+      "bricks_destroyed": 4,
+      "interceptions": 3,
+      "misses": 1,
+      "completion": false,
+      "steps": 160,
+      "return": 3.30459090909091,
+      "action_counts": [
+        33,
+        89,
+        38
+      ],
+      "action_entropy": 0.993288437082843,
+      "state_dependence": 0.44375,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": -0.9027090909090911,
+      "action_counts": [
+        21,
+        80,
+        35
+      ],
+      "action_entropy": 0.9499027966314028,
+      "state_dependence": 0.4117647058823529,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.002490909090909,
+      "action_counts": [
+        21,
+        41,
+        37
+      ],
+      "action_entropy": 1.061833095640599,
+      "state_dependence": 0.5858585858585859,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0040000000000002,
+      "action_counts": [
+        23,
+        37,
+        39
+      ],
+      "action_entropy": 1.0739154669703146,
+      "state_dependence": 0.6060606060606061,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0062909090909091,
+      "action_counts": [
+        13,
+        32,
+        54
+      ],
+      "action_entropy": 0.9622609708309299,
+      "state_dependence": 0.4545454545454546,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.9998,
+      "action_counts": [
+        16,
+        37,
+        46
+      ],
+      "action_entropy": 1.0185250363752822,
+      "state_dependence": 0.5353535353535354,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.9944999999999997,
+      "action_counts": [
+        21,
+        33,
+        45
+      ],
+      "action_entropy": 1.0535084081118584,
+      "state_dependence": 0.5454545454545454,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.004,
+      "action_counts": [
+        18,
+        24,
+        57
+      ],
+      "action_entropy": 0.971343023497708,
+      "state_dependence": 0.4242424242424242,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -2.0035999999999996,
+      "action_counts": [
+        24,
+        22,
+        53
+      ],
+      "action_entropy": 1.0122744226548284,
+      "state_dependence": 0.46464646464646464,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.004,
+      "action_counts": [
+        21,
+        30,
+        48
+      ],
+      "action_entropy": 1.0417002424008968,
+      "state_dependence": 0.5151515151515151,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0078,
+      "action_counts": [
+        22,
+        15,
+        62
+      ],
+      "action_entropy": 0.9132408717183064,
+      "state_dependence": 0.3737373737373737,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": -0.9079090909090909,
+      "action_counts": [
+        38,
+        45,
+        53
+      ],
+      "action_entropy": 1.0894669627395084,
+      "state_dependence": 0.6102941176470589,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": 1.2090400000000001,
+      "action_counts": [
+        46,
+        40,
+        74
+      ],
+      "action_entropy": 1.0615894446077965,
+      "state_dependence": 0.5375,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -0.9987,
+      "action_counts": [
+        16,
+        43,
+        40
+      ],
+      "action_entropy": 1.022915782506131,
+      "state_dependence": 0.5656565656565656,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": 1.202911000000001,
+      "action_counts": [
+        32,
+        65,
+        63
+      ],
+      "action_entropy": 1.05482250776211,
+      "state_dependence": 0.59375,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -2.0000999999999998,
+      "action_counts": [
+        22,
+        30,
+        47
+      ],
+      "action_entropy": 1.0497078026182196,
+      "state_dependence": 0.5252525252525253,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": -0.8947999999999999,
+      "action_counts": [
+        31,
+        55,
+        50
+      ],
+      "action_entropy": 1.0710513651608082,
+      "state_dependence": 0.5955882352941176,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -0.9977,
+      "action_counts": [
+        21,
+        30,
+        48
+      ],
+      "action_entropy": 1.0417002424008968,
+      "state_dependence": 0.5151515151515151,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -2.004,
+      "action_counts": [
+        32,
+        17,
+        50
+      ],
+      "action_entropy": 1.0126014055895949,
+      "state_dependence": 0.4949494949494949,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0047,
+      "action_counts": [
+        26,
+        27,
+        46
+      ],
+      "action_entropy": 1.0616288439813164,
+      "state_dependence": 0.5353535353535354,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -0.9962999999999999,
+      "action_counts": [
+        22,
+        40,
+        37
+      ],
+      "action_entropy": 1.0682302046166403,
+      "state_dependence": 0.595959595959596,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -0.996,
+      "action_counts": [
+        15,
+        42,
+        42
+      ],
+      "action_entropy": 1.0134531738483639,
+      "state_dependence": 0.5757575757575757,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": 0.10030909090909168,
+      "action_counts": [
+        34,
+        54,
+        48
+      ],
+      "action_entropy": 1.0808972028316441,
+      "state_dependence": 0.6029411764705883,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -2.0025999999999997,
+      "action_counts": [
+        19,
+        32,
+        48
+      ],
+      "action_entropy": 1.0328416883433507,
+      "state_dependence": 0.5151515151515151,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": -0.8976999999999997,
+      "action_counts": [
+        25,
+        71,
+        40
+      ],
+      "action_entropy": 1.010615583852256,
+      "state_dependence": 0.4779411764705882,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -2.0001,
+      "action_counts": [
+        29,
+        27,
+        43
+      ],
+      "action_entropy": 1.0762230882502655,
+      "state_dependence": 0.5656565656565656,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.9995,
+      "action_counts": [
+        52,
+        19,
+        28
+      ],
+      "action_entropy": 1.0121830798790081,
+      "state_dependence": 0.4747474747474747,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.005209090909091,
+      "action_counts": [
+        39,
+        30,
+        30
+      ],
+      "action_entropy": 1.0905668491367533,
+      "state_dependence": 0.6060606060606061,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -0.9950999999999998,
+      "action_counts": [
+        29,
+        38,
+        32
+      ],
+      "action_entropy": 1.0922572033790148,
+      "state_dependence": 0.6161616161616161,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0069090909090912,
+      "action_counts": [
+        32,
+        43,
+        24
+      ],
+      "action_entropy": 1.070792114854131,
+      "state_dependence": 0.5656565656565656,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -0.9998000000000001,
+      "action_counts": [
+        41,
+        32,
+        26
+      ],
+      "action_entropy": 1.0812762782858352,
+      "state_dependence": 0.5858585858585859,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -2.0019,
+      "action_counts": [
+        48,
+        27,
+        24
+      ],
+      "action_entropy": 1.0488720134270482,
+      "state_dependence": 0.5151515151515151,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": 0.09809999999999985,
+      "action_counts": [
+        52,
+        49,
+        35
+      ],
+      "action_entropy": 1.0847059877523402,
+      "state_dependence": 0.6176470588235294,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": -0.9058390909090913,
+      "action_counts": [
+        41,
+        45,
+        50
+      ],
+      "action_entropy": 1.095320936868782,
+      "state_dependence": 0.6323529411764706,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": 1.2032272727272726,
+      "action_counts": [
+        39,
+        61,
+        60
+      ],
+      "action_entropy": 1.0795307924403599,
+      "state_dependence": 0.61875,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0026000000000002,
+      "action_counts": [
+        21,
+        32,
+        46
+      ],
+      "action_entropy": 1.0501095034650767,
+      "state_dependence": 0.5353535353535354,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.9966,
+      "action_counts": [
+        21,
+        32,
+        46
+      ],
+      "action_entropy": 1.0501095034650767,
+      "state_dependence": 0.5353535353535354,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": -1.9027909090909088,
+      "action_counts": [
+        32,
+        41,
+        63
+      ],
+      "action_entropy": 1.058408625536531,
+      "state_dependence": 0.5367647058823529,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0032999999999999,
+      "action_counts": [
+        20,
+        39,
+        40
+      ],
+      "action_entropy": 1.0562438114003092,
+      "state_dependence": 0.595959595959596,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.004209090909091,
+      "action_counts": [
+        35,
+        26,
+        38
+      ],
+      "action_entropy": 1.0862717065962972,
+      "state_dependence": 0.6161616161616161,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": -0.8901909090909091,
+      "action_counts": [
+        54,
+        39,
+        43
+      ],
+      "action_entropy": 1.0890104174393562,
+      "state_dependence": 0.6029411764705883,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": 0.20267272727272714,
+      "action_counts": [
+        55,
+        40,
+        65
+      ],
+      "action_entropy": 1.0795883408865754,
+      "state_dependence": 0.59375,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -0.9991000000000003,
+      "action_counts": [
+        27,
+        35,
+        37
+      ],
+      "action_entropy": 1.0897790390024387,
+      "state_dependence": 0.6262626262626263,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.002490909090909,
+      "action_counts": [
+        31,
+        21,
+        47
+      ],
+      "action_entropy": 1.0461752863810094,
+      "state_dependence": 0.5252525252525253,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": 0.10457909090909134,
+      "action_counts": [
+        57,
+        37,
+        42
+      ],
+      "action_entropy": 1.0814783489543789,
+      "state_dependence": 0.5808823529411764,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": -0.9040000000000001,
+      "action_counts": [
+        42,
+        43,
+        51
+      ],
+      "action_entropy": 1.0947369724149807,
+      "state_dependence": 0.625,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 2,
+      "misses": 2,
+      "completion": false,
+      "steps": 160,
+      "return": 1.1944790909090903,
+      "action_counts": [
+        61,
+        46,
+        53
+      ],
+      "action_entropy": 1.092009556662994,
+      "state_dependence": 0.61875,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0021000000000002,
+      "action_counts": [
+        30,
+        36,
+        33
+      ],
+      "action_entropy": 1.0958536606125822,
+      "state_dependence": 0.6363636363636364,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -2.0012000000000003,
+      "action_counts": [
+        41,
+        20,
+        38
+      ],
+      "action_entropy": 1.0557322311895456,
+      "state_dependence": 0.5858585858585859,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -0.9998,
+      "action_counts": [
+        17,
+        40,
+        42
+      ],
+      "action_entropy": 1.0324741028475708,
+      "state_dependence": 0.5757575757575757,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": -0.9047000000000003,
+      "action_counts": [
+        31,
+        45,
+        60
+      ],
+      "action_entropy": 1.064021877559358,
+      "state_dependence": 0.5588235294117647,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": -0.8929000000000001,
+      "action_counts": [
+        27,
+        58,
+        51
+      ],
+      "action_entropy": 1.0522401999805355,
+      "state_dependence": 0.5735294117647058,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.002490909090909,
+      "action_counts": [
+        16,
+        53,
+        30
+      ],
+      "action_entropy": 0.9908490175692979,
+      "state_dependence": 0.46464646464646464,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -0.9969999999999999,
+      "action_counts": [
+        19,
+        39,
+        41
+      ],
+      "action_entropy": 1.048860258840696,
+      "state_dependence": 0.5858585858585859,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.2,
+      "bricks_destroyed": 1,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -2.0046999999999997,
+      "action_counts": [
+        16,
+        37,
+        46
+      ],
+      "action_entropy": 1.0185250363752822,
+      "state_dependence": 0.5353535353535354,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.6,
+      "bricks_destroyed": 3,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": 0.10019999999999973,
+      "action_counts": [
+        37,
+        42,
+        57
+      ],
+      "action_entropy": 1.0814783489543789,
+      "state_dependence": 0.5808823529411764,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 1,
+      "misses": 3,
+      "completion": false,
+      "steps": 136,
+      "return": -0.8946000000000007,
+      "action_counts": [
+        31,
+        49,
+        56
+      ],
+      "action_entropy": 1.0702100870034856,
+      "state_dependence": 0.5882352941176471,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 3,
+      "misses": 1,
+      "completion": false,
+      "steps": 160,
+      "return": 1.2996668181818167,
+      "action_counts": [
+        41,
+        71,
+        48
+      ],
+      "action_entropy": 1.0706464744313942,
+      "state_dependence": 0.55625,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0082,
+      "action_counts": [
+        19,
+        51,
+        29
+      ],
+      "action_entropy": 1.0181599820263978,
+      "state_dependence": 0.48484848484848486,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -0.9963000000000001,
+      "action_counts": [
+        14,
+        58,
+        27
+      ],
+      "action_entropy": 0.9442098237868817,
+      "state_dependence": 0.41414141414141414,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0001999999999998,
+      "action_counts": [
+        18,
+        54,
+        27
+      ],
+      "action_entropy": 0.9949236325717721,
+      "state_dependence": 0.4545454545454546,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    },
+    {
+      "success": 0.4,
+      "bricks_destroyed": 2,
+      "interceptions": 0,
+      "misses": 3,
+      "completion": false,
+      "steps": 99,
+      "return": -1.0005000000000004,
+      "action_counts": [
+        14,
+        62,
+        23
+      ],
+      "action_entropy": 0.9088016536317614,
+      "state_dependence": 0.3737373737373737,
+      "state_dependence_definition": "action-diversity proxy, not a causal state-dependence test"
+    }
+  ],
+  "mean_success": 0.4600000000000001,
+  "resources": {
+    "rss_mb": 124.265625,
+    "free_disk_mb": 348296.04296875,
+    "elapsed_seconds": 16.503604457975598
+  }
+}

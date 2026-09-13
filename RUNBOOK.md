@@ -97,3 +97,112 @@ sandbox. Each experiment has a bounded budget; the complete sequential suite
 naturally takes longer than one trial. Do not reset a guard to continue an
 oversized operation. Raw annotations are referenced through checksummed files,
 not discarded to shrink data or duplicated into an oversized archive.
+
+## v1.2 four-task extension (historical studies remain frozen)
+
+Read `experiments/METHODS_V12.md`. The new Snake is relative-action 6×6;
+`experiments/snake_run_plan.json` remains the separate historical absolute-action
+study. Never delete historical artifacts or run historical artifact writers just
+to validate this extension. README.md remains unchanged.
+
+Install the frozen environment from the repository root:
+
+```sh
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements-lock.txt
+.venv/bin/python -m pip install -e . --no-deps
+export OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1
+```
+
+The locked scientific environment includes SciPy, matplotlib and neuprint-python.
+The canonical acquired graph and existing historical `runs/` are local ignored
+scientific inputs. Preserve/restore these from the original workspace or backup;
+see `experiments/DATA.md` for authenticated acquisition provenance. A source-only
+clone does not include the raw connectome or checkpoints. The compact v1.2 result
+archive is retained evidence; it is not a replacement for checkpoint replay.
+
+Restore reproducible rewired caches (standardizers already ship as frozen files):
+
+```sh
+.venv/bin/python scripts/v12_restore_graphs.py
+```
+
+Development preparation and bounded candidate validation, preserving existing
+outputs on rerun:
+
+```sh
+for task in flappy pong breakout snake; do
+  .venv/bin/python scripts/v12_prepare.py --task "$task"
+  .venv/bin/python scripts/v12_develop.py --task "$task" --candidate 0
+  .venv/bin/python scripts/v12_develop.py --task "$task" --candidate 1
+done
+.venv/bin/python scripts/v12_freeze.py
+```
+
+Freeze deliberately refuses to overwrite an existing plan. The delivered plan
+is already frozen; do not regenerate it or tune using confirmatory results.
+Fresh-development replication belongs in a separate copy with only the new
+v1.2 outputs removed, never historical outputs. Confirmatory reproduction uses
+the delivered plan and standardizer files so their byte hashes remain exact.
+
+Run one trial or the entire matched grid:
+
+```sh
+.venv/bin/python scripts/v12_trial.py --task pong --condition biological --seed 0
+.venv/bin/python scripts/v12_suite.py
+```
+
+A single trial exits 7 after a safe checkpoint when another guarded segment is
+needed; repeat the same command. The suite resumes automatically, at most 20
+segments per trial. Completed results are preserved. To regenerate completed
+v1.2 trials, use a separate working copy without its `runs/v12-*` directories.
+Do not delete historical `runs/v1*`, v1.1, or Snake directories.
+
+Representation analysis, tables, figures and audit:
+
+```sh
+for task in flappy pong breakout snake; do
+  .venv/bin/python scripts/v12_representation.py --task "$task"
+done
+.venv/bin/python scripts/v12_report.py
+.venv/bin/python scripts/v12_audit.py
+.venv/bin/python scripts/v12_manuscript.py
+```
+
+Representation scripts preserve completed outputs. Reports regenerate only
+`artifacts/v12/`; manuscript generation requires a passing matching audit.
+For clean and perturbation checkpoint replay (no training, exact-row comparison):
+
+```sh
+for task in flappy pong breakout snake; do
+  for seed in 0 1 2; do
+    .venv/bin/python scripts/v12_replay.py --task "$task" --seed "$seed"
+  done
+done
+```
+
+Validation without rewriting the historical timing artifact:
+
+```sh
+.venv/bin/python scripts/health_check.py
+.venv/bin/python -m pip check
+.venv/bin/ruff check .
+.venv/bin/ruff format --check .
+.venv/bin/python -m pytest -q
+.venv/bin/python scripts/v12_audit.py
+shasum -a 256 README.md
+```
+
+All training histories, evaluation rows, action counts, fixed-history state probes,
+resource snapshots, graph/code/plan/checkpoint hashes and seed lists are retained
+in `runs/v12-*/result.json` and `artifacts/v12/results_archive.json.gz`. Full
+checkpoint NPZ files remain in ignored run directories. CSVs and five paired
+PNG/SVG figures are under `artifacts/v12/`. Catch/Dodge aggregation requires the
+unchanged historical result files; the new archive also records those source rows.
+
+Additional read-only preservation and executor checks:
+
+```sh
+.venv/bin/python scripts/v12_historical_replay.py
+.venv/bin/python scripts/v12_core_equivalence.py
+```

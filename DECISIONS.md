@@ -220,3 +220,26 @@ scripts/snake_visualize.py defaults to replaying the median-performing evaluatio
 episode and records its rank among the 40 in artifacts/snake_demo.json. Selecting the
 best episode for a demonstration figure would misrepresent typical behaviour even
 though the figure is not itself a result.
+
+## D028 — isolated six-task extension
+The v1.2 battery adds Flappy, Pong, Breakout and relative-action 6x6 Snake.
+Historical v1, v1.1 and absolute-action 8x8 Snake files are protected by
+artifacts/v12/historical_hashes.json; the prior manuscript is archived verbatim.
+The same authentic MaleCNS subgraph is reused with frozen recurrent weights.
+Only the artificial actor–critic learns. All new scientific seeds exceed 100 million.
+
+## D029 — bounded development and unchanged resource guards
+Two predeclared 300-episode candidates per task, selected by development score
+with candidate zero winning ties. Flappy chose zero (both scored zero); other
+tasks chose one. No additional tuning is allowed after protocol freeze.
+Trials resume at episode/evaluation boundaries in independent guarded processes;
+no resource cap is raised. The v1.2-only fixed CSR core is numerically equivalent
+to the historical edge implementation (300-tick biological/rewired checks,
+including lesions; automated synthetic regression). Historical code is unchanged.
+
+## D030 — interpretation and feature calibration
+Each topology receives its own development-only standardizer under matched
+exogenous behavior. Fit coverage is limited, particularly Flappy and Snake.
+Fixed-history observation interventions measure input-sensitive greedy actions;
+trajectory action diversity alone is labeled a proxy. Three independent seeds
+per condition balance matched controls with resources; intervals are descriptive.

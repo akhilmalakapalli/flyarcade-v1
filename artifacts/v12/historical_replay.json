@@ -1,0 +1,100 @@
+{
+  "status": "PASS",
+  "trials": [
+    {
+      "trial": "v11-catch-eprop-0",
+      "status": "exact match",
+      "result_sha256": "9626caeb2913347231343afed509e66f2c82193824a96a3d654d760cb44c39f0"
+    },
+    {
+      "trial": "v11-catch-eprop-1",
+      "status": "exact match",
+      "result_sha256": "438a7fd4b87df20ab3e9daf80931b202f433ef06ee79fd340966d961b5c7f400"
+    },
+    {
+      "trial": "v11-catch-eprop-2",
+      "status": "exact match",
+      "result_sha256": "56562c41854b5cfcd9799540871da484226fee304e2bd3dbebaeec2efa93d8a2"
+    },
+    {
+      "trial": "v11-catch-frozen-0",
+      "status": "exact match",
+      "result_sha256": "797577d40b5cbeb93dabaa6939f1d4d2df5b7e5f54fa8ab94cdb41d33964ad99"
+    },
+    {
+      "trial": "v11-catch-frozen-1",
+      "status": "exact match",
+      "result_sha256": "eb073b709201eeedecd316f2d6f843e66ed1fd48f0a7fcc8a6cf3815ae82a5b2"
+    },
+    {
+      "trial": "v11-catch-frozen-2",
+      "status": "exact match",
+      "result_sha256": "b43823f6f457be05ba25f487f98450ce1228c4c4401b08649f440ab851270d59"
+    },
+    {
+      "trial": "v11-catch-rewired-0",
+      "status": "exact match",
+      "result_sha256": "07da5511d75d74de27ee97cdc4eb6b4ffcfe7ea6a9959a4e84928b4dbc4306e6"
+    },
+    {
+      "trial": "v11-catch-rewired-1",
+      "status": "exact match",
+      "result_sha256": "cdb832067ac30d204b4d12fda66017a2124db53864e80523e004d938f301d87b"
+    },
+    {
+      "trial": "v11-catch-rewired-2",
+      "status": "exact match",
+      "result_sha256": "63deb7847cf5779f50f593bc4656f64897a3c48492f47a85768ccb7905cd782c"
+    },
+    {
+      "trial": "v11-dodge-eprop-0",
+      "status": "exact match",
+      "result_sha256": "f9b16e00144c9dfe69285b97a062725f477a10f767b8ef1ce6980b811ce60243"
+    },
+    {
+      "trial": "v11-dodge-eprop-1",
+      "status": "exact match",
+      "result_sha256": "4228046e8ebf12669a392d400c78dc339533f4e5e27b2b238be31e5391a911dc"
+    },
+    {
+      "trial": "v11-dodge-eprop-2",
+      "status": "exact match",
+      "result_sha256": "30eea87780b2defe157ee3dafb91bbcef20985b98a3622336420fb66964cd6d9"
+    },
+    {
+      "trial": "v11-dodge-frozen-0",
+      "status": "exact match",
+      "result_sha256": "f1196f6d1ea6c9259e903f6d2a987e90202b2ac0b681fd001667c1897cf36da3"
+    },
+    {
+      "trial": "v11-dodge-frozen-1",
+      "status": "exact match",
+      "result_sha256": "abecb72465730ddf229ed7f298a3d4f7e91d0ca53bf068e291ed271a26c9bfe2"
+    },
+    {
+      "trial": "v11-dodge-frozen-2",
+      "status": "exact match",
+      "result_sha256": "7f5c2183264241a26006dcca693a7e62ca07c095a5b3c9e8ed230dbedd135277"
+    },
+    {
+      "trial": "v11-dodge-rewired-0",
+      "status": "exact match",
+      "result_sha256": "a38a475f398b438f1e651f0bb492851f8ca2378fb3e24a780230e8aaa2af20a8"
+    },
+    {
+      "trial": "v11-dodge-rewired-1",
+      "status": "exact match",
+      "result_sha256": "19bdc73be57081b13877e0051c79ecb75504a082fb52660e2c65ec80f18c599c"
+    },
+    {
+      "trial": "v11-dodge-rewired-2",
+      "status": "exact match",
+      "result_sha256": "fcc3c70320fdc82e8a6b0695f33ef051f64ed70812eb044010b54ddef222e7fe"
+    }
+  ],
+  "resources": {
+    "rss_mb": 153.578125,
+    "free_disk_mb": 348265.53125,
+    "elapsed_seconds": 38.24157104099868
+  }
+}
