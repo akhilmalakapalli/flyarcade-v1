@@ -1,0 +1,16 @@
+{
+  "trials": 15,
+  "graph_hashes_match_unmodified_graphs_on_disk": true,
+  "random_and_reference_identical_across_conditions": true,
+  "evaluation_modes": [
+    "greedy argmax, no learning, fresh neural and recurrent state"
+  ],
+  "all_finite": true,
+  "actor_critic_changed_in_every_trial": true,
+  "saved_policy_replays_exactly": {
+    "pong-confirm-biological-s2": true,
+    "pong-confirm-rewired-s4": true
+  },
+  "development_and_confirmatory_seed_ranges_disjoint": true,
+  "all_evaluation_seeds_in_conf_eval": true
+}
