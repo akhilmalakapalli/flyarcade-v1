@@ -243,3 +243,30 @@ exogenous behavior. Fit coverage is limited, particularly Flappy and Snake.
 Fixed-history observation interventions measure input-sensitive greedy actions;
 trajectory action diversity alone is labeled a proxy. Three independent seeds
 per condition balance matched controls with resources; intervals are descriptive.
+
+## D031 — v1.3 lives in a sibling package on its own branch
+v1.3 code is `src/flyarcade_v13/` (not `src/flyarcade/v13/`) because the frozen v1.2
+code hash covers every module under `src/flyarcade`; a sibling package keeps the
+v1.2 audit and trial identity checks valid. Work is on `flyarcade-v1.3-multitask`
+(the user's requested name). 638 historical files are hash-protected in
+`artifacts/v13/historical_hashes.json`.
+
+## D032 — NumPy learner instead of PyTorch
+`pyproject.toml` and `requirements-lock.txt` are protected v1.2 files, so no optional
+dependency group was added. The MLP/GRU PPO learner is NumPy with hand-derived
+gradients checked by finite differences. Parameters are C-contiguous because
+Accelerate BLAS produced last-bit differences between memory layouts, which broke
+exact checkpoint resume.
+
+## D033 — Flappy needs no environment change; the reference is an oracle
+A short-horizon MPC over the exact deterministic dynamics of the visible pipe (no
+future RNG) passes 100/100 fresh development episodes on the unchanged v1.2 Flappy.
+The v1.2 heuristic (0.0875) failed by overshooting the gap. Gap closure for Flappy
+uses the oracle (stricter); the v1.2 heuristic is still reported.
+
+## D034 — v1.3 feature pipeline
+Each environment is one column of a batched copy of the frozen Stage A core with its
+own neural RNG (episode seed + 1e9), reproducing the v1.2 controller bit for bit at
+4 ticks. Standardizers are refit on v1.3 feature_fit seeds per task/topology/ticks,
+without sqrt(N) normalisation (the LayerNorm learner does not need it), with at least
+8,000 states. Time-limit truncations bootstrap V(s_T); genuine terminals do not.

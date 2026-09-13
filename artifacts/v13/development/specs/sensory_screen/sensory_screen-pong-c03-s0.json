@@ -1,0 +1,22 @@
+{
+ "name": "sensory_screen-pong-c03-s0",
+ "stage": "sensory_screen",
+ "config_index": 3,
+ "config": {
+  "task": "pong",
+  "seed": 0,
+  "source": "sensory",
+  "transitions": 150000,
+  "train_purpose": "screen_train",
+  "eval_purpose": "screen_eval",
+  "lr": 0.0003,
+  "shaping": 1.0,
+  "ent": 0.01
+ },
+ "evaluation": {
+  "purpose": "screen_eval",
+  "episodes": 40,
+  "probe_purpose": "dev_probe"
+ },
+ "output": "runs/v13-dev/sensory_screen/sensory_screen-pong-c03-s0"
+}

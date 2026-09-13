@@ -1,0 +1,22 @@
+{
+ "name": "sensory_screen-snake-c01-s0",
+ "stage": "sensory_screen",
+ "config_index": 1,
+ "config": {
+  "task": "snake",
+  "seed": 0,
+  "source": "sensory",
+  "transitions": 300000,
+  "train_purpose": "screen_train",
+  "eval_purpose": "screen_eval",
+  "lr": 0.0003,
+  "shaping": 0.0,
+  "ent": 0.01
+ },
+ "evaluation": {
+  "purpose": "screen_eval",
+  "episodes": 40,
+  "probe_purpose": "dev_probe"
+ },
+ "output": "runs/v13-dev/sensory_screen/sensory_screen-snake-c01-s0"
+}

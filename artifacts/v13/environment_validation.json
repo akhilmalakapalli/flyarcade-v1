@@ -1,0 +1,165 @@
+{
+  "episodes_per_condition": 100,
+  "tasks": {
+    "flappy": {
+      "random": {
+        "mean_success": 0.0,
+        "sd": 0.0,
+        "episodes": 100,
+        "deaths": {
+          "boundary": 99,
+          "pipe": 1
+        },
+        "obstacles_passed_distribution": [
+          100,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "heuristic_v12": {
+        "mean_success": 0.06666666666666667,
+        "sd": 0.1111111111111111,
+        "episodes": 100,
+        "deaths": {
+          "boundary": 4,
+          "pipe": 96
+        },
+        "obstacles_passed_distribution": [
+          67,
+          28,
+          4,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      "reference": {
+        "mean_success": 1.0,
+        "sd": 0.0,
+        "episodes": 100,
+        "deaths": {
+          "None": 100
+        },
+        "obstacles_passed_distribution": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          100
+        ]
+      },
+      "deterministic_trajectory_sha256": "273601528b55f99b20842b8ce14963f515a88308ca847b02752fb0bbe2c5620c",
+      "deterministic": true,
+      "curriculum_levels": {
+        "wide": {
+          "mean_success": 0.6666666666666666,
+          "sd": 0.0,
+          "episodes": 40
+        },
+        "intermediate": {
+          "mean_success": 0.8333333333333334,
+          "sd": 0.0,
+          "episodes": 40
+        }
+      }
+    },
+    "pong": {
+      "random": {
+        "mean_success": 0.24111111111111108,
+        "sd": 0.15875733293125807,
+        "episodes": 100
+      },
+      "heuristic_v12": {
+        "mean_success": 1.0,
+        "sd": 0.0,
+        "episodes": 100
+      },
+      "reference": {
+        "mean_success": 1.0,
+        "sd": 0.0,
+        "episodes": 100
+      },
+      "deterministic_trajectory_sha256": "8057bf602e8d25eb3f4ed368857ac8b7c2c0686203e7c5f0b1b20c3b6efb5dd9",
+      "deterministic": true,
+      "curriculum_levels": {}
+    },
+    "breakout": {
+      "random": {
+        "mean_success": 0.4540000000000001,
+        "sd": 0.12666666666666662,
+        "episodes": 100
+      },
+      "heuristic_v12": {
+        "mean_success": 0.584,
+        "sd": 0.20036330638481326,
+        "episodes": 100
+      },
+      "reference": {
+        "mean_success": 0.584,
+        "sd": 0.20036330638481326,
+        "episodes": 100
+      },
+      "deterministic_trajectory_sha256": "4f52810c0abe7c04bb1df7c98d84475fb9adbc2e9dc6d38453d1b671f5bbc9a6",
+      "deterministic": true,
+      "curriculum_levels": {
+        "bricks1": {
+          "mean_success": 0.915,
+          "sd": 0.1001281230506246,
+          "episodes": 40
+        },
+        "bricks3": {
+          "mean_success": 0.7550000000000001,
+          "sd": 0.1723889460433839,
+          "episodes": 40
+        }
+      }
+    },
+    "snake": {
+      "random": {
+        "mean_success": 0.017,
+        "sd": 0.037752516806863694,
+        "episodes": 100
+      },
+      "heuristic_v12": {
+        "mean_success": 0.956,
+        "sd": 0.10082488068753945,
+        "episodes": 100
+      },
+      "reference": {
+        "mean_success": 0.956,
+        "sd": 0.10082488068753945,
+        "episodes": 100
+      },
+      "deterministic_trajectory_sha256": "9b81bbd11ac7da306a5f0a0dea6e08469ffb23165432273472e6f4316c53783c",
+      "deterministic": true,
+      "curriculum_levels": {
+        "size4": {
+          "mean_success": 0.8275,
+          "sd": 0.16639079732935183,
+          "episodes": 40
+        },
+        "size5": {
+          "mean_success": 0.915,
+          "sd": 0.15283643007795739,
+          "episodes": 40
+        }
+      }
+    }
+  },
+  "flappy_gate": {
+    "required": 0.7,
+    "preferred": 0.8,
+    "oracle_mean_success": 1.0,
+    "passed": true,
+    "dynamics_changed": false,
+    "note": "short-horizon MPC over exact deterministic dynamics of the visible obstacle; unchanged v1.2 Flappy. The v1.2 reactive heuristic overshoots the gap."
+  },
+  "target_source_sha256": "37090574965053743a4eff06579fb34b5f4f32023a12541272d810fa6e470448"
+}

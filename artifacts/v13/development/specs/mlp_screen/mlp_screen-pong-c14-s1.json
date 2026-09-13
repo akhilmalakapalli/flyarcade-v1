@@ -1,0 +1,24 @@
+{
+ "name": "mlp_screen-pong-c14-s1",
+ "stage": "mlp_screen",
+ "config_index": 14,
+ "config": {
+  "task": "pong",
+  "seed": 1,
+  "source": "fly",
+  "arch": "mlp",
+  "transitions": 150000,
+  "train_purpose": "screen_train",
+  "eval_purpose": "screen_eval",
+  "lr": 0.001,
+  "ent": 0.01,
+  "ticks": 8,
+  "shaping": 0.0
+ },
+ "evaluation": {
+  "purpose": "screen_eval",
+  "episodes": 40,
+  "probe_purpose": "dev_probe"
+ },
+ "output": "runs/v13-dev/mlp_screen/mlp_screen-pong-c14-s1"
+}

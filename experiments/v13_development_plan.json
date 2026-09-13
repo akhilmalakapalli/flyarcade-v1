@@ -1,0 +1,586 @@
+{
+ "version": "1.3-development",
+ "created_at": "2026-09-13T01:46:57.032338+00:00",
+ "status": "development (mutable log; not a confirmatory protocol)",
+ "seed_namespace": {
+  "rule": "200e6 + task_index*100e6 + purpose_index*5e6 + seed*250000 + index",
+  "base": 200000000,
+  "task_block": 100000000,
+  "purpose_block": 5000000,
+  "task_order": [
+   "flappy",
+   "pong",
+   "breakout",
+   "snake"
+  ],
+  "development_purposes": [
+   "env_validation",
+   "feature_fit",
+   "screen_train",
+   "screen_eval",
+   "validate_train",
+   "validate_eval",
+   "curriculum_train",
+   "representation",
+   "dev_perturb",
+   "dev_probe",
+   "dev_model",
+   "dev_rollout"
+  ],
+  "reserved_confirmatory_purposes_never_used_in_development": [
+   "conf_train",
+   "conf_eval",
+   "conf_perturb",
+   "conf_probe",
+   "conf_model",
+   "conf_rollout"
+  ],
+  "derived": "neural input RNG = episode seed + 1e9; random-baseline RNG = seed + 2e9",
+  "ranges": {
+   "flappy": {
+    "env_validation": [
+     200000000,
+     205000000
+    ],
+    "feature_fit": [
+     205000000,
+     210000000
+    ],
+    "screen_train": [
+     210000000,
+     215000000
+    ],
+    "screen_eval": [
+     215000000,
+     220000000
+    ],
+    "validate_train": [
+     220000000,
+     225000000
+    ],
+    "validate_eval": [
+     225000000,
+     230000000
+    ],
+    "curriculum_train": [
+     230000000,
+     235000000
+    ],
+    "representation": [
+     235000000,
+     240000000
+    ],
+    "dev_perturb": [
+     240000000,
+     245000000
+    ],
+    "dev_probe": [
+     245000000,
+     250000000
+    ],
+    "dev_model": [
+     250000000,
+     255000000
+    ],
+    "dev_rollout": [
+     255000000,
+     260000000
+    ],
+    "conf_train": [
+     260000000,
+     265000000
+    ],
+    "conf_eval": [
+     265000000,
+     270000000
+    ],
+    "conf_perturb": [
+     270000000,
+     275000000
+    ],
+    "conf_probe": [
+     275000000,
+     280000000
+    ],
+    "conf_model": [
+     280000000,
+     285000000
+    ],
+    "conf_rollout": [
+     285000000,
+     290000000
+    ]
+   },
+   "pong": {
+    "env_validation": [
+     300000000,
+     305000000
+    ],
+    "feature_fit": [
+     305000000,
+     310000000
+    ],
+    "screen_train": [
+     310000000,
+     315000000
+    ],
+    "screen_eval": [
+     315000000,
+     320000000
+    ],
+    "validate_train": [
+     320000000,
+     325000000
+    ],
+    "validate_eval": [
+     325000000,
+     330000000
+    ],
+    "curriculum_train": [
+     330000000,
+     335000000
+    ],
+    "representation": [
+     335000000,
+     340000000
+    ],
+    "dev_perturb": [
+     340000000,
+     345000000
+    ],
+    "dev_probe": [
+     345000000,
+     350000000
+    ],
+    "dev_model": [
+     350000000,
+     355000000
+    ],
+    "dev_rollout": [
+     355000000,
+     360000000
+    ],
+    "conf_train": [
+     360000000,
+     365000000
+    ],
+    "conf_eval": [
+     365000000,
+     370000000
+    ],
+    "conf_perturb": [
+     370000000,
+     375000000
+    ],
+    "conf_probe": [
+     375000000,
+     380000000
+    ],
+    "conf_model": [
+     380000000,
+     385000000
+    ],
+    "conf_rollout": [
+     385000000,
+     390000000
+    ]
+   },
+   "breakout": {
+    "env_validation": [
+     400000000,
+     405000000
+    ],
+    "feature_fit": [
+     405000000,
+     410000000
+    ],
+    "screen_train": [
+     410000000,
+     415000000
+    ],
+    "screen_eval": [
+     415000000,
+     420000000
+    ],
+    "validate_train": [
+     420000000,
+     425000000
+    ],
+    "validate_eval": [
+     425000000,
+     430000000
+    ],
+    "curriculum_train": [
+     430000000,
+     435000000
+    ],
+    "representation": [
+     435000000,
+     440000000
+    ],
+    "dev_perturb": [
+     440000000,
+     445000000
+    ],
+    "dev_probe": [
+     445000000,
+     450000000
+    ],
+    "dev_model": [
+     450000000,
+     455000000
+    ],
+    "dev_rollout": [
+     455000000,
+     460000000
+    ],
+    "conf_train": [
+     460000000,
+     465000000
+    ],
+    "conf_eval": [
+     465000000,
+     470000000
+    ],
+    "conf_perturb": [
+     470000000,
+     475000000
+    ],
+    "conf_probe": [
+     475000000,
+     480000000
+    ],
+    "conf_model": [
+     480000000,
+     485000000
+    ],
+    "conf_rollout": [
+     485000000,
+     490000000
+    ]
+   },
+   "snake": {
+    "env_validation": [
+     500000000,
+     505000000
+    ],
+    "feature_fit": [
+     505000000,
+     510000000
+    ],
+    "screen_train": [
+     510000000,
+     515000000
+    ],
+    "screen_eval": [
+     515000000,
+     520000000
+    ],
+    "validate_train": [
+     520000000,
+     525000000
+    ],
+    "validate_eval": [
+     525000000,
+     530000000
+    ],
+    "curriculum_train": [
+     530000000,
+     535000000
+    ],
+    "representation": [
+     535000000,
+     540000000
+    ],
+    "dev_perturb": [
+     540000000,
+     545000000
+    ],
+    "dev_probe": [
+     545000000,
+     550000000
+    ],
+    "dev_model": [
+     550000000,
+     555000000
+    ],
+    "dev_rollout": [
+     555000000,
+     560000000
+    ],
+    "conf_train": [
+     560000000,
+     565000000
+    ],
+    "conf_eval": [
+     565000000,
+     570000000
+    ],
+    "conf_perturb": [
+     570000000,
+     575000000
+    ],
+    "conf_probe": [
+     575000000,
+     580000000
+    ],
+    "conf_model": [
+     580000000,
+     585000000
+    ],
+    "conf_rollout": [
+     585000000,
+     590000000
+    ]
+   }
+  },
+  "historical_blocks": {
+   "v1 training 1000+10000*seed+ep, evaluation 3000000+100*seed+i (+17/+500000 derived)": [
+    0,
+    3600000
+   ],
+   "v1.1 development/confirmatory 4000000-6000500": [
+    4000000,
+    6100000
+   ],
+   "historical absolute-action Snake 7000000-9000500": [
+    7000000,
+    9100000
+   ],
+   "v1.2 all purposes 100000000-140000000": [
+    100000000,
+    140000000
+   ],
+   "v1.2 derived neural RNG (+1e9)": [
+    1100000000,
+    1140000000
+   ],
+   "v1.2 derived behaviour RNG (+2e9)": [
+    2100000000,
+    2140000000
+   ]
+  },
+  "disjoint_verified": true
+ },
+ "capacity_ladder": [
+  "S: sensory-only PPO (engineered observation -> same learner family)",
+  "A2: frozen fly core + MLP PPO",
+  "A3: frozen fly core + GRU PPO (only if A2 inadequate)",
+  "curriculum if sparse reward limits learning",
+  "feature integration / readout scope variants if diagnostics justify",
+  "B/C recurrent plasticity only as fallback"
+ ],
+ "budgets": {
+  "screen_transitions": {
+   "pong": 150000,
+   "flappy": 200000,
+   "breakout": 200000,
+   "snake": 300000
+  },
+  "full_transitions": {
+   "pong": 300000,
+   "flappy": 500000,
+   "breakout": 500000,
+   "snake": 1000000
+  },
+  "screen_seeds": 2,
+  "screen_eval_episodes": 40,
+  "validation_seeds": 5,
+  "validation_eval_episodes": 60
+ },
+ "defaults": {
+  "source": "fly",
+  "topology": "biological",
+  "readout": "descending",
+  "ticks": 4,
+  "arch": "mlp",
+  "hidden": 128,
+  "core": 64,
+  "gamma": 0.99,
+  "lam": 0.95,
+  "lr": 0.0003,
+  "anneal_lr": true,
+  "clip": 0.2,
+  "ent": 0.01,
+  "vf": 0.5,
+  "max_grad_norm": 0.5,
+  "epochs": 4,
+  "envs": 16,
+  "steps": 128,
+  "minibatches": 8,
+  "chunk": 16,
+  "reward_scale": 1.0,
+  "shaping": 0.0,
+  "transitions": 200000,
+  "curriculum": [
+   [
+    "target",
+    1.0
+   ]
+  ],
+  "eval_every": 10,
+  "curve_episodes": 16,
+  "train_purpose": "screen_train",
+  "eval_purpose": "screen_eval",
+  "model_purpose": "dev_model",
+  "rollout_purpose": "dev_rollout",
+  "seed": 0,
+  "learn": true
+ },
+ "selection_rule": "screening rank = mean dev gap closure - 0.5 * SD across seeds; configs with a constant-action or non-finite seed are ranked last. Top 3 per task go to full validation. Among validated configs passing the development gate, the simplest rung (sensory < MLP < GRU < curriculum) is chosen, then highest mean gap closure.",
+ "development_gate": {
+  "per_task_over_5_validation_seeds": [
+   "mean after > mean before",
+   "mean after > mean random + 0.05",
+   ">= 4/5 seeds individually > matched random + 0.05",
+   "mean fixed-history state dependence > 0.05",
+   "finite model/optimizer values",
+   "final rollout policy entropy > 1e-3 on every seed",
+   "no constant-action collapse (greedy top-action fraction < 0.98 every seed)",
+   "mean gap closure >= 0.15 (preferred >= 0.25)"
+  ],
+  "reference_policy": {
+   "flappy": "MPC oracle (stricter than the 0.0875 v1.2 heuristic)",
+   "pong": "v1.2 heuristic",
+   "breakout": "v1.2 heuristic",
+   "snake": "v1.2 heuristic"
+  }
+ },
+ "stages_generated": [
+  {
+   "stage": "sensory_screen",
+   "generated_at": "2026-09-13T01:46:57.148440+00:00",
+   "tasks": [
+    "flappy",
+    "pong",
+    "breakout",
+    "snake"
+   ],
+   "specs": 64,
+   "new_specs": 64,
+   "configs": [
+    "{\"ent\": 0.003, \"eval_purpose\": \"screen_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 0.0, \"source\": \"sensory\", \"task\": \"breakout\", \"train_purpose\": \"screen_train\", \"transitions\": 200000}",
+    "{\"ent\": 0.003, \"eval_purpose\": \"screen_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 0.0, \"source\": \"sensory\", \"task\": \"flappy\", \"train_purpose\": \"screen_train\", \"transitions\": 200000}",
+    "{\"ent\": 0.003, \"eval_purpose\": \"screen_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 0.0, \"source\": \"sensory\", \"task\": \"pong\", \"train_purpose\": \"screen_train\", \"transitions\": 150000}",
+    "{\"ent\": 0.003, \"eval_purpose\": \"screen_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 0.0, \"source\": \"sensory\", \"task\": \"snake\", \"train_purpose\": \"screen_train\", \"transitions\": 300000}",
+    "{\"ent\": 0.003, \"eval_purpose\": \"screen_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 1.0, \"source\": \"sensory\", \"task\": \"breakout\", \"train_purpose\": \"screen_train\", \"transitions\": 200000}",
+    "{\"ent\": 0.003, \"eval_purpose\": \"screen_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 1.0, \"source\": \"sensory\", \"task\": \"flappy\", \"train_purpose\": \"screen_train\", \"transitions\": 200000}",
+    "{\"ent\": 0.003, \"eval_purpose\": \"screen_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 1.0, \"source\": \"sensory\", \"task\": \"pong\", \"train_purpose\": \"screen_train\", \"transitions\": 150000}",
+    "{\"ent\": 0.003, \"eval_purpose\": \"screen_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 1.0, \"source\": \"sensory\", \"task\": \"snake\", \"train_purpose\": \"screen_train\", \"transitions\": 300000}",
+    "{\"ent\": 0.003, \"eval_purpose\": \"screen_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 0.0, \"source\": \"sensory\", \"task\": \"breakout\", \"train_purpose\": \"screen_train\", \"transitions\": 200000}",
+    "{\"ent\": 0.003, \"eval_purpose\": \"screen_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 0.0, \"source\": \"sensory\", \"task\": \"flappy\", \"train_purpose\": \"screen_train\", \"transitions\": 200000}",
+    "{\"ent\": 0.003, \"eval_purpose\": \"screen_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 0.0, \"source\": \"sensory\", \"task\": \"pong\", \"train_purpose\": \"screen_train\", \"transitions\": 150000}",
+    "{\"ent\": 0.003, \"eval_purpose\": \"screen_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 0.0, \"source\": \"sensory\", \"task\": \"snake\", \"train_purpose\": \"screen_train\", \"transitions\": 300000}",
+    "{\"ent\": 0.003, \"eval_purpose\": \"screen_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 1.0, \"source\": \"sensory\", \"task\": \"breakout\", \"train_purpose\": \"screen_train\", \"transitions\": 200000}",
+    "{\"ent\": 0.003, \"eval_purpose\": \"screen_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 1.0, \"source\": \"sensory\", \"task\": \"flappy\", \"train_purpose\": \"screen_train\", \"transitions\": 200000}",
+    "{\"ent\": 0.003, \"eval_purpose\": \"screen_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 1.0, \"source\": \"sensory\", \"task\": \"pong\", \"train_purpose\": \"screen_train\", \"transitions\": 150000}",
+    "{\"ent\": 0.003, \"eval_purpose\": \"screen_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 1.0, \"source\": \"sensory\", \"task\": \"snake\", \"train_purpose\": \"screen_train\", \"transitions\": 300000}",
+    "{\"ent\": 0.01, \"eval_purpose\": \"screen_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 0.0, \"source\": \"sensory\", \"task\": \"breakout\", \"train_purpose\": \"screen_train\", \"transitions\": 200000}",
+    "{\"ent\": 0.01, \"eval_purpose\": \"screen_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 0.0, \"source\": \"sensory\", \"task\": \"flappy\", \"train_purpose\": \"screen_train\", \"transitions\": 200000}",
+    "{\"ent\": 0.01, \"eval_purpose\": \"screen_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 0.0, \"source\": \"sensory\", \"task\": \"pong\", \"train_purpose\": \"screen_train\", \"transitions\": 150000}",
+    "{\"ent\": 0.01, \"eval_purpose\": \"screen_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 0.0, \"source\": \"sensory\", \"task\": \"snake\", \"train_purpose\": \"screen_train\", \"transitions\": 300000}",
+    "{\"ent\": 0.01, \"eval_purpose\": \"screen_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 1.0, \"source\": \"sensory\", \"task\": \"breakout\", \"train_purpose\": \"screen_train\", \"transitions\": 200000}",
+    "{\"ent\": 0.01, \"eval_purpose\": \"screen_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 1.0, \"source\": \"sensory\", \"task\": \"flappy\", \"train_purpose\": \"screen_train\", \"transitions\": 200000}",
+    "{\"ent\": 0.01, \"eval_purpose\": \"screen_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 1.0, \"source\": \"sensory\", \"task\": \"pong\", \"train_purpose\": \"screen_train\", \"transitions\": 150000}",
+    "{\"ent\": 0.01, \"eval_purpose\": \"screen_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 1.0, \"source\": \"sensory\", \"task\": \"snake\", \"train_purpose\": \"screen_train\", \"transitions\": 300000}",
+    "{\"ent\": 0.01, \"eval_purpose\": \"screen_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 0.0, \"source\": \"sensory\", \"task\": \"breakout\", \"train_purpose\": \"screen_train\", \"transitions\": 200000}",
+    "{\"ent\": 0.01, \"eval_purpose\": \"screen_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 0.0, \"source\": \"sensory\", \"task\": \"flappy\", \"train_purpose\": \"screen_train\", \"transitions\": 200000}",
+    "{\"ent\": 0.01, \"eval_purpose\": \"screen_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 0.0, \"source\": \"sensory\", \"task\": \"pong\", \"train_purpose\": \"screen_train\", \"transitions\": 150000}",
+    "{\"ent\": 0.01, \"eval_purpose\": \"screen_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 0.0, \"source\": \"sensory\", \"task\": \"snake\", \"train_purpose\": \"screen_train\", \"transitions\": 300000}",
+    "{\"ent\": 0.01, \"eval_purpose\": \"screen_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 1.0, \"source\": \"sensory\", \"task\": \"breakout\", \"train_purpose\": \"screen_train\", \"transitions\": 200000}",
+    "{\"ent\": 0.01, \"eval_purpose\": \"screen_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 1.0, \"source\": \"sensory\", \"task\": \"flappy\", \"train_purpose\": \"screen_train\", \"transitions\": 200000}",
+    "{\"ent\": 0.01, \"eval_purpose\": \"screen_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 1.0, \"source\": \"sensory\", \"task\": \"pong\", \"train_purpose\": \"screen_train\", \"transitions\": 150000}",
+    "{\"ent\": 0.01, \"eval_purpose\": \"screen_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 1.0, \"source\": \"sensory\", \"task\": \"snake\", \"train_purpose\": \"screen_train\", \"transitions\": 300000}"
+   ],
+   "evaluation": {
+    "purpose": "screen_eval",
+    "episodes": 40,
+    "probe_purpose": "dev_probe"
+   }
+  },
+  {
+   "stage": "mlp_screen",
+   "generated_at": "2026-09-13T02:16:19.016309+00:00",
+   "tasks": [
+    "flappy",
+    "pong",
+    "breakout",
+    "snake"
+   ],
+   "specs": 128,
+   "new_specs": 128,
+   "configs": [
+    "{\"arch\": \"mlp\", \"ent\": 0.003, \"eval_purpose\": \"screen_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 0.0, \"source\": \"fly\", \"task\": \"breakout\", \"ticks\": 4, \"train_purpose\": \"screen_train\", \"transitions\": 200000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.003, \"eval_purpose\": \"screen_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 0.0, \"source\": \"fly\", \"task\": \"breakout\", \"ticks\": 8, \"train_purpose\": \"screen_train\", \"transitions\": 200000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.003, \"eval_purpose\": \"screen_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 0.0, \"source\": \"fly\", \"task\": \"flappy\", \"ticks\": 4, \"train_purpose\": \"screen_train\", \"transitions\": 200000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.003, \"eval_purpose\": \"screen_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 0.0, \"source\": \"fly\", \"task\": \"flappy\", \"ticks\": 8, \"train_purpose\": \"screen_train\", \"transitions\": 200000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.003, \"eval_purpose\": \"screen_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 0.0, \"source\": \"fly\", \"task\": \"pong\", \"ticks\": 4, \"train_purpose\": \"screen_train\", \"transitions\": 150000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.003, \"eval_purpose\": \"screen_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 0.0, \"source\": \"fly\", \"task\": \"pong\", \"ticks\": 8, \"train_purpose\": \"screen_train\", \"transitions\": 150000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.003, \"eval_purpose\": \"screen_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 0.0, \"source\": \"fly\", \"task\": \"snake\", \"ticks\": 4, \"train_purpose\": \"screen_train\", \"transitions\": 300000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.003, \"eval_purpose\": \"screen_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 0.0, \"source\": \"fly\", \"task\": \"snake\", \"ticks\": 8, \"train_purpose\": \"screen_train\", \"transitions\": 300000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.003, \"eval_purpose\": \"screen_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 1.0, \"source\": \"fly\", \"task\": \"breakout\", \"ticks\": 4, \"train_purpose\": \"screen_train\", \"transitions\": 200000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.003, \"eval_purpose\": \"screen_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 1.0, \"source\": \"fly\", \"task\": \"breakout\", \"ticks\": 8, \"train_purpose\": \"screen_train\", \"transitions\": 200000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.003, \"eval_purpose\": \"screen_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 1.0, \"source\": \"fly\", \"task\": \"flappy\", \"ticks\": 4, \"train_purpose\": \"screen_train\", \"transitions\": 200000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.003, \"eval_purpose\": \"screen_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 1.0, \"source\": \"fly\", \"task\": \"flappy\", \"ticks\": 8, \"train_purpose\": \"screen_train\", \"transitions\": 200000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.003, \"eval_purpose\": \"screen_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 1.0, \"source\": \"fly\", \"task\": \"pong\", \"ticks\": 4, \"train_purpose\": \"screen_train\", \"transitions\": 150000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.003, \"eval_purpose\": \"screen_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 1.0, \"source\": \"fly\", \"task\": \"pong\", \"ticks\": 8, \"train_purpose\": \"screen_train\", \"transitions\": 150000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.003, \"eval_purpose\": \"screen_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 1.0, \"source\": \"fly\", \"task\": \"snake\", \"ticks\": 4, \"train_purpose\": \"screen_train\", \"transitions\": 300000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.003, \"eval_purpose\": \"screen_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 1.0, \"source\": \"fly\", \"task\": \"snake\", \"ticks\": 8, \"train_purpose\": \"screen_train\", \"transitions\": 300000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.003, \"eval_purpose\": \"screen_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 0.0, \"source\": \"fly\", \"task\": \"breakout\", \"ticks\": 4, \"train_purpose\": \"screen_train\", \"transitions\": 200000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.003, \"eval_purpose\": \"screen_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 0.0, \"source\": \"fly\", \"task\": \"breakout\", \"ticks\": 8, \"train_purpose\": \"screen_train\", \"transitions\": 200000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.003, \"eval_purpose\": \"screen_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 0.0, \"source\": \"fly\", \"task\": \"flappy\", \"ticks\": 4, \"train_purpose\": \"screen_train\", \"transitions\": 200000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.003, \"eval_purpose\": \"screen_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 0.0, \"source\": \"fly\", \"task\": \"flappy\", \"ticks\": 8, \"train_purpose\": \"screen_train\", \"transitions\": 200000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.003, \"eval_purpose\": \"screen_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 0.0, \"source\": \"fly\", \"task\": \"pong\", \"ticks\": 4, \"train_purpose\": \"screen_train\", \"transitions\": 150000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.003, \"eval_purpose\": \"screen_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 0.0, \"source\": \"fly\", \"task\": \"pong\", \"ticks\": 8, \"train_purpose\": \"screen_train\", \"transitions\": 150000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.003, \"eval_purpose\": \"screen_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 0.0, \"source\": \"fly\", \"task\": \"snake\", \"ticks\": 4, \"train_purpose\": \"screen_train\", \"transitions\": 300000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.003, \"eval_purpose\": \"screen_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 0.0, \"source\": \"fly\", \"task\": \"snake\", \"ticks\": 8, \"train_purpose\": \"screen_train\", \"transitions\": 300000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.003, \"eval_purpose\": \"screen_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 1.0, \"source\": \"fly\", \"task\": \"breakout\", \"ticks\": 4, \"train_purpose\": \"screen_train\", \"transitions\": 200000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.003, \"eval_purpose\": \"screen_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 1.0, \"source\": \"fly\", \"task\": \"breakout\", \"ticks\": 8, \"train_purpose\": \"screen_train\", \"transitions\": 200000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.003, \"eval_purpose\": \"screen_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 1.0, \"source\": \"fly\", \"task\": \"flappy\", \"ticks\": 4, \"train_purpose\": \"screen_train\", \"transitions\": 200000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.003, \"eval_purpose\": \"screen_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 1.0, \"source\": \"fly\", \"task\": \"flappy\", \"ticks\": 8, \"train_purpose\": \"screen_train\", \"transitions\": 200000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.003, \"eval_purpose\": \"screen_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 1.0, \"source\": \"fly\", \"task\": \"pong\", \"ticks\": 4, \"train_purpose\": \"screen_train\", \"transitions\": 150000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.003, \"eval_purpose\": \"screen_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 1.0, \"source\": \"fly\", \"task\": \"pong\", \"ticks\": 8, \"train_purpose\": \"screen_train\", \"transitions\": 150000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.003, \"eval_purpose\": \"screen_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 1.0, \"source\": \"fly\", \"task\": \"snake\", \"ticks\": 4, \"train_purpose\": \"screen_train\", \"transitions\": 300000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.003, \"eval_purpose\": \"screen_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 1.0, \"source\": \"fly\", \"task\": \"snake\", \"ticks\": 8, \"train_purpose\": \"screen_train\", \"transitions\": 300000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.01, \"eval_purpose\": \"screen_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 0.0, \"source\": \"fly\", \"task\": \"breakout\", \"ticks\": 4, \"train_purpose\": \"screen_train\", \"transitions\": 200000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.01, \"eval_purpose\": \"screen_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 0.0, \"source\": \"fly\", \"task\": \"breakout\", \"ticks\": 8, \"train_purpose\": \"screen_train\", \"transitions\": 200000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.01, \"eval_purpose\": \"screen_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 0.0, \"source\": \"fly\", \"task\": \"flappy\", \"ticks\": 4, \"train_purpose\": \"screen_train\", \"transitions\": 200000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.01, \"eval_purpose\": \"screen_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 0.0, \"source\": \"fly\", \"task\": \"flappy\", \"ticks\": 8, \"train_purpose\": \"screen_train\", \"transitions\": 200000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.01, \"eval_purpose\": \"screen_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 0.0, \"source\": \"fly\", \"task\": \"pong\", \"ticks\": 4, \"train_purpose\": \"screen_train\", \"transitions\": 150000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.01, \"eval_purpose\": \"screen_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 0.0, \"source\": \"fly\", \"task\": \"pong\", \"ticks\": 8, \"train_purpose\": \"screen_train\", \"transitions\": 150000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.01, \"eval_purpose\": \"screen_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 0.0, \"source\": \"fly\", \"task\": \"snake\", \"ticks\": 4, \"train_purpose\": \"screen_train\", \"transitions\": 300000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.01, \"eval_purpose\": \"screen_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 0.0, \"source\": \"fly\", \"task\": \"snake\", \"ticks\": 8, \"train_purpose\": \"screen_train\", \"transitions\": 300000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.01, \"eval_purpose\": \"screen_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 1.0, \"source\": \"fly\", \"task\": \"breakout\", \"ticks\": 4, \"train_purpose\": \"screen_train\", \"transitions\": 200000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.01, \"eval_purpose\": \"screen_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 1.0, \"source\": \"fly\", \"task\": \"breakout\", \"ticks\": 8, \"train_purpose\": \"screen_train\", \"transitions\": 200000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.01, \"eval_purpose\": \"screen_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 1.0, \"source\": \"fly\", \"task\": \"flappy\", \"ticks\": 4, \"train_purpose\": \"screen_train\", \"transitions\": 200000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.01, \"eval_purpose\": \"screen_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 1.0, \"source\": \"fly\", \"task\": \"flappy\", \"ticks\": 8, \"train_purpose\": \"screen_train\", \"transitions\": 200000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.01, \"eval_purpose\": \"screen_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 1.0, \"source\": \"fly\", \"task\": \"pong\", \"ticks\": 4, \"train_purpose\": \"screen_train\", \"transitions\": 150000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.01, \"eval_purpose\": \"screen_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 1.0, \"source\": \"fly\", \"task\": \"pong\", \"ticks\": 8, \"train_purpose\": \"screen_train\", \"transitions\": 150000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.01, \"eval_purpose\": \"screen_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 1.0, \"source\": \"fly\", \"task\": \"snake\", \"ticks\": 4, \"train_purpose\": \"screen_train\", \"transitions\": 300000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.01, \"eval_purpose\": \"screen_eval\", \"lr\": 0.0003, \"seed\": null, \"shaping\": 1.0, \"source\": \"fly\", \"task\": \"snake\", \"ticks\": 8, \"train_purpose\": \"screen_train\", \"transitions\": 300000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.01, \"eval_purpose\": \"screen_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 0.0, \"source\": \"fly\", \"task\": \"breakout\", \"ticks\": 4, \"train_purpose\": \"screen_train\", \"transitions\": 200000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.01, \"eval_purpose\": \"screen_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 0.0, \"source\": \"fly\", \"task\": \"breakout\", \"ticks\": 8, \"train_purpose\": \"screen_train\", \"transitions\": 200000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.01, \"eval_purpose\": \"screen_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 0.0, \"source\": \"fly\", \"task\": \"flappy\", \"ticks\": 4, \"train_purpose\": \"screen_train\", \"transitions\": 200000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.01, \"eval_purpose\": \"screen_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 0.0, \"source\": \"fly\", \"task\": \"flappy\", \"ticks\": 8, \"train_purpose\": \"screen_train\", \"transitions\": 200000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.01, \"eval_purpose\": \"screen_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 0.0, \"source\": \"fly\", \"task\": \"pong\", \"ticks\": 4, \"train_purpose\": \"screen_train\", \"transitions\": 150000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.01, \"eval_purpose\": \"screen_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 0.0, \"source\": \"fly\", \"task\": \"pong\", \"ticks\": 8, \"train_purpose\": \"screen_train\", \"transitions\": 150000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.01, \"eval_purpose\": \"screen_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 0.0, \"source\": \"fly\", \"task\": \"snake\", \"ticks\": 4, \"train_purpose\": \"screen_train\", \"transitions\": 300000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.01, \"eval_purpose\": \"screen_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 0.0, \"source\": \"fly\", \"task\": \"snake\", \"ticks\": 8, \"train_purpose\": \"screen_train\", \"transitions\": 300000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.01, \"eval_purpose\": \"screen_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 1.0, \"source\": \"fly\", \"task\": \"breakout\", \"ticks\": 4, \"train_purpose\": \"screen_train\", \"transitions\": 200000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.01, \"eval_purpose\": \"screen_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 1.0, \"source\": \"fly\", \"task\": \"breakout\", \"ticks\": 8, \"train_purpose\": \"screen_train\", \"transitions\": 200000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.01, \"eval_purpose\": \"screen_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 1.0, \"source\": \"fly\", \"task\": \"flappy\", \"ticks\": 4, \"train_purpose\": \"screen_train\", \"transitions\": 200000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.01, \"eval_purpose\": \"screen_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 1.0, \"source\": \"fly\", \"task\": \"flappy\", \"ticks\": 8, \"train_purpose\": \"screen_train\", \"transitions\": 200000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.01, \"eval_purpose\": \"screen_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 1.0, \"source\": \"fly\", \"task\": \"pong\", \"ticks\": 4, \"train_purpose\": \"screen_train\", \"transitions\": 150000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.01, \"eval_purpose\": \"screen_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 1.0, \"source\": \"fly\", \"task\": \"pong\", \"ticks\": 8, \"train_purpose\": \"screen_train\", \"transitions\": 150000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.01, \"eval_purpose\": \"screen_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 1.0, \"source\": \"fly\", \"task\": \"snake\", \"ticks\": 4, \"train_purpose\": \"screen_train\", \"transitions\": 300000}",
+    "{\"arch\": \"mlp\", \"ent\": 0.01, \"eval_purpose\": \"screen_eval\", \"lr\": 0.001, \"seed\": null, \"shaping\": 1.0, \"source\": \"fly\", \"task\": \"snake\", \"ticks\": 8, \"train_purpose\": \"screen_train\", \"transitions\": 300000}"
+   ],
+   "evaluation": {
+    "purpose": "screen_eval",
+    "episodes": 40,
+    "probe_purpose": "dev_probe"
+   }
+  }
+ ],
+ "amendments": []
+}

@@ -1,0 +1,22 @@
+{
+ "name": "sensory_screen-flappy-c05-s1",
+ "stage": "sensory_screen",
+ "config_index": 5,
+ "config": {
+  "task": "flappy",
+  "seed": 1,
+  "source": "sensory",
+  "transitions": 200000,
+  "train_purpose": "screen_train",
+  "eval_purpose": "screen_eval",
+  "lr": 0.001,
+  "shaping": 0.0,
+  "ent": 0.01
+ },
+ "evaluation": {
+  "purpose": "screen_eval",
+  "episodes": 40,
+  "probe_purpose": "dev_probe"
+ },
+ "output": "runs/v13-dev/sensory_screen/sensory_screen-flappy-c05-s1"
+}
