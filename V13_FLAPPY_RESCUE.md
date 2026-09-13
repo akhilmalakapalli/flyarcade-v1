@@ -125,10 +125,28 @@ state-dependent probes. Longer budgets therefore need a direct comparison, not a
 | GRU, no shaping, ent 0.003 | Greedy dev success (seeds 0,1) | Probe |
 |---|---|---|
 | 20 ticks, 150k | 0.617 / 0.692 (mean 0.654) | [24,16] / [28,12] |
-| 16 ticks, 300k | running | |
+| 16 ticks, 300k | 0.662 / 0.608 (mean 0.635) | [21,19] / [20,20]; below 150k again |
 
 Integration sweep at 150k: 12 ticks 0.610, **16 ticks 0.744**, 20 ticks 0.654. **Selected for
 5-seed development validation: GRU (128 tanh -> GRU 64), 16 ticks, v1.2 encoding, descending
 readout, no shaping, entropy 0.003, lr 3e-4 annealed, 150k transitions.** Chosen before
 validation from the screen seeds; the 12-tick 400k result argues against assuming a longer
 budget helps. Rewired t16 standardizers 0-4 fitted by the unchanged procedure.
+
+## Development validation (5 fresh dev seeds; validate_train / validate_eval; 60 episodes)
+GRU (128 tanh -> GRU 64), 16 ticks, v1.2 encoding, descending readout, no shaping, ent 0.003,
+150k transitions.
+
+| Seed | After | Before | State probe | Greedy top-action fraction |
+|---|---|---|---|---|
+| 0 | 0.553 | 0.000 | 0.450 | 0.880 |
+| 1 | 0.553 | 0.003 | 0.200 | 0.899 |
+| 2 | 0.617 | 0.000 | 0.225 | 0.891 |
+| 3 | 0.811 | 0.003 | 0.275 | 0.898 |
+| 4 | 0.731 | 0.000 | 0.200 | 0.893 |
+| **mean** | **0.653** | 0.001 | 0.270 | |
+
+Random 0.000, MPC 1.000, gap closure 0.653, 5/5 seeds beat random + 0.10, finite, graph hashes
+match. **Gate: PASS** (`artifacts/v13/flappy-rescue/validation_gate.json`). The preferred 0.70
+level (reported only) was not reached. Decision: freeze. Further screening would select on
+already-seen seeds, and both longer-budget attempts (12 ticks 400k, 16 ticks 300k) got worse.
