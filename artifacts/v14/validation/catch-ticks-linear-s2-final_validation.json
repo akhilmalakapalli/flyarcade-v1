@@ -1,0 +1,2642 @@
+{
+  "selection_sha256": "8110183e11f79b4d9e829501c81af8a3e6ebf7554dcde922beab23022bfacf2c",
+  "source_result_sha256": "3127ad91950a941fef11a5aa55b41538070c226d5b0740455a84d0d17aba708d",
+  "checkpoint_sha256": "5733ac6ca305a230cd1cc8d267e49584f143bf23e4238d0fdb68a466142ac6d9",
+  "code_sha256": "e85511e4bc365a05991535efbccd77a20b76410345f35b6711f223e77a7910ce",
+  "purpose": "final_validation",
+  "task": "catch",
+  "configuration": "catch-ticks-linear",
+  "development_seed": 2,
+  "score": 0.9366666666666668,
+  "rows": [
+    {
+      "success": 0.8333333333333334,
+      "events": 5,
+      "steps": 24,
+      "return": 5.099999999999998,
+      "action_counts": [
+        5,
+        13,
+        6
+      ],
+      "action_entropy": 1.0054668293254923,
+      "policy_entropy": 0.431304439929665
+    },
+    {
+      "success": 0.8333333333333334,
+      "events": 5,
+      "steps": 24,
+      "return": 4.700000000000001,
+      "action_counts": [
+        5,
+        15,
+        4
+      ],
+      "action_entropy": 0.9191738293819753,
+      "policy_entropy": 0.4903965336782634
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 6.8,
+      "action_counts": [
+        5,
+        14,
+        5
+      ],
+      "action_entropy": 0.9680045912248333,
+      "policy_entropy": 0.5446531573648108
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 6.9,
+      "action_counts": [
+        6,
+        11,
+        7
+      ],
+      "action_entropy": 1.0635215028672094,
+      "policy_entropy": 0.5728998999296548
+    },
+    {
+      "success": 0.8333333333333334,
+      "events": 5,
+      "steps": 24,
+      "return": 5.0,
+      "action_counts": [
+        5,
+        12,
+        7
+      ],
+      "action_entropy": 1.0327438135557052,
+      "policy_entropy": 0.4521231327101171
+    },
+    {
+      "success": 0.8333333333333334,
+      "events": 5,
+      "steps": 24,
+      "return": 4.800000000000001,
+      "action_counts": [
+        8,
+        8,
+        8
+      ],
+      "action_entropy": 1.0986122886681067,
+      "policy_entropy": 0.5528312942451368
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 7.099999999999999,
+      "action_counts": [
+        8,
+        11,
+        5
+      ],
+      "action_entropy": 1.05057175133164,
+      "policy_entropy": 0.49938731168194056
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 6.4,
+      "action_counts": [
+        5,
+        16,
+        3
+      ],
+      "action_entropy": 0.8570352476808039,
+      "policy_entropy": 0.505654357631537
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 6.4,
+      "action_counts": [
+        4,
+        18,
+        2
+      ],
+      "action_entropy": 0.7214636866925085,
+      "policy_entropy": 0.40634692969902403
+    },
+    {
+      "success": 0.8333333333333334,
+      "events": 5,
+      "steps": 24,
+      "return": 5.2,
+      "action_counts": [
+        7,
+        10,
+        7
+      ],
+      "action_entropy": 1.0835291213181575,
+      "policy_entropy": 0.5504074503680348
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 6.999999999999999,
+      "action_counts": [
+        7,
+        10,
+        7
+      ],
+      "action_entropy": 1.0835291213181575,
+      "policy_entropy": 0.5304962553450382
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 6.799999999999999,
+      "action_counts": [
+        4,
+        15,
+        5
+      ],
+      "action_entropy": 0.9191738293819753,
+      "policy_entropy": 0.453428830314166
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 6.899999999999999,
+      "action_counts": [
+        6,
+        11,
+        7
+      ],
+      "action_entropy": 1.0635215028672094,
+      "policy_entropy": 0.4990486732012617
+    },
+    {
+      "success": 0.8333333333333334,
+      "events": 5,
+      "steps": 24,
+      "return": 5.3,
+      "action_counts": [
+        9,
+        7,
+        8
+      ],
+      "action_entropy": 1.0933903064791153,
+      "policy_entropy": 0.4357718363022838
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 6.999999999999999,
+      "action_counts": [
+        6,
+        12,
+        6
+      ],
+      "action_entropy": 1.039720770839915,
+      "policy_entropy": 0.5032588371127386
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 6.899999999999999,
+      "action_counts": [
+        5,
+        15,
+        4
+      ],
+      "action_entropy": 0.9191738293819753,
+      "policy_entropy": 0.416507942755864
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 7.0,
+      "action_counts": [
+        6,
+        14,
+        4
+      ],
+      "action_entropy": 0.9596147939120463,
+      "policy_entropy": 0.5423461714736503
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 7.0,
+      "action_counts": [
+        4,
+        14,
+        6
+      ],
+      "action_entropy": 0.9596147939120461,
+      "policy_entropy": 0.4232844283675652
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 6.999999999999999,
+      "action_counts": [
+        5,
+        12,
+        7
+      ],
+      "action_entropy": 1.0327438135557052,
+      "policy_entropy": 0.5579981641996732
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 6.5,
+      "action_counts": [
+        4,
+        15,
+        5
+      ],
+      "action_entropy": 0.9191738293819753,
+      "policy_entropy": 0.5607584646431621
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 7.399999999999999,
+      "action_counts": [
+        9,
+        8,
+        7
+      ],
+      "action_entropy": 1.0933903064791153,
+      "policy_entropy": 0.5241863214598608
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 6.6,
+      "action_counts": [
+        3,
+        16,
+        5
+      ],
+      "action_entropy": 0.8570352476808039,
+      "policy_entropy": 0.507940640461508
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 6.7,
+      "action_counts": [
+        5,
+        15,
+        4
+      ],
+      "action_entropy": 0.9191738293819753,
+      "policy_entropy": 0.568429125469121
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 6.699999999999999,
+      "action_counts": [
+        5,
+        13,
+        6
+      ],
+      "action_entropy": 1.0054668293254923,
+      "policy_entropy": 0.5884105885078761
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 6.8,
+      "action_counts": [
+        7,
+        12,
+        5
+      ],
+      "action_entropy": 1.032743813555705,
+      "policy_entropy": 0.5602554917590642
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 7.199999999999999,
+      "action_counts": [
+        8,
+        10,
+        6
+      ],
+      "action_entropy": 1.0775563270667978,
+      "policy_entropy": 0.6139234219906933
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 6.9,
+      "action_counts": [
+        6,
+        14,
+        4
+      ],
+      "action_entropy": 0.9596147939120463,
+      "policy_entropy": 0.5636001120461646
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 6.999999999999999,
+      "action_counts": [
+        4,
+        14,
+        6
+      ],
+      "action_entropy": 0.9596147939120461,
+      "policy_entropy": 0.5133680797049447
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 6.999999999999998,
+      "action_counts": [
+        5,
+        12,
+        7
+      ],
+      "action_entropy": 1.0327438135557052,
+      "policy_entropy": 0.5181269160427616
+    },
+    {
+      "success": 0.8333333333333334,
+      "events": 5,
+      "steps": 24,
+      "return": 4.9,
+      "action_counts": [
+        5,
+        13,
+        6
+      ],
+      "action_entropy": 1.0054668293254923,
+      "policy_entropy": 0.41263086003921146
+    },
+    {
+      "success": 0.8333333333333334,
+      "events": 5,
+      "steps": 24,
+      "return": 5.2,
+      "action_counts": [
+        8,
+        8,
+        8
+      ],
+      "action_entropy": 1.0986122886681067,
+      "policy_entropy": 0.4761127105440322
+    },
+    {
+      "success": 0.8333333333333334,
+      "events": 5,
+      "steps": 24,
+      "return": 4.6000000000000005,
+      "action_counts": [
+        4,
+        14,
+        6
+      ],
+      "action_entropy": 0.9596147939120461,
+      "policy_entropy": 0.5621526432448691
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 7.199999999999999,
+      "action_counts": [
+        7,
+        10,
+        7
+      ],
+      "action_entropy": 1.0835291213181575,
+      "policy_entropy": 0.5524790127571652
+    },
+    {
+      "success": 0.8333333333333334,
+      "events": 5,
+      "steps": 24,
+      "return": 4.800000000000001,
+      "action_counts": [
+        5,
+        12,
+        7
+      ],
+      "action_entropy": 1.0327438135557052,
+      "policy_entropy": 0.5380637091965053
+    },
+    {
+      "success": 0.8333333333333334,
+      "events": 5,
+      "steps": 24,
+      "return": 4.999999999999999,
+      "action_counts": [
+        7,
+        10,
+        7
+      ],
+      "action_entropy": 1.0835291213181575,
+      "policy_entropy": 0.5431956995719643
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 6.799999999999999,
+      "action_counts": [
+        7,
+        9,
+        8
+      ],
+      "action_entropy": 1.0933903064791153,
+      "policy_entropy": 0.6162737509720136
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 6.9,
+      "action_counts": [
+        5,
+        15,
+        4
+      ],
+      "action_entropy": 0.9191738293819753,
+      "policy_entropy": 0.47245878715922957
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 6.699999999999999,
+      "action_counts": [
+        5,
+        13,
+        6
+      ],
+      "action_entropy": 1.0054668293254923,
+      "policy_entropy": 0.5273790272689849
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 6.6,
+      "action_counts": [
+        6,
+        13,
+        5
+      ],
+      "action_entropy": 1.0054668293254923,
+      "policy_entropy": 0.5024995524232367
+    },
+    {
+      "success": 0.8333333333333334,
+      "events": 5,
+      "steps": 24,
+      "return": 4.300000000000001,
+      "action_counts": [
+        4,
+        17,
+        3
+      ],
+      "action_entropy": 0.8028187820379606,
+      "policy_entropy": 0.4960634514517504
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 6.599999999999999,
+      "action_counts": [
+        5,
+        16,
+        3
+      ],
+      "action_entropy": 0.8570352476808039,
+      "policy_entropy": 0.48713698212059137
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 6.399999999999999,
+      "action_counts": [
+        4,
+        18,
+        2
+      ],
+      "action_entropy": 0.7214636866925085,
+      "policy_entropy": 0.47758281225345955
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 6.699999999999999,
+      "action_counts": [
+        5,
+        15,
+        4
+      ],
+      "action_entropy": 0.9191738293819753,
+      "policy_entropy": 0.5203427002739099
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 6.8999999999999995,
+      "action_counts": [
+        5,
+        12,
+        7
+      ],
+      "action_entropy": 1.0327438135557052,
+      "policy_entropy": 0.5504113824899758
+    },
+    {
+      "success": 0.8333333333333334,
+      "events": 5,
+      "steps": 24,
+      "return": 4.9,
+      "action_counts": [
+        6,
+        11,
+        7
+      ],
+      "action_entropy": 1.0635215028672094,
+      "policy_entropy": 0.5297750643147179
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 7.299999999999999,
+      "action_counts": [
+        8,
+        9,
+        7
+      ],
+      "action_entropy": 1.0933903064791153,
+      "policy_entropy": 0.4742449202491474
+    },
+    {
+      "success": 0.6666666666666666,
+      "events": 4,
+      "steps": 24,
+      "return": 3.4000000000000012,
+      "action_counts": [
+        8,
+        5,
+        11
+      ],
+      "action_entropy": 1.05057175133164,
+      "policy_entropy": 0.5887676543959427
+    },
+    {
+      "success": 0.8333333333333334,
+      "events": 5,
+      "steps": 24,
+      "return": 5.1000000000000005,
+      "action_counts": [
+        6,
+        11,
+        7
+      ],
+      "action_entropy": 1.0635215028672094,
+      "policy_entropy": 0.5232020058644394
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 7.599999999999999,
+      "action_counts": [
+        9,
+        8,
+        7
+      ],
+      "action_entropy": 1.0933903064791153,
+      "policy_entropy": 0.542908266965013
+    },
+    {
+      "success": 0.8333333333333334,
+      "events": 5,
+      "steps": 24,
+      "return": 4.5,
+      "action_counts": [
+        4,
+        15,
+        5
+      ],
+      "action_entropy": 0.9191738293819753,
+      "policy_entropy": 0.5439173538364788
+    },
+    {
+      "success": 0.8333333333333334,
+      "events": 5,
+      "steps": 24,
+      "return": 5.200000000000001,
+      "action_counts": [
+        11,
+        4,
+        9
+      ],
+      "action_entropy": 1.024010220294292,
+      "policy_entropy": 0.5066006983178819
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 7.599999999999998,
+      "action_counts": [
+        7,
+        8,
+        9
+      ],
+      "action_entropy": 1.0933903064791153,
+      "policy_entropy": 0.465900978582582
+    },
+    {
+      "success": 0.8333333333333334,
+      "events": 5,
+      "steps": 24,
+      "return": 5.1,
+      "action_counts": [
+        6,
+        11,
+        7
+      ],
+      "action_entropy": 1.0635215028672094,
+      "policy_entropy": 0.43994015358447786
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 6.9,
+      "action_counts": [
+        5,
+        13,
+        6
+      ],
+      "action_entropy": 1.0054668293254923,
+      "policy_entropy": 0.5070430477461442
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 7.099999999999999,
+      "action_counts": [
+        6,
+        13,
+        5
+      ],
+      "action_entropy": 1.0054668293254923,
+      "policy_entropy": 0.44863879250430855
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 6.799999999999999,
+      "action_counts": [
+        6,
+        11,
+        7
+      ],
+      "action_entropy": 1.0635215028672094,
+      "policy_entropy": 0.5722444455183804
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 6.8,
+      "action_counts": [
+        6,
+        14,
+        4
+      ],
+      "action_entropy": 0.9596147939120463,
+      "policy_entropy": 0.5121940590702608
+    },
+    {
+      "success": 0.8333333333333334,
+      "events": 5,
+      "steps": 24,
+      "return": 4.700000000000001,
+      "action_counts": [
+        7,
+        8,
+        9
+      ],
+      "action_entropy": 1.0933903064791153,
+      "policy_entropy": 0.4717135837052477
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 7.1,
+      "action_counts": [
+        7,
+        11,
+        6
+      ],
+      "action_entropy": 1.0635215028672094,
+      "policy_entropy": 0.4237248788288653
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 7.299999999999999,
+      "action_counts": [
+        6,
+        11,
+        7
+      ],
+      "action_entropy": 1.0635215028672094,
+      "policy_entropy": 0.3922264579548589
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 6.9,
+      "action_counts": [
+        5,
+        15,
+        4
+      ],
+      "action_entropy": 0.9191738293819753,
+      "policy_entropy": 0.4601689797975879
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 6.6,
+      "action_counts": [
+        4,
+        15,
+        5
+      ],
+      "action_entropy": 0.9191738293819753,
+      "policy_entropy": 0.46266167764968397
+    },
+    {
+      "success": 0.5,
+      "events": 3,
+      "steps": 24,
+      "return": 1.1,
+      "action_counts": [
+        9,
+        7,
+        8
+      ],
+      "action_entropy": 1.0933903064791153,
+      "policy_entropy": 0.5034547413771745
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 6.6,
+      "action_counts": [
+        2,
+        18,
+        4
+      ],
+      "action_entropy": 0.7214636866925086,
+      "policy_entropy": 0.48307512546031567
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 7.399999999999999,
+      "action_counts": [
+        7,
+        10,
+        7
+      ],
+      "action_entropy": 1.0835291213181575,
+      "policy_entropy": 0.4554246531317246
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 6.699999999999999,
+      "action_counts": [
+        3,
+        17,
+        4
+      ],
+      "action_entropy": 0.8028187820379606,
+      "policy_entropy": 0.5298044366426531
+    },
+    {
+      "success": 0.6666666666666666,
+      "events": 4,
+      "steps": 24,
+      "return": 2.6000000000000005,
+      "action_counts": [
+        7,
+        12,
+        5
+      ],
+      "action_entropy": 1.032743813555705,
+      "policy_entropy": 0.4601061173791354
+    },
+    {
+      "success": 0.8333333333333334,
+      "events": 5,
+      "steps": 24,
+      "return": 4.6,
+      "action_counts": [
+        6,
+        12,
+        6
+      ],
+      "action_entropy": 1.039720770839915,
+      "policy_entropy": 0.5570338308262195
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 7.299999999999999,
+      "action_counts": [
+        7,
+        11,
+        6
+      ],
+      "action_entropy": 1.0635215028672094,
+      "policy_entropy": 0.5092176175744726
+    },
+    {
+      "success": 0.8333333333333334,
+      "events": 5,
+      "steps": 24,
+      "return": 5.000000000000001,
+      "action_counts": [
+        6,
+        10,
+        8
+      ],
+      "action_entropy": 1.0775563270667978,
+      "policy_entropy": 0.46432710422914764
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 6.799999999999999,
+      "action_counts": [
+        7,
+        10,
+        7
+      ],
+      "action_entropy": 1.0835291213181575,
+      "policy_entropy": 0.49150602425178086
+    },
+    {
+      "success": 0.8333333333333334,
+      "events": 5,
+      "steps": 24,
+      "return": 4.5,
+      "action_counts": [
+        5,
+        15,
+        4
+      ],
+      "action_entropy": 0.9191738293819753,
+      "policy_entropy": 0.53648745242156
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 6.6,
+      "action_counts": [
+        2,
+        17,
+        5
+      ],
+      "action_entropy": 0.7781325481710233,
+      "policy_entropy": 0.4955160479293583
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 6.9,
+      "action_counts": [
+        5,
+        13,
+        6
+      ],
+      "action_entropy": 1.0054668293254923,
+      "policy_entropy": 0.5705052414495989
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 6.799999999999999,
+      "action_counts": [
+        6,
+        14,
+        4
+      ],
+      "action_entropy": 0.9596147939120463,
+      "policy_entropy": 0.49772895593803135
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 6.9,
+      "action_counts": [
+        5,
+        15,
+        4
+      ],
+      "action_entropy": 0.9191738293819753,
+      "policy_entropy": 0.5430455377485573
+    },
+    {
+      "success": 0.8333333333333334,
+      "events": 5,
+      "steps": 24,
+      "return": 5.3999999999999995,
+      "action_counts": [
+        6,
+        10,
+        8
+      ],
+      "action_entropy": 1.0775563270667978,
+      "policy_entropy": 0.42952600049456463
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 6.6,
+      "action_counts": [
+        3,
+        18,
+        3
+      ],
+      "action_entropy": 0.7356219397587915,
+      "policy_entropy": 0.5038168846615382
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 6.899999999999999,
+      "action_counts": [
+        6,
+        11,
+        7
+      ],
+      "action_entropy": 1.0635215028672094,
+      "policy_entropy": 0.4508166358691333
+    },
+    {
+      "success": 0.8333333333333334,
+      "events": 5,
+      "steps": 24,
+      "return": 4.800000000000001,
+      "action_counts": [
+        6,
+        12,
+        6
+      ],
+      "action_entropy": 1.039720770839915,
+      "policy_entropy": 0.4988904494375004
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 6.6,
+      "action_counts": [
+        3,
+        18,
+        3
+      ],
+      "action_entropy": 0.7356219397587915,
+      "policy_entropy": 0.49933175434854676
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 6.999999999999998,
+      "action_counts": [
+        4,
+        13,
+        7
+      ],
+      "action_entropy": 0.9901000747284954,
+      "policy_entropy": 0.46744437269666417
+    },
+    {
+      "success": 0.8333333333333334,
+      "events": 5,
+      "steps": 24,
+      "return": 4.6,
+      "action_counts": [
+        6,
+        12,
+        6
+      ],
+      "action_entropy": 1.039720770839915,
+      "policy_entropy": 0.47655125355280087
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 6.799999999999999,
+      "action_counts": [
+        5,
+        12,
+        7
+      ],
+      "action_entropy": 1.0327438135557052,
+      "policy_entropy": 0.5466980692539988
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 7.0,
+      "action_counts": [
+        5,
+        14,
+        5
+      ],
+      "action_entropy": 0.9680045912248333,
+      "policy_entropy": 0.529991941350897
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 7.199999999999999,
+      "action_counts": [
+        7,
+        12,
+        5
+      ],
+      "action_entropy": 1.032743813555705,
+      "policy_entropy": 0.48279549861286686
+    },
+    {
+      "success": 0.8333333333333334,
+      "events": 5,
+      "steps": 24,
+      "return": 5.399999999999999,
+      "action_counts": [
+        8,
+        8,
+        8
+      ],
+      "action_entropy": 1.0986122886681067,
+      "policy_entropy": 0.4669355949201864
+    },
+    {
+      "success": 0.8333333333333334,
+      "events": 5,
+      "steps": 24,
+      "return": 4.9,
+      "action_counts": [
+        5,
+        13,
+        6
+      ],
+      "action_entropy": 1.0054668293254923,
+      "policy_entropy": 0.5451180901751025
+    },
+    {
+      "success": 0.8333333333333334,
+      "events": 5,
+      "steps": 24,
+      "return": 4.6,
+      "action_counts": [
+        6,
+        12,
+        6
+      ],
+      "action_entropy": 1.039720770839915,
+      "policy_entropy": 0.5765011302640671
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 6.999999999999998,
+      "action_counts": [
+        7,
+        12,
+        5
+      ],
+      "action_entropy": 1.032743813555705,
+      "policy_entropy": 0.48702818491549205
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 6.9,
+      "action_counts": [
+        4,
+        14,
+        6
+      ],
+      "action_entropy": 0.9596147939120461,
+      "policy_entropy": 0.4501688126434202
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 7.0,
+      "action_counts": [
+        7,
+        12,
+        5
+      ],
+      "action_entropy": 1.032743813555705,
+      "policy_entropy": 0.4393273820539953
+    },
+    {
+      "success": 0.8333333333333334,
+      "events": 5,
+      "steps": 24,
+      "return": 5.0,
+      "action_counts": [
+        7,
+        12,
+        5
+      ],
+      "action_entropy": 1.032743813555705,
+      "policy_entropy": 0.5058334889889249
+    },
+    {
+      "success": 0.8333333333333334,
+      "events": 5,
+      "steps": 24,
+      "return": 4.7,
+      "action_counts": [
+        5,
+        15,
+        4
+      ],
+      "action_entropy": 0.9191738293819753,
+      "policy_entropy": 0.556277098361802
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 6.899999999999999,
+      "action_counts": [
+        7,
+        9,
+        8
+      ],
+      "action_entropy": 1.0933903064791153,
+      "policy_entropy": 0.5787521386400079
+    },
+    {
+      "success": 0.8333333333333334,
+      "events": 5,
+      "steps": 24,
+      "return": 4.4,
+      "action_counts": [
+        5,
+        14,
+        5
+      ],
+      "action_entropy": 0.9680045912248333,
+      "policy_entropy": 0.48103349141924934
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 7.2,
+      "action_counts": [
+        7,
+        10,
+        7
+      ],
+      "action_entropy": 1.0835291213181575,
+      "policy_entropy": 0.415389986411725
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 6.599999999999999,
+      "action_counts": [
+        5,
+        13,
+        6
+      ],
+      "action_entropy": 1.0054668293254923,
+      "policy_entropy": 0.6266295065561521
+    },
+    {
+      "success": 1.0,
+      "events": 6,
+      "steps": 24,
+      "return": 7.199999999999999,
+      "action_counts": [
+        7,
+        12,
+        5
+      ],
+      "action_entropy": 1.032743813555705,
+      "policy_entropy": 0.5092106960081401
+    },
+    {
+      "success": 0.8333333333333334,
+      "events": 5,
+      "steps": 24,
+      "return": 4.800000000000001,
+      "action_counts": [
+        5,
+        12,
+        7
+      ],
+      "action_entropy": 1.0327438135557052,
+      "policy_entropy": 0.5383932242115277
+    }
+  ],
+  "random_rows": [
+    {
+      "success": 0.16666666666666666,
+      "events": 1,
+      "steps": 24,
+      "return": -4.1000000000000005,
+      "action_counts": [
+        13,
+        7,
+        4
+      ],
+      "action_entropy": 0.9901000747284954
+    },
+    {
+      "success": 0.3333333333333333,
+      "events": 2,
+      "steps": 24,
+      "return": -1.9,
+      "action_counts": [
+        10,
+        6,
+        8
+      ],
+      "action_entropy": 1.0775563270667978
+    },
+    {
+      "success": 0.0,
+      "events": 0,
+      "steps": 24,
+      "return": -6.5,
+      "action_counts": [
+        11,
+        6,
+        7
+      ],
+      "action_entropy": 1.0635215028672094
+    },
+    {
+      "success": 0.3333333333333333,
+      "events": 2,
+      "steps": 24,
+      "return": -2.1,
+      "action_counts": [
+        7,
+        9,
+        8
+      ],
+      "action_entropy": 1.0933903064791153
+    },
+    {
+      "success": 0.3333333333333333,
+      "events": 2,
+      "steps": 24,
+      "return": -1.9,
+      "action_counts": [
+        9,
+        11,
+        4
+      ],
+      "action_entropy": 1.024010220294292
+    },
+    {
+      "success": 0.0,
+      "events": 0,
+      "steps": 24,
+      "return": -6.399999999999999,
+      "action_counts": [
+        11,
+        6,
+        7
+      ],
+      "action_entropy": 1.0635215028672094
+    },
+    {
+      "success": 0.16666666666666666,
+      "events": 1,
+      "steps": 24,
+      "return": -3.5999999999999996,
+      "action_counts": [
+        10,
+        8,
+        6
+      ],
+      "action_entropy": 1.0775563270667978
+    },
+    {
+      "success": 0.16666666666666666,
+      "events": 1,
+      "steps": 24,
+      "return": -4.300000000000001,
+      "action_counts": [
+        9,
+        8,
+        7
+      ],
+      "action_entropy": 1.0933903064791153
+    },
+    {
+      "success": 0.16666666666666666,
+      "events": 1,
+      "steps": 24,
+      "return": -3.8,
+      "action_counts": [
+        8,
+        7,
+        9
+      ],
+      "action_entropy": 1.0933903064791153
+    },
+    {
+      "success": 0.3333333333333333,
+      "events": 2,
+      "steps": 24,
+      "return": -1.7999999999999998,
+      "action_counts": [
+        10,
+        8,
+        6
+      ],
+      "action_entropy": 1.0775563270667978
+    },
+    {
+      "success": 0.0,
+      "events": 0,
+      "steps": 24,
+      "return": -6.500000000000002,
+      "action_counts": [
+        9,
+        6,
+        9
+      ],
+      "action_entropy": 1.0821955300387642
+    },
+    {
+      "success": 0.0,
+      "events": 0,
+      "steps": 24,
+      "return": -6.4,
+      "action_counts": [
+        6,
+        7,
+        11
+      ],
+      "action_entropy": 1.0635215028672094
+    },
+    {
+      "success": 0.3333333333333333,
+      "events": 2,
+      "steps": 24,
+      "return": -1.9,
+      "action_counts": [
+        8,
+        10,
+        6
+      ],
+      "action_entropy": 1.0775563270667978
+    },
+    {
+      "success": 0.16666666666666666,
+      "events": 1,
+      "steps": 24,
+      "return": -4.2,
+      "action_counts": [
+        7,
+        8,
+        9
+      ],
+      "action_entropy": 1.0933903064791153
+    },
+    {
+      "success": 0.16666666666666666,
+      "events": 1,
+      "steps": 24,
+      "return": -4.2,
+      "action_counts": [
+        10,
+        7,
+        7
+      ],
+      "action_entropy": 1.0835291213181575
+    },
+    {
+      "success": 0.0,
+      "events": 0,
+      "steps": 24,
+      "return": -6.4,
+      "action_counts": [
+        8,
+        7,
+        9
+      ],
+      "action_entropy": 1.0933903064791153
+    },
+    {
+      "success": 0.16666666666666666,
+      "events": 1,
+      "steps": 24,
+      "return": -4.1000000000000005,
+      "action_counts": [
+        8,
+        6,
+        10
+      ],
+      "action_entropy": 1.0775563270667978
+    },
+    {
+      "success": 0.16666666666666666,
+      "events": 1,
+      "steps": 24,
+      "return": -3.9,
+      "action_counts": [
+        6,
+        8,
+        10
+      ],
+      "action_entropy": 1.0775563270667978
+    },
+    {
+      "success": 0.16666666666666666,
+      "events": 1,
+      "steps": 24,
+      "return": -4.600000000000001,
+      "action_counts": [
+        5,
+        9,
+        10
+      ],
+      "action_entropy": 1.059384593342237
+    },
+    {
+      "success": 0.0,
+      "events": 0,
+      "steps": 24,
+      "return": -6.0,
+      "action_counts": [
+        4,
+        11,
+        9
+      ],
+      "action_entropy": 1.024010220294292
+    },
+    {
+      "success": 0.16666666666666666,
+      "events": 1,
+      "steps": 24,
+      "return": -3.9999999999999996,
+      "action_counts": [
+        6,
+        8,
+        10
+      ],
+      "action_entropy": 1.0775563270667978
+    },
+    {
+      "success": 0.3333333333333333,
+      "events": 2,
+      "steps": 24,
+      "return": -1.7999999999999998,
+      "action_counts": [
+        10,
+        6,
+        8
+      ],
+      "action_entropy": 1.0775563270667978
+    },
+    {
+      "success": 0.16666666666666666,
+      "events": 1,
+      "steps": 24,
+      "return": -4.000000000000001,
+      "action_counts": [
+        8,
+        7,
+        9
+      ],
+      "action_entropy": 1.0933903064791153
+    },
+    {
+      "success": 0.16666666666666666,
+      "events": 1,
+      "steps": 24,
+      "return": -4.2,
+      "action_counts": [
+        9,
+        5,
+        10
+      ],
+      "action_entropy": 1.059384593342237
+    },
+    {
+      "success": 0.16666666666666666,
+      "events": 1,
+      "steps": 24,
+      "return": -3.8,
+      "action_counts": [
+        6,
+        9,
+        9
+      ],
+      "action_entropy": 1.0821955300387642
+    },
+    {
+      "success": 0.16666666666666666,
+      "events": 1,
+      "steps": 24,
+      "return": -4.300000000000001,
+      "action_counts": [
+        10,
+        8,
+        6
+      ],
+      "action_entropy": 1.0775563270667978
+    },
+    {
+      "success": 0.0,
+      "events": 0,
+      "steps": 24,
+      "return": -6.3,
+      "action_counts": [
+        10,
+        7,
+        7
+      ],
+      "action_entropy": 1.0835291213181575
+    },
+    {
+      "success": 0.3333333333333333,
+      "events": 2,
+      "steps": 24,
+      "return": -1.6999999999999997,
+      "action_counts": [
+        5,
+        12,
+        7
+      ],
+      "action_entropy": 1.0327438135557052
+    },
+    {
+      "success": 0.0,
+      "events": 0,
+      "steps": 24,
+      "return": -6.2,
+      "action_counts": [
+        10,
+        6,
+        8
+      ],
+      "action_entropy": 1.0775563270667978
+    },
+    {
+      "success": 0.0,
+      "events": 0,
+      "steps": 24,
+      "return": -6.0,
+      "action_counts": [
+        6,
+        9,
+        9
+      ],
+      "action_entropy": 1.0821955300387642
+    },
+    {
+      "success": 0.3333333333333333,
+      "events": 2,
+      "steps": 24,
+      "return": -1.7999999999999998,
+      "action_counts": [
+        8,
+        7,
+        9
+      ],
+      "action_entropy": 1.0933903064791153
+    },
+    {
+      "success": 0.16666666666666666,
+      "events": 1,
+      "steps": 24,
+      "return": -4.2,
+      "action_counts": [
+        12,
+        6,
+        6
+      ],
+      "action_entropy": 1.039720770839915
+    },
+    {
+      "success": 0.0,
+      "events": 0,
+      "steps": 24,
+      "return": -6.1,
+      "action_counts": [
+        11,
+        7,
+        6
+      ],
+      "action_entropy": 1.0635215028672094
+    },
+    {
+      "success": 0.16666666666666666,
+      "events": 1,
+      "steps": 24,
+      "return": -4.300000000000001,
+      "action_counts": [
+        5,
+        9,
+        10
+      ],
+      "action_entropy": 1.059384593342237
+    },
+    {
+      "success": 0.16666666666666666,
+      "events": 1,
+      "steps": 24,
+      "return": -4.0,
+      "action_counts": [
+        6,
+        9,
+        9
+      ],
+      "action_entropy": 1.0821955300387642
+    },
+    {
+      "success": 0.16666666666666666,
+      "events": 1,
+      "steps": 24,
+      "return": -3.8,
+      "action_counts": [
+        10,
+        10,
+        4
+      ],
+      "action_entropy": 1.0281838593329227
+    },
+    {
+      "success": 0.16666666666666666,
+      "events": 1,
+      "steps": 24,
+      "return": -4.100000000000001,
+      "action_counts": [
+        6,
+        10,
+        8
+      ],
+      "action_entropy": 1.0775563270667978
+    },
+    {
+      "success": 0.5,
+      "events": 3,
+      "steps": 24,
+      "return": 0.10000000000000009,
+      "action_counts": [
+        10,
+        7,
+        7
+      ],
+      "action_entropy": 1.0835291213181575
+    },
+    {
+      "success": 0.0,
+      "events": 0,
+      "steps": 24,
+      "return": -6.3999999999999995,
+      "action_counts": [
+        9,
+        9,
+        6
+      ],
+      "action_entropy": 1.0821955300387642
+    },
+    {
+      "success": 0.0,
+      "events": 0,
+      "steps": 24,
+      "return": -6.1,
+      "action_counts": [
+        11,
+        7,
+        6
+      ],
+      "action_entropy": 1.0635215028672094
+    },
+    {
+      "success": 0.3333333333333333,
+      "events": 2,
+      "steps": 24,
+      "return": -1.9,
+      "action_counts": [
+        8,
+        6,
+        10
+      ],
+      "action_entropy": 1.0775563270667978
+    },
+    {
+      "success": 0.3333333333333333,
+      "events": 2,
+      "steps": 24,
+      "return": -2.4000000000000004,
+      "action_counts": [
+        11,
+        6,
+        7
+      ],
+      "action_entropy": 1.0635215028672094
+    },
+    {
+      "success": 0.16666666666666666,
+      "events": 1,
+      "steps": 24,
+      "return": -3.9000000000000004,
+      "action_counts": [
+        7,
+        11,
+        6
+      ],
+      "action_entropy": 1.0635215028672094
+    },
+    {
+      "success": 0.5,
+      "events": 3,
+      "steps": 24,
+      "return": 0.30000000000000027,
+      "action_counts": [
+        7,
+        4,
+        13
+      ],
+      "action_entropy": 0.9901000747284954
+    },
+    {
+      "success": 0.0,
+      "events": 0,
+      "steps": 24,
+      "return": -6.6,
+      "action_counts": [
+        9,
+        9,
+        6
+      ],
+      "action_entropy": 1.0821955300387642
+    },
+    {
+      "success": 0.0,
+      "events": 0,
+      "steps": 24,
+      "return": -6.4,
+      "action_counts": [
+        7,
+        7,
+        10
+      ],
+      "action_entropy": 1.0835291213181575
+    },
+    {
+      "success": 0.3333333333333333,
+      "events": 2,
+      "steps": 24,
+      "return": -2.0,
+      "action_counts": [
+        7,
+        7,
+        10
+      ],
+      "action_entropy": 1.0835291213181575
+    },
+    {
+      "success": 0.16666666666666666,
+      "events": 1,
+      "steps": 24,
+      "return": -4.0,
+      "action_counts": [
+        6,
+        10,
+        8
+      ],
+      "action_entropy": 1.0775563270667978
+    },
+    {
+      "success": 0.16666666666666666,
+      "events": 1,
+      "steps": 24,
+      "return": -4.1,
+      "action_counts": [
+        11,
+        9,
+        4
+      ],
+      "action_entropy": 1.024010220294292
+    },
+    {
+      "success": 0.16666666666666666,
+      "events": 1,
+      "steps": 24,
+      "return": -4.0,
+      "action_counts": [
+        12,
+        7,
+        5
+      ],
+      "action_entropy": 1.032743813555705
+    },
+    {
+      "success": 0.3333333333333333,
+      "events": 2,
+      "steps": 24,
+      "return": -1.9,
+      "action_counts": [
+        10,
+        5,
+        9
+      ],
+      "action_entropy": 1.059384593342237
+    },
+    {
+      "success": 0.0,
+      "events": 0,
+      "steps": 24,
+      "return": -6.2,
+      "action_counts": [
+        10,
+        9,
+        5
+      ],
+      "action_entropy": 1.0593845933422372
+    },
+    {
+      "success": 0.16666666666666666,
+      "events": 1,
+      "steps": 24,
+      "return": -4.2,
+      "action_counts": [
+        9,
+        8,
+        7
+      ],
+      "action_entropy": 1.0933903064791153
+    },
+    {
+      "success": 0.16666666666666666,
+      "events": 1,
+      "steps": 24,
+      "return": -4.4,
+      "action_counts": [
+        8,
+        7,
+        9
+      ],
+      "action_entropy": 1.0933903064791153
+    },
+    {
+      "success": 0.6666666666666666,
+      "events": 4,
+      "steps": 24,
+      "return": 3.000000000000001,
+      "action_counts": [
+        6,
+        8,
+        10
+      ],
+      "action_entropy": 1.0775563270667978
+    },
+    {
+      "success": 0.0,
+      "events": 0,
+      "steps": 24,
+      "return": -6.199999999999999,
+      "action_counts": [
+        7,
+        8,
+        9
+      ],
+      "action_entropy": 1.0933903064791153
+    },
+    {
+      "success": 0.16666666666666666,
+      "events": 1,
+      "steps": 24,
+      "return": -4.199999999999999,
+      "action_counts": [
+        13,
+        5,
+        6
+      ],
+      "action_entropy": 1.0054668293254923
+    },
+    {
+      "success": 0.16666666666666666,
+      "events": 1,
+      "steps": 24,
+      "return": -4.0,
+      "action_counts": [
+        5,
+        7,
+        12
+      ],
+      "action_entropy": 1.0327438135557052
+    },
+    {
+      "success": 0.16666666666666666,
+      "events": 1,
+      "steps": 24,
+      "return": -3.9,
+      "action_counts": [
+        4,
+        7,
+        13
+      ],
+      "action_entropy": 0.9901000747284954
+    },
+    {
+      "success": 0.0,
+      "events": 0,
+      "steps": 24,
+      "return": -6.199999999999999,
+      "action_counts": [
+        13,
+        4,
+        7
+      ],
+      "action_entropy": 0.9901000747284954
+    },
+    {
+      "success": 0.0,
+      "events": 0,
+      "steps": 24,
+      "return": -6.0,
+      "action_counts": [
+        7,
+        6,
+        11
+      ],
+      "action_entropy": 1.0635215028672094
+    },
+    {
+      "success": 0.16666666666666666,
+      "events": 1,
+      "steps": 24,
+      "return": -4.6000000000000005,
+      "action_counts": [
+        8,
+        7,
+        9
+      ],
+      "action_entropy": 1.0933903064791153
+    },
+    {
+      "success": 0.0,
+      "events": 0,
+      "steps": 24,
+      "return": -6.6,
+      "action_counts": [
+        9,
+        5,
+        10
+      ],
+      "action_entropy": 1.059384593342237
+    },
+    {
+      "success": 0.16666666666666666,
+      "events": 1,
+      "steps": 24,
+      "return": -4.0,
+      "action_counts": [
+        15,
+        4,
+        5
+      ],
+      "action_entropy": 0.9191738293819753
+    },
+    {
+      "success": 0.3333333333333333,
+      "events": 2,
+      "steps": 24,
+      "return": -1.8000000000000003,
+      "action_counts": [
+        10,
+        10,
+        4
+      ],
+      "action_entropy": 1.0281838593329227
+    },
+    {
+      "success": 0.3333333333333333,
+      "events": 2,
+      "steps": 24,
+      "return": -2.0999999999999996,
+      "action_counts": [
+        6,
+        8,
+        10
+      ],
+      "action_entropy": 1.0775563270667978
+    },
+    {
+      "success": 0.16666666666666666,
+      "events": 1,
+      "steps": 24,
+      "return": -4.4,
+      "action_counts": [
+        10,
+        7,
+        7
+      ],
+      "action_entropy": 1.0835291213181575
+    },
+    {
+      "success": 0.0,
+      "events": 0,
+      "steps": 24,
+      "return": -6.1000000000000005,
+      "action_counts": [
+        13,
+        7,
+        4
+      ],
+      "action_entropy": 0.9901000747284954
+    },
+    {
+      "success": 0.0,
+      "events": 0,
+      "steps": 24,
+      "return": -6.4,
+      "action_counts": [
+        6,
+        8,
+        10
+      ],
+      "action_entropy": 1.0775563270667978
+    },
+    {
+      "success": 0.3333333333333333,
+      "events": 2,
+      "steps": 24,
+      "return": -2.2,
+      "action_counts": [
+        6,
+        8,
+        10
+      ],
+      "action_entropy": 1.0775563270667978
+    },
+    {
+      "success": 0.3333333333333333,
+      "events": 2,
+      "steps": 24,
+      "return": -1.7999999999999998,
+      "action_counts": [
+        11,
+        6,
+        7
+      ],
+      "action_entropy": 1.0635215028672094
+    },
+    {
+      "success": 0.3333333333333333,
+      "events": 2,
+      "steps": 24,
+      "return": -2.0,
+      "action_counts": [
+        12,
+        2,
+        10
+      ],
+      "action_entropy": 0.9184277849930946
+    },
+    {
+      "success": 0.0,
+      "events": 0,
+      "steps": 24,
+      "return": -6.100000000000001,
+      "action_counts": [
+        7,
+        12,
+        5
+      ],
+      "action_entropy": 1.032743813555705
+    },
+    {
+      "success": 0.0,
+      "events": 0,
+      "steps": 24,
+      "return": -5.800000000000001,
+      "action_counts": [
+        10,
+        7,
+        7
+      ],
+      "action_entropy": 1.0835291213181575
+    },
+    {
+      "success": 0.0,
+      "events": 0,
+      "steps": 24,
+      "return": -6.6,
+      "action_counts": [
+        12,
+        5,
+        7
+      ],
+      "action_entropy": 1.0327438135557052
+    },
+    {
+      "success": 0.16666666666666666,
+      "events": 1,
+      "steps": 24,
+      "return": -4.4,
+      "action_counts": [
+        8,
+        9,
+        7
+      ],
+      "action_entropy": 1.0933903064791153
+    },
+    {
+      "success": 0.0,
+      "events": 0,
+      "steps": 24,
+      "return": -6.299999999999999,
+      "action_counts": [
+        9,
+        8,
+        7
+      ],
+      "action_entropy": 1.0933903064791153
+    },
+    {
+      "success": 0.16666666666666666,
+      "events": 1,
+      "steps": 24,
+      "return": -3.6999999999999997,
+      "action_counts": [
+        10,
+        8,
+        6
+      ],
+      "action_entropy": 1.0775563270667978
+    },
+    {
+      "success": 0.0,
+      "events": 0,
+      "steps": 24,
+      "return": -6.000000000000001,
+      "action_counts": [
+        6,
+        9,
+        9
+      ],
+      "action_entropy": 1.0821955300387642
+    },
+    {
+      "success": 0.3333333333333333,
+      "events": 2,
+      "steps": 24,
+      "return": -2.1,
+      "action_counts": [
+        7,
+        10,
+        7
+      ],
+      "action_entropy": 1.0835291213181575
+    },
+    {
+      "success": 0.3333333333333333,
+      "events": 2,
+      "steps": 24,
+      "return": -2.1,
+      "action_counts": [
+        7,
+        9,
+        8
+      ],
+      "action_entropy": 1.0933903064791153
+    },
+    {
+      "success": 0.16666666666666666,
+      "events": 1,
+      "steps": 24,
+      "return": -3.6999999999999997,
+      "action_counts": [
+        7,
+        9,
+        8
+      ],
+      "action_entropy": 1.0933903064791153
+    },
+    {
+      "success": 0.3333333333333333,
+      "events": 2,
+      "steps": 24,
+      "return": -2.1,
+      "action_counts": [
+        8,
+        9,
+        7
+      ],
+      "action_entropy": 1.0933903064791153
+    },
+    {
+      "success": 0.0,
+      "events": 0,
+      "steps": 24,
+      "return": -6.1,
+      "action_counts": [
+        6,
+        7,
+        11
+      ],
+      "action_entropy": 1.0635215028672094
+    },
+    {
+      "success": 0.0,
+      "events": 0,
+      "steps": 24,
+      "return": -6.0,
+      "action_counts": [
+        13,
+        6,
+        5
+      ],
+      "action_entropy": 1.0054668293254923
+    },
+    {
+      "success": 0.16666666666666666,
+      "events": 1,
+      "steps": 24,
+      "return": -4.4,
+      "action_counts": [
+        15,
+        2,
+        7
+      ],
+      "action_entropy": 0.8602030628045996
+    },
+    {
+      "success": 0.0,
+      "events": 0,
+      "steps": 24,
+      "return": -6.0,
+      "action_counts": [
+        8,
+        8,
+        8
+      ],
+      "action_entropy": 1.0986122886681067
+    },
+    {
+      "success": 0.3333333333333333,
+      "events": 2,
+      "steps": 24,
+      "return": -2.0,
+      "action_counts": [
+        11,
+        8,
+        5
+      ],
+      "action_entropy": 1.05057175133164
+    },
+    {
+      "success": 0.5,
+      "events": 3,
+      "steps": 24,
+      "return": 0.20000000000000007,
+      "action_counts": [
+        6,
+        8,
+        10
+      ],
+      "action_entropy": 1.0775563270667978
+    },
+    {
+      "success": 0.0,
+      "events": 0,
+      "steps": 24,
+      "return": -6.399999999999999,
+      "action_counts": [
+        8,
+        6,
+        10
+      ],
+      "action_entropy": 1.0775563270667978
+    },
+    {
+      "success": 0.0,
+      "events": 0,
+      "steps": 24,
+      "return": -6.6,
+      "action_counts": [
+        7,
+        9,
+        8
+      ],
+      "action_entropy": 1.0933903064791153
+    },
+    {
+      "success": 0.16666666666666666,
+      "events": 1,
+      "steps": 24,
+      "return": -4.2,
+      "action_counts": [
+        7,
+        9,
+        8
+      ],
+      "action_entropy": 1.0933903064791153
+    },
+    {
+      "success": 0.3333333333333333,
+      "events": 2,
+      "steps": 24,
+      "return": -1.8000000000000003,
+      "action_counts": [
+        12,
+        8,
+        4
+      ],
+      "action_entropy": 1.0114042647073487
+    },
+    {
+      "success": 0.16666666666666666,
+      "events": 1,
+      "steps": 24,
+      "return": -4.100000000000001,
+      "action_counts": [
+        8,
+        9,
+        7
+      ],
+      "action_entropy": 1.0933903064791153
+    },
+    {
+      "success": 0.16666666666666666,
+      "events": 1,
+      "steps": 24,
+      "return": -4.2,
+      "action_counts": [
+        8,
+        11,
+        5
+      ],
+      "action_entropy": 1.05057175133164
+    },
+    {
+      "success": 0.16666666666666666,
+      "events": 1,
+      "steps": 24,
+      "return": -4.2,
+      "action_counts": [
+        9,
+        9,
+        6
+      ],
+      "action_entropy": 1.0821955300387642
+    },
+    {
+      "success": 0.16666666666666666,
+      "events": 1,
+      "steps": 24,
+      "return": -3.8,
+      "action_counts": [
+        5,
+        9,
+        10
+      ],
+      "action_entropy": 1.059384593342237
+    },
+    {
+      "success": 0.3333333333333333,
+      "events": 2,
+      "steps": 24,
+      "return": -1.9000000000000004,
+      "action_counts": [
+        7,
+        8,
+        9
+      ],
+      "action_entropy": 1.0933903064791153
+    },
+    {
+      "success": 0.16666666666666666,
+      "events": 1,
+      "steps": 24,
+      "return": -4.300000000000001,
+      "action_counts": [
+        7,
+        7,
+        10
+      ],
+      "action_entropy": 1.0835291213181575
+    },
+    {
+      "success": 0.16666666666666666,
+      "events": 1,
+      "steps": 24,
+      "return": -4.300000000000001,
+      "action_counts": [
+        7,
+        5,
+        12
+      ],
+      "action_entropy": 1.0327438135557052
+    }
+  ],
+  "state_probe": {
+    "score": 0.375,
+    "action_counts": [
+      7,
+      25,
+      8
+    ],
+    "states": 40,
+    "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "action_distribution": [
+    0.24083333333333334,
+    0.515,
+    0.24416666666666667
+  ],
+  "dominant_action_fraction": 0.515,
+  "policy_entropy": 0.5064749548125653,
+  "evaluation_seeds": [
+    150002000000,
+    150002000001,
+    150002000002,
+    150002000003,
+    150002000004,
+    150002000005,
+    150002000006,
+    150002000007,
+    150002000008,
+    150002000009,
+    150002000010,
+    150002000011,
+    150002000012,
+    150002000013,
+    150002000014,
+    150002000015,
+    150002000016,
+    150002000017,
+    150002000018,
+    150002000019,
+    150002000020,
+    150002000021,
+    150002000022,
+    150002000023,
+    150002000024,
+    150002000025,
+    150002000026,
+    150002000027,
+    150002000028,
+    150002000029,
+    150002000030,
+    150002000031,
+    150002000032,
+    150002000033,
+    150002000034,
+    150002000035,
+    150002000036,
+    150002000037,
+    150002000038,
+    150002000039,
+    150002000040,
+    150002000041,
+    150002000042,
+    150002000043,
+    150002000044,
+    150002000045,
+    150002000046,
+    150002000047,
+    150002000048,
+    150002000049,
+    150002000050,
+    150002000051,
+    150002000052,
+    150002000053,
+    150002000054,
+    150002000055,
+    150002000056,
+    150002000057,
+    150002000058,
+    150002000059,
+    150002000060,
+    150002000061,
+    150002000062,
+    150002000063,
+    150002000064,
+    150002000065,
+    150002000066,
+    150002000067,
+    150002000068,
+    150002000069,
+    150002000070,
+    150002000071,
+    150002000072,
+    150002000073,
+    150002000074,
+    150002000075,
+    150002000076,
+    150002000077,
+    150002000078,
+    150002000079,
+    150002000080,
+    150002000081,
+    150002000082,
+    150002000083,
+    150002000084,
+    150002000085,
+    150002000086,
+    150002000087,
+    150002000088,
+    150002000089,
+    150002000090,
+    150002000091,
+    150002000092,
+    150002000093,
+    150002000094,
+    150002000095,
+    150002000096,
+    150002000097,
+    150002000098,
+    150002000099
+  ],
+  "learning": false,
+  "status": "COMPLETE",
+  "resources": {
+    "rss_mb": 149.46875,
+    "free_disk_mb": 343771.08984375,
+    "elapsed_seconds": 0.9807687500142492
+  },
+  "peak_memory_mb": 149.46875
+}

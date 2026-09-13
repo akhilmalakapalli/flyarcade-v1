@@ -1,0 +1,17 @@
+{
+  "flappy-curriculum-gru-s0": {
+    "easy": 33671,
+    "intermediate": 32495,
+    "target": 64906
+  },
+  "flappy-curriculum-gru-s1": {
+    "easy": 33392,
+    "intermediate": 32946,
+    "target": 64734
+  },
+  "flappy-curriculum-gru-s2": {
+    "easy": 33610,
+    "intermediate": 32501,
+    "target": 64961
+  }
+}

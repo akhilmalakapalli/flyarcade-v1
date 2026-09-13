@@ -1,0 +1,3244 @@
+{
+  "selection_sha256": "8110183e11f79b4d9e829501c81af8a3e6ebf7554dcde922beab23022bfacf2c",
+  "source_result_sha256": "ec66e5559c780d24d7953011961ca6a088c1b134ed6e865595714cf3ed4bd3a6",
+  "checkpoint_sha256": "6f0a4b6e32ab8dbe93c287ea477b3a7eefc834dbcd537ce5bcc789b357f82d7b",
+  "code_sha256": "e85511e4bc365a05991535efbccd77a20b76410345f35b6711f223e77a7910ce",
+  "purpose": "final_validation",
+  "task": "snake",
+  "configuration": "snake-all_readout-linear",
+  "development_seed": 1,
+  "score": 12.37,
+  "rows": [
+    {
+      "success": 5,
+      "food": 5,
+      "steps": 34,
+      "length": 8,
+      "death": "wall",
+      "return": 3.6600000000000037,
+      "action_counts": [
+        7,
+        10,
+        10,
+        7
+      ],
+      "action_entropy": 1.3706415850086486,
+      "policy_entropy": 0.6264835935641363
+    },
+    {
+      "success": 11,
+      "food": 11,
+      "steps": 63,
+      "length": 14,
+      "death": "self",
+      "return": 9.37000000000001,
+      "action_counts": [
+        19,
+        19,
+        14,
+        11
+      ],
+      "action_entropy": 1.3619866022054903,
+      "policy_entropy": 0.6261179074426366
+    },
+    {
+      "success": 15,
+      "food": 15,
+      "steps": 92,
+      "length": 18,
+      "death": "self",
+      "return": 13.080000000000014,
+      "action_counts": [
+        25,
+        24,
+        22,
+        21
+      ],
+      "action_entropy": 1.3839288736128346,
+      "policy_entropy": 0.5798163994097947
+    },
+    {
+      "success": 11,
+      "food": 11,
+      "steps": 54,
+      "length": 14,
+      "death": "self",
+      "return": 9.460000000000008,
+      "action_counts": [
+        14,
+        14,
+        14,
+        12
+      ],
+      "action_entropy": 1.3841824235772913,
+      "policy_entropy": 0.5446575673507564
+    },
+    {
+      "success": 12,
+      "food": 12,
+      "steps": 90,
+      "length": 15,
+      "death": "self",
+      "return": 10.100000000000014,
+      "action_counts": [
+        23,
+        23,
+        23,
+        21
+      ],
+      "action_entropy": 1.3855422026491142,
+      "policy_entropy": 0.6197782281511385
+    },
+    {
+      "success": 18,
+      "food": 18,
+      "steps": 112,
+      "length": 21,
+      "death": "self",
+      "return": 15.880000000000015,
+      "action_counts": [
+        31,
+        31,
+        26,
+        24
+      ],
+      "action_entropy": 1.3801862945541237,
+      "policy_entropy": 0.5876378153605665
+    },
+    {
+      "success": 19,
+      "food": 19,
+      "steps": 99,
+      "length": 22,
+      "death": "self",
+      "return": 17.01,
+      "action_counts": [
+        34,
+        33,
+        16,
+        16
+      ],
+      "action_entropy": 1.3223537241041177,
+      "policy_entropy": 0.564015643666557
+    },
+    {
+      "success": 8,
+      "food": 8,
+      "steps": 44,
+      "length": 11,
+      "death": "wall",
+      "return": 6.560000000000008,
+      "action_counts": [
+        7,
+        10,
+        15,
+        12
+      ],
+      "action_entropy": 1.3503974796610572,
+      "policy_entropy": 0.6253927986702169
+    },
+    {
+      "success": 10,
+      "food": 10,
+      "steps": 62,
+      "length": 13,
+      "death": "self",
+      "return": 8.38000000000001,
+      "action_counts": [
+        15,
+        13,
+        18,
+        16
+      ],
+      "action_entropy": 1.3795020324402394,
+      "policy_entropy": 0.5798114132413403
+    },
+    {
+      "success": 16,
+      "food": 16,
+      "steps": 111,
+      "length": 19,
+      "death": "self",
+      "return": 13.890000000000018,
+      "action_counts": [
+        33,
+        31,
+        25,
+        22
+      ],
+      "action_entropy": 1.3733754043481738,
+      "policy_entropy": 0.6314852339135817
+    },
+    {
+      "success": 19,
+      "food": 19,
+      "steps": 120,
+      "length": 22,
+      "death": "self",
+      "return": 16.800000000000004,
+      "action_counts": [
+        28,
+        27,
+        32,
+        33
+      ],
+      "action_entropy": 1.3826782420736445,
+      "policy_entropy": 0.6108213079575042
+    },
+    {
+      "success": 12,
+      "food": 12,
+      "steps": 58,
+      "length": 15,
+      "death": "self",
+      "return": 10.420000000000009,
+      "action_counts": [
+        17,
+        16,
+        15,
+        10
+      ],
+      "action_entropy": 1.3678111079383846,
+      "policy_entropy": 0.5857011183511921
+    },
+    {
+      "success": 11,
+      "food": 11,
+      "steps": 65,
+      "length": 14,
+      "death": "self",
+      "return": 9.350000000000009,
+      "action_counts": [
+        16,
+        17,
+        17,
+        15
+      ],
+      "action_entropy": 1.38498071189131,
+      "policy_entropy": 0.5949358241671987
+    },
+    {
+      "success": 11,
+      "food": 11,
+      "steps": 69,
+      "length": 14,
+      "death": "self",
+      "return": 9.310000000000011,
+      "action_counts": [
+        17,
+        19,
+        15,
+        18
+      ],
+      "action_entropy": 1.3825643000786734,
+      "policy_entropy": 0.5528060939073823
+    },
+    {
+      "success": 16,
+      "food": 16,
+      "steps": 96,
+      "length": 19,
+      "death": "wall",
+      "return": 14.040000000000015,
+      "action_counts": [
+        24,
+        27,
+        24,
+        21
+      ],
+      "action_entropy": 1.382377874478143,
+      "policy_entropy": 0.5874875054361689
+    },
+    {
+      "success": 14,
+      "food": 14,
+      "steps": 75,
+      "length": 17,
+      "death": "self",
+      "return": 12.250000000000012,
+      "action_counts": [
+        18,
+        19,
+        19,
+        19
+      ],
+      "action_entropy": 1.3860252674747322,
+      "policy_entropy": 0.5740971048842819
+    },
+    {
+      "success": 10,
+      "food": 10,
+      "steps": 56,
+      "length": 13,
+      "death": "self",
+      "return": 8.440000000000008,
+      "action_counts": [
+        17,
+        17,
+        12,
+        10
+      ],
+      "action_entropy": 1.3615305402832203,
+      "policy_entropy": 0.6483673208617162
+    },
+    {
+      "success": 6,
+      "food": 6,
+      "steps": 46,
+      "length": 9,
+      "death": "self",
+      "return": 4.540000000000006,
+      "action_counts": [
+        11,
+        8,
+        14,
+        13
+      ],
+      "action_entropy": 1.3655212965796486,
+      "policy_entropy": 0.6659200417052376
+    },
+    {
+      "success": 12,
+      "food": 12,
+      "steps": 67,
+      "length": 15,
+      "death": "self",
+      "return": 10.33000000000001,
+      "action_counts": [
+        14,
+        13,
+        21,
+        19
+      ],
+      "action_entropy": 1.366327603600397,
+      "policy_entropy": 0.6096776139853624
+    },
+    {
+      "success": 17,
+      "food": 17,
+      "steps": 116,
+      "length": 20,
+      "death": "self",
+      "return": 14.840000000000018,
+      "action_counts": [
+        27,
+        26,
+        32,
+        31
+      ],
+      "action_entropy": 1.382424177319238,
+      "policy_entropy": 0.6012084616215723
+    },
+    {
+      "success": 8,
+      "food": 8,
+      "steps": 50,
+      "length": 11,
+      "death": "self",
+      "return": 6.500000000000008,
+      "action_counts": [
+        12,
+        10,
+        14,
+        14
+      ],
+      "action_entropy": 1.377256286295668,
+      "policy_entropy": 0.6432038764055276
+    },
+    {
+      "success": 9,
+      "food": 9,
+      "steps": 49,
+      "length": 12,
+      "death": "self",
+      "return": 7.510000000000007,
+      "action_counts": [
+        17,
+        16,
+        9,
+        7
+      ],
+      "action_entropy": 1.321974611494187,
+      "policy_entropy": 0.5956071473514215
+    },
+    {
+      "success": 14,
+      "food": 14,
+      "steps": 88,
+      "length": 17,
+      "death": "self",
+      "return": 12.120000000000013,
+      "action_counts": [
+        20,
+        18,
+        25,
+        25
+      ],
+      "action_entropy": 1.3763694467893295,
+      "policy_entropy": 0.5883822429267406
+    },
+    {
+      "success": 10,
+      "food": 10,
+      "steps": 75,
+      "length": 13,
+      "death": "self",
+      "return": 8.250000000000012,
+      "action_counts": [
+        22,
+        18,
+        18,
+        17
+      ],
+      "action_entropy": 1.3812088587749656,
+      "policy_entropy": 0.6538677400541579
+    },
+    {
+      "success": 12,
+      "food": 12,
+      "steps": 76,
+      "length": 15,
+      "death": "self",
+      "return": 10.240000000000013,
+      "action_counts": [
+        18,
+        20,
+        21,
+        17
+      ],
+      "action_entropy": 1.382826298781612,
+      "policy_entropy": 0.6696239373240984
+    },
+    {
+      "success": 11,
+      "food": 11,
+      "steps": 65,
+      "length": 14,
+      "death": "self",
+      "return": 9.35000000000001,
+      "action_counts": [
+        16,
+        14,
+        18,
+        17
+      ],
+      "action_entropy": 1.3820866443335291,
+      "policy_entropy": 0.6731350595129567
+    },
+    {
+      "success": 3,
+      "food": 3,
+      "steps": 5,
+      "length": 6,
+      "death": "self",
+      "return": 1.95,
+      "action_counts": [
+        1,
+        2,
+        1,
+        1
+      ],
+      "action_entropy": 1.3321790402101181,
+      "policy_entropy": 0.5549414713630991
+    },
+    {
+      "success": 12,
+      "food": 12,
+      "steps": 86,
+      "length": 15,
+      "death": "self",
+      "return": 10.140000000000011,
+      "action_counts": [
+        20,
+        22,
+        22,
+        22
+      ],
+      "action_entropy": 1.385470000989217,
+      "policy_entropy": 0.5973104029957437
+    },
+    {
+      "success": 24,
+      "food": 24,
+      "steps": 136,
+      "length": 27,
+      "death": "self",
+      "return": 21.639999999999947,
+      "action_counts": [
+        33,
+        32,
+        37,
+        34
+      ],
+      "action_entropy": 1.3847981282156738,
+      "policy_entropy": 0.5978858015621252
+    },
+    {
+      "success": 12,
+      "food": 12,
+      "steps": 85,
+      "length": 15,
+      "death": "self",
+      "return": 10.150000000000015,
+      "action_counts": [
+        21,
+        19,
+        23,
+        22
+      ],
+      "action_entropy": 1.3838440478243401,
+      "policy_entropy": 0.5768278635700882
+    },
+    {
+      "success": 8,
+      "food": 8,
+      "steps": 53,
+      "length": 11,
+      "death": "self",
+      "return": 6.470000000000008,
+      "action_counts": [
+        15,
+        16,
+        11,
+        11
+      ],
+      "action_entropy": 1.3715019404590272,
+      "policy_entropy": 0.6145815562675014
+    },
+    {
+      "success": 17,
+      "food": 17,
+      "steps": 88,
+      "length": 20,
+      "death": "self",
+      "return": 15.12000000000001,
+      "action_counts": [
+        23,
+        24,
+        21,
+        20
+      ],
+      "action_entropy": 1.3837086831373746,
+      "policy_entropy": 0.5352554145249299
+    },
+    {
+      "success": 6,
+      "food": 6,
+      "steps": 53,
+      "length": 9,
+      "death": "self",
+      "return": 4.470000000000005,
+      "action_counts": [
+        14,
+        11,
+        15,
+        13
+      ],
+      "action_entropy": 1.3799382290440265,
+      "policy_entropy": 0.6595086030748222
+    },
+    {
+      "success": 12,
+      "food": 12,
+      "steps": 77,
+      "length": 15,
+      "death": "self",
+      "return": 10.230000000000011,
+      "action_counts": [
+        20,
+        20,
+        18,
+        19
+      ],
+      "action_entropy": 1.3853596661594854,
+      "policy_entropy": 0.5543482486247798
+    },
+    {
+      "success": 15,
+      "food": 15,
+      "steps": 92,
+      "length": 18,
+      "death": "self",
+      "return": 13.080000000000014,
+      "action_counts": [
+        24,
+        23,
+        21,
+        24
+      ],
+      "action_entropy": 1.3848546421005177,
+      "policy_entropy": 0.6028240409544452
+    },
+    {
+      "success": 13,
+      "food": 13,
+      "steps": 70,
+      "length": 16,
+      "death": "self",
+      "return": 11.300000000000011,
+      "action_counts": [
+        19,
+        19,
+        16,
+        16
+      ],
+      "action_entropy": 1.3826163803351015,
+      "policy_entropy": 0.559333512575455
+    },
+    {
+      "success": 10,
+      "food": 10,
+      "steps": 77,
+      "length": 13,
+      "death": "self",
+      "return": 8.230000000000011,
+      "action_counts": [
+        14,
+        15,
+        25,
+        23
+      ],
+      "action_entropy": 1.3547688216040403,
+      "policy_entropy": 0.5789658675025008
+    },
+    {
+      "success": 16,
+      "food": 16,
+      "steps": 94,
+      "length": 19,
+      "death": "self",
+      "return": 14.060000000000015,
+      "action_counts": [
+        30,
+        27,
+        18,
+        19
+      ],
+      "action_entropy": 1.3625017069692031,
+      "policy_entropy": 0.6175644151197595
+    },
+    {
+      "success": 11,
+      "food": 11,
+      "steps": 61,
+      "length": 14,
+      "death": "self",
+      "return": 9.39000000000001,
+      "action_counts": [
+        16,
+        15,
+        14,
+        16
+      ],
+      "action_entropy": 1.3848018192090488,
+      "policy_entropy": 0.6746534797296956
+    },
+    {
+      "success": 10,
+      "food": 10,
+      "steps": 64,
+      "length": 13,
+      "death": "self",
+      "return": 8.36000000000001,
+      "action_counts": [
+        18,
+        16,
+        16,
+        14
+      ],
+      "action_entropy": 1.382377874478143,
+      "policy_entropy": 0.606492636771829
+    },
+    {
+      "success": 13,
+      "food": 13,
+      "steps": 95,
+      "length": 16,
+      "death": "self",
+      "return": 11.050000000000015,
+      "action_counts": [
+        29,
+        29,
+        20,
+        17
+      ],
+      "action_entropy": 1.3603776236084213,
+      "policy_entropy": 0.6156861648694907
+    },
+    {
+      "success": 17,
+      "food": 17,
+      "steps": 113,
+      "length": 20,
+      "death": "self",
+      "return": 14.87000000000002,
+      "action_counts": [
+        28,
+        27,
+        30,
+        28
+      ],
+      "action_entropy": 1.38555623108585,
+      "policy_entropy": 0.5876411036440087
+    },
+    {
+      "success": 17,
+      "food": 17,
+      "steps": 91,
+      "length": 20,
+      "death": "self",
+      "return": 15.090000000000012,
+      "action_counts": [
+        27,
+        25,
+        19,
+        20
+      ],
+      "action_entropy": 1.3754916265271309,
+      "policy_entropy": 0.5463665393433713
+    },
+    {
+      "success": 12,
+      "food": 12,
+      "steps": 62,
+      "length": 15,
+      "death": "self",
+      "return": 10.38000000000001,
+      "action_counts": [
+        19,
+        17,
+        12,
+        14
+      ],
+      "action_entropy": 1.3710916452839963,
+      "policy_entropy": 0.6516289721879092
+    },
+    {
+      "success": 14,
+      "food": 14,
+      "steps": 93,
+      "length": 17,
+      "death": "self",
+      "return": 12.070000000000014,
+      "action_counts": [
+        23,
+        26,
+        22,
+        22
+      ],
+      "action_entropy": 1.3838603006511563,
+      "policy_entropy": 0.6358557533379797
+    },
+    {
+      "success": 8,
+      "food": 8,
+      "steps": 57,
+      "length": 11,
+      "death": "self",
+      "return": 6.430000000000007,
+      "action_counts": [
+        12,
+        9,
+        18,
+        18
+      ],
+      "action_entropy": 1.3474848769969339,
+      "policy_entropy": 0.6244328375385889
+    },
+    {
+      "success": 18,
+      "food": 18,
+      "steps": 103,
+      "length": 21,
+      "death": "self",
+      "return": 15.969999999999997,
+      "action_counts": [
+        27,
+        27,
+        24,
+        25
+      ],
+      "action_entropy": 1.3850165774112875,
+      "policy_entropy": 0.5754489229706791
+    },
+    {
+      "success": 14,
+      "food": 14,
+      "steps": 69,
+      "length": 17,
+      "death": "self",
+      "return": 12.310000000000011,
+      "action_counts": [
+        15,
+        13,
+        22,
+        19
+      ],
+      "action_entropy": 1.3658112981975679,
+      "policy_entropy": 0.6144380114064569
+    },
+    {
+      "success": 11,
+      "food": 11,
+      "steps": 75,
+      "length": 14,
+      "death": "self",
+      "return": 9.250000000000012,
+      "action_counts": [
+        19,
+        18,
+        19,
+        19
+      ],
+      "action_entropy": 1.3860252674747322,
+      "policy_entropy": 0.6677536945639084
+    },
+    {
+      "success": 14,
+      "food": 14,
+      "steps": 76,
+      "length": 17,
+      "death": "self",
+      "return": 12.240000000000013,
+      "action_counts": [
+        21,
+        23,
+        16,
+        16
+      ],
+      "action_entropy": 1.3731783762042833,
+      "policy_entropy": 0.5590436669962321
+    },
+    {
+      "success": 19,
+      "food": 19,
+      "steps": 119,
+      "length": 22,
+      "death": "self",
+      "return": 16.810000000000006,
+      "action_counts": [
+        31,
+        28,
+        29,
+        31
+      ],
+      "action_entropy": 1.385337677711588,
+      "policy_entropy": 0.6170112334212877
+    },
+    {
+      "success": 14,
+      "food": 14,
+      "steps": 84,
+      "length": 17,
+      "death": "self",
+      "return": 12.160000000000014,
+      "action_counts": [
+        25,
+        24,
+        19,
+        16
+      ],
+      "action_entropy": 1.3706864689617075,
+      "policy_entropy": 0.6277254098974194
+    },
+    {
+      "success": 10,
+      "food": 10,
+      "steps": 58,
+      "length": 13,
+      "death": "self",
+      "return": 8.420000000000009,
+      "action_counts": [
+        14,
+        12,
+        15,
+        17
+      ],
+      "action_entropy": 1.3785281436919592,
+      "policy_entropy": 0.6144475907346704
+    },
+    {
+      "success": 16,
+      "food": 16,
+      "steps": 115,
+      "length": 19,
+      "death": "self",
+      "return": 13.850000000000021,
+      "action_counts": [
+        33,
+        33,
+        25,
+        24
+      ],
+      "action_entropy": 1.3752392013472163,
+      "policy_entropy": 0.6076216320440996
+    },
+    {
+      "success": 2,
+      "food": 2,
+      "steps": 10,
+      "length": 5,
+      "death": "self",
+      "return": 0.8999999999999999,
+      "action_counts": [
+        5,
+        1,
+        3,
+        1
+      ],
+      "action_entropy": 1.1682824501765585,
+      "policy_entropy": 0.683549075148839
+    },
+    {
+      "success": 10,
+      "food": 10,
+      "steps": 59,
+      "length": 13,
+      "death": "self",
+      "return": 8.410000000000009,
+      "action_counts": [
+        14,
+        12,
+        18,
+        15
+      ],
+      "action_entropy": 1.3756200359271775,
+      "policy_entropy": 0.5645034768874698
+    },
+    {
+      "success": 8,
+      "food": 8,
+      "steps": 54,
+      "length": 11,
+      "death": "self",
+      "return": 6.460000000000007,
+      "action_counts": [
+        12,
+        13,
+        15,
+        14
+      ],
+      "action_entropy": 1.3828585451642192,
+      "policy_entropy": 0.6750670413002205
+    },
+    {
+      "success": 6,
+      "food": 6,
+      "steps": 37,
+      "length": 9,
+      "death": "wall",
+      "return": 4.630000000000004,
+      "action_counts": [
+        13,
+        10,
+        7,
+        7
+      ],
+      "action_entropy": 1.351108867678955,
+      "policy_entropy": 0.686562305177267
+    },
+    {
+      "success": 17,
+      "food": 17,
+      "steps": 127,
+      "length": 20,
+      "death": "self",
+      "return": 14.730000000000022,
+      "action_counts": [
+        29,
+        31,
+        34,
+        33
+      ],
+      "action_entropy": 1.3844533087106299,
+      "policy_entropy": 0.6345708576698619
+    },
+    {
+      "success": 15,
+      "food": 15,
+      "steps": 77,
+      "length": 18,
+      "death": "self",
+      "return": 13.230000000000011,
+      "action_counts": [
+        18,
+        20,
+        20,
+        19
+      ],
+      "action_entropy": 1.3853596661594854,
+      "policy_entropy": 0.5609951208717608
+    },
+    {
+      "success": 8,
+      "food": 8,
+      "steps": 56,
+      "length": 11,
+      "death": "self",
+      "return": 6.440000000000006,
+      "action_counts": [
+        13,
+        14,
+        14,
+        15
+      ],
+      "action_entropy": 1.38501776407871,
+      "policy_entropy": 0.6092188926217518
+    },
+    {
+      "success": 12,
+      "food": 12,
+      "steps": 88,
+      "length": 15,
+      "death": "self",
+      "return": 10.120000000000013,
+      "action_counts": [
+        23,
+        22,
+        22,
+        21
+      ],
+      "action_entropy": 1.385777654179018,
+      "policy_entropy": 0.634800239249328
+    },
+    {
+      "success": 16,
+      "food": 16,
+      "steps": 112,
+      "length": 19,
+      "death": "self",
+      "return": 13.880000000000019,
+      "action_counts": [
+        23,
+        25,
+        32,
+        32
+      ],
+      "action_entropy": 1.3756831537302872,
+      "policy_entropy": 0.5685814660696323
+    },
+    {
+      "success": 11,
+      "food": 11,
+      "steps": 55,
+      "length": 14,
+      "death": "self",
+      "return": 9.45000000000001,
+      "action_counts": [
+        19,
+        17,
+        9,
+        10
+      ],
+      "action_entropy": 1.3362451928854764,
+      "policy_entropy": 0.6236822016559135
+    },
+    {
+      "success": 17,
+      "food": 17,
+      "steps": 92,
+      "length": 20,
+      "death": "self",
+      "return": 15.080000000000014,
+      "action_counts": [
+        27,
+        25,
+        21,
+        19
+      ],
+      "action_entropy": 1.3768015900905999,
+      "policy_entropy": 0.551616557425526
+    },
+    {
+      "success": 8,
+      "food": 8,
+      "steps": 48,
+      "length": 11,
+      "death": "self",
+      "return": 6.520000000000008,
+      "action_counts": [
+        14,
+        11,
+        13,
+        10
+      ],
+      "action_entropy": 1.3775792777342173,
+      "policy_entropy": 0.6525555551474661
+    },
+    {
+      "success": 10,
+      "food": 10,
+      "steps": 58,
+      "length": 13,
+      "death": "self",
+      "return": 8.420000000000009,
+      "action_counts": [
+        15,
+        16,
+        14,
+        13
+      ],
+      "action_entropy": 1.3833168582363593,
+      "policy_entropy": 0.5992710111741069
+    },
+    {
+      "success": 8,
+      "food": 8,
+      "steps": 58,
+      "length": 11,
+      "death": "self",
+      "return": 6.420000000000008,
+      "action_counts": [
+        13,
+        14,
+        15,
+        16
+      ],
+      "action_entropy": 1.3833168582363595,
+      "policy_entropy": 0.5716717262218055
+    },
+    {
+      "success": 13,
+      "food": 13,
+      "steps": 70,
+      "length": 16,
+      "death": "self",
+      "return": 11.300000000000011,
+      "action_counts": [
+        19,
+        19,
+        17,
+        15
+      ],
+      "action_entropy": 1.3817229409948755,
+      "policy_entropy": 0.6135355507207675
+    },
+    {
+      "success": 11,
+      "food": 11,
+      "steps": 71,
+      "length": 14,
+      "death": "self",
+      "return": 9.29000000000001,
+      "action_counts": [
+        16,
+        16,
+        19,
+        20
+      ],
+      "action_entropy": 1.3812457194791257,
+      "policy_entropy": 0.5732593488807712
+    },
+    {
+      "success": 13,
+      "food": 13,
+      "steps": 81,
+      "length": 16,
+      "death": "self",
+      "return": 11.190000000000014,
+      "action_counts": [
+        24,
+        26,
+        16,
+        15
+      ],
+      "action_entropy": 1.3578321856689917,
+      "policy_entropy": 0.6281548116541167
+    },
+    {
+      "success": 12,
+      "food": 12,
+      "steps": 89,
+      "length": 15,
+      "death": "self",
+      "return": 10.110000000000014,
+      "action_counts": [
+        24,
+        21,
+        21,
+        23
+      ],
+      "action_entropy": 1.3845959059219686,
+      "policy_entropy": 0.6269214120162617
+    },
+    {
+      "success": 17,
+      "food": 17,
+      "steps": 109,
+      "length": 20,
+      "death": "self",
+      "return": 14.91000000000002,
+      "action_counts": [
+        27,
+        26,
+        27,
+        29
+      ],
+      "action_entropy": 1.3855012783539098,
+      "policy_entropy": 0.6243085557118296
+    },
+    {
+      "success": 7,
+      "food": 7,
+      "steps": 37,
+      "length": 10,
+      "death": "self",
+      "return": 5.6300000000000034,
+      "action_counts": [
+        14,
+        10,
+        8,
+        5
+      ],
+      "action_entropy": 1.322934792639808,
+      "policy_entropy": 0.6862430733748087
+    },
+    {
+      "success": 7,
+      "food": 7,
+      "steps": 31,
+      "length": 10,
+      "death": "self",
+      "return": 5.690000000000005,
+      "action_counts": [
+        8,
+        8,
+        8,
+        7
+      ],
+      "action_entropy": 1.3846979127527792,
+      "policy_entropy": 0.5683819785192843
+    },
+    {
+      "success": 14,
+      "food": 14,
+      "steps": 77,
+      "length": 17,
+      "death": "self",
+      "return": 12.230000000000013,
+      "action_counts": [
+        20,
+        20,
+        18,
+        19
+      ],
+      "action_entropy": 1.3853596661594854,
+      "policy_entropy": 0.6017216479617533
+    },
+    {
+      "success": 20,
+      "food": 20,
+      "steps": 104,
+      "length": 23,
+      "death": "self",
+      "return": 17.959999999999987,
+      "action_counts": [
+        25,
+        26,
+        28,
+        25
+      ],
+      "action_entropy": 1.3851983268637313,
+      "policy_entropy": 0.5643136917573054
+    },
+    {
+      "success": 16,
+      "food": 16,
+      "steps": 90,
+      "length": 19,
+      "death": "self",
+      "return": 14.100000000000016,
+      "action_counts": [
+        26,
+        24,
+        21,
+        19
+      ],
+      "action_entropy": 1.3791084068495558,
+      "policy_entropy": 0.603058417429546
+    },
+    {
+      "success": 4,
+      "food": 4,
+      "steps": 24,
+      "length": 7,
+      "death": "wall",
+      "return": 2.7600000000000016,
+      "action_counts": [
+        5,
+        4,
+        9,
+        6
+      ],
+      "action_entropy": 1.3398061212627594,
+      "policy_entropy": 0.6051342079416663
+    },
+    {
+      "success": 8,
+      "food": 8,
+      "steps": 57,
+      "length": 11,
+      "death": "self",
+      "return": 6.430000000000008,
+      "action_counts": [
+        15,
+        13,
+        16,
+        13
+      ],
+      "action_entropy": 1.3821590596526234,
+      "policy_entropy": 0.6021761441667685
+    },
+    {
+      "success": 12,
+      "food": 12,
+      "steps": 77,
+      "length": 15,
+      "death": "self",
+      "return": 10.230000000000011,
+      "action_counts": [
+        20,
+        18,
+        19,
+        20
+      ],
+      "action_entropy": 1.3853596661594854,
+      "policy_entropy": 0.6519364989132084
+    },
+    {
+      "success": 23,
+      "food": 23,
+      "steps": 142,
+      "length": 26,
+      "death": "self",
+      "return": 20.579999999999956,
+      "action_counts": [
+        41,
+        41,
+        31,
+        29
+      ],
+      "action_entropy": 1.3740095091618163,
+      "policy_entropy": 0.571443971668216
+    },
+    {
+      "success": 10,
+      "food": 10,
+      "steps": 59,
+      "length": 13,
+      "death": "self",
+      "return": 8.410000000000009,
+      "action_counts": [
+        17,
+        17,
+        15,
+        10
+      ],
+      "action_entropy": 1.366082229594106,
+      "policy_entropy": 0.6719992330040864
+    },
+    {
+      "success": 9,
+      "food": 9,
+      "steps": 55,
+      "length": 12,
+      "death": "self",
+      "return": 7.450000000000006,
+      "action_counts": [
+        11,
+        14,
+        15,
+        15
+      ],
+      "action_entropy": 1.3788757916240668,
+      "policy_entropy": 0.592523966826781
+    },
+    {
+      "success": 16,
+      "food": 16,
+      "steps": 80,
+      "length": 19,
+      "death": "self",
+      "return": 14.200000000000014,
+      "action_counts": [
+        20,
+        22,
+        20,
+        18
+      ],
+      "action_entropy": 1.383790177696708,
+      "policy_entropy": 0.5924767556271757
+    },
+    {
+      "success": 10,
+      "food": 10,
+      "steps": 54,
+      "length": 13,
+      "death": "self",
+      "return": 8.460000000000008,
+      "action_counts": [
+        14,
+        14,
+        14,
+        12
+      ],
+      "action_entropy": 1.3841824235772913,
+      "policy_entropy": 0.552418735991751
+    },
+    {
+      "success": 17,
+      "food": 17,
+      "steps": 111,
+      "length": 20,
+      "death": "self",
+      "return": 14.89000000000002,
+      "action_counts": [
+        28,
+        29,
+        28,
+        26
+      ],
+      "action_entropy": 1.3855163127719905,
+      "policy_entropy": 0.6716836323239451
+    },
+    {
+      "success": 15,
+      "food": 15,
+      "steps": 96,
+      "length": 18,
+      "death": "self",
+      "return": 13.040000000000015,
+      "action_counts": [
+        28,
+        25,
+        23,
+        20
+      ],
+      "action_entropy": 1.3788832503838635,
+      "policy_entropy": 0.6062722523049775
+    },
+    {
+      "success": 12,
+      "food": 12,
+      "steps": 59,
+      "length": 15,
+      "death": "self",
+      "return": 10.410000000000007,
+      "action_counts": [
+        15,
+        12,
+        15,
+        17
+      ],
+      "action_entropy": 1.3788084154399871,
+      "policy_entropy": 0.5769196294512323
+    },
+    {
+      "success": 8,
+      "food": 8,
+      "steps": 44,
+      "length": 11,
+      "death": "self",
+      "return": 6.560000000000006,
+      "action_counts": [
+        12,
+        9,
+        11,
+        12
+      ],
+      "action_entropy": 1.3798798886518922,
+      "policy_entropy": 0.6425504216721369
+    },
+    {
+      "success": 14,
+      "food": 14,
+      "steps": 76,
+      "length": 17,
+      "death": "self",
+      "return": 12.240000000000013,
+      "action_counts": [
+        21,
+        20,
+        17,
+        18
+      ],
+      "action_entropy": 1.382826298781612,
+      "policy_entropy": 0.5810187316713145
+    },
+    {
+      "success": 10,
+      "food": 10,
+      "steps": 66,
+      "length": 13,
+      "death": "wall",
+      "return": 8.340000000000009,
+      "action_counts": [
+        21,
+        18,
+        14,
+        13
+      ],
+      "action_entropy": 1.3676425133001118,
+      "policy_entropy": 0.614363049035952
+    },
+    {
+      "success": 12,
+      "food": 12,
+      "steps": 65,
+      "length": 15,
+      "death": "self",
+      "return": 10.35000000000001,
+      "action_counts": [
+        17,
+        16,
+        17,
+        15
+      ],
+      "action_entropy": 1.38498071189131,
+      "policy_entropy": 0.6081542888313146
+    },
+    {
+      "success": 10,
+      "food": 10,
+      "steps": 67,
+      "length": 13,
+      "death": "self",
+      "return": 8.33000000000001,
+      "action_counts": [
+        17,
+        17,
+        17,
+        16
+      ],
+      "action_entropy": 1.3859567969625513,
+      "policy_entropy": 0.6025861876289872
+    },
+    {
+      "success": 20,
+      "food": 20,
+      "steps": 137,
+      "length": 23,
+      "death": "self",
+      "return": 17.63000000000001,
+      "action_counts": [
+        36,
+        33,
+        35,
+        33
+      ],
+      "action_entropy": 1.3855768163877038,
+      "policy_entropy": 0.6058823743740475
+    },
+    {
+      "success": 10,
+      "food": 10,
+      "steps": 37,
+      "length": 13,
+      "death": "self",
+      "return": 8.630000000000006,
+      "action_counts": [
+        12,
+        11,
+        6,
+        8
+      ],
+      "action_entropy": 1.3519498870484072,
+      "policy_entropy": 0.47608082519117134
+    },
+    {
+      "success": 10,
+      "food": 10,
+      "steps": 71,
+      "length": 13,
+      "death": "self",
+      "return": 8.29000000000001,
+      "action_counts": [
+        16,
+        18,
+        18,
+        19
+      ],
+      "action_entropy": 1.3843820820517228,
+      "policy_entropy": 0.5924932549159841
+    },
+    {
+      "success": 20,
+      "food": 20,
+      "steps": 127,
+      "length": 23,
+      "death": "self",
+      "return": 17.729999999999993,
+      "action_counts": [
+        30,
+        32,
+        32,
+        33
+      ],
+      "action_entropy": 1.3857007182897607,
+      "policy_entropy": 0.557094921826228
+    },
+    {
+      "success": 9,
+      "food": 9,
+      "steps": 47,
+      "length": 12,
+      "death": "self",
+      "return": 7.5300000000000065,
+      "action_counts": [
+        12,
+        13,
+        12,
+        10
+      ],
+      "action_entropy": 1.3818933001812792,
+      "policy_entropy": 0.6091876706130928
+    },
+    {
+      "success": 17,
+      "food": 17,
+      "steps": 100,
+      "length": 20,
+      "death": "self",
+      "return": 15.000000000000016,
+      "action_counts": [
+        29,
+        28,
+        21,
+        22
+      ],
+      "action_entropy": 1.3762580807822045,
+      "policy_entropy": 0.6082583111624661
+    }
+  ],
+  "random_rows": [
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 14,
+      "length": 3,
+      "death": "wall",
+      "return": -1.14,
+      "action_counts": [
+        2,
+        3,
+        5,
+        4
+      ],
+      "action_entropy": 1.3337360272028058
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 5,
+      "length": 3,
+      "death": "wall",
+      "return": -1.05,
+      "action_counts": [
+        1,
+        0,
+        1,
+        3
+      ],
+      "action_entropy": 0.9502705392332316
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 6,
+      "length": 3,
+      "death": "wall",
+      "return": -1.06,
+      "action_counts": [
+        0,
+        2,
+        2,
+        2
+      ],
+      "action_entropy": 1.0986122886681067
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 10,
+      "length": 3,
+      "death": "wall",
+      "return": -1.1,
+      "action_counts": [
+        1,
+        4,
+        3,
+        2
+      ],
+      "action_entropy": 1.2798542258336636
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 10,
+      "length": 3,
+      "death": "wall",
+      "return": -1.1,
+      "action_counts": [
+        2,
+        4,
+        2,
+        2
+      ],
+      "action_entropy": 1.3321790402101181
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 11,
+      "length": 3,
+      "death": "wall",
+      "return": -1.11,
+      "action_counts": [
+        2,
+        3,
+        1,
+        5
+      ],
+      "action_entropy": 1.2406842919533918
+    },
+    {
+      "success": 1,
+      "food": 1,
+      "steps": 6,
+      "length": 4,
+      "death": "wall",
+      "return": -0.06000000000000005,
+      "action_counts": [
+        4,
+        1,
+        1,
+        0
+      ],
+      "action_entropy": 0.8675632284814583
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 20,
+      "length": 3,
+      "death": "wall",
+      "return": -1.2,
+      "action_counts": [
+        4,
+        6,
+        7,
+        3
+      ],
+      "action_entropy": 1.3350851650920164
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 15,
+      "length": 3,
+      "death": "wall",
+      "return": -1.15,
+      "action_counts": [
+        3,
+        5,
+        4,
+        3
+      ],
+      "action_entropy": 1.3624474851916246
+    },
+    {
+      "success": 1,
+      "food": 1,
+      "steps": 30,
+      "length": 4,
+      "death": "wall",
+      "return": -0.30000000000000027,
+      "action_counts": [
+        4,
+        9,
+        7,
+        10
+      ],
+      "action_entropy": 1.3356166945343784
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 6,
+      "length": 3,
+      "death": "wall",
+      "return": -1.06,
+      "action_counts": [
+        4,
+        1,
+        0,
+        1
+      ],
+      "action_entropy": 0.8675632284814583
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 6,
+      "length": 3,
+      "death": "wall",
+      "return": -1.06,
+      "action_counts": [
+        1,
+        1,
+        1,
+        3
+      ],
+      "action_entropy": 1.242453324893996
+    },
+    {
+      "success": 1,
+      "food": 1,
+      "steps": 16,
+      "length": 4,
+      "death": "wall",
+      "return": -0.16000000000000014,
+      "action_counts": [
+        4,
+        5,
+        6,
+        1
+      ],
+      "action_entropy": 1.2511559833636274
+    },
+    {
+      "success": 1,
+      "food": 1,
+      "steps": 5,
+      "length": 4,
+      "death": "wall",
+      "return": -0.050000000000000044,
+      "action_counts": [
+        3,
+        2,
+        0,
+        0
+      ],
+      "action_entropy": 0.6730116670092545
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 4,
+      "length": 3,
+      "death": "wall",
+      "return": -1.04,
+      "action_counts": [
+        0,
+        0,
+        2,
+        2
+      ],
+      "action_entropy": 0.6931471805599433
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 14,
+      "length": 3,
+      "death": "wall",
+      "return": -1.14,
+      "action_counts": [
+        4,
+        4,
+        4,
+        2
+      ],
+      "action_entropy": 1.3517839942896417
+    },
+    {
+      "success": 1,
+      "food": 1,
+      "steps": 13,
+      "length": 4,
+      "death": "wall",
+      "return": -0.13000000000000012,
+      "action_counts": [
+        1,
+        3,
+        7,
+        2
+      ],
+      "action_entropy": 1.1569876443452702
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 9,
+      "length": 3,
+      "death": "wall",
+      "return": -1.09,
+      "action_counts": [
+        2,
+        2,
+        4,
+        1
+      ],
+      "action_entropy": 1.2730283365896216
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 6,
+      "length": 3,
+      "death": "wall",
+      "return": -1.06,
+      "action_counts": [
+        0,
+        2,
+        3,
+        1
+      ],
+      "action_entropy": 1.0114042647073487
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 5,
+      "length": 3,
+      "death": "wall",
+      "return": -1.05,
+      "action_counts": [
+        0,
+        1,
+        1,
+        3
+      ],
+      "action_entropy": 0.9502705392332316
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 5,
+      "length": 3,
+      "death": "wall",
+      "return": -1.05,
+      "action_counts": [
+        2,
+        2,
+        0,
+        1
+      ],
+      "action_entropy": 1.054920167986141
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 7,
+      "length": 3,
+      "death": "wall",
+      "return": -1.07,
+      "action_counts": [
+        2,
+        0,
+        4,
+        1
+      ],
+      "action_entropy": 0.9556998911125312
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 5,
+      "length": 3,
+      "death": "wall",
+      "return": -1.05,
+      "action_counts": [
+        1,
+        3,
+        1,
+        0
+      ],
+      "action_entropy": 0.9502705392332316
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 7,
+      "length": 3,
+      "death": "wall",
+      "return": -1.07,
+      "action_counts": [
+        1,
+        3,
+        0,
+        3
+      ],
+      "action_entropy": 1.0042424730540733
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 11,
+      "length": 3,
+      "death": "wall",
+      "return": -1.11,
+      "action_counts": [
+        3,
+        5,
+        2,
+        1
+      ],
+      "action_entropy": 1.2406842919533918
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 5,
+      "length": 3,
+      "death": "wall",
+      "return": -1.05,
+      "action_counts": [
+        3,
+        2,
+        0,
+        0
+      ],
+      "action_entropy": 0.6730116670092545
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 8,
+      "length": 3,
+      "death": "wall",
+      "return": -1.08,
+      "action_counts": [
+        1,
+        3,
+        2,
+        2
+      ],
+      "action_entropy": 1.320888343149318
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 9,
+      "length": 3,
+      "death": "wall",
+      "return": -1.09,
+      "action_counts": [
+        1,
+        3,
+        3,
+        2
+      ],
+      "action_entropy": 1.31078367809971
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 4,
+      "length": 3,
+      "death": "wall",
+      "return": -1.04,
+      "action_counts": [
+        0,
+        0,
+        0,
+        4
+      ],
+      "action_entropy": -1.110223024625156e-15
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 6,
+      "length": 3,
+      "death": "wall",
+      "return": -1.06,
+      "action_counts": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "action_entropy": 1.0114042647073487
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 14,
+      "length": 3,
+      "death": "wall",
+      "return": -1.14,
+      "action_counts": [
+        4,
+        1,
+        8,
+        1
+      ],
+      "action_entropy": 1.0547209169068081
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 5,
+      "length": 3,
+      "death": "wall",
+      "return": -1.05,
+      "action_counts": [
+        0,
+        1,
+        0,
+        4
+      ],
+      "action_entropy": 0.5004024235381859
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 5,
+      "length": 3,
+      "death": "wall",
+      "return": -1.05,
+      "action_counts": [
+        4,
+        1,
+        0,
+        0
+      ],
+      "action_entropy": 0.5004024235381859
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 5,
+      "length": 3,
+      "death": "wall",
+      "return": -1.05,
+      "action_counts": [
+        1,
+        0,
+        1,
+        3
+      ],
+      "action_entropy": 0.9502705392332316
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 20,
+      "length": 3,
+      "death": "wall",
+      "return": -1.2,
+      "action_counts": [
+        8,
+        3,
+        4,
+        5
+      ],
+      "action_entropy": 1.3195454632493329
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 7,
+      "length": 3,
+      "death": "wall",
+      "return": -1.07,
+      "action_counts": [
+        1,
+        3,
+        2,
+        1
+      ],
+      "action_entropy": 1.277034259466135
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 4,
+      "length": 3,
+      "death": "wall",
+      "return": -1.04,
+      "action_counts": [
+        0,
+        0,
+        1,
+        3
+      ],
+      "action_entropy": 0.5623351446188063
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 18,
+      "length": 3,
+      "death": "wall",
+      "return": -1.18,
+      "action_counts": [
+        4,
+        5,
+        4,
+        5
+      ],
+      "action_entropy": 1.3801087571572648
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 5,
+      "length": 3,
+      "death": "wall",
+      "return": -1.05,
+      "action_counts": [
+        0,
+        1,
+        1,
+        3
+      ],
+      "action_entropy": 0.9502705392332316
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 4,
+      "length": 3,
+      "death": "wall",
+      "return": -1.04,
+      "action_counts": [
+        0,
+        0,
+        4,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 15,
+      "length": 3,
+      "death": "wall",
+      "return": -1.15,
+      "action_counts": [
+        5,
+        2,
+        8,
+        0
+      ],
+      "action_entropy": 0.970115783986935
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 4,
+      "length": 3,
+      "death": "wall",
+      "return": -1.04,
+      "action_counts": [
+        0,
+        0,
+        0,
+        4
+      ],
+      "action_entropy": -1.110223024625156e-15
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 23,
+      "length": 3,
+      "death": "wall",
+      "return": -1.23,
+      "action_counts": [
+        3,
+        7,
+        6,
+        7
+      ],
+      "action_entropy": 1.3403143999227525
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 6,
+      "length": 3,
+      "death": "wall",
+      "return": -1.06,
+      "action_counts": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "action_entropy": 1.0114042647073487
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 7,
+      "length": 3,
+      "death": "wall",
+      "return": -1.07,
+      "action_counts": [
+        1,
+        2,
+        0,
+        4
+      ],
+      "action_entropy": 0.9556998911125312
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 25,
+      "length": 3,
+      "death": "wall",
+      "return": -1.25,
+      "action_counts": [
+        9,
+        5,
+        8,
+        3
+      ],
+      "action_entropy": 1.3087326265626171
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 11,
+      "length": 3,
+      "death": "wall",
+      "return": -1.11,
+      "action_counts": [
+        2,
+        5,
+        4,
+        0
+      ],
+      "action_entropy": 1.0361987848192808
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 8,
+      "length": 3,
+      "death": "wall",
+      "return": -1.08,
+      "action_counts": [
+        2,
+        1,
+        3,
+        2
+      ],
+      "action_entropy": 1.3208883431493181
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 13,
+      "length": 3,
+      "death": "wall",
+      "return": -1.13,
+      "action_counts": [
+        4,
+        3,
+        4,
+        2
+      ],
+      "action_entropy": 1.3516811946858907
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 5,
+      "length": 3,
+      "death": "wall",
+      "return": -1.05,
+      "action_counts": [
+        1,
+        3,
+        0,
+        1
+      ],
+      "action_entropy": 0.9502705392332316
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 10,
+      "length": 3,
+      "death": "wall",
+      "return": -1.1,
+      "action_counts": [
+        4,
+        1,
+        3,
+        2
+      ],
+      "action_entropy": 1.2798542258336636
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 12,
+      "length": 3,
+      "death": "wall",
+      "return": -1.12,
+      "action_counts": [
+        2,
+        6,
+        4,
+        0
+      ],
+      "action_entropy": 1.0114042647073487
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 7,
+      "length": 3,
+      "death": "wall",
+      "return": -1.07,
+      "action_counts": [
+        1,
+        3,
+        2,
+        1
+      ],
+      "action_entropy": 1.277034259466135
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 15,
+      "length": 3,
+      "death": "wall",
+      "return": -1.15,
+      "action_counts": [
+        6,
+        1,
+        4,
+        4
+      ],
+      "action_entropy": 1.2519894208137092
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 12,
+      "length": 3,
+      "death": "wall",
+      "return": -1.12,
+      "action_counts": [
+        2,
+        4,
+        1,
+        5
+      ],
+      "action_entropy": 1.2366848691405001
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 6,
+      "length": 3,
+      "death": "wall",
+      "return": -1.06,
+      "action_counts": [
+        4,
+        1,
+        0,
+        1
+      ],
+      "action_entropy": 0.8675632284814583
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 12,
+      "length": 3,
+      "death": "wall",
+      "return": -1.12,
+      "action_counts": [
+        6,
+        1,
+        3,
+        2
+      ],
+      "action_entropy": 1.198849312913617
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 4,
+      "length": 3,
+      "death": "wall",
+      "return": -1.04,
+      "action_counts": [
+        0,
+        0,
+        4,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 11,
+      "length": 3,
+      "death": "wall",
+      "return": -1.11,
+      "action_counts": [
+        2,
+        2,
+        3,
+        4
+      ],
+      "action_entropy": 1.3421131789143963
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 11,
+      "length": 3,
+      "death": "wall",
+      "return": -1.11,
+      "action_counts": [
+        2,
+        2,
+        6,
+        1
+      ],
+      "action_entropy": 1.1685184057430837
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 5,
+      "length": 3,
+      "death": "wall",
+      "return": -1.05,
+      "action_counts": [
+        0,
+        4,
+        0,
+        1
+      ],
+      "action_entropy": 0.5004024235381859
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 8,
+      "length": 3,
+      "death": "wall",
+      "return": -1.08,
+      "action_counts": [
+        2,
+        3,
+        2,
+        1
+      ],
+      "action_entropy": 1.320888343149318
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 15,
+      "length": 3,
+      "death": "wall",
+      "return": -1.15,
+      "action_counts": [
+        2,
+        5,
+        4,
+        4
+      ],
+      "action_entropy": 1.3397942802855716
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 5,
+      "length": 3,
+      "death": "wall",
+      "return": -1.05,
+      "action_counts": [
+        0,
+        4,
+        1,
+        0
+      ],
+      "action_entropy": 0.5004024235381859
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 13,
+      "length": 3,
+      "death": "wall",
+      "return": -1.13,
+      "action_counts": [
+        4,
+        4,
+        1,
+        4
+      ],
+      "action_entropy": 1.2852930241200953
+    },
+    {
+      "success": 1,
+      "food": 1,
+      "steps": 6,
+      "length": 4,
+      "death": "wall",
+      "return": -0.06000000000000005,
+      "action_counts": [
+        1,
+        1,
+        0,
+        4
+      ],
+      "action_entropy": 0.8675632284814583
+    },
+    {
+      "success": 1,
+      "food": 1,
+      "steps": 12,
+      "length": 4,
+      "death": "wall",
+      "return": -0.12,
+      "action_counts": [
+        3,
+        3,
+        2,
+        4
+      ],
+      "action_entropy": 1.3579778549873203
+    },
+    {
+      "success": 1,
+      "food": 1,
+      "steps": 17,
+      "length": 4,
+      "death": "wall",
+      "return": -0.17000000000000004,
+      "action_counts": [
+        5,
+        6,
+        2,
+        4
+      ],
+      "action_entropy": 1.319729921518666
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 11,
+      "length": 3,
+      "death": "wall",
+      "return": -1.11,
+      "action_counts": [
+        4,
+        2,
+        5,
+        0
+      ],
+      "action_entropy": 1.0361987848192806
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 4,
+      "length": 3,
+      "death": "wall",
+      "return": -1.04,
+      "action_counts": [
+        0,
+        0,
+        1,
+        3
+      ],
+      "action_entropy": 0.5623351446188063
+    },
+    {
+      "success": 1,
+      "food": 1,
+      "steps": 17,
+      "length": 4,
+      "death": "wall",
+      "return": -0.17000000000000015,
+      "action_counts": [
+        6,
+        2,
+        9,
+        0
+      ],
+      "action_entropy": 0.9560443809671427
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 12,
+      "length": 3,
+      "death": "wall",
+      "return": -1.12,
+      "action_counts": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "action_entropy": 1.3862943611198866
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 14,
+      "length": 3,
+      "death": "wall",
+      "return": -1.14,
+      "action_counts": [
+        3,
+        5,
+        2,
+        4
+      ],
+      "action_entropy": 1.3337360272028058
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 4,
+      "length": 3,
+      "death": "wall",
+      "return": -1.04,
+      "action_counts": [
+        0,
+        0,
+        2,
+        2
+      ],
+      "action_entropy": 0.6931471805599433
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 10,
+      "length": 3,
+      "death": "wall",
+      "return": -1.1,
+      "action_counts": [
+        2,
+        3,
+        4,
+        1
+      ],
+      "action_entropy": 1.2798542258336636
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 8,
+      "length": 3,
+      "death": "wall",
+      "return": -1.08,
+      "action_counts": [
+        2,
+        2,
+        1,
+        3
+      ],
+      "action_entropy": 1.3208883431493181
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 6,
+      "length": 3,
+      "death": "wall",
+      "return": -1.06,
+      "action_counts": [
+        2,
+        0,
+        2,
+        2
+      ],
+      "action_entropy": 1.0986122886681067
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 5,
+      "length": 3,
+      "death": "wall",
+      "return": -1.05,
+      "action_counts": [
+        2,
+        2,
+        1,
+        0
+      ],
+      "action_entropy": 1.054920167986141
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 7,
+      "length": 3,
+      "death": "wall",
+      "return": -1.07,
+      "action_counts": [
+        1,
+        3,
+        2,
+        1
+      ],
+      "action_entropy": 1.277034259466135
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 15,
+      "length": 3,
+      "death": "wall",
+      "return": -1.15,
+      "action_counts": [
+        5,
+        4,
+        1,
+        5
+      ],
+      "action_entropy": 1.2654130965141683
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 5,
+      "length": 3,
+      "death": "wall",
+      "return": -1.05,
+      "action_counts": [
+        3,
+        1,
+        1,
+        0
+      ],
+      "action_entropy": 0.9502705392332316
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 13,
+      "length": 3,
+      "death": "wall",
+      "return": -1.13,
+      "action_counts": [
+        2,
+        6,
+        3,
+        2
+      ],
+      "action_entropy": 1.2711814802605759
+    },
+    {
+      "success": 1,
+      "food": 1,
+      "steps": 4,
+      "length": 4,
+      "death": "wall",
+      "return": -0.040000000000000036,
+      "action_counts": [
+        0,
+        0,
+        2,
+        2
+      ],
+      "action_entropy": 0.6931471805599433
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 12,
+      "length": 3,
+      "death": "wall",
+      "return": -1.12,
+      "action_counts": [
+        3,
+        2,
+        5,
+        2
+      ],
+      "action_entropy": 1.3086053872534453
+    },
+    {
+      "success": 2,
+      "food": 2,
+      "steps": 14,
+      "length": 5,
+      "death": "wall",
+      "return": 0.8600000000000001,
+      "action_counts": [
+        3,
+        5,
+        1,
+        5
+      ],
+      "action_entropy": 1.254041901733445
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 6,
+      "length": 3,
+      "death": "wall",
+      "return": -1.06,
+      "action_counts": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "action_entropy": 1.0114042647073487
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 8,
+      "length": 3,
+      "death": "wall",
+      "return": -1.08,
+      "action_counts": [
+        0,
+        3,
+        3,
+        2
+      ],
+      "action_entropy": 1.0821955300387642
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 8,
+      "length": 3,
+      "death": "wall",
+      "return": -1.08,
+      "action_counts": [
+        2,
+        2,
+        0,
+        4
+      ],
+      "action_entropy": 1.039720770839915
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 19,
+      "length": 3,
+      "death": "wall",
+      "return": -1.19,
+      "action_counts": [
+        5,
+        6,
+        4,
+        4
+      ],
+      "action_entropy": 1.371381017771807
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 6,
+      "length": 3,
+      "death": "wall",
+      "return": -1.06,
+      "action_counts": [
+        0,
+        1,
+        4,
+        1
+      ],
+      "action_entropy": 0.8675632284814583
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 8,
+      "length": 3,
+      "death": "wall",
+      "return": -1.08,
+      "action_counts": [
+        4,
+        0,
+        0,
+        4
+      ],
+      "action_entropy": 0.6931471805599433
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 4,
+      "length": 3,
+      "death": "wall",
+      "return": -1.04,
+      "action_counts": [
+        0,
+        0,
+        3,
+        1
+      ],
+      "action_entropy": 0.5623351446188063
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 4,
+      "length": 3,
+      "death": "wall",
+      "return": -1.04,
+      "action_counts": [
+        0,
+        0,
+        4,
+        0
+      ],
+      "action_entropy": -1.110223024625156e-15
+    },
+    {
+      "success": 1,
+      "food": 1,
+      "steps": 6,
+      "length": 4,
+      "death": "wall",
+      "return": -0.06000000000000005,
+      "action_counts": [
+        0,
+        2,
+        2,
+        2
+      ],
+      "action_entropy": 1.0986122886681067
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 8,
+      "length": 3,
+      "death": "wall",
+      "return": -1.08,
+      "action_counts": [
+        3,
+        2,
+        0,
+        3
+      ],
+      "action_entropy": 1.0821955300387642
+    },
+    {
+      "success": 1,
+      "food": 1,
+      "steps": 6,
+      "length": 4,
+      "death": "wall",
+      "return": -0.06000000000000005,
+      "action_counts": [
+        2,
+        0,
+        1,
+        3
+      ],
+      "action_entropy": 1.0114042647073487
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 8,
+      "length": 3,
+      "death": "wall",
+      "return": -1.08,
+      "action_counts": [
+        4,
+        1,
+        2,
+        1
+      ],
+      "action_entropy": 1.2130075659799002
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 8,
+      "length": 3,
+      "death": "wall",
+      "return": -1.08,
+      "action_counts": [
+        2,
+        2,
+        4,
+        0
+      ],
+      "action_entropy": 1.039720770839915
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 6,
+      "length": 3,
+      "death": "wall",
+      "return": -1.06,
+      "action_counts": [
+        2,
+        0,
+        3,
+        1
+      ],
+      "action_entropy": 1.0114042647073487
+    },
+    {
+      "success": 0,
+      "food": 0,
+      "steps": 5,
+      "length": 3,
+      "death": "wall",
+      "return": -1.05,
+      "action_counts": [
+        1,
+        0,
+        2,
+        2
+      ],
+      "action_entropy": 1.054920167986141
+    }
+  ],
+  "state_probe": {
+    "score": 0.725,
+    "action_counts": [
+      10,
+      11,
+      9,
+      10
+    ],
+    "states": 40,
+    "definition": "greedy action diversity under fixed-history state intervention"
+  },
+  "action_distribution": [
+    0.2619617224880383,
+    0.25465178096757046,
+    0.2474747474747475,
+    0.2359117490696438
+  ],
+  "dominant_action_fraction": 0.2619617224880383,
+  "policy_entropy": 0.6061483292460603,
+  "evaluation_seeds": [
+    350001000000,
+    350001000001,
+    350001000002,
+    350001000003,
+    350001000004,
+    350001000005,
+    350001000006,
+    350001000007,
+    350001000008,
+    350001000009,
+    350001000010,
+    350001000011,
+    350001000012,
+    350001000013,
+    350001000014,
+    350001000015,
+    350001000016,
+    350001000017,
+    350001000018,
+    350001000019,
+    350001000020,
+    350001000021,
+    350001000022,
+    350001000023,
+    350001000024,
+    350001000025,
+    350001000026,
+    350001000027,
+    350001000028,
+    350001000029,
+    350001000030,
+    350001000031,
+    350001000032,
+    350001000033,
+    350001000034,
+    350001000035,
+    350001000036,
+    350001000037,
+    350001000038,
+    350001000039,
+    350001000040,
+    350001000041,
+    350001000042,
+    350001000043,
+    350001000044,
+    350001000045,
+    350001000046,
+    350001000047,
+    350001000048,
+    350001000049,
+    350001000050,
+    350001000051,
+    350001000052,
+    350001000053,
+    350001000054,
+    350001000055,
+    350001000056,
+    350001000057,
+    350001000058,
+    350001000059,
+    350001000060,
+    350001000061,
+    350001000062,
+    350001000063,
+    350001000064,
+    350001000065,
+    350001000066,
+    350001000067,
+    350001000068,
+    350001000069,
+    350001000070,
+    350001000071,
+    350001000072,
+    350001000073,
+    350001000074,
+    350001000075,
+    350001000076,
+    350001000077,
+    350001000078,
+    350001000079,
+    350001000080,
+    350001000081,
+    350001000082,
+    350001000083,
+    350001000084,
+    350001000085,
+    350001000086,
+    350001000087,
+    350001000088,
+    350001000089,
+    350001000090,
+    350001000091,
+    350001000092,
+    350001000093,
+    350001000094,
+    350001000095,
+    350001000096,
+    350001000097,
+    350001000098,
+    350001000099
+  ],
+  "learning": false,
+  "status": "COMPLETE",
+  "resources": {
+    "rss_mb": 157.203125,
+    "free_disk_mb": 343770.3515625,
+    "elapsed_seconds": 3.963126749964431
+  },
+  "peak_memory_mb": 157.203125
+}

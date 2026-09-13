@@ -1,0 +1,87 @@
+{
+  "status": "PASS",
+  "historical_files_preserved": 2022,
+  "primary_trials": 45,
+  "total_completed_development_trials": 81,
+  "configurations_per_task": {
+    "catch": 4,
+    "dodge": 4,
+    "snake": 5,
+    "pong": 6,
+    "flappy": 8
+  },
+  "validation_evaluations": 27,
+  "validation_files": {
+    "artifacts/v14/validation/catch-primary-linear-s0-primary_validation.json": "b494914589d8f306eaa25814b584f1ce411d06bbb2d711b79c31fdad613939d5",
+    "artifacts/v14/validation/catch-primary-linear-s1-primary_validation.json": "5d97526154bd0caf2acd0ade95159d5a445ff66d9ae87df92f1c0f9ce597171d",
+    "artifacts/v14/validation/catch-primary-linear-s2-primary_validation.json": "d0e00d4d68b3a7ec9e725a433b0b07feb879dc7b926ea08779fa3f352fd883eb",
+    "artifacts/v14/validation/catch-ticks-linear-s0-final_validation.json": "a4ce4e4ccd72a59c12b9c0f3b182e192f60d209f6fef08f7f7bb3737c6d9a604",
+    "artifacts/v14/validation/catch-ticks-linear-s1-final_validation.json": "7e31bea85ff6d5b5f6a15d1ff1353f0fa0ee910dda7fca5bf4f1b1f7c0de5037",
+    "artifacts/v14/validation/catch-ticks-linear-s2-final_validation.json": "9ee119bf135b5396f151d435fe60e54f4809fc5c9dc0dd29ac2e2d9452aa758e",
+    "artifacts/v14/validation/dodge-primary-linear-s0-primary_validation.json": "6437d2d22468ed97519ccdce43979268d7777335a89c5feb9326922d2e2b26b1",
+    "artifacts/v14/validation/dodge-primary-linear-s1-primary_validation.json": "c13fda66b823b0527e6948f26863508196c2f4c49a74e1d8e83473368cac7f31",
+    "artifacts/v14/validation/dodge-primary-linear-s2-primary_validation.json": "a3236235eb9ac5c844d07a6a6c3890f7f924c34f340d15bb58a2694f8a68a758",
+    "artifacts/v14/validation/flappy-longer-gru-s0-final_validation.json": "be62f6fa2345c1152943fdd8aac1191d8cd8233e14b79b9b82ef7892f16ab4b5",
+    "artifacts/v14/validation/flappy-longer-gru-s1-final_validation.json": "8af2d45785daa8655af93a3231c8aa1dc1b058786e513ca882be3fa51418b4d0",
+    "artifacts/v14/validation/flappy-longer-gru-s2-final_validation.json": "3ee685f74eaa3c771bdd5d419e4683b231d928cfa1f26ab432ff2136ac60402e",
+    "artifacts/v14/validation/flappy-primary-gru-s0-primary_validation.json": "7df6171af1fd9e75b6acf5cec436cc9d4e41e3096154c6a907516b7680ab0f06",
+    "artifacts/v14/validation/flappy-primary-gru-s1-primary_validation.json": "68db02d54981ffd73262d063583e320ca929cdf6b824ff5c7542b2ab421fa56e",
+    "artifacts/v14/validation/flappy-primary-gru-s2-primary_validation.json": "65b0361210ce5db742bbe7d34b486bdba2aa03ca152d3c2cb9d51c33361b2bac",
+    "artifacts/v14/validation/pong-longer-linear-s0-final_validation.json": "bfd4e1690ccb3c7203c29772abee73ecfc8feb4bba1f4984bc26c46c20e8d169",
+    "artifacts/v14/validation/pong-longer-linear-s1-final_validation.json": "a733403703d2e422c479edfb70482970586e0bbfecaae19975ef5d6e4f28c155",
+    "artifacts/v14/validation/pong-longer-linear-s2-final_validation.json": "bea6a4ccd3ae68cd10367f53e8b1551e418b954a2bca4175494c93781ad066c5",
+    "artifacts/v14/validation/pong-primary-linear-s0-primary_validation.json": "18269cb9214490d68daa81889343319f955d50794975427849b315eb6aafb813",
+    "artifacts/v14/validation/pong-primary-linear-s1-primary_validation.json": "68a2b0170c2bb2067b9aeff16ecc990ad287372c21ffde7429f5c2d7fc53b221",
+    "artifacts/v14/validation/pong-primary-linear-s2-primary_validation.json": "31ed171a32fd69c8cca05b3a0d7f7277d39deb5763569eed4b342a430ea05c82",
+    "artifacts/v14/validation/snake-all_readout-linear-s0-final_validation.json": "e4210ddb07ecd078d26f20e4acccbe33c8f54ff2ad6ea16adfa9de1e18e86bb6",
+    "artifacts/v14/validation/snake-all_readout-linear-s1-final_validation.json": "f524d3199ee03d940597904b4394c7ad978eef7326ab37432dd0379d046e688c",
+    "artifacts/v14/validation/snake-all_readout-linear-s2-final_validation.json": "081d283d25fc74722a0fb9e807a1a75e41d1af9bc8ea42110fdf7a669d23ccda",
+    "artifacts/v14/validation/snake-primary-linear-s0-primary_validation.json": "c46dd04808dec7306ab2c5a4c99c2e44867e464be540525f529d10a16c01c5f6",
+    "artifacts/v14/validation/snake-primary-linear-s1-primary_validation.json": "fa7ffb4ceac358b44d651f6232acf1f253c687b69885887ef3ffec27883a5426",
+    "artifacts/v14/validation/snake-primary-linear-s2-primary_validation.json": "31e77af2112d70b111d8d3bd5f3efbd09f99de45f34634b736e5d84c394ad766"
+  },
+  "checkpoint_replays": [
+    {
+      "task": "catch",
+      "checkpoint": "runs/v14/catch-ticks-linear-s0/checkpoint.pkl",
+      "software_seed_replay": "MATCH"
+    },
+    {
+      "task": "dodge",
+      "checkpoint": "runs/v14/dodge-primary-linear-s0/checkpoint.pkl",
+      "software_seed_replay": "MATCH"
+    },
+    {
+      "task": "snake",
+      "checkpoint": "runs/v14/snake-all_readout-linear-s0/checkpoint.pkl",
+      "software_seed_replay": "MATCH"
+    },
+    {
+      "task": "pong",
+      "checkpoint": "runs/v14/pong-longer-linear-s0/checkpoint.pkl",
+      "software_seed_replay": "MATCH"
+    },
+    {
+      "task": "flappy",
+      "checkpoint": "runs/v14/flappy-longer-gru-s0/checkpoint.pkl",
+      "software_seed_replay": "MATCH"
+    }
+  ],
+  "replay_seed_scope": "fresh software tests only; no validation/historical rescoring",
+  "training_replay": "Catch Linear seed0 full65536 transitions, parameters and numerical history MATCH",
+  "confirmatory_testing": false,
+  "seed_namespace_disjoint": true,
+  "fixed_substrate": true,
+  "source_graph_sha256": "3f4cbeedb17ca6a7d06162151429e0713ed72ce579d5f19a8845a446f6315697",
+  "plan_sha256": "f53ab5e9517d481491df19e64accb5023c744a4b1edbd32b27b5153f598a9501",
+  "selection_sha256": "8110183e11f79b4d9e829501c81af8a3e6ebf7554dcde922beab23022bfacf2c",
+  "summary_sha256": "2cbf271fb37b09e481718b8e345e5795ebc8c40b7337c5aec01af6f73ee1412d",
+  "code_sha256": "e85511e4bc365a05991535efbccd77a20b76410345f35b6711f223e77a7910ce",
+  "max_trial_peak_memory_mb": 330.890625,
+  "max_process_seconds": 62.8924148750375,
+  "resources": {
+    "rss_mb": 182.4375,
+    "free_disk_mb": 343770.875,
+    "elapsed_seconds": 16.765668749983888
+  }
+}

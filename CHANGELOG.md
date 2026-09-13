@@ -1,3 +1,7 @@
+## v1.4 — prospective downstream architecture development
+
+Completed matched Linear/MLP-PPO/GRU-PPO development on five unchanged tasks, bounded secondary analyses and fresh validation. Historical data and dashboard remain frozen; no confirmatory testing. 241 tests and the scientific audit pass. See artifacts/v14/final_summary.md.
+
 # Changelog
 
 ## 0.4.0 — Snake, cross-task analysis and the final manuscript
